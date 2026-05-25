@@ -1,0 +1,37 @@
+sample_filters:
+  include:
+    host: human
+    body_site: feces
+    require_microbiome_profile: true
+  prefer:
+    sequencing_type: shotgun
+    has_BMI: true
+    has_age: true
+    has_sex: true
+  exclude:
+    animal_samples: true
+    unknown_body_site: true
+    severe_metadata_missingness: true
+    unclear_time_point_for_intervention: true
+    recent_antibiotic_use_when_recorded: true
+
+intervention_filters:
+  require_baseline: true
+  require_post_intervention: true
+  require_intervention_type: true
+  require_duration: true
+  allow_missing_dose_with_lower_evidence: true
+  allow_species_level_when_strain_missing: true
+
+missing_value_rules:
+  BMI:
+    exclude_from_BMI_regression: true
+  obesity_status:
+    exclude_from_obesity_classification: true
+  age:
+    keep_with_missing_flag: true
+  sex:
+    fill_value: unknown
+  functional_profile:
+    allow_taxonomy_only_model: true
+

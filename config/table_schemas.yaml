@@ -1,0 +1,106 @@
+sample_metadata:
+  - sample_id
+  - subject_id
+  - study_id
+  - database_source
+  - sequencing_type
+  - body_site
+  - time_point
+  - age
+  - sex
+  - BMI
+  - obesity_status
+  - disease_status
+  - country
+  - region
+  - antibiotic_use
+  - diet_info_available
+  - intervention_available
+
+taxonomic_profile:
+  - sample_id
+  - taxon_level
+  - taxon_name
+  - relative_abundance
+  - database_source
+  - profiling_method
+
+functional_profile:
+  - sample_id
+  - pathway_id
+  - pathway_name
+  - pathway_database
+  - abundance
+  - coverage
+  - annotation_method
+
+intervention_metadata:
+  - study_id
+  - subject_id
+  - intervention_type
+  - probiotic_species
+  - probiotic_strain
+  - number_of_strains
+  - total_CFU_per_day
+  - log10_CFU_per_day
+  - strain_specific_CFU
+  - prebiotic_type
+  - prebiotic_dose_g_day
+  - duration_weeks
+  - dosage_form
+  - placebo_type
+
+clinical_outcome:
+  - subject_id
+  - study_id
+  - baseline_weight
+  - post_weight
+  - weight_change
+  - weight_change_percent
+  - baseline_BMI
+  - post_BMI
+  - BMI_change
+  - waist_change
+  - body_fat_change
+  - TG_change
+  - TC_change
+  - LDL_change
+  - HDL_change
+  - FBG_change
+  - FINS_change
+  - HOMA_IR_change
+  - inflammatory_marker_change
+  - responder_label
+
+strain_function_matrix:
+  - strain_id
+  - genus
+  - species
+  - strain_name
+  - genome_accession
+  - safety_gate
+  - AMR_risk
+  - virulence_risk
+  - BSH_potential
+  - SCFA_potential
+  - carbohydrate_utilization
+  - mucin_adhesion_potential
+  - EPS_potential
+  - anti_inflammatory_evidence
+  - literature_weight_loss_evidence
+  - probiotic_use_history
+
+combination_ranking:
+  - combination_id
+  - strains
+  - target_population
+  - safety_gate
+  - functional_modules
+  - complementarity_score
+  - microbiome_matching_score
+  - predicted_response_score
+  - literature_evidence_score
+  - validation_priority
+  - recommended_prebiotic
+  - notes
+

@@ -1,0 +1,48 @@
+obesity_models:
+  BMI_regression:
+    algorithms:
+      - ElasticNet
+      - RandomForestRegressor
+      - XGBoostRegressor
+      - LightGBMRegressor
+    metrics:
+      - RMSE
+      - MAE
+      - R2
+      - Pearson
+      - Spearman
+  obesity_classification:
+    algorithms:
+      - LogisticRegression_regularized
+      - RandomForestClassifier
+      - XGBoostClassifier
+      - LightGBMClassifier
+    metrics:
+      - AUC
+      - accuracy
+      - balanced_accuracy
+      - precision
+      - recall
+      - F1
+
+responder_models:
+  tasks:
+    - weight_response
+    - BMI_response
+    - waist_response
+    - lipid_response
+    - glucose_response
+    - microbiome_response
+    - composite_response
+  algorithms:
+    - LogisticRegression_regularized
+    - RandomForestClassifier
+    - XGBoostClassifier
+    - LightGBMClassifier
+    - MultiTaskLearning
+
+interpretability:
+  feature_importance: true
+  SHAP: true
+  permutation_importance: true
+

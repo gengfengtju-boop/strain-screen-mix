@@ -1,0 +1,38 @@
+key_taxa:
+  - Bifidobacterium
+  - Akkermansia
+  - Faecalibacterium
+  - Roseburia
+  - Bacteroides
+  - Prevotella
+  - Lactobacillus
+  - Blautia
+  - Ruminococcus
+  - Alistipes
+  - Enterobacteriaceae
+  - Proteobacteria
+
+diversity_features:
+  - Shannon
+  - Simpson
+  - richness
+  - observed_species
+  - Pielou_evenness
+  - Bray_Curtis
+  - UniFrac
+
+functional_feature_groups:
+  carbohydrate_metabolism: true
+  SCFA_related_pathways: true
+  bile_acid_related_pathways: true
+  amino_acid_metabolism: true
+  LPS_biosynthesis: true
+  mucin_degradation: true
+
+derived_features:
+  SCFA_functional_score: true
+  bile_acid_functional_score: true
+  butyrate_producer_score: true
+  prevotella_bacteroides_ratio: true
+  enterotype_features: true
+

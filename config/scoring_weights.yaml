@@ -1,0 +1,27 @@
+safety_gate:
+  required: true
+  fail_action: exclude_from_combination
+
+strain_scores:
+  SCFA_functional_fit: 0.20
+  bile_acid_metabolism_fit: 0.20
+  carbohydrate_utilization: 0.15
+  niche_repletion: 0.20
+  literature_evidence: 0.15
+  probiotic_use_history: 0.10
+
+combination_scores:
+  complementarity_score: 0.25
+  microbiome_matching_score: 0.25
+  predicted_response_score: 0.20
+  literature_evidence_score: 0.15
+  validation_feasibility_score: 0.15
+
+combination_generation:
+  min_strains: 2
+  max_strains: 4
+  require_at_least_functional_modules: 2
+  prefer_include_historical_use_taxa:
+    - Bifidobacterium
+    - Lactobacillus
+

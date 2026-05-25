@@ -1,0 +1,28 @@
+validation_strategies:
+  random_split:
+    enabled: true
+    test_size: 0.2
+  stratified_cross_validation:
+    enabled: true
+    folds: 5
+  leave_one_study_out:
+    enabled: true
+    group_column: study_id
+  external_database_validation:
+    enabled: true
+    group_column: database_source
+  country_region_validation:
+    enabled: true
+    group_column: country
+
+batch_variables:
+  - study_id
+  - database_source
+  - sequencing_type
+  - sequencing_platform
+  - country
+  - profiling_method
+
+decision_rule:
+  require_leave_one_study_out_for_recommendation: true
+

@@ -1,0 +1,45 @@
+project_name: ProSlim-Microbiome-AI
+
+microbiome_sources:
+  curatedMetagenomicData:
+    enabled: true
+    data_type:
+      - shotgun
+      - metadata
+      - taxonomic_profile
+      - functional_profile
+  GMrepo:
+    enabled: true
+  Qiita:
+    enabled: true
+  SRA:
+    enabled: true
+  ENA:
+    enabled: true
+  MGnify:
+    enabled: true
+
+strain_genome_sources:
+  NCBI_Genome:
+    enabled: true
+  RefSeq:
+    enabled: true
+  GenBank:
+    enabled: true
+  GTDB:
+    enabled: true
+  MGnify_Genomes:
+    enabled: true
+
+metabolome_sources:
+  Metabolomics_Workbench:
+    enabled: true
+  GNPS:
+    enabled: true
+
+literature_sources:
+  PubMed:
+    enabled: true
+  clinical_trials:
+    enabled: true
+

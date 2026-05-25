@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Large local data and model artifacts
+data/raw_data/*
+data/processed_data/*
+models/**/*.pkl
+models/**/*.joblib
+models/**/*.pt
+models/**/*.onnx
+results/**/*.html
+results/**/*.png
+results/**/*.pdf
+
+# Keep directory placeholders
+!data/**/.gitkeep
+!models/**/.gitkeep
+!results/**/.gitkeep
+
