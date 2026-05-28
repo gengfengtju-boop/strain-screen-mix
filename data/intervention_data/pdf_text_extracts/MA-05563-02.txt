@@ -1,0 +1,986 @@
+
+
+--- PAGE 1 ---
+Nutrición
+Hospitalaria
+ISSN (electrónico): 1699-5198 - ISSN (papel): 0212-1611 - CODEN NUHOEQ S.V.R. 318
+©Copyright 2025 SENPE y ©Arán Ediciones S.L. Este es un artículo Open Access bajo la licencia CC BY-NC-SA (http://creativecommons.org/licenses/by-nc-sa/4.0/).
+Effects of probiotic supplementation on blood lipids in hypercholesterolemic obese 
+patients: a randomized, double-blind, placebo-controlled pilot trial
+Efectos de la suplementación con probióticos sobre los lípidos sanguíneos en pacientes obesos 
+hipercolesterolémicos: un ensayo piloto aleatorizado, doble ciego y controlado con placebo
+Sibel Bulut1, Seray Kabaran2 
+1Department of Sports Coaching Education. Faculty of Sports Sciences. Selçuk Üniversitesi. Konya, Turkey. 2Department of Nutrition and Dietetics. Faculty of Health 
+Sciences. Eastern Mediterranean University. Famagusta, T.R. North Cyprus. Turkey
+The design and conduct of the work was performed by the all authors. The manuscript has been written, 
+read, and approved by all the author. The material has not been previously published, in whole or in part, 
+and it also is not under consideration for publication elsewhere. There is no potential conflict of interest 
+for the study.
+Acknowledgment: We are grateful to the participants for their willingness to participate in this study. 
+Funding: This research did not receive any financial support and any other funding. However, the probiotic 
+supplements and placebo supplements were obtained from NBL Company.
+Conflict of interest: The authors declare no conflict of interest.
+Artificial intelligence: The authors declare not to have used artificial intelligence (AI) or any AI-assisted 
+technologies in the elaboration of the article.
+Bulut S, Kabaran S. Effects of probiotic supplementation on blood lipids ın hypercholesterolemic obese 
+patients: a randomized, double-blind, placebo-controlled pilot trial. Nutr Hosp 2025;42(2):253-264     
+DOI: http://dx.doi.org/10.20960/nh.05563
+Received: 15/10/2024  • Accepted: 28/12/2024
+Correspondence:  
+Sibel Bulut. Department of Sports Coaching Education. 
+Faculty of Sports Sciences. Selçuk Üniversitesi. Konya, 
+Turkey
+e-mail: dytsibelblt@gmail.com
+Trabajo Original Obesidad y síndrome metabólico
+Abstract
+Objective: this trial aimed to determine the effects of probiotic supplementation on weight loss and lipid profiles in hypercholesterolemic obese 
+patients.
+Methods: in this pilot randomized, double-blind, placebo-controlled trial, hypercholesterolemic obese patients (BMI = 30.0-35.0 kg/m 2) were 
+randomly divided into 2 groups to receive either probiotic capsules (n = 12) or a matching placebo ( n = 12) groups. The patients in the probiotic 
+group took capsules 2 times a day that contained  Enterococcus faecium, Lactobacillus plantarum, Streptococcus thermophiles, Bifidobacterium 
+lactis, Lactobacillus acidophilus, Bifidobacterium longum (1.5 × 10 9 CFU/g) for 8 weeks. All patients  adhered to a medical nutrition therapy that 
+aimed for a weight loss of 0.5 to 1 kg per week. Anthropometric measurements and body composition were taken at baseline and were monitored 
+every week throughout the study. Blood lipids were assessed at baseline and after the 8-week intervention.
+Results:  after the 8-week dietary intervention, both probiotic and placebo groups showed significant decreased in total cholesterol 
+(-36.50 ± 19.27 vs -25.91 ± 19.25, mg/dl), LDL-C (-(31.75 ± 18.11 vs -31.91 ± 31.00 mg/dl) and TG (-31.83 ± 67.37 vs -28.25 ± 59.09), 
+respectively ( p < 0.05). Body weight, BMI, body fat ratio, and waist circumference also significantly decreased after the dietary intervention 
+in both groups (p < 0.05). Overall, no significant difference was found neither in the reductions of total cholesterol, LDL-C, TG concentrations 
+nor the anthropometric indices between the probiotic and placebo groups ( p > 0.05).
+Conclusions: the results of our study demonstrated that the administration of probiotic supplements for 8 weeks in obese subjects with hyper-
+cholesterolemia had favorable effects on lipid profiles, although there was no beneficial effect compared to the control group. These results 
+indicate that anthropometric indices significantly decreased in response to adherence to the low-calorie diet recommended by dietitians in both 
+the groups. However, conducting more trails with large sample size and longer follow-up time is necessary.
+Keywords: 
+Probiotics. Obesity. 
+Hypercholesterolemic. 
+Blood lipids.
+
+
+--- PAGE 2 ---
+254
+[Nutr Hosp 2025;42(2):253-264]
+S.   Bulut and S. Kabaran
+Resumen
+Objetivo: este ensayo tuvo como objetivo determinar los efectos de la suplementación con probióticos en la pérdida de peso y los perfiles 
+lipídicos en pacientes obesos con hipercolesterolemia.
+Métodos: en este ensayo piloto aleatorizado, doble ciego, controlado con placebo, los pacientes obesos con hipercolesterolemia (IMC  =  30,0- 
+35,0 kg/m2) se dividieron aleatoriamente en 2 grupos para recibir cápsulas probióticas ( n  =  12) o un grupo placebo equivalente (n  =  12). Los 
+pacientes del grupo probiótico tomaron cápsulas 2 veces al día que contenían Enterococcus faecium, Lactobacillus plantarum, Streptococcus 
+thermophiles, Bifidobacterium lactis, Lactobacillus acidophilus, Bifidobacterium longum (1,5 × 10 9 UFC/g) durante 8 semanas. Todos los pacien-
+tes adhirieron a una terapia nutricional médica que tenía como objetivo una pérdida de peso de 0,5 a 1 kg por semana. Se tomaron medidas 
+antropométricas y de composición corporal al inicio del estudio y se controlaron todas las semanas durante todo el estudio. Se evaluaron los 
+lípidos en sangre al inicio y después de la intervención de 8 semanas.
+Resultados: después de la intervención dietética de 8 semanas, tanto el grupo probiótico como el grupo placebo mostraron una disminución 
+significativa en el colesterol total (-36,50 ± 19,27 frente a -25,91 ± 19,25 mg/dl), LDL-C (-31,75 ± 18,11 frente a -31,91 ± 31,00 mg/dl) y TG 
+(-31,83 ± 67,37 frente a -28,25 ± 59,09), respectivamente (p  <  0,05). El peso corporal, el IMC, el índice de grasa corporal y la circunferencia 
+de la cintura también disminuyeron significativamente después de la intervención dietética en ambos grupos ( p  <  0,05). En general, no se 
+encontraron diferencias significativas ni en las reducciones de colesterol total, LDL-C, concentraciones de TG ni en los índices antropométricos 
+entre los grupos probiótico y placebo (p  >  0,05).
+Conclusiones: los resultados de nuestro estudio demostraron que la administración de suplementos probióticos durante 8 semanas en pacientes 
+obesos con hipercolesterolemia tuvo un efecto favorable en el perfil lipídico, aunque no hubo ninguna diferencia en comparación con el grupo 
+control. Estos resultados indican que los índices antropométricos disminuyeron significativamente en respuesta a la adherencia a la dieta baja 
+en calorías recomendada por los dietistas en ambos grupos. Sin embargo, es necesario realizar más estudios con un tamaño de muestra grande 
+y un tiempo de seguimiento prolongado.
+Palabras clave: 
+Probióticos. Obesidad. 
+Hipercolesterolemia. 
+Lípidos en sangre.
+INTRODUCTION
+Obesity is a pathological condition characterized by excessive 
+body mass accumulation, particularly in the abdominal region re-
+sulting from an imbalance between energy intake and expendi -
+ture. Importantly, obesity is a risk factor for many fatal diseases, 
+especially diabetes, cardiovascular diseases, non-alcoholic fatty 
+liver disease, and several cancer types. Obesity is associated with 
+abnormal blood lipid levels (total cholesterol (TC), low-density lipo-
+protein (LDL), high-density lipoprotein (HDL), and triglyceride (TG)) 
+which are the major risk factors for cardiovascular diseases (1).
+A recent meta-analysis observed a linear association between 
+serum cholesterol levels and cardiovascular disease (CVD) mor -
+tality. One of the effective population-based strategies of car -
+diovascular disease prevention is associated with decreased 
+cholesterol levels by improving the nutritional status of the pop -
+ulation (2). Although dietary recommendations and exercise are 
+the primary treatment for hypercholesterolemic patients, these 
+methods can only modestly improve high blood cholesterol levels 
+among patients (3). Owing to the known side effects of statin-like 
+drugs that reduce serum cholesterol levels, there is a growing 
+interest in non-drug therapies to improve the blood cholesterol 
+profile. Probiotics, safe for human consumption and available as 
+functional foods and nutritional supplements, have been shown 
+to reduce serum cholesterol levels, offering a potential non-drug 
+therapy for improving human blood cholesterol levels (4,5). 
+At present, the most widely accepted scientific definition of 
+probiotic determined by WHO (World Health Organization) and 
+FAO (Food and Agriculture Organization of the United Nations) is 
+“live microorganisms that support health conditions in the host 
+when given in appropriate amounts” (6). Several genera are used 
+as probiotics, including  Lactobacillus,  Bifidobacterium,  Bacil -
+lus,  Pediococcus , and several yeasts (7). Probiotics are avail -
+able in various forms, including food and dietary supplements in 
+capsules, tablets, liquids, and powders. Many probiotic supple -
+ments contain 1-10 billion CFU per dose, in addition both spe -
+cific strains and mixtures of specific strains in effective doses 
+are important to make the connection between clinical benefits. 
+Besides these live, active microorganisms can be found in fer -
+mented dairy products such as kefir, yoghurt, and cheese (5). 
+Different types of probiotics have different functions so that hu-
+man health benefits have mainly been demonstrated for specific 
+probiotic strains (7,8). The health benefits of fermented function-
+al foods are expressed either directly through the interactions of 
+ingested live microorganisms with the host (probiotic effect) or 
+indirectly by ingesting microbial metabolites synthesized during 
+fermentation (biogenic effect) (9,10). Among them, dairy prod -
+ucts (particularly fermented milk and yogurt) are by far the most 
+efficient and widely used (11,12). The content and activity of a 
+bioactive compound in dairy-fermented foodstuffs result from the 
+type of food matrix, the individual bacterial strain properties, the 
+processing conditions, and storage time. In this regard, it should 
+be noted that the high bioactive biosynthetic rates observed in 
+culture media might not always be extrapolated to dairy prod -
+ucts. Therefore, factors such as optimal temperature for microbi-
+al growth and viability, food composition or bioactive stability, and 
+shelf-life in the final foodstuff are paramount to reaching the final 
+product’s maximum concentration and activity of probiotics (9).
+Probiotics have been shown to modulate intestinal flora, pre -
+vent the colonization of harmful bacteria in the intestine, strength-
+en the immune system, reduce and prevent symptoms related to 
+diarrhea and constipation, and have beneficial effects on cancer 
+and inflammatory bowel diseases. Thus, consuming probiotics 
+is useful for maintaining health against pathogenic bacteria in 
+the gut microbiota, and maintaining the normal balance of gut 
+microbiota helps to improve digestive health as well as the im -
+mune system. Accordingly, the main evidence-based positive 
+effects of probiotics have been shown to include antimicrobial 
+and antimutagenic activities, also anticarcinogenic properties. 
+The advantages of probiotics are associated with the increase 
+
+
+--- PAGE 3 ---
+255EFFECTS OF PROBIOTIC SUPPLEMENTATION ON BLOOD LIPIDS IN HYPERCHOLESTEROLEMIC OBESE
+PATIENTS: A RANDOMIZED, DOUBLE-BLIND, PLACEBO-CONTROLLED PILOT TRIAL
+[Nutr Hosp 2025;42(2):253-264]
+in bioavailability of macro and micronutrients, mitigation of nutri-
+tional intolerances, beneficial effects on intestinal diseases and 
+Crohn’s disease, alleviation of allergic incidences and decrease 
+of LDL and total cholesterol levels (7,8).
+Supplementation with probiotics significantly reduced TC, 
+LDL-C, and TGs and increased HDL-C in hypercholesteremic 
+patients. Also, probiotic supplementation improved the anthro -
+pometric measurements (11,13). Meta-analysis of randomized 
+clinical trials revealed that probiotic supplementation could be 
+useful in the primary prevention of hypercholesterolemia and 
+may lead to reductions in risk factors for cardiovascular disease 
+(14,15). Similarly, a systematic review study suggests that probi-
+otic supplementation should be indicated as adjunctive treatment 
+for dyslipidemias (11). 
+Probiotics have been suggested to lowering plasma choles -
+terol levels through various mechanisms (5,16). Possible mech -
+anisms than can be attributed to the hypocholesterolemic effect 
+of probiotics in vitro and in vivo studies include; assimilation of 
+dietary cholesterol into the cell surface, binding of cholesterol to 
+the cellular surface, inhibition of de-novo synthesis of cholester-
+ol, disruption of cholesterol micelles, and deconjugation of bile 
+salt and bile salt hydrolase (BSH) activity (17-19). 
+The genera most often administered to groups treated with 
+probiotics were Lactobacillus and Bifidobacterium. Less fre -
+quently than these other genera used were Saccharomyces, 
+Streptococcus, and Enterococcus (11). Probiotic strains, particu-
+larly Lactobacillus, play a significant role in lowering cholesterol 
+levels (4). In a randomized, double-blind placebo-controlled study 
+results showed that both single (Lactobacillus rhamnosus) and 
+combined strains (Lactobacillus acidophilus and Bifidobacterium 
+animalis) of probiotics, which are used regularly for 8 weeks, 
+could be effective in hypercholesterolemic patients to reducing 
+serum lipids (20). No significant differences were observed for 
+any probiotics for serum lipids in a 18-week, randomised, dou -
+ble-blind crossover study with healthy obese adults (21). Avail -
+able evidence indicates that probiotics supplements can signifi -
+cantly reduce serum TC. Furthermore, higher baseline TC, longer 
+intervention time, and probiotics in capsules form might contrib-
+ute to a better curative effect. The present study was conducted 
+to evaluate the effects of combined strains probiotic supplemen-
+tation on weight loss and lipid profiles in obese hypercholesterol-
+emic patients. This randomized, double-blind, placebo-controlled 
+pilot trial were designed to evaluate the effects of probiotics on 
+the lipid profile with Enterococcus faecium, Lactobacillus planta-
+rum, Streptococcus thermophiles, Bifidobacterium lactis, Lacto -
+bacillus acidophilus, Bifidobacterium longum strains.
+MATERIAL AND METHODS
+STUDY DESIGN
+This 2-arm parallel randomized, double-blind, placebo-con -
+trolled trial was conducted in Nutrition and Diet Polyclinic in Özel 
+Konya Hospital lasting 12 weeks, individuals with a total choles-
+terol level of   > 240 mg/dl and a BMI value of 30.0-35.0 kg/m 2 
+who applied to the diet polyclinic for weight loss were included.
+This study protocol was approved by the Ethics Committee of 
+Eastern Mediterranean University (approval date: 21.06.2016, ap-
+proval no: 2016/28-14). The present study was performed accord-
+ing to the principals of the Declaration of Helsinki. Written consent 
+was obtained from each participant prior to the study. All the pa-
+tients were considered for possible enrollment into the study, and 
+they were screened by an expert cardiologist for eligibility.
+STUDY POPULATION 
+The inclusion criteria for this study were: a) being hypercholes-
+terolemic obese patient with total cholesterol  > 240 mg/dl, and 
+having a body mass index (BMI) 30.0-35.0 kg/m 2; b) men and 
+women aged between 25 and 55 years; c) having no infections 
+and no any other metabolic diseases (diabetes, hypertension, 
+coronary heart disease, renal or liver failure, thyroid disease, se-
+vere gastrointestinal disease); d) not using of any regular medi -
+cations; and e) not using omega-3, antioxidants, multivitamin, or 
+polyphenols supplements for the last 3 months prior to the study. 
+Individuals were excluded if they: a) taking statin-type drugs, bile 
+acid sequestrants, cholesterol absorption inhibitors, or nicotin -
+ic acid and drug combination therapy due to hyperlipidemia; b) 
+using alcohol or smoking cigarette; c) taking weight loss drugs 
+or applying recent weight reduction program; and d) being preg-
+nancy, and lactation.
+RANDOMIZATION 
+Each participant was randomly assigned into intervention or 
+placebo group, according to 1:1 equal proportion rule. Random-
+ization assignment was performed using computer-generated 
+random numbers. The randomized allocation sequence, enrolling 
+and allocating participants to interventions were conducted by an 
+independent investigator not involved in the assessment of the 
+participants or in the data collection and analysis. All participants 
+were blinded to treatment allocation (Fig. 1).
+DIETARY INTERVENTION
+In this randomized, double-blind, placebo-controlled trial, hy -
+percholesterolemic obese patients were randomly divided into  
+2 groups to receive either probiotic capsules (n = 13) or a match -
+ing placebo (n = 15) groups. The patients in the probiotic group 
+took capsules 2 times a day (morning and evening after meals) 
+(8) that contained  Enterococcus faecium, Lactobacillus planta -
+rum, Streptococcus thermophiles, Bifidobacterium lactis, Lacto -
+bacillus acidophilus, Bifidobacterium longum  (1.5 × 10 9 cfu/g) 
+for 8 weeks. Participants in the placebo group received a capsule 
+that contained starch but no bacteria.  The appearance of the 
+placebo was indistinguishable in colour, shape, size and pack -
+
+
+--- PAGE 4 ---
+256
+[Nutr Hosp 2025;42(2):253-264]
+aging, smell and taste from the probiotic capsule. All capsules 
+were produced by NOBEL Company (Turkey), that was approved 
+by Food and Drug Administration.  The products were delivered to 
+the dietitian by the company and were given to individuals by the 
+dietitian according to their 2-week usage amounts.
+All patients adhered to a medical nutrition therapy that aimed 
+for a weight loss of 0.5 to 1 kg per week, checked weekly during 
+the visits, by a dietitian. The subjects included in the probiotic and 
+control groups adhered to a medical nutrition therapy (MNT) for 8 
+weeks. Each individual in the research group consisting of obese 
+individuals was given a low-fat, low-cholesterol weight loss diet 
+by a dietitian from the beginning of the study. All obese indi -
+viduals continued a MNT including all food groups. Also, weekly 
+0.5-1 kg body weight loss was targeted in the applied MNT. Ac-
+cordingly, the energy content of the applied diet was calculat -
+ed to be 500 kcal/day less than the total energy requirements 
+of the individuals. The content of the diet applied was consist 
+of 50-55 % carbohydrate, 12-15 % protein, and 25-30 % fat. 
+Macronutrients, micronutrients, the fiber content of the diet were 
+calculated to be similar between groups, and also both groups 
+take a low cholesterol diet. They were advised not to modify their 
+physical activity habits.
+Figure 1. 
+Flow diagram of the study.
+Enrollment
+Excluded (n = 16)
+• Not meeting inclusion criteria (n = 8)
+• Declined to participate (n = 8)
+assessed for eligibility (n = 60)
+randomized ( n = 44)
+Allocation
+allocated to probiotics group (n = 22)
+•  r eceived standard diet program with probiotics 
+(n = 22)
+• Did not receive allocated intervention (n = 0)
+allocated to control group (n = 22)
+• received only standard diet program ( n = 22)
+• Did not receive allocated intervention (n = 0)
+Follow-up
+lost to follow-up 
+Due to illness or drug use (n = 2) 
+Unable to follow dietary recommendation (n = 2)
+Failed to consume probiotics (n = 3) 
+Personal reasons (job/travel) (n = 2)
+Pregnancy (n = 1)
+lost to follow up 
+Due to illness or drug use (n = 2) 
+Unable to follow dietary recommendation (n = 3)
+Personal reasons (job/travel) (n = 3) 
+Hospitalization (n = 1) 
+E×cessive weight loss (n = 1)
+Analysis 
+analysed (n = 12)
+• E×cluded from analysis (n = 0)
+analysed (n = 12)
+• E×cluded from analysis (n = 0)
+S.   Bulut and S. Kabaran
+
+
+--- PAGE 5 ---
+257EFFECTS OF PROBIOTIC SUPPLEMENTATION ON BLOOD LIPIDS IN HYPERCHOLESTEROLEMIC OBESE
+PATIENTS: A RANDOMIZED, DOUBLE-BLIND, PLACEBO-CONTROLLED PILOT TRIAL
+[Nutr Hosp 2025;42(2):253-264]
+DATA COLLECTION 
+Dietary intake
+At baseline, demographic data and general nutritional habits were 
+obtained with a form. To control the confounding effects of dietary in-
+take, 24-h food consumption records (1 regular day) were collected 
+from all individuals, and data were analyzed by a dietitian to obtained 
+macronutrients and micronutrients intake, with Nutrition Data Base 
+Software (version 7.2, Mavi Elma Group, Turkey).
+Anthropometric measurements 
+Anthropometric measurements of the subjects were obtained at 
+the beginning of the study and were monitored every week through-
+out the study. Body weight and body composition were measured 
+by standard protocols in a fasting status and, without shoes and 
+heavy clothing to the nearest 0.1 kg by using Tanita BF-350 body 
+composition analyzer. Height measurement was conducted without 
+shoes to the nearest 0.5 cm with a stadiometer (Medicaplus) in the 
+Frankfort plane position. BMI was calculated by dividing the weight in 
+kilograms by the square of the height in meters.
+Biochemical analysis 
+Blood samples (10 ml) were taken in 12-h overnight fasting 
+state at the beginning and after 8 weeks of intervention. After 
+separation of serum, blood parameters were measured. The 
+levels of triglycerides (TG), total cholesterol (TC), low-density 
+lipoprotein (LDL-C) and high-density lipoprotein (HDL-C) choles -
+terol were determined using a Dimension Xpand Plus integrated 
+clinical chemistry autoanalyzer (Siemens Healthcare Diagnostics, 
+Deerfield, IL, USA) in Özel Konya Hospital biochemistry laboratory.
+STATISTICAL ANALYSIS 
+Statistical analyses were performed using the software pack -
+age of SPSS Statistics for Windows (version 20.0, Statistical 
+Package for the Social Sciences). Non-parametric hypothesis 
+tests were used in the study. quantitative variables were com -
+pared between groups at baseline and at the end of the study 
+using a Mann-Whitney U test. quantitative variables before and 
+after treatment within each group were compared using Wilcox-
+on test. All analyses were performed on participants who com -
+pleted the study duration (15 in probiotics and 15 in the placebo 
+group). All values are reported based on mean  ±  SD, p value    
+<  0.05 was considered as the statistical significance level.
+RESULTS
+Daily dietary intakes of the participants are presented in table I.  
+There were no significant differences in daily total energy and 
+intakes between the probiotics and placebo groups at the be -
+ginning of the intervention ( p > 0.05). There was no difference 
+in the average energy amount recommended from the dietitian 
+between the groups during intervention ( p > 0.05). Also, com -
+parisons showed no significant differences in age, marital sta -
+tus, physical activity level and education status between the two 
+groups at baseline (p > 0.05) (data not shown). 
+Table I. Age, daily dietary intakes and 
+recommended energy of the participants 
+at the beginning of the intervention
+Dietary 
+intakes, 
+mean ± SD
+Probiotics
+(n = 12) p*
+Women
+< 0.05
+   Age (year) 43,88 ±  12,75 43,77 ±  9,39
+   Energy (kcal) 1906,88 ±  308,10 1982,18 ±  315,07
+   Protein (%) 15,49 ±  4,64 15,33 ±  4,74
+   Fat (%) 35,50 ±  7,72 37,88 ±  6,67
+   Carbohydrate (%) 49,01 ±  7,69 46,79 ±  7,14
+   Cholesterol (mg) 246,04 ±  131,09 232,05 ±  144,99
+   Fiber (g) 27,80 ±  6,77 28,96 ±  6,29
+   RE 1777.77 ±  156.66 1733.33 ±  141.42
+Men
+   Age (year) 44,66 ±  12,01 44,00 ±  10,60
+   Energy (kcal) 2229,70 ±  339,02 2191,33 ±  319,20
+   Protein (%) 14,44 ±  6,02 14,96 ±  4,04
+   Fat (%) 38,23 ±  8,21 36,75 ±  6,94
+   Carbohydrate (%) 47,33 ±  7,21 48,295 ±  2,62
+   Cholesterol (mg) 279.23 ±  143.10 262.83 ±  148.06
+   Fiber (g) 30.40 ±  7.00 29.20 ±  6.95
+  RE 2113.33 ±  135.50 2133.33 ±  157.73
+Values are expressed as mean ± (SD). *Mann-Whitney test was used to 
+calculate the p value. RE: recommended daily energy intake from dietitian 
+during intervention.
+Table II shows the effect of probiotic supplementation on lip -
+id profiles of the participants after 8 weeks of intervention. There 
+were no significant differences in lipid profiles between the pro -
+biotics and placebo groups at the beginning of the intervention 
+(p > 0.05). After 8 weeks of probiotics or placebo supplementation, 
+changes in total cholesterol and LDL-C were found to be signifi-
+cant within both groups, notedly in women. No significant change 
+in other parameters (HDL-C, and TG) were observed within groups. 
+Overall, a non-significant decrease in serum TC (-36.50 ± 19.27 
+vs -25.91  ±  19.25,  mg/dl, p  =  0.193), LDL-C concentrations 
+(-31.75  ±  18.11 vs -31.91  ±  31.00  mg/dl, p  =  0.908), TG 
+(-31.83 ± 67.37 vs -28.25 ± 59.09, p = 0.932) were detected fol-
+lowing the supplementation with probiotic, compared to the placebo. 
+Thus, taking probiotics resulted in a non-significant decrease in lipid 
+profiles in comparison with the placebo (Table II).
+
+
+--- PAGE 6 ---
+258
+[Nutr Hosp 2025;42(2):253-264]
+Table II. Effect of probiotics supplementation on lipid profile of the participants  
+after 8 weeks of intervention
+Variable Probiotic group 
+(n = 12)
+Placebo group
+(n = 12) p value**
+TC (mg/dL)
+Men (n = 3)
+  Before 266.33 ±  8.50 276.33 ±  20.79 0.513
+  After 210.66 ±  13.31 245.66 ±  44.09 0.275
+  MD, p value* -55.66 ±  7.63, 0.109 -30.66 ±  28.00, 0.109 0.275
+Women (n = 9)
+  Before 266.22 ±  20.14 271.44 ±  27.12 0.860
+  After 236.11 ±  30.09 247.11 ±  25.23 0.539
+  MD, p value* -30.11 ±  17.68, 0.008 -24.33 ±  17.39, 0.008 0.691
+Total (n = 12)
+  Before 266.25 ±  17.55 272.66 ±  24.86 0.665
+  After 229.75 ±  28.69 246.75 ±  28.58 0.184
+  MD, p value* -36.50 ±  19.27, 0.002 -25.91 ±  19.25, 0.002 0.193
+TG (mg/dL)
+Men (n = 3)
+  Before 213.66 ±  77.39 269.66 ±  220.61 0.827
+  After 141.33 ±  15.50 278.00 ±  220.46 0.827
+  MD, p value* -72.33 ±  64.50, 0.109 -91.66 ±  85.80, 0.109 0.513
+Women (n = 9)
+  Before 197.88 ±  93.3 165.55 ±  45.40 0.596
+  After 168.44 ±  61.42 158.44 ±  37.03 0.269
+  MD, p value* -18.33 ±  66.19, 1.00 -7.11 ±  30.83, 0.779 0.965
+Total (n = 12)
+  Before 201.83 ±  86.49 216.58 ±  117.09  0.453
+  After 170.00 ±  56.69 188.33 ±  112.95 0.371
+  MD, p value* -31.83 ±  67.37,  0.224 -28.25 ±  59.09, 0.130 0.932
+LDL (mg/dL)
+Men (n = 3)
+  Before 176.00 ±  4.00 174.00 ±  41.94 0.513
+  After 139.33 ±  8.08 144.66 ±  58.51 0.827
+  MD, p value* -36.66 ±  10.26, 0.109 -29.33 ±  57.07, 0.593 0.513
+Women (n = 9)
+  Before 183.88 ±  18.38 190.66 ±  27.36 0.331
+  After 153.77 ±  21.91 157.88 ±  21.60 0.566
+  MD, p value* -30.11 ±  20.31, 0.008 -32.77 ±  22.45, 0.008 0.791
+Total (n = 12)
+  Before 181.91 ±  16.17 186.50 ±  30.35 0.272
+  After 150.16 ±  20.09 154.58 ±  31.58 0.435
+  MD, p value* -31.75 ±  18.11, 0.002 -31.91 ±  31.00, 0.008 0.908
+(Continues on next page)
+As shown in table III, BMI, weight, FM, and FM % decreased 
+significantly by the end of study in both probiotics and pla -
+cebo groups, although no statistically significant difference 
+was observed between the groups at baseline and after in -
+tervention ( p  >  0.05). Within-group analyses indicated that 
+anthropometric indices significantly decreased in response to 
+adherence to low-calorie diet recommended by dietitian in 
+both groups.
+S.   Bulut and S. Kabaran
+
+
+--- PAGE 7 ---
+259EFFECTS OF PROBIOTIC SUPPLEMENTATION ON BLOOD LIPIDS IN HYPERCHOLESTEROLEMIC OBESE
+PATIENTS: A RANDOMIZED, DOUBLE-BLIND, PLACEBO-CONTROLLED PILOT TRIAL
+[Nutr Hosp 2025;42(2):253-264]
+Table II (cont.). Effect of probiotics supplementation on lipid profile of the participants  
+after 8 weeks of intervention
+Variable Probiotic group 
+(n = 12)
+Placebo group
+(n = 12) p value**
+HDL
+Men (n = 3)
+  Before 45.00 ±  8.54 38.00 ±  18.68 0.513
+  After 51.66 ±  4.50 38.66 ±  15.50 0.127
+  MD, p value* 6.66 ±  4.16, 0.109 0.66 ±  9.01, 0.655 0.376
+Women (n = 9)
+  Before 51.88 ±  17.50 55.44 ±  11.19 0.424
+  After 49.94 ±  12.00 53.65 ±  14.36 0.965
+  MD, p value* -1.94 ±  8.33, 0.677 -1.78 ±  9.81, 0.635 0.825
+Total (n = 12)
+  Before 50.16 ±  15.67 50.15 ±  15.67 0.506
+  After 50.37 ±  10.44 49.90 ±  15.48 0.686
+  MD, p value* 0.20 ±  8.29, 0.271 -1.17 ±  9.28, 0.689 0.590
+MD: mean difference; HDL: high-density lipoprotein; LDL: low-density lipoprotein; TG: triglyceride; TC: total cholesterol. Values are expressed as mean ± (SD). *Wilcoxon 
+test. **Mann-Whitney test.
+Table III. Effect of probiotic supplementation on anthropometric indices  
+after 8 weeks of intervention 
+Variable Probiotic group 
+(n = 12)
+Placebo group
+(n = 12) p value**
+BMI (kg/m2)
+Man (n = 3)
+  Before 31.33 ±  1.71 30.40 ±  0.36 0.376
+  After 30.43 ±  1.32 28.83 ±  1.04 0.127
+  MD, p value* -0.09 ±  0.65, 0.109 -1.56 ±  1.36, 0.180 0.513
+Women (n = 9)
+  Before 32.70 ±  2.36 32.50 ±  2.97 0.479
+  After 31.57 ±  3.21 31.32 ±  3.52 0.627
+  MD, p value* -1.12 ±  1.28, 0.008 -1.17 ±  1.13, 0.011 0.625
+Total (n = 12)
+  Before 32.35 ±  2.16 31.97 ±  2.71 0.347
+  After 31.29 ±  2.84 30.70 ±  3.23 0.319
+  MD, p value* -1.06 ±  1.13, 0.002 -1.27 ±  1.14, 0.004 0.630
+BW (kg)
+Man (n = 3)
+  Before 93.43 ±  11.47 95.66 ±  5.25 0.827
+  After 90.66 ±  11.15 90.20 ±  2.02 0.513
+  MD, p value* -2.76 ±  2.00, 0.109 -5.46 ±  3.91, 0.109 0.275
+Women (n = 9)
+  Before 79.16 ±  5.00 86.73 ±  15.08 0.354
+  After 76.41 ±  7.00 83.06 ±  15.85 0.596
+  MD, p value* -2.75 ±  2.88, 0.008 -3.66 ±  2.56, 0.008 0.340
+(Continues on next page)
+
+
+--- PAGE 8 ---
+260
+[Nutr Hosp 2025;42(2):253-264]
+Table III (cont.). Effect of probiotic supplementation on anthropometric indices  
+after 8 weeks of intervention 
+Variable Probiotic group 
+(n = 12)
+Placebo group
+(n = 12) p value**
+BW (kg)
+Total (n = 12) 
+  Before 82.73 ± 9.15 88.96 ± 13.66 0.242
+  After 80.05 ± 9.98 84.85 ± 13.92 0.478
+  MD, p value* -2.75 ± 2.60, 0.002 -4.11 ± 2.87, 0.002 0.266
+FM (%)
+Man (n = 3)       
+  Before 31.13 ±  2.83 27.46 ±  0.55 0.052
+  After 28.56 ±  2.50 26.16 ±  2.15 0.275
+  MD, p value* -2.56 ±  1.53, 0.109 -1.30 ±  2.17, 0.285 0.513
+Women (n = 9)
+  Before 40.01 ±  2.65 42.04 ±  5.44 0.331
+  After 38.22 ±  3.85 40.38 ±  4.75 0.566
+  MD, p value* -1.78 ±  1.70, 0.008 -1.65 ±  2.33, 0.068 0.691
+Total (n = 12)
+  Before 37.79 ±  4.76 38.40 ±  8.06 0.832
+  After 35.80 ±  5.56 36.83 ±  7.65 0.630
+  MD, p value* -1.98 ±  1.63, 0.002 -1.56 ±  2.20, 0.029 0.443
+FM (kg)
+Man (n = 3)
+  Before 28.83 ±  1.61 26.20 ±  2.13 0.127
+  After 25.80 ±  1.65 23.60 ±  2.22 0.127
+  MD, p value* -3.03 ±  2.30, 0.109 -5.46 ±  3.91, 0.285 0.827
+Women (n = 9)
+  Before 31.56 ±  3.25 36.91 ±  10.88 0.566
+  After 29.85 ±  5.21 34.18 ±  10.58 0.691
+  MD, p value* -1.71 ±  2.32, 0.021 -3.66 ±  2.56, 0.011 0.170
+Total (n = 12)
+  Before 30.88 ±  3.11 34.23 ±  10.51 0.977
+  After 28.84 ±  4.85 31.54 ±  10.26 1.000
+  MD, p value* -2.04 ±  2.29, 0.006 -2.69 ±  2.34, 0.005 0.347
+FFM (kg)
+Man (n = 3)
+  Before 65.50 ±  11.59 69.13 ±  3.69 0.827
+  After 65.10 ±  10.07 66.80 ±  1.85 0.513
+  MD, p value* -0.40 ±  2.35, 1.00 -2.33 ±  2.01, 0.109 0.275
+Women (n = 9)
+  Before 47.41 ±  3.10 49.48 ±  4.88 0.200
+  After 46.97 ±  3.35 48.87 ±  5.50 0.965
+  MD, p value* -0.43 ±  1.93, 0.407 -0.61 ±  2.70, 0.110 0.566
+Total (n = 12)
+  Before 51.93 ±  9.91 54.40 ±  9.94 0.378
+  After 51.50 ±  9.68 53.35 ±  9.40 0.954
+  MD, p value* -0.42 ±  1.93, 0.455 -1.04 ±  2.58, 0.034 0.266
+MD: mean difference; BMI: body mass index; BW: boyd weight; FM: fat-mass; FFM: fat-free mass. Values are expressed as mean ± (SD). *Wilcoxon test. **Mann-
+Whitney test.
+S.   Bulut and S. Kabaran
+
+
+--- PAGE 9 ---
+261EFFECTS OF PROBIOTIC SUPPLEMENTATION ON BLOOD LIPIDS IN HYPERCHOLESTEROLEMIC OBESE
+PATIENTS: A RANDOMIZED, DOUBLE-BLIND, PLACEBO-CONTROLLED PILOT TRIAL
+[Nutr Hosp 2025;42(2):253-264]
+DISCUSSION
+In the present study receiving 1.5  ×  10 9 CFU/g combined 
+strains probiotic capsules for 8 weeks along with individual -
+ized dietary intervention in hypercholesterolemic obese patients 
+showed significant decreased in total cholesterol, LDL-C and TG 
+concentrations. However, no intergroup statistical differences 
+were determined in the reductions of total cholesterol, LDL-C, TG 
+concentrations between the probiotic and placebo groups. 
+Daily dietary intakes of the participants are presented in table I.  
+There were no significant differences in daily total energy and 
+intakes between the probiotics and placebo groups at the be -
+ginning of the intervention ( p > 0.05). There was no difference 
+in the average energy amount recommended from the dietitian 
+between the groups during intervention (p > 0.05). In this study, 
+when the anthropometric values of male individuals in the pro -
+biotics and control groups were examined before and after the 
+study, no significant statistical difference was found between the 
+values at the beginning and end of the study within the groups 
+(p < 0.05). However, when the pre and post-study values of the 
+female participants in this study were examined, the values were 
+found to be 79.16  ±  5.00 kg and 76.41  ±  7.00 kg, respec -
+tively, in the group receiving probiotics 86.73 ± 15.08 kg and 
+83.06 ± 15.85 kg, respectively, in the group receiving placebo. 
+In addition, a significant decrease was observed between the pre 
+and post-study values within the groups in some of the anthro -
+pometric measurements (p < 0.05) (Table III). This was attributed 
+to the fact that there was no significant difference because the 
+number of male individuals was lower than the number of fe -
+male individuals, while the significant decrease in body weight in 
+women revealed the effectiveness of the low-fat, low-cholesterol 
+weight loss diet given by the dietitian. Regularly monitoring the 
+groups depending on the nutritional treatment by the dietitian 
+led to weight loss in both the probiotics and control groups. The 
+most crucial step in the treatment of obesity is medical nutri -
+tion therapy, and the treatment aims to reduce obesity, and all 
+kinds of complications related to obesity (22). Meckling et al. 
+examined 31 overweight and obese individuals to evaluate the 
+effectiveness of a low-fat diet; the mean weight loss at the end 
+of 10 weeks was 6.8 kg, and the mean decrease in BMI was 
+2.2 kg/m 2 (23). Hu et al. examined the effect of two different 
+diet programs containing low carbohydrate (<  40  g/day) and 
+low fat (< 30 % kcal/day and 7 % saturated fat) for 12 months. 
+The mean weight loss in the low-carbohydrate diet group was  
+5.3 kg, whereas it was 1.5 kg in the low-fat diet group (24). 
+In this study, weight loss in both the study and control groups 
+due to the nutritional treatment created by the dietitian led to 
+improved lipid levels. One of the reasons there was no significant 
+difference in lipid levels between the group receiving probiotics 
+and the group receiving placebo in both men and women was 
+attributed to the improvement in lipid levels caused by the weight 
+loss in the placebo group due to the diet recommended by the 
+dietitian.
+In this study, the mean weight loss in male participants was 
+2.46 kg in the probiotics group and 5.46 kg in the control group. 
+The mean decrease in BMI was 0.90 kg/m2 in the probiotics group 
+and 1.56 kg/m 2 in the control group. Statistically, there was no 
+significant difference between this weight loss and the decrease 
+in BMI values ( p > 0.05). Similarly, the mean weight loss in fe -
+male participants was 2.75 kg in the probiotics group and 3.66 
+kg in the control group. The mean decrease in BMI was 1.12 kg/
+m2 in the probiotics group and 1.17 kg/m 2 in the control group. 
+Statistically, there was no significant difference between this 
+weight loss and the decrease in BMI values (p > 0.05) (Table III).  
+No statistically significant group differences were found in the 
+anthropometric measurements taken at the beginning and end 
+of the study, which was attributed to factors such as the fact that 
+the study was conducted on obese individuals, the study period 
+was limited (8 weeks), and the small sample size.
+One meta-analysis has highlighted the effects of consuming 
+fermented foods and positive impacts on weight maintenance, 
+while separate studies have demonstrated that consumption of 
+fermented yogurts and dairy foods can attenuate the likelihood 
+of developing CVD and type 2 diabetes mellitus (26). Milk hy -
+drolysis generates peptides with satiety or anti-obesity effects. 
+Consumption of fermented milk enriched with probiotics posi -
+tively affects body weight reduction and serum lipids. In a study 
+of 14 healthy individuals, it was observed that consumption of 
+probiotic yoghurt (Lactobacillus acidophilus and Bifidobacterium 
+lacti) caused a significant decrease in serum total cholesterol 
+levels compared with normal yoghurt (p < 0.05) (12). In a study 
+conducted by Larsen et al., 70 obese participants (20 men and 
+50 women) aged between 18 and 55 years were randomly as -
+signed to five groups over an 8-week period. One group con -
+sumed the experimental yoghurt Gaio ®, while the second and 
+third groups were given two newly developed yoghurts fermented 
+with different bacterial cultures. The yoghurt provided to one of 
+these groups was fermented with two strains of S. thermophilus 
+and two strains of L. acidophilus, while the yoghurt given to the 
+other group was fermented with two strains of S. thermophilus 
+and one strain of L. rhamnosus. The fourth group received a pla-
+cebo yoghurt, and the final group was given two daily placebo 
+tablets. When all five treatment groups were compared after ad-
+justing for small changes in body weight, a significant reduction 
+in LDL cholesterol levels (8.4 %, p < 0.05) was observed after  
+8 weeks in the group consuming only Gaio ® product (27). How-
+ever, in fermented milk or yogurt consumption, it is more diffi -
+cult to achieve standardization due to factors such as optimum 
+temperature for microbial growth and viability, food composition, 
+or bioactive stability (9). In this trial, we considered these stan -
+dardization difficulties as a limitation and preferred to use pro -
+biotic strains. Standardization of used products affects quality in 
+research. However, it is thought that planning and conducting 
+this study with a fermented milk product may support similar 
+positive results in obese individuals. We also preferred to use 
+supplement forms to highlight the effects of probiotics on blood 
+lipids in obese individuals. In addition to this, dietary supplements 
+can differ in quality, purity, and consistency, leading to inconsis-
+tencies in dosing. To avoid this, all products are supplied from the 
+same company in this research. 
+
+
+--- PAGE 10 ---
+262
+[Nutr Hosp 2025;42(2):253-264]
+In this study, when the pre- and post-study values of male and 
+female individuals in the probiotics group were compared, it was 
+observed that total cholesterol and LDL cholesterol levels de -
+creased significantly at the end of the study (p < 0.05) (Table II).  
+In addition to this, when HDL levels and triglyceride levels of male 
+and female individuals in the probiotics and control groups were 
+compared before and after the study, no significant statistical 
+difference was found ( p > 0.05) (Table II). While no significant 
+change was observed in HDL levels in 9 of the 11 meta-ana -
+lyzed studies (p = 0.59), no significant change was observed in 
+triglyceride levels in 8 (p = 0.89) (15). In the study conducted by 
+Fuentes et al., no statistically significant differences were found 
+in total cholesterol, triglycerides, LDL, and HDL cholesterol levels 
+between individuals with cholesterol levels >  250  mg/dL who 
+received either a placebo or L. plantarum at baseline and after 
+6 weeks. However, a significant decrease in LDL cholesterol and 
+total cholesterol levels was observed after 12 weeks (4). In a 
+meta-analysis of 11 randomized clinical trials that conducted to 
+evaluate the effects of probiotics on blood lipids, a significant de-
+crease in total cholesterol and LDL values was found (p = 0.001) 
+(14). One of the reasons for these inconsistent results was that 
+the study period was limited to 8 weeks, and another reason was 
+that there was an insufficient number of people during random -
+ization. Again, the same meta-analyse study demonstrated the 
+duration of probiotic supplementation was positively associated 
+with the LDL-C lowering effects of probiotics, also high-dose 
+probiotics more effectively reduced LDL-C levels than low-dose 
+probiotics (14). Based on these studies, it was thought that a 
+significant decrease in blood lipid levels could be seen when the 
+study period was increased above 8 weeks. Also, the effective -
+ness of each probiotic strain depended on the dosage.
+In this study a non-significant decrease in serum TC, TG, and 
+LDL-C concentrations were detected following the supplemen -
+tation with probiotic, compared to the placebo. Thus, taking pro-
+biotics resulted in a non-significant decrease in lipid profiles in 
+comparison with the placebo (Table II). If we discuss this informa-
+tion by emphasizing important studies in the literature; in a study 
+conducted by Jones et al. on hypercholesterolemic adults by giv-
+ing yoghurt containing BSH-active Lactobacillus reuteri NCIMB 
+30242, no statistically significant difference was observed when 
+total cholesterol, LDL, HDL and triglyceride levels were compared 
+between the two groups receiving placebo yoghurt and yoghurt 
+containing L. reuteri after 3 weeks ( p > 0.05). When the differ -
+ences of the same values were compared after 6 weeks, signif -
+icant decreases were observed in total cholesterol ( p = 0.031) 
+and LDL cholesterol ( p = 0.016) levels, whereas no statistically 
+significant difference was observed in HDL ( p = 0.808) and tri -
+glyceride ( p  =  0.230) levels (28). In another study conducted 
+by Jones et al. using a capsule containing Lactobacillus reuteri 
+NCIMB 30242, when total cholesterol, LDL, HDL and triglycer -
+ide levels were compared after 9 weeks, significant decreases 
+were observed in total cholesterol and LDL cholesterol levels 
+(p < 0.001), while no statistically significant difference was ob -
+served in HDL and triglyceride levels (29). While several clinical 
+trials have shown that probiotics have cholesterol-lowering ac -
+tivity (27,30), some studies have shown the opposite result (31). 
+These negative results may be related to poor bacterial strain 
+selection, the study method or the clinical design of the trial, and 
+these studies did not specify BSH activity as a characteristic of the 
+strain administered. In contrast, a BSH-active strain (L. plantarum 
+and L. reuteri) has been shown to significantly reduce total cho -
+lesterol and LDL cholesterol when administered as a synbiotic in 
+humans (32). Probiotics with BSH activity have often been found 
+to have cholesterol-lowering effects in vivo studies (33,34). In a 
+meta-analysis, it was determined that when yoghurt containing 
+two strains of S. thermophilus and E. faecium was given, these 
+strains showed a cholesterol-lowering effect (35). These results 
+suggest that the use of probiotics may improve lipid metabolism 
+by decreasing total and LDL cholesterol concentrations. How -
+ever, both the efficacy of probiotics for cholesterol lowering and 
+safety should be investigated further in well-designed clinical tri-
+als. The findings of recent meta-analysis suggest that probiotics 
+can enhance SCFA content in the body, improve oxidative stress 
+and inflammation, and effectively alleviate hyperlipidemia.  The 
+primary lipid-lowering mechanisms of probiotics encompass:  
+a) the production of BSH, which enhances cholesterol excretion; 
+b) the promotion of cholesterol catabolism and the inhibition of 
+cholesterol synthesis in the body via key intestinal metabolites, 
+specifically SCFAs; and c) the modulation of immune regulation 
+and the intestinal barrier through signaling molecules (36). In a 
+recent study results demonstrated that regular and strain-spe -
+cific use of probiotics (probiotics containing Lactobacillus or Bi-
+fidobacterium) could be effective to reducing plasma lipid level 
+in hypercholesterolemic patients (20). In this study, a probiotic 
+product supplement containing 1.5 × 10 9 CFU active probiotic 
+microorganisms ( Lactobacillus acidophilus, Enterococcus fae -
+cium, Lactobacillus plantarum, Streptococcus thermophillus, 
+Bifidohacterium lactis, Bifidobacteriurn longum ) was used. Also 
+the other reason for inconsistent results may attributed to the 
+different type of strains that have been used (11). Finally, the 
+confusing and interconnected reasons for this study’s results be-
+tween groups may be attributed to the different types of probiotic 
+strains used, doses of probiotics, delivery matrix, study duration, 
+and study population. However, not all probiotic interventions are 
+effective against dyslipidemia. The results are controversial and 
+depend on several factors such as probiotic strain, dose, dura -
+tion of the treatment, lifestyle changes, etc. Additional studies 
+are highly recommended on the cholesterol-lowering property of 
+probiotics, which could help to reduce the risk of CVD and other 
+dyslipidemia-associated health issues.
+CONCLUSION
+In this randomized controlled clinical trial, dietary supplemen -
+tation of probiotics for 8 weeks had no prominent favorable effect 
+on serum total cholesterol, LDL-C, TG levels, and body weight 
+loss in obese subjects with hyperlipidemia. However, further 
+well-designed large sample size randomized controlled trials, 
+with longer supplementation durations are needed for a stronger 
+S.   Bulut and S. Kabaran
+
+
+--- PAGE 11 ---
+263EFFECTS OF PROBIOTIC SUPPLEMENTATION ON BLOOD LIPIDS IN HYPERCHOLESTEROLEMIC OBESE
+PATIENTS: A RANDOMIZED, DOUBLE-BLIND, PLACEBO-CONTROLLED PILOT TRIAL
+[Nutr Hosp 2025;42(2):253-264]
+assessment of the lipid-modulating properties of probiotics on 
+obese subjects. Thus, more specific data regarding the duration 
+and dosage of probiotic use in obese individuals may reveal sig-
+nificant beneficial effects on health.
+LIMITATIONS
+Some limitations might explain the contradictory findings 
+of the present trial. Firstly, the reduced number of patients is 
+one of the major limitations of this study, this is probably the 
+reason why there are no differences in most of the parameters 
+evaluated. Secondly, the short follow-up time is another lim -
+itation of the study. Moreover, doses of probiotics and type of 
+strains that have been used may attributed to the inadequate 
+results. Additionally, it was emphasized that the efficacy of 
+probiotics would be strengthened by increasing the treatment 
+period to ≥ 8 weeks. Also, during the regulation of nutritional 
+intake, the individual declaration is taken into consideration so 
+that, unbalanced and higher consumption amounts may also 
+affect the results.
+REFERENCES
+1. Lingvay I, Cohen RV, Rou  X   CW. Obesity in Adults. Lancet 
+2024;404(10456):972-87. DOI: 10.1016/S0140-6736(24)01210-8
+2. Jung E, Kong SY, Ro YS, Ryu HH, Shin SD. Serum Cholesterol Levels and 
+Risk of Cardiovascular Death: A Systematic Review and a Dose-Response 
+Meta-Analysis of Prospective Cohort Studies. Int J Environ Res Public Health 
+2022;19(14):8272. DOI: 10.3390/ijerph19148272
+3. Arnett DK, Blumenthal RS, Albert MA, Buroker AB, Goldberger ZD, et al. 2019 
+ACC/AHA Guideline on the Primary Prevention of Cardiovascular Disease: A 
+Report of the American College of Cardiology/American Heart Association 
+Task Force on Clinical Practice Guidelines.  Circulation 2019;140(11):596-
+646. DOI: 10.1161/CIR.0000000000000678
+4. Fuentes MC, Lajo T, Carrión JM, Cuñé J. Cholesterol-lowering efficacy 
+of Lactobacillus plantarum CECT 7527,7528 and 7529 in hypercho -
+lesterolaemic adults. Br J Nutr 2013;109(10):1866-72. DOI: 10.1017/
+S000711451200373X
+5. Maftei NM, Raileanu CR, Balta AA, Ambrose L, Boev M, Marin DB, et al. 
+The Potential Impact of Probiotics on Human Health: An Update on Their 
+Health-Promoting Properties. Microorganisms 2024;12(2):234. DOI: 
+10.3390/microorganisms12020234
+6. Fao Food and Nutrition Paper 85, Word Health Organization Food and Agri-
+culture Organization of the United Nations Rome. 2006. Health and Nutrition 
+Properties of Probiotics in Food including Powder Milk with Live Lactic Acid 
+Bacteria Report of a Joint FAO/WHO Expert Consultation on Evaluation of 
+Health and Nutritional Properties of Probiotics in Food including Powder Milk 
+with Live Lactic Acid Bacteria. Argentina. Available from:  http://www.fao.
+org/3/a-a0512e.pdf. (23.12.2023).
+7. Das TK, Pradhan S, Chakrabarti S, Mondal KC, Ghosh K. Current status of pro-
+biotic and related health benefits. Applied Food Research 2022;2(2):100185. 
+DOI: 10.1016/j.afres.2022.100185
+8. Roobab U, Batool Z, Manzoor MF, Shabbir MA, Khan MR, Aadil RM. Sources, 
+formulations, advanced delivery and health benefits of probiotics. Curr Opin 
+Food Sci 2020;32:17-28. 
+9. Linares DM, Gómez C, Renes E, Fresno JM, Tornadijo ME, Ross RP , et al. 
+Lactic Acid Bacteria and Bifidobacteria with Potential to Design Natural Bio-
+functional Health-Promoting Dairy Foods. Front Microbiol 2017;18(8):846. 
+DOI: 10.3389/fmicb.2017.00846
+10. Gobbetti M, Cagno R, Agnelis M. Functional microorganisms for func -
+tional food quality. Crit Rev Food Sci Nutr 2010;50(8):716-27. DOI: 
+10.1080/10408398.2010.499770
+11. Gadelha CJMU, Bezerra AN. Effects of probiotics on the lipid profile: systematic 
+review. J Vasc Bras 2019;9(18):e20180124. DOI: 10.1590/1677-5449.180124
+12. Ataie-Jafari A, Larijani B, Alavi Majd H, Tahbaz F.  Cholesterol-lowering effect 
+of probiotic yogurt in comparison with ordinary yogurt in mildly to moder -
+ately hypercholesterolemic subjects. Ann Nutr Metab 2009;54(1):22-7. DOI: 
+10.1159/000203284
+13. Sivamaruthi BS, Kesika P , Chaiyasut C. A Mini-Review of Human Studies 
+on Cholesterol-Lowering Properties of Probiotics. Scientia Pharmaceutica 
+2019;87(4):26. DOI: 10.3390/scipharm87040026
+14. Shimizu M, Hashiguchi M, Shiga T, Tamura HO, Mochizuki M. Meta-Analysis: 
+Effects of Probiotic Supplementation on Lipid Profiles in Normal to Mildly 
+Hypercholesterolemic Individuals. PLoS One 2015;10(10):e0139795. DOI: 
+10.1371/journal.pone.0139795
+15. Jiang J, Wu C, Zhang C, Zhao J, Yu L, Zhang H, et al. Effects of probiotic 
+supplementation on cardiovascular risk factors in hypercholesterolemia: A 
+systematic review and meta-analysis of randomized clinical trial. J Funct 
+Foods 2020;74:104177. DOI: 10.1016/j.jff.2020.104177
+16. Ishimwe N, Daliri EB, Lee BH, Fang F, Du G. The perspective on cholesterol 
+lowering mechanisms of probiotics. Mol Nutr Food Res 2015;59(1):94-105. 
+DOI: 10.1002/mnfr.201400548
+17. Degirolamo C, Rainaldi S, Bovenga F, Murzilli S, Moschetta A. Microbiota 
+modification with probiotics induces hepatic bile acid synthesis via downregu-
+lation of the Fxr-Fgf15 axis in mice. Cell Rep 2014;7(1):12-8. DOI: 10.1016/j.
+celrep.2014.02.032
+18. Liong MT, Shah NP . Acid and bile tolerance and cholesterol removal ability 
+of lactobacilli strains. J Dairy Sci 2005;88 (1): 55-66. DOI: 10.3168/jds.
+S0022-0302(05)72662-X
+19. El-Waseif AA,  Gaber HS, Ewais EA. Hypocholesterolemic Operating Param -
+eters of Novel Probiotics In vitro. Res J Pharm Technol 2021;14(10):5197-1. 
+DOI: 10.52711/0974-360X.2021.00904
+20. Okburan G, Ba ş M, Ogmen S. A randomized double-blind controlled clini -
+cal trial demonstrating efficacy of different probiotic strains on serum lipids 
+and glycemic biomarker. Nutr Hosp 2024;41(4):793-803. DOI: 10.20960/
+nh.04724
+21. Culpepper T, Rowe CC, Rusch CT, Burns AM, Federico AP , Girard SA, et 
+al. Three probiotic strains exert different effects on plasma bile acid pro -
+files in healthy obese adults: randomised, double-blind placebo-controlled 
+crossover study. Beneficial Microbes 2019;10(5):497-509. DOI: 10.3920/
+BM2018.0151
+22. Hassapidou M, Vlassopoulos A, Kalliostra M, Govers E, Mulrooney H, Ells 
+L, et al. European Association for the Study of Obesity Position State -
+ment on Medical Nutrition Therapy for the Management of Overweight and 
+Obesity in Adults Developed in Collaboration with the European Federa -
+tion of the Associations of Dietitians. Obes Facts 2023;16(1):11-28. DOI: 
+10.1159/000528083
+23. Meckling A, O’Sullivan C, and Saar D. Comparison of a Low-Fat Diet to 
+a Low-Carbohydrate Diet on Weight Loss, Body Composition, and Risk 
+Factors for Diabetes and Cardiovascular Disease in Free-Living, Overweight 
+Men and Women. J Clin Endocrinol Metabol 2004;89(6):2717-23. DOI: 
+10.1210/jc.2003-031606
+24. Hu T, Yao L, Reynold K. The Effects of a Low-Carbohydrate Diet vs. A Low-
+Fat Diet on Novel Cardiovascular Risk Factors: A Randomize Controlled Trial. 
+Nutrients 2015;7(9):7978-94.
+25. Park S, Bae JH. Probiotics for weight loss: a systematic review 
+and meta-analysis. Nutr Res 2015;35(7):566-75. DOI: 10.1016/j.
+nutres.2015.05.008
+26. Mathur H, Beresford T, Cotter PD. Health Benefits of Lactic Asid Bac -
+teria (LAB) Fermentates. Nutrients 2020;12(6):1679. DOI: 10.3390/
+nu12061679
+27. Larsen LA, Raben A, Haulrik N, Hansen AS, Manders M and Astrop A. Effect 
+of 8 week intake of probiotic milk products on risk factors for cardiovascular 
+diseases. Eur J Clin Nutrit 2000;54(4):288-97.
+28. Jones ML, Martoni CJ, Parent M, and Prakash S. Cholesterol-lowering 
+efficacy of a microencapsulated bile salt hydrolase-active Lactobacillus 
+reuteri NCIMB 30242 yoghurt formulation in hypercholesterolaemic adults. 
+Br J Nutr 2012;107(10):1505-13. DOI: 10.1017/S0007114511004703
+29. Jones ML. Martoni CJ. Prakash S. Cholesterol lowering and inhibition of sterol 
+absorption by Lactobacillus reuteri NCIMB 30242: a randomized controlled 
+trial. Eur J Clin Nutr 2012;66(11):1234-41. DOI: 10.1038/ejcn.2012.126
+30. Schaafsma G, Meuling WJA, van Dokkum W, and Bouley C. Effects of a 
+milk product, fermented by Lactobacillus acidophilus and with fructo-ol -
+igosaccharides added, on blood lipids in male volunteers. Eur J Clin Nutr 
+1998;52(6):436-40.
+
+
+--- PAGE 12 ---
+264
+[Nutr Hosp 2025;42(2):253-264]
+31. Lewis SJ, Burmeister S. A double-blind placebo-contralled study of the 
+effects of Lactobacillus acidophilus on plasma lipids. Eur J Clin Nutr 
+2005;59(6):776-80. DOI: 10.1038/sj.ejcn.1602139
+32. Ooi LG, Ahmad R, Yuen KH, Liong MT. Lactobacillus gasseri CHO-220 and 
+inulin reduced plasma total cholesterol and low-density lipoprotein cholesterol 
+via alteration of lipid transporters. J Dairy Sci 2010;93(11):5048-58. DOI: 
+10.3168/jds.2010-3311
+33. Ha CG, Cho JK, Chai YG, Ha YA, Shin SH. Purification and characterization of 
+bile salt hydrolase from Lactobacillus plantarum CK 102. J Microbiol Biotech 
+2006;16(7):1047-52.
+34. Park YH, Jong GK, Young WS, Kim SH, Whang KY. Effect of dietary inclusion 
+of Lactobacillus acidophilus ATCC 43121 on cholesterol metabolism in rats. 
+J Microbiol Biotech 2007;17(4):655-62.
+35. Agerholm-Larsen L, Bell ML, Grunwald GK, Astrup A. The effect of a 
+probiotic milk product on plasma cholesterol: a meta-analysis of short-
+term intervention studies. Eur J Clin Nutr 54(11):856-60. DOI: 10.1038/
+sj.ejcn.1601104
+36. Yao Y, Hong q, Ding S, Cui J, Li W, Zhang J, et al. Meta-analysis of the effects 
+of probiotics on hyperlipidemia. Curr Res Food Sci 2024;9:100885. DOI: 
+10.1016/j.crfs.2024.100885
+S.   Bulut and S. Kabaran

@@ -1,0 +1,3 @@
+evidence_id,source_database,source_accession,title,outcome_domain,suggested_text,suggested_p_value,final_value,final_unit,final_direction,comparison,time_point,p_value_confirmed,sample_size_confirmed,extraction_source,reviewer,review_status,reviewer_note
+PMID:1,PubMed,1,Trial,weight,Body weight reduced,p < 0.05,-1.2,kg,decrease,probiotic_vs_placebo,12 weeks,0.04,66,abstract,fg,extracted,ok
+PMID:1,PubMed,1,Trial,BMI,BMI pending,,,decrease,probiotic_vs_placebo,12 weeks,,66,abstract,fg,pending,not reviewed

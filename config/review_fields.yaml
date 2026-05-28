@@ -1,0 +1,47 @@
+review_status_values:
+  - pending
+  - extracted
+  - not_reported
+  - excluded
+
+outcome_review_fields:
+  - evidence_id
+  - source_database
+  - source_accession
+  - title
+  - outcome_domain
+  - suggested_text
+  - suggested_p_value
+  - final_value
+  - final_unit
+  - final_direction
+  - comparison
+  - time_point
+  - p_value_confirmed
+  - sample_size_confirmed
+  - extraction_source
+  - reviewer
+  - review_status
+  - reviewer_note
+
+intervention_review_fields:
+  - evidence_id
+  - source_database
+  - source_accession
+  - title
+  - intervention_component
+  - suggested_intervention
+  - suggested_duration
+  - suggested_cfu
+  - suggested_dose
+  - final_species
+  - final_strain
+  - final_total_CFU_per_day
+  - final_log10_CFU_per_day
+  - final_prebiotic_type
+  - final_prebiotic_dose_g_day
+  - final_duration_weeks
+  - final_dosage_form
+  - reviewer
+  - review_status
+  - reviewer_note

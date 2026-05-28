@@ -1,0 +1,4 @@
+evidence_id,evidence_type,source_database,source_accession,source_url,doi,pmid,title,year,journal,study_design,data_field_supported,extraction_note,curator,extraction_date
+PMID:1,literature,PubMed,1,https://pubmed.ncbi.nlm.nih.gov/1/,10.1000/a,1,"A randomized, double-blind, placebo-controlled study of Lactobacillus gasseri for weight loss.",2024,Journal,needs_manual_review,evidence_registry,Auto,curator,2026-05-26
+PMID:2,literature,PubMed,2,https://pubmed.ncbi.nlm.nih.gov/2/,10.1000/b,2,Systematic review and meta-analysis of probiotics in obesity.,2024,Journal,needs_manual_review,evidence_registry,Auto,curator,2026-05-26
+NCT:NCT1,clinical_trial,ClinicalTrials.gov,NCT1,https://clinicaltrials.gov/study/NCT1,,,Probiotic obesity trial,2024,,clinical_trial_registry,intervention_metadata;clinical_outcome,Auto,curator,2026-05-26

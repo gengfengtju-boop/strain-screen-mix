@@ -1,0 +1,2 @@
+evidence_id,evidence_type,source_database,source_accession,source_url,doi,pmid,title,year,journal,study_design,data_field_supported,extraction_note,curator,extraction_date
+EV002,literature,PubMed,99999999,https://pubmed.ncbi.nlm.nih.gov/99999999/,10.0000/other,99999999,Other evidence,2024,Example Journal,RCT,strain_function_matrix,Extracted from paper table,curator_a,2026-05-26

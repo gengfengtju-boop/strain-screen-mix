@@ -1,0 +1,910 @@
+
+
+--- PAGE 1 ---
+TYPE Clinical T rial
+PUBLISHED /zero.tnum/nine.tnum May /two.tnum/zero.tnum/two.tnum/five.tnum
+DOI /one.tnum/zero.tnum./three.tnum/three.tnum/eight.tnum/nine.tnum/fnut./two.tnum/zero.tnum/two.tnum/five.tnum./one.tnum/five.tnum/four.tnum/two.tnum/one.tnum/four.tnum/five.tnum
+OPEN ACCESS
+EDITED BY
+Hengyi Xu,
+Nanchang University, China
+REVIEWED BY
+Qianglai Tan,
+Xiamen Medical College, China
+Jiamin Dang,
+Northwest A&F University, China
+*CORRESPONDENCE
+Zhen Li
+qilulizhen@sdu.edu.cn
+Lixiang Li
+Lilixiang@sdu.edu.cn
+†These authors have contributed equally to
+this work and share ﬁrst authorship
+RECEIVED /one.tnum/zero.tnum December /two.tnum/zero.tnum/two.tnum/four.tnum
+ACCEPTED /one.tnum/zero.tnum April /two.tnum/zero.tnum/two.tnum/five.tnum
+PUBLISHED /zero.tnum/nine.tnum May /two.tnum/zero.tnum/two.tnum/five.tnum
+CITATION
+Wang R, Zhang G, Wang X, Xing Z, Li Z and Li L
+(/two.tnum/zero.tnum/two.tnum/five.tnum) Eﬀect ofBacillus coagulans BC/nine.tnum/nine.tnum
+supplementation on body weight and gut
+microbiota in overweight and obese
+individual: a randomized, double-blind,
+placebo-controlled study.
+Front. Nutr. /one.tnum/two.tnum:/one.tnum/five.tnum/four.tnum/two.tnum/one.tnum/four.tnum/five.tnum.
+doi: /one.tnum/zero.tnum./three.tnum/three.tnum/eight.tnum/nine.tnum/fnut./two.tnum/zero.tnum/two.tnum/five.tnum./one.tnum/five.tnum/four.tnum/two.tnum/one.tnum/four.tnum/five.tnum
+COPYRIGHT
+© /two.tnum/zero.tnum/two.tnum/five.tnum Wang, Zhang, Wang, Xing, Li and Li.
+This is an open-access article distributed
+under the terms of the
+Creative Commons
+Attribution License (CC BY) . The use,
+distribution or reproduction in other forums is
+permitted, provided the original author(s) and
+the copyright owner(s) are credited and that
+the original publication in this journal is cited,
+in accordance with accepted academic
+practice. No use, distribution or reproduction
+is permitted which does not comply with
+these terms.
+Eﬀect of Bacillus coagulans BC/nine.tnum/nine.tnum
+supplementation on body weight
+and gut microbiota in overweight
+and obese individual: a
+randomized, double-blind,
+placebo-controlled study
+Rui Wang/one.tnum,/two.tnum,/three.tnum,/four.tnum†, Guoming Zhang /one.tnum,/two.tnum,/three.tnum,/four.tnum†, Xiaoya Wang /one.tnum,/two.tnum,/three.tnum,/four.tnum,
+Zefeng Xing/one.tnum,/two.tnum,/three.tnum,/four.tnum, Zhen Li /one.tnum,/two.tnum,/three.tnum,/four.tnum* and Lixiang Li /one.tnum,/two.tnum,/three.tnum,/four.tnum*
+/one.tnumDepartment of Gastroenterology, Qilu Hospital of Shandong Universi ty, Jinan, Shandong, China,
+/two.tnumShandong Provincial Clinical Research Center for Digestive Dis ease, Jinan, Shandong, China,
+/three.tnumLaboratory of T ranslational Gastroenterology, Qilu Hospital of Shan dong University, Jinan, Shandong,
+China, /four.tnumRobot Engineering Laboratory for Precise Diagnosis and Therapy of GI T umor, Qilu Hospital of
+Shandong University, Jinan, Shandong, China
+Introduction: Probiotic supplementation is a safe and eﬀective way to reduce
+overweight and obesity by regulating the gut microbiota. The Bacillus coagulans
+strain BC/nine.tnum/nine.tnum is derived from humans and has various probiotic-related, acid
+resistance, bile salt resistance, and adhesion-related domai ns in the genome.
+This study aimed to assess the eﬀects of BC/nine.tnum/nine.tnum on the gut microbiota, body
+weight and lipid proﬁles of overweight and obese individuals.
+Methods: A total of /six.tnum/six.tnum adult individuals were randomly assigned to a probiotic
+group (supplemented with /five.tnum× /one.tnum/zero.tnum/nine.tnumcolony-forming units of BC/nine.tnum/nine.tnum per day
+along with /three.tnum g of maltodextrin) and placebo group (supplemented with /three.tnum g of
+maltodextrin daily) in a /one.tnum:/one.tnum ratio.
+Results: After /eight.tnum weeks of oral administration, BC/nine.tnum/nine.tnum intervention signiﬁcantly
+decreased the body weight of overweight individual ( P < /zero.tnum./zero.tnum/one.tnum). Weight loss was
+signiﬁcantly greater in the probiotic group than in the placeb o group ( P < /zero.tnum./zero.tnum/five.tnum).
+No signiﬁcant diﬀerences were observed in lipid proﬁles between two groups.
+The microbiota analysis revealed that BC/nine.tnum/nine.tnum intervention signiﬁcantly improved
+the β-diversity at week /four.tnum. The genusParabacteroides was negatively correlated
+with body weight and was found to be enriched in the BC/nine.tnum/nine.tnum group.
+Discussion: These ﬁndings suggest that B. coagulans strain BC/nine.tnum/nine.tnum could be a
+beneﬁcial candidate for modulating the gut microbiota and improve body weight
+management for overweight individuals.
+Clinical trial registration:
+ClinicalT rials.gov, identiﬁer NCT/zero.tnum/six.tnum/zero.tnum/seven.tnum/seven.tnum/three.tnum/eight.tnum/three.tnum.
+KEYWORDS
+B. coagulans, gut microbiota, overweight, obese, probiotics
+/one.tnum Introduction
+Obesity has become a signiﬁcant global health concern owing to the impact of an
+unhealthy lifestyle on individuals’ wellbeing, driven by rapid economic growth in the
+recent decades (
+1, 2). Overweight and obesity are ranked as the ﬁfth leading causes
+of mortality worldwide ( 3). Obesity-related deaths are primarily attributed to chronic
+Frontiers in Nutrition /zero.tnum/one.tnum frontiersin.org
+
+
+--- PAGE 2 ---
+Wang et al. /one.tnum/zero.tnum./three.tnum/three.tnum/eight.tnum/nine.tnum/fnut./two.tnum/zero.tnum/two.tnum/five.tnum./one.tnum/five.tnum/four.tnum/two.tnum/one.tnum/four.tnum/five.tnum
+metabolic diseases such as type 2 diabetes, insulin resistance, non-
+alcoholic fatty liver disease, hyperlipidemia, and cardiovascular
+diseases (
+3). China is one of the most populous countries
+worldwide. The expected increase in the prevalence of obesity
+and overweight among Chinese adults is predicted to reach 70.5%
+by 2030, which will aﬀect approximately 810 million individuals
+and remains an urgent problem (
+4). Therefore, safe and eﬀective
+methods to combat obesity are of great signiﬁcance and need to
+be found.
+The gut microbiota plays an essential role in human health
+(
+5) and is modulated by multiple factors in the human body,
+including diet, genetics, antibiotics, probiotics, and physical ﬁtness
+(
+6, 7). Obesity has been associated with gut microbiota dysbiosis,
+including changes in the diversity and community of the gut
+microbiota, and the presence and abundance of particular bacteria
+(
+8–10). Probiotics can provide anti-obesity eﬀects by inhibiting
+the diﬀerentiation of preadipocytes, maintaining the balance of
+T helper (Th)1/Th2 cytokines, changing the composition of the
+intestinal microbiota, reducing the lipid level and regulating
+energy metabolism. Accumulating evidence suggests that probiotic
+supplementation is a safe and eﬀective method to reduce
+overweight and obesity by modulating the gut microbiota (
+11).
+Probiotics contain various microorganisms, including strains
+of genus Lactobacillus, Biﬁdobacterium, Bacillus, Pediococcus,
+Clostridium, Saccharomyces etc. Lactic acid bacteria are currently
+the most common microbial type used as probiotics and have
+a variety of health beneﬁts, such as regulation of the immune
+system and improvement of intestinal function. Bacillus coagulans
+(also named Weizmannia coagulans) BC99 is a high-performance
+lactic acid-producing bacterium with high viability and stability,
+and it provides numerous health beneﬁts to the host, including
+intestinal ﬂora balance regulation, intestinal motility restoration,
+inhibition of pathogen growth and adhesion, and short chain fatty
+acids production (
+12, 13). The clinical trial has found that B.
+coagulans strain BC99 can improve constipation symptoms and
+regulate intestinal ﬂora in adults with chronic constipation. No
+obvious adverse reactions were observed in all patients, conﬁrming
+the safety of B. coagulans strain BC99 (
+14).
+Complete-genome sequencing of BC99 revealed that its
+genome contains probiotic-related, acid resistance, bile salt
+resistance, and adhesion-related domains (
+15). This suggests that
+BC99 may have the ability to possess the potential of inhibiting
+fat synthesis. Previous studies have revealed that the BC99
+supplementation may beneﬁt individuals with obesity by reducing
+visceral fat mass (
+16, 17). However, few studies have investigated the
+eﬀects of BC99 supplementation on obesity management. In this
+study, we aimed to assess the eﬀects of BC99 on the gut microbiota,
+body weight and lipid proﬁles of overweight and obese individuals.
+/two.tnum Materials and methods
+/two.tnum./one.tnum Participants
+A total of 85 overweight and obese subjects were recruited at
+Qilu Hospital of Shandong University between September 2023
+and August 2024 under the following inclusion criteria: (1) being
+between the ages of 18 and 65, and (2) having a body mass
+index (BMI) above 24 30 kg/m 2. The Working Group on Obesity
+in China recommended BMI cutoﬀs of 24.0 and 28.0 to deﬁne
+overweight and obesity, respectively (
+18) (3) no reduction in food
+intake and ability to accept dietary interventions; (4) commitment
+to complying with research requirements and procedures; and (5)
+having signed informed consent forms. The exclusion criteria were
+as follows: (1) use of antibiotics, probiotics or any other drugs
+which could inﬂuence the gut microbiota 3 months prior to the
+study; (2) cessation of provision of fecal samples for testing or
+using other drugs midway through the trial; (3) obesity caused
+by drugs; (4) being pregnant or lactating; (5) neuroendocrine
+system diseases; (6) previous history of gastrointestinal diseases
+(such as irritable bowel syndrome, celiac disease, inﬂammatory
+bowel disease or other diseases) and surgical history; (7) hereditary
+obesity, metabolic obesity, endocrine obesity, any disease aﬀecting
+liver ﬁbrosis or steatosis; (8) change in diet habits during the study
+period; (9) severe diseases, such as diseases aﬀecting cardiovascular,
+cerebrovascular, as well as hematopoietic systems; (10) being in a
+condition that does not qualify for study participation, as judged by
+the researcher.
+/two.tnum./two.tnum Study design and intervention
+This single-center, randomized, double-blind, placebo-
+controlled trial was approved by the Medical Ethics Committee
+of the Qilu Hospital of Shandong University (approval number:
+KYLL-202307-008). All the participants were fully informed of the
+possible beneﬁts and potential risks of participating in this trial,
+and voluntarily signed a written informed consent form. The trial
+is registered at
+ClinicalTrials.gov (accession ID: NCT06077383).
+Eligible patients were randomly assigned to a probiotic or
+placebo group in a 1:1 ratio. The randomization was carried
+out via a random number sequence obtained using SAS
+R⃝
+9.4
+(SAS Institute Inc., Cary, NC, USA). The participants and clinical
+researchers were blinded to the randomization and the products
+used in the study.
+The probiotic group was supplemented with the probiotic
+(B. coagulans BC99, 5 × 109 CFU/day and maltodextrin, 3
+g/day), and the placebo group was supplemented with a placebo
+(3 g maltodextrin) once daily for 8 weeks. To ensure double
+blinding, the probiotic and placebo were prepared by WeCare
+Probiotics Co., Ltd., Jiangsu, P.R. China, using the same packet.
+The participants were requested to maintain their diet and exercise
+and were instructed not to consume any other probiotics or dietary
+supplements containing probiotics.
+Eligible participants were identiﬁed during the screening period
+(day 0) and their baseline demographic data were collected.
+Subsequently, the participants received probiotic or placebo
+treatment (day 1 to day 56, week 8).
+/two.tnum./three.tnum Outcomes
+The primary outcomes were changes in gut microbes at
+baseline, week 4 and week 8. The secondary outcomes were
+changes in body weight and blood lipid proﬁles. Body weight
+Frontiers in Nutrition /zero.tnum/two.tnum frontiersin.org
+
+
+--- PAGE 3 ---
+Wang et al. /one.tnum/zero.tnum./three.tnum/three.tnum/eight.tnum/nine.tnum/fnut./two.tnum/zero.tnum/two.tnum/five.tnum./one.tnum/five.tnum/four.tnum/two.tnum/one.tnum/four.tnum/five.tnum
+FIGURE /one.tnum
+Flow diagram showing the study design.
+was recorded on day 0, week 4, and week 8. Total cholesterol
+(TC), triglyceride (TG), low-density lipoprotein cholesterol (LDL-
+C), and high-density lipoprotein cholesterol (HDL-C) levels were
+measured using a Roche Cobas 8,000 modular analyzer system
+(Roche Diagnostics, IN, USA).
+/two.tnum./four.tnum Fecal samples collection
+The fecal samples of the participants were collected before the
+start of treatment (week 0), on the day 28 (week 4) and on day 56
+(week 8) in disposable sterile fecal collection tubes and immediately
+frozen at − 80◦C.
+/two.tnum./five.tnum DNA extraction, polymerase chain
+reaction (PCR) ampliﬁcation, and
+sequencing
+The genomic DNA from the stool samples was extracted using
+the E.Z.N.A. R⃝ soil DNA Kit (Omega Bio-tek, Norcross, GA, U.S.)
+and measured via 1.0% agarose gel electrophoresis as well as
+a NanoDrop R⃝ ND-2000 spectrophotometer (Thermo Scientiﬁc
+Inc., USA) to evaluate the quality and concentration. The V3-
+V4 region of the bacterial 16S rRNA gene were ampliﬁed using
+the primers 338F (5 ′-ACTCCTACGGGAGGCAGCAG-3′) and
+806R (5 ′-GGACTACHVGGGTWTCTAAT-3′) (
+19). All samples
+were ampliﬁed in triplicates. The PCR products were extracted
+using 2% agarose gel and puriﬁed using the AxyPrep DNA Gel
+Extraction Kit (Axygen Biosciences, Union City, CA, USA). The
+PCR products obtained were further quantiﬁed using Quantus TM
+Fluorometer (Promega, USA) and then sequenced using the
+Illumina MiSeq PE300 platform (Illumina, San Diego, USA). This
+process was performed by Majorbio Bio-Pharm Technology Co.
+Ltd. (Shanghai, China).
+/two.tnum./six.tnum Data processing and microbiota analysis
+After demultiplexing, the resulting sequences were quality
+ﬁltered using fastp (0.19.6) (
+20) and merged using FLASH (v1.
+2.11) ( 21). The high-quality sequences were denoised using the
+DADA2 ( 22) plugin in the Qiime2 (version 2020.2) pipeline
+(23) based on the recommended parameters to obtain amplicon
+sequence variants (ASVs). The taxonomic assignment of ASVs
+was performed using the naive Bayes consensus taxonomy
+classiﬁer implemented in Qiime2 based on the SILV A 16S rRNA
+database (v138).
+Frontiers in Nutrition /zero.tnum/three.tnum frontiersin.org
+
+
+--- PAGE 4 ---
+Wang et al. /one.tnum/zero.tnum./three.tnum/three.tnum/eight.tnum/nine.tnum/fnut./two.tnum/zero.tnum/two.tnum/five.tnum./one.tnum/five.tnum/four.tnum/two.tnum/one.tnum/four.tnum/five.tnum
+TABLE /one.tnum Participant characteristics by group.
+Characteristic Placebo
+group
+(n = /three.tnum/three.tnum)
+BC/nine.tnum/nine.tnum
+group
+(n = /three.tnum/three.tnum)
+P-Value
+Sex Men 17 15 0.80
+Women 16 18
+Age, years 36.21 ± 10.39 33.03 ± 9.18 0.13
+Height, cm 169.7 ± 8.16 170.1 ± 9.45 0.86
+Weight, kg 80.80 ± 12.47 82.53 ± 12.67 0.58
+Body mass index, kg/m 2 27.98 ± 3.20 28.46 ± 3.22 0.55
+Bioinformatics analysis was conducted using the Majorbio
+Cloud platform ( https://cloud.majorbio.com). Alpha diversity
+indices, including Chao1 richness, Shannon index, Ace index, and
+Simpson index, were calculated using Mothur v1.30.1, based on
+the ASV information (
+24). The similarity among the microbial
+communities in diﬀerent fecal samples was assessed using principal
+coordinate analysis using the Vegan v2.5-3 package based on
+Bray-Curtis dissimilarity. Additionally, linear discriminant analysis
+(LDA) eﬀect size (LEfSe) was employed to identify signiﬁcantly
+abundant taxa of microbes in the diﬀerent groups or in the samples
+collected from the same group at diﬀerent times, with an LDA
+score>2 and P < 0.05 (
+25).
+/two.tnum./seven.tnum Statistical analysis
+Statistical analyses were performed using the SPSS software
+(IBM, Armonk, NY , USA). Continuous data were presented as
+mean ± standard deviation. The Shapiro–Wilk test was used to
+ensure a normal distribution of body weight and serum index.
+The pre- and post-treatment body weights and serum indices were
+compared within each group using a paired-sample t-test. An
+independent samples t-test was used to evaluate the diﬀerences
+between the two groups at each time point. P < 0.05 were
+considered signiﬁcant.
+/three.tnum Results
+/three.tnum./one.tnum Baseline characteristics and enrollment
+of participants
+A total of 66 overweight and obese individuals who met the
+inclusion and exclusion criteria were enrolled. They were randomly
+assigned in a 1:1 ratio to the probiotic ( n = 33) or placebo
+groups (n = 33). A ﬂow diagram of the trial is shown in
+Figure 1.
+The average age of the participants and the proportion of male
+participants, respectively, were 36.21 ± 10.39 years and 51.5%
+(17/33) in the placebo group and 33.03 ± 9.18 years and 45.5%
+(15/33) in the probiotic group. There were no signiﬁcant diﬀerences
+in age, sex, or BMI between the two groups ( P > 0.05) (
+Table 1).
+Among the participants in each group, 20 were overweight, and
+13 were obese.
+/three.tnum./two.tnum Eﬀects of BC/nine.tnum/nine.tnum supplementation on
+body weight and lipid proﬁles of the
+participants
+After 4 weeks of probiotic intervention, we compared the eﬀects
+of BC99 supplementation on body weight between the probiotic
+and placebo groups. As shown in
+Table 2, both BC99 ( P < 0.0001)
+and placebo ( P < 0.01) signiﬁcantly reduced the body weight of
+the participants; no signiﬁcant diﬀerence was observed between
+the two groups. The results after 8 weeks of probiotic intervention
+remained consistent with those observed at 4 weeks.
+We compared the body weights of the overweight and obese
+subgroups across the two groups. The body weight of the
+overweight subgroup decreased signiﬁcantly after the probiotic
+BC99 intervention ( P < 0.01) but did not change signiﬁcantly
+after being supplemented with placebo ( P = 0.05). Weight loss
+was signiﬁcantly greater in the probiotic group than in the placebo
+group (
+Supplementary Figure S1, P < 0.05). The body weight of the
+obese subgroup in the two groups decreased signiﬁcantly after the
+intervention (P < 0.05); there was no signiﬁcant diﬀerence between
+the two groups.
+We also compared the lipid proﬁles between the
+probiotic and placebo groups after the intervention
+(
+Table 3). Neither the probiotic BC99 nor placebo had a
+signiﬁcant eﬀect on TC, TG, HDL-C, and LDL-C levels at
+weeks 4 and 8.
+/three.tnum./three.tnum Changes in diversity of the gut
+microbiota during the probiotic
+intervention
+16S rRNA gene sequencing of feces from the participans was
+performed to explore changes in the gut microbiota. A total of 195
+samples from all participants were successfully sequenced except
+from one participant in the placebo group. In total, 12,036,857 raw
+reads were obtained using high-throughput sequencing, and the
+number of raw reads per sample ranged from 40,477 to 87,270. To
+minimize the eﬀects of sequencing depth on microbiota analysis,
+the sequences from each sample were rareﬁed to 24,264, with
+an average Good’s coverage above 99.1%. The diversity of the
+microbiota is shown in
+Figure 2. The β-diversity of the BC99 and
+placebo groups were similar before the intervention ( R = 0.01, P =
+0.26) (Figure 2A). After 4 weeks of intervention, the β-diversity of
+the BC99 group was signiﬁcantly diﬀerent from that of the placebo
+group ( R = 0.04, P = 0.03). However, this diﬀerence disappeared
+after 8 weeks ( R = 0.03, P = 0.09). Moreover, the Shannon indices
+of the microbial communities in the two groups did not change
+signiﬁcantly during the intervention. The chao index of the placebo
+group decreased during the intervention, from 448 ± 211.4 to 387.8
+± 160.3 (P = 0.06) at week 4 and then to 371.6 ± 196.1 (P = 0.05)
+at week 8, without signiﬁcant diﬀerences. In contrast, the probiotic
+group did not show a decrease in chao index at week 4 and only
+showed a decrease at week 8 (from 451.0 ± 202.3 to 381.4 ± 177.6).
+Moreover, no signiﬁcant diﬀerence was found in the chao index
+between the two groups at the same time points.
+.
+Frontiers in Nutrition /zero.tnum/four.tnum frontiersin.org
+
+
+--- PAGE 5 ---
+Wang et al. /one.tnum/zero.tnum./three.tnum/three.tnum/eight.tnum/nine.tnum/fnut./two.tnum/zero.tnum/two.tnum/five.tnum./one.tnum/five.tnum/four.tnum/two.tnum/one.tnum/four.tnum/five.tnum
+TABLE /two.tnum The weight change from baseline according to group.
+Group Treatment Baseline /four.tnum week/eight.tnum weekP##-Value
+(Baseline-/four.tnum
+week)
+P##-Value
+(Baseline-/eight.tnum
+week)
+Overweight+
+Obese
+BC99 (n = 33)
+Placebo (n = 33)
+82.53 ± 12.67
+80.80 ± 12.47
+81.38 ± 12.76
+79.36 ± 11.31
+80.39 ± 12.74
+78.51 ± 10.89
+<0.0001 <0.01 <0.0001
+<0.01
+P#-V alue 0.58 0.50 0.52
+Overweight BC99 (n = 20)
+Placebo (n = 20)
+77.95 ± 10.90
+74.45 ± 7.95
+76.93 ± 10.80 73.77
+± 7.44
+76.07 ± 10.73
+73.54 ± 7.76
+<0.01 0.05 <0.01
+0.05
+P#-V alue 0.25 0.29 0.40
+Obese BC99 (n = 13)
+Placebo (n = 13)
+89.58 ± 12.30
+90.58 ± 11.99
+88.23 ± 12.87
+87.96 ± 11.02
+87.04 ± 13.09
+86.16 ± 10.78
+<0.01 <0.05 <0.01
+0.04
+P#-V alue 0.84 0.95 0.85
+V alues are represented as mean± SD.
+P #-V alue, P-values between the probiotic group and the placebo group at the same time point; P ##-V alue, intra-group P-values in week 0, week 4 and week 8.
+TABLE /three.tnum The change of weight and lipid proﬁle at /four.tnum weeks from baseline according to group.
+Parameter Treatment Baseline /four.tnum week/eight.tnum weekP##-Value
+(Baseline-/four.tnum
+week)
+P##-Value
+(Baseline-/eight.tnum
+week)
+TC BC99
+Placebo
+4.75 ± 1.03
+4.83 ± 0.95
+4.77 ± 1.03 4.80
+± 0.98
+4.88 ± 1.03
+4.79 ± 1.00
+0.83
+0.74
+0.30
+0.78
+P#-V alue 0.74 0.90 0.71
+TG BC99
+Placebo
+1.47 ± 0.80
+1.45 ± 0.71
+1.49 ± 1.19
+1.38 ± 0.76
+1.46 ± 0.57
+1.39 ± 0.78
+0.30
+0.79
+1.0
+0.48
+P#-V alue 0.97 0.84 0.29
+HDL-C BC99
+Placebo
+1.24 ± 0.26
+1.30 ± 0.30
+1.27 ± 0.0.26 1.31
+± 0.27
+1.26 ± 0.25
+1.34 ± 0.32
+0.22
+0.73
+0.31
+0.15
+P#V alue 0.36 0.54 0.31
+LDL-C BC99
+Placebo
+2.92 ± 0.81
+3.00 ± 0.85
+2.96 ± 0.83 3.04
+± 0.83
+3.03 ± 0.97
+2.88 ± 0.88
+0.70
+0.62
+0.39
+0.39
+P#-V alue 0.70 0.69 0.53
+TC, Total cholesterol; TG, triglyceride; LDL-C, low-density lipoprotein ch olesterol; HDL-C, high-density lipoprotein cholesterol.
+P#-V alue, P-values between the probiotic group and the placebo group at the same time point; P ##-V alue, intra-group P-values in week 0, week 4 and week 8.
+/three.tnum./four.tnum Changes in the microbial community
+composition during the probiotic
+intervention
+We then analyzed the microbial community composition
+during the probiotic intervention and the results are shown
+in
+Figure 3. Venn plot analysis based on the ASV showed
+that the common ASV of each group at diﬀerent time points
+is only 539, while the unique ASV of each group exeeeds
+6,000 (
+Figure 3A). The unique ASV of the placebo group
+at week 4 and week 8 as well as that of the BC99 group,
+decreased. At the level of phylum, the dominant microbes that
+accounted for more than 1% of both groups were Bacteroidota,
+Firmicutes, Proteobacteria and Actinobacteriota (
+Figure 3B).
+At the level of genus, the top 10 genera in the groups
+includeds Bacteroides, Prevotella, Faecalibacterium, Roseburia,
+Romboutsia, unclassiﬁed_f__ Lachnospiraceae, Ruminococcus,
+Blautia, Parasutterella, and Parabacteroides (
+Figure 3C).
+We further analyzed the diﬀerences in microbial communities
+among the diﬀerent groups at the same time points using
+LEfSe ( Figures 3D–F). The genera of Parabacteroides,
+Sutterella, Bacillus and Ezakiellla were enriched in the BC99
+group whereas the genera of Eubacterium_glilgens_group,
+Candidatus_Soleaferrea and unclassiﬁed_f__ Ruminococcus were
+enriched in the placebo group at week 4 ( Figures 3G–I). At
+week 8, the phylum Proteobacteria and genus Enterobacter
+enriched in the placebo group, whereas the genera of Sutterella,
+Alloprevotella, and Prevotellaceae_ NK3B31_group enriched in
+the BC99 group. In addition, maltodextrin supplementation
+signiﬁcantly enriched Veillonella, Lactobacillus, Alloprevotella
+and Bacillus and decrease Collinsella, Allorhizobium-
+Neorhizobium-Pararhizobium-Rhizobium, Stenotrophomonas
+etc (
+Supplementary Figure S2).
+/three.tnum./five.tnum Correlation of microbiota with body
+weight and lipid proﬁles
+Microbiota is related to body weight and lipid proﬁles
+(
+26, 27). In this study, we used the Spearman analysis to
+Frontiers in Nutrition /zero.tnum/five.tnum frontiersin.org
+
+
+--- PAGE 6 ---
+Wang et al. /one.tnum/zero.tnum./three.tnum/three.tnum/eight.tnum/nine.tnum/fnut./two.tnum/zero.tnum/two.tnum/five.tnum./one.tnum/five.tnum/four.tnum/two.tnum/one.tnum/four.tnum/five.tnum
+FIGURE /two.tnum
+The diversity of the gut microbiota changed during probiotic inter vention. (A–C) Principal coordinate analysis (PCoA) between the probiotic group
+and the placebo group at the same time point. (D) The Chao index of the microbial diversity in the six groups. (E) The Shannon index of the microbial
+diversity in the six groups. P , probiotic group; C, placebo group; P/one.tnum/C/one.tnum, pretreatment; P/two.tnum/C/two.tnum, /four.tnum weeks of probiotic intervention; P/three.tnum/C/three.tnum, /eight.tnum weeks of
+the probiotic intervention.
+analyze the relationship of microbiota with body weight and
+lipid proﬁles (
+Figure 4). The results illustrated that the genera of
+Ruminococcus, Faecalibacterium, Eubacterium_ventriosum_group,
+and Parabacteroides etc. were signiﬁcantly negatively related
+to weight. In contrast, the genera of Escherichia-Shigella,
+Lachnoclostrium and Blautia were positively correlated with
+body weight. Most bacteria related to TG exhibited a similar
+trend of correlation with TG as well as with body weight. The
+bacteria signiﬁcantly associated with HDL were similar to those
+associated with body weight, whereas the trends for the correlation
+of these bacteria with HDL-C and body weight were opposite,
+Only one genus Ruminococcus was positively associated with
+LDL, and three genera including Ruminococcus, Coprococcus and
+unclassiﬁed_f_Lachnospiraceae, were positively associated with TC.
+/four.tnum Discussion
+The gut microbiota has been increasingly associated with the
+development of obesity and is becoming a target for new anti-
+obesity therapies (
+28–30). A systematic review found that probiotic
+supplementation is beneﬁcial for managing metabolic indicators
+(
+31). B. coagulans is a lactic acid producer with high viability and
+stability and it provides numerous health beneﬁts for the host
+(
+12, 13). However, studies estimating the eﬀects of B. coagulans
+supplementation on obesity management are limited ( 16, 17).
+Cho et al. found that an ingredient mixed with six -grain types
+fermented by B. coagulans resulted in a signiﬁcant reduction in
+visceral adipose tissue, total fat mass, body weight, and waist
+circumference (
+17). Another clinical trial focusing on overweight
+or obese children and adolescents found that intervention with
+B. coagulans SC-208, B. indicus HU36, and fructooligosaccharides
+signiﬁcantly decreased the waist-to-height ratio (
+32). In morbidly
+obese patients undergoing laparoscopic sleeve gastrectomy, the
+administration of B. coagulans and galactomannans signiﬁcantly
+decreased TG, LDL-C, and Aspartate aminotransferase (AST) levels
+and resulted in signiﬁcant weight loss (
+16). Our study found that
+both BC99 and placebo supplementation signiﬁcantly decreased
+the body weight of overweight and obese adults. However,
+only the BC99 intervention signiﬁcantly decreased body weight
+in overweight participants ( P<0.01). Further, weight loss was
+signiﬁcantly higher in the overweight participants in the probiotic
+group than in those in the placebo group ( P<0.05). This indicates
+that BC99 supplementation is more suitable for overweight adults.
+Many studies have found that the gut microbiota community of
+overweight individuals could be changed by probiotic intervention,
+such as Lactobacillus plantarum, L. acidophilus and Biﬁdobacterium
+lactis (
+11, 33, 34). In an obese mouse model, B. coagulans
+T4 administration successfully mitigated obesity and the related
+metabolic disorders. B. coagulans T4 intervention partly recovered
+the high-fat diet (HFD)-induced change of gut microbiota,
+including reduction of the Firmicutes/Bacteriodetes ratio and
+increase in the number of Lactobacillus and Faecalibacterium (
+35).
+Frontiers in Nutrition /zero.tnum/six.tnum frontiersin.org
+
+
+--- PAGE 7 ---
+Wang et al. /one.tnum/zero.tnum./three.tnum/three.tnum/eight.tnum/nine.tnum/fnut./two.tnum/zero.tnum/two.tnum/five.tnum./one.tnum/five.tnum/four.tnum/two.tnum/one.tnum/four.tnum/five.tnum
+FIGURE /three.tnum
+Changes in microbial community composition during probiotic interv ention. (A) The Venn plot analysis of the six groups. (B, C) The microbial relative
+abundance of the six groups at the phylum and genus levels. (D–F) LEfSe analysis of gut microbiota between the probiotic group and the p lacebo
+group at the same time point. (G–I) Diﬀerences in gut microbiota (genus level) between the probiotic gr oup and the placebo group at the same time
+point. P , probiotic group; C, placebo group; P/one.tnum/C/one.tnum, pretreatment; P/two.tnum/C/two.tnum, /four.tnum weeks of probiotic intervention; P/three.tnum/C/three.tnum, /eight.tnum weeks of the probiotic
+intervention; LDA, linear discriminant analysis.
+B. coagulans BC69 also decreased body weight gain and improved
+the gut microbiome of high-sugar-high-fat diet-fed mice ( 36). The
+addition of B. coagulans BC30 can aﬀect glycemia- and lipid-related
+markers and resistin levels in obese or hyperglycemic individuals
+(
+37). These results suggest that B. coagulans may play a role
+in body weight reduction by regulating the gut microbiota in
+mice. Although B. coagulans has demonstrated anti-obesity activity
+in clinical trials, there is currently no research on its ability to
+modify the gut microbiota in overweight and obese individuals.
+In this study, BC99 intervention signiﬁcantly changed the β-
+diversity of the gut microbiota at week 4. The genus Bacillus was
+enriched in the probiotic group at weeks 4 and 8, indicating that it
+adapted well to the intestinal environment. In addition, the genus
+Parabacteroides, which was negatively correlated with body weight,
+was enriched in the probiotic group. Wang et al. reported that
+Parabacteroides has a signiﬁcantly negative relationship with BMI.
+Parabacteroides distasonis decreased weight gain in leptin-deﬁcient
+and HFD-fed mice. The application of Parabacteroides distasonis
+can signiﬁcantly alter the bile acid proﬁle, increase lithocholic acid
+and ursodeoxycholic acid, and increase the level of succinate in the
+intestine, which in turn reduce hyperlipidemia via the activation
+of the farnesoid X receptor pathway to repair intestinal barrier
+integrity (
+38). This indicates that the BC99 may reduce body weight
+by modulating the gut microbiota.
+Maltodextrin is produced from starch using hydrolysis,
+puriﬁcation, and spray-drying methods. As a low-sweet food
+additive, polysaccharides have been used as a placebo to investigate
+the eﬀects of various interventions, particularly prebiotics (
+39),
+probiotics (40), and numerous dietary supplements (41). Almutairi
+et al. have reported that orally consumed maltodextrin often aﬀects
+human physiology, including body weight, frailty index, and
+suprailiac skinfold thickness etc. (
+42). It can also induce alterations
+in taxon proﬁles, such as an increase in Lactobacillus (43) and
+Lactobacillus-Enterococcus (44). In this study, we also found
+that both 4- and 8-week maltodextrin interventions signiﬁcantly
+reduced the body weight of overweight and obese participants
+(
+Table 2; P < 0.01). In addition, we also found that intervention
+with maltodextrin can reduce the Chao index of the gut microbiota,
+indicating a decrease in the richness of the gut microbiota.
+However, the diﬀerence was not signiﬁcant (
+Figure 2D). In terms
+of microbial composition, maltodextrin signiﬁcantly increased
+Veillonella, Lactobacillus, Alloprevotella, and Bacillus and decreased
+Collinsella, Allorhizobium-Neorhizobium-Pararhizobium-
+Rhizobium, Stenotrophomonas etc. (
+Supplementary Figure S2).
+These results help to elucidate the in vivo functions of maltodextrin.
+This study has some limitations. First, the indicators were
+recorded only until week 8. Follow-up after discontinuing
+probiotics might help understand the long-term eﬀects of probiotic
+application on body weight and the gut microbiota. Secondly,
+it is impossible to perform a species-level analysis of the gut
+microbiota based on 16S rRNA sequencing. The identiﬁcation
+and quantitative analysis of BC99 and other endogenous Bacillus
+Frontiers in Nutrition /zero.tnum/seven.tnum frontiersin.org
+
+
+--- PAGE 8 ---
+Wang et al. /one.tnum/zero.tnum./three.tnum/three.tnum/eight.tnum/nine.tnum/fnut./two.tnum/zero.tnum/two.tnum/five.tnum./one.tnum/five.tnum/four.tnum/two.tnum/one.tnum/four.tnum/five.tnum
+FIGURE /four.tnum
+Spearman analysis of microbiota and lipids indicators. * < /zero.tnum./zero.tnum/five.tnum,** < /zero.tnum./zero.tnum/one.tnum,*** < /zero.tnum./zero.tnum/zero.tnum/one.tnum.
+strains in the gut microbiota were not performed. Third, the direct
+correlation between BC99 and the modulation of host metabolism
+remains unclear. Further studies on BC99 and Parabacteroides are
+needed to comprehensively clarify the underlying mechanism of
+the anti-obesity eﬀect of BC99. Additionally, maltodextrin appears
+to aﬀect the gut microbiota. Although many studies have used
+maltodextrin as a placebo, its eﬀects on the gut microbiota require
+further evaluation.
+/five.tnum Conclusion
+BC99 intervention for 8 weeks signiﬁcantly decreases
+the body weight and increases weight loss in overweight
+individuals. It persists in the gut microbiota until week 8
+and can increase the quantity of the anti-obesity microbe,
+Parabacteroides. Additionally, it can signiﬁcantly alter the
+diversity of the gut microbiota. These ﬁndings suggest
+Frontiers in Nutrition /zero.tnum/eight.tnum frontiersin.org
+
+
+--- PAGE 9 ---
+Wang et al. /one.tnum/zero.tnum./three.tnum/three.tnum/eight.tnum/nine.tnum/fnut./two.tnum/zero.tnum/two.tnum/five.tnum./one.tnum/five.tnum/four.tnum/two.tnum/one.tnum/four.tnum/five.tnum
+that BC99 intervention could be a beneﬁcial method to
+improve body weight by modulating the gut microbiota for
+overweight individuals.
+Data availability statement
+The raw data supporting the conclusions of this article will be
+made available by the authors, without undue reservation.
+Ethics statement
+The studies involving humans were approved by
+the oﬃce of the Medical Ethics Committee of Qilu
+Hospital of Shandong University. The studies were
+conducted in accordance with the local legislation
+and institutional requirements. The participants
+provided their written informed consent to participate
+in this study.
+Author contributions
+RW: Formal analysis, Investigation, Methodology, Writing –
+original draft. GZ: Formal analysis, Investigation, Methodology,
+Writing – original draft. XW: Data curation, Writing –
+original draft. ZX: Data curation, Writing – original draft.
+ZL: Conceptualization, Investigation, Methodology, Supervision,
+Writing – review & editing. LL: Conceptualization, Funding
+acquisition, Methodology, Project administration, Supervision,
+Writing – review & editing.
+Funding
+The author(s) declare that no ﬁnancial support was received for
+the research and/or publication of this article.
+Acknowledgments
+The authors would like to sincerely thank the Wecare
+Probiotics Co., Ltd., Jiangsu, P.R. China, for probiotic and
+placebo supplements.
+Conﬂict of interest
+The authors declare that the research was conducted in the
+absence of any commercial or ﬁnancial relationships that could be
+construed as a potential conﬂict of interest.
+The author(s) declared that they were an editorial board
+member of Frontiers, at the time of submission. This had no impact
+on the peer review process and the ﬁnal decision.
+Generative AI statement
+The author(s) declare that no Gen AI was used in the creation
+of this manuscript.
+Publisher’s note
+All claims expressed in this article are solely those of the
+authors and do not necessarily represent those of their aﬃliated
+organizations, or those of the publisher, the editors and the
+reviewers. Any product that may be evaluated in this article, or
+claim that may be made by its manufacturer, is not guaranteed or
+endorsed by the publisher.
+Supplementary material
+The Supplementary Material for this article can be found
+online at: https://www.frontiersin.org/articles/10.3389/fnut.2025.
+1542145/full#supplementary-material
+References
+1. Sun Y , Liu X, Wang R, Liu R, Lv X, Ma Y , et al. Lacticaseibacillus rhamnosus
+HF01 fermented yogurt alleviated high-fat diet-induced obes ity and hepatic steatosis
+via the gut microbiota-butyric acid-hepatic lipid metabolism a xis. Food Funct. (2024)
+15:4475–89. doi: 10.1039/D3FO04985J
+2. Zhao L, Cheng Z, Lu Y , Liu M, Chen H, Zhang M, et al. Tirzepatide for weight
+reduction in Chinese adults with obesity: the SURMOUNT-CN ra ndomized clinical
+trial. JAMA. (2024) 332:551–60. doi: 10.1001/jama.2024.9217
+3. Safaei M, Sundararajan EA, Driss M, Boulila W, Shapi’i A. A sys tematic literature
+review on obesity: Understanding the causes and consequence s of obesity and
+reviewing various machine learning approaches used to predict o besity. Comput Biol
+Med. (2021) 136:104754. doi: 10.1016/j.compbiomed.2021.104754
+4. Sun X, Y an AF , Shi Z, Zhao B, Y an N, Li K, et al. Health consequenc es of
+obesity and projected future obesity health burden in China. Obesity. (2022) 30:1724–
+51. doi: 10.1002/oby.23472
+5. Zhao L. The gut microbiota and obesity: from correlation to causality. Nat Rev
+Microbiol. (2013) 11:639–47. doi: 10.1038/nrmicro3089
+6. Wen L, Duﬀy A. Factors inﬂuencing the gut microbiota, inﬂamm ation, and type 2
+diabetes. J Nutr. (2017) 147:1468s− 75s. doi: 10.3945/jn.116.240754
+7. Templeman I, Parish E, Rimmer J, Clarke G, Troth T , Goodson MS,
+et al. ‘It takes a village’: deciphering the role of the gut microbi ome in
+the health and performance of military personnel. BMJ Mil Health. (2024)
+22:e002746. doi: 10.1136/military-2024-002746
+8. Liu R, Hong J, Xu X, Feng Q, Zhang D, Gu Y , et al. Gut microbiome an d serum
+metabolome alterations in obesity and after weight-loss inter vention. Nat Med. (2017)
+23:859–68. doi: 10.1038/nm.4358
+9. Crovesy L, Masterson D, Rosado EL. Proﬁle of the gut microbi ota of
+adults with obesity: a systematic review. Eur J Clin Nutr. (2020) 74:1251–
+62. doi: 10.1038/s41430-020-0607-6
+10. Sasidharan Pillai S, Gagnon CA, Foster C, Ashraf AP. Explorin g the gut
+microbiota: key insights into its role in obesity, metabolic s yndrome, and type 2
+diabetes. J Clin Endocrinol Metab. (2024) 109:2709–19. doi: 10.1210/clinem/dgae499
+11. Kober A, Saha S, Ayyash M, Namai F , Nishiyama K, Yoda K, et a l. Insights into
+the anti-adipogenic and anti-inﬂammatory potentialities of pro biotics against obesity.
+Nutrients. (2024) 16:1373. doi: 10.3390/nu16091373
+12. Ouyang S, Zou L, Qiao H, Shi J, Zheng Z, Ouyang J. One-pot proc ess for
+lactic acid production from wheat straw by an adapted Bacillus coagulans and
+Frontiers in Nutrition /zero.tnum/nine.tnum frontiersin.org
+
+
+--- PAGE 10 ---
+Wang et al. /one.tnum/zero.tnum./three.tnum/three.tnum/eight.tnum/nine.tnum/fnut./two.tnum/zero.tnum/two.tnum/five.tnum./one.tnum/five.tnum/four.tnum/two.tnum/one.tnum/four.tnum/five.tnum
+identiﬁcation of genes related to hydrolysate-tolerance. Bioresour Technol. (2020)
+315:123855. doi: 10.1016/j.biortech.2020.123855
+13. Wang Z, Guo Z, Liu L, Ren D, Zu H, Li B, et al. Potential probioti c
+weizmannia coagulans WC10 improved antibiotic-associated d iarrhea in mice by
+regulating the gut microbiota and metabolic homeostasis. Probiotics Antimicrob
+Proteins. (2024). doi: 10.1007/s12602-024-10308-1
+14. Wu Y , Bai Z, Jin Y , Zhu H, Dong Y , Gu S, et al. A randomized,
+double-blind, placebo-controlled clinical study to evaluate the eﬃ cacy
+and safety of Weizmannia coagulans BC99 in the treatment of ch ronic
+constipation in adults. Front Nutr. (2024) 11:1395083. doi: 10.3389/fnut.2024.13
+95083
+15. Zhu M, Zhu J, Fang S, Zhao B. Complete genome sequence of heynd rickxia
+(Bacillus) coagulans BC99 isolated from a fecal sample of a healthy i nfant. Microbiol
+Resour Announc. (2024) 13:e0044923. doi: 10.1128/mra.00449-23
+16. Kazzi F , Daher N, Zimmerman G, Garcia M, Schmidt N, Scharf K . Eﬀect
+of bacillius coagulans and galactomannans on obese patients unde rgoing sleeve
+gastrectomy, a randomized-controlled clinical trial. Altern Ther Health Med.
+(2021) 27:138–45.
+17. Cho E, Kim JY , Cho B, Lee JS, Yoon YC, Shin YC, et al. Eﬃcacy
+of fermented grain using Bacillus coagulans in reducing visceral fat among
+people with obesity: a randomized controlled trial. Front Nutr. (2023)
+10:1148512. doi: 10.3389/fnut.2023.1148512
+18. Zhou BF. Predictive values of body mass index and waist cir cumference for risk
+factors of certain related diseases in Chinese adults–study o n optimal cut-oﬀ points
+of body mass index and waist circumference in Chinese adults. Biomed Environ Sci.
+(2002) 15:83–96.
+19. Liu C, Zhao D, Ma W, Guo Y , Wang A, Wang Q, et al. Denitrifying s ulﬁde
+removal process on high-salinity wastewaters in the presence o f Halomonas sp. Appl
+Microbiol Biotechnol. (2016) 100:1421–6. doi: 10.1007/s00253-015-7039-6
+20. Chen S, Zhou Y , Chen Y , Gu J. Fastp: an ultra-fast all-in-one FAS TQ
+preprocessor. Bioinformatics. (2018) 34:i884–90. doi: 10.1093/bioinformatics/bty560
+21. Mago ˇc T , Salzberg SL. FLASH: fast length adjustment of short
+reads to improve genome assemblies. Bioinformatics. (2011) 27:2957–
+63. doi: 10.1093/bioinformatics/btr507
+22. Callahan BJ, McMurdie PJ, Rosen MJ, Han AW, Johnson AJ, Holmes SP. DADA2:
+High-resolution sample inference from Illumina amplicon data. Nat Methods. (2016)
+13:581–3. doi: 10.1038/nmeth.3869
+23. Bolyen E, Rideout JR, Dillon MR, Bokulich NA, Abnet CC, Al-Ghali th GA,
+et al. Reproducible, interactive, scalable and extensible microb iome data science using
+QIIME 2. Nat Biotechnol. (2019) 37:852–7. doi: 10.1038/s41587-019-0209-9
+24. Schloss PD, Westcott SL, Ryabin T , Hall JR, Hartmann M, Hollis ter
+EB, et al. Introducing mothur: open-source, platform-independe nt,
+community-supported software for describing and comparing mi crobial
+communities. Appl Environ Microbiol. (2009) 75:7537–41. doi: 10.1128/AEM.0
+1541-09
+25. Segata N, Izard J, Waldron L, Gevers D, Miropolsky L, Garrett W S,
+et al. Metagenomic biomarker discovery and explanation. Genome Biol. (2011)
+12:R60. doi: 10.1186/gb-2011-12-6-r60
+26. Liang J, Li X, Lei W, Tan P , Han M, Li H, et al. Serum
+metabolomics combined with 16S rRNA sequencing to reveal the
+eﬀects of Lycium barbarum polysaccharide on host metabolism an d gut
+microbiota. Food Res Int. (2023) 165:112563. doi: 10.1016/j.foodres.2023.1
+12563
+27. Li H, Zhang L, Li J, Wu Q, Qian L, He J, et al. Resistant starch intake facilitates
+weight loss in humans by reshaping the gut microbiota. Nat Metab. (2024) 6:578–
+97. doi: 10.1038/s42255-024-00988-y
+28. Torres-Fuentes C, Schellekens H, Dinan TG, Cryan JF. The
+microbiota-gut-brain axis in obesity. Lancet Gastroenterol Hepatol. (2017)
+2:747–56. doi: 10.1016/S2468-1253(17)30147-4
+29. Lin X, Han H, Wang N, Wang C, Qi M, Wang J, et al. The gut microb ial
+regulation of epigenetic modiﬁcation from a metabolic perspective. Int J Mol Sci. (2024)
+25:7175. doi: 10.3390/ijms25137175
+30. V an Hul M, Neyrinck AM, Everard A, Abot A, Bindels LB, Delzen ne NM, et al.
+Role of the intestinal microbiota in contributing to weight d isorders and associated
+comorbidities. Clin Microbiol Rev. (2024) 37:e0004523. doi: 10.1128/cmr.00045-23
+31. Duan Y , Wang L, Ma Y , Ning L, Zhang X. A meta-analysis of the t herapeutic
+eﬀect of probiotic intervention in obese or overweight adoles cents. Front Endocrinol.
+(2024) 15:1335810. doi: 10.3389/fendo.2024.1335810
+32. Atazadegan MA, Heidari-Beni M, Entezari MH, Shariﬁanja zi F , Kelishadi
+R. Eﬀects of synbiotic supplementation on anthropometric indic es and body
+composition in overweight or obese children and adolescents: a randomized,
+double-blind, placebo-controlled clinical trial. World J Pediatr. (2023) 19:356–
+65. doi: 10.1007/s12519-022-00664-9
+33. Lauw S, Kei N, Chan PL, Y au TK, Ma KL, Szeto CYY , et al. (2023) . Eﬀects of
+synbiotic supplementation on metabolic syndrome traits and gut microbial proﬁle
+among overweight and obese Hong Kong Chinese individuals: a r andomized trial.
+Nutrients. 15:4248. doi: 10.3390/nu15194248
+34. Kwon HS, Kim SJ, Shin KJ, Kim S, Yun J, Bae J, et al. The eﬀect
+of the Lacticaseibacillus paracasei BEPC22 and Lactiplantibacillus plantarum
+BELP53 combination (BN-202M) on body fat percentage loss in ov erweight
+individuals: a randomized, double-blind, placebo-controlled stu dy. Nutrients. (2024)
+16:1993. doi: 10.3390/nu16131993
+35. Hashemnia SMR, Meshkani R, Zamani-Garmsiri F , Shabani M , Tajabadi-
+Ebrahimi M, Ragerdi Kashani I, et al. Amelioration of obesity- induced white adipose
+tissue inﬂammation by Bacillus coagulans T4 in a high-fat diet-induced obese murine
+model. Life Sci. (2023) 314:121286. doi: 10.1016/j.lfs.2022.121286
+36. Huang J, Jiang R, Wang Y. Eﬀects of the probiotic Bacillus coagulans BC69 on
+the metabolic and histological alterations induced by a high-s ugar and high-fat diet in
+C57BL/6J mice. Food Funct. (2023) 14:6596–609. doi: 10.1039/D3FO01104F
+37. Angelino D, Martina A, Rosi A, Veronesi L, Antonini M, Menn ella I, et al.
+Glucose- and lipid-related biomarkers are aﬀected in healthy obes e or hyperglycemic
+adults consuming a whole-grain pasta enriched in prebiotics and probiotics: a 12-week
+randomized controlled trial. J Nutr. (2019) 149:1714–23. doi: 10.1093/jn/nxz071
+38. Wang K, Liao M, Zhou N, Bao L, Ma K, Zheng Z, et al. Parabacter oides
+distasonis alleviates obesity and metabolic dysfunctions viaproduction of succinate and
+secondary bile acids. Cell Rep. (2019) 26, 222–35.e225. doi: 10.1016/j.celrep.2018.12.028
+39. Dewulf EM, Cani PD, Claus SP , Fuentes S, Puylaert PG, Neyrinck AM,
+et al. Insight into the prebiotic concept: lessons from an explorat ory, double blind
+intervention study with inulin-type fructans in obese women. Gut. (2013) 62:1112–
+21. doi: 10.1136/gutjnl-2012-303304
+40. Corsello G, Carta M, Marinello R, Picca M, De Marco G, Micillo M, et a l.
+Preventive eﬀect of cow’s milk fermented with Lactobacillus paracasei CBA L74 on
+common infectious diseases in children: a multicenter random ized controlled trial.
+Nutrients. (2017) 9:669. doi: 10.3390/nu9070669
+41. Moreno-Pérez D, Bressa C, Bailén M, Hamed-Bousdar S, Nacle rio F , Carmona
+M, et al. Eﬀect of a protein supplement on the gut microbiota of endu rance
+athletes: a randomized, controlled, double-blind pilot study. Nutrients. (2018)
+10:337. doi: 10.3390/nu10030337
+42. Almutairi R, Basson AR, Wearsh P , Cominelli F , Rodriguez-Pa lacios A. V alidity
+of food additive maltodextrin as placebo and eﬀects on human gut physiology:
+systematic review of placebo-controlled clinical trials. Eur J Nutr. (2022) 61:2853–
+71. doi: 10.1007/s00394-022-02802-5
+43. Costabile A, Kolida S, Klinder A, Gietl E, Bäuerlein M, Frohber g C, et al. A
+double-blind, placebo-controlled, cross-over study to establish the biﬁdogenic eﬀect of
+a very-long-chain inulin extracted from globe artichoke ( Cynara scolymus) in healthy
+human subjects. Br J Nutr. (2010) 104:1007–17. doi: 10.1017/S0007114510001571
+44. Kolida S, Meyer D, Gibson GR. A double-blind placebo-controlled st udy to
+establish the biﬁdogenic dose of inulin in healthy humans. Eur J Clin Nutr. (2007)
+61:1189–95. doi: 10.1038/sj.ejcn.1602636
+Frontiers in Nutrition /one.tnum/zero.tnum frontiersin.org

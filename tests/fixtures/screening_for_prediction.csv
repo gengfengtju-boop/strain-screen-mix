@@ -1,0 +1,3 @@
+evidence_id,source_database,source_accession,doi,pmid,priority,relevance_score,study_tag,intervention_type_hint,taxa_hint,outcome_hint,year,title,source_url
+PMID:1,PubMed,1,10.1000/a,1,high,4,randomized_controlled_trial,probiotic,Lactobacillus,weight;glucose,2024,Strong probiotic trial,https://pubmed.ncbi.nlm.nih.gov/1/
+PMID:2,PubMed,2,10.1000/b,2,lower,0,review,,,weight,2020,Weak review,https://pubmed.ncbi.nlm.nih.gov/2/

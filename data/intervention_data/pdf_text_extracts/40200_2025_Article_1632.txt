@@ -1,0 +1,951 @@
+
+
+--- PAGE 1 ---
+RESEARCH ARTICLE
+Journal of Diabetes & Metabolic Disorders (2025) 24:120
+https://doi.org/10.1007/s40200-025-01632-6
+Introduction
+Among the different health issues facing humanity, none 
+are more burdensome than obesity. According to the World 
+Health Organization (WHO), an estimated 2.5 billion adults 
+were overweight and more than 890 million were classified 
+as obese globally in 2022 [ 1]. Obesity has been recognized 
+as an important risk factor for chronic conditions such as 
+type 2 diabetes mellitus (T2DM), cardiovascular diseases, 
+and non-alcoholic fatty liver disease (NAFLD). T2DM is 
+a chronic disease characterized by peripheral resistance to 
+the action of insulin, impaired in insulin secretion, or both, 
+resulting in elevated blood glucose levels particularly in 
+individuals with overweight or obesity. NAFLD, another 
+  Mohammad Hassan Eftekhari
+h_eftekhari@yahoo.com
+1 Gastroenterohepatology Research Center, Shiraz University 
+of Medical Sciences, Shiraz, Iran
+2 Student Research Committee, Shiraz University of Medical 
+Sciences, Shiraz, Iran
+3 Research Center for Health Sciences, Institute of Health, 
+Shiraz University of Medical Sciences, Shiraz, Iran
+4 Department of Clinical Nutrition, School of Nutrition and 
+Food Sciences, Shiraz University of Medical Science, Shiraz, 
+Iran
+5 Endocrinology Research Center, Nemazee Hospital, Shiraz 
+University of Medical Sciences, Shiraz, Iran
+6 Nutrition Research Center, School of Nutrition and Food 
+Sciences, Shiraz University of Medical Sciences, Shiraz, Iran
+Abstract
+Introduction Synbiotic supplements have been shown to affect type 2 diabetes mellitus (T2DM) and non-alcoholic fatty 
+liver disease (NAFLD), however; results remain inconclusive. Thus, the present study was designed to investigate the poten-
+tial effect of multi-strain synbiotic supplements on liver enzymes, insulin resistance, anthropometric indices, and inflamma-
+tory markers in overweight/obese patients with NAFLD and T2DM.
+Method In a 12-week triple-blinded randomized controlled trial, 40 eligible overweight or obese adults with NAFLD and 
+T2DM were randomly assigned to two groups to consume either synbiotic supplements or a placebo along a low-calorie 
+diet. Participants were assessed for liver enzymes, anthropometric and glycemic indices, and lipid profiles before and after 
+the study.
+Result After the study period, using intention-to-treat approach 20 individuals were included in the final analysis for each 
+group. The intervention group showed significant reductions in within group analysis for insulin levels, weight, and BMI 
+(P < 0.05). AST was reduced in both intervention and control groups. However, no significant differences were found for 
+between-group analyses. Additionally, changes in inflammatory markers, lipid profiles, and insulin resistance indices were 
+not statistically significant.
+Conclusion In the present study, synbiotic supplements showed improvements in insulin levels, weight, BMI, and AST. 
+However, in comparison to the control group no beneficial effects were observed. Further studies are recommended to draw 
+more definitive conclusions.
+Keywords Probiotic · Prebiotic · Fatty liver · Diabetes · Synbiotic
+Received: 6 February 2025 / Accepted: 4 May 2025 / Published online: 15 May 2025
+© The Author(s), under exclusive licence to Tehran University of Medical Sciences 2025
+Effects of multi-strain synbiotic supplementation on liver enzymes, 
+insulin resistance, anthropometric, and inflammatory indices 
+in overweight and obese adults with fatty liver and diabetes: a 
+randomized controlled trial
+Aryan M. Yazdani1,2 · Mohammad Reza Fattahi1 · Mohammad Hassan Eftekhari3,4 · Afsane Ahmadi6 · 
+Mahmood Soveid5 · Morteza Zare6 · Mohammad Ali Mohsenpour2
+1 3
+
+
+--- PAGE 2 ---
+Journal of Diabetes & Metabolic Disorders (2025) 24:120
+consequence of obesity, is defined as the accumulation 
+of fat in liver cells in individuals with little to no alcohol 
+consumption [ 2]. These conditions predispose individu -
+als to cardiovascular diseases and metabolic dysregulation 
+by means of an increase in systemic inflammation. Insulin 
+resistance, a hallmark of T2DM, reflects impaired insulin 
+action in peripheral tissues and represents a key metabolic 
+disturbance associated with obesity and NAFLD [3].
+Recent studies show the close connection between gut 
+microbiota composition and metabolic health. Dysbiosis 
+of gut microbial communities has been linked to obesity-
+related disorders, such as the pathogenesis of NAFLD and 
+insulin resistance. Probiotics, a group of live microorgan -
+isms which confer beneficial health effects after adequate 
+consumption for the host, could improve gut microbiota. On 
+the other hand, prebiotics are considered as substrates that 
+foster the growth of beneficial bacteria. The term synbiotic 
+is used to define the combined administration of probiot -
+ics and prebiotics for their potential role in modulating gut 
+microbiota and exerting beneficial effects on host metabo -
+lism [4].
+Among different bacterial genera, the Lactobacillus and 
+Bifidobacterium families are used as probiotics due to their 
+health-promoting effects. It has been suggested that Lacto -
+bacillus acidophilus might help decrease low-density lipo -
+proteins (LDL) and total cholesterol while aiding in weight 
+loss [ 5]. A positive association was observed between 
+Lactococcus lactis and increased antioxidant capacity and 
+reduced inflammation (CRP) [ 6]. Lactobacillus rhamnosus 
+has been recognized as an effective probiotic for reducing 
+fasting blood glucose and HbA1C [ 7]. In addition, Bifido -
+bacterium longum was shown to reduce triglyceride levels 
+and improve insulin resistance (HOMA-IR) [ 8]. Bifido -
+bacterium breve has been shown to promote weight main -
+tenance and decrease ALT levels [ 9]. Lactobacillus casei 
+was shown to decrease pro-inflammatory markers and, con-
+sequently, inflammation [ 10]. In this study, a multi-strain 
+synbiotic supplement containing Lactobacillus acidophilus, 
+L. lactis, L. rhamnosus, Bifidobacterium longum, B. breve, 
+and L. casei, combined with fructooligosaccharides as a 
+prebiotic, was selected to target multiple aspects of meta -
+bolic health. This combination was chosen to potentially 
+influence lipid metabolism, glycemic control, liver function, 
+insulin resistance, and inflammation, addressing the inter -
+connected metabolic disturbances of NAFLD and T2DM in 
+overweight and obese individuals.
+Even though the results are promising, limited evidence 
+exists about the effect of multi-strain synbiotic supplemen -
+tation on liver enzymes, insulin resistance, and anthropo -
+metric and inflammatory indices in overweight or obese 
+individuals who concurrently suffer from NAFLD and 
+T2DM. Therefore, it is crucial to fill this gap to clarify the 
+clinical efficacy of synbiotics as adjunctive therapy in meta-
+bolic disorders. Thus, this randomized controlled trial was 
+conducted to establish the effects of supplementation with a 
+multi-strain synbiotic on liver enzymes, insulin resistance, 
+and anthropometric and inflammatory indices in overweight 
+and obese adults diagnosed with co-occurring NAFLD 
+and T2DM. To our best knowledge, this is the first triple-
+blinded randomized controlled trial to evaluate the effects 
+of a multi-strain synbiotic supplement in this dual-diagnosis 
+population, combined with a standard low-calorie diet and 
+comprehensive evaluation of metabolic and inflammatory 
+outcomes, thereby opening new avenues for its potential 
+role as an integrated therapeutic strategy. We anticipated 
+that multi-strain synbiotic supplementation, in conjunction 
+with a low-calorie diet, would significantly improve liver 
+enzymes, insulin resistance, anthropometric indices, and 
+inflammatory markers compared to a placebo group over 12 
+weeks.
+Method
+Study design and participants
+A 12-week triple-blind, parallel, randomized, controlled 
+clinical trial using a simple randomization technique was 
+designed. The study protocol followed the Declaration of 
+Helsinki and was approved by the institutional review board 
+and Ethics Committee (approval code: IR.SUMS.SCHEA -
+NUT.REC.1402.154) of the Shiraz University of Medical 
+Sciences, Shiraz, Iran. The study protocol was registered 
+in the Iranian Registry of Clinical Trials ( IRCT.ir, ID: 
+IRCT20240212060977N1 on February 12, 2024).
+Sample size for this current study was calculated using 
+aspartate aminotransferase (AST) as the primary outcome, 
+based on a study conducted by Javadi et al. [ 11]. Mean 
+change from baseline in AST was − 14.47 mg/dL (post-
+intervention SD = 13.65) in the Probiotic + Prebiotic arm 
+and − 1.94 mg/dL (post-intervention SD 12.46) in the Pla -
+cebo arm, with an effect size of 12.53 mg/dL. Using a two-
+sample t-test with 80% power (β = 0.20), a two-tailed type 
+1 error of 0.05 (α = 0.05), and a standard deviation of 13.65 
+(as reported for the Probiotic + Prebiotic group), a mini -
+mum of 19 participants per group was required, totaling 38 
+participants. To ensure robustness, we rounded to 20 per 
+group, yielding 40 participants. The dropout rate we experi-
+enced was 7.5% (3 of the 40 participants), below that of the 
+comparator study at 10.7%, and intention-to-treat analysis 
+included all randomized participants.
+The participants’ recruitment was done with convenience 
+sampling from outpatients NAFLD and T2DM patients 
+referred to the Motahari Clinic, affiliated with the Shiraz 
+1 3
+120 Page 2 of 11
+
+
+--- PAGE 3 ---
+Journal of Diabetes & Metabolic Disorders (2025) 24:120
+University of Medical Sciences. After assessment for eligi -
+bility, volunteers were informed about the study procedures 
+and their rights verbally and signed an informed consent 
+form containing details about the study prior to participa -
+tion. Participants were free to leave the study at any stage, 
+and this did not affect their routine medical care.
+Overweight or obese (body mass index (BMI) above 
+25 kg/m²) adults aged over 18 years who were diagnosed 
+with non-alcoholic fatty liver disease (Grade 2 or 3 resulting 
+based on the liver ultrasound results) and suffered from pre-
+diabetes or T2DM with fasting blood glucose above 100 mg/
+dL (who did not use insulin), were not being pregnant or in 
+lactating, were not affected by any metabolic, respiratory, or 
+kidney disorders, and had not used any antibiotics or probi-
+otic/synbiotic supplements in the past 3 months before the 
+study, were eligible to participate.
+Participants were excluded if they developed respiratory 
+or renal diseases during the study, consumed multivitamins 
+during the study, consumed less than 80% of the prescribed 
+supplements, used any probiotics or synbiotics supplements 
+beside the study interventions, were required to use antibiot-
+ics, became pregnant, or started insulin therapy.
+Outcome
+AST was considered the primary outcome of the present 
+study. The secondary outcomes were other liver enzymes 
+including alanine aminotransferase (ALT) and alkaline phos-
+phatase, lipid profile indices including low-density (LDL) 
+and high-density (HDL) lipoproteins, triglycerides (TG), 
+and total cholesterol, insulin resistance indices including 
+fasting blood sugar (FBS), Homeostatic Model Assessment 
+for Insulin Resistance (HOMA-IR), Homeostatic Model 
+Assessment of Beta Cell Function (HOMA-B), Quantita -
+tive Insulin Sensitivity Check Index (QUICKI), and fast -
+ing blood insulin level, and anthropometric measurements 
+including weight, BMI, waist circumference (WC), hip cir -
+cumference (HC), body fat, and lean body mass. Moreover, 
+inflammatory status of individuals was assessed as second -
+ary outcome using C-reactive protein (CRP), malondialde -
+hyde (MDA), and total antioxidant capacity (TAC).
+Study procedure and interventions
+Using the block randomization method (1:1 blocks), eli -
+gible participants, after signing the informed consent form, 
+were randomly assigned to either the intervention or control 
+group. The random sequence was provided and concealed 
+in opaque envelopes by an independent person not involved 
+in the study. Allocated groups were labeled as ‘A’ or ‘B’ 
+by the same person. Participants of intervention group took 
+synbiotic supplement in form of a capsule each day after 
+lunch with the bacteria count of 109 CFU containing L. aci-
+dophilus, L. lactis, L. rhamnosus, Bifidobacterium longum, 
+Bifidobacterium breve, and L. casei, and fructooligosaccha-
+rides as prebiotic (Zist Takhmir, Tehran, Iran) for 12 weeks. 
+Net weight of capsule was 350 mg and FOS included was 
+21 mg. Placebo group received capsules only containing 
+maltodextrin (Zist Takhmir, Tehran, Iran). Both capsules 
+were similar regarding shape, color, and size to blind par -
+ticipants and investigators. Capsules were also marked as 
+“A” or “B” in line with study groups by the same person 
+who provided allocation sequence. In addition, both groups 
+received low calorie diet (− 500 kcal/day) regarding their 
+total calorie expenditure, calculated by using Harris-Bene -
+dict formula. Dietary intake was monitored using a 3-day 
+dietary recall (two weekdays and one weekend day) con -
+ducted at baseline and at the end of the 12-week interven -
+tion to estimate calorie intake and assess adherence to the 
+low-calorie diet. Adherence was quantified by achieving the 
+desired − 500 kcal/day deficit on ≥ 80% of the days based on 
+recall data. 15 of the 20 (75%) in the intervention arm and 
+14 of the 20 (70%) in the placebo arm reached > 80% adher-
+ence, with the remaining 5 (25%) and 6 (30%), respectively, 
+falling short of the target deficit calorie.
+Compliance with synbiotic supplementation was deter -
+mined by pill counts conducted during follow-up visits 
+at weeks 4, 8, and 12, with the remaining capsules being 
+returned by the participants to confirm usage. One par -
+ticipant who consumed less than 80% of the capsules was 
+excluded from the study and was among the three who were 
+not given final analysis. All 37 subjects examined took more 
+than 80% of the prescribed doses of capsules and achieved 
+100% compliance in subjects under investigation.
+Demographic and anthropometric and physical 
+activity assessments
+A checklist was used to collect demographic data includ -
+ing age, gender, educational level, and medical background. 
+Anthropometric measurements including height, weight, 
+BMI, WC, HC, body fat, and lean body mass were assessed 
+before and after the intervention. A wall-mounted, stadiom-
+eter, (Seca, Germany) was used to measure height while 
+participants were barefoot and without head coverings, 
+when, leaning completely to the wall in such a way that 
+hip, heel and the back of head was touching the wall. The 
+height was read on the stadiometer to the nearest centimeter. 
+A Bioelectrical Impedance Analysis (BIA) device (model: 
+BF511, Omron, Japan) was used to measure weight, BMI, 
+lean body mass and fat mass. A non-elastic tape measure, 
+accurate up to the nearest centimeter, was used to measure 
+the WC. Measurement was done after a normal respiration 
+when stomach was at a normal state. The tape was held 2 cm 
+1 3
+Page 3 of 11 120
+
+
+--- PAGE 4 ---
+Journal of Diabetes & Metabolic Disorders (2025) 24:120
+Results
+The study was carried out from April to October, 2024. After 
+assessment of 86 individuals for eligibility, 46 were not eli-
+gible. Thus, 40 eligible individuals were informed about 
+the study and randomly assigned into two groups ( n = 20) 
+to receive either the intervention or the placebo. The study 
+procedure is shown in Fig. 1. Table 1 shows demographic 
+characteristics of participants.
+There were significant increases in AST levels within 
+both the placebo ( P = 0.014) and intervention ( P = 0.006) 
+groups. No significant results were observed in between- 
+and within-group comparisons for ALT and alkaline phos -
+phatase. Similar results were observed for CRP, MDA, and 
+TAC (Table 2).
+Table 3 indicates the results for glycemic indices of 
+participants. A notable finding was the statistically sig -
+nificant between-group difference in insulin level changes 
+during the study period ( P = 0.040), with the Intervention 
+group increasing from 9.68 to 18.06 mIU/L (P = 0.044) and 
+the Placebo group decreasing from 15.85 to 13.50 mIU/L 
+(P = 0.723). The change in HOMA-B was near significance 
+level (P = 0.051). However, no significant results were seen 
+for HOMA-IR and QUICKI after the study period.
+As shown in Table 4, there was a significant reduction in 
+weight (P = 0.007) and BMI ( P = 0.007) after the interven -
+tion in the synbiotic group, however, between-group com -
+parison did not show significant results. Results for other 
+anthropometric indices were not significant.
+Table 5 shows the observations of the lipid profile assess-
+ments. LDL level was significantly increased in the pla -
+cebo group ( P = 0.032). The reduction was not significant 
+in the intervention group for LDL. However, between-
+group comparison of changes in LDL was not significant. 
+Within-group comparisons for HDL did not show signifi -
+cant changes but comparison of mean differences during 
+the study period indicates a statistical difference between 
+groups (P = 0.011). No significant results were seen for TG 
+and cholesterol level.
+Discussion
+This study showed an insignificant increase in the liver 
+enzyme levels in both intervention and placebo groups after 
+12 weeks of intervention with synbiotic supplements. This 
+is while, TAC, MDA, and CRP did not change. Insulin level 
+was significantly increased in the intervention group, but the 
+comparison with changes in the control group was not sig -
+nificant. Weight and BMI of participants in the intervention 
+group significantly decreased, however, the comparisons 
+with the control group did not show significant differences. 
+above the navel and parallel to the ground. The same tape 
+was used for HC measurement. HC was measured at the 
+widest point around the hip.
+The physical activity of participants was assessed using 
+the short form of International Physical Activity Question -
+naire (IPAQ-SF) [ 12]. Participants were requested not to 
+make any deliberate changes in physical activity during the 
+study.
+Biochemical parameters
+A 5-cc venous blood sample was collected from each par -
+ticipant following an overnight fasting for at least 8 h before 
+and after the study period. Blood samples from all patients 
+were tested for FBS, LDL, HDL, TG, total cholesterol, 
+alkaline phosphatase, and HbA1C using the colorimetric 
+Enzymatic Kinetic Method. ALT, AST, CRP, fasting insulin, 
+MDA, and TAC were assessed using an ELISA (Enzyme-
+Linked Immunosorbent Assay) kit. Biochemical analyses 
+were performed in the clinical laboratory of the Motahari 
+Clinic, affiliated to the Shiraz University of Medical Sci -
+ences. Insulin resistance was calculated using the HOMA-
+IR, HOMA-B, and QUICKI with standard formula as 
+follows:
+HOMA − IR=
+Fasting Insulin(µ U/mL) × Fasting Glucose (mg/dL)
+405
+HOMA − B =
+360 × Fasting Insulin(µ U/mL )
+Fasting Glucose (mg/dL) − 63
+QUICKI=
+1
+log(Fasting Insulin(µ U/mL )) + log(Fasting Glucose (mg/dL))
+Statistical analysis
+All the statistical analyses were done using SPSS 22.0 using 
+intention-to-treat approach. The Shapiro-Wilk test was per-
+formed to assess normal distribution of data. Non-paramet -
+ric statistical analyses were performed for skewed data. The 
+Wilcoxon test was used for the within-group comparison. 
+The Mann–Whitney U test was applied for between-group 
+comparisons. The chi-square test was used for categorical 
+variables. Statistical significance was defined at P < 0.05. 
+Finally, the data reported as median (25th, 75th).
+1 3
+120 Page 4 of 11
+
+
+--- PAGE 5 ---
+Journal of Diabetes & Metabolic Disorders (2025) 24:120
+intervention with synbiotics containing acacia gum [ 13]. 
+The addition of acacia gum might increase the gut micro -
+biota and thereby improved insulin resistance in comparison 
+with our study, which did not have fiber supplementation.
+Supporting this finding, Lauw et al., in a study involv -
+ing 55 overweight and obese individuals, noticed improve -
+ment in FBS, insulin levels, and HOMA-IR after synbiotic 
+supplementation in combination with dietary fiber [14]. The 
+presence of dietary fiber may play anti-inflammatory role 
+and can possibly be associated with the amendment of insu-
+lin resistance.
+Velayati et al. involved 50 individuals with T2DM and 
+similarly reported significant reductions in FBS, insulin 
+levels, and HOMA-IR [ 15]. Although our study did not 
+rigorously resulted to insulin resistance improvement, but 
+show similar results. The more pronounced outcomes by 
+Velayati et al. may have been due to their study popula -
+tion that included T2DM patients. In addition, Ebrahimi 
+et al. determined in their study, that following 12 weeks 
+Among lipid profile parameters LDL and HDL were 
+increased in the control group, this is while analysis showed 
+significant difference with intervention group just for HDL.
+Insulin resistance indices and inflammatory markers
+In our study, probiotic supplementation reduced insulin lev-
+els substantially. There was group difference in the level of 
+insulin (p = 0.040), such that the Intervention group increased 
+from 9.68 to 18.06 mIU/L (p = 0.044) and the Placebo group 
+decreased from 15.85 to 13.50 mIU/L ( p = 0.723). Despite 
+this, the clinical significance of this rise is doubtful since 
+it was not accompanied by rises in insulin resistance indi -
+ces. It also had a borderline significant effect on HOMA-B 
+that may reflect a rise in insulin sensitivity. These results 
+are in agreement with research on the action of probiotics 
+and synbiotics on insulin resistance. A study by Laue et al. 
+on 180 subjects with abdominal obesity, insulin resistance 
+and HOMA-IR significantly decreased after 12 weeks of 
+Fig. 1 CONSORT flow diagram
+ 
+1 3
+Page 5 of 11 120
+
+
+--- PAGE 6 ---
+Journal of Diabetes & Metabolic Disorders (2025) 24:120
+suggests that the rise in insulin may not be indicative of 
+heightened sensitivity, but instead could be a compensa -
+tory response in this T2DM population. The small sample 
+size would have limited the power to find more widespread 
+metabolic effects, and the double pathology of NAFLD 
+and T2DM would have added complex insulin dynamics 
+that would have made interpretation harder. These factors 
+underscore the need for further studies with larger cohorts to 
+establish the therapeutic relevance of this finding.
+Anthropometric
+Although the intervention group had significant weight 
+reduction and BMI, the placebo group did not show any 
+weight changes. As for waist and hip circumference, body 
+fat, and lean mass changes between the two groups did not 
+change significantly. In the study by Laue et al., supplemen-
+tation with probiotics, like L. fermentum and synbiotics with 
+acacia gum, resulted in significant reductions of weight, 
+BMI, and visceral fat in 180 abdominally obese patients 
+[13]. Although our findings align with the reductions in 
+weight and BMI seen in Laue’s study, we did not observe 
+significant changes either at the waistline or in visceral fat. 
+This difference could be due to Laue’s use of acacia gum 
+in this study, which may have had additive effects on gut 
+microbiota and visceral fat reduction. However, our study 
+involved participants with NAFLD and type 2 diabetes.
+In the study by Javadi et al. involving 75 patients with 
+NAFLD, probiotics and prebiotics supplementation resulted 
+in weight and BMI reduction, in line with our study [ 11]. 
+However, results by Javadi were dominated by a decrement 
+in liver enzymes which could be due to the study population.
+Synbiotics with dietary fiber had significant influences on 
+weight, levels of FBS and insulin, and HOMA-IR, accord -
+ing to the study conducted on 55 overweight and obese par-
+ticipants by Lauw et al. Our study supported weight loss but 
+failed to show significant changes in HOMA similar with 
+Lauw’s study [14]. This is probably explained by the fiber 
+content of the intervention used in Lauw’s study, which may 
+have caused the higher metabolic changes.
+Velayati et al. conducted a study to investigate the effect 
+of symbiotic supplementation on type 2 diabetes Meletus 
+patients, in which 50 patients were included. They showed a 
+reduction in weight and an amelioration in insulin resistance 
+markers like HOMA-IR [ 19]. Our results regarding weight 
+reduction was in line with their findings. This was indeed 
+confirmed in the study by Moroti et al., as the consump -
+tion of synbiotics by 20 elderly persons led to a reduction 
+in weight [ 20]. In our study, we also observed a reduction 
+in weight and BMI, the discrepancies may be explained by 
+the difference in age, since Moroti’s elderly subjects would 
+possess different metabolic profiles from those in our study 
+of synbiotic administration, a significant improvements in 
+FBS and HbA1c in 70 diabetic patients [ 16]. While our 
+results were similar in terms of the changes in insulin lev -
+els, HOMA results were not significant which could be due 
+to low sample size.
+In contrast, the study of Tabrizi with 50 T2DM patients 
+showed an improvement in FBS, insulin, and some inflam -
+matory markers like hs-CRP [ 17]. Although a reduction in 
+insulin was also observed in our study, there was no sig -
+nificant change in CRP. A, the meta-analysis by Zheng et 
+al. had 1,060 metabolic syndrome patients, showed a sig -
+nificant reductions in blood glucose and insulin resistance 
+[18]. Although our study showed similar trends, the greater 
+sample size and heterogeneity in Zheng’s meta-analysis can 
+explain why our findings did not report significant changes 
+in insulin resistance and CRP and inflammatory markers.
+The between-group difference in insulin ( p = 0.040) is 
+statistically significant, although its clinical significance 
+is questionable due to several limitations. That the same 
+improvement was not seen in insulin resistance parameters, 
+such as HOMA-IR ( p = 0.787) and QUICKI ( p = 0.787), 
+Table 1  Demographic characteristics of participants based on the 
+groups
+Placebo (n = 2 0 ) Intervention 
+(n = 2 0 )
+Total (N = 4 0 )
+Age (range)a 55.5(37–70) 56.75(26–75) 56.15(26–75)
+Sex n(%)
+   Female 17(85) 13(65) 30(75)
+   Male 3(15) 7(35) 10(25)
+   PAb 321.75(± 668.3) 693(± 943.5) 445.5(± 883.2)
+Marital status 
+n(%)
+   Single 1(5) 0 1(2.5)
+   Married 14(70) 19(95) 33(82.5)
+   Divorced 2(10) 0 2(5)
+   Widowed 3(15) 1(5) 4(10)
+Education n(%)
+   Illiterate 1(5) 2(10) 3(7.5)
+   Primary 4(20) 2(10) 6(15)
+   Diploma 5(25) 10(50) 16(40)
+   Associate 2(10) 1(5) 3(7.5)
+   Bachelor 4(20) 4(20) 8(20)
+   Master 3(15) 1(5) 4(10)
+Occupation 
+n(%)
+   Employee 5(25) 2(10) 7(17.5)
+   Self-employed 0 5(25) 5(12.5)
+   Retired 6(30) 4(20) 10(25)
+   Jobless 2(10) 0 2(5)
+   Housewife 7(35) 9(45) 16(40)
+Data are shown as median (25th, 75th)
+a Age is shown in year
+b Physical Activity measured by International Physical Activity 
+Questionnaire - Short Form (MET-minutes/week)
+1 3
+120 Page 6 of 11
+
+
+--- PAGE 7 ---
+Journal of Diabetes & Metabolic Disorders (2025) 24:120
+phosphatase showed slight increases in both groups; how -
+ever, these changes were not statistically significant.
+The AST elevation in both groups can be a sign of spon-
+taneous progression of NAFLD or T2DM complications, 
+as hepatic fat and fibrosis were not remeasured at study 
+completion. This synbiotic capsule prebiotic dose of 21 mg 
+of fructooligosaccharides was likely too low to effectively 
+influence gut-liver communication, additionally their sachet 
+administration could have allowed for much higher doses of 
+prebiotic or use of other prebiotic ingredients like inulin or 
+GOS might lower AST levels. In addition, strains such as 
+Lactobacillus plantarum, which had previously been shown 
+to reduce liver enzymes [21], Bifidobacterium bifidum, that 
+synergistically augments anti-inflammatory activity with 
+B. breve and B. longum [22], or Lactobacillus reuteri, that 
+preserves bile acid homeostasis [ 23], may have had further 
+AST-mitigating effects.
+The little influence of synbiotic supplementation on AST 
+levels may suggest a failure to adequately modulate the 
+with NAFLD and T2DM. In a study conducted by Tabrizi et 
+al. to evaluate the effects of probiotic and synbiotic supple-
+mentation on inflammatory markers among patients with 
+diabetes, showed decreases in weight in a study with the 
+participation of 50 T2DM subjects [ 17]. While we showed 
+significant decrement in weight and BMI reduction, we did 
+not observe changes in CRP, MDA, or TAC, where Tabrizi 
+observed amelioration in inflammation. Inconsistency 
+between the result may be attributable to the variant probi -
+otic-prebiotic supplementation that Tabrizi employed when 
+compared with our main intervention of probiotics.
+Lipid profile and liver enzymes
+Our study resulted an increase of AST levels in both the 
+intervention and placebo groups. Although in both groups 
+the changes within the groups were significant, between-
+group differences were not significant. ALT and alkaline 
+Table 2 Liver enzymes and inflammatory markers of participants before and after the study as well as their changes during study
+Placebo (n = 2 0 ) Intervention (n = 2 0 ) P- value
+ASTa (U/L) Before 27.00 (23.25, 32.75) 22.50 (17.48, 30.50) 0.180
+After 33.50 (26.00, 45.50) 34.19 (26.25, 40.04) 0.989
+P-value 0.014 0.006
+Mean differences 5.50 (-1.250, 15.00) 9.42 (1.50, 12.98) 0.636
+ALTb (U/L) Before 30.50 (22.81, 37.50) 30.50 (21.25, 41.00) 0.705
+After 41.44 (23.00, 48.00) 34.53 (27.00, 50.77) 0.914
+P-value 0.113 0.058
+Mean differences 4.50 (-3.32, 12.75) 2.50 (-1.50, 18.48) 0.818
+Alkaline phosphatase (IU/L) Before 176.00 (149.00, 212.75) 183.50 (162.75, 225.18) 0.646
+After 203.50 (170.00, 235.75) 221.27 (182.25, 231.75) 0.570
+P-value 0.052 0.067
+Mean differences 22.50 (-2.75, 46.34) 13.67 (-4.15, 44.25) 0.665
+CRPc (mg/L) Before 0.750 (0.200, 1.06) 1.000 (0.183, 2.22) 0.595
+After 0.750 (0.300, 1.55) 1.000 (0.210, 3.94) 0.370
+P-value 0.587 1.000
+Mean differences -0.043 (-0.85, 0.55) -0.150 (-0.78, 0.67) 0.561
+MDAd (µM) Before 2.70 (2.13, 2.85) 2.99 (2.71, 3.17) 0.064
+After 2.82 (2.32, 3.14) 2.90 (2.09, 3.51) 0.588
+P-value 0.350 0.526
+Mean differences 0.19 (-0.23, 0.33) -0.035 (-0.66, 0.29) 0.337
+TACe (µM) Before 1.73 (1.56, 2.00) 1.49 (1.26, 1.80) 0.072
+After 1.57 (1.40, 1.82) 1.52 (1.29, 1.92) 0.645
+P-value 0.042 0.654
+Mean differences -0.14 (-0.28, 0.05) 0.02 (-0.12, 0.34) 0.074
+Values are reported as median (25th, 75th)
+Within group analysis was done using Wilcoxon test and between group tests was done by using Mann-Whitney U test
+P-value less than 0.05 is considered as significant and is shown with bold font
+a Aspartate Aminotransferase
+b Alanine Aminotransferase
+c C-Reactive Protein
+d Malondialdehyde
+e Total Antioxidant Capacity
+1 3
+Page 7 of 11 120
+
+
+--- PAGE 8 ---
+Journal of Diabetes & Metabolic Disorders (2025) 24:120
+mobilization, a normal response in NAFLD patients that 
+may transiently elevate liver enzymes. The existing liver 
+stress in subjects with both NAFLD and T2DM could have 
+amplified this effect. The 12-week study duration could also 
+have represented an early adaptation period instead of a 
+stabilization period, and the dose of synbiotic (10^9 CFU) 
+might not have been sufficient to reverse these metabolic 
+alterations in this complex population. These findings indi -
+cate the power of the study in revealing actual-world physi-
+ological responses rather than a design limitation.
+Our observations were in line with other studies inves -
+tigating the synbiotic and probiotic effects in metabolic 
+and liver-related disorders. Scorletti et al., included 104 
+NAFLD patients and did not observe significant changes in 
+liver fat, fibrosis, and liver enzymes such as AST and ALT 
+after an 8-week synbiotic supplementation [ 26]. On the 
+other hand, Javadi et al. reported that after supplementation 
+of 75 NAFLD patients, there was a significant reduction 
+in AST and ALT levels [ 11]. This opposite results may be 
+due to the patient population, as their study focused only on 
+NAFLD participants, while in our study, participants had 
+suffered from both NAFLD and T2DM, which may alter 
+liver-related outcomes.
+gut-liver axis, a significant pathway in NAFLD and T2DM. 
+Increased gut permeability, which is a ubiquitous feature 
+in these conditions, allows for translocation of bacterial 
+endotoxins like lipopolysaccharides into the liver, inducing 
+inflammation and hepatocyte damage causing an elevation 
+of AST [24]. Synbiotic therapy may have lacked sufficient 
+potency to adequately maintain the intestinal barrier against 
+leakage of endotoxin. Secondly, the expected upsurge of 
+short-chain fatty acids such as butyrate, which inhibit liver 
+inflammation and steatosis [ 24], was highly likely sup -
+pressed by the 12-week duration or synbiotic combination 
+and failed to reverse liver stress. Irregular bile acid signal -
+ing, another part of the gut-liver axis disrupted in NAFLD/
+T2DM, may have increased hepatic inflammation further 
+since the synbiotic strains employed in this research most 
+likely did not correct bile acid management [ 25]. These 
+results indicate that more prolonged and more targeted 
+interventions need to be on the agenda in order to train gut-
+liver interactions and reduce liver enzymes properly.
+The acute increases in AST (Intervention: 22.50 to 
+34.19, p = 0.006; Placebo: 27.00 to 33.50, p = 0.014) and 
+slight increases in ALT are due to several factors. The 
+caloric deficit (-500 kcal/day) most likely induced acute fat 
+Table 3 Glycemic indices of participants before and after the study as well as their changes during study
+Placebo (n = 2 0 ) Intervention (n = 2 0 ) P- value
+FBSa (mg/dl) Before 121.50 (104.25, 145.45) 115.50 (107.00, 145.25) 0.645
+After 121.61 (114.25, 141.59) 119.49 (107.00, 140.68) 0.636
+P-value 0.837 0.420
+Mean differences 2.50 (-13.00, 11.00) -1.80 (-13.84, 5.75) 0.588
+Blood Insulin (mIU/l) Before 15.85 (5.47, 24.27) 9.68 (5.42, 15.16) 0.176
+After 13.50 (6.55, 24.74) 18.06 (4.92, 21.12) 0.914
+P-value 0.723 0.044
+Mean differences -0.20 (-4.47, 4.30) 1.52 (-1.02, 9.42) 0.040
+HOMA-IRb Before 4.46 (2.26, 6.12) 3.27 (1.41, 4.95) 0.256
+After 4.28 (1.92, 7.25) 4.85 (1.33, 6.66) 0.787
+P-value 0.970 0.086
+Mean differences -0.05 (-1.23, 1.46) 0.49 (-0.50, 3.11) 0.152
+HOMA-Bc Before 78.12 (26.54, 187.73) 51.27 (28.71, 111.68) 0.304
+After 97.55 (30.51, 159.99) 100.318 (28.44, 162.85) 0.978
+P-value 0.332 0.108
+Mean differences -1.61 (-31.46, 9.29) 8.84 (-12.35, 65.49) 0.051
+QUICKId Before 0.30 (0.29, 0.33) 0.32 (0.30, 0.36) 0.256
+After 0.30 (0.28, 0.34) 0.30 (0.29, 0.37) 0.787
+P-value 0.911 0.086
+Mean differences 0.000 (-0.011, 0.014) -0.006 (-0.031, 0.006) 0.358
+Values are reported as median (25th, 75th)
+Within group analysis was done using Wilcoxon test and between group tests was done by using Mann-Whitney U test
+P-value less than 0.05 is considered as significant and is shown with bold font
+a Fasting Blood Sugar
+b Homeostatic Model Assessment for Insulin Resistance
+c Homeostatic Model Assessment for Beta-cell Function
+d Quantitative Insulin Sensitivity Check Index
+1 3
+120 Page 8 of 11
+
+
+--- PAGE 9 ---
+Journal of Diabetes & Metabolic Disorders (2025) 24:120
+was perhaps too short to cause discernible liver enzyme 
+or inflammatory change, given the pathophysiologic com -
+plexity of NAFLD and T2DM in our population. The low-
+calorie diet (-500 kcal/day) to which the two groups were 
+subjected might have obscured synbiotic effects through the 
+introduction of metabolic stress, as evidenced in the AST 
+rise. In addition, the specific synbiotic strain combination or 
+dose (109 CFU) might not have been optimal for this dual-
+disease population, suggesting the need for personalized 
+formulations.
+The limited synbiotic effect is also due to bacterial strain 
+and dosage. The strains (L. acidophilus, L. lactis, L. rham-
+nosus, B. longum, B. breve, L. casei) are all metabolism 
+beneficial but might differ in potency in NAFLD patients 
+with T2DM where gut-liver axis interaction is complex. The 
+109 CFU dose, while being within the normal range, perhaps 
+was on the lower end to cause dramatic shifts in this group 
+within 12 weeks, particularly for inflammatory markers and 
+liver enzymes. A greater dose (e.g., 1010–1011 CFU) or con-
+comitant administration of multiple different strains may 
+be needed, underscoring that more work is needed to most 
+optimally use synbiotic interventions in such populations.
+The study by Mitrović et al., which was conducted on 
+84 MASLD1 patients, also evidenced significant reductions 
+in the inflammatory marker hs-CRP but with no signifi -
+cant changes in liver enzymes, suggesting once more that 
+synbiotic interventions may influence inflammation rather 
+than directly affect liver enzymes [27]. Laue et al. reported 
+reductions in body fat and liver steatosis in 180 patients 
+with abdominal obesity, without significant change in liver 
+enzymes, which may suggest that synbiotics have particu -
+lar benefits for body composition in obesity, which may 
+not influence liver enzyme levels to any great degree in the 
+short term [13]. That would suggest either a longer period of 
+supplementation or, more narrowly, the need for a focused 
+intervention in specific patient groups may be necessary for 
+improvement in liver enzymes.
+The poor effects of synbiotic supplementation in this pres-
+ent study can be attributed to some mechanistic rationales. 
+The low dietary fiber content, relative to studies like Laue 
+et al. [13]and Lauw et al. [14], may have limited gut micro-
+biota modulation, which is one of the major mechanisms of 
+action for synbiotic effectiveness. The 12 weeks’ duration 
+1 Metabolic dysfunction-associated steatotic liver disease.
+Table 4 Anthropometric indices of participants before and after the study as well as their changes during study
+Placebo (n = 2 0 ) Intervention (n = 2 0 ) P- value
+Weight (kg) Before 77.75 (77.75, 96.57) 77.55 (72.37, 86.60) 0.850
+After 76.85 (65.72, 95.0353) 77.45 (72.34, 80.37) 0.808
+P-value 0.177 0.007
+Mean differences − 0.95 (-1.98, 0.70) -0.80 (-1.49, -0.09) 0.588
+BMIa (kg/m2) Before 29.99 (26.57, 32.86) 29.62 (26.95, 33.24) 0.850
+After 29.97 (25.96, 32.65) 29.53 (26.54, 31.78) 0.725
+P-value 0.171 0.007
+Mean differences − 0.35 (-0.79, 0.22) -0.31 (-0.59, -0.04) 0.745
+Waist circumference (cm) Before 103.00 (93.50, 112.50) 103.00 (97.25, 108.75) 0.946
+After 101.00 (93.60, 115.75) 101.36 (96.00, 107.77) 0.839
+P-value 0.643 0.371
+Mean differences -1.00 (-3.75, 3.00) -0.50 (-3.95, 1.00) 0.989
+Hip circumference (cm) Before 110.50 (102.00, 116.50) 115.50 (106.50, 120.75) 0.291
+After 109.50 (100.00, 114.66) 111.83 (105.75, 116.67) 0.297
+P-value 0.163 0.100
+Mean differences -1.00 (-5.75, 1.00) -4.50 (-9.00, 3.41) 0.233
+Body Fat (kg) Before 39.10 (27.27, 43.95) 41.15 (35.52, 46.72) 0.317
+After 35.51 (28.52, 43.875) 42.25 (36.13, 45.91) 0.055
+P-value 0.235 0.823
+Mean differences -0.95 (-2.85, 1.37) -0.20 (-2.22, 5.01) 0.267
+Lean mass (kg) Before 28.00 (24.67, 33.67) 24.90 (23.12, 28.45) 0.148
+After 27.14 (24.10, 32.22) 25.15 (23.16, 27.57) 0.104
+P-value 0.525 0.879
+Mean differences 0.20 (-0.77, 1.15) 0.05 (-1.00, 1.02) 0.579
+Values are reported as median (25th, 75th)
+Within group analysis was done using Wilcoxon test and between group tests was done by using Mann-Whitney U test
+P-value less than 0.05 is considered as significant and is shown with bold font
+a Body Mass Index
+1 3
+Page 9 of 11 120
+
+
+--- PAGE 10 ---
+Journal of Diabetes & Metabolic Disorders (2025) 24:120
+tion and contributed to manuscript review. Morteza Zare: Conducted 
+statistical analysis. MohammadAli Mohsenpour: Reviewed the manu-
+script and contributed to project coordination.
+Funding This study was funded by Shiraz University of Medical Sci -
+ences, Iran under grant number 29308. The funding body had no role 
+in the study design, data collection, analysis, interpretation, or manu -
+script writing.
+Data availability No datasets were generated or analysed during the 
+current study.
+Declarations
+Competing interests The authors declare no competing interests.
+References
+1. Bohora S, Mishra SR, Wilson T, et al. Health gains from achiev-
+ing optimal body mass index in Australia: a simulation study. 
+Lancet Reg Health West Pac. 2024;49:101148.
+2. Sørensen TIA, Martinez AR, Jørgensen TSH. Epidemiology of 
+obesity. Handb Exp Pharmacol. 2022;274:3–27.
+3. Galicia-Garcia U, Benito-Vicente A, Jebari S, et al. Pathophysiol-
+ogy of type 2 diabetes mellitus. Int J Mol Sci. 2020;21(17):6275.
+4. Scheithauer TPM, Rampanelli E, Nieuwdorp M, et al. Gut micro-
+biota as a trigger for metabolic inflammation in obesity and type 
+2 diabetes. Front Immunol. 2020;11:571731.
+5. Kadooka Y , Sato M, Imaizumi K, et al. Regulation of abdominal 
+adiposity by probiotics (Lactobacillus gasseri SBT2055) in adults 
+with obese tendencies in a randomized controlled trial. Eur J Clin 
+Nutr. 2010;64(6):636–43.
+Conclusion
+This randomized controlled trial evaluated the effects of 
+12-week multi-strain synbiotic supplementation on health 
+parameters in overweight or obese adults with type 2 dia -
+betes mellitus and non-alcoholic fatty liver disease. The 
+results demonstrated that synbiotic treatment significantly 
+improved weight and BMI within the intervention group, 
+though no significant between-group effects were observed 
+for these or other outcomes, including liver enzymes, 
+inflammatory markers, lipid profiles, or glycemic indices. 
+While within-group differences in glycemic indices were 
+noted, their clinical relevance is uncertain. These findings 
+suggest that synbiotic supplementation may have poten -
+tially modest differential effect between groups in this 
+patient population. Future research could be improved by 
+employing larger sample sizes to increase statistical power, 
+optimizing synbiotic preparations (e.g., strain mixtures or 
+dosages), extending intervention duration, and employing 
+other biomarkers to further define therapeutic potential and 
+clinical significance in this patient population.
+Author contributions Aryan M. Yazdani: Principal investigator of the 
+study; conducted the intervention, performed the analysis, and drafted 
+the manuscript. Mohammad Reza Fattahi: Assisted with the interven -
+tion and contributed to manuscript review. Mohammad Hassan Eft -
+ekhari: Supervised the entire project and provided critical revisions to 
+the manuscript. Afsane Ahmadi: Assisted with project supervision and 
+reviewed the manuscript. Mahmood Soveid: Supported the interven -
+Table 5 Lipid profile assessments of participants before and after the study as well as their changes during study
+Placebo (n = 2 0 ) Intervention (n = 2 0 ) P- value
+LDLa (mg/dl) Before 89.00 (62.75, 109.50) 80.50 (62.50, 94.25) 0.223
+After 94.80 (67.00, 126.25) 76.76 (60.00, 94.85) 0.083
+P-value 0.032 0.411
+Mean differences 7.50 (2.25, 15.75) -8.19 (-21.50, 10.60) 0.076
+HDLb (mg/dl) Before 42.00 (38.25, 49.09) 40.50 (20.5, 60.5) 0.766
+After 43.00 (39.25, 53.00) 41.00 (27, 55) 0.122
+P-value 0.172 0.134
+Mean differences 2.00 (-2.75, 7.00) -3 (-15,9) 0.011
+TCc (mg/dl) Before 178.52 (140.25, 201.50) 143.50 (128.00, 179.75) 0.107
+After 162.77 (139.00, 207.00) 151.63 (136.63, 170.80) 0.208
+P-value 0.867 0.627
+Mean differences − 0.50 (-10.50, 10.00) -11.61 (-24.38, 22.78) 0.507
+TGd (mg/dl) Before 172.19 (127.75, 231.25) 152.00 (106.75, 210.25) 0.417
+After 174.00 (115.75, 198.67) 159.67 (134.59, 209.33) 0.839
+P-value 0.304 0.911
+Mean differences -8.00 (-58.00, 23.42) 13.50 (-60.66, 67.46) 0.507
+Values are reported as median (25th, 75th)
+Within group analysis was done using Wilcoxon test and between group tests was done by using Mann-Whitney U test
+P-value less than 0.05 is considered as significant and is shown with bold font
+a Low-Density Lipoprotein
+b High-Density Lipoprotein
+c Total Cholesterol
+d Triglycerides
+1 3
+120 Page 10 of 11
+
+
+--- PAGE 11 ---
+Journal of Diabetes & Metabolic Disorders (2025) 24:120
+oxidative stress in diabetic patients: A systematic review and 
+meta-analysis of randomized controlled trials. Pharmacol Res. 
+2019;142:303–13.
+19. Velayati A, Kareem I, Sedaghat M et al. Does symbiotic supple -
+mentation which contains Bacillus Coagulans Lactobacillus 
+rhamnosus, Lactobacillus acidophilus and fructooligosaccharide 
+has favourite effects in patients with type-2 diabetes? A ran -
+domised, double-blind, placebo-controlled trial. Arch Physiol 
+Biochem [Internet]. 2023 Nov 2 [cited 2024 Oct 25]; Available 
+from:  h t t p  s : /  / w w w  . t  a n d  f o n l  i n e  . c o  m / d  o i /  a b s /   h t  t p s :  / / d  o i .  o r g  / 1 0  . 1 0 
+8  0 /  1 3 8 1 3 4 5 5 . 2 0 2 1 . 1 9 2 8 2 2 5
+20. Moroti C, Souza Magri LF, de Rezende Costa M, et al. Effect 
+of the consumption of a new symbiotic shake on glycemia and 
+cholesterol levels in elderly people with type 2 diabetes mellitus. 
+Lipids Health Dis. 2012;11:29.
+21. An Update on the Efficacy. Functionality of probiotics for the 
+treatment of Non-Alcoholic fatty liver disease. Engineering. 
+2021;7(5):679–86.
+22. Meroni M, Longo M, Dongiovanni P. The role of probiotics in 
+nonalcoholic fatty liver disease: A new insight into therapeutic 
+strategies. Nutrients. 2019;11(11):2642.
+23. Ayesha IE, Monson NR, Klair N et al. Probiotics and their role 
+in the management of type 2 diabetes mellitus (Short-Term ver -
+sus Long-Term Effect): A Systematic Review and Meta-Analysis. 
+Cureus 15(10):e46741.
+24. Ferolla SM, Couto CA, Costa-Silva L, et al. Beneficial effect of 
+synbiotic supplementation on hepatic steatosis and anthropomet -
+ric parameters, but not on gut permeability in a population with 
+nonalcoholic steatohepatitis. Nutrients. 2016;8(7):397.
+25. Scorletti E, Afolabi PR, Miles EA, et al. Investigation of synbiotic 
+treatment in non-alcoholic fatty liver disease (INSYTE study): a 
+double-blind, randomised, placebo-controlled, phase 2 trial. Gas-
+troenterology. 2020;158(6):1597–e16107.
+26. E S, Pr A, Ea M, et al.: Synbiotics Alter Fecal Microbiomes, But 
+Not Liver Fat or Fibrosis, in a Randomized Trial of Patients With 
+Nonalcoholic Fatty Liver Disease. Gastroenterology [Internet]. 
+2020 May [cited 2025 Apr 14];158(6). Available from:  h t t p s :   /  / p u 
+b m e   d . n  c b  i  . n  l  m .  n  i h .  g o v / 3 1 9 8 7 7 9 6 /
+27. Mitrović M, Dobrosavljević A, Odanović O, et al. The effects of 
+synbiotics on the liver steatosis, inflammation, and gut Microbi -
+ome of metabolic dysfunction-associated liver disease patients-
+randomized trial. Romanian J Intern Med Rev Roum Med Interne. 
+2024;62(2):184–93.
+Publisher’s note Springer Nature remains neutral with regard to juris-
+dictional claims in published maps and institutional affiliations.
+Springer Nature or its licensor (e.g. a society or other partner) holds 
+exclusive rights to this article under a publishing agreement with the 
+author(s) or other rightsholder(s); author self-archiving of the accepted 
+manuscript version of this article is solely governed by the terms of 
+such publishing agreement and applicable law.
+6. Matsumoto M, Benno Y . Anti-inflammatory metabolite produc-
+tion in the gut from the consumption of probiotic yogurt con -
+taining Bifidobacterium animalis subsp. Lactis LKM512. Biosci 
+Biotechnol Biochem. 2006;70(6):1287–92.
+7. Lee J, Rheem S, Yun B, et al. Effects of probiotic yoghurt on 
+symptoms and intestinal microbiota in patients with irritable 
+bowel syndrome. Int J Dairy Technol. 2013;66(2):243–55.
+8. Kim WJ, Kil BJ, Lee C, et al. B. longum CKD1 enhances 
+the efficacy of anti-diabetic medicines through upregula -
+tion of IL- 22 response in type 2 diabetic mice. Gut Microbes. 
+2024;16(1):2319889.
+9. Sung HK, Youn SJ, Choi Y , et al. Body fat reduction effect of 
+Bifidobacterium breve B-3: A randomized, Double-Blind, pla -
+cebo comparative clinical trial. Nutrients. 2022;15(1):28.
+10. Chapat L, Chemin K, Dubois B, et al. Lactobacillus casei reduces 
+CD8 + T cell-mediated skin inflammation. Eur J Immunol. 
+2004;34(9):2520–8.
+11. Javadi L, Ghavami M, Khoshbaten M, et al. The effect of probi -
+otic and/or prebiotic on liver function tests in patients with non -
+alcoholic fatty liver disease: A double blind randomized clinical 
+trial. Iran Red Crescent Med J IRCMJ. 2024;19(4):1–9.
+12. Ma M, F M, N R, et al.: Milk kefir drink may not reduce depres -
+sion in patients with non-alcoholic fatty liver disease: secondary 
+outcome analysis of a randomized, single-blinded, controlled 
+clinical trial. BMC Nutr [Internet]. 2023 Jun 29 [cited 2025 Apr 
+14];9(1). Available from:  h t t p  s : /  / p u b  m e  d . n  c b i .  n l m  . n i  h . g o v / 3 7 3 8 6 
+5 5 1 /
+13. Laue C, Papazova E, Pannenbeckers A, et al. Effect of a probi -
+otic and a synbiotic on body fat mass, body weight and traits of 
+metabolic syndrome in individuals with abdominal overweight: 
+A human, Double-Blind, randomised, controlled clinical study. 
+Nutrients. 2023;15(13):3039.
+14. Lauw S, Kei N, Chan PL, et al. Effects of synbiotic supplemen -
+tation on metabolic syndrome traits and gut microbial profile 
+among overweight and obese Hong Kong Chinese individuals: A 
+randomized trial. Nutrients. 2023;15(19):4248.
+15. Velayati A, Kareem I, Sedaghat M, et al. Does symbiotic sup -
+plementation which contains Bacillus Coagulans Lactobacillus 
+rhamnosus, Lactobacillus acidophilus and fructooligosaccharide 
+has favourite effects in patients with type-2 diabetes? A ran -
+domised, double-blind, placebo-controlled trial. Arch Physiol 
+Biochem. 2023;129(6):1211–8.
+16. Ebrahimi ZS, Nasli-Esfahani E, Nadjarzade A, et al. Effect of 
+symbiotic supplementation on glycemic control, lipid profiles and 
+microalbuminuria in patients with non-obese type 2 diabetes: a 
+randomized, double-blind, clinical trial. J Diabetes Metab Disord. 
+2017;16:23.
+17. Tabrizi R, Ostadmohammadi V , Lankarani KB, et al. The effects 
+of probiotic and synbiotic supplementation on inflammatory 
+markers among patients with diabetes: A systematic review and 
+meta-analysis of randomized controlled trials. Eur J Pharmacol. 
+2019;852:254–64.
+18. Zheng HJ, Guo J, Jia Q, et al. The effect of probiotic and syn -
+biotic supplementation on biomarkers of inflammation and 
+1 3
+Page 11 of 11 120

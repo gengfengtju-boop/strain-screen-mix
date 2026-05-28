@@ -1,0 +1,26 @@
+weights:
+  priority_high: 2.0
+  priority_medium: 1.0
+  randomized_controlled_trial: 2.0
+  clinical_trial_registry: 1.5
+  meta_analysis_or_systematic_review: 1.0
+  relevance_score: 1.0
+  sample_size_hint: 0.7
+  duration_hint: 0.6
+  cfu_hint: 0.8
+  dose_hint: 0.4
+  p_value_hint: 1.0
+  body_weight_effect_hint: 1.2
+  bmi_effect_hint: 1.0
+  waist_effect_hint: 0.8
+  body_fat_effect_hint: 1.0
+  glucose_effect_hint: 0.7
+  lipid_effect_hint: 0.7
+  microbiome_effect_hint: 0.7
+
+score_caps:
+  max_score: 15.0
+
+confidence_rules:
+  high_min_score: 10.0
+  medium_min_score: 6.0

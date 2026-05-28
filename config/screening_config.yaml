@@ -1,0 +1,107 @@
+priority_rules:
+  high:
+    - randomized
+    - randomised
+    - double-blind
+    - placebo-controlled
+    - clinical trial
+    - controlled trial
+  medium:
+    - systematic review
+    - meta-analysis
+    - network meta-analysis
+    - human clinical trials
+    - overweight adults
+    - obese adults
+  lower:
+    - mouse
+    - mice
+    - rat
+    - animal
+    - model
+    - review
+
+intervention_terms:
+  probiotic:
+    - probiotic
+    - probiotics
+  prebiotic:
+    - prebiotic
+    - prebiotics
+  synbiotic:
+    - synbiotic
+    - synbiotics
+  postbiotic:
+    - postbiotic
+    - postbiotics
+
+outcome_terms:
+  weight:
+    - weight
+    - body weight
+    - weight loss
+    - weight management
+  BMI:
+    - BMI
+    - body mass index
+  waist:
+    - waist
+    - waist circumference
+  body_composition:
+    - body composition
+    - body fat
+    - fat mass
+  lipid:
+    - lipid
+    - lipidemia
+    - triglyceride
+    - cholesterol
+    - LDL
+    - HDL
+  glucose:
+    - glucose
+    - insulin
+    - HOMA
+    - metabolic
+  microbiome:
+    - microbiome
+    - microbiota
+    - gut microbiota
+
+target_relevance_terms:
+  obesity:
+    - obesity
+    - obese
+    - overweight
+  adiposity:
+    - adiposity
+    - fat mass
+    - body fat
+    - body composition
+  anthropometric:
+    - weight
+    - BMI
+    - body mass index
+    - waist
+  metabolic:
+    - metabolic
+    - glucose
+    - insulin
+    - lipid
+    - triglyceride
+    - cholesterol
+  microbiome:
+    - microbiome
+    - microbiota
+
+taxa_patterns:
+  - Lactobacillus
+  - Lacticaseibacillus
+  - Lactiplantibacillus
+  - Limosilactobacillus
+  - Bifidobacterium
+  - Akkermansia
+  - Bacillus
+  - Streptococcus
+  - Enterococcus
+  - Saccharomyces

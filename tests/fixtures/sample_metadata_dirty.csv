@@ -1,0 +1,3 @@
+sample_id,subject_id,study_id,database_source,sequencing_type,body_site,time_point,age,sex,BMI,obesity_status,disease_status,country,region,antibiotic_use,diet_info_available,intervention_available
+S1,P1,StudyA,curatedMetagenomicData,shotgun,feces,pre,34,M,22.4,,healthy,China,East,false,true,false
+S2,P2,StudyA,curatedMetagenomicData,shotgun,feces,post-intervention,,female,31.2,unknown,obesity,China,East,false,true,true

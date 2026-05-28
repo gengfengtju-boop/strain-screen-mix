@@ -1,0 +1,4 @@
+evidence_id,confidence_level
+PMID:1,high_for_manual_review
+PMID:2,low_for_manual_review
+PMID:3,medium_for_manual_review

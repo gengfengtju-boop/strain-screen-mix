@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.pytest_tmp/
+pytest-cache-files-*/
 .ruff_cache/
 .mypy_cache/
 .venv/
@@ -28,4 +30,3 @@ results/**/*.pdf
 !data/**/.gitkeep
 !models/**/.gitkeep
 !results/**/.gitkeep
-

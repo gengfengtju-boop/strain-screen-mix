@@ -1,0 +1,82 @@
+allowed_database_sources:
+  genome:
+    - NCBI Genome
+    - NCBI Datasets
+    - RefSeq
+    - GenBank
+    - GTDB
+    - MGnify Genomes
+  microbiome:
+    - curatedMetagenomicData
+    - GMrepo
+    - Qiita
+    - SRA
+    - ENA
+    - MGnify
+  clinical_trial:
+    - ClinicalTrials.gov
+    - WHO ICTRP
+    - ChiCTR
+    - EU Clinical Trials Register
+  literature:
+    - PubMed
+    - MEDLINE
+    - PubMed Central
+    - publisher supplementary data
+  safety_annotation:
+    - CARD
+    - RGI
+    - VFDB
+    - ResFinder
+    - BacMet
+    - MobileElementFinder
+  metabolomics:
+    - Metabolomics Workbench
+    - GNPS
+
+minimum_evidence_rules:
+  strain_function_matrix:
+    require_genome_accession: true
+    require_genome_database: true
+    require_at_least_one_publication_identifier: true
+    publication_identifier_fields:
+      - evidence_doi
+      - evidence_pmid
+  intervention_metadata:
+    require_at_least_one_source_identifier: true
+    source_identifier_fields:
+      - source_accession
+      - source_url
+      - publication_doi
+      - publication_pmid
+  clinical_outcome:
+    require_at_least_one_source_identifier: true
+    source_identifier_fields:
+      - source_accession
+      - source_url
+      - publication_doi
+      - publication_pmid
+  combination_ranking:
+    require_source_strain_ids: true
+    require_at_least_one_publication_identifier: true
+    publication_identifier_fields:
+      - evidence_doi_list
+      - evidence_pmid_list
+  evidence_registry:
+    require_at_least_one_source_identifier: true
+    source_identifier_fields:
+      - source_accession
+      - source_url
+      - doi
+      - pmid
+    require_manual_curation_fields: true
+    manual_curation_fields:
+      - curator
+      - extraction_date
+      - extraction_note
+
+manual_curation:
+  allow_manual_entry: true
+  require_curator: true
+  require_extraction_date: true
+  require_extraction_note: true

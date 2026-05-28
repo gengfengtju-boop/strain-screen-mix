@@ -1,0 +1,12 @@
+jobs:
+  - name: pubmed_test
+    command: search_evidence
+    source: pubmed
+    query: probiotic obesity
+    output: data/literature_database/test_pubmed.csv
+    retmax: 2
+  - name: genome_test
+    command: search_genomes
+    query: Lactobacillus gasseri
+    output: data/strain_genome/test_genome.csv
+    retmax: 2

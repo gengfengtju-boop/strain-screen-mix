@@ -37,6 +37,11 @@ functional_profile:
 intervention_metadata:
   - study_id
   - subject_id
+  - source_database
+  - source_accession
+  - source_url
+  - publication_doi
+  - publication_pmid
   - intervention_type
   - probiotic_species
   - probiotic_strain
@@ -53,6 +58,11 @@ intervention_metadata:
 clinical_outcome:
   - subject_id
   - study_id
+  - source_database
+  - source_accession
+  - source_url
+  - publication_doi
+  - publication_pmid
   - baseline_weight
   - post_weight
   - weight_change
@@ -78,6 +88,12 @@ strain_function_matrix:
   - species
   - strain_name
   - genome_accession
+  - genome_database
+  - genome_url
+  - annotation_database
+  - annotation_accession
+  - evidence_doi
+  - evidence_pmid
   - safety_gate
   - AMR_risk
   - virulence_risk
@@ -94,6 +110,10 @@ combination_ranking:
   - combination_id
   - strains
   - target_population
+  - source_strain_ids
+  - evidence_summary
+  - evidence_doi_list
+  - evidence_pmid_list
   - safety_gate
   - functional_modules
   - complementarity_score
@@ -104,3 +124,38 @@ combination_ranking:
   - recommended_prebiotic
   - notes
 
+evidence_registry:
+  - evidence_id
+  - evidence_type
+  - source_database
+  - source_accession
+  - source_url
+  - doi
+  - pmid
+  - title
+  - year
+  - journal
+  - study_design
+  - data_field_supported
+  - extraction_note
+  - curator
+  - extraction_date
+
+genome_candidates:
+  - candidate_id
+  - search_query
+  - source_database
+  - source_accession
+  - source_url
+  - organism_name
+  - assembly_name
+  - assembly_level
+  - refseq_category
+  - taxid
+  - submitter
+  - release_date
+  - query_match_score
+  - manual_review_flag
+  - extraction_note
+  - curator
+  - extraction_date

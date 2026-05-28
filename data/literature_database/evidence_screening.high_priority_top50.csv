@@ -1,0 +1,51 @@
+priority,study_tag,intervention_type_hint,taxa_hint,outcome_hint,year,title,source_url
+high,clinical_trial_registry,synbiotic,,,2005,The Role of Synbiotics in Reducing Post-Operative Infections in Patients Undergoing Cardiac Surgery: A Pilot Study,https://clinicaltrials.gov/study/NCT00164099
+high,clinical_trial_registry,prebiotic,,weight,2007,Prebiotic Fiber as a Modifier of Satiety Hormones and Body Weight in Overweight and Obese Adults,https://clinicaltrials.gov/study/NCT00522353
+high,clinical_trial_registry,prebiotic,,weight;glucose,2009,Efficacy of a Prebiotic Galactooligosaccharide to Reduce Metabolic Syndrome Risk Factors in Overweight Adults,https://clinicaltrials.gov/study/NCT01004120
+high,clinical_trial_registry,probiotic,,,2009,ProSat - Long Term Effect of Probiotics on Satiety,https://clinicaltrials.gov/study/NCT01240018
+high,clinical_trial_registry,synbiotic,,,2010,Synbiotics and Low Grade Inflammation in Obese Subjects,https://clinicaltrials.gov/study/NCT01235026
+high,clinical_trial_registry,,,,2010,Hydrocolloids as Functional Food Ingredients for Gut Health,https://clinicaltrials.gov/study/NCT02608983
+high,clinical_trial_registry,probiotic,,weight,2010,Effects of a Probiotic on Body Weight,https://clinicaltrials.gov/study/NCT01106924
+high,clinical_trial_registry,synbiotic,,weight;microbiome,2011,Effect of a Synbiotic on the Gut Microbiota and Adiposity-related Markers in Healthy Overweight Subjects,https://clinicaltrials.gov/study/NCT02151825
+high,clinical_trial_registry,,,microbiome,2012,A Pilot Study to Determine the Effect of a Cobiotic Formulation on the Gastrointestinal Microbiome,https://clinicaltrials.gov/study/NCT01724736
+high,clinical_trial_registry,prebiotic,,body_composition;microbiome,2012,Combining Prebiotic and Diet/Physical Activity Educational Program Effects on Body Composition and Intestinal Microbiota in Children,https://clinicaltrials.gov/study/NCT05671731
+high,clinical_trial_registry,,Lactobacillus,glucose,2012,Metabolic Control Before and After Supplementation With Lactobacillus Reuteri DSM 17938 in Type 2 Diabetes Patients,https://clinicaltrials.gov/study/NCT01620125
+high,clinical_trial_registry,,,BMI;lipid;glucose,2012,"Effects of VSL#3 on Metabolic, Endocrine, Lipidomic and Inflammatory Parameters of Pediatric Patients With BMI>90°",https://clinicaltrials.gov/study/NCT01650025
+high,clinical_trial_registry,synbiotic,,,2012,Role of Colonic Events on Metabolism and Appetite Control: A Synbiotic Approach,https://clinicaltrials.gov/study/NCT01718418
+high,clinical_trial_registry,prebiotic,,microbiome,2013,Effects of Prebiotic-based Snacks on the Gut Microbiota and Perceived 'Satisfaction',https://clinicaltrials.gov/study/NCT02041975
+high,clinical_trial_registry,,,glucose,2013,Combination of Metformin/Inulin vs Inulin on Adiponectin in Metabolic Syndrome,https://clinicaltrials.gov/study/NCT02773927
+high,clinical_trial_registry,prebiotic;synbiotic,,,2013,Effect of Prebiotic and Synbiotic Supplementation in Individuals Undergoing Roux-en-y Gastric Bypass.,https://clinicaltrials.gov/study/NCT02158676
+high,clinical_trial_registry,prebiotic,,weight,2013,Effect of Protein and Prebiotic Fiber Intake on Adiposity in Overweight and Obese Adults,https://clinicaltrials.gov/study/NCT02217579
+high,clinical_trial_registry,synbiotic,,,2013,Use of a Novel Synbiotic to Change Human Gut Bacteria and Improve Health in Obese Adults,https://clinicaltrials.gov/study/NCT02355210
+high,clinical_trial_registry,,,,2013,The Effect of Dairy Fat and Inulin on Fasting Induced Adipose Factor (FIAF) Blood Concentrations,https://clinicaltrials.gov/study/NCT01913678
+high,clinical_trial_registry,probiotic,,weight;microbiome,2013,"Does Weight Loss Surgery and Probiotic Supplementation Lead to a ""Lean"" Gut Microbiota?",https://clinicaltrials.gov/study/NCT01870544
+high,clinical_trial_registry,,,,2013,Nutrition and Pregnancy Intervention Study,https://clinicaltrials.gov/study/NCT01922791
+high,clinical_trial_registry,,,,2013,BIFI-OBESE: Clinical Trial in Paediatric Obesity,https://clinicaltrials.gov/study/NCT03261466
+high,clinical_trial_registry,synbiotic,,,2013,Investigation of Synbiotic Treatment in NAFLD,https://clinicaltrials.gov/study/NCT01680640
+high,clinical_trial_registry,,Bifidobacterium,body_composition,2013,The Effect of a Bifidobacterium and Polydextrose on Body Fat Mass,https://clinicaltrials.gov/study/NCT01978691
+high,clinical_trial_registry,,,glucose;microbiome,2014,Mechanism of Microbiome-induced Insulin Resistance in Humans (Aim2),https://clinicaltrials.gov/study/NCT02127125
+high,clinical_trial_registry,prebiotic,,weight;microbiome,2014,"Effect of Prebiotic Intake on Adiposity, Satiety and Gut Microbiota in Overweight and Obese Children",https://clinicaltrials.gov/study/NCT02125955
+high,clinical_trial_registry,,Lactobacillus,,2014,The Effect of Supplementation With Species of Lactobacillus on Anthropometric Measurements,https://clinicaltrials.gov/study/NCT02448940
+high,randomized_controlled_trial,synbiotic,,weight,2014,A randomized triple-masked controlled trial on the effects of synbiotics on inflammation markers in overweight children.,https://pubmed.ncbi.nlm.nih.gov/24184299/
+high,clinical_trial_registry,,,,2015,Clinical Evaluation of the Effects of EpiCor on Digestive Comfort,https://clinicaltrials.gov/study/NCT03051399
+high,clinical_trial_registry,synbiotic,,microbiome,2016,Effect of Very-low Calorie Diet and Synbiotic Supplementation in Gut Microbiota (Pronokal Method),https://clinicaltrials.gov/study/NCT03530501
+high,clinical_trial_registry,probiotic,,glucose,2016,Modulation of the Intestinal Flora With the Probiotic VIVOMIXX™ in Pregnant Women at Risk of Metabolic Complications,https://clinicaltrials.gov/study/NCT02768818
+high,clinical_trial_registry,probiotic,,,2016,Effect of Oral Supplementation With Probiotics,https://clinicaltrials.gov/study/NCT03100162
+high,clinical_trial_registry,prebiotic;synbiotic,,,2016,Effect of Prebiotic or Synbiotic on Inflammatory Response and Indicators of Nutritional Status in Obesity,https://clinicaltrials.gov/study/NCT02660333
+high,randomized_controlled_trial,probiotic,,weight;body_composition,2016,"Probiotic With or Without Fiber Controls Body Fat Mass, Associated With Serum Zonulin, in Overweight and Obese Adults-Randomized Controlled Trial.",https://pubmed.ncbi.nlm.nih.gov/27810310/
+high,randomized_controlled_trial,prebiotic;synbiotic,,,2016,"Effects of Prebiotic and Synbiotic Supplementation on Inflammatory Markers and Anthropometric Indices After Roux-en-Y Gastric Bypass: A Randomized, Triple-blind, Placebo-controlled Pilot Study.",https://pubmed.ncbi.nlm.nih.gov/25909598/
+high,clinical_trial_registry,,,lipid,2017,Effect of a Kefir Beverage on Immunity and Lipid Profile,https://clinicaltrials.gov/study/NCT03312660
+high,clinical_trial_registry,synbiotic,,BMI,2017,Effect of Synbiotic Supplement on the Body Mass Index of Participants With Severe Obesity,https://clinicaltrials.gov/study/NCT02958644
+high,clinical_trial_registry,synbiotic,,,2017,Effect of a Synbiotic Supplement on a High-protein Diet,https://clinicaltrials.gov/study/NCT03123510
+high,clinical_trial_registry,,,glucose;microbiome,2017,Effects of Blueberry on Gut Microbiota and Metabolic Syndrome,https://clinicaltrials.gov/study/NCT03266055
+high,clinical_trial_registry,prebiotic,,weight,2017,The Effect of Prebiotic Fibres on Weight Loss in an Overweight and Obese Population,https://clinicaltrials.gov/study/NCT03135041
+high,clinical_trial_registry,,,,2017,"APOA2 Gene, Diet, Inflammation and Gut Health",https://clinicaltrials.gov/study/NCT03322449
+high,clinical_trial_registry,probiotic,,weight;body_composition,2017,Impact of Probiotics on Weight Control and Body Composition in Overweight and Obese Individuals,https://clinicaltrials.gov/study/NCT02893943
+high,clinical_trial_registry,probiotic,,weight,2017,Effect of a Three Combined Probiotics Supplementation on Weight Loss in Obese/Overweight Children,https://clinicaltrials.gov/study/NCT03883191
+high,clinical_trial_registry,probiotic,,weight,2017,What is the Impact of Probiotics on Weight Loss Maintenance in Individuals With Obesity?,https://clinicaltrials.gov/study/NCT03287726
+high,clinical_trial_registry,synbiotic,,weight;microbiome,2017,Assessment of the Effects of Synbiotic on Gut Microbiota Composition in Scholars With Overweight,https://clinicaltrials.gov/study/NCT05423015
+high,meta_analysis_or_systematic_review,,Lactobacillus,weight;body_composition,2017,Effect of Lactobacillus on body weight and body fat in overweight subjects: a systematic review of randomized controlled clinical trials.,https://pubmed.ncbi.nlm.nih.gov/28792488/
+high,clinical_trial_registry,,,glucose,2018,FMT and Fiber in Patients With Metabolic Syndrome,https://clinicaltrials.gov/study/NCT03727321
+high,clinical_trial_registry,,,glucose,2018,Fecal Microbial Transplantation and Fiber Supplementation in Participants With Obesity and Metabolic Syndrome.,https://clinicaltrials.gov/study/NCT03477916
+high,clinical_trial_registry,,,microbiome,2018,Effect of Cranberry and Agaves Extract on Microbiota and Intestinal Health,https://clinicaltrials.gov/study/NCT03800277
+high,clinical_trial_registry,,,,2018,Effect of an Anti-inflammatory Diet on Patients With Cervical Cancer,https://clinicaltrials.gov/study/NCT03994055

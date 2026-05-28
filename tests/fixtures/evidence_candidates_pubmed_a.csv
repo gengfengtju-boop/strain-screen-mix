@@ -1,0 +1,3 @@
+evidence_id,evidence_type,source_database,source_accession,source_url,doi,pmid,title,year,journal,study_design,data_field_supported,extraction_note,curator,extraction_date
+PMID:111,literature,PubMed,111,https://pubmed.ncbi.nlm.nih.gov/111/,10.1000/a,111,Title A,2024,Journal A,needs_manual_review,evidence_registry,Auto,curator,2026-05-26
+PMID:222,literature,PubMed,222,https://pubmed.ncbi.nlm.nih.gov/222/,10.1000/b,222,Title B,2024,Journal B,needs_manual_review,evidence_registry,Auto,curator,2026-05-26

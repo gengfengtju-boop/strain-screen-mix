@@ -51,6 +51,11 @@
 | --- | --- |
 | study_id | 研究编号 |
 | subject_id | 受试者编号 |
+| source_database | 数据来源数据库 |
+| source_accession | 数据库 accession 或研究编号 |
+| source_url | 数据来源 URL |
+| publication_doi | 论文 DOI |
+| publication_pmid | PubMed PMID |
 | intervention_type | probiotic / prebiotic / synbiotic / diet |
 | probiotic_species | 益生菌种名 |
 | probiotic_strain | 益生菌株号 |
@@ -70,6 +75,11 @@
 | --- | --- |
 | subject_id | 受试者编号 |
 | study_id | 研究编号 |
+| source_database | 数据来源数据库 |
+| source_accession | 数据库 accession 或研究编号 |
+| source_url | 数据来源 URL |
+| publication_doi | 论文 DOI |
+| publication_pmid | PubMed PMID |
 | weight_change | 体重变化 |
 | weight_change_percent | 体重变化百分比 |
 | BMI_change | BMI 变化 |
@@ -93,6 +103,12 @@
 | species | 种 |
 | strain_name | 株名 |
 | genome_accession | 基因组编号 |
+| genome_database | 基因组来源数据库 |
+| genome_url | 基因组记录 URL |
+| annotation_database | 功能或安全性注释数据库 |
+| annotation_accession | 注释数据库 accession |
+| evidence_doi | 支持证据 DOI |
+| evidence_pmid | 支持证据 PMID |
 | safety_gate | pass / fail |
 | AMR_risk | 耐药风险 |
 | virulence_risk | 毒力风险 |
@@ -104,4 +120,3 @@
 | anti_inflammatory_evidence | 抗炎证据 |
 | literature_weight_loss_evidence | 减脂文献证据 |
 | probiotic_use_history | 益生菌使用历史 |
-

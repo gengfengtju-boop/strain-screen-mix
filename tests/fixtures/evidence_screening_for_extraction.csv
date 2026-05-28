@@ -1,0 +1,2 @@
+priority,relevance_score,study_tag,intervention_type_hint,taxa_hint,outcome_hint,year,title,source_url,evidence_id,source_database,source_accession,doi,pmid
+high,4,randomized_controlled_trial,probiotic,Lactobacillus,weight;glucose,2024,Lactobacillus gasseri SBT2055 probiotic improves body weight and glucose,https://pubmed.ncbi.nlm.nih.gov/1/,PMID:1,PubMed,1,10.1000/a,1.0

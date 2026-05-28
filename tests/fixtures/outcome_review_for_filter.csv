@@ -1,0 +1,5 @@
+evidence_id,outcome_domain,review_status
+PMID:1,weight,pending
+PMID:1,BMI,pending
+PMID:2,weight,pending
+PMID:3,glucose,pending

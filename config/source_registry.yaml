@@ -1,0 +1,145 @@
+sources:
+  NCBI Datasets:
+    category: genome
+    homepage: https://www.ncbi.nlm.nih.gov/datasets/
+    identifier_examples:
+      - GCF_000000000.1
+      - GCA_000000000.1
+  NCBI Genome:
+    category: genome
+    homepage: https://www.ncbi.nlm.nih.gov/home/genomes/
+    identifier_examples:
+      - GCF_000000000.1
+      - GCA_000000000.1
+  RefSeq:
+    category: genome
+    homepage: https://www.ncbi.nlm.nih.gov/refseq/
+    identifier_examples:
+      - GCF_000000000.1
+  GenBank:
+    category: genome
+    homepage: https://www.ncbi.nlm.nih.gov/genbank/
+    identifier_examples:
+      - GCA_000000000.1
+  GTDB:
+    category: genome
+    homepage: https://gtdb.ecogenomic.org/
+    identifier_examples:
+      - RS_GCF_000000000.1
+  MGnify Genomes:
+    category: genome
+    homepage: https://www.ebi.ac.uk/metagenomics/
+    identifier_examples:
+      - MGYG000000000
+  curatedMetagenomicData:
+    category: microbiome
+    homepage: https://waldronlab.io/curatedMetagenomicData/
+    identifier_examples:
+      - study_name
+  GMrepo:
+    category: microbiome
+    homepage: https://gmrepo.humangut.info/
+    identifier_examples:
+      - GMrepo_study_id
+  Qiita:
+    category: microbiome
+    homepage: https://qiita.ucsd.edu/
+    identifier_examples:
+      - qiita_study_id
+  SRA:
+    category: microbiome
+    homepage: https://www.ncbi.nlm.nih.gov/sra
+    identifier_examples:
+      - SRP000000
+      - SRR000000
+  ENA:
+    category: microbiome
+    homepage: https://www.ebi.ac.uk/ena/browser/home
+    identifier_examples:
+      - PRJEB00000
+      - ERR000000
+  MGnify:
+    category: microbiome
+    homepage: https://www.ebi.ac.uk/metagenomics/
+    identifier_examples:
+      - MGYS00000000
+  ClinicalTrials.gov:
+    category: clinical_trial
+    homepage: https://clinicaltrials.gov/
+    identifier_examples:
+      - NCT00000000
+  WHO ICTRP:
+    category: clinical_trial
+    homepage: https://trialsearch.who.int/
+    identifier_examples:
+      - trial registration number
+  ChiCTR:
+    category: clinical_trial
+    homepage: https://www.chictr.org.cn/
+    identifier_examples:
+      - ChiCTR0000000000
+  EU Clinical Trials Register:
+    category: clinical_trial
+    homepage: https://www.clinicaltrialsregister.eu/
+    identifier_examples:
+      - EudraCT number
+  PubMed:
+    category: literature
+    homepage: https://pubmed.ncbi.nlm.nih.gov/
+    identifier_examples:
+      - PMID
+  MEDLINE:
+    category: literature
+    homepage: https://www.nlm.nih.gov/medline/
+    identifier_examples:
+      - PMID
+  PubMed Central:
+    category: literature
+    homepage: https://pmc.ncbi.nlm.nih.gov/
+    identifier_examples:
+      - PMC0000000
+  publisher supplementary data:
+    category: literature
+    homepage: NA
+    identifier_examples:
+      - DOI supplementary file
+  CARD:
+    category: safety_annotation
+    homepage: https://card.mcmaster.ca/
+    identifier_examples:
+      - ARO:0000000
+  RGI:
+    category: safety_annotation
+    homepage: https://card.mcmaster.ca/analyze/rgi
+    identifier_examples:
+      - ARO:0000000
+  VFDB:
+    category: safety_annotation
+    homepage: http://www.mgc.ac.cn/VFs/
+    identifier_examples:
+      - VF0000
+  ResFinder:
+    category: safety_annotation
+    homepage: https://cge.food.dtu.dk/services/ResFinder/
+    identifier_examples:
+      - gene_accession
+  BacMet:
+    category: safety_annotation
+    homepage: http://bacmet.biomedicine.gu.se/
+    identifier_examples:
+      - BacMet_id
+  MobileElementFinder:
+    category: safety_annotation
+    homepage: https://cge.food.dtu.dk/services/MobileElementFinder/
+    identifier_examples:
+      - mobile_element_id
+  Metabolomics Workbench:
+    category: metabolomics
+    homepage: https://www.metabolomicsworkbench.org/
+    identifier_examples:
+      - ST000000
+  GNPS:
+    category: metabolomics
+    homepage: https://gnps.ucsd.edu/
+    identifier_examples:
+      - GNPS task id

@@ -1,0 +1,1617 @@
+
+
+--- PAGE 1 ---
+Journal Pre-proof
+Effects of a novel synbiotic intervention on abdominal visceral fat reductions and gut
+microbiota in overweight and obese adults: A randomized, double-blind, placebo-
+controlled trial
+Nengjuan Li, Zhigang Zhu, Shuang Wu, Daochen Gong, Richard Day, Vineetha
+Vijayakumar, Xiao Yu, Qiuxia Chen, Yuting Feng, Qiong Wang, Zhiming Hu, Jinjun Li,
+Jun Du, Changyun Xu, Li Wang, Liang Chen, Jiang Hu, Xiaoqiong Li
+PII: S0261-5614(25)00339-5
+DOI: https://doi.org/10.1016/j.clnu.2025.106560
+Reference: YCLNU 106560
+To appear in: Clinical Nutrition
+Received Date: 3 June 2025
+Revised Date: 16 December 2025
+Accepted Date: 18 December 2025
+Please cite this article as: Li N, Zhu Z, Wu S, Gong D, Day R, Vijayakumar V, Yu X, Chen Q, Feng Y,
+Wang Q, Hu Z, Li J, Du J, Xu C, Li W, Chen L, Hu J, Li X, Effects of a novel synbiotic intervention on
+abdominal visceral fat reductions and gut microbiota in overweight and obese adults: A randomized,
+double-blind, placebo-controlled trial, Clinical Nutrition, https://doi.org/10.1016/j.clnu.2025.106560.
+This is a PDF of an article that has undergone enhancements after acceptance, such as the addition
+of a cover page and metadata, and formatting for readability. This version will undergo additional
+copyediting, typesetting and review before it is published in its final form. As such, this version is no
+longer the Accepted Manuscript, but it is not yet the definitive Version of Record; we are providing
+this early version to give early visibility of the article. Please note that Elsevier’s sharing policy for the
+Published Journal Article applies to this version, see: https://www.elsevier.com/about/policies-and-
+standards/sharing#4-published-journal-article. Please also note that, during the production process,
+errors may be discovered which could affect the content, and all legal disclaimers that apply to the
+journal pertain.
+© 2025 Elsevier Ltd and European Society for Clinical Nutrition and Metabolism. All rights are reserved,
+including those for text and data mining, AI training, and similar technologies.
+
+
+--- PAGE 2 ---
+Journal Pre-proof
+
+
+--- PAGE 3 ---
+ 1 
+Effects of a novel synbiotic intervention on abdominal visceral fat reductions and 1 
+gut microbiota in overweight and obese  adults: A randomized, double -blind, 2 
+placebo-controlled trial 3 
+Nengjuan Li a,1, Zhigang Zhu d,1, Shuang Wu a,1, Daochen Gong b,c,1, Richard Day e, Vineetha 4 
+Vijayakumare, Xiao Yua, Qiuxia Chen a, Yuting Fenga, Qiong Wangb, Zhiming Hu b, Jinjun Lib, Jun 5 
+Dud, Changyun Xuf, Li Wangd, Liang Chend,2, Jiang Hua,2 , Xiaoqiong Lib,* 6 
+aThe Second Affiliated Hospital of Zhejiang Chinese Medical University, Hangzhou 310021, China; 7 
+bState Key Laboratory for Quality and Safety of Agro -Products & Institute of Food Sciences, 8 
+Zhejiang Academy of Agricultural Sciences, Hangzhou 310021, China; 9 
+cKey Laboratory of Environmental Medicine and Engineering of Ministry of Education, Department 10 
+of Nutrition and Food Hygiene, School of Public Health, Southeast University, Nanjing 210009, PR 11 
+China; 12 
+dNutrilite Health Institute, Amway (Shanghai) Innovation &  Science Co., Ltd., Shanghai, 201203, 13 
+China; 14 
+eMedical Department, ADM Health & Wellness, Somerset, United Kingdom; 15 
+fADM Research and Development China Center, Shanghai, 200233, China. 16 
+*Corresponding author.  Institute of Food Sciences, Zhejiang Academy of Agricultural Sciences, 17 
+Hangzhou 310021, China; E-mail addresses: lixiaoqiong@zaas.ac.cn (X. Li) 18 
+1These authors contributed equally to this work. 19 
+2 Co-senior authors. 20 
+  21 
+Journal Pre-proof
+
+
+--- PAGE 4 ---
+ 2 
+Abstract 22 
+Background and aims : Emerging evidence highlight the gut microbiome as a n 23 
+important regulator of metabolic health, with probiotics and prebiotics demonstrating 24 
+exciting potential  for their role in health promotion . This study aims to  investigate  a 25 
+novel synbiotic formulation  comprising four probiotic strains ( Bifidobacterium 26 
+animalis subsp. lactis CECT 8145, and three Lacticaseibacillus rhamnosus  strains), 27 
+prebiotics (inulin, fructooligosaccharides), and Chrysanthemum morifolium  extract. 28 
+We hypothesized that this intervention  would improve metabolic health parameters, 29 
+particularly visceral adiposity.   30 
+Methods: In a  12-week, double -blind, randomized, placebo -controlled, parallel -31 
+group trial with a 6-week post-intervention follow -up, 112 participants  (BMI: 24.0–32 
+34.9 kg/m²) received daily synbiotic or a matched placebo. Changes in visceral 33 
+adipose tissue (VAT) area, serving as the primary endpoint, were quantified by dual -34 
+energy X -ray absorptiometry (DXA). Secondary outcomes included analysis of 35 
+blood biochemical parameters, body composition , and fecal microbiota 36 
+characterization.   37 
+Results: Compared with placebo, synbiotic supplementation significantly reduced 38 
+VAT area from baseline to week 12 (p = 0.048). In subgroup analyses by gender and 39 
+BMI, the ef fect was more pronounced in men than in women (p = 0.051) and was 40 
+highly significant in individuals with 24 ≤ BMI < 28 (p = 0.003).  However, 41 
+subcutaneous adipose tissue (SAT) increased in the 24 ≤ BMI < 28 subgroup  (p = 42 
+0.027). Although no significant changes occurred in blood biochemistry, BMI, or 43 
+Journal Pre-proof
+
+
+--- PAGE 5 ---
+ 3 
+waist circumference, the synbiotic group showed a trend toward greater total body 44 
+fat reduction between weeks 12–18 (p = 0.077). Microbiota analysis revealed 45 
+transient enrichment of  B. animalis subsp. lactis (ASV110) and L. rhamnosus  46 
+(ASV473), which dissipated by week 18.  47 
+Conclusions : This synbiotic formulation reduced visceral fat, a key driver of 48 
+metabolic dysfunction, and modulate d adipose distribution, particularly in men and 49 
+overweight (24 ≤ BMI < 28) individuals. These results support its use as a functional 50 
+food for visceral adiposity management.  51 
+Trial registration : This study was registered on the website of www.chictr.org.cn, 52 
+number ChiCTR2400088457.  53 
+Keywords: Probiotics,  Prebiotics,  Synbiotics, Visceral fat, Overweight, Obese 54 
+ 55 
+1. Introduction  56 
+Overweight and obesity , characterized by abnormal or excessive fat accumulation, 57 
+represent a pressing global health crisis with heterogeneous diagnostic criteria across 58 
+populations . Asian populations demonstrate distinct BMI thresholds, with China 59 
+defining overweight as BMI ≥24 kg/m² and obesity as BMI ≥28 kg/m², while 60 
+Japan/Korea employ lower cutoffs (≥23 kg/m² and ≥25 kg/m², respectively). This 61 
+contrasts with the World Health Organization’s (WHO) definition , where overweight  62 
+is defined as having a BMI ≥25 kg/m², and obesity: ≥30 kg/m². Particularly 63 
+concerning is abdominal obesity (waist circumference ≥90 cm [men]/ ≥85 cm 64 
+[women]), which exhibits a criteria strongly correlated to  metabolic dysregulation  65 
+Journal Pre-proof
+
+
+--- PAGE 6 ---
+ 4 
+[1]. The global obesity pandemic affected over 2.5 billion adults in 2016, with 66 
+escalating prevalence driving increased incidence of obesity -associated 67 
+comorbidities , including insulin resistance, type 2 diab etes (T2D),  metabolic 68 
+dysfunction -associated steatotic liver disease  (MASLD), and cardiovascular diseases  69 
+(CVD) [2, 3]. Given the escalating burden of obesity -related health issues, there is 70 
+an urgent need for effective interventions to address this global epidemic.  71 
+Emerging research implicates gut microbiota dysbiosis in obesity pathogenesis 72 
+through modulat ion of energy harvest, central appetite  regulation , adipogenesis , 73 
+systemic inflammation, and circadian metabolic regulation [4]. Specific probiotic 74 
+genera (e.g.,  Lactobacillus , Bifidobacterium , Akkermansia ) have been shown to 75 
+demonstrate anti -obesity potential, positioning microbiota modulation as a novel 76 
+strategy for health promotion [4, 5]. Multiple narrative reviews as well as systematic 77 
+reviews and meta -analyses substantiate that probiotic/prebiotic/synbiotic 78 
+interventions may beneficially influence body composi tion and cardiometabolic 79 
+markers in overweight populations  [6-10]. These findings highlight the potential of 80 
+microbiota-targeted interventions as a novel approach to obesity management.   81 
+Notably, Bifidobacterium animalis  subsp. lactis CECT 8145, isolated from the gut of 82 
+breastfed infants,  exhibits validated anti -adipogenic effects across multiple 83 
+experimental models, including  Caenorhabditis elegans , rodent systems, and human 84 
+clinical trials  [11-13]. While Lactobacillus rhamnosus  strains demonstrate intestinal 85 
+epithelial adhesion capacity and enteropathogen inhibition [14, 15]. Current evidence 86 
+suggests multi -strain formulations may yield superior efficacy to monotherapies  [16], 87 
+Journal Pre-proof
+
+
+--- PAGE 7 ---
+ 5 
+with synergistic enhancement when combined with prebiotics (e.g., inulin, FOS) or 88 
+bioactive botanicals  [17]. These prebiotics selectively  89 
+promote Bifidobacterium /Lactobacillus  proliferation  [18, 19] , while extracts 90 
+of Chrysanthemum morifolium have demonstrate d anti-inflammatory and 91 
+postprandial lipid -modulating effects in both preclinical models and human studies 92 
+[20-22]. Traditionally used in Chinese medicine,  Chrysanthemum morifolium  has 93 
+been employed to alleviate symptoms including dizziness, hypertension, ocular 94 
+fatigue, and to clear heat and toxins from the body [21]. The extract is commonly 95 
+prepared via aqueous extraction of dried flowers, followed by concentration and 96 
+purification steps to isolate key bioactive constituents —such as flavonoids (e.g., 97 
+luteolin and cynaroside), polyphenols, and sesquiterpene lactones  [20, 21] . Recent 98 
+evidence further suggests that its metabolic benefits may be mediated, at least in part,  99 
+through modulation of the gut microbiota [20, 22] . By integrating these distinct 100 
+bioactive components into a single synb iotic formulation, we hypothesize d that this 101 
+multi-target approach may provide a comprehensive strategy not only for reducing 102 
+adiposity but also for ameliorating associated metabolic disturbances, thereby 103 
+supporting overall metabolic health.  104 
+Despite promis ing preliminary data  [23], critical knowledge gaps persist 105 
+regarding: (1) specific effects on visceral adipose tissue (VAT) -the most 106 
+metabolically hazardous fat  depot, and (2) potential sex -dimorphic intervention 107 
+responses.  This 12 -week randomized, double -blind, placebo -controlled trial 108 
+investigates a novel synbiotic formulation (Amway Nutrilite) comprising: a multi -109 
+Journal Pre-proof
+
+
+--- PAGE 8 ---
+ 6 
+strain probiotic blend (Bifidobacterium animali s subsp. lactis CECT 8145, 110 
+Lactobacillus rhamnosus  CECT 8631, L. rhamnosus  30320, and L. rhamnosus  111 
+CNCMI-4036), prebiotics (inulin and FOS), and Chrysanthemum morifolium extract, 112 
+to better understand its potential role in metabolic health .  113 
+The p rimary outcome is VAT quantification ( assessed via dual -energy X -ray 114 
+absorptiometry [DXA] ), with secondary evaluations of blood biochemical markers 115 
+and gut microbiota composition (analyzed via 16S rRNA sequencing). By 116 
+systematically evaluating the physiological e ffects of this synbiotic intervention, this 117 
+study aims to generate robust evidence to better understand  its potential as a 118 
+functional food for overweight and obese adults .  Furthermore, this  investigation 119 
+seeks to elucidate the potential underlying mechanisms by which the formulation 120 
+may affect metabolic health via gut microbiota.  121 
+ 122 
+2. Methods 123 
+2.1. Ethics and ethical approval  124 
+The study was conducted in strict adherence to the ethical principles outlined in 125 
+the Declaration of Helsinki. Ethical approval was obtained from the Ethical Review 126 
+Authority of The Second Affiliated Hospital of Zhejiang Chinese Medical University 127 
+(Xinhua Hospital of Zhejiang Province) in April 2023 (Reference: #2023 128 
+investigational product  No. 002 -01). This single -center trial was registered at 129 
+MedicalResearch.org (MR -33-24-000079) and the Chinese Clinical Trial Registry 130 
+(ChiCTR2400088457) on December 1, 2 024. The study adhered to the Consolidated 131 
+Journal Pre-proof
+
+
+--- PAGE 9 ---
+ 7 
+Standards of Reporting Trials (CONSORT) guidelines to ensure transparency and 132 
+rigor in trial reporting. Written informed consent was obtained from all participants 133 
+before their inclusion in the study.  134 
+2.2. Synbiotic product 135 
+Both the synbiotic product (Nutrilite Body Lift) and the placebo were supplied 136 
+by Nutrilite, Amway, in identical containers labeled with numeric codes to maintain 137 
+blinding. The active product was a beverage mix in single -serving stick pouches, 138 
+each containing 2 g of powder and with a shelf life of 24 months under recommended 139 
+storage conditions. At the time of manufacture, each stick delivered 6.0 × 10 ¹⁰ 140 
+colony-forming units ( CFU) of viable probiotics, with a guaranteed minimum of ≥141 
+ 4.5 × 10¹⁰ CFU maintained through the end of shelf life. Key functional ingredients 142 
+per stick included  1.5×1010 CFU total of 4 viable probiotic strains ( Bifidobacterium 143 
+animalis subsp. lactis CECT 8145, Lactobacillus rhamnosus  CECT 8631, L. 144 
+rhamnosus 30320, and L. rhamnosus  CNCMI-4036); Inulin; Fructooligosaccharides 145 
+(FOS); Chrysanthemum flower  extract. The placebo was formulated to be sensorially 146 
+indistinguishable from the active product, mat ching its appearance, flavor, texture, 147 
+and packaging. Each 2 g placebo stick contained the same adjuvants but lacked the 148 
+probiotic strains, prebiotics, and Chrysanthemum flower  extract. Participants were 149 
+instructed to consume one stick daily for 12 weeks. A stability test conducted 30 days 150 
+after the last participant ’s visit confirmed that the product retained > 0.7 × 10 ⁹ CFU 151 
+per stick at the end of its 24 -month shelf life, meeting regulatory requirements for 152 
+probiotic viability.  153 
+Journal Pre-proof
+
+
+--- PAGE 10 ---
+ 8 
+2.3. Experiment design 154 
+This study was a single -center, double -blind, randomized, placebo -controlled 155 
+trial with equal allocation of participants into two parallel groups. The trial was 156 
+conducted at The Second Affiliated Hospital of Zhejiang Chinese Medical University 157 
+in Hangzhou, Chin a. Participants who met the inclusion criteria provided written 158 
+informed consent and were compensated with transportation subsidies in accordance 159 
+with the regulations of the Ethics Committee.  160 
+The study comprised two intervention arms : ( 1) CON  group: Partic ipants 161 
+received 2 g/ stick/day of a placebo ; (2) SYN group: Participants received 2 162 
+g/stick/day of the  synbiotic product  Nutrilite Body Lift . After initial screening and 163 
+baseline assessments, participants were instructed to consume the assigned study 164 
+product daily for a duration of 12 weeks. Clinic visits were scheduled at 6 and 12 165 
+weeks of the intervention period to monitor progress and assess outcomes. 166 
+Additionally, periodic follow -ups were conducted by research personnel  via WeChat 167 
+or telephone to ensure compliance and to identify any adverse events. Six weeks after 168 
+the conclusion of the intervention, participants attended a final follow -up visit to 169 
+evaluate long -term effects . 170 
+The primary outcome measure was the change in the abdominal VAT area at 171 
+week 12. Secondary outcomes included changes in body composition (body weight, 172 
+fat mass, BMI, and subcutaneous adipose tissue [SAT]), waist circumference, blood 173 
+parameters (lipid profile, glucose levels, liver function, and inflammatory markers), 174 
+and gut microbiot a composition. The safety of the synbiotic product was assessed 175 
+Journal Pre-proof
+
+
+--- PAGE 11 ---
+ 9 
+through blood and urine tests, as well as diagnostic interviews conducted by a 176 
+physician. 177 
+Compliance was evaluated using two methods: (1)  Participants were required to 178 
+complete a daily intake questionnaire to document product consumption ; (2) 179 
+Participants returned all used and unused sachets to the study site, allowing the 180 
+research team to count opened sachets relative to the number of treatment days . In 181 
+the intention -to-treat (ITT) analysis, s ix participants in the CON group and three in 182 
+the SYN group exhibited compliance rates below 80%. These participants were 183 
+excluded from the per -protocol (PP) analysis . 184 
+2.4. Study participants  185 
+Eligible participants were aged 18–65 years and met at least one of the following 186 
+criteria: Body mass index (BMI) between 24.0–34.9 kg/m², or Waist circumference 187 
+≥ 90 cm for males or ≥ 85 cm for females. Participants were required to provide 188 
+voluntary, written, informed consent to participate in the study and adhere to  189 
+established diet and exercise guidelines throughout the study period. Additionally, 190 
+they were expected to complete all study -related questionnaires, records, and diaries, 191 
+attend all scheduled clinic visits, and provide blood, stool, and urine samples as 192 
+required. 193 
+Exclusion criteria included: A history of cancer, cardiovascular, digestive, or 194 
+autoimmune diseases; Recent (within the last 3 months) or ongoing use of 195 
+medications known to affect body weight (e.g., anti -diabetic agents, second -196 
+generation antipsy chotics, hormone medications, antihistamines, diuretics, etc.); Use 197 
+Journal Pre-proof
+
+
+--- PAGE 12 ---
+ 10 
+of laxatives, fiber supplements, probiotics, or antibiotics within the previous 4 weeks; 198 
+A history of bariatric surgery; Use of anti -obesity drugs or traditional Chinese 199 
+medicine within th e previous 3 months; Excessive use of vitamin D, fish oil, or 200 
+omega-3 supplements; Participation in other clinical research trials within the last 201 
+month; A weight change of 5 kg or more during the past 3 months; Pregnancy, 202 
+menopause, plans to become pregna nt within the next 6 months, or breastfeeding; A 203 
+history of drug, tobacco, or alcohol abuse; Known allergy, sensitivity, or intolerance 204 
+to the investigational product; Any other conditions deemed unsuitable for 205 
+participation by the investigator.  206 
+2.5. Randomization and blinding 207 
+Eligible participants were randomly assigned to either the CON or SYN group 208 
+using a computer -generated random sequence stratified by sex. The randomization 209 
+scheme was generated by an independent statistician using the R package randomize 210 
+(version 3.0.2). Study products were randomized before distribution to the trial site. 211 
+The allocation sequence was kept confidential and inaccessible to both the research 212 
+team and participants until the database was finalized and locked. For emer gency 213 
+purposes, the assignment sequence was securely stored in tamper -proof sealed 214 
+envelopes at the trial site . 215 
+2.6. Sample size estimation  216 
+The sample size for this study was calculated using G*Power software (Version 217 
+3.1.9.7, Franz Faul et al., Universitä t Kiel, Germany; available at 218 
+http://www.gpower.hhu.de/).  The calculations were based on methodology from a 219 
+Journal Pre-proof
+
+
+--- PAGE 13 ---
+ 11 
+previous study , adhering to established sample size estimation principles for 220 
+randomized controlled trials  [24]. For trials with  quantitative primary outcomes  (as 221 
+in this study), the following formula was applied for a two -group comparison (1:1 222 
+allocation):  223 
+𝑛1 = 𝑛2 = 2 × (𝑍𝛼/2 + 𝑍𝛽)
+2
+× 𝜎2
+(𝜇2 − 𝜇1)2  224 
+Based on t he above  calculation, a total sample size of  100 participants  (50 per 225 
+group) was estimated to provide  80% statistical power  at a  5% significance 226 
+level (two-sided), assuming a mean difference of  10 ± 15 cm² (mean ± SD) in VAT 227 
+area between groups at 12 weeks. To account for potential attrition, a  10% dropout 228 
+rate was incorporated into the sample size estimation . 229 
+2.7. Body composition assessment  230 
+Imaging modalities such as dual -energy DXA, computed tomography, and 231 
+magnetic resonance imaging are considered gold -standard methods for assessing 232 
+body composition  [25]. In this study, DXA was employed to non -invasively evaluate 233 
+abdominal VAT and SAT area and volume. The primary outcome was the relative 234 
+change in V AT from baseline to the end of the 12 -week treatment period , compared 235 
+with placebo . VAT was measured using a L unar DPX -L densitometer (Lunar Corp, 236 
+Madison, WI, USA) with Adult Software Version 1.33. Additional body composition 237 
+parameters, including body weight, fat mass, fat percentage, and basal metabolic rate 238 
+(BMR), were assessed using the bioelectrical impedanc e method with an InBody 770 239 
+medical-grade body composition analyzer (InBody Japan, Tokyo, Japan). Body mass 240 
+index (BMI) was automatically calculated by the InBody 770 based on manually 241 
+Journal Pre-proof
+
+
+--- PAGE 14 ---
+ 12 
+measured height values. Waist and hip circumferences were measured at t he midpoint 242 
+between the lower margin of the rib and the top of the iliac crest , respectively. 243 
+2.8. Biochemical parameters determination  244 
+At each clinic visit (baseline, 12 weeks, and follow -up at 18 weeks), fasting 245 
+blood samples were collected from participants in the morning and transported to a 246 
+certified central laboratory for comprehensive analysis.  Serum high -sensitivity C -247 
+reactive protein (hsCRP) was measured using the Mindray BC -5390 analyzer with a 248 
+latex-enhanced immunoturbidimetric method. Gl ycosylated hemoglobin (HbA1c) 249 
+was quantified using the Bio -Rad Variant II device via high -performance liquid 250 
+chromatography with ion -exchange methodology. Insulin levels were determined 251 
+using the Roche e602 analyzer through electrochemiluminescence immunoa ssay. 252 
+Fasting blood glucose, serum lipids (including total cholesterol, low -density 253 
+lipoprotein cholesterol (LDL -C), high-density lipoprotein cholesterol (HDL -C), and 254 
+triglycerides), and serum 25-Hydroxyvitamin D 3 were analyzed using the Beckman 255 
+AU5821 ful ly automated biochemistry analyzer. The homeostatic model assessment 256 
+of insulin resistance (HOMA -IR) was calculated based on fasting glucose and insulin 257 
+levels using the following formula : 258 
+HOMA − IR = glucose (mmol/L) × insulin(mU/L)
+22.5  259 
+Additionally, routine blood and urine tests were performed to ensure safety 260 
+monitoring, encompassing a comprehensive panel of biomarkers. Liver function was 261 
+assessed by measuring aspartate transaminase (AST), alanine aminotransferase 262 
+(ALT), gamma -glutamyl transpeptidase  (GGT), and alkaline phosphatase (ALP). 263 
+Journal Pre-proof
+
+
+--- PAGE 15 ---
+ 13 
+Kidney function was evaluated through the analysis of urea, creatinine (CREA), uric 264 
+acid (URIC), and estimated glomerular filtration rate (eGFR). These parameters were 265 
+quantified using the Beckman AU5821 fully automa ted biochemistry analyzer. 266 
+Thyroid biomarkers, including triiodothyronine (T3), thyroxine (T4), and thyroid -267 
+stimulating hormone (TSH), were measured using the Abbott ARCHITECT i2000 268 
+chemiluminescence immunoassay analyzer.  269 
+2.9. Questionnaire 270 
+2.9.1. Dietary assessment 271 
+At baseline (week 0) and at weeks 12 and 18 of the study, participants were 272 
+instructed to complete a three -day dietary record to estimate calorie intake. These 273 
+records were analyzed by a dietitian using the Boohee Health App (Boohee Co., Ltd., 274 
+Shanghai, China) to assess the intake of total energy, protein, fat, carbohydrates, and 275 
+dietary fiber. In addition, all participants completed a Diet Quality Questionnaire  276 
+[26]. Food intake from the first day of the consecutive three 24 -hour dietary recalls 277 
+was categorized into 29 food groups according to the Diet Quality Questionnaire tool. 278 
+The China Diet Quality Questi onnaire and additional information are available on 279 
+the Global Diet Quality Project website (https://www.globaldietquality.org/about ). 280 
+The following scores were derived from the dietary intake data: O verall Global Diet 281 
+Quality (GDQ) score ( -9 to 9), GDQ -Healthy score (0 to 9), and GDQ -Limit score 282 
+(0 to 9). Lower overall GDQ scores, lower GDQ -Healthy scores, and higher GDQ -283 
+Limit scores indicate poorer diet quality and are associated with an increased risk of 284 
+obesity in Chinese children and adolescents.  285 
+Journal Pre-proof
+
+
+--- PAGE 16 ---
+ 14 
+2.9.2. Physical activity assessment  286 
+Physical activity was  evaluated at baseline (week 0), week 12, and week 18 287 
+using the Physical Activity Rating Scale -3 (PARS -3), a three -question scale  that 288 
+includes three broad dimensions: exercise time, exercise intensity , and exercise 289 
+frequency. The scale has been widely used with good reliability and validity [27]. In 290 
+the current study, Cronbach ’s α for PARS-3 was 0.72, indicating acceptable internal 291 
+consistency. 292 
+2.10. Gut microbiome analysis  293 
+Fecal DNA was extracted from samples collected at weeks 0, 12, and 18  using 294 
+the QIAamp DNA Stool Mini Kit, according to the manufacturer's instructions 295 
+(Qiagen, Germany). The V3-V4 region of the 16S rRNA gene was amplified using 296 
+the following primers: Forward Primer: 341F 5’-(barcode-297 
+CCTAYGGGRBGCASCAG)-3’ and 806R 5’-(GGACTACNNGGGTATCTAAT-298 
+barcode)-3’. Sequencing libraries were generated using the Illumina TruSeq DNA 299 
+PCR-Free Library Preparation Kit (Illumina, USA) following the manufacturer ’s 300 
+recommendations and then sequenced on an Illumina MiSeq platform according to 301 
+the standard protocols of Majorbio Bio -Pharm Technology Co., Ltd. The raw 302 
+sequence data have been deposited  in the NCBI Sequence Read Archive (SRA) 303 
+database under the accession number PRJNA1248384.  304 
+After sequencing, the raw fastq files underwent quality control and filtering, 305 
+including the removal of tags and primers. The Amplicon Sequence Variants ( ASVs) 306 
+were clustered using the DADA2 package (version 2023.2.0) within QIIME2 307 
+Journal Pre-proof
+
+
+--- PAGE 17 ---
+ 15 
+(version 2023.2) software. Taxonomic annotation of ASVs was conducted using the 308 
+RDP Classifier against the SILV A database (version 138), with a confidence 309 
+threshold of 0.7 0. Contaminant AS Vs in the 16S rRNA gene sequencing data were 310 
+identified using the decontam R package (version 1.22.0, based on DNA 311 
+concentration). Alpha -diversity and beta-diversity were performed by vegan (version 312 
+2.6.4) and ggsignif (version 0.6.4) package s in R software (version 4.3.1) . The LEfSe 313 
+method (Performed using the OmicStudio tools at  https://www.omicstudio.cn/tool/.) 314 
+was used to identify each differentiated classification unit, and the threshold of the 315 
+linear discriminant analysis  (LDA) score for discriminativ e features was set to 2.0. 316 
+Data were compared using the Wilcoxon rank -sum test, with a significance value of 317 
+0.05. 318 
+2.11. Statistical analysis 319 
+Results are presented in two formats: as actual values or as changes from 320 
+baseline (week 0). For variables that did not follow a normal distribution, a natural 321 
+log transformation was applied before analysis. The compliance rate was calculated 322 
+as the ratio of sticks consumed to sticks provided during the study period. Baseline 323 
+characteristics of participants in the two groups were compared using unpaired two -324 
+sided t-tests, with a P-value < 0.05 considered statistically significant. The effects of 325 
+synbiotic supplementation and placebo on outcome variables were assessed using the 326 
+full analysis set  (FAS). The primary analysis focused on changes observed at the 12-327 
+week timepoint, while changes from 12~18 weeks were treated as a secondary 328 
+analysis, along with subgroup analyses by gender (male/female) and BMI category 329 
+Journal Pre-proof
+
+
+--- PAGE 18 ---
+ 16 
+(overweight/obesity) . For both primary and secondary outcomes, comparisons 330 
+between experimental groups were conducted using analysis  of covariance 331 
+(ANCOVA), adjusted for baseline (week 0) values. Statistical significance was 332 
+defined by a two -sided P-value <  0.05. Results are reported as means with 333 
+corresponding two -sided 95% confidence intervals (CI). All statistical analyses were 334 
+performed using IBM SPSS Statistics for Windows, Version 21 (IBM Corp., Armonk, 335 
+NY, USA). 336 
+3. Results 337 
+3.1. Baseline characteristics  338 
+Recruitment was initiated in late September 2023. Participant flow is shown in 339 
+Figure 1 . Randomization of 112 participants yielded 109 who completed the trial 340 
+and 107 who completed follow -up in early March 2024, encompassing the autumn 341 
+and winter months . The ITT population included all 112 randomized participants (55 342 
+males and 57 females), with 56 individuals assigned to the SYN group and 56 to the 343 
+CON group. At the 12 -week mark, three participants who discontinued the 344 
+intervention (dropouts) were excluded  from the FAS analysis. As a result, the FAS 345 
+population comprised 109 individuals, including 54 from the SYN group and 55 from 346 
+the CON group. By week 18, two additional participants who discontinued follow -347 
+up (dropouts) were further excluded, reducing the FAS population to 107 individuals 348 
+(52 in the SYN group and 55 in the CON group). The primary analysis was conducted 349 
+using this dataset.  350 
+The baseline characteristics of participants in the CON  and SYN  groups are 351 
+Journal Pre-proof
+
+
+--- PAGE 19 ---
+ 17 
+summarized in Table 1. Both groups consisted of 56 participants, with a balanced 352 
+distribution of males and females (CON: 29 females/27 males; SYN: 28 females/28 353 
+males). No significant differences were observed between the two groups in terms of 354 
+age (CON: 35.74 ± 9.44 years; SYN: 35.44 ± 8.19 years, p = 0.858), BMI (CON: 355 
+27.83 ± 2.62 kg/m²; SYN: 27.75 ± 2.76 kg/m², p = 0.887), or anthropometric 356 
+measures such as height, weight, waist circumference, hip circumference, and waist -357 
+to-hip ratio (all p > 0.05). Similarly, body composition parameters, includin g total 358 
+body fat percentage, skinfold thickness, muscle mass, and android/gynoid fat 359 
+distribution, showed no significant differences between the groups (all p > 0.05). 360 
+Biochemical markers, such as HbA1c, vitamin D 3, lipid profiles (total 361 
+cholesterol, HDL -C, LDL-C, and triacylglycerol), and liver enzymes (AST, ALT, and 362 
+AST/ALT ratio), were also comparable between the CON and SYN groups (all p > 363 
+0.05). Additionally, no significant differences were observed in VAT area (CON: 364 
+153.85 ± 36.84 cm²; SYN: 159.89 ± 5 5.43 cm², p = 0.506) or SAT area (CON: 118.34 365 
+± 36.84 cm²; SYN: 120.37 ± 37.98 cm², p = 0. 778) at baseline. BMR was similar 366 
+between the groups (CON: 1636.31 ± 254.00 kcal/day; SYN: 1665.66 ± 265.43 367 
+kcal/day, p = 0.563).  368 
+These baseline comparisons showed that the CON and SYN groups were well -369 
+matched at randomization. No significant differences were observed in demographic, 370 
+anthropometric, body composition, biochemical, or metabolic parameters, with the 371 
+exception of fasting glucose, fasting insulin, and HOM A-IR. This confirms the 372 
+comparability of the two groups for subsequent intervention analysis.  373 
+Journal Pre-proof
+
+
+--- PAGE 20 ---
+ 18 
+3.3. Abdominal visceral fat storage  374 
+The absolute values of V AT and SAT areas are detailed in Table S1. At week 12, 375 
+the SYN group exhibited a significant reduction in V AT area compared to the CON 376 
+group in males (155.66 ± 39.62 cm² vs. 180.41 ± 48.06 cm², p = 0.044) and the BMI ≥ 377 
+28 subgroup (178.86 ± 32.11 cm² vs. 205.72 ± 50.04 cm², p = 0.047). This reduction 378 
+persisted at 18 weeks, with the SYN group maintaining significantly lower V AT areas 379 
+in males (153.36 ± 33.51 cm ² vs. 179.77 ± 52.04 cm ², p = 0.036) and the BMI ≥ 28 380 
+subgroup (174.10 ± 26.01 cm² vs. 209.02 ± 54.18 cm², p = 0.012). In contrast, SAT area 381 
+showed a si gnificant increase in the SYN group compared to the CON group among 382 
+females at 18 weeks (144.59 ± 35.74 cm² vs. 121.03 ± 32.27 cm², p = 0.014). 383 
+Additionally, a trend toward increased SAT was observed in the total population (p = 384 
+0.060) and the 24 ≤ BMI < 28 subgroup (p = 0.055) at 18 weeks. 385 
+Table 2 displays the longitudinal changes in V AT (Fig. S1) and SAT areas across 386 
+three time points: baseline, week 12, and week 18 . Compared to the CON group, the 387 
+SYN group exhibited a significant reduction in V AT area during the 12 -week 388 
+intervention period (-4.49 ± 21.22 vs. 3.32 ± 19.62 cm 2, p = 0.048). Concurrently, the 389 
+SYN group demonstrated a non -significant trend toward SAT accumulation (6.61 ± 390 
+23.42 vs. -1.39 ± 21.18 cm2, p = 0.064). Longitudinal analysis revealed that this pattern 391 
+persisted throughout the 6-week follow-up period (weeks 12-18), with maintenance of 392 
+the observed V AT changes, suggesting a potential sustained effect of the synbiotic 393 
+intervention. 394 
+Subgroup analyses uncovered distinct response patterns according to sex and BMI 395 
+Journal Pre-proof
+
+
+--- PAGE 21 ---
+ 19 
+status (Table 2). While both female (-6.39 ± 24.68 vs. 0.37 ± 22.74 cm2, p = 0.295) and 396 
+male (-2.59 ± 17.37 vs . 6.39 ± 15.59 cm 2, p = 0.051) participants in the SYN group 397 
+demonstrated V AT reductions relative to controls , only males approached statistical 398 
+significance (borderline significant, p = 0.051). BMI-stratified analyses revealed more 399 
+pronounced metabolic heterogeneity in response to the intervention , highlighting a 400 
+clear dichotomy between overweight ( 24 ≤ BMI < 28 kg/m²) and obese (BMI ≥28 401 
+kg/m²) participants.  Notably, the overweight cohort demonstrated significant 402 
+improvements in both V AT reduction (-6.28 ± 16.67 vs . CON 6.80 ± 17.64 cm²; p = 403 
+0.003) and SAT accumulation (4.21 ± 22.19 vs CON -6.78 ± 17.86 cm²; p = 0.027) at 404 
+week 12 . In contrast, their obese counterparts showed no statistically significant 405 
+changes in either fat depo sition (V AT: p = 0.888; SAT: p = 0.760). These findings 406 
+suggest that the metabolic efficacy of the synbiotic intervention is substantially  407 
+modulated by baseline adiposity, with more favorable outcomes observed in overweight 408 
+rather than obese individuals. 409 
+During the follow-up period (weeks 12-18), the SYN group continued to show a 410 
+greater reduction in V AT compared to the CON group, particularly in males ( -4.85 ± 411 
+20.57 cm² vs. -0.63 ± 15.25 cm ², p = 0.402), although these differences did not reach 412 
+statistical significance. Similarly, SAT changes during this period were minimal, with 413 
+only a trend toward increased SAT observed in the BMI ≥28 subgroup (9.73 ± 18.18 414 
+cm² vs. -0.09 ± 16.17 cm², p = 0.076). 415 
+These findings suggest that the synbiotic intervention may effectively reduce V AT 416 
+in the overall study population, with more pronounced effects observed in specific 417 
+Journal Pre-proof
+
+
+--- PAGE 22 ---
+ 20 
+subgroups, particularly in overweight individuals, while influencing SAT distribution, 418 
+with efficacy modulated by baseline adiposity and sex. 419 
+3.4. Body composition  420 
+No significant differences were observed in BMI, waist circumference, hip 421 
+circumference, waist-to-hip ratio (WHR), skinfold thickness, muscle mass, total body 422 
+fat percentage, Android fat percentage, Gynoid fat percentage, or Android/Gynoid (A/G) 423 
+ratio between the SYN and CON groups at baseline, week 12, or week 18 ( Table S2). 424 
+Longitudinal analysis of changes in these parameters from baseline to week 12 and 425 
+from week 12 to week 18 also revealed no significant differences between the groups 426 
+(P > 0.05) (Table 3). However, from week 12 to week 18, the SYN group exhibited a 427 
+trend toward greater reduction in total body fat percentage compared to the CON group 428 
+(-2.12 ± 7.97% vs. -0.15 ± 1.82%, p = 0.077) . This may point to a potential delayed 429 
+regulatory effect of the intervention on body fat. 430 
+Basal metabolic rate (BMR) and InBody Sc ore were also evaluated ( Table S2). 431 
+Analysis of changes in BMR and InBody Score from baseline to week 12 and from 432 
+week 12 to week 18 revealed no significant differences between the groups during the 433 
+initial 12-week period (Table 3). However, from week 12 to week 18, participants with 434 
+24 ≤ BMI < 28 in the SYN group showed a trend toward greater increase in BMR 435 
+compared to the CON group (8.90 ± 20.44 vs. -2.60 ± 30.35, p = 0.080). 436 
+These results suggest that while the synbiotic intervention did not significant ly 437 
+alter most body composition parameters, it demonstrated potential benefits in reducing 438 
+total body fat percentage and improving BMR, particularly in overweight individuals. 439 
+Journal Pre-proof
+
+
+--- PAGE 23 ---
+ 21 
+These findings highlight the nuanced effects of synbiotics on body composition, w ith 440 
+efficacy influenced by baseline adiposity. 441 
+3.5. Blood biochemical indicators  442 
+The changes in blood biochemical indicators are detailed in Tables S3 and Table 443 
+4. At baseline, there were no significant differences in blood lipid profiles (TG, CHOL, 444 
+HDL-C, LDL-C), blood sugar levels (fasting glucose, HbA1c), liver function markers 445 
+(AST, ALT, AST/ALT, GGT, ALP, TP, ALB, GLB, A/G ratio, TBIL, DBIL, IBIL), 446 
+kidney function parameters (urea, CREA, eGFR, URIC), thyroid function (FT3, FT4, 447 
+TSH), or other indicators (scCRP, 25-hydroxyvitamin D3) between the SYN and CON 448 
+groups (Table 1 and Table S3). At baseline, fasting insulin levels were significantly 449 
+higher in the CON group compared to the SYN group (15.93 ± 13.42 mU/L vs. 11.20 450 
+± 8.08 mU/L, p = 0.028), while HOM A-IR also showed a significant difference (3.77 451 
+± 3.76 vs. 2.44 ± 1.75, p = 0.020).  452 
+Following the 12 -week intervention, no significant changes were observed in 453 
+blood lipids, blood sugar, liver function, kidney function, or thyroid function between 454 
+the gro ups ( Table S3 ). However, fasting insulin levels showed a trend toward 455 
+improvement in the SYN group compared to the CON group (△ = 3.76 ± 6.56 mU/L 456 
+vs. △ = 0.16 ± 13.55 mU/L, p = 0.081). 457 
+Longitudinal analysis of changes in blood biochemical indicators from week 12 to 458 
+baseline and from week 12 to week 18 revealed no significant differences between the 459 
+groups (Table 4). Changes in HbA1c from week 12 to week 18 were 0.20 ± 0.89% in 460 
+the CON group and -0.09 ± 0.96% in the SYN group (p = 0.099), suggesting a potential 461 
+Journal Pre-proof
+
+
+--- PAGE 24 ---
+ 22 
+benefit of synbiotic intervention on long -term glycemic control. Similarly, changes in 462 
+fasting insulin from baseline to week 12 showed a trend toward improvement in the 463 
+SYN group (△ = 3.76 ± 6.56 mU/L vs. △ = 0.16 ± 13.55 mU/L, p = 0.081). These 464 
+findings suggest that synbiotic supplementation may have subtle yet beneficial effects 465 
+on metabolic health, particularly in individuals with elevated insulin levels or impaired 466 
+glucose regulation. 467 
+3.6. Dietary and physical activity profiles  468 
+The dietary and physical activity profiles of the SYN and CON groups are detailed 469 
+in Table S4. At baseline, the SYN group exhibited significantly higher scores in the 470 
+GDR-limit component compared to the CON group (3.19 ± 2.41 vs. 2.42 ± 1.52, p = 471 
+0.049), indicating better adherence to dietary limitations at the start of the study. 472 
+At week 12 and week 18, no significant differences were observed between the 473 
+groups in energy intake, macronutrient consumption, dietary fiber, or physical activity 474 
+levels. For ex ample, energy intake at week 12 was 1554.24 ± 1534.97 kcal/d in the 475 
+CON group and 1444.19 ± 546.56 kcal/d in the SYN group (p = 0.392), while at week 476 
+18, it was 1401.58 ± 802.14 kcal/d in the CON group and 1393.53 ± 521.42 kcal/d in 477 
+the SYN group (p = 0.920). Physical activity levels, as measured by the PARS-3 scale, 478 
+were also comparable at both time points (week 12: 9.07 ± 4.40 vs. 10.19 ± 5.74, p = 479 
+0.258; week 18: 9.31 ± 5.33 vs. 9.15 ± 5.78, p = 0.885). These findings suggest that 480 
+consumption of the synbiotic intervention did not significantly influence dietary habits 481 
+or physical activity levels. 482 
+3.7. Adverse events 483 
+Journal Pre-proof
+
+
+--- PAGE 25 ---
+ 23 
+Adverse events were systematically monitored throughout the study, and no 484 
+supplement-related adverse reactions were reported. Specifically, gastrointestinal 485 
+symptoms such as bloating, diarrhea, and changes in bowel habits were tracked using 486 
+the Bristol Stool Form Scale, along with the Sleep Quality Index and Perceived Stress 487 
+Scale. These metrics were evaluated at baseline, after 12 weeks of in tervention, and at 488 
+the 18-week follow-up. No statistically significant differences were observed between 489 
+the SYN and CON groups at any time point (Table S5).  490 
+3.8. Fecal microbiota 491 
+In the present study, the Observed, Shannon, and Faith ’s Phylogenetic Diversity 492 
+(PD) indices were used to represent alpha diversity, and diversity data were collected 493 
+for all samples. The Wilcoxon non-parametric test was employed to compare the 494 
+differences between the two groups at three time points. The results indicated that there 495 
+was no significant difference in alpha diversity between the two groups (Fig. S2). While 496 
+alpha diversity did not differ significantly between groups in the overall analysis (Fig . 497 
+S2), sex-stratified re-analysis identified specific variations (Fig. 2). Specifically, female 498 
+participants in the SYN group showed a trend toward a lower Observed index at weeks 499 
+0 and 18 compared to the CON group (p < 0.10), whereas in males, the SYN gro up 500 
+demonstrated a significantly higher Shannon index at week 12 (p = 0.028). 501 
+We conducted a principal coordinate analysis (PCoA) based on the Bray -Curtis 502 
+distance for beta diversity analysis. As shown in the PCoA plot, it was seemingly 503 
+difficult to observe distinctions either between different groups at the same time point 504 
+or within the same group at different time points ( Fig. S3). We further used 505 
+Journal Pre-proof
+
+
+--- PAGE 26 ---
+ 24 
+PERMANOV A to analyze the contribution of groups and time points to the flora based 506 
+on the Bray-Curtis distances at the ASV level (Table S6). The results showed that there 507 
+were no significant changes in the beta diversity of the gut microbiota between the SYN 508 
+group and the CON group at weeks 12 and 18 of the trial period (p > 0.05). 509 
+When it came to the sex subgroup analysis, changes in beta diversity were 510 
+observed between the SYN group and the CON group among male participants at weeks 511 
+12 and 18 (p < 0.05) (Fig. S4; Table S6). In contrast, among female participants, there 512 
+was no significant difference in beta divers ity between the intervention and control 513 
+groups at weeks 0, 12, or 18 (p > 0.05) (Fig. S5; Table S6). 514 
+The composition of the two groups at three time points was analyzed at the phylum 515 
+and genus levels (Fig. S6). Only the top 9 taxa at the phylum level and the top 14 taxa 516 
+at the genus level are presented. After the intervention, Bifidobacterium emerged as a 517 
+dominant genus in the fecal samples, whereas Lactobacillus did not, even though the 518 
+synbiotic product contained both Bifidobacterium and Lactobacillus species. 519 
+The results of the LEfSe analysis showed that at baseline (week 0), 520 
+discrepancies in the microbiota composition between the two groups were observed 521 
+(Fig. S7A). Species that increased in the SYN group included Bifidobacterium 522 
+longum, Rothia mucilaginosa , and Bacteroides plebeius , while species that 523 
+significantly decreased in the SYN group included Bacteroides vulgatus , 524 
+Parabacteroides merdea , etc. At week 12, Bifidobacterium animalis  was identified 525 
+as a biomarker genus in the fecal samples of the SYN group  (Fig. S7 B), but this 526 
+enrichment was not observed at week 18 ( Fig. S7 C). We further applied the LEfSe 527 
+Journal Pre-proof
+
+
+--- PAGE 27 ---
+ 25 
+analysis to the sex subgroups. In the female cohort, Bifidobacterium animalis  528 
+emerged as a biomarker genus in the fecal samples of the SYN group at week 12, but 529 
+this association was not maintained at week 18 ( Fig. 3A). In contrast, in the male 530 
+cohort, Faecalibacterium prausnitzii was identified as a biomarker genus in the fecal 531 
+samples of the SYN group, and this trend was consistent at both weeks 12 and 18 532 
+(Fig. 3B). 533 
+To further clarify whether related flora genera underwent directional changes 534 
+after probiotic intervention, we selected ASVs belonging to Bifidobacteriu m and 535 
+Lactobacillus  for analysis. Among them, ASV473 from Lactobacillus  and ASV110 536 
+from Bifidobacterium  showed a significant increase from baseline to week 12 in the 537 
+SYN group. However, a significant decrease was observed from week 12 to week 18 538 
+(Fig. 4). By performing a BLAST screening to remove non -homologous sequences, 539 
+the species most closely related to ASV110 and ASV473 were identified as 540 
+Bifidobacterium animalis  subsp. lactis and Lactobacillus rhamnosus , respectively. 541 
+4. Discussion 542 
+The relationship between body weight and the gut microbiota has emerged as a 543 
+prominent area of interest in metabolic health research, with compelling evidence 544 
+linking microbial dysbiosis to obesity pathogenesis  [28]. Probiotic interventions have 545 
+shown particular promise in modulating glucose homeostasis, lipid metabolism, and 546 
+adiposity distribution, including V AT reduction and hepatic steatosis improvement [29]. 547 
+In the present study, the synbiotic intervention resulted in a notable V AT reduction 548 
+alongside a non-significant trend of SAT accumulation compared to the placebo control. 549 
+Journal Pre-proof
+
+
+--- PAGE 28 ---
+ 26 
+These contrasting effects on fat distribution were maintained throughout the 6 -week 550 
+post-intervention follow-up (weeks 12–18). Subgroup analyses uncovered notable sex 551 
+dimorphism in response patterns, with male participants demonstrating progressive 552 
+V AT reduction throughout the 18-week intervention period, while female counterparts 553 
+showed nonsignificant V AT changes potentially attributable to greater interindividual 554 
+variability, yet exhibited significant SAT accumulation by endpoint assessment (at week 555 
+18). Microbiome analysis demonstrated transient presence of Bifidobacterium species, 556 
+achieving peak intestinal abundance at 12 weeks before declining post -intervention; 557 
+overall microbial community structure remained comparable between groups, though 558 
+male participants uniquely displayed enhanced α-diversity post-intervention. 559 
+4.1. Reverse changes of VAT and SAT  560 
+The two principal white adipose tissue (WAT) depots - SAT and VAT - exhibit 561 
+distinct anatomical and functional characteristics. VAT, comprising omental, 562 
+mesenteric, retroperitoneal, gonadal, and pericardial depots, demonstrates strong 563 
+associations with obesity -related metabolic pathologies , including insulin resistance, 564 
+T2D, MASLD, and CVD [30]. In contrast, SAT serves as a metabolically protective 565 
+energy reservoir. Our investigation revealed a clinically significant inverse relationship 566 
+between V AT reduction and SAT expansion, with pronounced sexual dimorphism in 567 
+these responses. 568 
+Emerging evidence suggests that W AT retains the capacity to expand in adulthood 569 
+through hypertrophy and/or hyperplasia, particularly in response to energy excess [31]. 570 
+V AT, primarily represented by the omental depot, is metabolically active and 571 
+Journal Pre-proof
+
+
+--- PAGE 29 ---
+ 27 
+contributes to systemic inflammation and insulin resistance. In contrast, SAT, found in 572 
+the abdominal, gluteal, and femoral regions, serves as a protective buffer, preventing 573 
+ectopic lipid deposition and mitigating metabolic dysfunction. The inability of the SAT 574 
+to expand can lead to lipotoxicity, insulin resistance, and obesity-related complications 575 
+[32].  576 
+The observed expansion of SAT in our study may reflect a protective mechanism, 577 
+redirecting lipid storage away from visceral depots. This process is likely mediated by 578 
+the proliferation and differentiation of preadipocytes into mature adipocytes, which is 579 
+more pronounced in SAT than in V AT  [33]. Similar mechanisms have been observed 580 
+with thiazolidinediones, a class of anti -diabetic drugs that promote fat redistribution 581 
+from V AT to SAT by activating peroxisome proliferator-activated receptor (PPAR)γ, a 582 
+key regulator of adipocyte differentiation [34-36]. Recent studies further highlight the 583 
+metabolic benefits of S AT. For instance, large -scale SAT liposuction in humans has 584 
+been shown to confer negligible metabolic benefits, while mouse models demonstrate 585 
+that SAT transplantation into the visceral cavity improves insulin sensitivity and 586 
+reduces body weight and fat ma ss [37]. These findings emphasize the fundamental 587 
+metabolic distinctions between SAT and V AT and the protectiv e role of SAT in 588 
+maintaining metabolic homeostasis. 589 
+The significant reduction in V AT observed in the overall SYN group (-4.49 cm²; p 590 
+= 0.048) and particularly in the subgroup with 24 ≤ BMI < 28 (-6.28 cm²; p = 0.003) is 591 
+consistent with findings from prior probiotic studies in overweight and obese 592 
+populations. A recent meta-analysis of 14 trials involving 1,523 participants reported a 593 
+Journal Pre-proof
+
+
+--- PAGE 30 ---
+ 28 
+pooled V AT reduction of -3.63 cm² (95% CI: −5.08 to −2.17; p < 0.001) following 594 
+probiotic interventions [38]. Our results exceed this average, suggesting a potentially 595 
+stronger metabolic effect of the synbiotic regimen compared to conventional probiotic 596 
+therapies. Notably, unlike dietary or exercise -based interventions, our synbiot ic 597 
+approach did not lead to significant reductions in total body weight. This indicates that 598 
+the observed V AT changes may reflect localized fat redistribution rather than systemic 599 
+weight loss—a phenomenon potentially influenced by seasonal variations. For instance, 600 
+it has been reported that individuals tend to accumulate SAT during colder months, 601 
+possibly as an adaptive response to cold exposure [39]. Consistent with this, all 602 
+treatment groups in our study showed an increase in SAT. Furthermore, V AT area is 603 
+generally larger in individuals sampled from winter to spring compared to those 604 
+sampled in summer and a utumn [39], which may be attributed to reduced physical 605 
+activity and/or increased caloric intake in cold er seasons. Supporting this notion, 606 
+exercise in cool environments has been shown to preserve subcutaneous fat, whereas 607 
+similar exercise under thermoneutral conditions reduces it [40]. Although overall 608 
+weight loss was minimal, it is important to emphasize that V AT is a more robust 609 
+predictor of cardiometabolic risk than general adiposity [41, 42] . The absence of 610 
+significant weight reduction in our study may indicate that sustained V AT benefits 611 
+require either longer intervention periods (e.g., 6–12 months) or timing across warmer 612 
+seasons to achieve durable metabolic improvements. The pronounced V AT reduction in 613 
+the 24 ≤ BMI < 28 subgroup is promising, though larger and longer -term studies are 614 
+necessary to determine whether these changes translate into meaning ful clinical 615 
+Journal Pre-proof
+
+
+--- PAGE 31 ---
+ 29 
+outcomes, such as reduced incidence of type 2 diabetes or cardiovascular disease. 616 
+In our trial, 12 weeks of synbiotic supplementation produced a marked and 617 
+sustained reduction in V AT; importantly, this benefit was maintained throughout the 6-618 
+week post-treatment follow-up (week 18), demonstrating a time -dependent durability 619 
+of effect.  Nevertheless, it remains unclear whether such benefits extend beyond this 620 
+period.  Existing literature presents contrasting evidence: in a 28 -week synbiotic trial  621 
+combined with lifestyle modification in MASLD patients, anti-inflammatory benefits 622 
+emerged by week 14 and were maintained through week 28 [43]. In contrast, a 4-month 623 
+probiotic intervention in bariatric surgery patients led to improvements in inflammatory 624 
+markers, such as reduced lipopolysaccharide -binding protein and elevated 25 -OH 625 
+vitamin D₃, yet these effects were no longer evident 9 months after discontinuation [44]. 626 
+Together, these findings suggest that sustained metabolic improvements may require 627 
+prolonged or continuous intervention. Our study highlights two critical research  gaps: 628 
+the minimum synbiotic exposure duration needed to achieve lasting metabolic benefits, 629 
+and the identification of biomarkers capable of predicting sustained response after 630 
+treatment withdrawal. Future studies should therefore incorporate extended 631 
+supplementation and follow -up durations, combined with mechanistic investigations, 632 
+to identify predictors of long -term efficacy. Such knowledge will be essential for 633 
+developing personalized synbiotic regimens that deliver durable metabolic health. 634 
+Our investig ation demonstrated significant adipose tissue remodeling 635 
+characterized by concurrent V AT reduction and SAT expansion over the 12 -week 636 
+intervention and 6-week follow-up period. Notably, this metabolically favorable shift 637 
+Journal Pre-proof
+
+
+--- PAGE 32 ---
+ 30 
+occurred independently of dietary or  exercise modifications and was particularly 638 
+evident during winter months, suggesting potential seasonal modulation of adipocyte 639 
+biology. Mechanistically, we propose that the botanical synbiotic formulation elicits a 640 
+tripartite adaptive response: (1) enhan ced lipolytic activity in V AT depots, (2) 641 
+stimulated de novo lipogenesis in SAT, and (3) cold-induced browning of SAT via beige 642 
+adipocyte differentiation. This coordinated metabolic reprogramming appears to confer 643 
+protection against obesity -associated meta bolic dysregulation and low -grade 644 
+inflammation. Our findings substantially advance the current understanding of 645 
+microbiota-adipose tissue crosstalk, providing compelling evidence that targeted 646 
+synbiotic interventions can effectively modulate body fat distr ibution patterns. The 647 
+demonstrated capacity to promote beneficial adipose tissue remodeling underscores the 648 
+therapeutic potential of this approach for managing metabolic syndrome and its related 649 
+complications, offering a novel paradigm in obesity management that capitalizes on the 650 
+intrinsic metabolic plasticity of distinct adipose depots. 651 
+4.2. Sex and BMI differences in fat redistribution  652 
+The well -established sexual dimorphism in adipose tissue distribution, 653 
+characterized by greater central adiposity in men versus peripheral fat deposition in 654 
+women, appears fundamentally linked to sex hormone regulation [45]. Estrogens, for 655 
+instance, promote adipose tissue deposition and function, either directly or through 656 
+receptor activation in adipocytes and adipose tissues. Estrogens are not only beneficial 657 
+to women’s health but also essential for men. Research suggests that estrogens may 658 
+selectively increase sympathetic tone in different adipose tissue depots, leading to lipid 659 
+Journal Pre-proof
+
+
+--- PAGE 33 ---
+ 31 
+accumulation in the subcutaneous depot in women and visceral fat deposition in men 660 
+[46]. This evolutionary adaptation may reflect the metabolic advantage of readily 661 
+mobilizable visceral fat in males, consistent with observations of exercise -induced 662 
+preferential V AT reduction in obese men [47, 48].  Our findings align with this paradigm, 663 
+demonstrating synbiotic -induced V AT reduction in males concurrent with SAT 664 
+expansion in females . These sex-specific responses may be attributed to hormonal 665 
+influences on adipose tissue dynamics. Estrogens may enhance the capacity of SAT to 666 
+expand in women, while androgens in men may promote visceral fat accumulation and 667 
+its subsequent reduction in response to intervention. 668 
+Further stratification by BMI revealed additional metabolic nuances, where 669 
+participants with 24 ≤ BMI < 28 exhibited significant V AT reduction, SAT expansion, 670 
+and elevated BMR, contrasting with the null response in obese (BMI ≥28) individuals. 671 
+This discrepancy may be explained by differences in metabolic status and adipose tissue 672 
+plasticity. In obese individuals, preadipocyte proliferation and differentiation in SAT 673 
+are often impaired, l imiting the capacity for adipose tissue redistribution [49, 50] . 674 
+Preadipocytes in SAT from lean individuals exhibit higher expression of pro-adipogenic 675 
+genes, enabling them to respond more effectively to metabolic demands [33]. This 676 
+enhanced metabolic activity in lean individuals likely contributes to the observed 677 
+increase in BMR, as well as the reduction in V AT and non-significant expansion of SAT 678 
+following synbiotic intervention. In contrast, individuals with severe obesity may have 679 
+diminished preadipocyte proliferation and differentiation, potentially explaining the 680 
+lack of significant changes in SAT, V AT, and BMR. Thus, in this study, participants with 681 
+Journal Pre-proof
+
+
+--- PAGE 34 ---
+ 32 
+a BMI ≥ 28 may have exhibited more severe metabolic disturbances and impaired 682 
+adipose tissue redistribution, which could account for the limited efficacy of the 683 
+synbiotic intervention in this subgroup. 684 
+These findings collectively illuminate the multifactorial regulation of adipose 685 
+tissue plasticity, emphasizing the interplay between sexual dimorphism, adipogenic 686 
+competence, and metabolic reserve in determining intervention efficacy . The 687 
+differential responses observed in our study underscore the complexity of adipose tissue 688 
+biology and the need for personalized approaches to obesity management. By 689 
+elucidating the mechanisms underlying these differences, our study contributes to a 690 
+deeper understanding of adipose tissue dynamics and their role in metabolic health. The 691 
+observed increase in BMR among participants with a 24 ≤ BMI <28 further supports 692 
+the potential of synbiotic interventions to enhance metabolic activity in individuals with 693 
+favorable adipose tissue plasticity, while emphasizing the challenges in achieving 694 
+similar outcomes in individuals with obesity. 695 
+4.3. Potential mechanisms underlying fat redistribution driven by gut microbiota  696 
+Over the past decade, extensive research has highlighted the critical role of gut 697 
+microbiota in modulating host lipid metabolism through various mechanisms, including 698 
+the regulation of inflamma tory factors, hormones, enzymes, and the production of 699 
+metabolic byproducts such as short-chain fatty acids (SCFAs), bile acids, and branched-700 
+chain amino acids  [47, 48] . In o ur study, significant changes  were observed  in fat 701 
+redistribution following the synbiotic intervention . Notably, a transient increase in 702 
+Bifidobacterium abundance was observed during the 12 -week intervention period, 703 
+Journal Pre-proof
+
+
+--- PAGE 35 ---
+ 33 
+followed by a return to baseline levels post-intervention. While bacterial shedding was 704 
+confirmed in stools during supplementation, our data do not support persistent 705 
+colonization—defined as the sustained presence and replication of strains without 706 
+ongoing administration. In contrast, Lactobacillus did not show a consistent increase in 707 
+abundance, although specific stra ins, such as ASV473 ( L. rhamnosus ), were 708 
+significantly enhanced by the synbiotic intervention. This suggests a potential role for 709 
+these strains in mediating weight loss through strain-specific interactions with prebiotic 710 
+substrates. Notably, the male popul ation exhibited a distinct increase in microbial 711 
+diversity post -intervention, which may contribute to the observed metabolic 712 
+improvements. 713 
+The administration of probiotics, particularly Lactobacilli and Bifidobacteria, has 714 
+been extensively studied for anti-obesity effects. In animal models, B. animalis subsp. 715 
+lactis CECT 8145 reduced plasma levels of tumor necrosis factor -α and 716 
+malondialdehyde while increasing adiponectin, an insulin -sensitizing adipokine [12]. 717 
+In abdominally obese individuals, B. animalis subsp. lactis CECT 8145 and its heat -718 
+killed form improved anthropometric adiposity biomarkers, particularly in women [13]. 719 
+The lack of a sustained Bifidobacterium increase at week 18, coupled with evidence 720 
+that even heat -killed probiotics exert bioactive effects, challenges the notion that 721 
+persistent colonization is necessary for metabolic benefits. While prebiotics such as 722 
+inulin a nd FOS are known to support probiotic survival and activity during 723 
+supplementation [18, 19] , their capacity to promote long -term colonization remains 724 
+unconfirmed and warrants further investigation. Collectively, these findings suggest 725 
+Journal Pre-proof
+
+
+--- PAGE 36 ---
+ 34 
+that the administered strains primarily functioned as 'pass -through' microbes, likely 726 
+limited by colonization resistance from the indigenous gut microbiota.  Lactobacillus 727 
+rhamnosus GG (LGG), one of the most well -studied probiotics, has been associated 728 
+with multiple anti -obesity actions, including increased expression of fat ty acid 729 
+oxidative genes in the liver, decreased gluconeogenic genes, and reduced lipid 730 
+accumulation through adiponectin secretion and AMP-activated protein kinase (AMPK) 731 
+activation [51]. Furthermore, LGG supplementation prevented a decrease in serum 732 
+adiponectin levels and reduced serum fibroblast growth factor 21 (FGF-21), a hormone 733 
+linked to metabolic regulation  [52]. The administration of FGF -21 analogs has been 734 
+shown to induce adiponectin gene expression in mice, stimulating its secretion through 735 
+a PPAR -γ-dependent mechanism  [53]. However, the interplay between probiotic 736 
+administration (live or heat-killed), prebiotic modulation, and host metabolic outcomes 737 
+remains complex and context -dependent, requiring mechanistic studies to disentangle 738 
+causal relationships. 739 
+Increased gut microbial diversity has also been implicated in mitigating obesity -740 
+related phenotypes. Studies indicat e that obesity is correlated with a 20–40% 741 
+reduction in bacterial diversity [54, 55]. Some reports have shown reduced microbial 742 
+diversity in obese individuals compared to healthy controls [56, 57]. However, findings 743 
+are not entirely consistent: an integrated analysis of 4,282 fecal samples reported that 744 
+while the Chao1 index was significantly lower in the simple o besity group, other α-745 
+diversity indices (ACE, Shannon, Simpson) showed no significant differences [58]. In 746 
+our study, a significant increase in α- (Shannon) and altered β-diversity was observed 747 
+Journal Pre-proof
+
+
+--- PAGE 37 ---
+ 35 
+in male participants following the intervention, coinciding with a substa ntial V AT 748 
+reduction. This aligns with previous observations that higher V AT proton density fat 749 
+fraction is associated with reduced α-diversity and altered β-diversity, independent of 750 
+total body fat [59]. Mechanistically, restored microbial diversity may support metabolic 751 
+health by impro ving nutrient absorption, immune function, and weight regulation, 752 
+whereas reduced diversity can promote accumulation of toxic metabolites such as 753 
+hydrogen sulfide, ammonia, and phenol [60]. Nonetheless, direct evidence from human 754 
+trials linking shifts in microbial diversity to specific metabolic outcomes—particularly 755 
+V AT reduction—remains limited, and the relationship between α-diversity and 756 
+overweight/obesity is complex and population-specific. Further mechanistic studies are 757 
+needed to determine whether increased diversity is a driver, a mediator, or a 758 
+consequence of metabolic improvement. 759 
+Obesity is also characterized by low -grade inflammation, or “metaflammation, ” 760 
+driven by increased intestinal permeability and the translocation of bacterial debris 761 
+such as lipopolysaccharide into the bloodstream  [61]. This leads to adipose tissue 762 
+inflammation, adipocyte dysfunction, and metabolic disorders such as glucose 763 
+intolerance and insulin resistance [62]. The reduction of Lactobacillus spp . and 764 
+Bifidobacterium spp . in the gut has b een linked to systemic inflammation and 765 
+metabolic changes [63]. Administration of Bifidobacteria  to rodents improved gut 766 
+integrity and metabolic endotoxemia, suggesting that dietary interventions targeting 767 
+gut microbiota may alter obesity-associated dysbiosis [64, 65]. 768 
+Prebiotics also play a vital role in modulating gut microbiota and fat distribution. 769 
+Journal Pre-proof
+
+
+--- PAGE 38 ---
+ 36 
+Inulin supplementation has been shown to improve anthropometric parameters, glucose 770 
+metabolism, and inflammation through the production of SCFAs and the restoration of 771 
+gut barrier function [66-68]. In mice, i nulin has been shown to modulate gene 772 
+expressions linked to obesity in the prefrontal cortex via endocannabinoids, further 773 
+supporting its role in metabolic regulation [69]. Similarly, FOS has been shown to 774 
+reduce hyperglycemia and inflammatory markers in diabetic mice through PPARγ and 775 
+mu-opioid receptors [70, 71] . Chrysanthemum morifolium , a traditional Chinese 776 
+medicinal herb, is known for its anti -inflammatory, antioxidant, and hepatoprotective 777 
+properties. Recent studies further support its metabolic benefits: in rat models of 778 
+metabolic and alcohol-associated liver disease, it alleviated hepatic steatosis and lipid 779 
+accumulation by modulating the gu t microbiota and activating PPAR γ and PPARα 780 
+pathways [72]. In diet-induced obese mice, supplementation with the ethanol extract of 781 
+Chrysanthemum morifolium reduced body weight gain and adipo se tissue mass while 782 
+enhancing energy expenditure and adipogenesis [73]. Moreover, a human study by 783 
+Chen et al. (2023) demonstrated that  Chrysanthemum morifolium  extract mitigates 784 
+postprandial lipemia and improves antioxidant status following a high -fat meal i n 785 
+healthy adults [74]. These findings collectively underscore its potential in reducing 786 
+obesity-related inflammation and insulin resistance. 787 
+SCFAs, including acetate, propionate, and butyrate, are  essential for gut health, 788 
+energy homeostasis, and adipose tissue regulation. Acetate, propionate, and butyrate 789 
+enter circulation and influence peripheral tissues such as adipose tissue, liver, and 790 
+muscle, while acetate may also regulate satiety through ce ntral mechanisms  [75]. 791 
+Journal Pre-proof
+
+
+--- PAGE 39 ---
+ 37 
+Acetate promotes adipogenesis, W AT browning, and energy metabolism, supported by 792 
+its ability to upregulate PPAR γ expression in preadipocytes  [76-78]. Animal studies 793 
+further indicate that acetate induces V AT browning, characterized by reduced adipocyte 794 
+size and expanded interstitial areas [78]. Butyrate, by activating PPARγ in colonocytes, 795 
+maintains anaerobic conditions and inhibits pathogenic bacteria [79, 80]. Our findings 796 
+indicate that SYN intervention significantly increased the abundance of Lactobacillus 797 
+spp. and Bifidobacterium spp., which are well -known producers of SCFAs [81]. This 798 
+suggests that SYN may enhance SCFA production, thereby contributing to improved 799 
+gut health and metabolic regulation, which need s further investigation. The observed 800 
+reduction in visceral fat may be linked to the synbiotic ’s modulation of t he gut-liver 801 
+axis, a key pathway connecting gut microbiota and liver function. One core probiotic 802 
+in the intervention, B. animalis subsp. lactis CECT 8145, has been shown to reduce fat 803 
+deposition by regulating the insulin -like growth factor -1 (IGF -1) pathw ay, which is 804 
+central to liver-derived metabolic regulation [82]. Preclinical studies indicate that this 805 
+strain improves dyslipidemia and visceral adiposity in obese models, likely by 806 
+enhancing hepatic lipid metabolism  [83]. Furthermore, the  Chrysanthemum 807 
+morifolium extract included in the synbiotic may support liver health by alleviating 808 
+hepatic steatosis and modulating lip id metabolism, potentially via PPAR -related 809 
+signaling [72]. Collectively, these mechanisms support the hypothesis that the synbiotic 810 
+alleviates metabolic burden by targeting the gut–liver axis, although further studies are 811 
+required to substantiate these proposed effects. 812 
+4.4. Limitations and implications  813 
+Journal Pre-proof
+
+
+--- PAGE 40 ---
+ 38 
+This randomized, double-blind, placebo-controlled trial employed rigorous dietary 814 
+and exercise standardization to ensure high methodological  quality, though several 815 
+limitations warrant consideration. The absence of mechanistic biomarkers (e.g., 816 
+adiponectin, inflammatory cytokines) constrains our understanding of the observed 817 
+adipose tissue redistribution, while the 12-week intervention duration may explain the 818 
+lack of significant improvements in insulin sensitivity, lipid profiles, or body weight - 819 
+findings consistent with meta -analytic evidence demonstrating that meaningful 820 
+anthropometric changes typically require interventions exceeding 12 we eks [84]. 821 
+Substantial interi ndividual variability in baseline gut microbiota composition likely 822 
+contributed to differential treatment responses, suggesting the importance of microbial 823 
+stratification in future studies.  824 
+To address these limitations, extended-duration trials should eva luate whether 825 
+prolonged synbiotic administration enhances metabolic outcomes, complemented by 826 
+mechanistic studies examining adipocyte differentiation dynamics (particularly 827 
+PPARγ-mediated SAT expansion) and V AT-associated inflammatory pathways. Non -828 
+targeted metabolomics could elucidate key microbial-derived metabolites (e.g., SCFAs, 829 
+novel PPARγ ligands) mediating these effects, while baseline microbiome profiling 830 
+may enable personalized intervention strategies through the identification of predictive 831 
+microbial signatures for treatment responsiveness. These multidimensional 832 
+investigations would substantially advance our understanding of synbiotic -mediated 833 
+metabolic regulation while informing precision nutrition approaches for obesity 834 
+management. 835 
+Journal Pre-proof
+
+
+--- PAGE 41 ---
+ 39 
+5. Conclusions  836 
+This 12-week randomized controlled trial  revealed that synbiotic intervention 837 
+induces clinically meaningful reductions in  abdominal V AT among overweight and 838 
+obese Chinese adults, with particularly pronounced effects in men and individuals with 839 
+a 24 ≤ BMI < 28. The probiotic strains Bifidobacterium animalis  subsp. lactis and 840 
+Lactobacillus rhamnosus, key components of the synbiotic, were notably enriched in 841 
+the gut microbiota by week 12, though their presence did not persist post-intervention. 842 
+Sex-specific effects were prominent: men experienced a significant reduction in V AT at 843 
+week 12, alongside improved α-diversity and distinct changes in the β-diversity of the 844 
+gut microbiota. In contrast, women showed no significant changes in V AT or gut 845 
+microbiota diversity. Subgroup analysis further highlighted that participant s with a 24 846 
+≤ BMI < 28 in the synbiotic group demonstrated a significant decrease in V AT, an 847 
+increase in SAT, and a higher BMR. These findings emphasize the potential of 848 
+synbiotics for t argeted abdominal fat reduction and gut microbiota modulation, with 849 
+effects varying by sex and body weight. Future research should investigate the 850 
+underlying mechanisms and optimize synbiotic interventions for diverse populations. 851 
+Availability of data and material 852 
+The raw 16S rRNA gene sequence data have been deposited in the NCBI Sequence 853 
+Read Archive (SRA) database under the accession number PRJNA1248384.  854 
+Authors contributions 855 
+Nengjuan Li: Methodology, Investigation, Data Curation, Writing - Original Draft, 856 
+Visualization. Zhigang Zhu: Conceptualization, Methodology, Validation, Resources, 857 
+Journal Pre-proof
+
+
+--- PAGE 42 ---
+ 40 
+Writing - Original Draft, Project administration. Shuang Wu: Methodology, 858 
+Investigation, Data Curation, Writing - Original Draft, Visualization. Daochen Gong: 859 
+Data Curat ion, Formal analysis, Visualization, Validation. Richard Day: Validation, 860 
+Project administration, Supervision. Vineetha Vijayakumar: Validation, Project 861 
+administration. Xiao Yu: Resources, Investigation. Qiuxia Chen: Resources, 862 
+Investigation. Yuting Feng: Resources, Investigation. Qiong Wang: Methodology, 863 
+Investigation. Zhiming Hu: Methodology, Investigation. Jinjun Li: Resources, Project 864 
+administration. Jun Du: Resources, Project administration. Changyun Xu: Resources, 865 
+Project administration. Wang Li: Form al analysis, Validation. Liang Chen: 866 
+Conceptualization, Validation, Supervision, Writing - Review & Editing, Project 867 
+administration. Jiang Hu: Methodology, Formal analysis, Validation, Supervision, 868 
+Writing - Review & Editing, Project administration. Xiaoqiong Li: Conceptualization, 869 
+Methodology, Data Curation, Validation, Supervision, Writing - Review & Editing, 870 
+Supervision, Project administration. 871 
+Ethics approval and consent to participate 872 
+This study strictly followed the ethical principles of the Declarati on of Helsinki 873 
+and received approval from the Ethical Review Authority of The Second Affiliated 874 
+Hospital of Zhejiang Chinese Medical University (Approval No.: #2023 Drug No. 002-875 
+01). The trial was registered at MedicalResearch.org (Registration No.: MR -33-24-876 
+000079) and the Chinese Clinical Trial Registry (Registration No.: 877 
+ChiCTR2400088457). Adhering to the CONSORT guidelines, the study ensured 878 
+transparent and rigorous reporting. All participants provided written informed consent 879 
+Journal Pre-proof
+
+
+--- PAGE 43 ---
+ 41 
+before involvement. 880 
+Consent for publication 881 
+Not applicable. 882 
+Funding 883 
+This study was conducted with funding from Amway and Archer Daniels Midland 884 
+(ADM). Further support was received from the ‘Pioneer’ and ‘Leading Goose’ R&D 885 
+Program of Zhejiang (No. 2022C03138), the National Key R&D Program (No. 886 
+2022YFC2010101), and the Changzhi Traditional Chinese Medicine Inheritance and 887 
+Innovation Demonstration Pilot Project (Nos. 2023CZSZYY01 and 2024CZSZYY01). 888 
+Conflict of interest 889 
+Z. Zhu, J. Du, L. Wang and L. Chen are all employees of Nutrilite Health Institute. 890 
+R Day, V. Vijayakumar and C. Xu are all employees of ADM. The authors declare that 891 
+the research was conducted in the absence of any commercial or financial relationships 892 
+that could be constructed as a potential conflict of interest. 893 
+Acknowledgments 894 
+We are grateful to all the participants who were involved in this study. 895 
+Appendix A. Supplementary data 896 
+The datasets used and analyzed in the current study are available from the 897 
+corresponding author upon reasonable request.  898 
+Declaration 899 
+Journal Pre-proof
+
+
+--- PAGE 44 ---
+ 42 
+We confirm that no eligible individual has been excluded from the authorship list. 900 
+Generative AI tools were used to assist in language editing and formatting under the 901 
+authors’ supervision. All intellectual content was created and verified by the authors. 902 
+  903 
+Journal Pre-proof
+
+
+--- PAGE 45 ---
+ 43 
+References 904 
+[1] World Health Organization. Obesity and overweight. 2018. 905 
+[2] Powell-Wiley TM, Poirier P, Burke LE, Després JP, Gordon-Larsen P, Lavie CJ, et al. Obesity and 906 
+Cardiovascular Disease: A Scientific Statement From the American Heart Association. Circulation. 907 
+2021;143:E984-E1010. 908 
+[3] Geng JF, Ni QQ, Sun W, Li LG, Feng XJ. The links between gut microbiota and obesity and obesity 909 
+related diseases. Biomed Pharmacother. 2022;147. 910 
+[4] Haam JH, Kim BT, Kim EM, Kwon H, Kang JH, Park JH, et al. Diagnosis of Obesity: 2022 Update 911 
+of Clinical Practice Guidelines for Obesity by the Korean Society for the Study of Obesity. J Obes Metab 912 
+Syndr. 2023;32:121-9. 913 
+[5] Liu BN, Liu XT, Liang ZH, Wang JH. Gut microbiota in obesity. World J Gastroentero. 2021;27:3837-914 
+50. 915 
+[6] Shan LY , Tyagi A, Shabbir U, Chen XQ, Vijayalakshmi S, Yan PP, et al. The Role of Gut Microbiota 916 
+Modulation Strategies in Obesity: The Applications and Mechanisms. Fermentation-Basel. 2022;8. 917 
+[7] Barathikannan K, Chelliah R, Rubab M, Daliri EBM, Elahi F , Kim DH, et al. Gut Microbiome 918 
+Modulation Based on Probiotic Application for Anti -Obesity: A Review on Efficacy and Validation. 919 
+Microorganisms. 2019;7. 920 
+[8] Pontes KSD, Guedes MR, da Cunha MR, Mattos SD, Silva MIB, Neves MF, et al. Effects of 921 
+probiotics on body adiposity and cardiovascular risk markers in individuals with overweight and obesity: 922 
+A systematic review and meta-analysis of randomized controlled trials. Clin Nutr. 2021;40:4915-31. 923 
+[9] Pan YW, Yang YF, Wu JL, Zhou HT, Yang C. Efficacy of probiotics, prebiotics, and synbiotics on 924 
+liver enzymes, lipid profiles, and inflammation in patients with non -alcoholic fatty liver disease: a 925 
+systematic review and meta-analysis of randomized controlled trials. BMC Gastroenterol. 2024;24. 926 
+[10] Guo M, Li J, Zhang  L, Chen C, Wei Y , Shen Z-a. Effects of oral supplementation of probiotics on 927 
+body weight and visceral fat in obese patients: a meta -analysis and systematic review. Sci Rep. 928 
+2025;15:6355. 929 
+[11] Martorell P, Llopis S, González N, Chenoll E, López -Carreras N, Aleixandre A, et al. Probiotic 930 
+Strain Bifidobacterium animalis subsp. lactis CECT 8145 Reduces Fat Content and Modulates Lipid 931 
+Metabolism and Antioxidant Response in Caenorhabditis elegans. J Agr Food Chem. 2016;64:3462-72. 932 
+[12] Carreras NL, Martorell P, Chenoll E, Genovés S, Ramón D, Aleixandre A. Anti-obesity properties 933 
+of the strain Bifidobacterium animalis subsp. lactis CECT 8145 in Zucker fatty rats. Beneficial microbes. 934 
+2018;9:629-41. 935 
+[13] Pedret A, Valls RM, Calderón-Pérez L, Llauradó E, Companys J, Pla-Pagà L, et al. Effects of daily 936 
+consumption of the probiotic Bifidobacterium animalis subsp. lactis CECT 8145 on anthropometric 937 
+adiposity biomarkers in abdominally obese subjects: a randomized controlled trial. Int J Obesity. 938 
+2019;43:1863-8. 939 
+[14] Amde kar S, Singh V . Studies on anti -inflammatory and analgesic properties of Lactobacillus 940 
+rhamnosus in experimental animal models. J Complement Integr Med. 2016;13:145-50. 941 
+[15] Hirano J, Yoshida T, Sugiyama T, Koide N, Mori I, Yokochi T. The effect of Lactobacillus rhamnosus 942 
+on enterohemorrhagic Escherichia coli infection of human intestinal cells in vitro. Microbiol Immunol. 943 
+2003;47:405-9. 944 
+[16] Daglia M, Drago L, Ullah H, Di Minno A, Brindisi G, Brunese FP, et al. Effects of the 945 
+supplementation of single and multi-strain probiotics, alone or in combination with other treatments, on 946 
+Journal Pre-proof
+
+
+--- PAGE 46 ---
+ 44 
+asthma in children: A systematic review of the randomized, placebo-controlled clinical studies. J Funct 947 
+Foods. 2024;123:106599. 948 
+[17] Holkem AT, Silva MPD, Favaro-Trindade CS. Probiotics and plant extracts: a promising synergy 949 
+and delivery systems. Crit Rev Food Sci Nutr. 2023;63:9561-79. 950 
+[18] Dou Y , Yu X, Luo Y , Chen B, Ma D, Zhu J. Effect of Fructooligosaccharides Supplementation on 951 
+the Gut Microbiota in Human: A Systematic Review and Meta-Analysis. Nutrients. 2022;14. 952 
+[19] De Giani A, Sandionigi A, Zampolli J, Michelotti A, Tursi F, Labra M, et al. Effects of Inulin-Based 953 
+Prebiotics Alone or in Combination with Probiotics on Human Gut Microbiota and Markers of Immune 954 
+System: A Randomized, Double-Blind, Placebo-Controlled Study in Healthy Subjects. Microorganisms. 955 
+2022;10. 956 
+[20] Chen L, Sun J, Pan Z, Lu Y , Wang Z, Yang L, et al. Analysis of Chemical Constituents of 957 
+Chrysanthemum morifolium Extract and Its Effect on Postprandial Lipid Metabolism in Healthy Adults. 958 
+Molecules. 2023;28. 959 
+[21] Yuan Y , Zhang Y , Hu C, Wang Z, Xu Q, Pan R, et al. Chrysanthemum extract mitigates high-fat diet-960 
+induced inflammation, intestinal barrier damage and gut microbiota disorder. Food Funct. 2025. 961 
+[22] Gao X , Zhu Z, Bao Y , Li Y , Zhu W, He X, et al. Chrysanthemum morifolium Ramat extract and 962 
+probiotics combination ameliorates metabolic disorders through regulating gut microbiota and PPAR α 963 
+subcellular localization. Chin Med. 2024;19:76. 964 
+[23] da Silva TF, Casarotti SN, de Oliveira GLV , Penna ALB. The impact of probiotics, prebiotics, and 965 
+synbiotics on the biochemical, clinical, and immunological markers, as well as on the gut microbiota of 966 
+obese hosts. Crit Rev Food Sci Nutr. 2021;61:337-55. 967 
+[24] Minami J, Iwabuchi N, Tanaka M, Yamauchi K, Xiao J-z, Abe F, et al. Effects of Bifidobacterium 968 
+breve B-3 on body fat reductions in pre -obese adults: A randomized, double-blind, placebo-controlled 969 
+trial. Bioscience of microbiota, food and health. 2018;37:67-75. 970 
+[25] Tewari N, Awad S, Macdonald IA, Lobo DN. A comparison of three methods to assess body 971 
+composition. Nutrition. 2018;47:1-5. 972 
+[26] Wang H, Herforth AW, Xi B, Zou Z. Validation of the Diet Quality Questionnaire in Chinese 973 
+Children and Adolescents and Relationship with Pediatric Overweight and Obesity. Nutrients. 2022;14. 974 
+[27] Yang G, Li Y , Liu S, Liu C, Jia C, Wang S. Physical activity influences the mobile phone addiction 975 
+among Chinese undergraduates: The moderating effect of exercise type. Journal of behavioral addictions. 976 
+2021;10:799-810. 977 
+[28] Rastelli M, Knauf C, Cani PD. Gut microbes and health: a focus on the mechanisms linking microbes, 978 
+obesity, and related disorders. Obesity. 2018;26:792-800. 979 
+[29] Perna S, Ilyas Z, Giacosa A, Gasparri C, Peroni G, Faliva  MA, et al. Is probiotic supplementation 980 
+useful for the management of body weight and other anthropometric measures in adults affected by 981 
+overweight and obesity with metabolic related diseases? A systematic review and meta -analysis. 982 
+Nutrients. 2021;13:666. 983 
+[30] Porter SA, Massaro JM, Hoffmann U, Vasan RS, O'Donnel CJ, Fox CS. Abdominal subcutaneous 984 
+adipose tissue: a protective fat depot? Diabetes care. 2009;32:1068-75. 985 
+[31] Virtue S, Vidal-Puig A. Adipose tissue expandability, lipotoxicity and the metabolic syndrome—an 986 
+allostatic perspective. Biochimica et Biophysica Acta (BBA) -molecular and cell biology of lipids. 987 
+2010;1801:338-49. 988 
+[32] White UA, Tchoukalova YD. Sex dimorphism and depot differences in adipose tissue function. 989 
+Biochimica et Biophysica Acta (BBA)-Molecular Basis of Disease. 2014;1842:377-92. 990 
+Journal Pre-proof
+
+
+--- PAGE 47 ---
+ 45 
+[33] Macotela Y , Emanuelli B, Mori MA, Gesta S, Schulz TJ, Tseng Y-H, et al. Intrinsic differences in 991 
+adipocyte precursor cells from different white fat depots. Diabetes. 2012;61:1691-9. 992 
+[34] Albrektsen T, Frederiksen KS, Holmes WE, Boel E, Taylor K, Fleckner J. Novel genes regulated by 993 
+the insulin sensitizer rosiglitazone during adipocyte differentiation. Diabetes. 2002;51:1042-51. 994 
+[35] Walker GE, Marzullo P, Verti B, Guzzaloni G, Maestrini S, Zurleni F, et al. Subcutaneous abdominal 995 
+adipose tissue subcompartments: potential role in rosiglitazone effects. Obesity. 2008;16:1983-91. 996 
+[36] Choe SS, Huh JY , Hwang IJ, Kim JI, Kim JB. Adipose tissue remodeling: its role in energy 997 
+metabolism and metabolic disorders. Front Endocrinol (Lausanne). 2016;7:30. 998 
+[37] Cani PD, Van Hul M. Gut microbiota in overweight and obesity: crosstalk with adipose tissue. Nat 999 
+Rev Gastro Hepat. 2024;21:164-83. 1000 
+[38] Porchia LM, Vazquez -Marroquin G, Ochoa -Précoma R, Pérez -Fuentes R, Gonzal ez-Mejia ME. 1001 
+Probiotics’ effect on visceral and subcutaneous adipose tissue: a systematic review of randomized 1002 
+controlled trials. Eur J Clin Nutr. 2022;76:1646-56. 1003 
+[39] Nakayama K, Miyashita H, Yanagisawa Y , Iwamoto S. Seasonal effects of UCP1 gene 1004 
+polymorphism on visceral fat accumulation in Japanese adults. PloS one. 2013;8:e74720. 1005 
+[40] Kahn HS. The Accumulation of Visceral Adipose Tissue may be Influenced by Intra ‐Abdominal 1006 
+Temperature. Obes Res. 1996;4:297-9. 1007 
+[41] Ruiz-Castell M, Samouda H, Bocquet V , Fagherazzi G, Stranges S, Huiart L. Estimated visceral 1008 
+adiposity is associated with risk of cardiometabolic conditions in a population based study. Sci Rep. 1009 
+2021;11:9121. 1010 
+[42] Sanguankeo A, Lazo M, Upala S, Brancati FL, Bonekamp S, Pownall HJ, et al. Effect s of visceral 1011 
+adipose tissue reduction on CVD risk factors independent of weight loss: The Look AHEAD study. 1012 
+Endocr Res. 2017;42:86-95. 1013 
+[43] Eslamparast T, Poustchi H, Zamani F, Sharafkhah M, Malekzadeh R, Hekmatdoost A. Synbiotic 1014 
+supplementation in nonalcoholic fatty liver disease: a randomized, double-blind, placebo-controlled pilot 1015 
+study. The American journal of clinical nutrition. 2014;99:535-42. 1016 
+[44] Mokhtari Z, Karbaschian Z, Pazouki A, Kabir A, Hedayati M, Mirmiran P, et al. The effects of 1017 
+probiotic supplements on blood markers of endotoxin and lipid peroxidation in patients undergoing 1018 
+gastric bypass surgery; a randomized, double -blind, placebo-controlled, clinical trial with 13 months 1019 
+follow-up. Obes Surg. 2019;29:1248-58. 1020 
+[45] Gavin KM, Bessesen DH.  Sex differences in adipose tissue function. Endocrinology and 1021 
+Metabolism Clinics. 2020;49:215-28. 1022 
+[46] Kuryłowicz A. Estrogens in adipose tissue physiology and obesity -related dysfunction. 1023 
+Biomedicines. 2023;11:690. 1024 
+[47] Williams R, Wood L, Collins C, Cal lister R. Effectiveness of weight loss interventions –is there a 1025 
+difference between men and women: a systematic review. Obes Rev. 2015;16:171-86. 1026 
+[48] Christensen P, Meinert Larsen T, Westerterp‐Plantenga M, Macdonald I, Martinez JA, Handjiev S, 1027 
+et al. Men and women respond differently to rapid weight loss: Metabolic outcomes of a multi ‐centre 1028 
+intervention study after a low‐energy diet in 2500 overweight, individuals with pre‐diabetes (PREVIEW). 1029 
+Diabetes, Obesity and Metabolism. 2018;20:2840-51. 1030 
+[49] Isakson P, Hammarstedt A, Gustafson B, Smith U. Impaired preadipocyte differentiation in human 1031 
+abdominal obesity: role of Wnt, tumor necrosis factor-α, and inflammation. Diabetes. 2009;58:1550-7. 1032 
+[50] Maumus M, Peyrafitte J-A, d'Angelo R, Fournier-Wirth C, Bouloumié A, Casteilla L, et al. Native 1033 
+human adipose stromal cells: localization, morphology and phenotype. Int J Obesity. 2011;35:1141-53. 1034 
+Journal Pre-proof
+
+
+--- PAGE 48 ---
+ 46 
+[51] Kim S -W, Park K-Y , Kim B, Kim E, Hyun C -K. Lactobacillus rhamnosus GG improves insulin 1035 
+sensitivity and reduces adipo sity in high -fat diet -fed mice through enhancement of adiponectin 1036 
+production. Biochem Bioph Res Co. 2013;431:258-63. 1037 
+[52] Arellano-García L, Macarulla M, Cuevas -Sierra A, Martínez J, Portillo M, Milton -Laskibar I. 1038 
+Lactobacillus rhamnosus GG administration partially prevents diet-induced insulin resistance in rats: A 1039 
+comparison with its heat-inactivated parabiotic. Food Funct. 2023;14:8865-75. 1040 
+[53] Hui X, Feng T, Liu Q, Gao Y , Xu A. The FGF21–adiponectin axis in controlling energy and vascular 1041 
+homeostasis. J Mol Cell Biol. 2016;8:110-9. 1042 
+[54] Cotillard A, Kennedy SP, Kong LC, Prifti E, Pons N, Le Chatelier E, et al. Dietary intervention 1043 
+impact on gut microbial gene richness. Nature. 2013;500:585-8. 1044 
+[55] Le Chatelier E, Nielsen T, Qin J, Prifti E, Hildebrand F,  Falony G, et al. Richness of human gut 1045 
+microbiome correlates with metabolic markers. Nature. 2013;500:541-6. 1046 
+[56] Gao R, Zhu C, Li H, Yin M, Pan C, Huang L, et al. Dysbiosis signatures of gut microbiota along the 1047 
+sequence from healthy, young patients to those with overweight and obesity. Obesity. 2018;26:351-61. 1048 
+[57] Da Silva CC, Monteil MA, Davis EM. Overweight and obesity in children are associated with an 1049 
+abundance of Firmicutes and reduction of Bifidobacterium in their gastrointestinal microbiota. 1050 
+Childhood Obesity. 2020;16:204-10. 1051 
+[58] Gong J, Shen Y , Zhang H, Cao M, Guo M, He J, et al. Gut microbiota characteristics of people with 1052 
+obesity by meta-analysis of existing datasets. Nutrients. 2022;14:2993. 1053 
+[59] U -Din M, Ahmed BA, Syed SA, Ong FJ, Oreskovic h SM, Gunn E, et al. Characteristics of 1054 
+abdominal visceral adipose tissue, metabolic health and the gut microbiome in adults. The Journal of 1055 
+Clinical Endocrinology & Metabolism. 2024;109:680-90. 1056 
+[60] Kasai C, Sugimoto K, Moritani I, Tanaka J, Oya Y , Inoue H, et al. Comparison of the gut microbiota 1057 
+composition between obese and non-obese individuals in a Japanese population, as analyzed by terminal 1058 
+restriction fragment length polymorphism and next -generation sequencing. BMC Gastroenterol. 1059 
+2015;15:1-10. 1060 
+[61] Hotamisligil GS. Inflammation and metabolic disorders. Nature. 2006;444:860-7. 1061 
+[62] Kawai T, Autieri MV , Scalia R. Adipose tissue inflammation and metabolic dysfunction in obesity. 1062 
+Am J Physiol-Cell Ph. 2021;320:C375-C91. 1063 
+[63] Cani PD. Human gut microbiome: hopes, threats and promises. Gut. 2018;67:1716-25. 1064 
+[64] Wang Z, Xiao G, Yao Y , Guo S, Lu K, Sheng Z. The role of bifidobacteria in gut barrier function 1065 
+after thermal injury in rats. J Trauma Acute Care. 2006;61:650-7. 1066 
+[65] Mazloom K, Siddiqi I, Covasa M.  Probiotics: how effective are they in the fight against obesity? 1067 
+Nutrients. 2019;11:258. 1068 
+[66] Rodriguez J, Neyrinck AM, Van Kerckhoven M, Gianfrancesco MA, Renguet E, Bertrand L, et al. 1069 
+Physical activity enhances the improvement of body mass index and metabolism by inulin: a multicenter 1070 
+randomized placebo-controlled trial performed in obese individuals. Bmc Med. 2022;20:110. 1071 
+[67] Hiel S, Gianfrancesco MA, Rodriguez J, Portheault D, Leyrolle Q, Bindels LB, et al. Link between 1072 
+gut microbiota and health outco mes in inulin -treated obese patients: Lessons from the Food4Gut 1073 
+multicenter randomized placebo-controlled trial. Clin Nutr. 2020;39:3618-28. 1074 
+[68] Gargari BP, Dehghan P , Aliasgharzadeh A, Jafar-Abadi MA. Effects of high performance inulin 1075 
+supplementation on glycemic control and antioxidant status in women with type 2 diabetes. Diabetes 1076 
+Metab J. 2013;37:140. 1077 
+[69] Li X, Zheng P, Zou Y , Guan L, Li N, Liu J, et al. Dietary inulin ameliorates obesity-induced severe 1078 
+Journal Pre-proof
+
+
+--- PAGE 49 ---
+ 47 
+acute pancreatitis via gut-pancreas axis. Gut microbes. 2024;16:2436949. 1079 
+[70] Abot A, Wemelle E, Laurens C, Paquot A, Pomie N, Carper D, et al. Identification of new 1080 
+enterosynes using prebiotics: roles of bioactive lipids and mu -opioid receptor signalling in humans and 1081 
+mice. Gut. 2021;70:1078-87. 1082 
+[71] Pujo J, Petitfils C, Le Faouder P, Eeckhaut V , Payros G, Maurel S, et al. Bacteria-derived long chain 1083 
+fatty acid exhibits anti-inflammatory properties in colitis. Gut. 2021;70:1088-97. 1084 
+[72] Liu D, Zhan J, Wang S, Chen L, Zhu Q, Nie R, et al. Chrysanthemum m orifolium attenuates 1085 
+metabolic and alcohol -associated liver disease via gut microbiota and PPAR α/γ activation. 1086 
+Phytomedicine. 2024;130:155774. 1087 
+[73] Ryu R, Kwon E -Y , Choi J-Y , Shon JC, Liu K-H, Choi M-S. Chrysanthemum leaf ethanol extract 1088 
+prevents obesity and metabolic disease in diet-induced obese mice via lipid mobilization in white adipose 1089 
+tissue. Nutrients. 2019;11:1347. 1090 
+[74] Chen L, Sun JH, Pan ZY , Lu YF, Wang ZD, Yang LG, et al. Analysis of Chemical Constituents of 1091 
+Chrysanthemum morifolium Extract and Its Effect on Postprandial Lipid Metabolism in Healthy Adults. 1092 
+Molecules. 2023;28. 1093 
+[75] Canfora EE, Jocken JW, Blaak EE. Short -chain fatty acids in control of body weight and insulin 1094 
+sensitivity. Nat Rev Endocrinol. 2015;11:577-91. 1095 
+[76] Hong Y -H, Nishimura  Y , Hishikawa D, Tsuzuki H, Miyahara H, Gotoh C, et al. Acetate and 1096 
+propionate short chain fatty acids stimulate adipogenesis via GPCR43. Endocrinology. 2005;146:5092-1097 
+9. 1098 
+[77] Siersbæk R, Nielsen R, Mandrup S. PPAR γ in adipocyte differentiation and metaboli sm–novel 1099 
+insights from genome-wide studies. Febs Lett. 2010;584:3242-9. 1100 
+[78] Hanatani S, Motoshima H, Takaki Y , Kawasaki S, Igata M, Matsumura T, et al. Acetate alters 1101 
+expression of genes involved in beige adipogenesis in 3T3 -L1 cells and obese KK -Ay mice. J Clin 1102 
+Biochem Nutr. 2016;59:207-14. 1103 
+[79] Byndloss MX, Olsan EE, Rivera-Chávez F, Tiffany CR, Cevallos SA, Lokken KL, et al. Microbiota-1104 
+activated PPAR-γ signaling inhibits dysbiotic Enterobacteriaceae expansion. Science. 2017;357:570-5. 1105 
+[80] De V os WM, Tilg H, Van Hul M, Cani PD. Gut microbiome and health: mechanistic insights. Gut. 1106 
+2022;71:1020-32. 1107 
+[81] Louis P, Flint HJ. Formation of propionate and butyrate by the human colonic microbiota. Environ 1108 
+Microbiol. 2017;19:29-41. 1109 
+[82] Balaguer F, Enrique M, Llopis S, Barrena M, Navarro V , Álvarez B, et al. Lipoteichoic acid from 1110 
+Bifidobacterium animalis subsp. lactis BPL1: a novel postbiotic that reduces fat deposition via IGF ‐1 1111 
+pathway. Microb Biotechnol. 2022;15:805-16. 1112 
+[83] Carreras NL, Martorell P, Chenoll E, Genovés S, Ramón D, Aleixandre A. Anti-obesity properties 1113 
+of the strain Bifidobacterium animalis subsp. lactis CECT 8145 in Zücker fatty rats. Beneficial microbes. 1114 
+2018;9:629-42. 1115 
+[84] Kunnackal John G, Wang L, Nanavati J, Twose C, Singh R, Mullin G. Dietary alteration of the gut 1116 
+microbiome and its impact on weight and fat mass: a systematic review and meta-analysis. Genes-Basel. 1117 
+2018;9:167. 1118 
+ 1119 
+  1120 
+Journal Pre-proof
+
+
+--- PAGE 50 ---
+ 48 
+Figure legends  1121 
+Fig. 1. Participant flow diagram of the experiment. 1122 
+ 1123 
+Fig. 2. Comparison of alpha diversity at 3 time points in different sex subgroups. CON: 1124 
+Placebo group; SYN: Synbiotic group. 1125 
+ 1126 
+Fig. 3. Differences between the two groups at 3 time points of different sex (A, female 1127 
+and B, male) based on the LEfSe analysis. CON: Placebo group; SYN: Synbiotic group. 1128 
+ 1129 
+Fig. 4. Variation trend of ASVs belonging to Bifidobacterium and Lactobacillus. CON: 1130 
+Placebo group; SYN: Synbiotic group. 1131 
+ 1132 
+Journal Pre-proof
+
+
+--- PAGE 51 ---
+Table 1 
+Baseline characteristics of the participants in CON and SYN groups. 
+Items 
+Treatment groups 
+P-value 
+CON (n = 56) SYN (n = 56) 
+Sex (F/M) 29/27 28/28 / 
+Age (year) 35.74 ± 9.44 35.44 ± 8.19 0.858 
+BMI (kg/m2) 27.83 ± 2.62 27.75 ± 2.76 0.887 
+Height (cm) 165.45 ± 8.79 166.78 ± 9.54 0.452 
+Weight (kg) 76.65 ± 11.78 77.53 ± 12.46 0.708 
+Total body fat (%） 36.62 ± 5.56 36.12 ± 4.61 0.611 
+Waist circumference (cm) 89.93 ± 7.19 90.45 ± 8.15 0.727 
+Hip circumference (cm) 103.56 ± 6.82 103.82 ± 5.40 0.824 
+Waist hip rate 0.87 ± 0.05 0.87 ± 0.06 0.845 
+Skinfold thickness (mm) 37.31 ± 6.02 38.05 ± 6.26 0.531 
+Muscle mass (kg) 27.92 ± 6.17 29.06 ± 6.09 0.336 
+Fasting glucose (mmol/l) 4.88 ± 0.42 5.07 ± 0.61 0.062# 
+Fasting Insulin (μIU/mL) 11.20 ± 8.08 15.93 ± 13.42 0.028* 
+HOMA-IR 2.44 ± 1.75 3.77 ± 3.75 0.022* 
+HbA1c (%) 5.17 ± 0.29 5.23 ± 0.34 0.293 
+25-Hydroxyvitamin D3 (ng/mL) 20.25 ± 8.22 18.90 ± 4.25 0.286 
+Total cholesterol (mmol/L) 5.33 ± 0.87 5.29 ± 0.94 0.855 
+Journal Pre-proof
+
+
+--- PAGE 52 ---
+HDL-C (mmol/L) 1.02 ± 0.21 1.00 ± 0.22 0.551 
+LDL-C (mmol/L) 2.74 ± 0.60 2.72 ± 0.66 0.866 
+Triacylglycerol (mmol/L) 1.46 ± 0.80 1.80 ± 2.22 0.293 
+AST (IU/L) 27.87 ±16.62 24.76 ± 9.54 0.234 
+ALT (IU/L) 37.75 ±37.05 31.33 ±22.03 0.276 
+AST/ALT 0.74 ± 0.36 0.79 ± 0.26 0.451 
+Android/ Fat tissue (%) 43.11 ± 5.72 42.62 ± 4.72 0.638 
+Gynoid/Fat issue (%) 38.86 ± 7.01 37.93 ± 5.62 0.449 
+Android Gynoid Ratio 1.12 ± 0.12 1.13 ± 0.12 0.638 
+VAT Area (cm2) 153.85 ± 36.84 159.89 ± 55.43 0.506 
+SAT Area (cm2) 118.34 ± 36.84 120.37 ± 37.98 0.778 
+BMR Harris Benedict 1636.31 ± 254.00 1665.66 ± 265.43 0.563 
+Data are presented as mean ± standard deviation (SD). 
+CON: Placebo group; SYN: Synbiotic group. Between-group comparisons: **p<0.01; *p<0.05; # p<0.10. 
+F, Female; M, Male; BMI, Body mass index; HOMA-IR, Homeostatic model of assessment of insulin resistance; HbAlc, Hemoglobin A1c; HDL-C, High density 
+lipoprotein cholesterol; LDL -C, Low density lipoprotein cholesterol; AST, Aspartate Aminotransferase; ALT, Alanine Aminotransferase; AST/ALT, the ratio of 
+AST/ALT; V AT, Visceral adipose tissue; SAT, Subcutaneous adipose tissue; BMR, Basal metabolic rate. 
+ 
+Journal Pre-proof
+
+
+--- PAGE 53 ---
+Table 2  
+Changed values of adipose depot between CON and SYN groups during 18 weeks’ follow-up. 
+Items 
+△12w-0w  △18w-12w  
+Treatment groups 
+P-value 
+Treatment groups 
+P-value 
+CON SYN CON SYN 
+Visceral adipose tissue area, cm2  
+Total (F + M) 3.32 ± 19.62 -4.49 ± 21.22 0.048* -1.13 ± 19.04 -9.74 ± 35.08 0.113 
+Female 0.37 ± 22.74 -6.39 ± 24.68 0.295 -1.61 ± 22.37 -1.11 ± 20.81 0.932 
+Male 6.39 ± 15.59 -2.59 ± 17.37 0.051# -0.63 ± 15.25 -4.85 ± 20.57 0.402 
+24 ≤BMI<28 6.80 ± 17.64 -6.28 ± 16.67 0.003** -3.56 ± 16.46 1.45 ± 24.71 0.326 
+BMI≥28 -2.77 ± 21.81 -1.68 ± 27.12 0.888 3.31 ± 22.35 -4.76 ± 21.14 0.242 
+Subcutaneous adipose tissue area, cm2  
+Total (F + M) -1.39 ± 21.18 6.61 ± 23.42 0.064# 1.04 ± 17.63 1.97 ± 27.43 0.832 
+Female -1.99 ± 23.74 6.78 ± 26.21 0.199 -0.93 ± 21.97 6.74 ± 23.69 0.222 
+Male -0.77 ± 18.59 6.44 ± 20.76 0.185 3.07 ± 11.65 6.01 ± 18.28 0.490 
+24 ≤BMI<28 -6.78 ± 17.86 4.21 ± 22.19 0.027* 1.63 ± 18.34 8.85 ± 23.51 0.175 
+BMI≥28 8.04 ± 23.60 10.39 ± 25.32 0.760 -0.09 ± 16.17 9.73 ± 18.18 0.076# 
+△: Changes between periods. 
+Data are presented as mean ± standard deviation (SD). 
+CON: Placebo group; SYN: Synbiotic group. Between-group comparisons: **p<0.01; *p<0.05; # p<0.10. 
+F, Female; M, Male; BMI, Body mass index. 
+Journal Pre-proof
+
+
+--- PAGE 54 ---
+Table 3  
+Changed values of body composition between CON and SYN groups during 18 weeks’ follow-up. 
+Items 
+△12w-0w  △18w-12w  
+Treatment groups 
+P-value 
+Treatment groups 
+P-value 
+CON SYN CON SYN 
+Basal metabolic rate (Kcal/day)       
+Total (F + M) 0.73 ± 27.21 4.44 ± 28.00 0.484 -0.98 ± 27.24 7.59 ± 23.30 0.247 
+Female -1.21 ± 29.71 3.51 ± 23.41 0.516 0.86 ± 3.09  5.00 ± 15.22  0.444 
+Male -40.03 ± 171.79 5.37 ± 32.37 0.183 -2.89 ± 31.32  10.19 ± 29.36  0.123 
+24 ≤BMI<28 -1.51 ± 25.72 1.03 ± 25.99 0.686 -2.60 ± 30.35  8.90 ± 20.44  0.080# 
+BMI≥28 4.65 ± 29.91 9.80 ± 30.77 0.590 1.85 ± 21.16  5.67 ± 27.42  0.622 
+Weight (kg) 0.54 ± 2.62 0.51 ± 2.33 0.952 0.17 ± 1.44 0.56 ± 1.26 0.137 
+BMI, kg/m2 0.11 ± 1.03 0.22 ± 0.85 0.536 0.14 ± 0.76 0.22 ± 0.51 0.540 
+Total body fat (%) 0.96 ± 2.05 0.99 ± 1.73 0.921 -0.15 ± 1.82 -2.12 ± 7.97 0.077# 
+Waist circumference (cm) 0.47 ± 3.31 0.26 ± 3.68 0.757 0.99 ± 2.85 1.53 ± 3.32 0.370 
+Hip circumference (cm) 0.45 ± 3.97 1.10 ± 2.61 0.311 1.39 ± 3.49 0.83 ± 2.57 0.346 
+WHR 0.01 ± 0.04 -0.01 ± 0.04 0.400 -0.01 ± 0.03 0.01 ± 0.04 0.199 
+Skin fold thickness (mm) -2.91 ± 6.29 -2.49 ± 6.28 0.729 0.20 ± 6.74 0.45 ± 6.61 0.846 
+Muscle mass (kg) 0.05 ± 0.70 0.16 ± 0.79 0.436 -0.01 ± 0.70 0.19 ± 0.59 0.281 
+InBody score 0.018 ± 2.83 -0.33 ± 2.86 0.521 -0.29 ± 2.52  0.25 ± 2.33 0.281 
+Android fat (%) 0.58 ± 3.00 0.73 ± 2.40 0.769 -0.27 ± 2.25 -0.47 ± 2.23 0.640 
+Gynoid fat (%) 1.24 ± 2.19 0.84 ± 1.77 0.294 -0.12 ± 2.27 -0.20 ± 2.08 0.843 
+Journal Pre-proof
+
+
+--- PAGE 55 ---
+A/G ratio -0.02 ± 0.05 -0.01 ± 0.06 0.155 0.00 ± 0.05 -0.07 ± 0.05 0.716 
+△: Changes between periods. 
+Data are presented as mean ± standard deviation (SD). 
+CON: Placebo group; SYN: Synbiotic group. Between-group comparisons: **p<0.01; *p<0.05; # p<0.10. 
+F, Female; M, Male; BMI, Body mass index; WHR, Waist-to-Hip Ratio; A/G Ratio, Android fat/Gynoid fat ratio. 
+Journal Pre-proof
+
+
+--- PAGE 56 ---
+Table 4  
+Changed values of blood biochemical indicators and liver function between SYN and CON groups during 18 weeks’ follow-up. 
+Items 
+△12w-0w  △18w-12w   
+Treatment groups 
+P-value 
+Treatment groups 
+P-value 
+ 
+CON SYN CON SYN  
+Blood lipids        
+TG, mmol/L -0.28 ± 2.22  0.04 ± 1.01  0.335 0.20 ± 1.80  -0.16 ± 0.98  0.212  
+CHOL, mmol/L 0.12 ± 0.61  0.22 ± 0.61  0.402 0.11 ± 0.70  0.08 ± 0.78  0.810  
+HDL-C, mmol/L 0.05 ± 0.17  0.05 ± 0.13  0.932 0.00 ± 0.11 0.02 ± 0.13 0.437  
+LDL-C, mmol/L 0.18 ± 0.44  0.22 ± 0.42  0.585 0.04 ± 0.43 0.00 ± 0.45 0.661  
+Blood sugar        
+Fasting glucose, mmol/L 0.44 ± 1.05  0.46 ± 0.40  0.918 -0.19 ± 1.32  -0.06 ± 0.36  0.514  
+Fasting insulin, mU/L 0.16 ± 13.55  3.76 ± 6.56  0.081# 2.78 ± 24.46 1.03 ± 16.60 0.667  
+HOMA-IR 0.15 ± 0.49 0.11 ± 0.22 0.627 0.76 ± 3.41 0.15 ± 0.87 0.227  
+HbA1c, % -0.03 ± 0.34  -0.06 ± 0.20  0.577 0.20 ± 0.89 -0.09 ± 0.96 0.099#  
+Liver function        
+AST (IU/L) -2.89 ± 11.77 0.61 ± 9.37 0.089# 0.91 ± 8.55 1.35 ± 12.45 0.832  
+ALT (IU/L) -7.60 ± 30.27 -0.52 ±23.47 0.176 3.07 ±18.71 4.71 ± 27.33 0.717  
+AST/ALT 0.09±0.26 0.02±0.23 0.174 -0.08±0.24 0.01±0.20 0.052  
+GGT, U/L -4.76 ± 14.55  1.09 ± 36.49  0.272 3.04 ± 12.32  7.29 ± 38.79  0.441  
+ALP, U/L 2.64 ± 9.76  3.44 ± 9.02  0.655 1.24 ± 7.98  1.10 ± 14.17  0.949  
+Journal Pre-proof
+
+
+--- PAGE 57 ---
+TP, g/L -0.14 ± 3.57  0.51 ± 3.24  0.324 0.25 ± 3.61  -0.98 ± 2.75  0.051#  
+ALB, g/L -0.14 ± 3.57  0.51 ± 3.24  0.324 0.10 ± 2.66  -0.46 ± 2.16  0.240  
+GLB, g/L -0.80 ± 2.20  -0.62 ± 2.24  0.671 0.15±2.66  -0.53 ± 2.50  0.181  
+Albumin/Globulin ratio  0.66 ± 2.56  1.12 ± 2.05  0.297 -0.01±0.16  0.02 ± 0.15  0.378  
+TBIL, μmol/L -1.75 ± 4.41  -2.29 ± 4.08  0.507 -0.59 ± 3.78  -0.52 ± 3.26  0.925  
+DBIL, μmol/L -0.13 ± 0.61  -0.13 ± 0.65  0.984 -0.04 ± 0.64  0.08 ± 0.63  0.365  
+IBIL, μmol/L -1.62 ± 3.91  -2.16 ± 3.61  0.457 -0.55 ± 3.34  -0.60 ± 2.82  0.937  
+Liver Stiffness Measurement, 
+kPa 
+-2.23 ± 39.81 -4.40 ± 22.94 0.733 -0.41 ± 1.43 -0.03 ± 1.35 0.167  
+Ultrasonic wave attenuation 
+coefficient, dB/m 
+-1.87 ± 42.82 6.96 ± 35.01 0.241 -2.23 ± 39.81 -4.40 ± 22.94 0.733  
+Kidney function        
+Urea, mmol/L 0.04 ± 0.84  -0.05 ± 1.06  0.598 0.20 ± 0.89  -0.09 ± 0.96  0.099#  
+CREA, μmol/L 1.13 ± 5.71  0.70 ± 5.33  0.680 -1.40 ± 5.08  -1.07 ± 6.31  0.763  
+eGFR, mL/min -2.32 ± 14.39  -4.14 ± 15.07  0.521 -0.63 ± 17.52  -0.11 ± 19.85  0.885  
+URIC, μmol/L -27.96 ± 52.65  -18.54 ± 49.07  0.336 14.89 ± 38.71  3.83 ± 52.27  0.214  
+Thyroid function        
+FT3, pmoL/L 0.03 ± 0.68 0.22 ± 0.43 0.092# 0.04 ± 0.69 -0.10 ± 0.47 0.219  
+FT4, pmoL/L 1.56 ± 2.17 1.55 ± 1.32 0.967 0.48 ± 2.25 -0.08 ± 1.31 0.122  
+TSH, μIU/mL -0.14 ± 0.91  -0.06 ± 0.80  0.663 -0.02 ± 0.83  0.12 ± 0.82  0.361  
+Others        
+scCRP, mg/L -1.18 ± 7.62  -0.76 ± 2.73  0.702 0.49 ± 3.28  0.74 ± 4.09  0.731  
+25-Hydroxyvitamin D3, ng/mL -1.26 ± 3.71  -1.91 ± 3.44  0.344 0.72 ± 3.11  -0.21 ± 2.04  0.074#  
+Journal Pre-proof
+
+
+--- PAGE 58 ---
+△: Changes between periods. 
+Data are presented as mean ± standard deviation (SD). 
+CON: Placebo group; SYN: Synbiotic group. Between-group comparisons: **p<0.01; *p<0.05; # p<0.10. 
+TG, Triglyceride; CHOL, Cholesterol; HDL -C, High-density lipoprotein cholesterol; LDL -C, low-density lipoprotein cholesterol; HOMA -IR, Homeostasis model 
+assessment of insulin resistance; HbA1c, Hemoglobin A1c; AST, Aspartate aminotransferase; ALT, Alanine aminotransferase; AST/ALT, the ratio of AST/ALT; GGT, 
+Gamma-Glutamyl transferase; ALP, Alkaline phosphatase;  TP, Total protein; ALB, Albumin; GLB, Globulin;  TBIL, Total bilirubin; DBIL, Direct bilirubin; IBIL, 
+Indirect bilirubin; CREA, Creatinine; eGFR, Estimated glomerular filtration rate;  URIC, Uric acid; FT3, Free triiodothyronine; FT4, Free thyroxine; TSH, Thyroid-
+stimulating hormone; scCRP, C-reactive protein. 
+ 
+Journal Pre-proof
+
+
+--- PAGE 59 ---
+Journal Pre-proof
+
+
+--- PAGE 60 ---
+Journal Pre-proof
+
+
+--- PAGE 61 ---
+Journal Pre-proof
+
+
+--- PAGE 62 ---
+Journal Pre-proof

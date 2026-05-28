@@ -1,0 +1,2 @@
+evidence_id,source_database,source_accession,source_url,title,abstract,publication_types,clinical_interventions,enrollment,phase,primary_outcomes,secondary_outcomes,arms,detail_status
+PMID:1,PubMed,1,https://pubmed.ncbi.nlm.nih.gov/1/,Trial title,"A randomized trial included 66 individuals with BMI >= 25 for 12 weeks. Participants received 3 x 10^10 CFU/day and 2 g/day fiber. Body weight was significantly reduced (p < 0.05). HbA1c improved.",Randomized Controlled Trial,,,,,,,ok

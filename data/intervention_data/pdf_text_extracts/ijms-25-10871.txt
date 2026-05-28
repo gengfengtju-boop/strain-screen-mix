@@ -1,0 +1,1128 @@
+
+
+--- PAGE 1 ---
+Citation: Bai, Z.; Wu, Y.; Gao, D.;
+Dong, Y.; Pan, Y.; Gu, S. Gut
+Microbiome and Metabolome
+Alterations in Overweight or Obese
+Adult Population after Weight-Loss
+Bifidobacterium breve BBr60
+Intervention: A Randomized
+Controlled Trial. Int. J. Mol. Sci. 2024,
+25, 10871. https://doi.org/10.3390/
+ijms252010871
+Academic Editor: Rustam I. Aminov
+Received: 8 September 2024
+Revised: 24 September 2024
+Accepted: 25 September 2024
+Published: 10 October 2024
+Correction Statement: This article
+has been republished with a minor
+change. The change does not affect
+the scientific content of the article and
+further details are available within the
+backmatter of the website version of
+this article.
+Copyright: © 2024 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).
+ International Journal of 
+Molecular Sciences
+Article
+Gut Microbiome and Metabolome Alterations in Overweight or
+Obese Adult Population after Weight-Loss Bifidobacterium breve
+BBr60 Intervention: A Randomized Controlled Trial
+Zhouya Bai 1,† , Ying Wu 1,2,† , Dejiao Gao 1, Yao Dong 3, Yujia Pan 1 and Shaobin Gu 1,2, *
+1 College of Food and Bioengineering, Henan University of Science and Technology, Luoyang 471000, China;
+spbaizhouya@163.com (Z.B.); wuying2000@126.com (Y.W.); gaodej522@163.com (D.G.);
+17739736258@163.com (Y.P .)
+2 Henan Engineering Research Center of Food Microbiology, Luoyang 471000, China
+3 Germline Stem Cells and Microenvironment Laboratory, College of Animal Science and Technology, Nanjing
+Agricultural University, Nanjing 210095, China; yao.dong@stu.njau.edu.cn
+* Correspondence: shaobingu@haust.edu.cn
+† These authors contributed equally to this work.
+Abstract: Probiotics, known for regulating gut microbiota, may aid those with overweight or obesity,
+but their mechanisms require more research. This study involved 75 overweight or obese young
+adults, randomly assigned to either a Bifidobacterium breve BBr60 (BBr60) group or a placebo group.
+Both groups received diet guidance and took either BBr60 (1 × 1010 CFU/day) or a placebo for
+12 weeks. Researchers analyzed body composition, serum glucose, lipids, liver and kidney function,
+comprehensive metabolome, and intestinal homeostasis before and after the intervention. After
+12 weeks, BBr60 significantly reduced weight and BMI compared to pretreatment levels and outper-
+formed the placebo. The BBr60 group also showed improved blood biochemistry, with notably lower
+fasting blood glucose (FBG) levels than the placebo group (p < 0.05). Additionally, BBr60 influenced
+vital serum and fecal metabolites related to three amino acid metabolic pathways and regulated the
+bacteria Dialister, Klebsiella, and Bacteroides, which correlated strongly with serum metabolites. These
+findings indicate that BBr60 can safely and effectively regulate BMI, body weight, serum glucose,
+lipids, and liver function markers, which may involve BBr60’s impact on key gut bacteria, which
+influence metabolites related to the valine, leucine, and isoleucine biosynthesis; glycine, serine, and
+threonine metabolism; and alanine, aspartate, and glutamate metabolism.
+Keywords: Bifidobacterium breveBBr60; overweight or obese; randomized controlled trial; gut microbiota;
+metabolic profile
+1. Introduction
+The global obesity epidemic has emerged as a significant public health concern due to
+the prevalence of poor dietary choices and sedentary lifestyles in conjunction with social
+advancements and improved living conditions [1]. According to the World Health Organi-
+zation (WHO), approximately 2.5 billion adults worldwide were classified as overweight
+(body mass index, BMI ≥ 25) in 2022, with 890 million individuals falling into the category
+of obesity (BMI ≥ 30). This equates to 43% of adults being overweight and 16% living
+with obesity [ 2]. In the past twenty years, there has been a significant increase in the
+prevalence of both general and abdominal obesity among adults of diverse age groups
+and genders in China [ 3]. The detrimental impacts of overweight or obesity extend to
+various bodily functions, leading to the development of numerous comorbidities such as
+hyperlipidemia, type 2 diabetes, hypertension, and other disorders [4]. Increasing evidence
+suggests that the initiation and progression of overweight/obesity are closely associated
+with the homeostatic regulation of overall metabolism. Especially, microbial metabolites, as
+the primary way that gut microbes interact with hosts, are important for maintaining the
+Int. J. Mol. Sci. 2024, 25, 10871. https://doi.org/10.3390/ijms252010871 https://www.mdpi.com/journal/ijms
+
+
+--- PAGE 2 ---
+Int. J. Mol. Sci. 2024, 25, 10871 2 of 21
+metabolic homeostasis of the organism [5]. According to the existing evidence, identified
+microbial metabolic signatures have been associated with obesity [6], such as short-chain
+fatty acids (SCFAs) [7], trimethylamine N-oxide (TMAO) [8], bile acids [9], linoleic acid [10],
+and branched-chain fatty acids (BCFAs). The diverse metabolic products generated by the
+gut microbiota permeate into the intestinal mucosa, subtly influencing intestinal cellular
+activities. A subset of these metabolites possesses the capability to traverse the intestinal
+barrier, subsequently disseminating to distant organs through either circulatory routes or
+neural pathways [11].
+Furthermore, overweight/obesity-associated microbial metabolites are regulated by
+the intestinal microbiota to affect the metabolic health of overweight/obese [12]. Multiple
+studies have demonstrated a notable disparity in the composition of intestinal bacteria
+between individuals of normal weight and those with overweight/obesity [ 13]. The
+alterations in microbiome associated with overweight/obesity, commonly referred to as
+‘dysbiosis’, are characterized by a deficiency in beneficial functions or the prevalence of
+detrimental microbial activity [14]. A lower proportion of Bifidobacteria, Faecalibacterium
+prausnitzii, Akkermansia muciniphila, F. prausnitzii, which are considered as the benefic strains,
+were found in overweight and obesity [15,16].
+Probiotics are acknowledged as a valuable supplementary approach for regulating
+microbiota dysbiosis, consisting of viable micro-organisms that can successfully modify
+imbalanced microbiota to enhance key obesity-related factors when given in precise doses
+of probiotic strains [ 17]. Additionally, previous studies have identified Bifidobacterium,
+Lactobacillus, Enterococcus, Streptococcus, and Saccharomyces, as well as E. coli Nissle 1917
+and the yeast Saccharomyces boulardii, as the primary probiotic genera [18,19]. Especially,
+Bifidobacterium species are frequently utilized as functional foods and dietary supplements,
+purportedly aiding in the prevention of dysmetabolic diseases through enhancement of
+metabolic function [20]. Furthermore, Bifidobacterium is one of the main producers of SCFAs
+in the intestinal flora to participate in regulating energy homeostasis [ 21]. As one kind
+of Bifidobacterium, the commercially available probiotic Bifidobacterium breve BBr60 (BBr60)
+has demonstrated anti-inflammatory and antioxidant properties. Given its potential for
+addressing metabolic disorders, further research is needed to elucidate the mechanisms
+by which Bifidobacterium breve BBr60 intervenes in metabolic disturbances associated with
+overweight/obesity, as well as to explore its potential application in clinical settings.
+Therefore, we conducted a double-blind, randomized, placebo-controlled trial to
+examine the comparative efficacy and underlying mechanisms of Bifidobacterium breve
+BBr60 in modulating disrupted metabolic profiles and gut microbiota among overweight
+and obese young individuals in China, which can provide a scientific basis for the dietary
+and clinical application of Bifidobacterium breve BBr60 in the prevention and management of
+overweight and obesity.
+2. Results
+2.1. Baseline Characteristics
+Table 1 presents the baseline characteristics of the participants, including sex distri-
+bution, mean age, baseline BMI values, and waist-to-hip ratio (WHR). The distribution of
+sex did not show a significant difference between the BBr60 group, where 72.7% (n = 24)
+were female, and the placebo group, where 59.4% (n = 19) were female. The mean age was
+27.88 ± 8.65 years in the BBr60 group and 30.38± 8.45 years in the placebo group. The base-
+line BMI values were 30.80 ± 3.21 kg/m2 and 31.96 ± 2.95 kg/m2, respectively. The WHR
+also did not exhibit a significant difference between groups, with values of 0.99 ± 0.05%
+in the BBr60 group and 1.01 ± 0.05% in the placebo group. There were no significant
+differences observed in lipid levels, renal and hepatic function indicators, anthropometric
+and body composition data, and biochemical parameters between the two groups.
+
+
+--- PAGE 3 ---
+Int. J. Mol. Sci. 2024, 25, 10871 3 of 21
+Table 1. Baseline characteristics in the probiotics and placebo groups.
+Project Unit BBr60 (33) Placebo (32) p-Value
+Woman - 24 (72.7%) 19 (59.4%)
+0.255Man - 9 (27.3%) 13 (40.6%)
+Age year 27.88 ± 8.65 30.38 ± 8.45 0.150
+Weight kg 90.86 ± 10.45 93.56 ± 12.04 0.251
+BMI kg/m2 30.80 ± 3.21 31.96 ± 2.95 0.068
+BFP % 36.57 ± 6.77 38.91 ± 5.69 0.203
+WHR % 0.99 ± 0.05 1.01 ± 0.05 0.500
+FBG mg/dL 6.27 ± 0.87 5.87 ± 0.45 0.120
+TC mg/dL 4.31 ± 0.90 4.82 ± 0.94 0.058
+TG mg/dL 2.13 ± 1.78 1.62 ± 0.71 0.345
+HDL-C mg/dL 1.15 ± 0.27 1.29 ± 0.31 0.484
+LDL-C mg/dL 2.26 ± 0.63 2.62 ± 0.62 0.970
+ALT IU/L 39.27 ± 26.55 41.53 ± 21.84 0.618
+AST IU/L 61.18 ± 58.70 49.56 ± 17.88 0.969
+TP g/L 74.45 ± 9.70 72.47 ± 3.46 0.787
+ALB g/L 47.76 ± 3.93 47.41 ± 3.07 0.905
+GLB g/L 26.70 ± 7.28 25.06 ± 3.05 0.697
+A/G - 1.90 ± 0.41 1.92 ± 0.29 0.273
+TB mg/dL 13.58 ± 6.58 17.38 ± 14.83 0.453
+BUN mg/dL 4.48 ± 1.24 4.65 ± 1.26 0.846
+UA mg/dL 427.09 ± 76.69 433.59 ± 103.49 0.069
+CRE mg/dL 76.48 ± 14.80 71.16 ± 15.77 0.543
+Abbreviations: BMI, body mass index; BFP , body fat percentage; WHR, waist-to-hip ratio; FBG, fasting blood
+glucose; TC, total cholesterol; TG, triglyceride; HDL-C, high-density lipoprotein cholesterol; LDL-C, low-density
+lipoprotein cholesterol; ALT, alanine aminotransferase; AST, aspartate aminotransferase; TP , total protein; ALB,
+albumin; GLB, globular proteins; A/G, albumin/globulin; TB, total bilirubin; BUN, blood urea nitrogen; UA, uric
+acid; CRE, creatinine.
+2.2. Primary Outcome
+Efficacy of BBr60 on Weight and BMI
+The study measured the change in weight as a secondary outcome by comparing base-
+line weight to weight at 12 weeks. The BBr60 group experienced a statistically significant
+decrease in weight of 4.67 (p < 0.0001) compared to a decrease of 2.82 in the placebo group
+(p = 0.0006), and the difference in body weight between 0 weeks and 12 weeks in the BBr60
+group was significantly higher than that of the placebo group ( p = 0.047). Additionally,
+after 12 weeks, the BMI value in the BBr60 group was 86.19, which was 4.55 lower than the
+placebo group (p = 0.1137), as shown in Table 2 and Figure 1A.
+Table 2. Changes in weight, BMI, body composition in the BBr60 and placebo groups after 12 weeks.
+Variables
+BBr60 (n = 33) Placebo (n = 32)
+p-ValueBefore
+(0 Week)
+After
+(12 Week) p-Value Before
+(0 Week)
+After
+(12 Week) p-Value
+Weight (kg) 90.86 ± 10.45 86.19 ± 9.82 <0.0001 93.56 ± 12.04 90.74 ± 12.77 0.0006 0.114
+Weight (12–0 week) −4.67 ± 4.40 −2.82 ± 4.17 0.047
+BMI (kg/m2) 30.80 ± 3.21 29.32 ± 3.63 <0.0001 31.96 ± 2.95 31.03 ± 3.49 0.0019 0.057
+
+
+--- PAGE 4 ---
+Int. J. Mol. Sci. 2024, 25, 10871 4 of 21
+Table 2. Cont.
+Variables
+BBr60 (n = 33) Placebo (n = 32)
+p-ValueBefore
+(0 Week)
+After
+(12 Week) p-Value Before
+(0 Week)
+After
+(12 Week) p-Value
+BMI (12–0 week) −1.49 ± 1.37 −0.93 ± 1.55 0.135
+BFP (%) 36.57 ± 6.77 34.54 ± 7.50 <0.0001 38.91 ± 5.69 37.11 ± 6.70 0.0003 0.150
+BFP (12–0 week) −2.03 ± 2.54 −1.80 ± 2.47 0.684
+WHR (%) 0.99 ± 0.05 0.96 ± 0.04 <0.0001 1.01 ± 0.05 0.98 ± 0.05 <0.0001 0.149
+WHR (12-0 week) −0.036 ± 0.03 −0.038 ± 0.03 0.821
+Abbreviations: BMI, body mass index; BFP , body fat percentage; WHR, where hearts rot.
+Int. J. Mol. Sci. 2024, 24, x FOR PEER REVIEW 4 of 22 
+ 
+ 
+ 
+Figure 1. The eﬀect of BBr60 on weight, BMI, and body co mposition in overweight or obese adult 
+population. (A) The eﬀect of BBr60 on weight. (B) The eﬀect of BBr60 on BMI. (C) The eﬀect of BBr60 
+on body fat percentage (BFP). (D) The eﬀect of BBr60 on where hearts rot (WHR). ** p < 0.001, *** p 
+< 0.001. 
+Table 2. Changes in weight, BMI, body composition in the BBr60 and placebo groups after 12 weeks. 
+Variables 
+BBr60 (n = 33) Placebo (n =  32) 
+p-Value Before 
+(0 Week) 
+After 
+(12 Week) p-Value Before 
+(0 Week) 
+After 
+(12 Week) p-Value 
+Weight (kg) 90.86 ± 10.45 86.19 ± 9.82 <0.0001 93. 56 ± 12.04 90.74 ± 12.77 0.0006 0.114 
+Weight (12–0 week) −4.67 ± 4.40  −2.82 ± 4.17  0.047 
+BMI (kg/m2) 30.80 ± 3.21 29.32 ± 3.63 <0.0001 31. 96 ± 2.95 31.03 ± 3.49 0.0019 0.057 
+BMI (12–0 week) −1.49 ± 1.37  −0.93 ± 1.55  0.135 
+BFP (%) 36.57 ± 6.77 34.54 ± 7.50 <0.0001 38. 91 ± 5.69 37.11 ± 6.70 0.0003 0.150 
+BFP (12–0 week) −2.03 ± 2.54  −1.80 ± 2.47  0.684 
+WHR (%) 0.99 ± 0.05 0.96 ± 0.04 <0.0001 1. 01 ± 0.05 0.98 ± 0.05 <0.0001 0.149 
+WHR (12-0 week) −0.036 ± 0.03  −0.038 ± 0.03  0.821 
+Abbreviations: BMI, body mass index; BFP, body fat percentage; WHR, where hearts rot. 
+2.3. Secondary Outcomes 
+2.3.1. Eﬃcacy of BBr60 on BFP and WHR 
+BFP and WHR are commonly used in the clinical evaluation of body fat distribution 
+[22]. In the current study, BFP and WHR were signi ﬁcantly decreased in BBr60 and pla-
+cebo groups after a 12-week intervention. No tably, BBr60 intervention presented a more 
+obvious eﬀect than placebo, with a lower p-value (p < 0.0001). Additionally, the values of 
+BFP and WHR in the BBr60 group were both lower than those of the placebo group in 12 
+weeks (Table 2, Figure 1C,D). 
+2.3.2. Eﬃcacy of BBr60 on Blood Glucose and Lipid 
+In the BBr60 group, there was a signi ﬁcant reduction in fasting blood glucose (FBG) 
+from a baseline value of 5.87 (SD 0.45) to 5.26 (SD 0.57) after the 12-week intervention 
+period (Table 3). Additionally, the FBG levels in the placebo group also showed a signiﬁ-
+cant decrease; however, the mean FBG level in the BBr60 group was signi ﬁcantly lower 
+than that of the placebo group after the 12-week intervention (p = 0.0381). 
+Figure 1. The effect of BBr60 on weight, BMI, and body composition in overweight or obese adult
+population. ( A) The effect of BBr60 on weight. ( B) The effect of BBr60 on BMI. ( C) The effect of
+BBr60 on body fat percentage (BFP). (D) The effect of BBr60 on waist-to-hip ratio (WHR). ** p < 0.001,
+*** p < 0.001.
+The primary outcome of this study was the change in BMI, which was calculated as
+the difference in BMI from baseline to 12 weeks. The BMI significantly decreased with the
+BBr60 intervention (p < 0.0001) and also decreased in the placebo group (p = 0.0019). At the
+end of the 12-week period, the BMI value was 29.32 in the BBr60 group, which was lower
+than the placebo group (p = 0.056) (Table 2, Figure 1B).
+2.3. Secondary Outcomes
+2.3.1. Efficacy of BBr60 on BFP and WHR
+BFP and WHR are commonly used in the clinical evaluation of body fat distribu-
+tion [22]. In the current study, BFP and WHR were significantly decreased in BBr60 and
+placebo groups after a 12-week intervention. Notably, BBr60 intervention presented a more
+obvious effect than placebo, with a lower p-value (p < 0.0001). Additionally, the values
+of BFP and WHR in the BBr60 group were both lower than those of the placebo group in
+12 weeks (Table 2, Figure 1C,D).
+
+
+--- PAGE 5 ---
+Int. J. Mol. Sci. 2024, 25, 10871 5 of 21
+2.3.2. Efficacy of BBr60 on Blood Glucose and Lipid
+In the BBr60 group, there was a significant reduction in fasting blood glucose (FBG)
+from a baseline value of 5.87 (SD 0.45) to 5.26 (SD 0.57) after the 12-week intervention
+period (Table 3). Additionally, the FBG levels in the placebo group also showed a significant
+decrease; however, the mean FBG level in the BBr60 group was significantly lower than
+that of the placebo group after the 12-week intervention (p = 0.0381).
+Table 3. Changes in serum glucose and lipids in the BBr60 and placebo groups after 12 weeks.
+Variables
+BBr60 (n = 33) Placebo (n = 32)
+p-ValueBefore
+(0 Week)
+After
+(12 Week) p-Value Before
+(0 Week)
+After
+(12 Week) p-Value
+FBG, mg/dL 5.87 ± 0.45 5.26 ± 0.57 <0.0001 6.27 ± 0.87 5.69 ± 0.86 <0.0001 0.0381
+TC, mg/dL 4.31 ± 0.90 4.38 ± 0.75 0.618 4.82 ± 0.94 4.55 ± 0.90 0.0058 0.4181
+TG, mg/dL 2.13 ± 1.78 1.98 ± 1.12 0.8566 1.62 ± 0.71 2.09 ± 1.34 0.0984 0.9870
+HDL-C, mg/dL 1.15 ± 0.27 1.45 ± 0.28 <0.0001 1.29 ± 0.31 1.47 ± 0.26 0.0071 0.7589
+LDL-C, mg/dL 2.26 ± 0.63 1.44 ± 0.52 <0.0001 2.62 ± 0.62 1.57 ± 0.53 <0.0001 0.3483
+Abbreviations: FBG, fasting blood glucose; TC, total cholesterol; TG, triglyceride; HDL-C, high-density lipoprotein
+cholesterol; LDL-C, low-density lipoprotein cholesterol.
+No clinically meaningful differences between BBr60 and placebo groups after a
+12-week intervention were noted in plasma lipids, including TC, TG, HDL-C, and HDL-
+C. Notably, HDL-C and LDL-C were significantly regulated by BBr60 intervention with
+p < 0.0001. Furthermore, the level of HDL-C of the BBr60 group was higher than that of the
+placebo group, and LDL-C of the BBr60 group was lower than that of the placebo group at
+week 12.
+2.3.3. Efficacy of BBr60 on Liver Function and Renal Function
+Liver function (TP , ALB, GLB, ALT, and AST) and kidney function (BUN, CRE-E) were
+measured at week 12 (Table 4). Additionally, the levels of ALB, GLB, ALT, and AST were
+significantly reduced following BBr60 intervention, with levels in the BBr60 group being
+lower than those in the placebo group at week 12. No significant differences were observed
+for TP and BUN.
+Table 4. Changes in liver and renal function in the BBr60 and placebo groups after 12 weeks.
+Variables
+BBr60 (n = 33) Placebo (n = 32)
+p-ValueBefore
+(0 Week)
+After
+(12 Week) p-Value Before
+(0 Week)
+After
+(12 Week) p-Value
+TP , g/L 74.45 ± 9.70 72.85 ± 3.70 0.601 72.47 ± 3.46 73.19 ± 3.39 0.404 0.701
+ALB, g/L 47.76 ± 3.93 50.09 ± 3.18 0.0003 47.41 ± 3.07 49.31 ± 2.01 0.0058 0.2037
+GLB, g/L 26.70 ± 7.28 22.76 ± 3.85 0.0089 25.06 ± 3.05 23.94 ± 2.96 0.0499 0.170
+ALT, IU/L 39.27 ± 26.55 26.03 ± 17.13 <0.0001 41.53 ± 21.84 27.22 ± 15.69 <0.0001 0.631
+AST, IU/L 61.18 ± 58.70 38.27 ± 17.75 0.0002 49.56 ± 17.88 39.59 ± 17.49 0.0089 0.636
+BUN, mg/dL 4.48 ± 1.24 4.19 ± 0.83 0.219 4.65 ± 1.26 4.73 ± 1.24 0.418 0.093
+Abbreviations: ALT, alanine aminotransferase; AST, aspartate aminotransferase; TP , total protein; ALB, albumin;
+GLB, globular proteins; BUN, blood urea nitrogen.
+2.3.4. Efficacy of BBr60 on Metabolic Pathway
+Alteration of Serum Metabolism after 12 Weeks of BBr60 Intervention
+The aforementioned study demonstrated that, under the condition of effective regu-
+lation in the placebo group, which may be largely attributed to daily healthy diet recom-
+
+
+--- PAGE 6 ---
+Int. J. Mol. Sci. 2024, 25, 10871 6 of 21
+mendations, BBr60 significantly improved clinic indexes of obesity, especially FBG and
+weight. Additionally, we explored the regulatory effects of BBr60 on serum metabolism in
+individuals who are overweight or obese. OPLS-DA was employed to identify metabolites
+that met the criterion of variable influence on projection (VIP) > 1 between the BBr60-before
+and BBr60-after groups. The samples from BBr60-before and BBr60-after groups were dis-
+tinctly separated in the OPLS-DA score plot (Figure 2A), with model parameters R2Y = 0.50
+and Q2 = −0.89 as shown in Figure 2B. PCA was employed to evaluate the alterations in
+metabolic profiling between the BBr60-before and BBr60-after groups (Figure 2C). Although
+no distinct separation was observed, a substantial number of significantly regulated fecal
+metabolites (p < 0.05, VIP > 1) were identified in the volcano plot (Figure 2D). Specifi-
+cally, 292 metabolites were significantly upregulated, while 351 serum metabolites were
+downregulated in the BBr60-before group compared to the BBr60-after group. Detailed
+information regarding these metabolites is provided in Supplementary Table S1.
+Furthermore, the analysis of 42 significant metabolic pathways (p < 0.05) associated
+with significant fecal metabolites (VIP > 1, p < 0.05 between BBr60-before and BBr60-
+after groups) was conducted (see Tables S1 and S2, and Figure 2E,F). The top 15 KEGG
+pathways (p < 0.001) exhibited alterations in response to BBr60 treatment for 12-week
+intervention (Figure 2E). These pathways include central carbon metabolism in cancer,
+protein digestion and absorption, biosynthesis of amino acids, glyoxylate and dicarboxy-
+late metabolism, pantothenate and CoA biosynthesis, citrate cycle (TCA cycle), carbon
+metabolism, valine, leucine and isoleucine biosynthesis, glycine, serine and threonine
+metabolism, aminoacyl-tRNA biosynthesis, 2-oxocarboxylic acid metabolism, alanine,
+aspartate and glutamate metabolism, mineral absorption, ABC transporters, and beta-
+alanine metabolism (Figure 2F). Biosynthesis of amino acids, carbon metabolism, and
+2-oxocarboxylic acid metabolism categorized under global and overview maps, exhibited
+significant up-regulation in 15.69%, 11.76, and 12.75% of differential metabolites, respec-
+tively, when influenced by BBr60. Furthermore, the significantly regulated pathways
+associated with valine, leucine and isoleucine biosynthesis, glycine, serine and threonine
+metabolism as well as alanine, aspartate and glutamate metabolism, were all categorized
+under amino acid metabolism with 5.88%, 7.84%, and 5.88% of differential metabolites,
+respectively. The pathways of glyoxylate and dicarboxylate metabolism, as well as citrate
+cycle (TCA cycle), exhibited 9.8% and 5.88% differential metabolites among all metabolites
+in the pathway, which were significantly regulated by BBr60. These pathways are catego-
+rized under carbohydrate metabolism. In serum metabolism, 643 metabolites regulated
+by BBr60 were associated with 42 significant metabolic pathways. Notably, the pathways
+of glyoxylate and dicarboxylate metabolism, TCA cycle, valine, leucine and isoleucine
+biosynthesis, glycine, serine and threonine metabolism, as well as alanine, aspartate, and
+glutamate metabolism warrant further investigation.
+Alteration of Fecal Metabolism after 12 Weeks of BBr60 Intervention
+To analyze the underlying mechanisms of BBr60’s effective intervention on overweight
+or obesity, fecal metabolism was examined before and after BBr60 treatment. Orthogonal
+partial least squares discriminant analysis (OPLS-DA) was utilized to identify metabo-
+lites with a variable influence on projection (VIP) score greater than 1, both prior to and
+following the BBr60 intervention. The OPLS-DA score plot (Figure 3A) demonstrated a
+clear separation between the BBr60-before and BBr60-after groups, with model parameters
+R2Y = 0.75 and Q2 = −0.71, as depicted in Figure 3B. PCA was utilized to assess the changes
+in metabolic profiles between the BBr60-before and BBr60-after groups (Figure 3C). Despite
+the absence of a clear separation, 514 fecal metabolites exhibited significant regulation
+(p < 0.05, VIP > 1), as illustrated in the volcano plot (Figure 3D) and detailed in Table S3.
+Of these, 225 metabolites were significantly upregulated, whereas 289 metabolites were
+downregulated following the 12-week BBr60 intervention.
+
+
+--- PAGE 7 ---
+Int. J. Mol. Sci. 2024, 25, 10871 7 of 21
+Int. J. Mol. Sci. 2024, 24, x FOR PEER REVIEW 6 of 22 
+ 
+ 
+ 
+Figure 2. Serum metabolic profile between BBr60-after and BBr60-before groups. (A) The OPLS-DA
+scores of BBr60 vs. placebo group. ( B) The OPLS-DA permutation test in BBr60 vs. placebo gro-
+up. (C) The PCA scores of BBr60 vs. placebo group. (D) The volcano plot of placebo vs. BBr60 group.
+Significantly upregulated metabolites are represented by red points, and significantly downregulated
+
+
+--- PAGE 8 ---
+Int. J. Mol. Sci. 2024, 25, 10871 8 of 21
+metabolites and nonsignificant different ones are represented by blue or gray points, respectively.
+(E) KEGG classification plot for BBr60 vs. placebo group. (F) Differential abundance score plot for
+BBr60 vs. placebo group, *** p < 0.001.
+Int. J. Mol. Sci. 2024, 24, x FOR PEER REVIEW 8 of 22 
+ 
+ 
+ 
+Figure 3. Fecal metabolic proﬁle between BBr60-after and BBr60-before groups. ( A) The OPLS-DA 
+scores of BBr60 vs. placebo group. ( B) The OPLS-DA permutation test in BBr60 vs. placebo group. 
+(C) The PCA scores of BBr60 vs. placebo group. ( D) The volcano plot of placebo vs. BBr60 group. 
+Signiﬁcantly upregulated metabolites are represented by red points, and signi ﬁcantly downregu-
+lated metabolites and nonsigni ﬁcant diﬀerent ones are represented by blue or gray points, respec-
+tively. 
+Additionally, a comprehensive analysis of the metabolic pathways associated with 
+these signiﬁcantly altered fecal metabolites (VIP > 1, p < 0.05 between BBr60-before and 
+BBr60-after groups) was performed (Tables S3 and S4, and Figure 4). A total of 52 meta-
+bolic pathways exhibited alterations in response to BBr60 treatment compared to the pre-
+treatment condition (Table S4). Among these pathways, 25 demonstrated statistical signif-
+icance (p < 0.05). Notably, 15 pathways, which were downregulated by BBr60 over a 12-
+week period, met a more stringent signi ﬁcance threshold (p < 0.01) and are illustrated in 
+Figure 4A. These pathways encompass ABC transporters, mineral absorption, central car-
+bon metabolism in cancer, biosynthesis of amino acids, valine, leucine and isoleucine bio-
+synthesis, nucleotide metabolis m, protein digestion and abso rption, glycine, serine and 
+threonine metabolism, aminoacyl-tRNA biosynthesis, 2-oxocarboxylic acid metabolism, 
+linoleic acid metabolism, pyrimidine metabolism, cysteine and methionine metabolism, 
+valine, leucine and isoleucine degradation, and glycerophospholipid metabolism (Figure 
+4B). Biosynthesis of amino acids, nucleotide metabolism, and 2-oxocarboxylic acid metab-
+olism, which are categorized under glob al and overview maps, exhibited signi ﬁcant 
+down-regulation in 15.38%, 10.77%, and 13.85% of di ﬀerential metabolites, respectively, 
+when inﬂuenced by BBr60. Additionally, four metabolic pathways were classi ﬁed under 
+amino acid metabolism, including valine, leucine, and isoleucine biosynthesis; glycine, 
+serine, and threonine metabolism; cysteine and methionine metabolism; and valine, leu-
+cine, and isoleucine degradat ion. Furthermore, two metabolic pathways, including lino-
+leic acid metabolism and glycerophospholipid metabolism, were categorized as lipid me-
+tabolism. 
+Figure 3. Fecal metabolic profile between BBr60-after and BBr60-before groups. (A) The OPLS-DA
+scores of BBr60 vs. placebo group. (B) The OPLS-DA permutation test in BBr60 vs. placebo group.
+(C) The PCA scores of BBr60 vs. placebo group. ( D) The volcano plot of placebo vs. BBr60 group.
+Significantly upregulated metabolites are represented by red points, and significantly downregulated
+metabolites and nonsignificant different ones are represented by blue or gray points, respectively.
+Additionally, a comprehensive analysis of the metabolic pathways associated with
+these significantly altered fecal metabolites (VIP > 1, p < 0.05 between BBr60-before and
+BBr60-after groups) was performed (Tables S3 and S4, and Figure 4). A total of 52 metabolic
+pathways exhibited alterations in response to BBr60 treatment compared to the pretreat-
+ment condition (Table S4). Among these pathways, 25 demonstrated statistical signif-
+icance (p < 0.05). Notably, 15 pathways, which were downregulated by BBr60 over a
+12-week period, met a more stringent significance threshold (p < 0.01) and are illustrated
+in Figure 4A. These pathways encompass ABC transporters, mineral absorption, central
+carbon metabolism in cancer, biosynthesis of amino acids, valine, leucine and isoleucine
+biosynthesis, nucleotide metabolism, protein digestion and absorption, glycine, serine and
+threonine metabolism, aminoacyl-tRNA biosynthesis, 2-oxocarboxylic acid metabolism,
+linoleic acid metabolism, pyrimidine metabolism, cysteine and methionine metabolism, va-
+line, leucine and isoleucine degradation, and glycerophospholipid metabolism (Figure 4B).
+Biosynthesis of amino acids, nucleotide metabolism, and 2-oxocarboxylic acid metabolism,
+which are categorized under global and overview maps, exhibited significant down-
+regulation in 15.38%, 10.77%, and 13.85% of differential metabolites, respectively, when
+influenced by BBr60. Additionally, four metabolic pathways were classified under amino
+acid metabolism, including valine, leucine, and isoleucine biosynthesis; glycine, serine,
+and threonine metabolism; cysteine and methionine metabolism; and valine, leucine, and
+isoleucine degradation. Furthermore, two metabolic pathways, including linoleic acid
+metabolism and glycerophospholipid metabolism, were categorized as lipid metabolism.
+
+
+--- PAGE 9 ---
+Int. J. Mol. Sci. 2024, 25, 10871 9 of 21
+Int. J. Mol. Sci. 2024, 24, x FOR PEER REVIEW 9 of 22 
+ 
+ 
+ 
+Figure 4. Fecal metabolic pathways between BBr60-after and BBr60-before groups. ( A) KEGG clas-
+siﬁcation plot for BBr60-after vs. BBr60-before groups. ( B) Di ﬀerential abundance score plot for 
+BBr60-after vs. BBr60-before groups, ** p < 0.01, *** p < 0.001. 
+In fecal metabolism, 514 fecal metabolites exhibited signi ﬁcant regulation (p < 0.05, 
+VIP > 1) and related to 25 signi ﬁcant metabolic pathways, including amino acid metabo-
+lism and lipid metabolism, in the BBr60-before vs. BBr60-after groups. 
+2.3.5. Eﬃcacy of BBr60 on Gut Microbiota 
+The richness, diversity, and evenness of the gut microbiota in the BBr60 placebo 
+groups during the 12th week were assessed using α and β diversity analyses (Figure 5A–
+J). The α diversity was signiﬁcantly increased following a 12-week BBr60 intervention, as 
+indicated by metrics such as goods_coverage, pielou_e, and the Shannon index. Addition-
+ally, a clear separation of samples from the BBr60-before and BBr60-after groups was ob-
+served based on jaccard_distance and unweighted_unifrac_distance. At the phylum level, 
+Firmicutes and Actinobacteria were the predominant species in both the placebo-after and 
+BBr60-after groups, followed by Proteobacteria and Bacteroidota (Figure 6A and Table S5). 
+As shown in Figure 6B and Table S6, the do minant bacterial groups  in each group are 
+Figure 4. Fecal metabolic pathways between BBr60-after and BBr60-before groups. ( A) KEGG
+classification plot for BBr60-after vs. BBr60-before groups. (B) Differential abundance score plot for
+BBr60-after vs. BBr60-before groups, ** p < 0.01, *** p < 0.001.
+In fecal metabolism, 514 fecal metabolites exhibited significant regulation (p < 0.05,
+VIP > 1) and related to 25 significant metabolic pathways, including amino acid metabolism
+and lipid metabolism, in the BBr60-before vs. BBr60-after groups.
+2.3.5. Efficacy of BBr60 on Gut Microbiota
+The richness, diversity, and evenness of the gut microbiota in the BBr60 placebo groups
+during the 12th week were assessed using α and β diversity analyses (Figure 5A–J). The α
+diversity was significantly increased following a 12-week BBr60 intervention, as indicated
+by metrics such as goods_coverage, pielou_e, and the Shannon index. Additionally, a
+clear separation of samples from the BBr60-before and BBr60-after groups was observed
+based on jaccard_distance and unweighted_unifrac_distance. At the phylum level, Fir-
+micutes and Actinobacteria were the predominant species in both the placebo-after and
+BBr60-after groups, followed by Proteobacteria and Bacteroidota (Figure 6A and Table S5).
+As shown in Figure 6B and Table S6, the dominant bacterial groups in each group are
+mainly Bifidobacterium, Streptococcus, Agathobacter, Escherichia-Shigella, Faecalibacterium, Meg-
+amonas, Erysipelotrichaceae_UCG-003, Dialister at the genus level. The relative abundance
+of Escherichia-Shigella, Dialister, Phascolarctobacterium, Klebsiella, Bacteroides, and Veillonella
+
+
+--- PAGE 10 ---
+Int. J. Mol. Sci. 2024, 25, 10871 10 of 21
+in the BBr60-after group was higher than that of BBr60-before the group (Figure 6C). The
+12-week intervention with BBr60 resulted in a statistically significant decrease in the relative
+abundance of the class Bacilli (p < 0.05). These results indicate that BBr60 can effectively
+increase the abundance of Escherichia-Shigella, Dialister, Phascolarctobacterium, Klebsiella,
+Bacteroides, and Veillonella, while concomitantly reducing the abundance of the class Bacilli.
+These microbial species may serve as key indicators in the regulation of obesity and could
+potentially aid in differentiating between the gut microbiota of obese and normal-weight
+individuals. Besides, there was no serious adverse event in any of the groups during the
+study period, suggesting a favorable safety profile for BBr60.
+Int. J. Mol. Sci. 2024, 24, x FOR PEER REVIEW 10 of 22 
+ 
+ 
+mainly Biﬁdobacterium, Streptococcus, Agathobacter, Escherichia-Shigella, Faecalibacterium, 
+Megamonas, Erysipelotrichaceae_UCG-003, Dialister at the genus level. The relative abun-
+dance of Escherichia-Shigella, Dialister, Phascolarctobacterium, Klebsiella, Bacteroides, and Veil-
+lonella in the BBr60-after group was higher than that of BBr60-before the group (Figure 
+6C). The 12-week intervention with BBr60 resulted in a statistically signiﬁcant decrease in 
+the relative abundance of the class Bacilli (p < 0.05). These results indicate that BBr60 can 
+eﬀectively increase the abundance of Escherichia-Shigella, Dialister, Phascolarctobacterium, 
+Klebsiella, Bacteroides, and Veillonella, while concomitantly reducing the abundance of the 
+class Bacilli. These microbial species may serve as key indicators in the regulation of obe-
+sity and could potentially aid in di ﬀerentiating between the gut microbiota of obese and 
+normal-weight individuals. Besides, there wa s no serious adverse event in any of the 
+groups during the study period, suggesting a favorable safety proﬁle for BBr60. 
+ 
+Figure 5. α and β diversity analysis of BBr60-after and BBr60-before group based on ace (A), chao1
+(B), goods_coverage ( C), observed_otus ( D), pielou-e ( E), Shannon ( F), bray_curtis_distance ( G),
+jaccard_distance (H), unweighted_unifrac_distance ( I) weighted_unifrac ( J) between BBr60, and
+placebo groups in the 12th week, * p < 0.05.
+
+
+--- PAGE 11 ---
+Int. J. Mol. Sci. 2024, 25, 10871 11 of 21
+Int. J. Mol. Sci. 2024, 24, x FOR PEER REVIEW 11 of 22 
+ 
+ 
+Figure 5. α and β diversity analysis of BBr60-after and BBr60-before group based on ace (A), chao1 
+(B), goods_coverage ( C), observed_otus ( D), pielou-e ( E), Shannon ( F), bray_curtis_distance ( G), 
+jaccard_distance ( H), unweighted_unifrac_distance ( I) weighted_unifrac ( J) between BBr60, and 
+placebo groups in the 12th week, * p < 0.05. 
+ 
+Figure 6. Bacterial compositions of BBr60-after and BBr60-before groups. (A) Composition of intes-
+tinal microbiota in the three groups at phylum level. (B) Composition of intestinal microbiota in the 
+three groups at genus level. (C) Histogram of linear discriminant analysis (LDA) value distribution 
+of intestinal microﬂora. 
+2.4. Correlation Analysis 
+The potential relationships of gut flora, metabolic profiling, and clinic index were con-
+ducted by Spearman correlation analysis (Figure 7A–C). Escherichia-Shigella, Dialister, Phasco-
+larctobacterium, Klebsiella, Bacteroides, and Veillonella, the vital genera significantly regulated by 
+BBr60, showed the significantly certain metabolites (Figure 7A,B). Specially, Dialister and Bac-
+teroides exhibited obvious correlation with most serum metabolites. They both showed the 
+negative relationship with the serum metabolites, including butanoic acid, isovaleric acid, ox-
+alic acid, 3-hydroxypyruvic acid, malonic acid, o-acetylserine, valine, beta-alanine, ketoleu-
+cine, as well as, exhibited positive relationship with glutamate, serine, asparagine (Figure 7A). 
+Additionally, those metabolites were involved in 14 pathways of 2-oxocarboxylic acid metab-
+olism, ABC transporters, alanine, aspartate and glutamate metabolism, aminoacyl-tRNA bio-
+synthesis, beta-alanine metabolism, biosynthesis of amino acids, carbon metabolism, central 
+Figure 6. Bacterial compositions of BBr60-after and BBr60-before groups. ( A) Composition of
+intestinal microbiota in the three groups at phylum level. (B) Composition of intestinal microbiota
+in the three groups at genus level. ( C) Histogram of linear discriminant analysis (LDA) value
+distribution of intestinal microflora.
+2.4. Correlation Analysis
+The potential relationships of gut flora, metabolic profiling, and clinic index were
+conducted by Spearman correlation analysis (Figure 7A–C). Escherichia-Shigella, Dialister,
+Phascolarctobacterium, Klebsiella, Bacteroides, and Veillonella, the vital genera significantly
+regulated by BBr60, showed the significantly certain metabolites (Figure 7A,B). Specially,
+Dialister and Bacteroides exhibited obvious correlation with most serum metabolites. They
+both showed the negative relationship with the serum metabolites, including butanoic acid,
+isovaleric acid, oxalic acid, 3-hydroxypyruvic acid, malonic acid, o-acetylserine, valine,
+beta-alanine, ketoleucine, as well as, exhibited positive relationship with glutamate, serine,
+asparagine (Figure 7A). Additionally, those metabolites were involved in 14 pathways
+of 2-oxocarboxylic acid metabolism, ABC transporters, alanine, aspartate and glutamate
+metabolism, aminoacyl-tRNA biosynthesis, beta-alanine metabolism, biosynthesis of amino
+acids, carbon metabolism, central carbon metabolism in cancer, glyoxylate and dicarboxy-
+late metabolism, mineral absorption, pantothenate and CoA biosynthesis, protein digestion
+and absorption, valine, leucine and isoleucine biosynthesis, glycine, serine, and threonine
+metabolism. A total of 3 out of 14 were categorized under global and overview maps, includ-
+ing biosynthesis of amino acids, 2-oxocarboxylic acid metabolism, and carbon metabolism.
+Furthermore, 3 out of 11 were categorized under amino acid metabolism, including valine,
+
+
+--- PAGE 12 ---
+Int. J. Mol. Sci. 2024, 25, 10871 12 of 21
+leucine and isoleucine biosynthesis, glycine, serine, and threonine metabolism, as well as
+alanine, aspartate and glutamate metabolism. Additionally, three pathways of amino acid
+metabolism were also significantly regulated by BBr60 on fecal metabolism. Additionally,
+among metabolites significantly correlated with Dialister and Bacteroides, five amino acids
+(asparagine, serine, glutamate, ketoleucine, and valine), which were associated with three
+pathways of amino acid metabolism, exhibited significant relationships with certain clinic
+indexes of obesity, such as FBG, ALB, LDL-C, and HDL-C (Figure 7C).
+Int. J. Mol. Sci. 2024, 24, x FOR PEER REVIEW 13 of 22 
+ 
+ 
+ 
+Figure 7. Correlation analysis of vital metabolites, intestinal bacteria, and clinic indexes before and 
+after BBr60 intervention in overweight or obesity. ( A) correlation analysis between serum metabo-
+lites associated with the top 15 changed metabolic pathways and with the top 30 intestinal bacteria 
+before and after BBr60 intervention in overweight or obesity. The R values are represented by gra-
+dient colors, where blue and green cells indicate positive and negative correlations, respectively; * p 
+< 0.05 and ** p < 0.01. (B) Correlation analysis between serum metabolites associated with the top 15 
+changed metabolic pathways and with the top 30 intestinal bacteria before and after BBr60 interven-
+tion in overweight or obesity. The R values are represented by gradient colors, where blue and red 
+cells indicate positive and negative correlations, respectively; * p < 0.05 and ** p < 0.01. (C) Correlation 
+analysis between serum metabolites associated with the top 15 changed metabolic pathways and clinic 
+indexes in overweight or obesity. The R values are represented by gradient colors, where blue and red 
+cells indicate positive and negative correlations, respectively; * p < 0.05 and ** p < 0.01. Abbreviations: 
+Figure 7. Correlation analysis of vital metabolites, intestinal bacteria, and clinic indexes before and
+after BBr60 intervention in overweight or obesity. (A) correlation analysis between serum metabolites
+
+
+--- PAGE 13 ---
+Int. J. Mol. Sci. 2024, 25, 10871 13 of 21
+associated with the top 15 changed metabolic pathways and with the top 30 intestinal bacteria before
+and after BBr60 intervention in overweight or obesity. The R values are represented by gradient colors,
+where blue and green cells indicate positive and negative correlations, respectively; * p < 0.05 and
+** p < 0.01. (B) Correlation analysis between serum metabolites associated with the top 15 changed
+metabolic pathways and with the top 30 intestinal bacteria before and after BBr60 intervention in
+overweight or obesity. The R values are represented by gradient colors, where blue and red cells
+indicate positive and negative correlations, respectively; * p < 0.05 and ** p < 0.01. (C) Correlation
+analysis between serum metabolites associated with the top 15 changed metabolic pathways and
+clinic indexes in overweight or obesity. The R values are represented by gradient colors, where
+blue and red cells indicate positive and negative correlations, respectively; * p < 0.05 and ** p < 0.01.
+Abbreviations: BMI, body mass index; BFP , body fat percentage; WHR, waist-to-hip ratio; FBG, fasting
+blood glucose; TC, total cholesterol; TG, triglyceride; HDL-C, high-density lipoprotein cholesterol;
+LDL-C, low-density lipoprotein cholesterol; TP , total protein; ALB, albumin; GLB, globular proteins;
+ALT, alanine aminotransferase; AST, aspartate aminotransferase; BUN, blood urea nitrogen.
+3. Discussion
+Obesity is a multifaceted condition with a complex pathogenesis involving socioeco-
+nomic, hormonal, and neuronal mechanisms, as well as unhealthy lifestyle choices and
+genetic and epigenetic factors [23]. The World Health Organization predicts that by 2035,
+39% of the global adult population will be affected by obesity [2]. Research suggests that
+obesity and related metabolic disorders are linked to changes in gut microbiota function and
+composition, which play a significant role in regulating the body’s energy metabolism [24].
+Furthermore, alterations in the gut microbiota composition have been linked to the onset
+of obesity and its related metabolic conditions [ 25]. Utilizing probiotics to manipulate
+the gut microbiome may serve as a potential approach for managing metabolic syndrome
+and obesity-associated complications, such as dyslipidemia and insulin resistance [ 26].
+Nevertheless, the efficacy of probiotics is contingent upon the specific species and dosages
+employed, as well as the underlying medical condition [27]. Therefore, the current study
+investigated the effectiveness of BBr60 (1 × 1010 CFU, once a day) for 12 weeks on body
+composition, serum glucose, lipid, liver, and kidney functions in an overweight or obese
+adult population with BMI ≥ 28 kg/m2. After a 12-week intervention, BMI was signifi-
+cantly decreased by BBr60 intervention, with levels in the BBr60 group being lower than
+that in the placebo group at week 12. Similar trends were seen for body weight, BFP , WHR,
+FBG, HDL-C, LDL-C, and liver function indexes (ALB, GLB, ALT, AST) in the BBr60 group.
+Bifidobacterium is a typical probiotic with the ability of reducing intestinal lipopolysac-
+charide and fortifying intestinal barrier function and has been widely used as probiotic
+preparations for the treatment of intestinal microecological disorders [ 28,29]. Bifidobac-
+terium breve BBr60 is one kind of Bifidobacterium, having been commercialized for anti-
+inflammatory and antioxidant properties. In this study, BBr60 presented the effectiveness
+on BMI, body weight, BFP , WHR after a 12-week intervention, and scientific evidence also
+suggests that alterations in the gut microbiota through the use of probiotics may play a
+role in changes in body weight and composition [30]. Specifically, administering Bifidobac-
+terium to individuals with overweight or obesity (BMI > 24.9 kg/m2) resulted in significant
+reductions in body fat mass ( p = 0.006), body fat percentage ( p = 0.02), waist circumfer-
+ence (p < 0.00001), and visceral fat area (p = 0.003) [31]. A meta-analysis of 15 studies on
+probiotics demonstrated significant changes in body weight and body fat among obese
+individuals with a BMI exceeding 25 kg/m2, with an average weight loss of 0.6 kg and a
+BMI reduction of 0.27 kg/m2 [32]. The admonition of Bifidobacterium breve B-3 (20 billion
+CFU/day) for 12 weeks significantly reduced the body fat in preobese adults without
+any adverse effects [ 33]. In addition, the reducing weight, BMI, BPF, and WHR in the
+placebo group may be associated with the increased awareness of weight loss by dietary
+recommendations once a week for all the participants during the trial, and similar results
+were found in many clinical studies [34,35].
+
+
+--- PAGE 14 ---
+Int. J. Mol. Sci. 2024, 25, 10871 14 of 21
+Several studies have demonstrated that probiotic intervention may be beneficial in the
+management of obesity, as well as various metabolic abnormalities such as dysglycemia,
+insulin resistance, and dyslipidemia [ 36]. Additionally, probiotic supplementation has
+been shown to improve fasting blood glucose levels, insulin sensitivity, and hyperlipi-
+demia [37]. In the present study, levels of fasting blood glucose and LDL-C were signifi-
+cantly reduced, and HDL-C was effectively increased following a 12-week intervention
+with BBr60. Accordingly, previous studies also presented that Bifidobacteria supplementa-
+tion (50 × 109 CFU/day) for 12 weeks effectively ameliorates hyperglycemia, dyslipidemia
+by decreasing serum LDL, TG, and glycosylated hemoglobin concentration in type 2 di-
+abetic patients [38]. Administration of Bifidobacterium animalis IPLA R1 decreased serum
+insulin levels with no significant variation in FGB and HOMA index in mice of a short-term
+diet-induced obesity [39].
+The liver plays a crucial role in regulating whole-body cholesterol levels, while the
+kidney is essential for maintaining overall homeostasis [40,41]. Impaired kidney function
+and liver dysfunction are commonly observed in individuals with severe obesity [ 42].
+Assessment of liver and kidney function serves as a valid measure for evaluating psycho-
+logical states in obesity. In a study involving overweight and obese adults undergoing a
+12-week BBr60 intervention, liver function indicators (TP , ALP , GLB, ALT, and AST) and
+renal function markers (BUN) were examined to assess the impact of BBr60 supplemen-
+tation. Furthermore, supplementation with BBr60 led to notable decreases in ALB, GLB,
+ALT, and AST levels. Previous research has shown that supplementation with Bifidobac-
+terium breve resulted in significant reductions in BUN and creatinine levels compared to a
+placebo group [38]. Additionally, mice that were gavaged withBifidobacterium pseudolongum
+exhibited a lower liver-to-body weight ratio and reduced serum levels of ALT, AST, and
+hepatic triglycerides in cases of nonalcoholic fatty liver disease-associated hepatocellular
+carcinoma [43]. These findings suggest the efficacy of BBr60 in improving certain clinical
+indicators in overweight/obese individuals.
+The deep mechanism was further analyzed after the effective regulation of BBr60
+on clinical indicators of obesity. The metabolic status of the organism was investigated
+by serum and fecal metabolism as well as gut microbiota, and the potential relationship
+between metabolic profiles and clinical indexes of obesity. A total of 42 significant metabolic
+pathways associated with 643 serum metabolites and 25 vital metabolic pathways related
+to 514 fecal metabolites were obviously regulated by BBr60, and the amino acid metabolism
+pathways of valine, leucine and isoleucine biosynthesis, glycine, serine and threonine
+metabolism, as well as alanine, aspartate and glutamate metabolism, were regulated in
+serum metabolism and fecal metabolism. Significant associations between metabolites
+involved in three pathways and predominant genera or clinic indexes (such as LDI-C
+and HDL-C) of BBr60 intervention were found. Extensive research demonstrates that
+distinct metabolism of amino acids has long been recognized as a feature of obesity [44,45]
+and probiotics can improve intestinal flora imbalance and regulate intestinal microbial
+metabolites [46,47] to affect amino acid metabolism and other metabolic pathways [48] to
+further alleviating overweight or obesity [49].
+The potential mechanism of probiotics on overweight or obesity has been discussed
+in previous studies [47]; more research has focused on gut inflammation and lipid meta-
+bolism [39]. The enhancement of glucolipid metabolism by probiotics may be linked to a
+reduction in bacterial lipopolysaccharides (LPSs), which are known to induce inflammation
+and obesity [ 50,51]. While the role of lipopolysaccharides in the regulation of obesity
+through amino acid metabolism remains unclear, numerous studies have identified signifi-
+cant associations between specific probiotic strains and particular amino acids [52]. Host
+glutamate levels could be influenced byB. thetaiotaomicron colonization, which increases the
+levels of mRNAs encoding glutamate decarboxylase and glutamate transporter in epithelial
+cells, and the concentration of plasma glutamate reduces by gavage with B. thetaiotaomicron
+in mice [12,53]. Additionally, the abundance of B. thetaiotaomicron showed a negative corre-
+lation with the circulation of glutamate in a previous study [12]. Consistently, our study
+
+
+--- PAGE 15 ---
+Int. J. Mol. Sci. 2024, 25, 10871 15 of 21
+revealed that the plasma glutamate levels, which are involved in the alanine, aspartate, and
+glutamate metabolism pathways, exhibited significant associations with dominant bacterial
+strains (Klebsiella, Bacteroides, and Dialister) following the BBr60 intervention, as well as with
+clinical indices such as fasting blood glucose (FBG) and albumin (ALB). Additionally, other
+amino acids, including asparagine, serine, ketoleucine, and valine, which are implicated
+in pathways of valine, leucine and isoleucine biosynthesis, glycine, serine, and threonine
+metabolism, as well as alanine, aspartate and glutamate metabolism, demonstrated signifi-
+cant correlations with the bacterial strains Dialister and Bacteroides and with specific clinical
+indices such as low-density lipoprotein cholesterol (LDL-C).
+Generally, the effective regulation of FBG, LDL-C, HDL-C, and ALB may be attributed
+to the regulation of BBr60 on vital genus ( Klebsiella, Bacteroides, and Diali¸ ster) to affect
+the vital metabolites associated with the pathways of biosynthesis pathways of valine,
+leucine, and isoleucine, as well as in glycine, serine, and threonine metabolism and alanine,
+aspartate, and glutamate metabolism. However, although our analysis has suggested
+potential mechanisms by which BBr60 regulates blood glucose and lipid levels in cases of
+obesity or overweight, dietary calorie restriction and regular physical exercise may also be
+significant factors in controlling obesity, as evidenced by the effective biochemical outcomes
+observed in the placebo group. The amount of physical activity or dietary changes was
+not collected in detail throughout the study. Therefore, further studies are necessary to
+investigate the effectiveness of BBr60 in mice, specifically isolating the variables of dietary
+calorie restriction and daily physical exercise.
+4. Materials and Methods
+4.1. Ethics and Informed Consent
+This study utilized a randomized, double-blind, placebo-controlled trial design con-
+ducted at the School of Food and Bioengineering, Henan University of Science and Technol-
+ogy, from March 2023 to June 2024. The protocol adhered to the World Medical Association
+Declaration of Helsinki and was approved by the Ethics Committee of the First Affiliated
+Hospital of Henan University of Science and Technology (NCT06305650).
+The PICO statement was the following:
+Participants—Patients aged between 19 and 45, having a BMI of 28 kg/m 2 or higher.
+Intervention—Participants were administered daily maltodextrin (3 g) or BBr60
+(1 × 1010 CFU, once a day) for a duration of 12 weeks. All participants were instructed
+to reduce their daily energy intake by 1800 kcal and attended a nutrition information
+course covering topics, such as the risks and causes of overweight and obesity, weight loss
+principles, dietary recommendations, and rest.
+Comparator—Comparison of probiotic and maltodextrin intake in week 12, as well as,
+before and after probiotic intake.
+Outcomes—Primary: changes in body mass index (BMI) from the baseline to 12 weeks
+after beginning the treatment. Secondary: changes in waist hip ratio (WHR), and body fat
+rate (BFR) from the baseline to 12 weeks. Other secondary outcomes were the changes in
+serum biochemical indexes, fecal metabolism, and gut microbiota from baseline to 12 weeks.
+4.2. Study Design and Population
+All participants in the study provided informed consent and met the designated
+inclusion criteria, which included being between the ages of 19 and 45, having a BMI
+of 28 kg/m2 or higher, and agreeing to participate after being informed about the study
+procedures and signing a written consent form. The exclusion criteria encompassed various
+factors that could potentially impact the validity of the results, such as short-term use of
+objects with similar functions to the test, recent administration of antibiotics, laxatives, or
+dietary supplements, history of alcohol or drug abuse, presence of serious medical illnesses
+(e.g., kidney or liver disease, diabetes mellitus, neurological disorders), and pregnancy
+or lactation without the use of contraception. Studies were required to meet all of these
+criteria in order to be considered eligible for inclusion in the analysis.
+
+
+--- PAGE 16 ---
+Int. J. Mol. Sci. 2024, 25, 10871 16 of 21
+4.3. Sample Size and Randomization
+A total of 78 participants were screened, with 75 starting treatment and 65 completing
+the study. Eligible participants were randomly allocated to either the placebo group or the
+probiotics group using a random number table, as shown in Figure 8. The trial adhered
+strictly to the initial protocol without modifications. Participants in the placebo group were
+administered daily maltodextrin (3 g), while those in the BBr60 group consumed daily BBr60
+(1 × 1010 CFU, once a day, provided by Wecare Probiotics Co., Ltd., Suzhou, China) for a
+duration of 12 weeks. All participants were instructed to reduce their daily energy intake
+by 1800 kcal and attended a nutrition information course covering topics such as the risks
+and causes of overweight and obesity, weight loss principles, dietary recommendations,
+and rest. Patients, study staff, clinical research associates, and statisticians were blinded to
+the randomization and study products. The residual products and medicines, and empty
+packing boxes were recovered.
+Int. J. Mol. Sci. 2024, 24, x FOR PEER REVIEW 17 of 22 
+ 
+ 
+daily BBr60 (1 × 10 10 CFU, once a day, provided by W ecare Probiotics Co., Ltd., Suzhou, 
+China) for a duration of 12 weeks. All partic ipants were instructed to reduce their daily 
+energy intake by 1800 kcal and a ttended a nutrition information course covering topics 
+such as the risks and causes of overweight and obesity, weight loss principles, dietary 
+recommendations, and rest. Patients, study staﬀ, clinical research associates, and statisti-
+cians were blinded to the randomization and study products. The residual products and 
+medicines, and empty packing boxes were recovered. 
+ 
+Figure 8. Flowchart of the study selection. 
+4.4. Primary Outcome and Secondary Outcomes 
+The primary outcome of this study was the change in weight, body mass index (BMI) 
+from the baseline to 12 weeks after beginning the treatment. The key secondary outcomes 
+were changes in waist-hip ratio (WHR), and bo dy fat rate (BFR) from the baseline to 12 
+weeks. Other secondary outcomes were the changes in serum biochemical indexes, fecal 
+metabolism, and gut microbiota from the baseline to 12 weeks. 
+4.5. Assessment of Body Composition 
+All subjects were weighed in light clothi ng without shoes. Body mass index (BMI), 
+waist-hip ratio (WHR), and body fat rate (BFR) were measured with a body composition 
+analyzer (InBody270, InBody, Tokyo, Japan). 
+4.6. Blood Sample Collection and Biochemical Measurements 
+Collection and biochemical measurements of blood were carried out at the hospital 
+of Henan University of Science and Technology by clinical standard assays right after fast-
+ing blood sampling at baseline, and after 12 weeks of intervention. Blood samples were 
+collected following an overnight fast of at least 10 h for clinical chemistry analyses. Serum 
+samples were subsequently centrifuged and stored at −80 °C until analysis. The following 
+parameters were measured using an automatic biochemical analyzer (KHB ZY-1280, 
+Shanghai Kehua Bio-engineering Corporation, Shanghai, China): fasting blood glucose 
+Figure 8. Flowchart of the study selection.
+4.4. Primary Outcome and Secondary Outcomes
+The primary outcome of this study was the change in weight, body mass index (BMI)
+from the baseline to 12 weeks after beginning the treatment. The key secondary outcomes
+were changes in waist-hip ratio (WHR), and body fat rate (BFR) from the baseline to
+12 weeks. Other secondary outcomes were the changes in serum biochemical indexes, fecal
+metabolism, and gut microbiota from the baseline to 12 weeks.
+4.5. Assessment of Body Composition
+All subjects were weighed in light clothing without shoes. Body mass index (BMI),
+waist-hip ratio (WHR), and body fat rate (BFR) were measured with a body composition
+analyzer (InBody270, InBody, Tokyo, Japan).
+
+
+--- PAGE 17 ---
+Int. J. Mol. Sci. 2024, 25, 10871 17 of 21
+4.6. Blood Sample Collection and Biochemical Measurements
+Collection and biochemical measurements of blood were carried out at the hospital
+of Henan University of Science and Technology by clinical standard assays right after
+fasting blood sampling at baseline, and after 12 weeks of intervention. Blood samples were
+collected following an overnight fast of at least 10 h for clinical chemistry analyses. Serum
+samples were subsequently centrifuged and stored at −80 ◦C until analysis. The follow-
+ing parameters were measured using an automatic biochemical analyzer (KHB ZY-1280,
+Shanghai Kehua Bio-engineering Corporation, Shanghai, China): fasting blood glucose
+(FBG), alanine aminotransferase (ALT), aspartate aminotransferase (AST), alkaline phos-
+phatase (ALP), total protein (TP), albumin (ALB), globular proteins (ALP), total bilirubin
+(TB), blood urea nitrogen (BUN), and lipid profile including total triglycerides (TG), total
+cholesterol (TC), high-density lipoprotein cholesterol (HDL-C), and low-density lipoprotein
+cholesterol (LDL-C).
+4.7. Serum and Fecal Metabolomic Analysis
+Fasted serum samples were collected pre- and post-treatment, then centrifuged at
+3000× g for 15 min. For metabolomics analysis, 100 µL of serum was mixed with 400 µL of
+extraction solution (MeOH: ACN, 1:1 (v/v)) containing deuterated internal standards. The
+mixture was vortexed for 30 s, sonicated for 10 min at 4 ◦C, and incubated for 1 h at −40 ◦C
+to precipitate proteins. Finally, the samples were centrifuged at 12,000 rpm (13,800× g) for
+15 min at 4 ◦C. For analysis, the supernatant was transferred into a fresh vial of glass.
+Fecal samples were mixed with beads and extraction solution, containing deuterated
+internal standards, and vortexed for 30 s.
+Quality control (QC) samples were prepared by mixing an equal amount of super-
+natant from each sample. LC-MS/MS analysis was performed using a UHPLC system
+(Vanquish, Thermo Fisher Scientific, San Jose, CA, USA) coupled to an Orbitrap MS. The
+mobile phase consisted of 25 mmol/L ammonium acetate and ammonia hydroxide in water.
+The autosampler was set at 4 ◦C with an injection volume of 2 µL. The Orbitrap Exploris
+120 mass spectrometer (Orbitrap MS, Thermo Fisher Scientific, San Jose, CA, USA) was
+used in IDA mode with Xcalibur software (v4.4), continuously evaluating the full scan MS
+spectrum. The acquisition software monitors the full scan MS spectrum continuously in this
+mode. ESI source conditions include sheath gas flow rate of 50 Arb, Aux gas flow rate of
+15 Arb, capillary temperature of 320 ◦C, full MS resolution of 60,000, MS/MS resolution of
+15,000, collision energy settings of 20/30/40 SNCE, and spray voltage of 3.8 kV (positive) or
+−3.4 kV (negative). The raw data underwent conversion to the mzXML format through the
+utilization of ProteoWizard (https://proteowizard.sourceforge.io/projects.html (accessed
+on 31 July 2024)) and were subsequently analyzed using a custom program developed in R
+and reliant on XCMS for peak detection, extraction, alignment, and integration. Metabolite
+identification was facilitated through the use of the R package (v3.8.2) and BiotreeDB (v3.0).
+4.8. Gut Microbiota Analysis
+DNA was extracted from fecal using CTAB following the manufacturer’s instructions.
+The reagent effectively extracted DNA from trace amounts of samples, particularly bacteria.
+Blank samples were prepared using nuclear-free water. The eluted DNA was stored at
+−80 ◦C until PCR measurement. Primers were tagged with specific barcodes for each
+sample and sequencing universal primers. PCR was conducted in a 25 µL reaction mixture
+with 25 ng of template DNA, PCR Premix, primers, and water. The prokaryotic 16S
+fragments were amplified using specific PCR conditions, including denaturation, annealing,
+and extension steps. The PCR products were verified using agarose gel electrophoresis.
+During DNA extraction, ultrapure water was used as a negative control to prevent false-
+positive PCR results. PCR products were purified using AMPure XT beads (Beckman
+Coulter Genomics, Danvers, MA, USA) and quantified with Qubit (Invitrogen, Waltham,
+MA, USA). Amplicon pools were prepared for sequencing, and their size and quantity were
+
+
+--- PAGE 18 ---
+Int. J. Mol. Sci. 2024, 25, 10871 18 of 21
+assessed using Agilent 2100 Bioanalyzer (Agilent, CA, USA) and Library Quantification Kit
+for Illumina (Kapa Biosciences, Woburn, MA, USA).
+Samples were sequenced on an Illumina NovaSeq platform PE250 (Illumina, San Diego,
+CA, USA) following the manufacturer’s instructions. Paired-end reads were assigned to
+samples based on their unique barcode, merged using FLASH (v1.2.8), and quality filtered
+using fqtrim (v0.94). Chimeric sequences were removed using Vsearch software (v2.3.4).
+The feature table and sequence were obtained after dereplication using DADA2 (v2019.7).
+Alpha and beta diversity were calculated by randomly normalizing sequences. The feature
+abundance was normalized using the relative abundance of each sample according to
+the SILVA classifier. Alpha diversity was analyzed using 5 indices in QIIME2 (https:
+//qiime2.org), while beta diversity was calculated and visualized using the R package.
+Blast was used for sequence alignment, and the feature sequences were annotated with the
+SILVA database for each representative sequence. Other diagrams were implemented using
+the R package (v3.5.2). Blast was used for sequence alignment, and the SILVA database was
+used for annotation. Other diagrams were created using R package v3.5.2.
+4.9. Safety Monitoring
+Safety outcomes will be evaluated by monitoring vital signs and body weight at each
+visit. Participants will undergo blood routine tests, liver and kidney function tests, urine
+routine tests, and physical examinations at baseline and in the 12th week of treatment.
+Safety outcomes will be assessed through the evaluation of physical examinations, vital
+signs, hematological analyses, and reported adverse events or serious adverse events.
+4.10. Statistical Analysis
+Statistical analyses were performed using SPSS version 22.0 (SPSS, Chicago, IL, USA)
+and Graphpad Prism 8.0 (GraphPad Prism Software, San Diego, CA, USA). The normal
+distribution of the variables was analyzed by Kolmogorov–Smirnov test. Quantitative data
+following are reported as mean ± standard deviation (SD), with statistical significance
+assessed using a two-tailed T test for data conforming to a normal distribution. Additionally,
+data not conforming to a normal distribution is analyzed using nonparametric tests such as
+the Mann–Whitney U test for between-group comparisons and the Wilcoxon signed-rank
+test for within-group comparisons. Categorical variables are presented as numbers (%)
+and compared using the chi-square test. Principal component analysis (PCA), orthogonal
+partial least-squared discriminant analysis (OPLS-DA) were conducted by the SIMCA
+software package (V18.0.1, Sartorius Stedim Data Analytics AB, Umea, Sweden). Pathway
+analysis was performed by databases including KEGG (http://www.genome.jp/kegg/
+(accessed on 31 July 2024)) and MetaboAnalyst (http://www.metaboanalyst.ca/ (accessed
+on 31 July 2024)). KEGG enrichment analysis of differential metabolites was conducted
+with Fisher’s test, *p < 0.05, ** p < 0.01. Correlations between two variables were assessed
+through Spearman correlation analyses with R (v4.2.1), with statistical significance defined
+as p < 0.05 and an alpha level (α) established at 0.05. The obtained p-values validate that
+the discrepancies observed between groups were not a result of random variation, thus
+bolstering the reliability of our results.
+5. Conclusions
+Collectively, these findings suggest that BBr60 can safely and effectively reduce body
+weight, BMI, BFP , WHR, FBG, LDL-C, HDL-C, and improve liver function (ALB, GLB, ALT,
+and AST). Furthermore, the potential mechanism underlying the effective regulation of
+clinical indices may be attributed to BBr60’s influence on key genera (Klebsiella, Bacteroides,
+and Dialister), which in turn affect critical metabolites associated with the pathways of
+valine, leucine and isoleucine biosynthesis, glycine, serine, and threonine metabolism, as
+well as alanine, aspartate, and glutamate metabolism. Those results will provide scientific
+evidence supporting the BBrr60 intervention for attenuating obesity or overweight. Future
+
+
+--- PAGE 19 ---
+Int. J. Mol. Sci. 2024, 25, 10871 19 of 21
+research should focus on elucidating the deeper mechanisms by which BBr60 affects these
+key genera and specific metabolites to regulate glucolipid metabolism in murine models.
+Supplementary Materials: The following supporting information can be downloadedat: https://
+www.mdpi.com/article/10.3390/ijms252010871/s1.
+Author Contributions: Z.B.: Investigation, Methodology, Writing—original draft, Software, Formal
+analysis, Writing—review and editing; Y.W.: Writing—review and editing, Resources, Supervision;
+D.G.: Investigation, Methodology, Writing—original draft, Conceptualization, Data curation; Y.D.:
+Resources, Supervision; Y.P .: Investigation, Methodology; S.G.: Project administration, Resources,
+Supervision, Validation, Visualization. All authors have read and agreed to the published version of
+the manuscript.
+Funding: The authors gratefully acknowledge the financial support from Major Science and Tech-
+nology Special Projects in Henan Province (231100310200); Key R&D Projects in Henan Province
+(241111314200); Key R&D Projects in Henan Province (221111111400).
+Institutional Review Board Statement: The study was conducted in accordance with the Declaration
+of Helsinki, and approved by the Ethics Committee of First Affiliated Hospital of Henan University
+of Science and Technology (NCT06305650 and 2024-1-13).
+Informed Consent Statement: All participants provided written informed consent prior to stu-
+dy enrolment.
+Data Availability Statement: Data described in the manuscript, code book, and analytic code will be
+made available upon request pending application and approval.
+Acknowledgments: Figures of Graphical abstract in the manuscript were drawn in Figdraw (v 2.0).
+Conflicts of Interest: The authors declare no conflict of interest.
+Abbreviations
+ALB, Albumin; A/G, Albumin/Globulin; ALT, Alanine aminotransferase; AST, Aspartate
+aminotransferase; BBr60, Bifidobacterium breve BBr60; BFP , body fat percentage; BMI, body mass index;
+BUN, blood urea nitrogen; CRE, creatinine; FBG, fasting blood glucose; GLB, globular proteins;
+HDL-C, high-density lipoprotein cholesterol; LDL-C, low-density lipoprotein cholesterol; OPLS-DA,
+orthogonal partial least squares discriminant analysis; PCA, principal component analysis; TB, total
+bilirubin; TC, total cholesterol; TCA cycle, citrate cycle; TG, triglyceride; TP , total protein; UA, uric
+acid; WHR, waist-to-hip ratio.
+References
+1. Zhao, Z.; Zhen, S.; Yan, Y.; Liu, N.; Ding, D.; Kong, J. Association of dietary patterns with general and central obesity among
+Chinese adults: A longitudinal population-based study. BMC Public Health 2023, 23, 1588. [CrossRef] [PubMed]
+2. World Health Organization. Obesity and Overweight. Updated 1 March 2024. Available online: https://www.who.int/news-
+room/fact-sheets/detail/obesity-and-overweight (accessed on 31 August 2024).
+3. Chen, Y.; Peng, Q.; Yang, Y.; Zheng, S.; Wang, Y.; Lu, W. The prevalence and increasing trends of overweight, general obesity,
+and abdominal obesity among Chinese adults: A repeated cross-sectional study. BMC Public Health 2019, 19, 1293. [CrossRef]
+[PubMed]
+4. Chateau-Degat, M.L.; Dewailly, E.; Charbonneau, G.; Laouan-Sidi, E.A.; Tremblay, A.; Egeland, G.M. Obesity risks: Towards an
+emerging Inuit pattern. Int. J. Circumpolar Health 2011, 70, 166–177. [CrossRef] [PubMed]
+5. Rezgui, R.; Walia, R.; Sharma, J.; Sidhu, D.; Alshagadali, K.; Ray Chaudhuri, S.; Saeed, A.; Dey, P . Chemically Defined Lactobacillus
+plantarum Cell-Free Metabolites Demonstrate Cytoprotection in HepG2 Cells through Nrf2-Dependent Mechanism. Antioxidants
+2023, 12, 930. [CrossRef] [PubMed]
+6. Sowah, S.A.; Milanese, A.; Schübel, R.; Wirbel, J.; Kartal, E.; Johnson, T.S.; Hirche, F.; Grafetstätter, M.; Nonnenmacher, T.; Kirsten,
+R.; et al. Calorie restriction improves metabolic state independently of gut microbiome composition: A randomized dietary
+intervention trial. Genome Med. 2022, 14, 30. [CrossRef] [PubMed]
+7. Chambers, E.S.; Preston, T.; Frost, G.; Morrison, D.J. Role of Gut Microbiota-Generated Short-Chain Fatty Acids in Metabolic and
+Cardiovascular Health. Curr. Nutr. Rep. 2018, 7, 198–206. [CrossRef] [PubMed]
+
+
+--- PAGE 20 ---
+Int. J. Mol. Sci. 2024, 25, 10871 20 of 21
+8. Schugar, R.C.; Shih, D.M.; Warrier, M.; Helsley, R.N.; Burrows, A.; Ferguson, D.; Brown, A.L.; Gromovsky, A.D.; Heine, M.;
+Chatterjee, A.; et al. The TMAO-Producing Enzyme Flavin-Containing Monooxygenase 3 Regulates Obesity and the Beiging of
+White Adipose Tissue. Cell Rep. 2017, 19, 2451–2461. [CrossRef] [PubMed]
+9. Pang, Y.; Zheng, Y.; Yang, N.; Zan, M.; Zhang, L.; Ding, W. Potential novel biomarkers in small intestine for obesity/obesity
+resistance revealed by multi-omics analysis. Lipids Health Dis. 2022, 21, 98. [CrossRef]
+10. Yamazaki, T.; Yamada, S.; Ohshio, K.; Sugamata, M.; Morita, Y. Lactobacillus paracasei KW3110 Prevents Inflammatory-Stress-
+Induced Mitochondrial Dysfunction in Mouse Macrophages. Int. J. Mol. Sci. 2022, 23, 1443. [CrossRef] [PubMed]
+11. Ezzine, C.; Loison, L.; Montbrion, N.; B ôle-Feysot, C.; D échelotte, P .; Coëffier, M.; Ribet, D. Fatty acids produced by the gut
+microbiota dampen host inflammatory responses by modulating intestinal SUMOylation. Gut Microbes 2022, 14, 2108280.
+[CrossRef] [PubMed]
+12. Liu, R.; Hong, J.; Xu, X.; Feng, Q.; Zhang, D.; Gu, Y.; Shi, J.; Zhao, S.; Liu, W.; Wang, X.; et al. Gut microbiome and serum
+metabolome alterations in obesity and after weight-loss intervention. Nat. Med. 2017, 23, 859–868. [CrossRef] [PubMed]
+13. Ley, R.E.; Turnbaugh, P .J.; Klein, S.; Gordon, J.I. Microbial ecology: Human gut microbes associated with obesity.Nature 2006, 444,
+1022–1023. [CrossRef] [PubMed]
+14. Sze, M.A.; Schloss, P .D. Looking for a Signal in the Noise: Revisiting Obesity and the Microbiome. mBio 2016, 7, e01018-16.
+[CrossRef] [PubMed]
+15. Santacruz, A.; Collado, M.C.; Garc ía-Valdés, L.; Segura, M.T.; Mart ín-Lagos, J.A.; Anjos, T.; Mart í-Romero, M.; Lopez, R.M.;
+Florido, J.; Campoy, C.; et al. Gut microbiota composition is associated with body weight, weight gain and biochemical parameters
+in pregnant women. Br. J. Nutr. 2010, 104, 83–92. [CrossRef] [PubMed]
+16. Ka´ zmierczak-Siedlecka, K.; Skonieczna-˙Zydecka, K.; Hupp, T.; Duchnowska, R.; Marek-Trzonkowska, N.; Połom, K. Next-
+generation probiotics—Do they open new therapeutic strategies for cancer patients? Gut Microbes 2022, 14, 2035659. [CrossRef]
+[PubMed]
+17. Gomaa, E.Z. Human gut microbiota/microbiome in health and diseases: A review. Antonie Van Leeuwenhoek 2020, 113, 2019–2040.
+[CrossRef]
+18. Suez, J.; Zmora, N.; Segal, E.; Elinav, E. The pros, cons, and many unknowns of probiotics. Nat. Med. 2019, 25, 716–729. [CrossRef]
+[PubMed]
+19. McFarland, L.V .; Evans, C.T.; Goldstein, E.J.C. Strain-Specificity and Disease-Specificity of Probiotic Efficacy: A Systematic Review
+and Meta-Analysis. Front. Med. 2018, 5, 124. [CrossRef] [PubMed]
+20. Ben Othman, M.; Sakamoto, K. Effect of inactivated Bifidobacterium longum intake on obese diabetes model mice (TSOD).
+Food Res. Int. 2020, 129, 108792. [CrossRef] [PubMed]
+21. Liu, N.; Yang, C.; Liang, X.; Cao, K.; Xie, J.; Luo, Q.; Luo, H. Mesoporous silica nanoparticle-encapsulated Bifidobacterium
+attenuates brain Aβ burden and improves olfactory dysfunction of APP/PS1 mice by nasal delivery. J. Nanobiotechnol. 2022,
+20, 439. [CrossRef]
+22. Zhou, Y.Y.; Qiu, H.M.; Yang, Y.; Han, Y.Y. Analysis of risk factors for carotid intima-media thickness in patients with type 2
+diabetes mellitus in Western China assessed by logistic regression combined with a decision tree model. Diabetol. Metab. Syndr.
+2020, 12, 8. [CrossRef] [PubMed]
+23. Hruby, A.; Hu, F.B. The Epidemiology of Obesity: A Big Picture. Pharmacoeconomics 2015, 33, 673–689. [CrossRef] [PubMed]
+24. Chen, B.; Bai, Y.; Tong, F.; Yan, J.; Zhang, R.; Zhong, Y.; Tan, H.; Ma, X. Glycoursodeoxycholic acid regulates bile acids level and
+alters gut microbiota and glycolipid metabolism to attenuate diabetes. Gut Microbes 2023, 15, 2192155. [CrossRef] [PubMed]
+25. Chang, C.J.; Lin, C.S.; Lu, C.C.; Martel, J.; Ko, Y.F.; Ojcius, D.M.; Tseng, S.F.; Wu, T.R.; Chen, Y.Y.; Young, J.D.; et al. Ganoderma
+lucidum reduces obesity in mice by modulating the composition of the gut microbiota. Nat. Commun. 2015, 6, 7489. [CrossRef]
+[PubMed]
+26. Lee, N.Y.; Shin, M.J.; Youn, G.S.; Yoon, S.J.; Choi, Y.R.; Kim, H.S.; Gupta, H.; Han, S.H.; Kim, B.K.; Lee, D.Y.; et al. Lactobacillus
+attenuates progression of nonalcoholic fatty liver disease by lowering cholesterol and steatosis. Clin. Mol. Hepatol. 2021, 27,
+110–124. [CrossRef] [PubMed]
+27. Sharifi-Rad, J.; Rodrigues, C.F.; Stojanovi´ c-Radi´ c, Z.; Dimitrijevi´ c, M.; Aleksi´ c, A.; Neffe-Skoci ´ nska, K.; Zieli ´ nska, D.; Koło˙zyn-
+Krajewska, D.; Salehi, B.; Milton Prabu, S.; et al. Probiotics: Versatile Bioactive Components in Promoting Human Health.
+Medicina 2020, 56, 433. [CrossRef] [PubMed]
+28. Gong, H.; Gao, H.; Ren, Q.; He, J. The abundance of bifidobacterium in relation to visceral obesity and serum uric acid. Sci. Rep.
+2022, 12, 13073. [CrossRef] [PubMed]
+29. Engevik, M.A.; Luk, B.; Chang-Graham, A.L.; Hall, A.; Herrmann, B.; Ruan, W.; Endres, B.T.; Shi, Z.; Garey, K.W.; Hyser, J.M.;
+et al. Bifidobacterium dentium Fortifies the Intestinal Mucus Layer via Autophagy and Calcium Signaling Pathways. mBio 2019,
+10, e01087-19. [CrossRef]
+30. Rustanti, N.; Murdiati, A.; Juffrie, M.; Rahayu, E.S. Effect of Probiotic Lactobacillus plantarum Dad-13 on Metabolic Profiles
+and Gut Microbiota in Type 2 Diabetic Women: A Randomized Double-Blind Controlled Trial. Microorganisms 2022, 10, 1806.
+[CrossRef] [PubMed]
+31. Hamed Riveros, N.F.; García-Corredor, L.; Martínez-Solarte, M.A.; González-Clavijo, A. Effect of Bifidobacterium Intake on Body
+Weight and Body Fat in Overweight and Obese Adult Subjects: A Systematic Review and Meta-Analysis. J. Am. Nutr. Assoc. 2024,
+43, 519–531. [CrossRef]
+
+
+--- PAGE 21 ---
+Int. J. Mol. Sci. 2024, 25, 10871 21 of 21
+32. Borgeraas, H.; Johnson, L.K.; Skattebu, J.; Hertel, J.K.; Hjelmesaeth, J. Effects of probiotics on body weight, body mass index, fat
+mass and fat percentage in subjects with overweight or obesity: A systematic review and meta-analysis of randomized controlled
+trials. Obes. Rev. 2018, 19, 219–232. [CrossRef]
+33. Minami, J.; Iwabuchi, N.; Tanaka, M.; Yamauchi, K.; Xiao, J.Z.; Abe, F.; Sakane, N. Effects of Bifidobacterium breve B-3 on body
+fat reductions in pre-obese adults: A randomized, double-blind, placebo-controlled trial. Biosci. Microbiota Food Health 2018, 37,
+67–75. [CrossRef]
+34. Dixon, A.E.; Subramanian, M.; DeSarno, M.; Black, K.; Lane, L.; Holguin, F. A pilot randomized controlled trial of pioglitazone for
+the treatment of poorly controlled asthma in obesity. Respir. Res. 2015, 16, 143. [CrossRef] [PubMed]
+35. Sung, H.K.; Youn, S.J.; Choi, Y.; Eun, S.W.; Shin, S.M. Body Fat Reduction Effect of Bifidobacterium breve B-3: A Randomized,
+Double-Blind, Placebo Comparative Clinical Trial. Nutrients 2023, 15, 28. [CrossRef] [PubMed]
+36. Agius, R.; Pace, N.P .; Fava, S. Reduced leukocyte mitochondrial copy number in metabolic syndrome and metabolically healthy
+obesity. Front. Endocrinol. 2022, 13, 886957. [CrossRef] [PubMed]
+37. Tiderencel, K.A.; Hutcheon, D.A.; Ziegler, J. Probiotics for the treatment of type 2 diabetes: A review of randomized controlled
+trials. Diabetes/Metab. Res. Rev. 2020, 36, e3213. [CrossRef] [PubMed]
+38. Chaiyasut, C.; Sivamaruthi, B.S.; Lailerd, N.; Sirilun, S.; Thangaleela, S.; Khongtan, S.; Bharathi, M.; Kesika, P .; Saelee, M.;
+Choeisoongnern, T.; et al. Influence of Bifidobacterium breve on the Glycaemic Control, Lipid Profile and Microbiome of Type 2
+Diabetic Subjects: A Preliminary Randomized Clinical Trial. Pharmaceuticals 2023, 16, 695. [CrossRef] [PubMed]
+39. Salazar, N.; Neyrinck, A.M.; Bindels, L.B.; Druart, C.; Ruas-Madiedo, P .; Cani, P .D.; de Los Reyes-Gavilán, C.G.; Delzenne, N.M.
+Functional Effects of EPS-Producing Bifidobacterium Administration on Energy Metabolic Alterations of Diet-Induced Obese
+Mice. Front. Microbiol. 2019, 10, 1809. [CrossRef]
+40. Sun, H.; Liu, Q.; Hu, H.; Jiang, Y.; Shao, W.; Wang, Q.; Jiang, Z.; Gu, A. Berberine ameliorates blockade of autophagic flux in the
+liver by regulating cholesterol metabolism and inhibiting COX2-prostaglandin synthesis. Cell Death Dis. 2018, 9, 824. [CrossRef]
+[PubMed]
+41. Lyu, M.; Su, C.C.; Miyagi, M.; Yu, E.W. Simultaneous solving high-resolution structures of various enzymes from human kidney
+microsomes. Life Sci. Alliance 2023, 6, e202201580. [CrossRef] [PubMed]
+42. Pi-Sunyer, F.X. Health implications of obesity. Am. J. Clin. Nutr. 1991, 53, 1595S–1603S. [CrossRef] [PubMed]
+43. Song, Q.; Zhang, X.; Liu, W.; Wei, H.; Liang, W.; Zhou, Y.; Ding, Y.; Ji, F.; Ho-Kwan Cheung, A.; Wong, N.; et al. Bifidobacterium
+pseudolongum-generated acetate suppresses non-alcoholic fatty liver disease-associated hepatocellular carcinoma. J. Hepatol.
+2023, 79, 1352–1365. [CrossRef] [PubMed]
+44. White, P .J.; Lapworth, A.L.; An, J.; Wang, L.; McGarrah, R.W.; Stevens, R.D.; Ilkayeva, O.; George, T.; Muehlbauer, M.J.; Bain, J.R.;
+et al. Branched-chain amino acid restriction in Zucker-fatty rats improves muscle insulin sensitivity by enhancing efficiency of
+fatty acid oxidation and acyl-glycine export. Mol. Metab. 2016, 5, 538–551. [CrossRef] [PubMed]
+45. Colom-Pellicer, M.; Rodríguez, R.M.; Soliz-Rueda, J.R.; de Assis, L.V .M.; Navarro-Masip,È.; Quesada-Vázquez, S.; Escoté, X.;
+Oster, H.; Mulero, M.; Aragonès, G. Proanthocyanidins Restore the Metabolic Diurnal Rhythm of Subcutaneous White Adipose
+Tissue According to Time-Of-Day Consumption. Nutrients 2022, 14, 2246. [CrossRef] [PubMed]
+46. Guo, M.; Liu, H.; Yu, Y.; Zhu, X.; Xie, H.; Wei, C.; Mei, C.; Shi, Y.; Zhou, N.; Qin, K.; et al. Lactobacillus rhamnosus GG ameliorates
+osteoporosis in ovariectomized rats by regulating the Th17/Treg balance and gut microbiota structure. Gut Microbes 2023,
+15, 2190304. [CrossRef] [PubMed]
+47. He, H.; Sun, Y.; Zhang, S.; Zhang, H.; Su, W.; Guo, Z.; Zhang, Y.; Wen, J.; Li, X.; Hu, J.; et al. Arabinogalactan, Bifidobacterium
+longum, and Faecalibacterium prausnitzii improve insulin resistance in high-fat diet-induced C57BL/6J mice. eFood 2022, 3, e1.
+[CrossRef]
+48. Desbonnet, L.; Garrett, L.; Clarke, G.; Bienenstock, J.; Dinan, T.G. The probiotic Bifidobacteria infantis: An assessment of potential
+antidepressant properties in the rat. J. Psychiatr. Res. 2008, 43, 164–174. [CrossRef] [PubMed]
+49. Vallianou, N.; Stratigou, T.; Christodoulatos, G.S.; Tsigalou, C.; Dalamaga, M. Probiotics, Prebiotics, Synbiotics, Postbiotics, and
+Obesity: Current Evidence, Controversies, and Perspectives. Curr. Obes. Rep. 2020, 9, 179–192. [CrossRef] [PubMed]
+50. Huang, Z.; Kraus, V .B. Does lipopolysaccharide-mediated inflammation have a role in OA?Nat. Rev. Rheumatol. 2016, 12, 123–129.
+[CrossRef] [PubMed]
+51. Jeon, M.S.; Choi, Y.Y.; Mo, S.J.; Ha, J.H.; Lee, Y.S.; Lee, H.U.; Park, S.D.; Shim, J.J.; Lee, J.L.; Chung, B.G. Contributions of the
+microbiome to intestinal inflammation in a gut-on-a-chip. Nano Converg. 2022, 9, 8. [CrossRef]
+52. Ma, Y.; Han, X.; Fang, J.; Jiang, H. Role of dietary amino acids and microbial metabolites in the regulation of pig intestinal health.
+Anim. Nutr. 2022, 9, 1–6. [CrossRef] [PubMed]
+53. Hooper, L.V .; Wong, M.H.; Thelin, A.; Hansson, L.; Falk, P .G.; Gordon, J.I. Molecular analysis of commensal host-microbial
+relationships in the intestine. Science 2001, 291, 881–884. [CrossRef] [PubMed]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.

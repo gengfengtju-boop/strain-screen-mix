@@ -1,0 +1,34 @@
+http:
+  timeout_seconds: 30
+  user_agent: ProSlim-Microbiome-AI/0.1
+  retry_count: 2
+
+pubmed:
+  base_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils
+  db: pubmed
+  retmode: json
+  default_retmax: 20
+  query_templates:
+    probiotic_weight_loss: '("probiotic"[Title/Abstract] OR "synbiotic"[Title/Abstract] OR "prebiotic"[Title/Abstract]) AND ("obesity"[Title/Abstract] OR "weight loss"[Title/Abstract] OR BMI[Title/Abstract])'
+    strain_weight_loss: '("{strain_name}"[Title/Abstract] OR "{species}"[Title/Abstract]) AND ("obesity"[Title/Abstract] OR "weight loss"[Title/Abstract] OR BMI[Title/Abstract])'
+
+europe_pmc:
+  base_url: https://www.ebi.ac.uk/europepmc/webservices/rest/search
+  default_page_size: 20
+
+clinical_trials:
+  base_url: https://clinicaltrials.gov/api/v2/studies
+  default_page_size: 20
+  query_terms:
+    - probiotic obesity
+    - synbiotic obesity
+    - probiotic weight loss
+
+ncbi_datasets:
+  base_url: https://api.ncbi.nlm.nih.gov/datasets/v2
+
+ncbi_assembly:
+  base_url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils
+  db: assembly
+  retmode: json
+  default_retmax: 20

@@ -18,10 +18,9 @@ combination_scores:
   validation_feasibility_score: 0.15
 
 combination_generation:
-  min_strains: 2
-  max_strains: 4
+  min_strains: 3
+  max_strains: 5
   require_at_least_functional_modules: 2
   prefer_include_historical_use_taxa:
     - Bifidobacterium
     - Lactobacillus
-

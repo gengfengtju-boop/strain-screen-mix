@@ -1,0 +1,584 @@
+
+
+--- PAGE 1 ---
+Citation: Sato, S.; Arai, S.; Kato, K.;
+Yoshida, K.; Iwabuchi, N.; Sagami, T.;
+Tanaka, M. Effects of Bifidobacterium
+longum BB536 and Bifidobacterium
+breve MCC1274 on Body Composition
+in Normal and Overweight Adults in
+Randomized Placebo-Controlled
+Study. Nutrients 2024, 16, 815.
+https://doi.org/10.3390/nu16060815
+Academic Editor: Juergen
+Schrezenmeir
+Received: 9 February 2024
+Revised: 6 March 2024
+Accepted: 11 March 2024
+Published: 13 March 2024
+Copyright: © 2024 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).
+nutrients
+Article
+Effects of Bifidobacterium longum BB536 and Bifidobacterium
+breve MCC1274 on Body Composition in Normal and
+Overweight Adults in Randomized Placebo-Controlled Study
+Soichiro Sato 1,*
+ , Satoshi Arai 1, Kumiko Kato 1, Keisuke Yoshida 1
+ , Noriyuki Iwabuchi 1, Toru Sagami 2 and
+Miyuki Tanaka 1
+1 R&D Division, Innovative Research Institute, Morinaga Milk Industry Co., Ltd., 5-1-83, Higashihara,
+Zama 252-8583, Japan
+2 Shinagawa Season Terrace Health Care Clinic, 1-2-70, Konan, Minato-ku 108-0075, Japan
+* Correspondence: souichirou-satou042@morinagamilk.co.jp; Tel.: +81-46-252-3051
+Abstract: Visceral fat accumulation is considered to be associated with a higher risk of chronic
+diseases. We investigated the effects of Bifidobacterium longum subsp. longum (B. longum) BB536 and
+Bifidobacterium breve (B. breve) MCC1274 on body composition, including visceral fat, in a randomized,
+parallel-group, placebo-controlled study. Participants were between 29 and 64 years of age and had a
+body mass index (BMI) of greater than 23 and less than 30. One hundred participants were randomly
+assigned to the probiotics group or placebo group. Participants were administered probiotic capsules
+containing 1 × 1010 colony-forming units (CFUs) of B. longum BB536 and 5 × 109 CFU of B. breve
+MCC1274 or placebo capsules without bifidobacteria for 16 weeks. In the probiotics group, abdominal
+visceral fat area, total abdominal fat area, and serum triglyceride levels were significantly decreased
+compared to those in the placebo group. Additionally, the increase in BMI observed in the placebo
+group was significantly suppressed in the probiotics group. This study showed that B. longum BB536
+and B. breve MCC1274 reduced abdominal visceral fat and total fat levels in healthy normal and
+overweight adults, suggesting their beneficial effects on body composition.
+Keywords: body composition; abdominal fat; serum triglycerides; probiotics
+1. Introduction
+The prevalence of overweight and obesity is steadily increasing regardless of age,
+sex, ethnicity, etc. [1]. Obesity is known to be involved in the development of lifestyle
+diseases such as dyslipidemia and diabetes [2]. One of the characteristics of obesity is fat
+accumulation. Body fat is mainly classified into visceral and subcutaneous fat, and visceral
+fat accumulation is especially considered to be associated with a higher risk of chronic
+diseases [3]. The cause of obesity has been suggested to be related to genetic and environ-
+mental factors such as decreased physical activity and overeating [4]. Lifestyle modification,
+including calorie restriction and regular exercise, could be effective in ameliorating obesity,
+but it is difficult for individuals to maintain their lifestyle changes [5].
+The intake of probiotics is expected to prevent and improve body composition [ 6].
+Bifidobacteria are major probiotic bacteria, and according to a meta-analysis, they were
+particularly depleted in obese people [7]. The positive effects of bifidobacteria on serum
+lipid or body fat have been demonstrated in animal and clinical studies. Fermented milk
+containing B. longum BB536 was shown to reduce blood triglyceride levels elevated by a
+high-fat diet in vivo compared to those with fermented milk without B. longum BB536 [8].
+B. breve MCC1274 was reported to enhance intestinal barrier function in vitro and to stimu-
+late the expression of lipid metabolism genes in the liverin vivo [9,10]. Furthermore, intake
+of B. breve MCC1274 reduced body fat levels in normal and overweight adults [11–13]. In
+addition, the combination of B. longum BB536, B. breve MCC1274, and N-acetylglucosamine
+Nutrients 2024, 16, 815. https://doi.org/10.3390/nu16060815 https://www.mdpi.com/journal/nutrients
+
+
+--- PAGE 2 ---
+Nutrients 2024, 16, 815 2 of 10
+reduced BMI, body fat levels, and total abdominal fat area in healthy overweight partici-
+pants [14]. The visceral fat area also significantly increased from baseline after 24 weeks of
+intake in the placebo group but not in the test food group. Thus, the beneficial effects of
+B. longum BB536 and B. breve MCC1274 have been reported, and these probiotics could be
+expected to be more effective in maintaining adequate body composition when combined.
+These studies could demonstrate the effectiveness in maintaining or promoting well-being
+for healthy adults. A previous study employed an intervention comprising a combination
+of these bacteria and a substrate, N-acetylglucosamine, so it is possible that the synergistic
+or complementary effects were observed due to the inclusion of the substrate [14]. In this
+study, to clarify the effects of the probiotics without any substrates, we investigated the
+effects of B. longum BB536 and B. breve MCC1274 on body composition, including visceral
+fat area, in healthy normal and overweight adults with BMIs greater than 23 and less
+than 30.
+2. Materials and Methods
+2.1. Study Design and Ethics
+A randomized, parallel-group, placebo-controlled study was conducted at the Shina-
+gawa Season Terrace Health Care Clinic in Tokyo, Japan, from August 2022 to December
+2022. This study was registered in the UMIN-CTR (UMIN000047852) after approval was
+obtained from the Ethics Committee of Kobuna Orthopedic Clinic (approval number:
+MK-2204-01, approval date: 12 May 2022). Before the study was conducted, the purpose
+and procedures of the study and the rights of the participants were fully explained to the
+participants, and written consent was obtained. The study was conducted in accordance
+with the Declaration of Helsinki (Fortaleza, revised in 2013) and the Ethical Guidelines
+for Life Science and Medical Research Involving Human Subjects (Ministry of Education,
+Culture, Sports, Science and Technology, Ministry of Health, Labour and Welfare, and
+Ministry of Economy, Trade and Industry Notification No. 1, 2021).
+2.2. Participants
+Participants were included according to the inclusion and exclusion criteria. The
+inclusion criteria were between 20 and 64 years of age and a BMI of greater than 23 and
+less than 30. The exclusion criteria were as follows: (1) a history of serious diseases such as
+cerebrovascular, cardiac, hepatic, gastrointestinal, endocrine, or metabolic diseases; (2) use
+of drugs that may affect obesity, hyperlipidemia, or lipid metabolism; (3) inability to stop
+consuming health foods or supplements that may affect obesity, hyperlipidemia, or lipid
+metabolism; (4) heavy smoking; (5) heavy drinking; (6) serious drug or food allergies;
+(7) metal implants at the computed tomography (CT) scan site due to surgery; (8) a cardiac
+pacemaker or implantable cardioverter-defibrillator; (9) pregnancy, lactation, or expectation
+of becoming pregnant during this study; (10) participating or intending to participate in
+other food studies, drug use studies, or cosmetic or drug application studies during this
+study; and (11) any other reason making participation inappropriate as deemed by the
+principal investigator.
+2.3. Intervention
+The test foods were probiotic capsules containing 1 × 1010 colony-forming units
+(CFUs) of B. longum BB536 and 5 × 109 CFU of B. breve MCC1274 (B-3) per 2 capsules and
+placebo capsules without bifidobacteria. These test foods were provided by Morinaga Milk
+Industry (Tokyo, Japan). The taste, smell, and appearance of the test foods were confirmed
+to be indistinguishable by an independent investigator before and at the end of this study.
+Participants took 2 capsules with water daily for 16 weeks.
+The intake of supplements including Lactobacillus, Bifidobacterium, or oligosaccharides
+was prohibited during this study. Participants were informed to refrain from consuming
+functional foods claiming fat reduction or improvement of obesity. If they ingested these
+prohibited things, they were recorded in the participant’s diary during the study period.
+
+
+--- PAGE 3 ---
+Nutrients 2024, 16, 815 3 of 10
+2.4. Primary Outcomes
+The primary outcome was body composition. Abdominal fat was measured using
+CT with high accuracy (Supria Advance; Hitachi, Ltd., Tokyo, Japan). Visceral fat area,
+subcutaneous fat area, and total fat area were calculated using a software (FAT Scan Ver.
+4.0; East Japan Technical Laboratory Inc., Ibaraki, Japan). In addition, body fat percentage
+and body fat mass were measured using a multifrequency bioelectrical impedance device
+(InBody 470; InBody Japan, Inc., Tokyo, Japan). All measurements were performed after an
+overnight fast and at the same time in the morning.
+2.5. Secondary Outcomes
+Secondary outcomes included the following items: anthropometric data (weight, BMI,
+waist circumference, waist–hip circumference ratio) and blood parameters (serum lipids,
+blood glucose-related variables, liver function, and inflammation markers).
+Weight was measured using an Inbody 470, and BMI was calculated automatically
+using a manually measured value for height. Waist circumference was measured at the
+midpoint between the lower edge of the ribs and the upper edge of the iliac crest.
+Blood samples were collected and analyzed by LSI Medience Corporation (Tokyo,
+Japan). Blood was collected after an overnight fast. Total cholesterol, low-density lipopro-
+tein cholesterol, high-density lipoprotein cholesterol, triglycerides (TGs), fasting blood
+glucose, HbA1c, insulin, glycoalbumin, high-sensitivity C-reactive protein (hCRP), white
+blood cells (WBCs), red blood cells (RBCs), hemoglobin, hematocrit, platelets, leukocytes,
+total protein, albumin, total bilirubin, aspartate transaminase, alanine aminotransaminase,
+alkaline phosphatase, γ-glutamyl transpeptidase, lactate dehydrogenase, urea nitrogen,
+creatinine, uric acid, sodium, chloride, potassium, and calcium were measured via blood
+tests for efficacy and safety analysis.
+All measurements were performed 4 weeks before the start of the intake period
+(baseline) and at the endpoint of the intake period (week 16).
+2.6. Diary Survey
+Participants recorded their intake of test foods, medications, physical condition, exer-
+cise, and diet in a diary. These records were kept daily from baseline until the endpoint of
+week 16. In addition, they recorded their diet and the quantity in detail for 3 consecutive
+days before the start of the intake period (week 0) and the endpoint of week 16. Dietitians
+analyzed the dietary records and calculated the 3-day average for total energy, protein,
+fat, carbohydrate, and fiber intake using Excel Eiyokun ver. 8.0 (Kenpakusha Inc., Tokyo,
+Japan).
+2.7. Safety Assessment
+At baseline and week 16, the principal investigator interviewed the participants to
+assess their health status. Blood and urine tests were performed at baseline and week 16.
+For the urine tests, urine protein, sugar, bilirubin, ketone bodies, occult blood, urobilinogen,
+pH, and specific gravity were measured. Adverse events were reported by the participants
+in their diaries or identified by blood and urine test results, judged according to the criteria
+of “Judgment criteria for adverse drug reactions and abnormal laboratory values in clinical
+trials with antimicrobial agents” by the Japanese Society of Chemotherapy. The severity
+of adverse events and the association between adverse events and the intake of test foods
+were evaluated by the principal investigator. The number and incidence of adverse events
+were calculated for each group.
+2.8. Sample Size
+The sample size was calculated with reference to a previous clinical study that showed
+a reduction in visceral fat area with probiotic intervention [ 15]. Based on the data on
+the change in visceral fat area (calculation of effect size 0.547), the needed number of
+participants was 86 using G*power 3.1.9.7 (http://www.gpower.hhu.de/, accessed on 31
+
+
+--- PAGE 4 ---
+Nutrients 2024, 16, 815 4 of 10
+January 2022) to detect a difference between groups at a 5% significance level with 80%
+statistical power. A total of 100 participants were required, considering a dropout rate of
+about 10%.
+2.9. Randomization
+Participants were randomly divided 1:1 into two groups using stratified randomization
+by an independent investigator. The stratification factor was visceral fat area (<100 and
+≥100). The allocation sequence was sealed to both participants and investigators until the
+end of the study, and the database was locked.
+2.10. Statistical Analysis
+The primary population for the efficacy analysis was the per-protocol set (PPS) popula-
+tion. Baseline characteristics were compared by Fisher’s exact test for categorical variables
+and two-sample t test for continuous variables. Primary and secondary outcomes were
+analyzed by covariance (ANCOVA) adjusted for baseline values. In addition, within-group
+changes from baseline to week 16 were analyzed by a pairedt test. The incidence of adverse
+events was compared between groups by Fischer’s exact test. Two-sided p values less
+than 0.05 were considered to indicate statistical significance. All statistical analyses were
+performed using IBM® SPSS ver. 28.0 (IBM Corp, Armonk, NY, USA).
+3. Results
+3.1. Participants
+The study flow chart is shown in Figure 1. During recruitment (June 2022–July 2022),
+486 participants provided written consent, and 386 participants were judged to be ineligible
+due to the failure to meet inclusion criteria ( n = 28), declining to participate ( n = 3), or
+other reasons (their medical history, medication status or the levels of blood parameters
+to exclude sick participants judged by the principal investigator, heavy drinking, serious
+allergy, etc.;n = 355). A total of 100 participants were enrolled according to the inclusion
+and exclusion criteria (placebo group; n = 50, probiotics group; n = 50). All participants
+were judged to be healthy based on interviews and blood and urine tests performed by
+the principal investigator. The safety analysis set (SAF) included 100 participants who
+consumed the test food at least once. In total, 6 participants (placebo group;n = 3, probiotics
+group; n = 3) dropped out during the intake period, and 94 participants completed the
+study. Thus, 94 participants (placebo group; n = 47, probiotics group; n = 47) were included
+in the PPS analysis.
+Nutrients 2024, 16, x FOR PEER REVIEW 5 of 11  
+ 
+ 
+Figure 1. Study ﬂow chart. 
+3.2. Participant Characteristics 
+The baseline characteristics of the participants are shown in Table 1. All participants 
+were between the ages of 29 and 64 (mean ± SD in placebo group; 50.11 ± 7.21, probiotics 
+group; 50.43 ± 7.59). There were no signiﬁcant diﬀerences in baseline information between 
+the two groups. The nutritional composition at week 0 and week 16 was assessed for total 
+energy, protein, fat, carbohydrate, and ﬁber intake (Table 2). For all nutrients, there were 
+no items whose intake changed signiﬁcantly from week 0 to week 16. Fat intake was sig-
+niﬁcantly higher in the probiotics group than in the placebo group at week 0 (p < 0.05). 
+This diﬀerence was considered small and judged to be acceptable for conducting the study 
+by the principal investigator. The investigators conﬁrmed that the participants did not 
+change their dietary habits before and after this study. 
+Table 1. Baseline characteristics of the participants in the PPS population. 
+ Placebo (n = 47) Probiotics (n = 47) p Value Mean ± SD Mean ± SD 
+Age 50.11 ± 7.21 50.43 ± 7.59 0.835 b 
+Sex (Male/Female) 33/14 33/14 1.000 c 
+Total fat area (cm2) a 315.68 ± 68.52 316.61 ± 58.16 0.953 b 
+Visceral fat area (cm2) a 112.77 ± 36.61 115.32 ± 35.91 0.741 b 
+Subcutaneous fat area (cm2) a 202.91 ± 37.80 201.28 ± 35.65 0.904 b 
+Body fat mass (kg) 22.45 ± 4.68 22.55 ± 5.07 0.928 b 
+Body fat percentage (%) 30.65 ± 6.83 30.83 ± 7.22 0.903 b 
+Body weight (kg) 73.74 ± 7.69 73.55 ± 7.51 0.900 b 
+BMI (kg/m2) 26.02 ± 1.87 26.20 ± 1.77 0.643 b 
+a: Three participants in the placebo group and two participants in the probiotics group were ex-
+cluded due to missing CT data. b: p values determined by a two-sample t test. c: p values determined 
+by Fisher’s exact test. 
+Table 2. Nutrition intake during the intervention. 
+ Group Week 0 Week 16 p Value (vs. Week 0) b Mean ± SD Mean ± SD 
+Energy (kcal/day) Placebo (n = 47) 1761.1 ± 385.6 1799.7 ± 456.4 0.527  Probiotics (n = 47) 1851.9 ± 516.7 1871.6 ± 362.9 0.767  p value a 0.337 0.400  
+Protein (g/day) Placebo ( n = 47) 64.0 ± 16.0 66.4 ± 18.7 0.344 
+Figure 1. Study flow chart.
+
+
+--- PAGE 5 ---
+Nutrients 2024, 16, 815 5 of 10
+3.2. Participant Characteristics
+The baseline characteristics of the participants are shown in Table 1. All participants
+were between the ages of 29 and 64 (mean ± SD in placebo group; 50.11 ± 7.21, probiotics
+group; 50.43 ± 7.59). There were no significant differences in baseline information between
+the two groups. The nutritional composition at week 0 and week 16 was assessed for
+total energy, protein, fat, carbohydrate, and fiber intake (Table 2). For all nutrients, there
+were no items whose intake changed significantly from week 0 to week 16. Fat intake was
+significantly higher in the probiotics group than in the placebo group at week 0 (p < 0.05).
+This difference was considered small and judged to be acceptable for conducting the study
+by the principal investigator. The investigators confirmed that the participants did not
+change their dietary habits before and after this study.
+Table 1. Baseline characteristics of the participants in the PPS population.
+Placebo (n = 47) Probiotics ( n = 47)
+p Value
+Mean ± SD Mean ± SD
+Age 50.11 ± 7.21 50.43 ± 7.59 0.835 b
+Sex (Male/Female) 33/14 33/14 1.000 c
+Total fat area (cm2) a 315.68 ± 68.52 316.61 ± 58.16 0.953 b
+Visceral fat area (cm2) a 112.77 ± 36.61 115.32 ± 35.91 0.741 b
+Subcutaneous fat area (cm2) a 202.91 ± 37.80 201.28 ± 35.65 0.904 b
+Body fat mass (kg) 22.45 ± 4.68 22.55 ± 5.07 0.928 b
+Body fat percentage (%) 30.65 ± 6.83 30.83 ± 7.22 0.903 b
+Body weight (kg) 73.74 ± 7.69 73.55 ± 7.51 0.900 b
+BMI (kg/m2) 26.02 ± 1.87 26.20 ± 1.77 0.643 b
+a: Three participants in the placebo group and two participants in the probiotics group were excluded due to
+missing CT data. b: p values determined by a two-sample t test. c: p values determined by Fisher’s exact test.
+Table 2. Nutrition intake during the intervention.
+Group
+Week 0 Week 16
+p Value (vs. Week 0) b
+Mean ± SD Mean ± SD
+Energy (kcal/day) Placebo ( n = 47) 1761.1 ± 385.6 1799.7 ± 456.4 0.527
+Probiotics (n = 47) 1851.9 ± 516.7 1871.6 ± 362.9 0.767
+p value a 0.337 0.400
+Protein (g/day) Placebo ( n = 47) 64.0 ± 16.0 66.4 ± 18.7 0.344
+Probiotics (n = 47) 67.0 ± 18.6 70.2 ± 14.2 0.154
+p value a 0.399 0.269
+Fat (g/day) Placebo ( n = 47) 57.4 ± 17.7 60.0 ± 21.8 0.367
+Probiotics (n = 47) 67.5 ± 23.0 67.5 ± 20.1 0.987
+p value a 0.018 0.088
+Carbohydrates (g/day) Placebo ( n = 47) 222.0 ± 56.9 236.2 ± 57.3 0.064
+Probiotics (n = 47) 226.0 ± 69.0 232.6 ± 48.4 0.467
+p value a 0.758 0.741
+Fiber (g/day) Placebo ( n = 47) 10.6 ± 3.5 11.4 ± 3.7 0.173
+Probiotics (n = 47) 10.7 ± 4.5 11.3 ± 3.0 0.410
+p value a 0.869 0.907
+a: p values determined by a two-sample t test. b: p values determined by a paired t test.
+3.3. Effects on Body Composition and Blood Parameters
+The measurement data are shown in Table 3. Due to unsuitable CT images, CT data
+were missing for five participants (placebo group; n = 3, probiotics group; n = 2). The
+probiotics group showed a significant reduction in their visceral fat area and total fat
+area compared to those in the placebo group (p < 0.05). There were no significant group
+
+
+--- PAGE 6 ---
+Nutrients 2024, 16, 815 6 of 10
+differences in the subcutaneous fat area. The placebo group showed significant increases
+in body fat mass, body fat percentage, body weight, and BMI from baseline to week 16
+(p < 0.05). In contrast, no significant increases were observed in the probiotics group.
+In particular, the increase in BMI was significantly suppressed in the probiotics group
+compared to the placebo group ( p < 0.05). The probiotics group also had significantly
+decreased serum TG levels from baseline to week 16, and there was a significant group
+difference from the placebo group (p < 0.05). No significant differences were observed in
+cholesterol levels or markers related to blood glucose, liver function, and inflammation.
+Table 3. Measurement of body composition and blood parameters.
+Group
+Baseline Week 16
+p Value (vs. Baseline) c
+Mean ± SEM Mean ± SEM
+CT measurement
+Total fat area (cm2) a Placebo (n = 44) 315.68 ± 11.71 320.95 ± 11.04 0.115
+Probiotics (n = 45) 316.61 ± 10.43 312.42 ± 10.87 0.233
+p value b 0.049
+Visceral fat area (cm2) a Placebo (n = 44) 112.77 ± 5.52 115.69 ± 5.70 0.199
+Probiotics (n = 45) 115.32 ± 5.35 111.50 ± 5.31 0.068
+p value b 0.031
+Subcutaneous fat area (cm2) a Placebo (n = 44) 202.91 ± 10.33 205.26 ± 10.09 0.280
+Probiotics (n = 45) 201.28 ± 8.67 200.91 ± 9.17 0.864
+p value b 0.373
+Bioelectrical impedance analysis
+Body fat mass (kg) Placebo ( n = 47) 22.45 ± 0.68 23.32 ± 0.64 <0.001
+Probiotics (n = 47) 22.54 ± 0.74 22.86 ± 0.79 0.272
+p value b 0.107
+Body fat percentage (%) Placebo ( n = 47) 30.64 ± 1.00 31.45 ± 0.92 <0.001
+Probiotics (n = 47) 30.83 ± 1.05 31.10 ± 1.08 0.401
+p value b 0.158
+Other parameters
+Body weight (kg) Placebo ( n = 47) 73.74 ± 1.12 74.64 ± 1.14 <0.001
+Probiotics (n = 47) 73.55 ± 1.10 73.82 ± 1.13 0.244
+p value b 0.056
+BMI (kg/m2) Placebo (n = 47) 26.02 ± 0.27 26.35 ± 0.27 <0.001
+Probiotics (n = 47) 26.20 ± 0.26 26.28 ± 0.27 0.319
+p value b 0.046
+Triglycerides (mg/dL) Placebo ( n = 47) 120.49 ± 7.84 127.57 ± 10.44 0.342
+Probiotics (n = 47) 130.87 ± 11.78 108.98 ± 7.29 0.028
+p value b 0.021
+a: Three participants in the placebo group and two participants in the probiotics group were excluded due to
+missing CT data. b: p values determined by ANCOVA adjusted for the baseline. c: p values determined by a
+paired t test.
+We also investigated the correlations between the reduction in visceral fat area and age
+or BMI by calculating the correlation coefficient. In addition, we compared the reduction in
+visceral fat area in males and females in the probiotics group by a two-sample t test. The
+reduction in visceral fat was shown to be independent of age, BMI, or sex.
+3.4. Safety Assessment
+There were 51 adverse events observed in the participants’ diaries and in blood and
+urine tests during the study period. The common adverse events were common cold or
+COVID-19 (11 events), cavity (5 events), and fluctuations in triglyceride (5 events). There
+was no significant difference in the incidence of adverse events between the two groups.
+
+
+--- PAGE 7 ---
+Nutrients 2024, 16, 815 7 of 10
+All adverse events were judged to be non-serious by the principal investigator. None of the
+adverse events were related to the intake of test foods, and there were no side effects.
+4. Discussion
+In this study, 16 weeks of B. longum BB536 and B. breve MCC1274 intake significantly
+reduced the visceral fat area and total fat area in healthy normal and overweight adults
+compared to the placebo group. BMI and TG levels also showed significant differences
+between the groups. A previous study showed that 1 × 1010 CFU of B. longum BB536,
+5 × 109 CFU of B. breve MCC1274 and 250 mg of N-acetylglucosamine reduced the total
+fat area and BMI after 24 weeks of intervention [14]. Similarly, the present study showed
+the efficacy of these probiotics without any substrates on a wide range of obesity-related
+parameters. Overweight and obesity are known to occur regardless of age, sex, or race [1].
+In addition, visceral fat has been suggested to be associated with the risk of diseases such
+as metabolic syndrome [16]. Therefore, prevention and improvement in fat accumulation
+are important for maintaining health. In this study, participants’ lifestyles were monitored
+with a diary, and they did not change their daily diet or exercise habits during the test
+period. Thus, 16 weeks of probiotic intake resulted in promising results for visceral fat area
+reduction. We also found that the reduction in visceral fat area was independent of age and
+sex, suggesting that healthy normal and overweight adults may benefit from probiotics.
+It has been reported that there is seasonal variation in body fat levels, with an increase
+from summer to winter [ 17]. This study was conducted from summer to winter, and a
+significant increase was observed in the placebo group (Table 3). In the probiotics group,
+there was no significant increase in body fat from baseline, suggesting that the intake of
+B. longum BB536 and B. breve MCC1274 suppressed the increase in body fat level. On the
+other hand, the significant differences between groups in body fat level that were observed
+in previous studies with B. breve MCC1274 alone were not observed in this study [11–13].
+The number of bacteria consumed were 2 × 1010 or 5 × 1010 CFU [11,12], and the method
+of body fat measurement was dual-energy X-ray absorptiometry (DEXA) [13], so the test
+conditions of previous studies were different from those of this study. Therefore, we
+consider that the body fat results in the present study may not be inconsistent with those of
+previous studies.
+The intake of B. longum BB536 and B. breve MCC1274 resulted in a significant reduction
+in abdominal fat level. It is known that obesity is associated with impaired intestinal barrier
+function, and proinflammatory agents such as LPS can translocate into the blood [ 18].
+Inflammation is reported to induce excess fat accumulation or insulin resistance [18–20]. A
+previous study showed that B. breve MCC1274 could promote Claudin-1 gene expression
+and enhance the intestinal barrier function in vitro [9]. Therefore, it is possible that B. breve
+MCC1274 contributed to the fat level reduction via the suppression of inflammation by
+enhancing the intestinal barrier function. A previous clinical study of B. breve MCC1274
+showed a trend towards a decrease in the levels of hCRP , an inflammatory marker [11]. In
+the present study, the hCRP levels at baseline and week 16 were low and in the healthy
+range. We hypothesize that the inflammation was too low to assess the effect of probiotics,
+because the participants were all healthy. The previous study included some participants
+who were being treated for diabetes, hypertension, or hyperlipidemia. Since chronic
+inflammation can occur in these diseases [21–23], it is assumed that the anti-inflammatory
+effect of probiotics is apparent when inflammation occurs.
+Recently, the beneficial effects of postbiotics such as bacterial metabolites have been
+reported [24]. B. longum BB536 and B. breve MCC1274 are known to produce acetic acid,
+which is a short-chain fatty acid [9,25]. Short-chain fatty acids are reported to promote the
+expression of GPR41 in the sympathetic nervous system andGPR43 in adipose tissue [26,27].
+These genes are reported to enhance energy consumption or suppress fat accumulation. It
+is assumed that the production of acetic acid might promote the expression of these genes
+and contribute to the reduction in visceral fat area. B. longum BB536 and B. breve MCC1274
+also have a high capacity for indole-3-lactate (ILA) production [28]. ILA activates the aryl
+
+
+--- PAGE 8 ---
+Nutrients 2024, 16, 815 8 of 10
+hydrocarbon receptor (AhR), and AhR activation is implicated in the enhancement of the
+intestinal barrier function and reduction in inflammation [29–31]. Furthermore, B. breve
+MCC1274 has a high capacity for conjugated linoleic acid (CLA) production; CLA is a
+type of unsaturated fatty acid that is produced from linoleic acid and has been reported
+to be a metabolic influencer, including antiobesity and antidiabetes activities [ 32]. For
+example, CLA administration has been reported to suppress body weight gain in ob/ob
+mice, decrease blood IL-1β levels, and increase the expression of ZO-1, an intestinal barrier
+factor [33]. Therefore, the postbiotics produced by B. longum BB536 and B. breve MCC1274
+could have produced a fat-reducing effect.
+In addition, this study showed a significant decrease in blood TG levels in the probi-
+otics group. The administration of fermented milk with B. longum BB536 suppressed the
+elevation of blood TG levels compared to those with fermented milk without B. longum
+BB536 in vivo [8]. B. longum APC1472, which is the same species as B. longum BB536,
+inhibited weight gain and fat accumulation induced by a high-fat diet in vivo [34]. Blood
+corticosterone levels were also significantly lower in the APC1472 group than in the control
+group. Corticosterone (cortisol in humans) is a hormone induced by chronic stress and is
+suggested to be associated with visceral fat accumulation [35]. The lower level of corticos-
+terone was considered to be one of the mechanisms of the beneficial effect in the APC1472
+group. It was speculated that a similar mechanism may be mediated by B. longum BB536,
+which belongs to the same bacterial species. B. breve MCC1274 was also reported to inhibit
+weight gain and fat accumulation in vivo [10]. In the MCC1274 group, increased expression
+of lipid metabolism genes was observed. Therefore, it is assumed that B. longum BB536 or
+B. breve MCC1274 decreased TG levels through hormonal regulation and lipid metabolism
+enhancement. TG levels are known to correlate with the visceral fat area in non-diabetic
+obese adults [36], so the reduction in TG and visceral fat levels could be reasonable. In
+summary, B. longum BB536 and B. breve MCC1274 appeared to have beneficial effects on
+body composition and serum lipid levels through anti-inflammatory activity, postbiotic
+production, and lipid metabolism.
+No side effects were observed after 16 weeks of consumption of the test food, confirm-
+ing its safety. B. longum BB536 and B. breve MCC1274 have been shown to be safe in multiple
+clinical studies and have received safety certifications as being generally recognized as safe
+(GRAS) (BB536; GRAS notice No. GRN 268, MCC1274; GRAS notice No. GRN 1002). In this
+study, the combination of these probiotics was confirmed to be safe as well. There are some
+limitations in this study. The participants were only healthy normal and overweight adults,
+so the effects on children or patients with obesity or diabetes are not clear. Additionally,
+an effect on abdominal fat was observed at 16 weeks, but the effect at shorter periods is
+unknown. Therefore, further investigation is needed to clarify the effects of B. longum
+BB536 and B. breve MCC1274.
+5. Conclusions
+This study showed that B. longum BB536 and B. breve MCC1274 may reduce visceral
+fat and total fat levels in healthy normal and overweight adults compared to the placebo
+group. In addition, BMI and TG levels also showed significant differences between the
+groups. Participants did not change their daily diet or exercise habits, so 16 weeks of
+probiotic intake showed a positive effect on visceral fat reduction.
+Author Contributions: Formulated the research questions: S.S., S.A., N.I. and M.T.; conceived and
+designed the study: S.S., S.A. and N.I.; conducted the study and analyzed the data: S.S., S.A., K.Y.
+and N.I.; was responsible for carrying out the research: T.S.; interpreted the findings: S.S., S.A., N.I.
+and M.T.; drafted the article: S.S.; revised the manuscript: S.A., K.K., N.I. and M.T. All authors have
+read and agreed to the published version of the manuscript.
+Funding: This study was funded by Morinaga Milk Industry Co., Ltd. The funder provided support
+in the form of salaries for some authors.
+
+
+--- PAGE 9 ---
+Nutrients 2024, 16, 815 9 of 10
+Institutional Review Board Statement: The study was conducted in compliance with the Declaration
+of Helsinki (Fortaleza, revised in 2013) and the Ethical Guidelines for Life Sciences and Medical
+Research Involving Human Subjects (Ministry of Education, Culture, Sports, Science and Technology;
+Ministry of Health, Labor and Welfare; and Ministry of Economy, Trade and Industry Notification No.
+1, 2021). This study was registered in the UMIN-CTR (UMIN000047852) after approval was obtained
+from the Ethics Committee of Kobuna Orthopedic Clinic (approval number: MK-2204-01, approval
+date: 12 May 2022).
+Informed Consent Statement: Informed consent was obtained from all participants involved in
+the study.
+Data Availability Statement: The data presented in this study can be found in this published article.
+Acknowledgments: We would like to thank the staff of KSO Corporation for supporting this study.
+Conflicts of Interest: S.S., S.A., K.K., K.Y., N.I. and M.T. are employed at Morinaga Milk Industry
+Co., Ltd. T.S. has no conflicts to declare. The authors declare that this study received funding from
+Morinaga Milk Industry Co., Ltd. The funder was not involved in the study design, collection,
+analysis, interpretation of data, the writing of this article or the decision to submit it for publication.
+References
+1. Chooi, Y.C.; Ding, C.; Magkos, F. The epidemiology of obesity. Metabolism 2019, 92, 6–10. [CrossRef]
+2. Apovian, C.M. Obesity: Definition, comorbidities, causes, and burden. Am. J. Manag. Care 2016, 22, s176–s185. [PubMed]
+3. Mittal, B. Subcutaneous adipose tissue & visceral adipose tissue. Indian. J. Med. Res. 2019, 149, 571–573. [CrossRef] [PubMed]
+4. Safaei, M.; Sundararajan, E.A.; Driss, M.; Boulila, W.; Shapi′i, A. A systematic literature review on obesity: Understanding the
+causes & consequences of obesity and reviewing various machine learning approaches used to predict obesity. Comput. Biol. Med.
+2021, 136, 104754. [CrossRef]
+5. Wadden, T.A.; Tronieri, J.S.; Butryn, M.L. Lifestyle modification approaches for the treatment of obesity in adults.Am. Psychol.
+2020, 75, 235–251. [CrossRef] [PubMed]
+6. Wicinski, M.; Gebalski, J.; Golebiewski, J.; Malinowski, B. Probiotics for the Treatment of Overweight and Obesity in Humans—A
+Review of Clinical Trials. Microorganisms 2020, 8, 1148. [CrossRef]
+7. Angelakis, E.; Armougom, F.; Million, M.; Raoult, D. The relationship between gut microbiota and weight gain in humans. Future
+Microbiol. 2012, 7, 91–109. [CrossRef]
+8. El-Zahar, K.M.; Hassan, M.F.Y.; Al-Qaba, S.F. Protective Effect of Fermented Camel Milk Containing Bifidobacterium longum
+BB536 on Blood Lipid Profile in Hypercholesterolemic Rats. J. Nutr. Metab. 2021, 2021, 1557945. [CrossRef]
+9. Kurose, Y.; Minami, J.; Sen, A.; Iwabuchi, N.; Abe, F.; Xiao, J.; Suzuki, T. Bioactive factors secreted by Bifidobacterium breve B-3
+enhance barrier function in human intestinal Caco-2 cells. Benef. Microbes 2019, 10, 89–100. [CrossRef]
+10. Kondo, S.; Kamei, A.; Xiao, J.Z.; Iwatsuki, K.; Abe, K. Bifidobacterium breve B-3 exerts metabolic syndrome-suppressing effects in
+the liver of diet-induced obese mice: A DNA microarray analysis. Benef. Microbes 2013, 4, 247–251. [CrossRef]
+11. Minami, J.; Kondo, S.; Yanagisawa, N.; Odamaki, T.; Xiao, J.Z.; Abe, F.; Nakajima, S.; Hamamoto, Y.; Saitoh, S.; Shimoda, T.
+Oral administration of Bifidobacterium breve B-3 modifies metabolic functions in adults with obese tendencies in a randomised
+controlled trial. J. Nutr. Sci. 2015, 4, e17. [CrossRef] [PubMed]
+12. Minami, J.; Iwabuchi, N.; Tanaka, M.; Yamauchi, K.; Xiao, J.Z.; Abe, F.; Sakane, N. Effects of Bifidobacterium breve B-3 on body
+fat reductions in pre-obese adults: A randomized, double-blind, placebo-controlled trial. Biosci. Microbiota Food Health 2018, 37,
+67–75. [CrossRef]
+13. Sung, H.K.; Youn, S.J.; Choi, Y.; Eun, S.W.; Shin, S.M. Body Fat Reduction Effect of Bifidobacterium breve B-3: A Randomized,
+Double-Blind, Placebo Comparative Clinical Trial. Nutrients 2022, 15, 28. [CrossRef] [PubMed]
+14. Ishii, Y.; Matsuoka, S.; Kitano, R.; Yui, K.; Hosoi, T.; Orimo, H. Effects of Bifidobacterium bifidum B-3 and BB536 and N-
+acetylglucosamine-containing supplements on body composition and intestinal flora in mildly obese individuals: A randomized,
+double-blind, parallel-group comparative study. J. Jpn. Soc. Study Obes. 2016, 22, 133–144.
+15. Kadooka, Y.; Sato, M.; Imaizumi, K.; Ogawa, A.; Ikuyama, K.; Akai, Y.; Okano, M.; Kagoshima, M.; Tsuchida, T. Regulation of
+abdominal adiposity by probiotics (Lactobacillus gasseri SBT2055) in adults with obese tendencies in a randomized controlled
+trial. Eur. J. Clin. Nutr. 2010, 64, 636–643. [CrossRef] [PubMed]
+16. Shah, R.V .; Murthy, V .L.; Abbasi, S.A.; Blankstein, R.; Kwong, R.Y.; Goldfine, A.B.; Jerosch-Herold, M.; Lima, J.A.; Ding, J.; Allison,
+M.A. Visceral adiposity and the risk of metabolic syndrome across body mass index: The MESA Study. JACC Cardiovasc. Imaging
+2014, 7, 1221–1235. [CrossRef] [PubMed]
+17. Tanaka, N.; Okuda, T.; Shinohara, H.; Yamasaki, R.S.; Hirano, N.; Kang, J.; Ogawa, M.; Nishi, N.N. Relationship between Seasonal
+Changes in Food Intake and Energy Metabolism, Physical Activity, and Body Composition in Young Japanese Women.Nutrients
+2022, 14, 506. [CrossRef]
+18. Cani, P .D.; Amar, J.; Iglesias, M.A.; Poggi, M.; Knauf, C.; Bastelica, D.; Neyrinck, A.M.; Fava, F.; Tuohy, K.M.; Chabo, C.; et al.
+Metabolic endotoxemia initiates obesity and insulin resistance. Diabetes 2007, 56, 1761–1772. [CrossRef]
+
+
+--- PAGE 10 ---
+Nutrients 2024, 16, 815 10 of 10
+19. Monteiro, R.; Azevedo, I. Chronic inflammation in obesity and the metabolic syndrome. Mediat. Inflamm. 2010, 2010, 289645.
+[CrossRef]
+20. Liu, L.; Mei, M.; Yang, S.; Li, Q. Roles of chronic low-grade inflammation in the development of ectopic fat deposition.Mediat.
+Inflamm. 2014, 2014, 418185. [CrossRef]
+21. Xiao, L.; Harrison, D.G. Inflammation in Hypertension. Can. J. Cardiol. 2020, 36, 635–647. [CrossRef] [PubMed]
+22. Esteve, E.; Ricart, W.; Fernandez-Real, J.M. Dyslipidemia and inflammation: An evolutionary conserved mechanism. Clin. Nutr.
+2005, 24, 16–31. [CrossRef] [PubMed]
+23. Berbudi, A.; Rahmadika, N.; Tjahjadi, A.I.; Ruslami, R. Type 2 Diabetes and its Impact on the Immune System. Curr. Diabetes Rev.
+2020, 16, 442–449. [CrossRef] [PubMed]
+24. Park, S.J.; Sharma, A.; Lee, H.J. Postbiotics against Obesity: Perception and Overview Based on Pre-Clinical and Clinical Studies.
+Int. J. Mol. Sci. 2023, 24, 6414. [CrossRef] [PubMed]
+25. Van der Meulen, R.; Makras, L.; Verbrugghe, K.; Adriany, T.; De Vuyst, L.In vitro kinetic analysis of oligofructose consumption by
+Bacteroides and Bifidobacterium spp. indicates different degradation mechanisms. Appl. Environ. Microbiol. 2006, 72, 1006–1012.
+[CrossRef] [PubMed]
+26. Kimura, I.; Inoue, D.; Maeda, T.; Hara, T.; Ichimura, A.; Miyauchi, S.; Kobayashi, M.; Hirasawa, A.; Tsujimoto, G. Short-chain fatty
+acids and ketones directly regulate sympathetic nervous system via G protein-coupled receptor 41 (GPR41). Proc. Natl. Acad. Sci.
+USA 2011, 108, 8030–8035. [CrossRef] [PubMed]
+27. Kimura, I.; Ozawa, K.; Inoue, D.; Imamura, T.; Kimura, K.; Maeda, T.; Terasawa, K.; Kashihara, D.; Hirano, K.; Tani, T.; et al. The
+gut microbiota suppresses insulin-mediated fat accumulation via the short-chain fatty acid receptor GPR43. Nat. Commun. 2013,
+4, 1829. [CrossRef]
+28. Sakurai, T.; Odamaki, T.; Xiao, J.Z. Production of Indole-3-Lactic Acid by Bifidobacterium Strains Isolated fromHuman Infants.
+Microorganisms 2019, 7, 340. [CrossRef]
+29. Roager, H.M.; Licht, T.R. Microbial tryptophan catabolites in health and disease. Nat. Commun. 2018, 9, 3294. [CrossRef]
+30. Lanis, J.M.; Alexeev, E.E.; Curtis, V .F.; Kitzenberg, D.A.; Kao, D.J.; Battista, K.D.; Gerich, M.E.; Glover, L.E.; Kominsky, D.J.;
+Colgan, S.P . Tryptophan metabolite activation of the aryl hydrocarbon receptor regulates IL-10 receptor expression on intestinal
+epithelia. Mucosal Immunol. 2017, 10, 1133–1144. [CrossRef]
+31. Postal, B.G.; Ghezzal, S.; Aguanno, D.; André, S.; Garbin, K.; Genser, L.; Brot-Laroche, E.; Poitou, C.; Soula, H.; Leturque, A.; et al.
+AhR activation defends gut barrier integrity against damage occurring in obesity. Mol. Metab. 2020, 39, 101007. [CrossRef]
+32. Koba, K.; Yanagita, T. Health benefits of conjugated linoleic acid (CLA). Obes. Res. Clin. Pract. 2014, 8, e525–e532. [CrossRef]
+33. Gao, S.; He, Y.; Zhang, L.; Liu, L.; Qu, C.; Zheng, Z.; Miao, J. Conjugated linoleic acid ameliorates hepatic steatosis by modulating
+intestinal permeability and gut microbiota in ob/ob mice. Food Nutr. Res. 2022, 66, 8226. [CrossRef]
+34. Schellekens, H.; Torres-Fuentes, C.; van de Wouw, M.; Long-Smith, C.M.; Mitchell, A.; Strain, C.; Berding, K.; Bastiaanssen, T.F.S.;
+Rea, K.; Golubeva, A.V .; et al. Bifidobacterium longum counters the effects of obesity: Partial successful translation from rodent
+to human. eBioMedicine 2021, 63, 103176. [CrossRef]
+35. Purnell, J.Q.; Kahn, S.E.; Samuels, M.H.; Brandon, D.; Loriaux, D.L.; Brunzell, J.D. Enhanced cortisol production rates, free
+cortisol, and 11beta-HSD-1 expression correlate with visceral fat and insulin resistance in men: Effect of weight loss. Am. J.
+Physiol. Endocrinol. Metab. 2009, 296, E351–E357. [CrossRef]
+36. Huang, C.Y.; Huang, H.L.; Yang, K.C.; Lee, L.T.; Yang, W.S.; Huang, K.C.; Tseng, F.Y. Serum Triglyceride Levels Independently
+Contribute to the Estimation of Visceral Fat Amount Among Nondiabetic Obese Adults. Medicine 2015, 94, e965. [CrossRef]
+[PubMed]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.

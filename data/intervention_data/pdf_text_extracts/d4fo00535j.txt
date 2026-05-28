@@ -1,0 +1,1009 @@
+
+
+--- PAGE 1 ---
+Food &
+Function
+PAPER
+Cite this: Food Funct., 2024, 15,
+8448
+Received 31st January 2024,
+Accepted 31st May 2024
+DOI: 10.1039/d4fo00535j
+rsc.li/food-function
+Biﬁdobacterium lactis IDCC 4301 ( B. lactis Fit™)
+supplementation eﬀects on body fat, serum
+triglyceride, and adipokine ratio in obese women:
+a randomized clinical trial
+Miji Lee,
+ †a,b Min Kyung Bok, a,b Kumhee Son,a,b Minjee Lee,
+ c HyunMin Park,c
+Jungwoo Yangd and Hyunjung Lim
+ *a,b
+Obesity is a common metabolic disease characterized by abnormal fat accumulation. It contributes to
+health issues, such as type 2 diabetes, cardiovascular disease, and dyslipidemia, necessitating continuous
+management through diet and physical activity. Probiotics, particularly Biﬁdobacterium lactis IDCC 4301
+(B. lactis Fit™), have shown promise in positively regulating the gut microbiota. Therefore, this study
+aimed to evaluate the anti-obesity e ﬀect of B. lactis IDCC 4301 ( B. lactis Fit™) in obese women. A ran-
+domized, double-blind, placebo-controlled, parallel-arm study was performed in 99 volunteers with a
+body mass index (BMI) of 25 –30 kg m
+−2. The participants were randomly assigned to probiotics ( n = 49,
+>5.0 × 10 9 CFU day −1) or placebo ( n = 50) groups. Body fat, lipid pro ﬁles, and adipokine levels were
+assessed at baseline and at 12 weeks. After 12 weeks, changes in total fat ( placebo −0.16 ± 0.83 kg; pro-
+biotics −0.45 ± 0.83 kg; p = 0.0407), trunk fat ( placebo −0.03 ± 0.50 kg; probiotics −0.22 ± 0.51 kg; p =
+0.0200), and serum triglyceride concentration ( placebo 13 ± 60 mg dL −1; probiotics −15 ± 62 mg dL −1; p
+= 0.0088) were signi ﬁcantly di ﬀerent between the groups. The di ﬀerence in total fat mass change
+between groups among postmenopausal women was greater than that of all women. A signi ﬁcant posi-
+tive correlation was found between the change in total fat mass and log leptin/adiponectin ratio ( R =
+0.371, p = 0.0112) in the probiotics group. In addition, BMI (26.6 ± 1.9 kg m −2 to 26.4 ± 2.0 kg m −2, p =
+0.0009) and leg fat (42 ± 5% to 41 ± 5%, p = 0.0006) signi ﬁcantly decreased in the probiotics group after
+12 weeks, but there was no di ﬀerence in the placebo group. In conclusion, B. lactis IDCC 4301 ( B. lactis
+Fit™) may be associated with body fat loss through changes in metabolic health parameters, such as
+serum triglyceride and adipokine levels. The clinical trial registry number is KCT0007425 ( https:/ /cris.nih.
+go.kr).
+1. Introduction
+Obesity is a metabolic disease characterized by an imbalance
+in energy metabolism, resulting in abnormal or excessive fat
+accumulation. The prevalence of overweight/obesity in South
+Korea is 37.2% in 2022 and has increased rapidly.
+1 As obesity
+can cause type 2 diabetes mellitus, cardiovascular disease
+(CVD) and dyslipidemia, systematic and continuous manage-
+ment is required. 2 Although the overweight/obesity rate among
+Korean women is lower than that of men, body fat compo-
+sition can be a ﬀected by hormonal changes after menopause,
+which can a ﬀect obesity.
+1,3 Therefore, preventing overweight
+and obesity through dietary and physical activity interventions
+is important. These interventions can change gut microbiota
+through strain diversification, and these changes have been
+found to be associated with changes in body metabolism and
+body fat mass.
+4
+Probiotics, which can modulate the host immune response
+and influence various physiological processes, are attracting
+attention for their potential use in improving obesity.
+5,6
+Notably, research has indicated significant di ﬀerences in the
+gut microbiota composition between obese and lean individ-
+uals, sparking interest in strategies that modulate the intesti-
+nal microbial environment to prevent obesity.
+7 Ingested pro-
+biotics contribute to the establishment of a favorable intestinal† The author is first author.
+aDepartment of Medical Nutrition, Graduate School of East-West Medical Science,
+Kyung Hee University, Yongin 17104, South Korea. E-mail: hjlim@khu.ac.kr
+bResearch Institute of Medical Nutrition, Kyung Hee University, Seoul 02447,
+South Korea
+cIldong Bioscience, Pyeongtaek-si, Gyeonggi-do 17957, South Korea
+dDepartment of Microbiology, College of Medicine, Dongguk University, Gyeongju,
+38066, Republic of Korea
+8448 | Food Funct.,2 0 2 4 ,15,8 4 4 8–8458 This journal is © The Royal Society of Chemistry 2024
+Open Access Article. Published on 25 July 2024. Downloaded on 5/27/2026 9:11:16 AM. 
+ This article is licensed under a 
+Creative Commons Attribution 3.0 Unported Licence.
+View Article Online
+View Journal
+ | View Issue
+
+
+--- PAGE 2 ---
+microbial environment, and their metabolites may play a
+crucial role in regulating energy metabolism by influencing
+lipid profiles, adipokines, and insulin concentrations. 8–13
+Therefore, modifications in the intestinal microbiota compo-
+sition may be associated with variations in body fat. Recently,
+metabolites from probiotics have been found to be helpful in
+reducing inflammation and strengthening immunity and have
+been emerging under the name of postbiotics.
+14
+Most studies on overweight, obesity and probiotics have
+used Lactobacillus or mixed strains; Bifidobacterium strains
+alone are rarely used. However, because using a single strain
+for each individual can show an independent e ﬀect of the
+strain, this study evaluated the e ﬀect of Bifidobacterium lactis
+IDCC 4301 ( B. lactis Fit™) alone. 15 Bifidobacterium, discovered
+in the 18 th century by Tissier in the feces of breast-fed infants,
+colonizes the colon more e ﬀectively and favors intestinal
+microflora.16 In a human clinical trial confirming the anti-
+obesity e ﬀect of Bifidobacterium, body weight, BMI, and visc-
+eral fat area (VFA) significantly decreased after consuming
+dairy products containing Bifidobacterium.12,17 Based on pre-
+liminary studies on B. lactis , potential anti-obesity e ﬀects of
+B. lactis IDCC 4301 were anticipated.
+In preclinical studies, B. lactis IDCC 4301 administration
+decreased body and adipose tissue weight, improved serum
+lipid levels, and downregulated adipogenic gene expression in
+mice fed a high-fat diet. Furthermore, among the strains
+Lactobacillus lactis , Lactobacillus fermentum , Streptococcus ther-
+mophilus, Bifidobacterium breve , and B. lactis , B. lactis had a
+relatively high pancreatic lipase inhibition ability and the
+highest cholesterol-reducing ability.
+18 As there have been no
+studies evaluating the e ﬀect of B. lactis IDCC 4301 alone in
+humans, this study aimed to evaluate the anti-obesity e ﬀect of
+B. lactis IDCC 4301 in women with a BMI between 25 and
+30 kg m −2.
+2. Methods
+2.1. Study participants selection and recruitment
+In this study, 99 healthy women with a BMI of 25 –30 kg m −2
+was recruited until the target sample size was reached.
+Individuals willing to participate visited the Kyung Hee
+University Hospital and were screened according to the partici-
+pant selection criteria. The inclusion criteria were between 20
+and 65 years of age, body mass index (BMI) between 25 and
+30 kg m
+−2, and voluntarily signing an informed consent
+form.19 According to World Health Organization Asia Pacific
+criteria for obesity, a BMI of 23 kg m −2 to 24.9 kg m −2 is
+defined as overweight, and a BMI of 25 kg m −2 or more is
+defined as obesity. 20 Exclusion criteria were continuous use of
+drugs or health functional foods that a ﬀect weight or body fat
+reduction 1 month before the registration date, weight loss of
+>10% in the 3 months before screening, surgery for weight
+loss within the past 1 year; participation in a weight loss
+program within the past 3 months, patients with uncontrolled
+hypertension and diabetes. Further exclusion criteria were
+diagnosis and treatment of cancer within the past 5 years,
+history of surgery within the past 6 months, chronic gastroin-
+testinal disorder, autoimmune disease, thyroid disease, stroke,
+cardiac disorder, mental illness, central nervous disorder, alco-
+holism, eating disorder, disability, pregnancy, or lactation.
+Participants were randomly classified into the probiotics or
+placebo groups at the first visit (within 3 weeks of the screen-
+ing visit). The protocol was approved by the Institutional
+Review Board of Kyung Hee University Hospital (no. KHUH
+2022-01-069), in accordance with the Declaration of Helsinki.
+This study was registered with the Clinical Research
+Information Service of the Republic of Korea (KCT0007425).
+2.2. Study design
+This was a randomized, double-blind, placebo-controlled, par-
+allel-arm clinical trial. The participants were assigned to each
+group using a block randomization method ( placebo : test =
+1 : 1, 99 individuals respectively) based on probability, and the
+randomization was conducted by a third party independent of
+the study. The primary outcome was body fat change,
+measured using whole-body dual-energy X-ray absorptiometry
+scanner (DXA). Secondary outcomes included changes in body
+composition measured using bioimpedance analysis (BIA),
+lipid profiles, adipokine level, and waist-hip ratio (WHR).
+Laboratory tests were performed at baseline and at 12
+weeks, and a pregnancy response test was performed at base-
+line. Blood pressure and pulse rate were examined to check the
+vital signs, measured using an automated blood pressure
+monitor (HEM-7156; Omron, Vietnam) in the sitting position
+after resting for >15 minutes. These were measured by the
+same research sta ﬀ at each visit, using the same equipment
+and at the same time as possible. Adverse events and side
+eﬀects were evaluated through interviews conducted during
+the visit.
+2.3. Treatment intervention and compliance
+A baseline assessment was performed and 98-day supplies of
+the investigational product (IP) or placebo were provided to
+participants. Follow-up visits were conducted 43 (visit 2) and
+85 (visit 3) days after the baseline assessment (visit 1). A 7-day
+visit window was allowed. The participants were instructed to
+maintain their usual diet and exercise during the study period,
+banned from consuming drugs or foods that could cause body
+fat loss and recommended to take the IP at approximately the
+same time each day. Information regarding all drugs, oriental
+medicines, and health functional foods, including items or
+names, doses, and duration of medications taken, was
+recorded at each visit.
+The IP contained B. lactis IDCC 4301 as the main ingredient
+(8.0%), corn starch maltodextrin (69.0%), cassava starch
+dextrin mixture (20.0%), silicon dioxide (1.5%), and mag-
+nesium stearate (1.5%) as excipients at 500 mg per cap. The
+placebo product contained corn starch maltodextrin (69.0%),
+cassava starch dextrin mixture (28.0%), silicon dioxide (1.5%),
+and magnesium stearate (1.5%) as excipients at 500 mg per
+cap. B. lactis IDCC 4301 was anaerobically cultured in commer-
+Food & Function Paper
+This journal is © The Royal Society of Chemistry 2024 Food Funct.,2 0 2 4 ,15,8 4 4 8–8458 | 8449
+Open Access Article. Published on 25 July 2024. Downloaded on 5/27/2026 9:11:16 AM. 
+ This article is licensed under a 
+Creative Commons Attribution 3.0 Unported Licence.
+View Article Online
+
+
+--- PAGE 3 ---
+cial medium of Ildong Bioscience containing maltose, yeast
+extract, and soy peptone at 37 °C for 18 h and subsequently
+adjusted to a cell density of 10 9 CFU mL −1. The IP contained
+more than 5.0 × 10 9 colony-forming units (CFU) of B. lactis
+IDCC 4301 per capsule. Probiotic and placebo capsules were
+manufactured with similar shapes, sizes, and colors. Probiotic
+or placebo products were orally administered 1 capsule once
+daily for 12 weeks. Participants were prescribed 6 weeks dose
+plus extra products at visits 1 and 2, and were encouraged to
+continue with the prescribed dose. The remaining unused cap-
+sules were returned at visits two and three and counted to
+evaluate compliance. Compliance was calculated using the fol-
+lowing equation: [doses consumed/doses required] × 100. Low-
+compliance was defined as less than 80% for two consecutive
+visits.
+2.4. Anthropometrics and body composition assessments
+As the primary outcome measure, whole-body DXA (Hologic
+Horizon W instrument, Hologic Inc., USA) was used to assess
+whole-body fat at baseline and 12 weeks.
+21 Body fat mass was
+measured in the supine position using standard soft-tissue
+measurement methods. Body fat mass was calculated as the
+amount of fat present in the section (arm, trunk, and leg) sur-
+rounded by the virtual boundary line separating the head and
+limbs.
+Body composition was assessed using BIA (InBody720,
+Biospace, Seoul, Korea) at baseline and at weeks 6 and 12.
+22
+Height was measured using a stadiometer (BSM370; Biospace,
+Seoul, Korea). Participants were asked to fast for 8 h and wear
+light clothing without socks. Waist circumference (WC) and
+hip circumferences (HC) were assessed using a flexible tape at
+baseline and at 12 weeks. WC was measured at the midpoint
+between the lower margin of the last palpable rib on the mid-
+axillary line and the top of the iliac crest. HC was measured at
+the largest hip circumference. The WHR was calculated as WC
+divided by HC.
+23 Obesity degree was calculated by dividing
+body weight by ideal weight. For Asian women, ideal weight
+was calculated as (height 2 (m2) × 21). 24
+2.5. Blood collection and biomarker analyses
+Serum lipid profiles (triglyceride [TG], total cholesterol [TC],
+low-density lipoprotein cholesterol [LDL-C], and high-density
+lipoprotein cholesterol [HDL-C]), adiponectin, leptin, insulin,
+and homeostatic model assessment for insulin resistance
+(HOMA-IR) were assessed at baseline and 12 weeks.
+25,26 Blood
+samples were collected after at least 8 h fast and analyzed in
+the laboratory. Blood samples were collected in ethylenediami-
+netetraacetic acid (EDTA) tubes and serum separator tubes
+(SSTs). The SST was left at room temperature for approximately
+10 to 30 min, then centrifuged at 4 °C, 3000 rpm for 10 min
+and stored in a refrigerator along with the hand-mixed EDTA
+tube. All samples collected from the participants were analyzed
+at a specialized institution. The atherogenic index of plasma
+(AIP) was calculated as log (TG/HDL-C) on an empty
+stomach.
+27 The adipokine ratio was calculated as log leptin/
+adiponectin ratio (LAR).28
+2.6. Dietary intake and physical activity
+To assess daily dietary intake, the participants were required
+to record a 3-day food diary. The participants were required to
+record the name of the food, ingredients, and the amount of
+daily intake on two weekdays and one weekend. The partici-
+pants were required to maintain their usual dietary patterns
+during the study period. Daily nutrient intake was analyzed by
+using a computer-aided nutritional analysis program (CAN-pro
+5.0; Korean Nutrition Society, Seoul, Korea).
+Physical activity was determined using the Global Physical
+Activity Questionnaire (GPAQ).
+29 The GPAQ records the
+amount of physical activity by area (occupation, movement
+from place to place, leisure activities, and sedentary activities).
+The GPAQ was designed to allow participants to answer how
+many days (days per week) and hours (hours and minutes)
+they spent on average in a particular physical activity. High-
+intensity activities were applied at a level of 8.0 metabolic equi-
+valent (METs), and moderate-intensity activities such as
+walking and cycling were applied at 4.0 METs. If the amount
+of exercise regularly practiced per week was 600 metabolic
+equivalents (METs per week), the participants were classified
+into the regular physical activity practice group. Moreover, if
+the amount of exercise regularly practiced per week was
+3000 metabolic equivalents (METs per week) per week, it could
+be classified into active and su ﬃ cient physical activity practice
+groups.
+2.7. Statistical analyses
+The sample size was calculated in a study by Jung et al. , who
+reported the change in body fat mass of the probiotic (mixture
+of Lactobacillus curvatus HY7601 and Lactobacillus plantarum
+KY1032) and placebo group.
+30 A statistical hypothesis test was
+conducted at a two-sided significance level of 0.05. Continuous
+values are expressed as mean ± standard deviation (SD), and
+categorial values are expressed as n (%). The primary outcome
+of this study was the group di ﬀerences of baseline, 12 weeks
+and change in body fat. The secondary outcome was the group
+diﬀerences of baseline, 12 weeks and change in blood lipid
+profiles, adipokines, and glycemic profiles and the baseline
+and 12 weeks di ﬀerence of all outcomes within groups. To
+compare the di ﬀerences between groups, Student ’s t-test for
+continuous variables and the Chi-square test or Fisher ’s exact
+test for categorial variables were used. Additionally, to assess
+the di ﬀerences between the baseline and 12 weeks, paired
+t-test was performed. A general linear model test was applied
+to adjust for potential confounding factors (menopause, exer-
+cise, compliance, energy intake) that may influence changes in
+body fat as covariates. Pearson ’s correlation coe ﬃ cient was
+used to examine the relationships between variables. The per-
+protocol set included all participants who completed the study
+protocol and had no major protocol deviation, this set was
+used for e ﬃ cacy analysis. The safety set included all partici-
+pants who received at least one capsule of IP; this set was used
+for safety analysis.
+Paper Food & Function
+8450 | Food Funct.,2 0 2 4 ,15,8 4 4 8–8458 This journal is © The Royal Society of Chemistry 2024
+Open Access Article. Published on 25 July 2024. Downloaded on 5/27/2026 9:11:16 AM. 
+ This article is licensed under a 
+Creative Commons Attribution 3.0 Unported Licence.
+View Article Online
+
+
+--- PAGE 4 ---
+All statistical analyses were performed using SAS® software
+(version 9.4, SAS, Cary, NC, USA).
+3. Results
+3.1. Participant characteristics
+The first participant was screened on March 16, 2022, and the
+last on September 29, 2022. In total, 106 participants were
+evaluated; among them, 7 participants were excluded. Finally,
+99 participants (50 participants in the placebo groups and 49
+participants in the probiotics groups) were enrolled.
+Consequently, three participants from each group (total: six)
+dropped out; thus, 94 participants (47 in the placebo groups
+and 46 in the probiotics groups) completed the clinical trial
+(Fig. 1). There was no significant between-group di ﬀerence in
+age (53 ± 10 years in the placebo group vs. 54 ± 8 years in the
+probiotics group, p = 0.5805). There were also no significant
+between-group di ﬀerences in alcohol consumption, smoking,
+regular exercise, or frequency of eating per day (Table 1).
+3.2. Anthropometrics and body composition outcomes
+Total and trunk body fat masses (kg) decreased more in the probio-
+tics group compared to that in the placebo group (p = 0.0407 andp
+= 0.0200, respectively). In addition, the total, trunk, and leg body fat
+mass (kg) in the probiotics group significantly decreased after
+intake compared to baseline, but in the placebo group, only the leg
+body fat mass (kg) decreased. Di ﬀerence in the changes in the
+degree of obesity, which refers to the current body weight compared
+with the ideal body weight, between the placebo and probiotics
+groups were not significant, but it was decreased significantly only
+in the probiotics group. Diﬀerence in the changes in WC, HC, and
+WHR between the placebo and probiotics groups was not signifi-
+cant, but in both groups, WC, HC, and WHR significantly decreased
+after intake compared to before intake (Table 2). Additionally, more
+subjects in the probiotics group had reduced total fat mass (Fig. 2A
+and B). And looking at the change rate in BMI, there were more sub-
+jects with decreased BMI in the probiotics group (Fig. 2C).
+Additionally, when comparing the di ﬀerence in body com-
+position changes of the probiotics group compared to the
+placebo group of all women ( n = 93) and postmenopausal
+women ( n = 69), the di ﬀerences in weight change (all women
+−0.42 kg vs. postmenopausal women −0.63 kg), BMI (all
+women −0.16 kg m
+−2 vs. postmenopausal women −0.26 kg
+m−2), total body fat mass (all women −0.29 kg vs. postmeno-
+Fig. 1 Flowchart of participant selection.
+Table 1 Demographic and lifestyle characteristics at baseline of the
+obese women
+Variables
+Placebo group
+(n = 47)
+Probiotics group
+(n = 46) p-Value
+Age (years) 53 ± 10 54 ± 8 0.5805
+Alcohol drinking 0.7249
+Yes 18 (38) 16 (35)
+No 29 (62) 30 (65)
+Smoking 1.0000
+Non-smoker 45 (96) 45 (98)
+Ex-smoker 2 (4) 1 (2)
+Regular exercise 0.2476
+Yes 24 (51) 18 (39)
+No 23 (49) 28 (61)
+Frequency of eating/day
+Meal 2.8 ± 0.4 2.9 ± 0.3 0.2980
+Snack 2.0 ± 1.0 2.0 ± 0.8 0.7413
+Water 5.2 ± 2.1 5.4 ± 2.1 0.7914
+Values are expressed as means ± SD or n (%). For alcohol drinking,
+answer “yes” if the participant consumes alcohol more than once a
+week, otherwise answer “no”. For smoking, non-smoker indicates a
+person who does not currently smoke. There were no smokers in the
+groups. For regular exercise, answer “yes” if participants exercised
+more than once a week, and answer “no” otherwise. No di ﬀerences
+were detected between the two groups. p values were obtained from
+Chi-square test or Fisher ’s exact test for categorical variables and
+Student’s t-test for continuous variables.
+Food & Function Paper
+This journal is © The Royal Society of Chemistry 2024 Food Funct.,2 0 2 4 ,15,8 4 4 8–8458 | 8451
+Open Access Article. Published on 25 July 2024. Downloaded on 5/27/2026 9:11:16 AM. 
+ This article is licensed under a 
+Creative Commons Attribution 3.0 Unported Licence.
+View Article Online
+
+
+--- PAGE 5 ---
+pausal women −0.40 kg), and trunk body fat mass (all women
+−0.19 kg vs. postmenopausal women −0.25 kg) were larger in
+postmenopausal women (Table 3).
+3.3. Blood biomarkers
+Changes in TG concentration and AIP were significantly
+diﬀerent between the groups ( p = 0.0088 and p = 0.0145,
+respectively), indicating a lower risk of metabolic diseases.
+Leptin concentration did not di ﬀer between the groups but sig-
+nificantly decreased in both groups (Table 4). No significant
+diﬀerences in the other blood indicators were observed.
+3.4. Correlations between changes in total fat mass and
+adipokines
+Fig. 3 shows the correlation between changes in total fat mass
+and adipokines in the probiotics group after the 12-week pro-
+biotics intake. A significant positive correlation was observed
+between changes in total fat mass and log LAR ( R = 0.371, P =
+0.0112) (Fig. 3A).
+No correlation was found between the changes in total fat
+mass and adiponectin or leptin levels. Additionally, the same
+parameters had no correlation in placebo groups. This indi-
+cated that changes in adipokines were related to total fat mass
+in the probiotics group.
+3.5. Safety outcomes
+Safety outcomes were within the normal range both before and
+after the study. In the placebo group, three (6%) participants
+had three adverse events (enteritis [ n = 1], corona virus [ n = 2]),
+with no significant di ﬀerences between groups. In the probio-
+tics group, 3 (6%) participants experienced 3 adverse events
+Table 2 Anthropometric parameters of the obese women after 12 weeks probiotics intake period
+Variables
+Placebo group (n = 47) Probiotics group ( n = 46)
+pa pb pcBaseline 12 weeks Baseline 12 weeks
+Body weight (kg) 64.27 ± 5.56 64.12 ± 5.84 67.06 ± 8.28 66.49 ± 8.38* 0.0609 0.1181
+Change −0.15 ± 1.46 −0.57 ± 1.10 0.1537
+BMI (kg m −2) 26.22 ± 1.67 26.15 ± 1.76 26.59 ± 1.87 26.36 ± 1.95* 0.3158 0.5899
+Change −0.07 ± 0.59 −0.23 ± 0.43 0.1698
+Body fat (kg)
+Total 27.01 ± 3.65 26.86 ± 3.64 28.96 ± 5.59 28.51 ± 5.55* 0.0514 0.0950
+Change −0.16 ± 0.83 −0.45 ± 0.83 0.0407
+Trunk 14.15 ± 2.17 14.12 ± 2.19 15.29 ± 3.04 15.06 ± 3.00* 0.0408 0.0883
+Change −0.03 ± 0.50 −0.22 ± 0.51 0.0200
+Arm 3.36 ± 0.59 3.34 ± 0.60 3.50 ± 0.76 3.51 ± 0.75 0.3348 0.2399
+Change −0.03 ± 0.15 0.00 ± 0.17 0.6350
+Leg 8.30 ± 1.53 8.20 ± 1.58* 8.97 ± 2.37 8.74 ± 2.38* 0.1143 0.2023
+Change −0.11 ± 0.36 −0.23 ± 0.30 0.0782
+Body fat (%)
+Total 41.94 ± 3.36 41.80 ± 3.26 42.91 ± 4.00 42.58 ± 3.75 0.2067 0.2843
+Change −0.14 ± 1.24 −0.33 ± 1.19 0.2016
+Trunk 43.30 ± 3.88 43.29 ± 3.78 44.48 ± 4.21 44.29 ± 3.86 0.1631 0.2084
+Change −0.01 ± 1.48 −0.19 ± 1.44 0.2636
+Arm 48.18 ± 4.68 47.87 ± 4.49 48.61 ± 5.40 48.66 ± 5.30 0.6800 0.4392
+Change −0.31 ± 1.60 0.04 ± 1.83 0.7307
+Leg 41.10 ± 4.34 40.76 ± 4.46 41.89 ± 5.42 41.16 ± 5.33* 0.4367 0.6983
+Change −0.34 ± 1.70 −0.73 ± 1.35 0.1317
+Lean mass (kg)
+Total 35.28 ± 3.07 35.29 ± 3.29 36.15 ± 3.67 36.03 ± 3.58 0.2179 0.3008
+Change 0.01 ± 1.32 −0.12 ± 1.08 0.9081
+Trunk 17.90 ± 1.71 17.88 ± 1.80 18.34 ± 1.95 18.20 ± 1.93 0.2491 0.4228
+Change −0.02 ± 0.77 −0.14 ± 0.66 0.6181
+Arm 3.34 ± 0.41 3.36 ± 0.42 3.40 ± 0.42 3.39 ± 0.39 0.5310 0.6949
+Change 0.02 ± 0.19 −0.01 ± 0.15 0.9672
+Leg 11.12 ± 1.13 11.15 ± 1.26 11.51 ± 1.44 11.54 ± 1.39 0.1444 0.1554
+Change 0.03 ± 0.51 0.03 ± 0.38 0.6616
+Obesity degree (%) 126.50 ± 8.03 126.20 ± 8.38 128.30 ± 8.92 127.40 ± 9.42* 0.3046 0.5103
+Change −0.36 ± 2.75 −0.96 ± 2.14 0.3828
+WC (cm) 87.97 ± 5.99 87.10 ± 6.00* 90.10 ± 6.81 88.96 ± 6.70* 0.1128 0.1614
+Change −0.87 ± 1.30 −1.14 ± 1.18 0.3865
+HC (cm) 98.73 ± 4.83 98.32 ± 4.95* 100.30 ± 6.09 99.46 ± 6.04* 0.1657 0.3226
+Change −0.41 ± 1.32 −0.87 ± 1.05 0.1141
+WHR 0.891 ± 0.048 0.886 ± 0.046* 0.899 ± 0.050 0.895 ± 0.049* 0.4209 0.3748
+Change 0.005 ± 0.014 0.004 ± 0.011 0.8394
+Abbreviations: BMI, body mass index; WC, waist circumference; HC, hip circumference; WHR, waist-hip ratio. Values are expressed as means ±
+SD. * Significant di ﬀerence between baseline and 12-week data by paired t t e s ta t*p < 0.05.
+a P-Values derived from independent t-tests at base-
+line. b P-Values derived from independent t-tests at 12 weeks. c Group diﬀerences of change were calculated using the general linear model (GLM)
+after adjusting for menopause, exercise, compliance, energy intake.
+Paper Food & Function
+8452 | Food Funct.,2 0 2 4 ,15,8 4 4 8–8458 This journal is © The Royal Society of Chemistry 2024
+Open Access Article. Published on 25 July 2024. Downloaded on 5/27/2026 9:11:16 AM. 
+ This article is licensed under a 
+Creative Commons Attribution 3.0 Unported Licence.
+View Article Online
+
+
+--- PAGE 6 ---
+(hyperlipidemia [n = 1], corona virus [ n = 2]). No adverse events
+were related to IP and no serious adverse events occurred.
+3.6. Dietary intake and physical activity
+No significant di ﬀerences in dietary intake before (0 week) and
+after (week 12) the intervention. The amount of physical
+activity increased in both groups after intake compared to that
+before intake, but there was no significant di ﬀerence between
+the groups (Table 5).
+4. Discussion
+In this trial, we found that 12-week B. lactis IDCC 4301 sup-
+plementation had anti-obesity e ﬀects in obese women. The
+total fat mass of the probiotics group decreased 2.6 times
+and the trunk fat mass decreased 7 times compared to
+those in the placebo group. The di ﬀerence in total fat mass
+change between groups among postmenopausal women was
+38% greater than that of all women. Changes in TG concen-
+tration and AIP levels showed significant di ﬀerences
+between the groups, indicating a lower CVD risk in the pro-
+biotics group than that in the placebo group. The adipokine
+ratio was correlated with body fat loss in the probiotics
+group. These changes are thought to be related to metabolic
+changes in the body due to changes in the intestinal
+microorganisms.
+Probiotic intake alters intestinal microorganisms and body
+fat through strain diversification. In a meta-analysis of ran-
+domized controlled trials (RCTs) that examined the e ﬀects of
+probiotic supplementation on body composition in BMI
+25–30 kg m
+−2 and BMI ≥ 30 kg m −2 participants, five studies
+reported changes in body fat percentage, and the pooled esti-
+mate showed that the percent body fat was significantly lower
+Fig. 2 Inter-group di ﬀerences of obese women with respect to fat mass and BMI. White is the placebo group and black is the probiotics group.
+Panel A shows the change of fat mass of women in probiotics group and Panel B shows the same parameter in placebo group. And Panel C shows
+the change rate of the BMI of women in the probiotics and placebo groups in order. In the probiotics group, number of participants with decreased
+fat mass and BMI were higher.
+Food & Function Paper
+This journal is © The Royal Society of Chemistry 2024 Food Funct.,2 0 2 4 ,15,8 4 4 8–8458 | 8453
+Open Access Article. Published on 25 July 2024. Downloaded on 5/27/2026 9:11:16 AM. 
+ This article is licensed under a 
+Creative Commons Attribution 3.0 Unported Licence.
+View Article Online
+
+
+--- PAGE 7 ---
+in the intervention groups than that in the placebo groups,
+with low heterogeneity among the studies. 31,32 Takahashi
+et al. investigated the e ﬀects of B. lactis GCL2505 ingestion
+for 12 weeks in 137 overweight and slightly obese Japanese
+adults.
+17 The VFA significantly decreased by 6.4 cm 2 in the
+test group compared to increase of 2.2 cm 2 in the placebo
+group. The total number of fecal bifidobacteria significantly
+increased in the probiotics group. Although the number of
+fecal Bifidobacterium could not be confirmed in this study, it
+could be inferred that the anti-obesity e ﬀect due to the
+Bifidobacterium increase was based on a previous study. Sung
+et al. demonstrated a significant decrease in body fat (of
+587.05 g in obese adults) after consuming Bifidobacterium
+breve B-3 for 12 weeks.
+33 Furthermore, in postmenopausal
+women, estrogen levels and sex hormone-binding globulins
+are known to decline and free testosterone levels are known
+to increase after menopause, and this is thought to induce
+central obesity.
+34 In a study conducted by Szuli ń ska et al. ,
+Table 3 Anthropometric parameters of the postmenopausal women after 12 weeks probiotics intake period
+Variables
+Placebo group (n = 36) Probiotics group ( n = 33)
+pa pb pcBaseline 12 weeks Baseline 12 weeks
+Body weight (kg) 63.57 ± 5.74 63.61 ± 6.16 65.62 ± 6.76 65.03 ± 7.10* 0.1771 0.3781
+Change 0.04 ± 1.23 −0.59 ± 1.08 0.0163
+BMI (kg m −2) 26.07 ± 1.62 26.08 ± 1.78 26.44 ± 1.80 26.20 ± 1.92* 0.3733 0.8041
+Change 0.01 ± 0.50 −0.25 ± 0.44 0.0160
+Body fat (kg)
+Total 26.89 ± 3.89 26.77 ± 3.92 28.18 ± 4.85 27.65 ± 4.85* 0.2249 0.4050
+Change −0.13 ± 0.84 −0.53 ± 0.91 0.0383
+Trunk 14.23 ± 2.19 14.21 ± 2.25 15.22 ± 2.71 14.96 ± 2.68* 0.0962 0.2138
+Change −0.02 ± 0.52 −0.27 ± 0.55 0.0278
+Arm 3.32 ± 0.62 3.32 ± 0.65 3.46 ± 0.75 3.45 ± 0.76 0.4211 0.4326
+Change 0.00 ± 0.15 0.00 ± 0.17 0.8515
+Leg 8.16 ± 1.57 8.05 ± 1.59 8.31 ± 1.87 8.05 ± 1.85* 0.7252 0.9987
+Change −0.12 ± 0.37 −0.26 ± 0.34 0.1054
+Abbreviations: BMI, body mass index; WHR, waist-hip ratio. Values are expressed as means ± SD. * Significant di ﬀerence between baseline and
+12-week data by paired t t e s ta t*p < 0.05.
+a P-Values derived from independent t-tests at baseline. b P-Values derived from independent t-tests at
+12 weeks. c Group di ﬀerences of change were calculated using the general linear model (GLM) after adjusting for menopause, exercise, compli-
+ance, energy intake.
+Table 4 Blood lipid pro ﬁles, adipokines, and glycemic pro ﬁles of obese women after 12 weeks of probiotic use
+Variables
+Placebo group (n = 47) Probiotics group ( n = 46)
+pa pb pcBaseline 12 weeks Baseline 12 weeks
+Triglyceride (mg dL −1) 119.20 ± 84.78 132.00 ± 78.50 131.50 ± 80.76 116.40 ± 63.30 0.4754 0.2972
+Change 12.74 ± 60.07 −15.09 ± 61.60 0.0088
+Total cholesterol (mg dL −1) 191.50 ± 43.04 194.00 ± 42.00 208.40 ± 43.54 205.80 ± 32.71 0.0630 0.1352
+Change 2.53 ± 20.72 −2.59 ± 28.29 0.1482
+HDL-C (mg dL −1) 54.21 ± 10.92 54.55 ± 12.75 54.89 ± 10.75 55.04 ± 10.90 0.7634 0.8426
+Change 0.34 ± 6.82 0.15 ± 7.86 0.8912
+LDL-C (mg dL −1) 108.00 ± 32.61 110.10 ± 34.67 126.50 ± 39.89 125.40 ± 30.66 0.0160 0.0270
+Change 2.13 ± 17.74 −1.13 ± 25.44 0.4350
+Atherogenic index of plasma 0.27 ± 0.31 0.33 ± 0.30* 0.32 ± 0.30 0.28 ± 0.27 0.3757 0.3881
+Change 0.07 ± 0.22 −0.04 ± 0.23 0.0145
+Adiponectin (μgm L−1) 7.00 ± 2.03 7.02 ± 2.38 7.09 ± 2.41 7.38 ± 2.53 0.8509 0.4876
+Change 0.02 ± 1.40 0.29 ± 1.31 0.4898
+Leptin (ng mL −1) 49.42 ± 18.82 39.05 ± 22.82* 51.76 ± 20.40 38.90 ± 22.86* 0.5660 0.9759
+Change −10.37 ± 24.32 −12.86 ± 25.19 0.6353
+Glucose (mg dL −1) 97.72 ± 8.27 97.04 ± 7.91 98.96 ± 8.13 97.28 ± 8.88 0.4704 0.8907
+Change −0.68 ± 6.57 −1.67 ± 7.96 0.6017
+Insulin (μUm L−1) 8.25 ± 3.67 8.38 ± 3.61 9.82 ± 4.49 9.21 ± 4.23 0.0679 0.3146
+Change 0.13 ± 3.62 −0.62 ± 3.73 0.2554
+HOMA-IR 2.00 ± 0.93 2.04 ± 1.00 2.41 ± 1.12 2.23 ± 1.08 0.0550 0.3796
+Change 0.04 ± 0.93 −0.18 ± 0.98 0.2152
+Abbreviations: AST, aspartate aminotransferase; ALT, alanine aminotransferase; HDL-C, high density lipoprotein cholesterol; LDL-C, low densit y
+lipoprotein cholesterol; TG, triglyceride; HOMA-IR, homeostatic model assessment for insulin resistance. Values are expressed as means ± SD. *
+Significant diﬀerence between baseline and 12-week data by paired t t e s ta t*p < 0.05.
+a P-Values derived from independent t-tests at baseline. b P-
+Values derived from independent t-tests at 12 weeks. c Group di ﬀerences of change were calculated using the general linear model (GLM) after
+adjusting for menopause, exercise, compliance, energy intake.
+Paper Food & Function
+8454 | Food Funct.,2 0 2 4 ,15,8 4 4 8–8458 This journal is © The Royal Society of Chemistry 2024
+Open Access Article. Published on 25 July 2024. Downloaded on 5/27/2026 9:11:16 AM. 
+ This article is licensed under a 
+Creative Commons Attribution 3.0 Unported Licence.
+View Article Online
+
+
+--- PAGE 8 ---
+the consumption of high-dose supplementation (1 × 10 10
+CFU) of preparations containing several probiotic strains in
+postmenopausal women ( Bifidobacterium bifidum W23 ,
+B. lactis W51 , B. lactis W52 , Lactobacillus acidophilus W37 ,
+L. brevis W63 , L. casei W56 , L. salivarius W24 , Lactococcus
+lactis W19 , and Lactococcus lactis W58 ) for 12 weeks led to
+reductions in waist circumference, fat percentage, visceral
+fat, glucose, lipopolysaccharides, total cholesterol, and
+insulin not body weight.
+35 However, significant improve-
+ments in both body fat and body weight were confirmed in
+this study.
+In this study, the serum TG concentration was lower in the
+probiotics group than that in the placebo group. If the TG con-
+centration is high, it is stored as an energy source in the body
+and the weight of adipose tissue increases; therefore, lowering
+the TG concentration can a ﬀect the reduction of body fat.
+36
+AIP, a cardiovascular risk indicator, was also significantly
+lower in the probiotics group, indicating that CVD risk in the
+Fig. 3 Correlations between changes in total fat mass and adipokines in the probiotics group after the 12-week probiotics intake period. Panel A
+shows the correlation between changes in total fat mass and log leptin/adiponectin ratio (LAR). Panel B shows the correlation between changes in
+total fat mass and leptin concentration. Panel C shows the correlation between changes in total fat mass and adiponectin concentration. There were
+no signiﬁcant correlations with the same parameters in placebo groups.
+Table 5 Changes in dietary intake and physical activity of the obese women after 12 weeks probiotics intake period
+Variables
+Placebo group (n = 47) Probiotics group ( n = 46)
+pa pb pcBaseline 12 weeks Baseline 12 weeks
+Energy (kcal) 1629.7 ± 373.8 1570.5 ± 427.8 1620.6 ± 440.8 1615.0 ± 436.7 0.9144 0.6208
+Change −59.3 ± 388.3 −5.6 ± 349.9 0.4862
+Energy intake per body weight (kcal kg −1) 25.1 ± 6.2 24.2 ± 7.1 23.9 ± 6.0 24.1 ± 6.5 0.3452 0.9052
+Change −0.8 ± 6.1 0.2 ± 5.2 0.3827
+Carbohydrate (g) 222.3 ± 60.8 212.5 ± 63.4 215.0 ± 51.0 214.9 ± 47.5 0.5278 0.8378
+Change −9.8 ± 53.5 −0.1 ± 48.2 0.3577
+Dietary fiber (g) 19.9 ± 7.3 19.5 ± 8.5 21.3 ± 5.6 20.3 ± 6.3 0.3149 0.5972
+Change −0.4 ± 7.7 −1.0 ± 6.8 0.7194
+Protein (g) 63.4 ± 16.2 60.9 ± 18.0 64.7 ± 21.1 66.3 ± 19.8 0.7427 0.1741
+Change −2.5 ± 17.2 1.6 ± 18.3 0.2692
+Fat (g) 49.1 ± 16.2 47.8 ± 18.8 49.8 ± 17.8 47.6 ± 18.9 0.8386 0.9525
+Change −1.3 ± 20.0 −2.3 ± 20.6 0.8212
+Cholesterol (mg) 309.7 ± 147.9 307.3 ± 154.6 337.9 ± 157.1 370.7 ± 142.4 0.3750 0.0427
+Change −2.4 ± 172.3 32.7 ± 172.0 0.3273
+Saturated fatty acids (g) 9.3 ± 5.6 8.6 ± 5.5 9.0 ± 4.6 8.4 ± 4.1 0.7386 0.8765
+Change −0.8 ± 7.1 −0.6 ± 5.1 0.8772
+Monounsaturated fatty acids (g) 11.4 ± 6.8 11.0 ± 6.7 11.6 ± 5.9 10.5 ± 5.1 0.8775 0.7011
+Change −0.4 ± 8.4 −1.1 ± 7.4 0.6793
+Polyunsaturated fatty acids (g) 10.4 ± 5.2 9.5 ± 5.3 10.5 ± 4.8 9.4 ± 3.0 0.9055 0.9255
+Change −0.9 ± 6.4 −1.1 ± 5.7 0.8693
+EPA (g) 1.6 ± 3.2 1.0 ± 1.7 1.1 ± 2.0 1.8 ± 3.9 0.3358 0.1754
+Change −0.7 ± 3.5 0.7 ± 4.6 0.1039
+DHA (g) 2.8 ± 4.8 2.0 ± 2.8 2.1 ± 4.0 2.9 ± 5.4 0.4496 0.2831
+Change −0.9 ± 5.7 0.8 ± 7.0 0.2162
+Total METs (METs per min per week) 3865.5 ± 2737.2 4859.6 ± 2788.9* 3604.3 ± 2700.5 4597.0 ± 3252.3* 0.6444 0.6767
+Change 994.0 ± 2843.1 992.6 ± 2391.0 0.9979
+MET is defined as the metabolic equivalent of task. If the Total MET score is over 600 METs per min per week, the group is classified as regular
+physical activity, and if >3000 METs per min per week, is classified as active and su ﬃ cient physical activity. Abbreviations: EPA, eicosapentaenoic
+acid; DHA, docosahexaenoic acid; METs, metabolic equivalents. Values are expressed as means ± SD. * Significant di ﬀerence between baseline
+and 12-week data by paired t test at * p < 0.05. a P-Values derived from independent t-tests at baseline. b P-Values derived from independent t-tests
+at 12 weeks. c Group diﬀerences of change were calculated using the general linear model (GLM) after adjusting for menopause, exercise, compli-
+ance, energy intake.
+Food & Function Paper
+This journal is © The Royal Society of Chemistry 2024 Food Funct.,2 0 2 4 ,15,8 4 4 8–8458 | 8455
+Open Access Article. Published on 25 July 2024. Downloaded on 5/27/2026 9:11:16 AM. 
+ This article is licensed under a 
+Creative Commons Attribution 3.0 Unported Licence.
+View Article Online
+
+
+--- PAGE 9 ---
+probiotics group was reduced by. 27 Li et al. demonstrated that
+8 weeks of B. lactis supplementation combined with training
+may help improve lipid metabolism, including triglyceride and
+sports performance, by increasing the abundance of
+Bifidobacterium, which can promote the generation of short-
+chain fatty acids and unsaturated fatty acids and inhibit the
+synthesis of bile acids.
+37 There was no di ﬀerence in the
+amount of physical activity between the groups; however, it
+can be assumed that the intake of B. lactis IDCC 4301 a ﬀected
+fat metabolism in the body by altering the composition of
+intestinal microorganisms.
+Adipocytes are a source of adipokines, and adipokine levels
+correlate with the number of adipocytes. 38 Adipokines levels
+decrease as adipocytes decrease. 39 Our results showed that
+leptin and adiponectin ratios were correlated with body fat
+loss in the probiotics group, whereas no correlation was
+observed in the placebo group. According to the Ely and
+European Group for the Study of Insulin Resistance
+Relationship between Insulin Sensitivity and Cardiovascular
+Risk study, when the LAR of 2097 people was examined, the
+results showed that as LAR increased, HOMA-derived insulin
+sensitivity (HOMA-S) decreased.
+28 As HOMA-S decreases, it
+may have an impact on body fat gain. 40 Additionally, pre-
+clinical study have shown that a mixture of Bifidobacterium ani-
+malis subsp. lactis CP-9 and Lactobacillus rhamnosus bv-77 sup-
+presses the increase in leptin concentration and increases adi-
+ponectin concentration in the blood of obese mice, preventing
+excessive intake of energy from accumulating in the adipose
+tissue, resulting in a decrease in body fat mass.
+41 Although a
+single strain was used in this study, LAR was associated with
+changes in body fat in the probiotics group. Leptin levels also
+decreased in the placebo group, but this is presumed to reflect
+the psychological e ﬀect of the placebo and the characteristics
+of leptin, which vary greatly depending on the circadian
+cycle.
+42,43 Therefore, the changes in adipokine levels following
+B. lactis IDCC 4301 intake a ﬀect adipocytes and reduce body
+fat.
+Our study has several limitations. First, dietary intake was
+self-reported. However, measurement errors from self-reported
+dietary intake and lifestyle variables have been demonstrated
+to be relatively small.
+44 Second, we focused on Korean partici-
+pants with obese. Therefore, our data cannot be generalized to
+other ethnic groups. Third, following the protocol, we aimed
+to sequentially recruit adults with a BMI between 25 and 30 kg
+m
+−2, and only one male participant was recruited. Therefore,
+the number of male participants was very small, and only
+women are presented in this paper. Fourth, for the purposes
+of the study, we did not assess the gut microbiome, but
+measuring it would have strengthened the study. Despite these
+limitations, compared with the placebo group, supplemen-
+tation with B. lactis IDCC 4301 for 12 weeks in obese partici-
+pants led to a significant improvement in body fat mass and
+metabolic health. No adverse events related to the probiotics
+were observed. These results suggest a beneficial e ﬀect of sup-
+plementation with B. lactis IDCC 4301 on body fat, serum tri-
+glyceride, and adipokine levels in obese women.
+5. Conclusions
+When obese women consumed B. lactis IDCC 4301 at a con-
+centration of >5 × 10 9 CFU day −1 for 12 weeks, decrease in
+body fat was greater in the probiotics group than in the
+placebo group. In the probiotics group, body weight, BMI, and
+the degree of obesity significantly decreased. Furthermore,
+diﬀerence in the serum TG concentration and AIP levels
+between the groups was significant, indicating that the probio-
+tics group had a lower CVD risk. Adipokine ratio was also
+associated with body fat loss in the probiotics group.
+Therefore, this study determined that the consumption of
+B. lactis IDCC 4301 ( B. lactis Fit™) can lead to anti-obesity
+eﬀects in obese women.
+Author contributions
+ML: study concept, design, data analysis, writing the draft of
+the manuscript, editing and revising. MKB: supplementation
+study and sample collections. KS: study concept, design,
+manuscript editing. ML, HMP, JY: study concept, manuscript
+review and revising. HL: study concept, design, administration,
+manuscript review and editing, revising and funding acqui-
+sition. All authors agreed to their individual contributions. All
+authors read and approved the final manuscript.
+Conﬂicts of interest
+HL, ML, MKB, KS declared they had no conflicts of interest.
+ML, HMP is an employee of ILDONG Bioscience Co., Ltd. JY
+was an ex-employee of ILDONG Bioscience Co., Ltd.
+Note added after ﬁrst publication
+This article replaces the version published on 25th July 2024,
+which contained errors within Table 2.
+Acknowledgements
+This research was funded by ILDONG Bioscience Co., Ltd. We
+thank the volunteers for taking the time to participate in this
+study.
+References
+1 Korea Disease Control and Prevention Agency, Korea
+National Health and Nutrition Examination Survey -
+Obesity rate, https:/ /www.index.go.kr/unify/idx-info.do?
+idxCd=8021, (accessed 5 April, 2024).
+2 M. Abdelaal, C. W. le Roux and N. G. Docherty, Morbidity
+and mortality associated with obesity, Ann. Transl. Med. ,
+2017, 5, 161.
+Paper Food & Function
+8456 | Food Funct.,2 0 2 4 ,15,8 4 4 8–8458 This journal is © The Royal Society of Chemistry 2024
+Open Access Article. Published on 25 July 2024. Downloaded on 5/27/2026 9:11:16 AM. 
+ This article is licensed under a 
+Creative Commons Attribution 3.0 Unported Licence.
+View Article Online
+
+
+--- PAGE 10 ---
+3 M. Rebu ﬀé-Scrive, J. Eldh, L. O. Hafström and P. Björntorp,
+Metabolism of mammary, abdominal, and femoral adipo-
+cytes in women before and after menopause, Metabolism,
+1986, 35, 792–797.
+4 L. Zhang, Y. Liu, X. Wang and X. Zhang, Physical exercise
+and diet: regulation of gut microbiota to prevent and treat
+metabolic disorders to maintain health, Nutrients, 2023,
+15, 1539.
+5J . K a łużna-Czapliń ska, P. G ątarek, M. S. Chartrand,
+M. Dadar and G. Bjørklund, Is there a relationship between
+intestinal microbiota, dietary compounds, and obesity?,
+Trends Food Sci. Technol. , 2017, 70, 105–113.
+6 C. Mazziotta, M. Tognon, F. Martini, E. Torreggiani and
+J. C. Rotondo, Probiotics mechanism of action on immune
+cells and beneficial e ﬀects on human health, Cells, 2023,
+12, 184.
+7 P. J. Turnbaugh, M. Hamady, T. Yatsunenko, B. L. Cantarel,
+A. Duncan, R. E. Ley, M. L. Sogin, W. J. Jones, B. A. Roe and
+J. P. A ﬀourtit, A core gut microbiome in obese and lean
+twins, Nature, 2009, 457, 480–484.
+8 A. Brusaferro, R. Cozzali, C. Orabona, A. Biscarini,
+E. Farinelli, E. Cavalli, U. Grohmann, N. Principi and
+S. Esposito, Is it time to use probiotics to prevent or treat
+obesity?, Nutrients, 2018, 10, 1613.
+9 J.-i. Minami, S. Kondo, N. Yanagisawa, T. Odamaki, J.-z. Xiao,
+F. Abe, S. Nakajima, Y. Hamamoto, S. Saitoh and T. Shimoda,
+Oral administration of Bifidobacterium breve B-3 modifies
+metabolic functions in adults with obese tendencies in a ran-
+domised controlled trial,J. Nutr. Sci., 2015, 4, e17.
+10 F. Higashikawa, M. Noda, T. Awaya, N. Danshiitsoodol,
+Y. Matoba, T. Kumagai and M. Sugiyama, Antiobesity e ﬀect
+of Pediococcus pentosaceus LP28 on overweight subjects: a
+randomized, double-blind, placebo-controlled clinical trial,
+Eur. J. Clin. Nutr. , 2016, 70, 582–587.
+11 Y. Kadooka, M. Sato, A. Ogawa, M. Miyoshi, H. Uenishi,
+H. Ogawa, K. Ikuyama, M. Kagoshima and T. Tsuchida,
+Eﬀect of Lactobacillus gasseri SBT2055 in fermented milk
+on abdominal adiposity in adults in a randomised con-
+trolled trial, Br. J. Nutr. , 2013, 110, 1696–1703.
+12 M. Zarrati, E. Salehi, K. Nourijelyani, V. Mofid,
+M. J. H. Zadeh, F. Najafi, Z. Ghaflati, K. Bidad, M. Chamari
+and M. Karimi, E ﬀects of probiotic yogurt on fat distri-
+bution and gene expression of proinflammatory factors in
+peripheral blood mononuclear cells in overweight and
+obese people with or without weight-loss diet, J. Am. Coll.
+Nutr., 2014, 33, 417–425.
+13 D. Wu, H. Wang, L. Xie and F. Hu, Cross-talk
+between gut microbiota and adipose tissues in obesity and
+related metabolic diseases,Front. Endocrinol., 2022, 13, 908868.
+14 N. Khani, R. Abedi Soleimani, G. Noorkhajavi, A. Abedi
+Soleimani, A. Abbasi and A. Homayouni Rad, Postbiotics as
+potential promising tools for SARS –CoV–2 disease adjuvant
+therapy, J. Appl. Microbiol. , 2022, 132, 4097–4111.
+15 L. V. McFarland, E ﬃ cacy of single-strain probiotics versus
+multi-strain mixtures: systematic review of strain and
+disease specificity, Dig. Dis. Sci. , 2021, 66, 694–704.
+16 A. Rivière, M. Selak, D. Lantin, F. Leroy and L. De Vuyst,
+Bifidobacteria and butyrate-producing colon bacteria:
+importance and strategies for their stimulation in the
+human gut, Front. Microbiol., 2016, 7, 979.
+17 S. Takahashi, D. Anzawa, K. Takami, A. Ishizuka,
+T. Mawatari, K. Kamikado, H. Sugimura and T. Nishijima,
+Eﬀect of Bifidobacterium animalis ssp. lactis GCL2505 on
+visceral fat accumulation in healthy Japanese adults: a ran-
+domized controlled trial, Biosci. Microbiota Food Health ,
+2016, 35, 163–171.
+18 O. H. Ban, M. Lee, W. Y. Bang, E. H. Nam, H. J. Jeon,
+M. Shin, J. Yang and Y. H. Jung, Bifidobacterium lactis
+IDCC 4301 exerts anti –obesity e ﬀects in high –fat diet –fed
+mice model by regulating lipid metabolism, Mol. Nutr.
+Food Res., 2023, 67, 2200385.
+1 9 J .H .H a a m ,B .T .K i m ,E .M .K i m ,H .K w o n ,
+J .H .K a n g ,J .H .P a r k ,K .K .K i m ,S .Y .R h e e ,Y .H .K i ma n d
+K. Y. Lee, Diagnosis of Obesi ty: 2022 Update of Clinical
+Practice Guidelines for Obesity by the Korean Society for the
+Study of Obesity,J. Obes. Metab. Syndr., 2023, 32, 121–129.
+20 WHO, The Asia-Pacific perspective: redefining obesity and its
+treatment, 2000.
+21 A. Andreoli, G. Scalzo, S. Masala, U. Tarantino and
+G. Guglielmi, Body composition assessment by dual-energy
+X-ray absorptiometry (DXA), Radiol. Med. , 2009, 114, 286 –
+300.
+22 S. L. Faria, O. P. Faria, M. D. A. Cardeal and M. K. Ito,
+Validation Study of Multi-Frequency Bioelectrical
+Impedance with Dual-Energy X-ray Absorptiometry Among
+Obese Patients, Obes. Surg., 2014, 24, 1476–1480.
+23 T. Gadekar, P. Dudeja, I. Basu, S. Vashisht and S. Mukherji,
+Correlation of visceral body fat with waist –hip ratio, waist
+circumference and body mass index in healthy adults: A
+cross sectional study, Med. J. Armed Forces India , 2020, 76,
+41–46.
+24 L. InBody Co., InBody 720 User a, https:/ /inbody.co.kr/
+product_manual/, (accessed 5 April, 2024).
+25 N. Sukkriang, W. Chanprasertpinyo, A. Wattanapisit,
+C. Punsawad, N. Thamrongrat and S. Sangpoom,
+Correlation of body visceral fat rating with serum lipid
+profile and fasting blood sugar in obese adults using a
+noninvasive machine, Heliyon, 2021, 7, e06264.
+26 S. C. Ho, E. S. Tai, P. H. K. Eng, A. Ramli, C. E. Tan and
+A. C. K. Fok, A study in the relationships between leptin,
+insulin, and body fat in Asian subjects, Int. J. Obes. , 1999,
+23, 246–252.
+27 S. Niroumand, M. Khajedaluee, M. Khadem-Rezaiyan,
+M. Abrishami, M. Juya, G. Khodaee and
+M. Dadgarmoghaddam, Atherogenic Index of Plasma (AIP):
+A marker of cardiovascular disease, Med. J. Islam Repub.
+Iran, 2015, 29, 240.
+28 F. Finucane, J. Luan, N. Wareham, S. Sharp, S. O ′rahilly,
+B. Balkau, A. Flyvbjerg, M. Walker, K. Højlund and
+J. Nolan, Correlation of the leptin: adiponectin ratio with
+measures of insulin resistance in non-diabetic individuals,
+Diabetologia, 2009, 52, 2345–2349.
+Food & Function Paper
+This journal is © The Royal Society of Chemistry 2024 Food Funct.,2 0 2 4 ,15,8 4 4 8–8458 | 8457
+Open Access Article. Published on 25 July 2024. Downloaded on 5/27/2026 9:11:16 AM. 
+ This article is licensed under a 
+Creative Commons Attribution 3.0 Unported Licence.
+View Article Online
+
+
+--- PAGE 11 ---
+29 J. Lee, C. Lee, J. Min, D.-W. Kang, J.-Y. Kim, H. I. Yang,
+J. Park, M.-K. Lee, M.-y. Lee and I. Park, Development of
+the Korean Global Physical Activity Questionnaire:
+reliability and validity study, Glob. Health Promot. , 2020, 27,
+44–55.
+30 S. Jung, Y. J. Lee, M. Kim, M. Kim, J. H. Kwak, J.-W. Lee,
+Y.-T. Ahn, J.-H. Sim and J. H. Lee, Supplementation with
+two probiotic strains, Lactobacillus curvatus HY7601 and
+Lactobacillus plantarum KY1032, reduced body adiposity
+and Lp-PLA2 activity in overweight subjects, J. Funct. Foods ,
+2015, 19, 744–752.
+31 H. Borgeraas, L. Johnson, J. Skattebu, J. Hertel and
+J. Hjelmesaeth, E ﬀects of probiotics on body weight, body
+mass index, fat mass and fat percentage in subjects with
+overweight or obesity: a systematic review and meta –ana-
+lysis of randomized controlled trials, Obes. Rev. , 2018, 19,
+219–232.
+32 L. K. Stenman, M. J. Lehtinen, N. Meland,
+J. E. Christensen, N. Yeung, M. T. Saarinen, M. Courtney,
+R. Burcelin, M.-L. Lähdeaho and J. Linros, Probiotic with
+or without fiber controls body fat mass, associated with
+serum zonulin, in overweight and obese adults —random-
+ized controlled trial, EBioMedicine, 2016, 13, 190–200.
+33 H. K. Sung, S. J. Youn, Y. Choi, S. W. Eun and S. M. Shin,
+Body fat reduction e ﬀect of Bifidobacterium breve B-3: A
+randomized, double-blind, placebo comparative clinical
+trial, Nutrients, 2022, 15, 28.
+34 S. A. Kaye, A. R. Folsom, J. T. Soler, R. J. Prineas and
+J. D. Potter, Associations of body mass and fat distribution
+with sex hormone concentrations in postmenopausal
+women, Int. J. Epidemiol. , 1991, 20, 151–156.
+35 M. Szuli ń ska, I. Łoniewski, S. Van Hemert, M. Sobieska
+and P. Bogda ń ski, Dose-dependent e ﬀects of multispecies
+probiotic supplementation on the lipopolysaccharide (LPS)
+level and cardiometabolic profile in obese postmenopausal
+women: A 12-week randomized clinical trial, Nutrients,
+2018, 10, 773.
+36 E. J. Parks, R. M. Krauss, M. P. Christiansen, R. A. Neese
+and M. K. Hellerstein, E ﬀects of a low-fat, high-carbo-
+hydrate diet on VLDL-triglyceride assembly, production,
+and clearance, J. Clin. Invest. , 1999, 104, 1087–1096.
+37 T. Li, Z. Rui, L. Mao, Y. Chang, J. Shao, Y. Chen, Q. Han,
+X. Sui, N. An and H. Li, Eight Weeks of Bifidobacterium
+lactis BL-99 Supplementation Improves Lipid Metabolism
+and Sports Performance through Short-Chain Fatty Acids
+in Cross-Country Skiers: A Preliminary Study, Nutrients,
+2023, 15, 4554.
+38 A. S. Ryan, D. M. Berman, B. J. Nicklas, M. Sinha,
+R. L. Gingerich, G. S. Meneilly, J. M. Egan and D. Elahi,
+Plasma adiponectin and leptin levels, body composition,
+and glucose utilization in adult women with wide ranges of
+age and obesity, Diabetes Care, 2003, 26, 2383–2388.
+39 J. Be łtowski, Adiponectin and resistin –new hormones of
+white adipose tissue, Med. Sci. Monit. , 2003, 9,5 5–61.
+40 S. Kullmann, V. Valenta, R. Wagner, O. Tschritter,
+J. Machann, H.-U. Häring, H. Preissl, A. Fritsche and
+M. Heni, Brain insulin sensitivity is linked to adiposity and
+body fat distribution, Nat. Commun., 2020, 11, 1841.
+4 1M . - R .L e e ,B .K i m ,H . - J .K i m ,E . - J .K u m ,Y . - A .J u n g ,M .R a ,
+B.-H. Chung and Y. Lee, Anti-Obesity E ﬀe c to fM i x e d
+Probiotics of Bifidobacterium animalis subsp. Lactis CP-9 and
+Lactobacillus rhamnosus bv-77 in High-Fat Diet-Induced
+Obese Mice, J. Agri. Life Environ., 2021, 33, 194–204.
+42 M. F. Saad, M. G. Riad-Gabriel, A. Khan, A. Sharma,
+R. Michael, S. D. Jinagouda, R. Boyadjian and G. M. Steil,
+Diurnal and ultradian rhythmicity of plasma leptin: e ﬀects
+of gender and adiposity, J. Clin. Endocrinol. Metab. , 1998,
+83, 453–459.
+43 D. S. Weigle, D. E. Cummings, P. D. Newby, P. A. Breen,
+R. S. Frayo, C. C. Matthys, H. S. Callahan and J. Q. Purnell,
+Roles of leptin and ghrelin in the loss of body weight
+caused by a low fat, high carbohydrate diet, J. Clin.
+Endocrinol. Metab., 2003, 88, 1577–1586.
+44 E. B. Rimm, E. L. Giovannucci, M. J. Stampfer,
+G. A. Colditz, L. B. Litin and W. C. Willett, Reproducibility
+and validity of an expanded self-administered semiquanti-
+tative food frequency questionnaire among male health
+professionals, Am. J. Epidemiol. , 1992, 135, 1114–1126.
+Paper Food & Function
+8458 | Food Funct.,2 0 2 4 ,15, 8448–8458 This journal is © The Royal Society of Chemistry 2024
+Open Access Article. Published on 25 July 2024. Downloaded on 5/27/2026 9:11:16 AM. 
+ This article is licensed under a 
+Creative Commons Attribution 3.0 Unported Licence.
+View Article Online

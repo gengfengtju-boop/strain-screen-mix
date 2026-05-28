@@ -1,0 +1,3 @@
+evidence_id,source_database,source_accession,title,sample_size_hint,duration_hint,cfu_hint,dose_hint,bmi_hint,p_value_hint,intervention_hint,primary_outcome_hint,body_weight_effect_hint,bmi_effect_hint,waist_effect_hint,body_fat_effect_hint,glucose_effect_hint,lipid_effect_hint,microbiome_effect_hint,manual_extraction_note
+PMID:1,PubMed,1,Strong probiotic trial,66 individuals,12 weeks,3 x 10^10 CFU/day,,BMI >= 25,p < 0.05,Probiotic,Body weight,Weight reduced.,BMI reduced.,,,Glucose improved.,,,review
+PMID:2,PubMed,2,Weak review,,,,,,,,,,,,,,,,review

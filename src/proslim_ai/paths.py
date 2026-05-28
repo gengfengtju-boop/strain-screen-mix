@@ -73,6 +73,13 @@ REQUIRED_CONFIG_FILES = [
     "validation_config.yaml",
     "scoring_weights.yaml",
     "table_schemas.yaml",
+    "evidence_config.yaml",
+    "source_registry.yaml",
+    "search_config.yaml",
+    "search_batch.yaml",
+    "screening_config.yaml",
+    "review_fields.yaml",
+    "preliminary_prediction.yaml",
 ]
 
 
@@ -82,4 +89,3 @@ def find_project_root(start: Path | None = None) -> Path:
         if (candidate / "README.md").exists() and (candidate / "config").exists():
             return candidate
     return current
-

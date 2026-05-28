@@ -1,0 +1,3 @@
+evidence_id,evidence_type,source_database,source_accession,source_url,doi,pmid,title,year,journal,study_design,data_field_supported,extraction_note,curator,extraction_date
+EUROPEPMC:111,literature,PubMed,111,https://europepmc.org/article/MED/111,10.1000/a,111,Title A duplicate,2024,Journal A,needs_manual_review,evidence_registry,Auto,curator,2026-05-26
+EUROPEPMC:333,literature,PubMed,333,https://europepmc.org/article/MED/333,10.1000/c,333,Title C,2024,Journal C,needs_manual_review,evidence_registry,Auto,curator,2026-05-26

@@ -1,0 +1,2 @@
+subject_id,study_id,source_database,source_accession,source_url,publication_doi,publication_pmid,baseline_weight,post_weight,weight_change,weight_change_percent,baseline_BMI,post_BMI,BMI_change,waist_change,body_fat_change,TG_change,TC_change,LDL_change,HDL_change,FBG_change,FINS_change,HOMA_IR_change,inflammatory_marker_change,responder_label
+aggregate_study_level,PMID:1,PubMed,1,https://pubmed.ncbi.nlm.nih.gov/1/,10.1000/a,1,,,,,,,,,,,,,,,,,,needs_manual_definition

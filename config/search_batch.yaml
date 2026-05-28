@@ -1,0 +1,108 @@
+jobs:
+  - name: pubmed_probiotic_obesity
+    command: search_evidence
+    source: pubmed
+    query: probiotic obesity weight loss
+    output: data/literature_database/pubmed_probiotic_obesity_candidates.csv
+    retmax: 50
+  - name: pubmed_probiotic_rct
+    command: search_evidence
+    source: pubmed
+    query: probiotic overweight BMI randomized controlled trial
+    output: data/literature_database/pubmed_probiotic_rct_candidates.csv
+    retmax: 50
+  - name: pubmed_synbiotic_obesity
+    command: search_evidence
+    source: pubmed
+    query: synbiotic obesity BMI microbiome
+    output: data/literature_database/pubmed_synbiotic_obesity_candidates.csv
+    retmax: 50
+  - name: pubmed_prebiotic_obesity
+    command: search_evidence
+    source: pubmed
+    query: prebiotic obesity weight loss microbiome
+    output: data/literature_database/pubmed_prebiotic_obesity_candidates.csv
+    retmax: 50
+  - name: pubmed_lactobacillus_gasseri
+    command: search_evidence
+    source: pubmed
+    query: Lactobacillus gasseri obesity weight loss
+    output: data/literature_database/pubmed_lactobacillus_gasseri_candidates.csv
+    retmax: 50
+  - name: pubmed_bifidobacterium_obesity
+    command: search_evidence
+    source: pubmed
+    query: Bifidobacterium obesity weight loss
+    output: data/literature_database/pubmed_bifidobacterium_obesity_candidates.csv
+    retmax: 50
+  - name: pubmed_akkermansia_obesity
+    command: search_evidence
+    source: pubmed
+    query: Akkermansia obesity intervention
+    output: data/literature_database/pubmed_akkermansia_obesity_candidates.csv
+    retmax: 50
+  - name: europepmc_probiotic_obesity
+    command: search_evidence
+    source: europe_pmc
+    query: probiotic obesity weight loss
+    output: data/literature_database/europepmc_probiotic_obesity_candidates.csv
+    retmax: 50
+  - name: europepmc_synbiotic_prebiotic
+    command: search_evidence
+    source: europe_pmc
+    query: synbiotic OR prebiotic obesity microbiome
+    output: data/literature_database/europepmc_synbiotic_prebiotic_candidates.csv
+    retmax: 50
+  - name: clinicaltrials_probiotic_obesity
+    command: search_evidence
+    source: clinical_trials
+    query: probiotic obesity
+    output: data/literature_database/clinicaltrials_probiotic_obesity_candidates.csv
+    retmax: 50
+  - name: clinicaltrials_synbiotic_obesity
+    command: search_evidence
+    source: clinical_trials
+    query: synbiotic obesity
+    output: data/literature_database/clinicaltrials_synbiotic_obesity_candidates.csv
+    retmax: 50
+  - name: clinicaltrials_prebiotic_obesity
+    command: search_evidence
+    source: clinical_trials
+    query: prebiotic obesity
+    output: data/literature_database/clinicaltrials_prebiotic_obesity_candidates.csv
+    retmax: 50
+  - name: genome_lactobacillus_gasseri_sbt2055
+    command: search_genomes
+    query: Lactobacillus gasseri SBT2055
+    output: data/strain_genome/ncbi_assembly_lactobacillus_gasseri_sbt2055_candidates.csv
+    retmax: 50
+  - name: genome_lactiplantibacillus_plantarum_kabp051
+    command: search_genomes
+    query: Lactiplantibacillus plantarum KABP051
+    output: data/strain_genome/ncbi_assembly_lactiplantibacillus_plantarum_kabp051_candidates.csv
+    retmax: 50
+  - name: genome_limosilactobacillus_fermentum_k8lb1
+    command: search_genomes
+    query: Limosilactobacillus fermentum K8-Lb1
+    output: data/strain_genome/ncbi_assembly_limosilactobacillus_fermentum_k8lb1_candidates.csv
+    retmax: 50
+  - name: genome_lacticaseibacillus_rhamnosus
+    command: search_genomes
+    query: Lacticaseibacillus rhamnosus
+    output: data/strain_genome/ncbi_assembly_lacticaseibacillus_rhamnosus_candidates.csv
+    retmax: 50
+  - name: genome_bifidobacterium_animalis_lactis
+    command: search_genomes
+    query: Bifidobacterium animalis subsp. lactis
+    output: data/strain_genome/ncbi_assembly_bifidobacterium_animalis_lactis_candidates.csv
+    retmax: 50
+  - name: genome_akkermansia_muciniphila
+    command: search_genomes
+    query: Akkermansia muciniphila
+    output: data/strain_genome/ncbi_assembly_akkermansia_muciniphila_candidates.csv
+    retmax: 50
+  - name: genome_limosilactobacillus_reuteri_dsm17938
+    command: search_genomes
+    query: Limosilactobacillus reuteri DSM 17938
+    output: data/strain_genome/ncbi_assembly_limosilactobacillus_reuteri_dsm17938_candidates.csv
+    retmax: 50
