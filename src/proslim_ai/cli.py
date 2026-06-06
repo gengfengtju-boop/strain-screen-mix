@@ -15,6 +15,7 @@ from .evidence_links import validate_strain_evidence_links
 from .evidence_merge import merge_evidence_candidates
 from .export import export_ascii_safe_csv
 from .extraction import build_extraction_drafts
+from .extraction_queue import build_extraction_queue
 from .finalize import finalize_clinical_outcomes
 from .formulation_recommendation import build_formulation_recommendations
 from .hints import extract_detail_hints
@@ -308,6 +309,23 @@ def cmd_build_extraction_drafts(args: argparse.Namespace) -> int:
     print(f"Input: {result.input_path}")
     print(f"Intervention draft: {result.intervention_output} ({result.intervention_rows} rows)")
     print(f"Outcome draft: {result.outcome_output} ({result.outcome_rows} rows)")
+    return 0
+
+
+def cmd_build_extraction_queue(args: argparse.Namespace) -> int:
+    result = build_extraction_queue(
+        screening_path=Path(args.screening),
+        output_path=Path(args.output),
+        priority_levels=set(args.priority),
+        top_n=args.top_n,
+        min_relevance_score=args.min_relevance_score,
+        exclude_paths=[Path(item) for item in args.exclude_evidence_ids_from],
+    )
+    print(f"Input: {result.input_path}")
+    print(f"Output: {result.output_path}")
+    print(f"Rows read: {result.rows_read}")
+    print(f"Excluded evidence ids: {result.excluded_evidence}")
+    print(f"Queue rows written: {result.rows_written}")
     return 0
 
 
@@ -617,6 +635,28 @@ def build_parser() -> argparse.ArgumentParser:
     extraction_drafts.add_argument("intervention_output", help="Output intervention_metadata draft CSV.")
     extraction_drafts.add_argument("outcome_output", help="Output clinical_outcome draft CSV.")
     extraction_drafts.set_defaults(func=cmd_build_extraction_drafts)
+
+    extraction_queue = subparsers.add_parser(
+        "build-extraction-queue",
+        help="Build a prioritized top-N screening queue for detail fetch and manual extraction.",
+    )
+    extraction_queue.add_argument("screening", help="Input evidence screening CSV.")
+    extraction_queue.add_argument("output", help="Output prioritized extraction queue CSV.")
+    extraction_queue.add_argument(
+        "--priority",
+        action="append",
+        default=["high", "medium"],
+        help="Priority level to include. Can be repeated.",
+    )
+    extraction_queue.add_argument("--top-n", type=int, default=160)
+    extraction_queue.add_argument("--min-relevance-score", type=int, default=1)
+    extraction_queue.add_argument(
+        "--exclude-evidence-ids-from",
+        action="append",
+        default=[],
+        help="CSV file containing evidence_id values to exclude. Can be repeated.",
+    )
+    extraction_queue.set_defaults(func=cmd_build_extraction_queue)
 
     evidence_details = subparsers.add_parser(
         "fetch-evidence-details",
