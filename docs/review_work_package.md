@@ -37,11 +37,13 @@ The enriched file adds regex-inferred `enriched_intervention_type_hint` and
 
 Recommended review order:
 
-1. Review `review_priority_top100.enriched.csv` first.
-2. Fill extracted rows in `outcome_review_worksheet.review_priority_top100.csv`.
-3. Continue to `review_priority_top200.enriched.csv` when the top 100 are complete.
-4. Use `review_priority_remaining_hint_gaps_top150.csv` to fill missing taxa and intervention type hints.
-5. Use `combined_top659_enriched_data_gap_report.csv` for the full enriched gap view.
+1. Read `docs/manual_review_sop.md`.
+2. Start with `review_priority_top10_quick_start.csv`.
+3. Review `review_priority_top100_batch1_predictions.csv`.
+4. Fill extracted rows in `outcome_review_worksheet.top100_batch1.csv`.
+5. Continue batches 2-4 when batch 1 is complete.
+6. Use `review_priority_remaining_hint_gaps_top150.csv` to fill missing taxa and intervention type hints.
+7. Use `combined_top659_enriched_data_gap_report.csv` for the full enriched gap view.
 
 Current summary:
 
