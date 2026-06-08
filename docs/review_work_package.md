@@ -8,8 +8,12 @@ Current evidence registry:
 Priority prediction files:
 
 - `results/prediction_results/preliminary_evidence_response_prioritization.combined_top659.csv`
+- `results/prediction_results/preliminary_evidence_response_prioritization.combined_top659.enriched.csv`
 - `results/prediction_results/review_priority_top100.csv`
 - `results/prediction_results/review_priority_top200.csv`
+- `results/prediction_results/review_priority_top100.enriched.csv`
+- `results/prediction_results/review_priority_top200.enriched.csv`
+- `results/prediction_results/review_priority_remaining_hint_gaps_top150.csv`
 
 Manual outcome review files:
 
@@ -33,10 +37,11 @@ The enriched file adds regex-inferred `enriched_intervention_type_hint` and
 
 Recommended review order:
 
-1. Review `review_priority_top100.csv` first.
+1. Review `review_priority_top100.enriched.csv` first.
 2. Fill extracted rows in `outcome_review_worksheet.review_priority_top100.csv`.
-3. Continue to `review_priority_top200.csv` when the top 100 are complete.
-4. Use `combined_top659_data_gap_report.csv` to fill missing taxa and intervention type hints.
+3. Continue to `review_priority_top200.enriched.csv` when the top 100 are complete.
+4. Use `review_priority_remaining_hint_gaps_top150.csv` to fill missing taxa and intervention type hints.
+5. Use `combined_top659_enriched_data_gap_report.csv` for the full enriched gap view.
 
 Current summary:
 
@@ -51,3 +56,7 @@ Current summary:
 - Enriched missing taxa hints: 364
 - Original missing intervention type hints: 428
 - Enriched missing intervention type hints: 154
+- Top 100 enriched missing taxa hints: 26
+- Top 100 enriched missing intervention type hints: 10
+- Top 200 enriched missing taxa hints: 82
+- Top 200 enriched missing intervention type hints: 31
