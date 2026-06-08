@@ -1,0 +1,142 @@
+jobs:
+  - name: pubmed_adult_probiotic_obesity_rct
+    command: search_evidence
+    source: pubmed
+    query: adult probiotic obesity randomized placebo BMI body fat
+    output: data/literature_database/pubmed_adult_probiotic_obesity_rct_expansion_candidates.csv
+    retmax: 100
+  - name: pubmed_overweight_probiotic_metabolic_rct
+    command: search_evidence
+    source: pubmed
+    query: overweight probiotic randomized triglyceride cholesterol insulin microbiome
+    output: data/literature_database/pubmed_overweight_probiotic_metabolic_rct_expansion_candidates.csv
+    retmax: 100
+  - name: pubmed_synbiotic_weight_loss_rct
+    command: search_evidence
+    source: pubmed
+    query: synbiotic weight loss obesity randomized controlled trial
+    output: data/literature_database/pubmed_synbiotic_weight_loss_rct_expansion_candidates.csv
+    retmax: 100
+  - name: pubmed_prebiotic_fiber_body_weight_rct
+    command: search_evidence
+    source: pubmed
+    query: prebiotic fiber body weight obesity randomized microbiota
+    output: data/literature_database/pubmed_prebiotic_fiber_body_weight_rct_expansion_candidates.csv
+    retmax: 100
+  - name: pubmed_gut_microbiota_obesity_intervention_rct
+    command: search_evidence
+    source: pubmed
+    query: gut microbiota obesity intervention randomized body composition
+    output: data/literature_database/pubmed_gut_microbiota_obesity_intervention_rct_expansion_candidates.csv
+    retmax: 100
+  - name: pubmed_probiotic_visceral_fat_randomized
+    command: search_evidence
+    source: pubmed
+    query: probiotic visceral fat randomized abdominal fat BMI
+    output: data/literature_database/pubmed_probiotic_visceral_fat_randomized_expansion_candidates.csv
+    retmax: 80
+  - name: pubmed_probiotic_nafld_obesity_rct
+    command: search_evidence
+    source: pubmed
+    query: probiotic NAFLD obesity randomized insulin resistance microbiota
+    output: data/literature_database/pubmed_probiotic_nafld_obesity_rct_expansion_candidates.csv
+    retmax: 80
+  - name: pubmed_bifidobacterium_body_composition_rct
+    command: search_evidence
+    source: pubmed
+    query: Bifidobacterium body composition obesity randomized trial
+    output: data/literature_database/pubmed_bifidobacterium_body_composition_rct_expansion_candidates.csv
+    retmax: 80
+  - name: pubmed_lactobacillus_body_composition_rct
+    command: search_evidence
+    source: pubmed
+    query: Lactobacillus body composition obesity randomized trial
+    output: data/literature_database/pubmed_lactobacillus_body_composition_rct_expansion_candidates.csv
+    retmax: 80
+  - name: pubmed_postbiotic_obesity_metabolic_rct
+    command: search_evidence
+    source: pubmed
+    query: postbiotic obesity metabolic randomized trial microbiota
+    output: data/literature_database/pubmed_postbiotic_obesity_metabolic_rct_expansion_candidates.csv
+    retmax: 80
+  - name: pubmed_paraprobiotic_obesity_metabolic
+    command: search_evidence
+    source: pubmed
+    query: paraprobiotic obesity metabolic syndrome randomized
+    output: data/literature_database/pubmed_paraprobiotic_obesity_metabolic_expansion_candidates.csv
+    retmax: 50
+  - name: pubmed_short_chain_fatty_acid_probiotic_obesity
+    command: search_evidence
+    source: pubmed
+    query: probiotic short chain fatty acids obesity randomized
+    output: data/literature_database/pubmed_scfa_probiotic_obesity_expansion_candidates.csv
+    retmax: 80
+  - name: pubmed_bile_acid_probiotic_obesity
+    command: search_evidence
+    source: pubmed
+    query: probiotic bile acid obesity microbiota randomized
+    output: data/literature_database/pubmed_bile_acid_probiotic_obesity_expansion_candidates.csv
+    retmax: 80
+  - name: europepmc_probiotic_obesity_rct_broad
+    command: search_evidence
+    source: europe_pmc
+    query: probiotic obesity randomized placebo body fat BMI microbiome
+    output: data/literature_database/europepmc_probiotic_obesity_rct_broad_expansion_candidates.csv
+    retmax: 100
+  - name: europepmc_prebiotic_synbiotic_obesity_rct
+    command: search_evidence
+    source: europe_pmc
+    query: prebiotic synbiotic obesity randomized weight microbiome
+    output: data/literature_database/europepmc_prebiotic_synbiotic_obesity_rct_expansion_candidates.csv
+    retmax: 100
+  - name: europepmc_metabolic_syndrome_microbiome_intervention
+    command: search_evidence
+    source: europe_pmc
+    query: metabolic syndrome microbiome probiotic randomized trial overweight
+    output: data/literature_database/europepmc_metabolic_syndrome_microbiome_intervention_expansion_candidates.csv
+    retmax: 100
+  - name: europepmc_visceral_fat_probiotic
+    command: search_evidence
+    source: europe_pmc
+    query: visceral fat probiotic randomized microbiota obesity
+    output: data/literature_database/europepmc_visceral_fat_probiotic_expansion_candidates.csv
+    retmax: 80
+  - name: clinicaltrials_obesity_microbiome_intervention
+    command: search_evidence
+    source: clinical_trials
+    query: obesity microbiome probiotic prebiotic synbiotic
+    output: data/literature_database/clinicaltrials_obesity_microbiome_intervention_expansion_candidates.csv
+    retmax: 100
+  - name: clinicaltrials_weight_loss_probiotic
+    command: search_evidence
+    source: clinical_trials
+    query: weight loss probiotic body fat BMI
+    output: data/literature_database/clinicaltrials_weight_loss_probiotic_expansion_candidates.csv
+    retmax: 100
+  - name: clinicaltrials_metabolic_syndrome_probiotic
+    command: search_evidence
+    source: clinical_trials
+    query: metabolic syndrome probiotic microbiome insulin
+    output: data/literature_database/clinicaltrials_metabolic_syndrome_probiotic_expansion_candidates.csv
+    retmax: 80
+  - name: clinicaltrials_nafld_probiotic_microbiome
+    command: search_evidence
+    source: clinical_trials
+    query: NAFLD probiotic microbiome obesity insulin resistance
+    output: data/literature_database/clinicaltrials_nafld_probiotic_microbiome_expansion_candidates.csv
+    retmax: 80
+  - name: genome_lactobacillus_gasseri_obesity_strains
+    command: search_genomes
+    query: Lactobacillus gasseri obesity probiotic strain
+    output: data/strain_genome/ncbi_assembly_lactobacillus_gasseri_obesity_strains_expansion_candidates.csv
+    retmax: 80
+  - name: genome_bifidobacterium_lactis_obesity_strains
+    command: search_genomes
+    query: Bifidobacterium animalis lactis obesity probiotic strain
+    output: data/strain_genome/ncbi_assembly_bifidobacterium_lactis_obesity_strains_expansion_candidates.csv
+    retmax: 80
+  - name: genome_lactiplantibacillus_plantarum_obesity_strains
+    command: search_genomes
+    query: Lactiplantibacillus plantarum obesity probiotic strain
+    output: data/strain_genome/ncbi_assembly_lactiplantibacillus_plantarum_obesity_strains_expansion_candidates.csv
+    retmax: 80

@@ -1,0 +1,2 @@
+evidence_id,evidence_type,source_database,source_accession,source_url,doi,pmid,title,year,journal,study_design,data_field_supported,extraction_note,curator,extraction_date
+NCT:NCT01922830,clinical_trial,ClinicalTrials.gov,NCT01922830,https://clinicaltrials.gov/study/NCT01922830,,,Probiotics and Microbiota in Bariatric Surgery,2013,,clinical_trial_registry,intervention_metadata;clinical_outcome,Auto-collected from ClinicalTrials.gov API v2; requires manual review.,auto_search_expansion,2026-06-06
