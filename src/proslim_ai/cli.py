@@ -13,6 +13,7 @@ from .details import build_evidence_details
 from .cleaning import clean_sample_metadata
 from .evidence_links import validate_strain_evidence_links
 from .evidence_merge import merge_evidence_candidates
+from .enrichment import enrich_prediction_hints
 from .export import export_ascii_safe_csv
 from .extraction import build_extraction_drafts
 from .extraction_queue import build_extraction_queue
@@ -220,6 +221,20 @@ def cmd_export_ascii(args: argparse.Namespace) -> int:
     print(f"Input: {args.input}")
     print(f"Output: {args.output}")
     print(f"Rows written: {rows}")
+    return 0
+
+
+def cmd_enrich_prediction_hints(args: argparse.Namespace) -> int:
+    result = enrich_prediction_hints(
+        prediction_path=Path(args.predictions),
+        details_paths=[Path(item) for item in args.details],
+        output_path=Path(args.output),
+    )
+    print(f"Input predictions: {result.prediction_path}")
+    print(f"Output: {result.output_path}")
+    print(f"Rows: {result.rows_read} -> {result.rows_written}")
+    print(f"Intervention hints filled: {result.intervention_filled}")
+    print(f"Taxa hints filled: {result.taxa_filled}")
     return 0
 
 
@@ -575,6 +590,20 @@ def build_parser() -> argparse.ArgumentParser:
     export_ascii.add_argument("input", help="Input CSV.")
     export_ascii.add_argument("output", help="Output ASCII-safe CSV.")
     export_ascii.set_defaults(func=cmd_export_ascii)
+
+    enrich_predictions = subparsers.add_parser(
+        "enrich-prediction-hints",
+        help="Infer missing prediction intervention/taxa hints from evidence details.",
+    )
+    enrich_predictions.add_argument("predictions", help="Input preliminary prediction CSV.")
+    enrich_predictions.add_argument("output", help="Output enriched prediction CSV.")
+    enrich_predictions.add_argument(
+        "--details",
+        action="append",
+        default=[],
+        help="Evidence detail CSV to use for enrichment. Can be repeated.",
+    )
+    enrich_predictions.set_defaults(func=cmd_enrich_prediction_hints)
 
     search_cmd = subparsers.add_parser(
         "search-evidence",

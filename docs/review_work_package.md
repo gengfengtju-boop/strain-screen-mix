@@ -20,7 +20,16 @@ Manual outcome review files:
 Gap reports:
 
 - `results/prediction_results/combined_top659_data_gap_report.csv`
+- `results/prediction_results/combined_top659_enriched_data_gap_report.csv`
 - `results/prediction_results/combined_top659_review_package_summary.csv`
+- `results/prediction_results/combined_top659_enrichment_summary.csv`
+
+Enriched prediction file:
+
+- `results/prediction_results/preliminary_evidence_response_prioritization.combined_top659.enriched.csv`
+
+The enriched file adds regex-inferred `enriched_intervention_type_hint` and
+`enriched_taxa_hint` from titles plus fetched evidence details.
 
 Recommended review order:
 
@@ -38,3 +47,7 @@ Current summary:
 - Top 100 outcome review rows: 414
 - Top 200 outcome review rows: 694
 - Combined high/medium outcome review rows: 930
+- Original missing taxa hints: 579
+- Enriched missing taxa hints: 364
+- Original missing intervention type hints: 428
+- Enriched missing intervention type hints: 154

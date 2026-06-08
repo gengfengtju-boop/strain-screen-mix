@@ -1,0 +1,10 @@
+metric,value
+total_prediction_candidates,659
+high_for_manual_review,96
+medium_for_manual_review,240
+missing_original_taxa_hint,579
+missing_enriched_taxa_hint,364
+missing_original_intervention_type_hint,428
+missing_enriched_intervention_type_hint,154
+taxa_hints_auto_filled,215
+intervention_hints_auto_filled,274
