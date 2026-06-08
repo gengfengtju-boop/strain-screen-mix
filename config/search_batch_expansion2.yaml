@@ -1,0 +1,79 @@
+jobs:
+  - name: pubmed_probiotic_abdominal_obesity_rct_expansion2
+    command: search_evidence
+    source: pubmed
+    query: probiotic abdominal obesity randomized placebo waist circumference
+    output: data/literature_database/pubmed_probiotic_abdominal_obesity_rct_expansion2_candidates.csv
+    retmax: 80
+  - name: pubmed_probiotic_insulin_resistance_overweight_expansion2
+    command: search_evidence
+    source: pubmed
+    query: probiotic insulin resistance overweight randomized microbiome
+    output: data/literature_database/pubmed_probiotic_insulin_resistance_overweight_expansion2_candidates.csv
+    retmax: 80
+  - name: pubmed_bifidobacterium_insulin_resistance_obesity_expansion2
+    command: search_evidence
+    source: pubmed
+    query: Bifidobacterium insulin resistance obesity randomized trial
+    output: data/literature_database/pubmed_bifidobacterium_insulin_resistance_obesity_expansion2_candidates.csv
+    retmax: 80
+  - name: pubmed_lactobacillus_insulin_resistance_obesity_expansion2
+    command: search_evidence
+    source: pubmed
+    query: Lactobacillus insulin resistance obesity randomized trial
+    output: data/literature_database/pubmed_lactobacillus_insulin_resistance_obesity_expansion2_candidates.csv
+    retmax: 80
+  - name: pubmed_probiotic_adiposity_meta_analysis_expansion2
+    command: search_evidence
+    source: pubmed
+    query: probiotic adiposity obesity meta-analysis body weight BMI
+    output: data/literature_database/pubmed_probiotic_adiposity_meta_analysis_expansion2_candidates.csv
+    retmax: 80
+  - name: pubmed_prebiotic_adiposity_meta_analysis_expansion2
+    command: search_evidence
+    source: pubmed
+    query: prebiotic adiposity obesity meta-analysis body weight BMI
+    output: data/literature_database/pubmed_prebiotic_adiposity_meta_analysis_expansion2_candidates.csv
+    retmax: 80
+  - name: pubmed_synbiotic_adiposity_meta_analysis_expansion2
+    command: search_evidence
+    source: pubmed
+    query: synbiotic adiposity obesity meta-analysis body weight BMI
+    output: data/literature_database/pubmed_synbiotic_adiposity_meta_analysis_expansion2_candidates.csv
+    retmax: 80
+  - name: pubmed_probiotic_energy_restricted_diet_obesity_expansion2
+    command: search_evidence
+    source: pubmed
+    query: probiotic energy restricted diet obesity randomized body composition
+    output: data/literature_database/pubmed_probiotic_energy_restricted_diet_obesity_expansion2_candidates.csv
+    retmax: 80
+  - name: europepmc_abdominal_obesity_probiotic_expansion2
+    command: search_evidence
+    source: europe_pmc
+    query: abdominal obesity probiotic randomized waist circumference microbiome
+    output: data/literature_database/europepmc_abdominal_obesity_probiotic_expansion2_candidates.csv
+    retmax: 80
+  - name: europepmc_insulin_resistance_probiotic_expansion2
+    command: search_evidence
+    source: europe_pmc
+    query: insulin resistance probiotic overweight randomized microbiome
+    output: data/literature_database/europepmc_insulin_resistance_probiotic_expansion2_candidates.csv
+    retmax: 80
+  - name: europepmc_adiposity_prebiotic_synbiotic_expansion2
+    command: search_evidence
+    source: europe_pmc
+    query: adiposity prebiotic synbiotic obesity body weight BMI
+    output: data/literature_database/europepmc_adiposity_prebiotic_synbiotic_expansion2_candidates.csv
+    retmax: 80
+  - name: clinicaltrials_abdominal_obesity_probiotic_expansion2
+    command: search_evidence
+    source: clinical_trials
+    query: abdominal obesity probiotic waist circumference
+    output: data/literature_database/clinicaltrials_abdominal_obesity_probiotic_expansion2_candidates.csv
+    retmax: 80
+  - name: clinicaltrials_insulin_resistance_probiotic_expansion2
+    command: search_evidence
+    source: clinical_trials
+    query: insulin resistance probiotic overweight microbiome
+    output: data/literature_database/clinicaltrials_insulin_resistance_probiotic_expansion2_candidates.csv
+    retmax: 80
