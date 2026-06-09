@@ -1,0 +1,4 @@
+﻿table,rows,with_local_source,missing_local_source,missing_second_pass_results,missing_second_pass_value_p,missing_second_pass_dose,missing_second_pass_sample
+priority_top100,100,44,56,59,61,64,63
+outcome_top100_rows,414,194,220,230,244,263,256
+intervention_top100,100,1,99,99,99,99,99
