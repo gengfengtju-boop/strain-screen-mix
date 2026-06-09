@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .pytest_tmp/
+.test_tmp/
 pytest-cache-files-*/
 .ruff_cache/
 .mypy_cache/
@@ -25,6 +26,8 @@ models/**/*.onnx
 results/**/*.html
 results/**/*.png
 results/**/*.pdf
+results/smoke_tests/
+archives/
 
 # Keep directory placeholders
 !data/**/.gitkeep
