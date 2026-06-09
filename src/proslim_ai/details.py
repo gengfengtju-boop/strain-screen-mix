@@ -112,11 +112,16 @@ def _pubmed_details(config: dict, api_client: ApiClient, pmids: list[str]) -> di
     if not pmids:
         return {}
     base_url = config["pubmed"]["base_url"].rstrip("/")
-    xml_text = api_client.get_text(
-        f"{base_url}/efetch.fcgi",
-        {"db": "pubmed", "id": ",".join(pmids), "retmode": "xml"},
-    )
-    return _parse_pubmed_xml(xml_text)
+    records: dict[str, dict[str, str]] = {}
+    chunk_size = 80
+    for start in range(0, len(pmids), chunk_size):
+        chunk = pmids[start : start + chunk_size]
+        xml_text = api_client.get_text(
+            f"{base_url}/efetch.fcgi",
+            {"db": "pubmed", "id": ",".join(chunk), "retmode": "xml"},
+        )
+        records.update(_parse_pubmed_xml(xml_text))
+    return records
 
 
 def _clinical_trial_detail(config: dict, api_client: ApiClient, nct_id: str) -> dict[str, str]:
@@ -187,4 +192,3 @@ def build_evidence_details(
         rows_written=len(detail_rows),
         failed_rows=failed_rows,
     )
-

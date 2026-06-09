@@ -1,0 +1,2 @@
+evidence_id,evidence_type,source_database,source_accession,source_url,doi,pmid,title,year,journal,study_design,data_field_supported,extraction_note,curator,extraction_date
+PMID:30525950,literature,PubMed,30525950,https://pubmed.ncbi.nlm.nih.gov/30525950/,10.3920/BM2018.0028,30525950,Probiotic or synbiotic alters the gut microbiota and metabolism in a randomised controlled trial of weight management in overweight adults.,2019,Beneficial microbes,needs_manual_review,evidence_registry,Auto-collected from PubMed E-utilities; requires manual review.,codex,2026-05-29

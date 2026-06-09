@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120" role="img" aria-labelledby="title desc">
+  <title id="title">平台 V1.0 已完成结果表</title>
+  <desc id="desc">肥胖微生态 AI 平台 V1.0 阶段性成果信息图，包含数据库、OMS 模型、BMI 回归模型、响应人群模型和组合推荐模型。</desc>
+  <defs>
+    <linearGradient id="topBand" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="0.5" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .bg { fill: #f6f7fb; }
+      .title { font: 700 48px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #ffffff; }
+      .subtitle { font: 400 23px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #e0f2fe; }
+      .kpi-label { font: 500 19px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #475569; }
+      .kpi-value { font: 800 39px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #0f172a; }
+      .head { font: 700 22px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #0f172a; }
+      .module { font: 800 24px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #ffffff; }
+      .cell-title { font: 700 18px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #334155; }
+      .cell { font: 400 16px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #334155; }
+      .cell-strong { font: 700 16px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #0f172a; }
+      .foot { font: 400 16px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #64748b; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1600" height="1120"/>
+  <rect x="0" y="0" width="1600" height="220" fill="url(#topBand)"/>
+  <circle cx="1320" cy="64" r="130" fill="#ffffff" opacity="0.09"/>
+  <circle cx="1468" cy="190" r="92" fill="#ffffff" opacity="0.08"/>
+  <text class="title" x="80" y="88">平台 V1.0 已完成结果表</text>
+  <text class="subtitle" x="82" y="135">肥胖微生态数据库 · 响应预测 · 组合推荐 · 待外部验证路线</text>
+  <text class="subtitle" x="82" y="176">当前版本强调证据库、候选预测集、人工复核包和阶段性模型结果的可追溯归档</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="80" y="250" width="270" height="126" rx="8" fill="#ffffff"/>
+    <rect x="382" y="250" width="270" height="126" rx="8" fill="#ffffff"/>
+    <rect x="684" y="250" width="270" height="126" rx="8" fill="#ffffff"/>
+    <rect x="986" y="250" width="270" height="126" rx="8" fill="#ffffff"/>
+    <rect x="1288" y="250" width="232" height="126" rx="8" fill="#ffffff"/>
+  </g>
+  <text class="kpi-label" x="106" y="292">去重证据</text>
+  <text class="kpi-value" x="106" y="342">1097</text>
+  <text class="kpi-label" x="408" y="292">预测候选</text>
+  <text class="kpi-value" x="408" y="342">659</text>
+  <text class="kpi-label" x="710" y="292">high/medium 复核池</text>
+  <text class="kpi-value" x="710" y="342">930</text>
+  <text class="kpi-label" x="1012" y="292">响应模型 AUC</text>
+  <text class="kpi-value" x="1012" y="342">0.971</text>
+  <text class="kpi-label" x="1314" y="292">组合输出</text>
+  <text class="kpi-value" x="1314" y="342">50</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="80" y="416" width="1440" height="606" rx="8" fill="#ffffff"/>
+  </g>
+  <rect x="80" y="416" width="1440" height="56" rx="8" fill="#111827"/>
+  <text class="head" x="112" y="452" fill="#ffffff">模块</text>
+  <text class="head" x="354" y="452" fill="#ffffff">已完成数据</text>
+  <text class="head" x="680" y="452" fill="#ffffff">关键指标</text>
+  <text class="head" x="912" y="452" fill="#ffffff">当前结果</text>
+  <text class="head" x="1260" y="452" fill="#ffffff">下一步</text>
+
+  <g>
+    <rect x="80" y="472" width="232" height="110" fill="#0f766e"/>
+    <text class="module" x="108" y="532">肥胖微生态</text>
+    <text class="module" x="108" y="562">数据库</text>
+    <text class="cell" x="342" y="505">78 个队列；1097 条证据</text>
+    <text class="cell" x="342" y="532">659 条预测候选；930 行复核池</text>
+    <text class="cell" x="342" y="559">sample metadata 为 2 行示例</text>
+    <text class="cell" x="670" y="505">完整率、批次控制</text>
+    <text class="cell" x="670" y="532">high/medium 覆盖</text>
+    <text class="cell-strong" x="902" y="505">已形成标准化证据矩阵</text>
+    <text class="cell" x="902" y="532">样本级矩阵仍为 schema/template</text>
+    <text class="cell" x="1250" y="505">扩展中国人群</text>
+    <text class="cell" x="1250" y="532">接入真实菌群矩阵</text>
+  </g>
+
+  <g>
+    <rect x="80" y="582" width="232" height="110" fill="#2563eb"/>
+    <text class="module" x="108" y="646">OMS 模型</text>
+    <text class="cell" x="342" y="615">已定义目录、schema</text>
+    <text class="cell" x="342" y="642">和建模模块边界</text>
+    <text class="cell" x="670" y="615">AUC、Accuracy、F1</text>
+    <text class="cell" x="670" y="642">留一研究验证</text>
+    <text class="cell-strong" x="902" y="615">尚未训练分类模型</text>
+    <text class="cell" x="902" y="642">真实指标暂无</text>
+    <text class="cell" x="1250" y="615">接入样本级矩阵</text>
+    <text class="cell" x="1250" y="642">外部验证</text>
+  </g>
+
+  <g>
+    <rect x="80" y="692" width="232" height="110" fill="#7c3aed"/>
+    <text class="module" x="108" y="756">BMI 回归模型</text>
+    <text class="cell" x="342" y="725">已定义回归目录</text>
+    <text class="cell" x="342" y="752">当前仅 2 行清洗示例</text>
+    <text class="cell" x="670" y="725">R²、MAE、RMSE</text>
+    <text class="cell" x="670" y="752">临床协变量</text>
+    <text class="cell-strong" x="902" y="725">尚未训练回归模型</text>
+    <text class="cell" x="902" y="752">真实 R²/MAE/RMSE 暂无</text>
+    <text class="cell" x="1250" y="725">加入年龄、性别、地区</text>
+    <text class="cell" x="1250" y="752">饮食、抗生素等协变量</text>
+  </g>
+
+  <g>
+    <rect x="80" y="802" width="232" height="110" fill="#dc2626"/>
+    <text class="module" x="108" y="866">响应人群模型</text>
+    <text class="cell" x="342" y="835">46 个 study-endpoint 行</text>
+    <text class="cell" x="342" y="862">12 个 evidence-level 研究</text>
+    <text class="cell" x="670" y="835">AUC、AP、Brier</text>
+    <text class="cell" x="670" y="862">解释特征</text>
+    <text class="cell-strong" x="902" y="835">AUC=0.971；AP=0.935</text>
+    <text class="cell" x="902" y="862">Brier=0.060；研究终点层级</text>
+    <text class="cell" x="1250" y="835">完成 Top100/Top200 抽取</text>
+    <text class="cell" x="1250" y="862">前瞻验证</text>
+  </g>
+
+  <g>
+    <rect x="80" y="912" width="232" height="110" fill="#ea580c"/>
+    <text class="module" x="108" y="976">组合推荐模型</text>
+    <text class="cell" x="342" y="945">7 个候选菌株</text>
+    <text class="cell" x="342" y="972">50 个 3-5 菌株组合</text>
+    <text class="cell" x="670" y="945">Top 组合数量</text>
+    <text class="cell" x="670" y="972">clinical/design/response score</text>
+    <text class="cell-strong" x="902" y="945">已输出 50 个组合</text>
+    <text class="cell" x="902" y="972">安全门仍待 genome safety gate</text>
+    <text class="cell" x="1250" y="945">体外与动物验证</text>
+    <text class="cell" x="1250" y="972">按人工复核更新评分</text>
+  </g>
+
+  <line x1="312" y1="472" x2="312" y2="1022" stroke="#e2e8f0"/>
+  <line x1="652" y1="472" x2="652" y2="1022" stroke="#e2e8f0"/>
+  <line x1="884" y1="472" x2="884" y2="1022" stroke="#e2e8f0"/>
+  <line x1="1230" y1="472" x2="1230" y2="1022" stroke="#e2e8f0"/>
+  <line x1="80" y1="582" x2="1520" y2="582" stroke="#e2e8f0"/>
+  <line x1="80" y1="692" x2="1520" y2="692" stroke="#e2e8f0"/>
+  <line x1="80" y1="802" x2="1520" y2="802" stroke="#e2e8f0"/>
+  <line x1="80" y1="912" x2="1520" y2="912" stroke="#e2e8f0"/>
+
+  <text class="foot" x="80" y="1066">注：OMS 与 BMI 回归模型当前为建模框架和输入规范阶段，尚无真实训练指标；响应模型指标为 study-endpoint 层级阶段性结果。</text>
+  <text class="foot" x="80" y="1094">数据源：results/platform_v1_completed_results.csv；生成日期：2026-06-09。</text>
+</svg>

@@ -8,11 +8,14 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from sklearn.base import clone
 from sklearn.compose import ColumnTransformer
+from sklearn.dummy import DummyClassifier
+from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import average_precision_score, brier_score_loss, roc_auc_score
-from sklearn.model_selection import StratifiedKFold, cross_val_predict
+from sklearn.model_selection import StratifiedGroupKFold, StratifiedKFold, cross_val_predict
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
@@ -74,7 +77,7 @@ def train_response_model(
     if data["label"].nunique() < 2:
         raise ValueError("Response model requires at least one positive and one non-positive outcome row.")
 
-    numeric_features = ["intervention_effect", "control_effect", "effect_difference", "between_group_p", "within_group_p"]
+    numeric_candidates = ["intervention_effect", "control_effect", "effect_difference", "between_group_p", "within_group_p"]
     categorical_features = [
         "outcome_domain",
         "endpoint_type",
@@ -83,26 +86,22 @@ def train_response_model(
         "direction",
         "evidence_modifier",
     ]
-    for column in numeric_features:
+    for column in numeric_candidates:
         data[column] = pd.to_numeric(data.get(column), errors="coerce")
+    min_observed_numeric_values = 5
+    numeric_features = [
+        column for column in numeric_candidates if int(data[column].notna().sum()) >= min_observed_numeric_values
+    ]
     for column in categorical_features:
         data[column] = data.get(column, "").fillna("").astype(str)
 
-    model = _build_model(numeric_features, categorical_features)
     X = data[numeric_features + categorical_features]
     y = data["label"]
-    min_class_count = int(y.value_counts().min())
-    n_splits = min(5, min_class_count)
-    if n_splits >= 2:
-        cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=17)
-        probabilities = cross_val_predict(model, X, y, cv=cv, method="predict_proba")[:, 1]
-        validation = "stratified_cross_validated"
-    else:
-        model.fit(X, y)
-        probabilities = model.predict_proba(X)[:, 1]
-        validation = "resubstitution_small_class_count"
+    groups = data["evidence_id"].fillna("").astype(str)
+    model_candidates = _model_candidates(numeric_features, categorical_features)
+    selected_name, probabilities, comparison, validation = _select_model(model_candidates, X, y, groups)
 
-    final_model = _build_model(numeric_features, categorical_features)
+    final_model = clone(model_candidates[selected_name])
     final_model.fit(X, y)
 
     row_predictions = data.copy()
@@ -120,6 +119,8 @@ def train_response_model(
     metrics = _metrics(y.to_numpy(), probabilities)
     metrics.update(
         {
+            "selected_model": selected_name,
+            "model_comparison": comparison,
             "validation": validation,
             "rows_used": int(len(data)),
             "positive_rows": int(y.sum()),
@@ -137,6 +138,7 @@ def train_response_model(
         pickle.dump(
             {
                 "model": final_model,
+                "selected_model": selected_name,
                 "numeric_features": numeric_features,
                 "categorical_features": categorical_features,
                 "model_level": "study_endpoint_level_not_individual_microbiome",
@@ -188,6 +190,10 @@ def apply_response_model_to_combinations(
                 row["response_model_pmids_used"] = ""
             rows.append(row)
 
+    rows.sort(key=lambda item: float(_text(item.get("validation_priority")) or 0), reverse=True)
+    for index, row in enumerate(rows, start=1):
+        row["combination_id"] = f"MR3TO5_{index:03d}"
+
     extra_fields = [
         "predicted_response_probability",
         "response_model_level",
@@ -211,12 +217,20 @@ def apply_response_model_to_combinations(
     )
 
 
-def _build_model(numeric_features: list[str], categorical_features: list[str]) -> Pipeline:
+def _build_model(
+    numeric_features: list[str],
+    categorical_features: list[str],
+    classifier: object,
+    scale_numeric: bool = True,
+) -> Pipeline:
+    numeric_steps: list[tuple[str, object]] = [("imputer", SimpleImputer(strategy="median"))]
+    if scale_numeric:
+        numeric_steps.append(("scaler", StandardScaler()))
     preprocessor = ColumnTransformer(
         transformers=[
             (
                 "numeric",
-                Pipeline([("imputer", SimpleImputer(strategy="median")), ("scaler", StandardScaler())]),
+                Pipeline(numeric_steps),
                 numeric_features,
             ),
             (
@@ -234,9 +248,111 @@ def _build_model(numeric_features: list[str], categorical_features: list[str]) -
     return Pipeline(
         [
             ("preprocess", preprocessor),
-            ("classifier", LogisticRegression(class_weight="balanced", max_iter=1000, random_state=17)),
+            ("classifier", classifier),
         ]
     )
+
+
+def _model_candidates(numeric_features: list[str], categorical_features: list[str]) -> dict[str, Pipeline]:
+    return {
+        "dummy_prior": _build_model(
+            numeric_features,
+            categorical_features,
+            DummyClassifier(strategy="prior"),
+        ),
+        "logistic_l2_balanced": _build_model(
+            numeric_features,
+            categorical_features,
+            LogisticRegression(class_weight="balanced", max_iter=1000, random_state=17),
+        ),
+        "random_forest_balanced": _build_model(
+            numeric_features,
+            categorical_features,
+            RandomForestClassifier(
+                n_estimators=300,
+                max_depth=3,
+                min_samples_leaf=3,
+                class_weight="balanced_subsample",
+                random_state=17,
+            ),
+            scale_numeric=False,
+        ),
+        "gradient_boosting_shallow": _build_model(
+            numeric_features,
+            categorical_features,
+            GradientBoostingClassifier(
+                n_estimators=80,
+                learning_rate=0.05,
+                max_depth=2,
+                min_samples_leaf=3,
+                random_state=17,
+            ),
+            scale_numeric=False,
+        ),
+    }
+
+
+def _select_model(
+    models: dict[str, Pipeline],
+    X: pd.DataFrame,
+    y: pd.Series,
+    groups: pd.Series,
+) -> tuple[str, np.ndarray, list[dict[str, object]], str]:
+    validation, cv, use_groups = _cross_validation_strategy(y, groups)
+    comparison: list[dict[str, object]] = []
+    best_name = ""
+    best_probabilities: np.ndarray | None = None
+    best_key: tuple[float, float] | None = None
+
+    for name, model in models.items():
+        probabilities = _cross_validated_probabilities(model, X, y, groups, cv, use_groups)
+        metrics = _metrics(y.to_numpy(), probabilities)
+        row = {"model": name, **metrics}
+        comparison.append(row)
+        brier = float(metrics["brier_score"] if metrics["brier_score"] is not None else 1.0)
+        average_precision = float(metrics["average_precision"] if metrics["average_precision"] is not None else 0.0)
+        key = (brier, -average_precision)
+        if best_key is None or key < best_key:
+            best_name = name
+            best_probabilities = probabilities
+            best_key = key
+
+    if best_probabilities is None:
+        raise RuntimeError("No response model candidate produced probabilities.")
+    return best_name, best_probabilities, comparison, validation
+
+
+def _cross_validation_strategy(y: pd.Series, groups: pd.Series) -> tuple[str, object | None, bool]:
+    min_class_count = int(y.value_counts().min())
+    group_count = int(groups.nunique())
+    n_splits = min(5, min_class_count, group_count)
+    if n_splits >= 2:
+        return (
+            "stratified_group_cross_validated_by_evidence_id",
+            StratifiedGroupKFold(n_splits=n_splits, shuffle=True, random_state=17),
+            True,
+        )
+    n_splits = min(5, min_class_count)
+    if n_splits >= 2:
+        return ("stratified_cross_validated", StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=17), False)
+    return ("resubstitution_small_class_count", None, False)
+
+
+def _cross_validated_probabilities(
+    model: Pipeline,
+    X: pd.DataFrame,
+    y: pd.Series,
+    groups: pd.Series,
+    cv: object | None,
+    use_groups: bool,
+) -> np.ndarray:
+    if cv is None:
+        fitted = clone(model)
+        fitted.fit(X, y)
+        return fitted.predict_proba(X)[:, 1]
+    if use_groups:
+        return cross_val_predict(clone(model), X, y, groups=groups, cv=cv, method="predict_proba")[:, 1]
+    return cross_val_predict(clone(model), X, y, cv=cv, method="predict_proba")[:, 1]
 
 
 def _aggregate_evidence_predictions(row_predictions: pd.DataFrame) -> pd.DataFrame:

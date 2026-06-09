@@ -1,0 +1,39 @@
+{
+  "average_precision": 0.9100400008488243,
+  "brier_score": 0.07313063083982684,
+  "evidence_count": 17,
+  "limitation": "Trained on structured study endpoint rows, not subject-level baseline microbiome responders.",
+  "model_comparison": [
+    {
+      "average_precision": 0.3261243852329124,
+      "brier_score": 0.23341314421848836,
+      "model": "dummy_prior",
+      "roc_auc": 0.4250992063492064
+    },
+    {
+      "average_precision": 0.8096000078221124,
+      "brier_score": 0.1584410232977296,
+      "model": "logistic_l2_balanced",
+      "roc_auc": 0.8293650793650794
+    },
+    {
+      "average_precision": 0.9061987870253999,
+      "brier_score": 0.16302657255635197,
+      "model": "random_forest_balanced",
+      "roc_auc": 0.873015873015873
+    },
+    {
+      "average_precision": 0.9100400008488243,
+      "brier_score": 0.07313063083982684,
+      "model": "gradient_boosting_shallow",
+      "roc_auc": 0.8824404761904763
+    }
+  ],
+  "model_level": "study_endpoint_level_not_individual_microbiome",
+  "non_positive_rows": 42,
+  "positive_rows": 24,
+  "roc_auc": 0.8824404761904763,
+  "rows_used": 66,
+  "selected_model": "gradient_boosting_shallow",
+  "validation": "stratified_group_cross_validated_by_evidence_id"
+}

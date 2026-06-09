@@ -1,0 +1,13 @@
+evidence_id,study_level_response_probability,positive_endpoint_fraction,outcome_rows,adiposity_probability,metabolic_probability,microbiome_probability,model_level
+PMID:40409234,0.0525,0.1667,6,0.0588,0.0410,,study_endpoint_level_not_individual_microbiome
+PMID:37447365,0.9563,1.0000,4,0.9563,,,study_endpoint_level_not_individual_microbiome
+PMID:37111082,0.0135,0.0000,4,0.0135,,,study_endpoint_level_not_individual_microbiome
+PMID:41512635,0.2432,0.2500,4,0.2432,,,study_endpoint_level_not_individual_microbiome
+PMID:40416368,0.2487,0.3333,3,0.0165,0.3170,0.9632,study_endpoint_level_not_individual_microbiome
+PMID:40385498,0.2167,0.0000,4,0.0613,0.5015,,study_endpoint_level_not_individual_microbiome
+PMID:39456659,0.6863,0.6667,3,0.5270,0.9785,,study_endpoint_level_not_individual_microbiome
+PMID:39051504,0.6493,0.6667,3,0.4906,0.9402,,study_endpoint_level_not_individual_microbiome
+PMID:38999741,0.2907,0.2500,4,0.3669,,0.0112,study_endpoint_level_not_individual_microbiome
+PMID:38542727,0.9674,0.7500,4,0.9714,0.9602,,study_endpoint_level_not_individual_microbiome
+PMID:27810310,0.6625,0.6667,3,0.6625,,,study_endpoint_level_not_individual_microbiome
+PMID:40066582,0.0076,0.0000,4,0.0056,0.0112,,study_endpoint_level_not_individual_microbiome
