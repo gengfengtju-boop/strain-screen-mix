@@ -40,6 +40,9 @@ ROBUST_COMBINATION_FIELDS = [
     "posterior_score_mean",
     "posterior_score_p10",
     "posterior_score_p90",
+    "uncertainty_width",
+    "upper_confidence_bound",
+    "expected_information_gain",
     "top10_probability",
     "rank_mean",
     "rank_p90",
@@ -51,6 +54,8 @@ ROBUST_COMBINATION_FIELDS = [
     "genus_diversity_score",
     "split_evidence_penalty",
     "complexity_penalty",
+    "pareto_front",
+    "active_learning_batch",
     "safety_gate",
     "prediction_scope",
     "recommended_prebiotic",
@@ -117,6 +122,22 @@ def optimize_strain_combinations(
             "genus_diversity": 0.10,
         },
         "validation": "Monte Carlo sensitivity analysis over evidence posteriors and score weights",
+        "decision_layer": "Pareto frontier plus uncertainty-aware active-learning batch selection",
+        "literature_basis": [
+            {
+                "title": "Accurate predictions on small data with a tabular foundation model",
+                "journal": "Nature",
+                "year": 2025,
+                "doi": "10.1038/s41586-024-08328-6",
+                "implementation_status": "optional dependency unavailable; principles adopted",
+            },
+            {
+                "title": "Applying interpretable machine learning in computational biology",
+                "journal": "Nature Methods",
+                "year": 2024,
+                "implementation_status": "leakage-safe validation and interpretation policy adopted",
+            },
+        ],
         "prediction_scope": "preclinical formulation validation priority, not individual response probability",
         "safety_policy": "failed strains excluded; pending strains remain hypothesis-only",
         "limitation": (
@@ -324,6 +345,8 @@ def _simulate_combination_scores(
 
 
 def _rank_combinations(scored: list[dict[str, object]], top_n: int) -> list[dict[str, object]]:
+    _mark_pareto_front(scored)
+    _select_active_learning_batch(scored, batch_size=8)
     scored.sort(
         key=lambda candidate: (
             float(np.mean(candidate["ranks"] <= 10)),
@@ -336,6 +359,9 @@ def _rank_combinations(scored: list[dict[str, object]], top_n: int) -> list[dict
         selected = candidate["selected"]
         safety_passed = all(str(strain["safety_gate"]) == "pass" for strain in selected)
         strain_count = len(selected)
+        score_p10 = float(np.quantile(candidate["scores"], 0.10))
+        score_p90 = float(np.quantile(candidate["scores"], 0.90))
+        uncertainty = score_p90 - score_p10
         rows.append(
             {
                 "robust_rank": rank,
@@ -348,8 +374,11 @@ def _rank_combinations(scored: list[dict[str, object]], top_n: int) -> list[dict
                 "evidence_pmid_list": "; ".join(candidate["pmids"]),
                 "functional_modules": "; ".join(sorted(candidate["modules"])),
                 "posterior_score_mean": f"{float(np.mean(candidate['scores'])):.3f}",
-                "posterior_score_p10": f"{float(np.quantile(candidate['scores'], 0.10)):.3f}",
-                "posterior_score_p90": f"{float(np.quantile(candidate['scores'], 0.90)):.3f}",
+                "posterior_score_p10": f"{score_p10:.3f}",
+                "posterior_score_p90": f"{score_p90:.3f}",
+                "uncertainty_width": f"{uncertainty:.3f}",
+                "upper_confidence_bound": f"{float(candidate['ucb']):.3f}",
+                "expected_information_gain": f"{float(candidate['information_gain']):.3f}",
                 "top10_probability": f"{float(np.mean(candidate['ranks'] <= 10)):.4f}",
                 "rank_mean": f"{float(np.mean(candidate['ranks'])):.2f}",
                 "rank_p90": f"{float(np.quantile(candidate['ranks'], 0.90)):.2f}",
@@ -361,6 +390,8 @@ def _rank_combinations(scored: list[dict[str, object]], top_n: int) -> list[dict
                 "genus_diversity_score": f"{float(candidate['diversity_score']):.3f}",
                 "split_evidence_penalty": f"{float(candidate['split_penalty']):.3f}",
                 "complexity_penalty": f"{float(candidate['complexity_penalty']):.3f}",
+                "pareto_front": "yes" if candidate["pareto_front"] else "no",
+                "active_learning_batch": candidate["active_learning_batch"],
                 "safety_gate": "pass" if safety_passed else "pending_genome_safety_gate",
                 "prediction_scope": "preclinical_validation_priority_not_response_probability",
                 "recommended_prebiotic": "; ".join(
@@ -372,6 +403,64 @@ def _rank_combinations(scored: list[dict[str, object]], top_n: int) -> list[dict
             }
         )
     return rows
+
+
+def _mark_pareto_front(scored: list[dict[str, object]]) -> None:
+    for candidate in scored:
+        mean = float(np.mean(candidate["scores"]))
+        uncertainty = float(np.quantile(candidate["scores"], 0.90) - np.quantile(candidate["scores"], 0.10))
+        candidate["ucb"] = mean + 0.35 * uncertainty
+        candidate["information_gain"] = uncertainty * (1.0 + 0.1 * len(candidate["pmids"]))
+    for candidate in scored:
+        mean = float(np.mean(candidate["scores"]))
+        complexity = len(candidate["selected"])
+        candidate["pareto_front"] = not any(
+            float(np.mean(other["scores"])) >= mean
+            and float(other["information_gain"]) >= float(candidate["information_gain"])
+            and len(other["selected"]) <= complexity
+            and (
+                float(np.mean(other["scores"])) > mean
+                or float(other["information_gain"]) > float(candidate["information_gain"])
+                or len(other["selected"]) < complexity
+            )
+            for other in scored
+            if other is not candidate
+        )
+
+
+def _select_active_learning_batch(scored: list[dict[str, object]], batch_size: int) -> None:
+    for candidate in scored:
+        candidate["active_learning_batch"] = ""
+    pool = sorted(
+        scored,
+        key=lambda candidate: (
+            bool(candidate["pareto_front"]),
+            float(candidate["ucb"]),
+        ),
+        reverse=True,
+    )
+    selected: list[dict[str, object]] = []
+    while pool and len(selected) < batch_size:
+        best = max(
+            pool,
+            key=lambda candidate: float(candidate["ucb"])
+            + 1.5 * _novelty(candidate, selected),
+        )
+        selected.append(best)
+        pool.remove(best)
+    for index, candidate in enumerate(selected, start=1):
+        candidate["active_learning_batch"] = f"batch1_{index:02d}"
+
+
+def _novelty(candidate: dict[str, object], selected: list[dict[str, object]]) -> float:
+    if not selected:
+        return 1.0
+    candidate_ids = {str(strain["strain_id"]) for strain in candidate["selected"]}
+    similarities = []
+    for other in selected:
+        other_ids = {str(strain["strain_id"]) for strain in other["selected"]}
+        similarities.append(len(candidate_ids & other_ids) / len(candidate_ids | other_ids))
+    return 1.0 - max(similarities)
 
 
 def _validation_recommendation(rank: int, strain_count: int, safety_passed: bool) -> str:

@@ -22,6 +22,22 @@
     "genus_diversity": 0.1
   },
   "validation": "Monte Carlo sensitivity analysis over evidence posteriors and score weights",
+  "decision_layer": "Pareto frontier plus uncertainty-aware active-learning batch selection",
+  "literature_basis": [
+    {
+      "title": "Accurate predictions on small data with a tabular foundation model",
+      "journal": "Nature",
+      "year": 2025,
+      "doi": "10.1038/s41586-024-08328-6",
+      "implementation_status": "optional dependency unavailable; principles adopted"
+    },
+    {
+      "title": "Applying interpretable machine learning in computational biology",
+      "journal": "Nature Methods",
+      "year": 2024,
+      "implementation_status": "leakage-safe validation and interpretation policy adopted"
+    }
+  ],
   "prediction_scope": "preclinical formulation validation priority, not individual response probability",
   "safety_policy": "failed strains excluded; pending strains remain hypothesis-only",
   "limitation": "Each formulation is supported by few independent trials. Scores estimate robust validation priority and must not be interpreted as clinical efficacy probabilities."
