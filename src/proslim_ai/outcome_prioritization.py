@@ -55,6 +55,8 @@ def _score_extracted_outcome(row: dict[str, str]) -> tuple[float, str, str]:
     comparison = _text(row.get("comparison")).lower()
     p_value = _text(row.get("p_value_confirmed")).lower()
     value = _text(row.get("final_value"))
+    reviewer_note = _text(row.get("reviewer_note")).lower()
+    sample_size = _text(row.get("sample_size_confirmed")).lower()
 
     limitations: list[str] = []
     signal = f"{domain}: {value}"
@@ -101,9 +103,17 @@ def _score_extracted_outcome(row: dict[str, str]) -> tuple[float, str, str]:
         limitations.append(f"{domain} significant change was unfavorable")
         score -= 0.5 * domain_weight
 
-    if "caution" in _text(row.get("reviewer_note")).lower():
+    if "caution" in reviewer_note:
         limitations.append(f"{domain} extraction caution")
         score -= 0.5
+
+    high_attrition_context = " ".join([comparison, reviewer_note, sample_size])
+    if any(
+        marker in high_attrition_context
+        for marker in ("early terminat", "completer", "attrition", "all high-dose", "withdraw")
+    ):
+        limitations.append(f"{domain} high attrition or completer-only analysis")
+        score *= 0.20
 
     return max(score, -1.0), signal, "; ".join(dict.fromkeys(limitations))
 

@@ -21,6 +21,26 @@ def test_effect_parser_marks_single_group_values() -> None:
     assert warning == "control effect unavailable"
 
 
+def test_effect_parser_ignores_strain_dose_and_duration_numbers() -> None:
+    intervention, control, method, warning = _extract_effects(
+        "K56 2x10^9 CFU/day: -0.72 kg after 60 days"
+    )
+
+    assert intervention == "-0.72"
+    assert control == ""
+    assert method == "single_group_or_unlabeled_value"
+    assert warning == "control effect unavailable"
+
+
+def test_effect_parser_does_not_turn_strain_code_into_qualitative_effect() -> None:
+    intervention, control, method, warning = _extract_effects("VSL#3 improved insulin sensitivity")
+
+    assert intervention == ""
+    assert control == ""
+    assert method == "qualitative_or_missing_value"
+    assert warning == "no numeric effect parsed"
+
+
 def test_p_value_parser_separates_between_and_within_values() -> None:
     between, within, method, warning = _split_p_values(
         "0.588 between-group; 0.007 within intervention"
@@ -39,3 +59,14 @@ def test_p_value_parser_warns_on_multiple_unlabeled_values() -> None:
     assert within == ""
     assert method == "unlabeled_first_p_value"
     assert warning == "multiple unlabeled P values; first retained"
+
+
+def test_p_value_parser_does_not_promote_within_p_to_between_group() -> None:
+    between, within, method, warning = _split_p_values(
+        "0.01 within group; between-group not significant"
+    )
+
+    assert between == "not_significant"
+    assert within == "0.01"
+    assert method == "explicit_between_group"
+    assert warning == "between-group numeric P value unavailable"

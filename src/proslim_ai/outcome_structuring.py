@@ -90,8 +90,8 @@ def _text(value: object) -> str:
 
 
 def _extract_effects(text: str) -> tuple[str, str, str, str]:
-    pattern = re.compile(r"(?<![A-Za-z])[-+]?\d+(?:\.\d+)?")
-    normalized = text.replace("−", "-")
+    pattern = re.compile(r"(?<![A-Za-z0-9])[-+]?\d+(?:\.\d+)?(?![A-Za-z0-9])")
+    normalized = _remove_non_effect_numbers(text.replace("−", "-"))
     parts = re.split(r"\s+vs\.?\s+", normalized, maxsplit=1, flags=re.IGNORECASE)
     if len(parts) == 2:
         intervention = pattern.search(parts[0])
@@ -109,14 +109,31 @@ def _extract_effects(text: str) -> tuple[str, str, str, str]:
     return "", "", "qualitative_or_missing_value", "no numeric effect parsed"
 
 
+def _remove_non_effect_numbers(text: str) -> str:
+    text = re.sub(
+        r"\b(?:\d+(?:\.\d+)?\s*[xX*]\s*)?10\s*\^?\s*\d+\s*CFU(?:\s*/\s*day)?\b",
+        " ",
+        text,
+        flags=re.IGNORECASE,
+    )
+    text = re.sub(r"\b[A-Za-z]+[#-]?\d[A-Za-z0-9#-]*\b", " ", text)
+    text = re.sub(r"\b\d+\s*(?:weeks?|months?|days?)\b", " ", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bn\s*=\s*\d+\b", " ", text, flags=re.IGNORECASE)
+    return text
+
+
 def _split_p_values(text: str) -> tuple[str, str, str, str]:
     lower = text.lower()
     if "between-group" in lower:
+        between = _labeled_p(lower, "between-group")
+        within = _labeled_p(lower, "within") if "within" in lower else ""
+        if not between and re.search(r"between-group[^.;]{0,40}not significant", lower):
+            between = "not_significant"
         return (
-            _labeled_p(lower, "between-group") or _first_p(lower),
-            _labeled_p(lower, "within") if "within" in lower else "",
+            between,
+            within,
             "explicit_between_group",
-            "",
+            "between-group numeric P value unavailable" if between == "not_significant" else "",
         )
     if "group_by_time" in lower:
         return _first_p(lower), "", "group_by_time_as_between_group", ""
@@ -139,10 +156,13 @@ def _labeled_p(text: str, label: str) -> str:
     label_start = text.find(label)
     if label_start < 0:
         return ""
-    before = text[max(0, label_start - 60) : label_start]
-    before_values = re.findall(r"(?:<\s*)?0?\.\d+", before)
-    if before_values:
-        return before_values[-1].replace(" ", "")
+    before = text[max(0, label_start - 60) : label_start + len(label)]
+    before_match = re.search(
+        rf"(?:p\s*[=:]?\s*)?((?:<\s*)?0?\.\d+)\s*(?:for\s+)?{re.escape(label)}\b",
+        before,
+    )
+    if before_match:
+        return before_match.group(1).replace(" ", "")
     after = text[label_start + len(label) : label_start + len(label) + 60]
     return _first_p(after)
 
