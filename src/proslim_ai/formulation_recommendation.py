@@ -59,6 +59,9 @@ COMBINATION_FIELDS = [
     "microbiome_matching_score",
     "predicted_response_score",
     "literature_evidence_score",
+    "ranking_type",
+    "hypothesis_priority",
+    "safety_eligible_for_validation",
     "validation_priority",
     "recommended_prebiotic",
     "notes",
@@ -195,10 +198,17 @@ def build_formulation_recommendations(
     min_strains: int = 3,
     max_strains: int = 5,
     top_n: int = 50,
+    safety_status_path: Path | None = None,
 ) -> FormulationRecommendationResult:
-    strains = _build_strain_rows()
+    safety_statuses = _load_safety_statuses(safety_status_path)
+    strains = _build_strain_rows(safety_statuses)
     formulations = _build_formulation_rows()
-    combinations_rows = _build_combination_rows(min_strains=min_strains, max_strains=max_strains, top_n=top_n)
+    combinations_rows = _build_combination_rows(
+        min_strains=min_strains,
+        max_strains=max_strains,
+        top_n=top_n,
+        safety_statuses=safety_statuses,
+    )
 
     _write_rows(strain_output, STRAIN_FIELDS, strains)
     _write_rows(formulation_output, FORMULATION_FIELDS, formulations)
@@ -213,7 +223,8 @@ def build_formulation_recommendations(
     )
 
 
-def _build_strain_rows() -> list[dict[str, str]]:
+def _build_strain_rows(safety_statuses: dict[str, str] | None = None) -> list[dict[str, str]]:
+    safety_statuses = safety_statuses or {}
     rows: list[dict[str, str]] = []
     for formulation in FORMULATIONS:
         inherited = "yes" if len(formulation["members"]) > 1 else "no"
@@ -232,7 +243,9 @@ def _build_strain_rows() -> list[dict[str, str]]:
                     "confirmed_outcome_score": f"{inherited_score:.2f}",
                     "functional_modules": "; ".join(sorted(formulation["modules"])),
                     "suggested_prebiotic": formulation["prebiotic"],
-                    "safety_gate": "literature_use_only_pending_genome_safety",
+                    "safety_gate": safety_statuses.get(
+                        strain_id, "literature_use_only_pending_genome_safety"
+                    ),
                     "notes": formulation["notes"],
                 }
             )
@@ -262,16 +275,23 @@ def _build_formulation_rows() -> list[dict[str, str]]:
     return rows
 
 
-def _build_combination_rows(min_strains: int, max_strains: int, top_n: int) -> list[dict[str, str]]:
-    strains = _candidate_strains()
+def _build_combination_rows(
+    min_strains: int,
+    max_strains: int,
+    top_n: int,
+    safety_statuses: dict[str, str] | None = None,
+) -> list[dict[str, str]]:
+    strains = _candidate_strains(safety_statuses or {})
     rows: list[dict[str, str]] = []
     for size in range(min_strains, min(max_strains, len(strains)) + 1):
         for strain_set in combinations(strains, size):
+            if any(strain["safety_gate"] == "fail" for strain in strain_set):
+                continue
             if len({strain["genus"] for strain in strain_set}) < 2:
                 continue
             row = _score_strains(strain_set, len(rows) + 1)
             rows.append(row)
-    rows.sort(key=lambda row: float(row["validation_priority"]), reverse=True)
+    rows.sort(key=lambda row: float(row["hypothesis_priority"]), reverse=True)
     for index, row in enumerate(rows[:top_n], start=1):
         row["combination_id"] = f"FMB3TO5_{index:03d}"
     return rows[:top_n]
@@ -302,6 +322,7 @@ def _score_strains(strains: tuple[dict, ...], index: int) -> dict[str, str]:
         - pp_penalty,
     )
     validation_priority = 0.45 * clinical + 0.55 * combination_design
+    safety_passed = all(strain["safety_gate"] == "pass" for strain in strains)
     return {
         "combination_id": f"FMB3TO5_{index:03d}",
         "formulation_blocks": "; ".join(formulation_ids),
@@ -312,7 +333,7 @@ def _score_strains(strains: tuple[dict, ...], index: int) -> dict[str, str]:
         "evidence_summary": f"{strain_count}-strain recombined candidate; combination evidence is discounted unless original tested companions are retained; PMIDs {'; '.join(pmids)}",
         "evidence_doi_list": "",
         "evidence_pmid_list": "; ".join(pmids),
-        "safety_gate": "pending_genome_safety_gate",
+        "safety_gate": "pass" if safety_passed else "pending_genome_safety_gate",
         "functional_modules": "; ".join(sorted(modules)),
         "clinical_evidence_score": f"{clinical:.2f}",
         "combination_design_score": f"{combination_design:.2f}",
@@ -321,15 +342,18 @@ def _score_strains(strains: tuple[dict, ...], index: int) -> dict[str, str]:
         "original_formulation_recovery_score": f"{recovery:.2f}",
         "complementarity_score": f"{complementarity:.2f}",
         "microbiome_matching_score": f"{microbiome_match:.2f}",
-        "predicted_response_score": f"{microbiome_match:.2f}",
+        "predicted_response_score": "",
         "literature_evidence_score": f"{clinical:.2f}",
-        "validation_priority": f"{validation_priority:.2f}",
+        "ranking_type": "preclinical_hypothesis_not_response_probability",
+        "hypothesis_priority": f"{validation_priority:.2f}",
+        "safety_eligible_for_validation": "yes" if safety_passed else "no",
+        "validation_priority": f"{validation_priority:.2f}" if safety_passed else "",
         "recommended_prebiotic": "; ".join(sorted(set(str(strain["prebiotic"]) for strain in strains))),
         "notes": "Recombination allowed: split members carry discounted evidence; synergy favors complementary functions, cross-feeding, fiber response, and retained tested companions. Genome AMR/virulence/MGE safety gate still required.",
     }
 
 
-def _candidate_strains() -> list[dict[str, object]]:
+def _candidate_strains(safety_statuses: dict[str, str]) -> list[dict[str, object]]:
     strains: list[dict[str, object]] = []
     for formulation in FORMULATIONS:
         for strain_id, genus, species, strain_name in formulation["members"]:
@@ -347,9 +371,25 @@ def _candidate_strains() -> list[dict[str, object]]:
                     "clinical_evidence_score": _member_evidence_score(formulation),
                     "modules": set(formulation["modules"]),
                     "prebiotic": formulation["prebiotic"],
+                    "safety_gate": safety_statuses.get(strain_id, "pending"),
                 }
             )
     return strains
+
+
+def _load_safety_statuses(path: Path | None) -> dict[str, str]:
+    if path is None:
+        return {}
+    with path.open("r", newline="", encoding="utf-8-sig") as handle:
+        rows = list(csv.DictReader(handle))
+    statuses: dict[str, str] = {}
+    for row in rows:
+        strain_id = str(row.get("strain_id") or "").strip()
+        status = str(row.get("safety_gate") or "").strip().lower()
+        if not strain_id or status not in {"pass", "fail", "pending"}:
+            continue
+        statuses[strain_id] = status
+    return statuses
 
 
 def _member_evidence_score(formulation: dict) -> float:

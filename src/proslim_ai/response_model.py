@@ -14,7 +14,14 @@ from sklearn.dummy import DummyClassifier
 from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import average_precision_score, brier_score_loss, roc_auc_score
+from sklearn.metrics import (
+    accuracy_score,
+    average_precision_score,
+    balanced_accuracy_score,
+    brier_score_loss,
+    f1_score,
+    roc_auc_score,
+)
 from sklearn.model_selection import StratifiedGroupKFold, StratifiedKFold, cross_val_predict
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
@@ -36,13 +43,31 @@ ROW_PREDICTION_FIELDS = [
 
 EVIDENCE_PREDICTION_FIELDS = [
     "evidence_id",
-    "study_level_response_probability",
-    "positive_endpoint_fraction",
+    "study_level_evidence_probability",
+    "observed_positive_endpoint_fraction",
     "outcome_rows",
     "adiposity_probability",
     "metabolic_probability",
     "microbiome_probability",
     "model_level",
+    "model_status",
+]
+
+LEAKAGE_SAFE_NUMERIC_FEATURES: list[str] = []
+LEAKAGE_SAFE_CATEGORICAL_FEATURES = [
+    "outcome_domain",
+    "endpoint_type",
+    "analysis_population",
+    "comparison",
+]
+EXCLUDED_LABEL_DERIVED_FEATURES = [
+    "direction",
+    "evidence_modifier",
+    "between_group_p",
+    "within_group_p",
+    "intervention_effect",
+    "control_effect",
+    "effect_difference",
 ]
 
 
@@ -77,21 +102,11 @@ def train_response_model(
     if data["label"].nunique() < 2:
         raise ValueError("Response model requires at least one positive and one non-positive outcome row.")
 
-    numeric_candidates = ["intervention_effect", "control_effect", "effect_difference", "between_group_p", "within_group_p"]
-    categorical_features = [
-        "outcome_domain",
-        "endpoint_type",
-        "analysis_population",
-        "comparison",
-        "direction",
-        "evidence_modifier",
-    ]
-    for column in numeric_candidates:
-        data[column] = pd.to_numeric(data.get(column), errors="coerce")
-    min_observed_numeric_values = 5
-    numeric_features = [
-        column for column in numeric_candidates if int(data[column].notna().sum()) >= min_observed_numeric_values
-    ]
+    # The efficacy label is derived from direction, between-group P value, and
+    # evidence modifiers. Those fields, and post-outcome effect values, must not
+    # be used as predictors or cross-validation performance becomes label leakage.
+    numeric_features = list(LEAKAGE_SAFE_NUMERIC_FEATURES)
+    categorical_features = list(LEAKAGE_SAFE_CATEGORICAL_FEATURES)
     for column in categorical_features:
         data[column] = data.get(column, "").fillna("").astype(str)
 
@@ -99,7 +114,13 @@ def train_response_model(
     y = data["label"]
     groups = data["evidence_id"].fillna("").astype(str)
     model_candidates = _model_candidates(numeric_features, categorical_features)
-    selected_name, probabilities, comparison, validation = _select_model(model_candidates, X, y, groups)
+    selected_name, probabilities, comparison, validation, fold_selections = _nested_group_predictions(
+        model_candidates, X, y, groups
+    )
+
+    metrics = _metrics(y.to_numpy(), probabilities)
+    model_status = _model_status(selected_name, metrics)
+    model_level = "study_endpoint_evidence_classifier_not_individual_response"
 
     final_model = clone(model_candidates[selected_name])
     final_model.fit(X, y)
@@ -107,27 +128,33 @@ def train_response_model(
     row_predictions = data.copy()
     row_predictions["model_response_probability"] = probabilities
     row_predictions["model_predicted_label"] = np.where(probabilities >= 0.5, "predicted_positive", "predicted_limited_or_negative")
-    row_predictions["model_level"] = "study_endpoint_level_not_individual_microbiome"
+    row_predictions["model_level"] = model_level
 
     row_predictions_output.parent.mkdir(parents=True, exist_ok=True)
     row_predictions[ROW_PREDICTION_FIELDS].to_csv(row_predictions_output, index=False)
 
-    evidence_predictions = _aggregate_evidence_predictions(row_predictions)
+    evidence_predictions = _aggregate_evidence_predictions(row_predictions, model_status)
     evidence_predictions_output.parent.mkdir(parents=True, exist_ok=True)
     evidence_predictions.to_csv(evidence_predictions_output, index=False)
 
-    metrics = _metrics(y.to_numpy(), probabilities)
     metrics.update(
         {
             "selected_model": selected_name,
             "model_comparison": comparison,
+            "outer_fold_model_selections": fold_selections,
             "validation": validation,
             "rows_used": int(len(data)),
             "positive_rows": int(y.sum()),
             "non_positive_rows": int(len(y) - y.sum()),
             "evidence_count": int(evidence_predictions["evidence_id"].nunique()),
-            "model_level": "study_endpoint_level_not_individual_microbiome",
-            "limitation": "Trained on structured study endpoint rows, not subject-level baseline microbiome responders.",
+            "model_level": "study_endpoint_evidence_classifier_not_individual_response",
+            "model_status": model_status,
+            "feature_policy": "leakage_safe_descriptors_only",
+            "excluded_leakage_features": EXCLUDED_LABEL_DERIVED_FEATURES,
+            "limitation": (
+                "Classifies study-endpoint evidence from descriptive fields only; "
+                "it is not an individual microbiome responder model."
+            ),
         }
     )
     metrics_output.parent.mkdir(parents=True, exist_ok=True)
@@ -141,7 +168,9 @@ def train_response_model(
                 "selected_model": selected_name,
                 "numeric_features": numeric_features,
                 "categorical_features": categorical_features,
-                "model_level": "study_endpoint_level_not_individual_microbiome",
+                "model_level": "study_endpoint_evidence_classifier_not_individual_response",
+                "feature_policy": "leakage_safe_descriptors_only",
+                "model_status": model_status,
             },
             handle,
         )
@@ -162,11 +191,18 @@ def apply_response_model_to_combinations(
     output_path: Path,
 ) -> CombinationResponseApplicationResult:
     with evidence_predictions_path.open("r", newline="", encoding="utf-8-sig") as handle:
-        evidence_probabilities = {
-            _text(row["evidence_id"]).replace("PMID:", ""): float(row["study_level_response_probability"])
-            for row in csv.DictReader(handle)
-            if _text(row.get("study_level_response_probability"))
-        }
+        evidence_probabilities: dict[str, float] = {}
+        for row in csv.DictReader(handle):
+            if _text(row.get("model_status")) != "informative_for_hypothesis_ranking":
+                continue
+            probability = _text(
+                row.get("study_level_evidence_probability")
+                or row.get("study_level_response_probability")
+            )
+            if probability:
+                evidence_probabilities[_text(row["evidence_id"]).replace("PMID:", "")] = float(
+                    probability
+                )
 
     rows: list[dict[str, str]] = []
     with combination_input.open("r", newline="", encoding="utf-8-sig") as handle:
@@ -179,7 +215,7 @@ def apply_response_model_to_combinations(
                 probability = float(np.mean(probabilities))
                 row["predicted_response_probability"] = f"{probability:.4f}"
                 row["predicted_response_score"] = f"{probability * 10:.2f}"
-                row["response_model_level"] = "study_endpoint_level_not_individual_microbiome"
+                row["response_model_level"] = "study_endpoint_evidence_classifier_not_individual_response"
                 row["response_model_source"] = "clinical_outcome.structured_effects"
                 row["response_model_pmids_used"] = "; ".join([pmid for pmid in pmids if pmid in evidence_probabilities])
                 row["validation_priority"] = _recompute_validation_priority(row)
@@ -226,25 +262,23 @@ def _build_model(
     numeric_steps: list[tuple[str, object]] = [("imputer", SimpleImputer(strategy="median"))]
     if scale_numeric:
         numeric_steps.append(("scaler", StandardScaler()))
-    preprocessor = ColumnTransformer(
-        transformers=[
-            (
-                "numeric",
-                Pipeline(numeric_steps),
-                numeric_features,
-            ),
+    transformers: list[tuple[str, object, list[str]]] = []
+    if numeric_features:
+        transformers.append(("numeric", Pipeline(numeric_steps), numeric_features))
+    if categorical_features:
+        transformers.append(
             (
                 "categorical",
                 Pipeline(
                     [
                         ("imputer", SimpleImputer(strategy="constant", fill_value="missing")),
-                        ("onehot", OneHotEncoder(handle_unknown="ignore")),
+                        ("onehot", OneHotEncoder(handle_unknown="ignore", sparse_output=False)),
                     ]
                 ),
                 categorical_features,
-            ),
-        ]
-    )
+            )
+        )
+    preprocessor = ColumnTransformer(transformers=transformers)
     return Pipeline(
         [
             ("preprocess", preprocessor),
@@ -269,7 +303,7 @@ def _model_candidates(numeric_features: list[str], categorical_features: list[st
             numeric_features,
             categorical_features,
             RandomForestClassifier(
-                n_estimators=300,
+                n_estimators=120,
                 max_depth=3,
                 min_samples_leaf=3,
                 class_weight="balanced_subsample",
@@ -281,7 +315,7 @@ def _model_candidates(numeric_features: list[str], categorical_features: list[st
             numeric_features,
             categorical_features,
             GradientBoostingClassifier(
-                n_estimators=80,
+                n_estimators=50,
                 learning_rate=0.05,
                 max_depth=2,
                 min_samples_leaf=3,
@@ -292,16 +326,54 @@ def _model_candidates(numeric_features: list[str], categorical_features: list[st
     }
 
 
-def _select_model(
+def _nested_group_predictions(
     models: dict[str, Pipeline],
     X: pd.DataFrame,
     y: pd.Series,
     groups: pd.Series,
-) -> tuple[str, np.ndarray, list[dict[str, object]], str]:
-    validation, cv, use_groups = _cross_validation_strategy(y, groups)
+) -> tuple[str, np.ndarray, list[dict[str, object]], str, list[dict[str, object]]]:
+    validation, outer_cv, use_groups = _cross_validation_strategy(y, groups)
+    if outer_cv is None or not use_groups:
+        raise ValueError("Leakage-safe evaluation requires at least two evidence groups for grouped validation.")
+
+    probabilities = np.zeros(len(y), dtype=float)
+    fold_selections: list[dict[str, object]] = []
+    for fold, (train_index, test_index) in enumerate(outer_cv.split(X, y, groups), start=1):
+        X_train = X.iloc[train_index]
+        y_train = y.iloc[train_index]
+        groups_train = groups.iloc[train_index]
+        if y_train.nunique() < 2:
+            selected_name = "dummy_prior"
+        else:
+            selected_name, _ = _select_model_on_training_groups(
+                models, X_train, y_train, groups_train
+            )
+        fitted = clone(models[selected_name])
+        fitted.fit(X_train, y_train)
+        probabilities[test_index] = fitted.predict_proba(X.iloc[test_index])[:, 1]
+        fold_selections.append(
+            {
+                "fold": fold,
+                "selected_model": selected_name,
+                "training_rows": int(len(train_index)),
+                "validation_rows": int(len(test_index)),
+                "training_evidence_count": int(groups_train.nunique()),
+            }
+        )
+
+    selected_name, comparison = _select_model_on_training_groups(models, X, y, groups)
+    return selected_name, probabilities, comparison, f"nested_{validation}", fold_selections
+
+
+def _select_model_on_training_groups(
+    models: dict[str, Pipeline],
+    X: pd.DataFrame,
+    y: pd.Series,
+    groups: pd.Series,
+) -> tuple[str, list[dict[str, object]]]:
+    _, cv, use_groups = _cross_validation_strategy(y, groups)
     comparison: list[dict[str, object]] = []
     best_name = ""
-    best_probabilities: np.ndarray | None = None
     best_key: tuple[float, float] | None = None
 
     for name, model in models.items():
@@ -314,12 +386,11 @@ def _select_model(
         key = (brier, -average_precision)
         if best_key is None or key < best_key:
             best_name = name
-            best_probabilities = probabilities
             best_key = key
 
-    if best_probabilities is None:
-        raise RuntimeError("No response model candidate produced probabilities.")
-    return best_name, best_probabilities, comparison, validation
+    if not best_name:
+        raise RuntimeError("No evidence classifier candidate produced probabilities.")
+    return best_name, comparison
 
 
 def _cross_validation_strategy(y: pd.Series, groups: pd.Series) -> tuple[str, object | None, bool]:
@@ -355,7 +426,7 @@ def _cross_validated_probabilities(
     return cross_val_predict(clone(model), X, y, cv=cv, method="predict_proba")[:, 1]
 
 
-def _aggregate_evidence_predictions(row_predictions: pd.DataFrame) -> pd.DataFrame:
+def _aggregate_evidence_predictions(row_predictions: pd.DataFrame, model_status: str) -> pd.DataFrame:
     rows: list[dict[str, object]] = []
     for evidence_id, group in row_predictions.groupby("evidence_id", sort=False):
         adiposity = group[group["endpoint_type"] == "adiposity"]["model_response_probability"]
@@ -366,13 +437,14 @@ def _aggregate_evidence_predictions(row_predictions: pd.DataFrame) -> pd.DataFra
         rows.append(
             {
                 "evidence_id": evidence_id,
-                "study_level_response_probability": f"{endpoint_weighted:.4f}",
-                "positive_endpoint_fraction": f"{positive_fraction:.4f}",
+                "study_level_evidence_probability": f"{endpoint_weighted:.4f}",
+                "observed_positive_endpoint_fraction": f"{positive_fraction:.4f}",
                 "outcome_rows": int(len(group)),
                 "adiposity_probability": _format_probability(adiposity),
                 "metabolic_probability": _format_probability(metabolic),
                 "microbiome_probability": _format_probability(microbiome),
-                "model_level": "study_endpoint_level_not_individual_microbiome",
+                "model_level": "study_endpoint_evidence_classifier_not_individual_response",
+                "model_status": model_status,
             }
         )
     return pd.DataFrame(rows, columns=EVIDENCE_PREDICTION_FIELDS)
@@ -400,7 +472,14 @@ def _format_probability(series: pd.Series) -> str:
 
 
 def _metrics(y_true: np.ndarray, probabilities: np.ndarray) -> dict[str, float | None]:
-    metrics: dict[str, float | None] = {"brier_score": float(brier_score_loss(y_true, probabilities))}
+    predictions = (probabilities >= 0.5).astype(int)
+    metrics: dict[str, float | None] = {
+        "brier_score": float(brier_score_loss(y_true, probabilities)),
+        "accuracy": float(accuracy_score(y_true, predictions)),
+        "balanced_accuracy": float(balanced_accuracy_score(y_true, predictions)),
+        "f1": float(f1_score(y_true, predictions, zero_division=0)),
+        "positive_prevalence": float(np.mean(y_true)),
+    }
     try:
         metrics["roc_auc"] = float(roc_auc_score(y_true, probabilities))
     except ValueError:
@@ -412,7 +491,22 @@ def _metrics(y_true: np.ndarray, probabilities: np.ndarray) -> dict[str, float |
     return metrics
 
 
+def _model_status(selected_model: str, metrics: dict[str, float | None]) -> str:
+    roc_auc = metrics.get("roc_auc")
+    average_precision = metrics.get("average_precision")
+    positive_prevalence = metrics.get("positive_prevalence")
+    if selected_model == "dummy_prior":
+        return "non_informative_do_not_apply_to_combinations"
+    if roc_auc is None or roc_auc < 0.55:
+        return "non_informative_do_not_apply_to_combinations"
+    if average_precision is None or positive_prevalence is None or average_precision <= positive_prevalence:
+        return "non_informative_do_not_apply_to_combinations"
+    return "informative_for_hypothesis_ranking"
+
+
 def _recompute_validation_priority(row: dict[str, str]) -> str:
+    if _text(row.get("safety_gate")).lower() != "pass":
+        return ""
     clinical = float(_text(row.get("clinical_evidence_score")) or 0)
     design = float(_text(row.get("combination_design_score")) or 0)
     response = float(_text(row.get("predicted_response_score")) or 0)

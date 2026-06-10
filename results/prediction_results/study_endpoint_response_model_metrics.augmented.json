@@ -1,39 +1,107 @@
 {
-  "average_precision": 0.9100400008488243,
-  "brier_score": 0.07313063083982684,
+  "accuracy": 0.5454545454545454,
+  "average_precision": 0.2856979734405303,
+  "balanced_accuracy": 0.4375,
+  "brier_score": 0.2728141117443529,
   "evidence_count": 17,
-  "limitation": "Trained on structured study endpoint rows, not subject-level baseline microbiome responders.",
+  "excluded_leakage_features": [
+    "direction",
+    "evidence_modifier",
+    "between_group_p",
+    "within_group_p",
+    "intervention_effect",
+    "control_effect",
+    "effect_difference"
+  ],
+  "f1": 0.0625,
+  "feature_policy": "leakage_safe_descriptors_only",
+  "limitation": "Classifies study-endpoint evidence from descriptive fields only; it is not an individual microbiome responder model.",
   "model_comparison": [
     {
+      "accuracy": 0.6363636363636364,
       "average_precision": 0.3261243852329124,
+      "balanced_accuracy": 0.5,
       "brier_score": 0.23341314421848836,
+      "f1": 0.0,
       "model": "dummy_prior",
+      "positive_prevalence": 0.36363636363636365,
       "roc_auc": 0.4250992063492064
     },
     {
-      "average_precision": 0.8096000078221124,
-      "brier_score": 0.1584410232977296,
+      "accuracy": 0.42424242424242425,
+      "average_precision": 0.32399547880865026,
+      "balanced_accuracy": 0.41369047619047616,
+      "brier_score": 0.29059100937931504,
+      "f1": 0.32142857142857145,
       "model": "logistic_l2_balanced",
-      "roc_auc": 0.8293650793650794
+      "positive_prevalence": 0.36363636363636365,
+      "roc_auc": 0.4037698412698413
     },
     {
-      "average_precision": 0.9061987870253999,
-      "brier_score": 0.16302657255635197,
+      "accuracy": 0.4090909090909091,
+      "average_precision": 0.3174520885429013,
+      "balanced_accuracy": 0.39285714285714285,
+      "brier_score": 0.2671237608155684,
+      "f1": 0.2909090909090909,
       "model": "random_forest_balanced",
-      "roc_auc": 0.873015873015873
+      "positive_prevalence": 0.36363636363636365,
+      "roc_auc": 0.3978174603174603
     },
     {
-      "average_precision": 0.9100400008488243,
-      "brier_score": 0.07313063083982684,
+      "accuracy": 0.5454545454545454,
+      "average_precision": 0.301382880138077,
+      "balanced_accuracy": 0.4375,
+      "brier_score": 0.2850005244667592,
+      "f1": 0.0625,
       "model": "gradient_boosting_shallow",
-      "roc_auc": 0.8824404761904763
+      "positive_prevalence": 0.36363636363636365,
+      "roc_auc": 0.3759920634920635
     }
   ],
-  "model_level": "study_endpoint_level_not_individual_microbiome",
+  "model_level": "study_endpoint_evidence_classifier_not_individual_response",
+  "model_status": "non_informative_do_not_apply_to_combinations",
   "non_positive_rows": 42,
+  "outer_fold_model_selections": [
+    {
+      "fold": 1,
+      "selected_model": "dummy_prior",
+      "training_evidence_count": 14,
+      "training_rows": 54,
+      "validation_rows": 12
+    },
+    {
+      "fold": 2,
+      "selected_model": "logistic_l2_balanced",
+      "training_evidence_count": 13,
+      "training_rows": 50,
+      "validation_rows": 16
+    },
+    {
+      "fold": 3,
+      "selected_model": "dummy_prior",
+      "training_evidence_count": 14,
+      "training_rows": 55,
+      "validation_rows": 11
+    },
+    {
+      "fold": 4,
+      "selected_model": "dummy_prior",
+      "training_evidence_count": 13,
+      "training_rows": 52,
+      "validation_rows": 14
+    },
+    {
+      "fold": 5,
+      "selected_model": "dummy_prior",
+      "training_evidence_count": 14,
+      "training_rows": 53,
+      "validation_rows": 13
+    }
+  ],
+  "positive_prevalence": 0.36363636363636365,
   "positive_rows": 24,
-  "roc_auc": 0.8824404761904763,
+  "roc_auc": 0.3194444444444444,
   "rows_used": 66,
-  "selected_model": "gradient_boosting_shallow",
-  "validation": "stratified_group_cross_validated_by_evidence_id"
+  "selected_model": "dummy_prior",
+  "validation": "nested_stratified_group_cross_validated_by_evidence_id"
 }

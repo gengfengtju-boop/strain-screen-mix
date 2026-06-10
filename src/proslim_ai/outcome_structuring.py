@@ -21,6 +21,9 @@ STRUCTURED_OUTCOME_FIELDS = [
     "direction",
     "evidence_modifier",
     "positive_efficacy_label",
+    "effect_parse_method",
+    "p_value_parse_method",
+    "structure_warning",
     "source_final_value",
     "source_note",
 ]
@@ -54,8 +57,8 @@ def _structure_row(row: dict[str, str]) -> dict[str, str]:
     note = _text(row.get("reviewer_note"))
     comparison = _text(row.get("comparison"))
     direction = _text(row.get("final_direction"))
-    intervention, control = _extract_first_two_effects(final_value)
-    between_p, within_p = _split_p_values(p_value)
+    intervention, control, effect_method, effect_warning = _extract_effects(final_value)
+    between_p, within_p, p_method, p_warning = _split_p_values(p_value)
     population = _analysis_population(note, p_value)
     modifier = _evidence_modifier(note, p_value, comparison)
     positive = _positive_label(direction, between_p, modifier)
@@ -74,6 +77,9 @@ def _structure_row(row: dict[str, str]) -> dict[str, str]:
         "direction": direction,
         "evidence_modifier": modifier,
         "positive_efficacy_label": positive,
+        "effect_parse_method": effect_method,
+        "p_value_parse_method": p_method,
+        "structure_warning": "; ".join(filter(None, [effect_warning, p_warning])),
         "source_final_value": final_value,
         "source_note": note,
     }
@@ -83,23 +89,42 @@ def _text(value: object) -> str:
     return "" if value is None else str(value).strip()
 
 
-def _extract_first_two_effects(text: str) -> tuple[str, str]:
+def _extract_effects(text: str) -> tuple[str, str, str, str]:
     pattern = re.compile(r"(?<![A-Za-z])[-+]?\d+(?:\.\d+)?")
-    numbers = pattern.findall(text.replace("−", "-"))
-    if len(numbers) < 2:
-        return "", ""
-    return numbers[0], numbers[1]
+    normalized = text.replace("−", "-")
+    parts = re.split(r"\s+vs\.?\s+", normalized, maxsplit=1, flags=re.IGNORECASE)
+    if len(parts) == 2:
+        intervention = pattern.search(parts[0])
+        control = pattern.search(parts[1])
+        warning = "multiple comparisons retained as first comparison only" if re.search(r"\s+vs\.?\s+", parts[1], re.I) else ""
+        return (
+            intervention.group(0) if intervention else "",
+            control.group(0) if control else "",
+            "labeled_groups_split_on_vs",
+            warning,
+        )
+    number = pattern.search(normalized)
+    if number:
+        return number.group(0), "", "single_group_or_unlabeled_value", "control effect unavailable"
+    return "", "", "qualitative_or_missing_value", "no numeric effect parsed"
 
 
-def _split_p_values(text: str) -> tuple[str, str]:
+def _split_p_values(text: str) -> tuple[str, str, str, str]:
     lower = text.lower()
     if "between-group" in lower:
-        return _first_p(lower), _first_p(lower.split("within", 1)[1]) if "within" in lower else ""
+        return (
+            _labeled_p(lower, "between-group") or _first_p(lower),
+            _labeled_p(lower, "within") if "within" in lower else "",
+            "explicit_between_group",
+            "",
+        )
     if "group_by_time" in lower:
-        return _first_p(lower), ""
+        return _first_p(lower), "", "group_by_time_as_between_group", ""
     if "within" in lower and "between" not in lower:
-        return "", _first_p(lower)
-    return _first_p(lower), ""
+        return "", _labeled_p(lower, "within") or _first_p(lower), "explicit_within_group_only", "between-group P value unavailable"
+    values = re.findall(r"(?:<\s*)?0?\.\d+", lower)
+    warning = "multiple unlabeled P values; first retained" if len(values) > 1 else ""
+    return _first_p(lower), "", "unlabeled_first_p_value", warning
 
 
 def _first_p(text: str) -> str:
@@ -108,6 +133,18 @@ def _first_p(text: str) -> str:
         return match.group(0).replace(" ", "") if match else "<0.05"
     match = re.search(r"0?\.\d+", text)
     return match.group(0) if match else ""
+
+
+def _labeled_p(text: str, label: str) -> str:
+    label_start = text.find(label)
+    if label_start < 0:
+        return ""
+    before = text[max(0, label_start - 60) : label_start]
+    before_values = re.findall(r"(?:<\s*)?0?\.\d+", before)
+    if before_values:
+        return before_values[-1].replace(" ", "")
+    after = text[label_start + len(label) : label_start + len(label) + 60]
+    return _first_p(after)
 
 
 def _analysis_population(note: str, p_value: str) -> str:

@@ -46,8 +46,8 @@
   <text class="kpi-value" x="408" y="342">659</text>
   <text class="kpi-label" x="710" y="292">high/medium 复核池</text>
   <text class="kpi-value" x="710" y="342">930</text>
-  <text class="kpi-label" x="1012" y="292">响应模型 AUC</text>
-  <text class="kpi-value" x="1012" y="342">0.971</text>
+  <text class="kpi-label" x="1012" y="292">严格验证状态</text>
+  <text class="kpi-value" x="1012" y="342">未通过</text>
   <text class="kpi-label" x="1314" y="292">组合输出</text>
   <text class="kpi-value" x="1314" y="342">50</text>
 
@@ -79,12 +79,12 @@
   <g>
     <rect x="80" y="582" width="232" height="110" fill="#2563eb"/>
     <text class="module" x="108" y="646">OMS 模型</text>
-    <text class="cell" x="342" y="615">已定义目录、schema</text>
-    <text class="cell" x="342" y="642">和建模模块边界</text>
+    <text class="cell" x="342" y="615">已实现训练入口与校验</text>
+    <text class="cell" x="342" y="642">当前仅 2 行示例数据</text>
     <text class="cell" x="670" y="615">AUC、Accuracy、F1</text>
     <text class="cell" x="670" y="642">留一研究验证</text>
-    <text class="cell-strong" x="902" y="615">尚未训练分类模型</text>
-    <text class="cell" x="902" y="642">真实指标暂无</text>
+    <text class="cell-strong" x="902" y="615">基线算法已实现</text>
+    <text class="cell" x="902" y="642">未达门槛，不报告指标</text>
     <text class="cell" x="1250" y="615">接入样本级矩阵</text>
     <text class="cell" x="1250" y="642">外部验证</text>
   </g>
@@ -92,11 +92,11 @@
   <g>
     <rect x="80" y="692" width="232" height="110" fill="#7c3aed"/>
     <text class="module" x="108" y="756">BMI 回归模型</text>
-    <text class="cell" x="342" y="725">已定义回归目录</text>
+    <text class="cell" x="342" y="725">已实现 ElasticNet 基线</text>
     <text class="cell" x="342" y="752">当前仅 2 行清洗示例</text>
     <text class="cell" x="670" y="725">R²、MAE、RMSE</text>
     <text class="cell" x="670" y="752">临床协变量</text>
-    <text class="cell-strong" x="902" y="725">尚未训练回归模型</text>
+    <text class="cell-strong" x="902" y="725">训练模块已完成</text>
     <text class="cell" x="902" y="752">真实 R²/MAE/RMSE 暂无</text>
     <text class="cell" x="1250" y="725">加入年龄、性别、地区</text>
     <text class="cell" x="1250" y="752">饮食、抗生素等协变量</text>
@@ -104,13 +104,14 @@
 
   <g>
     <rect x="80" y="802" width="232" height="110" fill="#dc2626"/>
-    <text class="module" x="108" y="866">响应人群模型</text>
-    <text class="cell" x="342" y="835">46 个 study-endpoint 行</text>
-    <text class="cell" x="342" y="862">12 个 evidence-level 研究</text>
+    <text class="module" x="108" y="850">研究终点证据</text>
+    <text class="module" x="108" y="880">分类器</text>
+    <text class="cell" x="342" y="835">增强集 66 行</text>
+    <text class="cell" x="342" y="862">17 个 evidence-level 研究</text>
     <text class="cell" x="670" y="835">AUC、AP、Brier</text>
     <text class="cell" x="670" y="862">解释特征</text>
-    <text class="cell-strong" x="902" y="835">AUC=0.971；AP=0.935</text>
-    <text class="cell" x="902" y="862">Brier=0.060；研究终点层级</text>
+    <text class="cell-strong" x="902" y="835">AUC=0.319；AP=0.286</text>
+    <text class="cell" x="902" y="862">未通过门槛；禁止组合重排</text>
     <text class="cell" x="1250" y="835">完成 Top100/Top200 抽取</text>
     <text class="cell" x="1250" y="862">前瞻验证</text>
   </g>
@@ -118,12 +119,12 @@
   <g>
     <rect x="80" y="912" width="232" height="110" fill="#ea580c"/>
     <text class="module" x="108" y="976">组合推荐模型</text>
-    <text class="cell" x="342" y="945">7 个候选菌株</text>
+    <text class="cell" x="342" y="945">11 个候选菌株</text>
     <text class="cell" x="342" y="972">50 个 3-5 菌株组合</text>
     <text class="cell" x="670" y="945">Top 组合数量</text>
-    <text class="cell" x="670" y="972">clinical/design/response score</text>
-    <text class="cell-strong" x="902" y="945">已输出 50 个组合</text>
-    <text class="cell" x="902" y="972">安全门仍待 genome safety gate</text>
+    <text class="cell" x="670" y="972">clinical/design/safety gate</text>
+    <text class="cell-strong" x="902" y="945">50 个假说优先级组合</text>
+    <text class="cell" x="902" y="972">模型概率为空；安全门 pending</text>
     <text class="cell" x="1250" y="945">体外与动物验证</text>
     <text class="cell" x="1250" y="972">按人工复核更新评分</text>
   </g>
@@ -137,6 +138,6 @@
   <line x1="80" y1="802" x2="1520" y2="802" stroke="#e2e8f0"/>
   <line x1="80" y1="912" x2="1520" y2="912" stroke="#e2e8f0"/>
 
-  <text class="foot" x="80" y="1066">注：OMS 与 BMI 回归模型当前为建模框架和输入规范阶段，尚无真实训练指标；响应模型指标为 study-endpoint 层级阶段性结果。</text>
-  <text class="foot" x="80" y="1094">数据源：results/platform_v1_completed_results.csv；生成日期：2026-06-09。</text>
+  <text class="foot" x="80" y="1066">注：严格验证已移除标签泄漏；证据分类器未通过信息性门槛，组合推荐不使用其概率。</text>
+  <text class="foot" x="80" y="1094">OMS/BMI 真实指标等待样本级菌群矩阵；数据更新日期：2026-06-10。</text>
 </svg>

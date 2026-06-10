@@ -24,6 +24,7 @@ from .provenance import validate_provenance
 from .preliminary_prediction import build_preliminary_predictions
 from .outcome_prioritization import build_outcome_prioritized_predictions
 from .outcome_structuring import structure_outcome_review
+from .obesity_model import train_obesity_models
 from .review import build_review_worksheets
 from .review_filter import filter_review_worksheet
 from .review_validation import validate_outcome_review
@@ -431,11 +432,12 @@ def cmd_recommend_formulations(args: argparse.Namespace) -> int:
         min_strains=args.min_strains,
         max_strains=args.max_strains,
         top_n=args.top_n,
+        safety_status_path=Path(args.safety_status) if args.safety_status else None,
     )
     print(f"Strains: {result.strain_output} ({result.strains_written} rows)")
     print(f"Formulations: {result.formulation_output} ({result.formulations_written} rows)")
     print(f"Combinations: {result.combination_output} ({result.combinations_written} rows)")
-    print("Note: formulation-aware recommendation; genome safety gate still required.")
+    print("Note: pending-safety combinations are hypothesis-ranked but not validation-eligible.")
     return 0
 
 
@@ -491,7 +493,24 @@ def cmd_train_response_model(args: argparse.Namespace) -> int:
     print(f"Evidence predictions: {result.evidence_predictions_output}")
     print(f"Metrics: {result.metrics_output}")
     print(f"Model: {result.model_output}")
-    print("Note: model level is study endpoint, not individual baseline microbiome.")
+    print("Note: leakage-safe study-endpoint evidence classifier; not an individual responder model.")
+    return 0
+
+
+def cmd_train_obesity_models(args: argparse.Namespace) -> int:
+    result = train_obesity_models(
+        metadata_path=Path(args.metadata),
+        feature_matrix_path=Path(args.features),
+        metrics_output=Path(args.metrics),
+        classifier_output=Path(args.classifier),
+        bmi_regressor_output=Path(args.bmi_regressor),
+    )
+    print(f"Samples used: {result.samples_used}")
+    print(f"Studies used: {result.studies_used}")
+    print(f"Metrics: {result.metrics_output}")
+    print(f"OMS classifier: {result.classifier_output}")
+    print(f"BMI regressor: {result.bmi_regressor_output}")
+    print("Note: grouped internal validation only; an external cohort is still required.")
     return 0
 
 
@@ -504,7 +523,7 @@ def cmd_apply_response_model(args: argparse.Namespace) -> int:
     print(f"Output: {result.output_path}")
     print(f"Rows written: {result.rows_written}")
     print(f"Rows with model probability: {result.combinations_with_model_probability}")
-    print("Note: predicted_response_score is now derived from supervised study-endpoint model probability.")
+    print("Note: probabilities are applied only when the evidence classifier passes its informativeness gate.")
     return 0
 
 
@@ -750,6 +769,10 @@ def build_parser() -> argparse.ArgumentParser:
     recommend_formulations.add_argument("--min-strains", type=int, default=3)
     recommend_formulations.add_argument("--max-strains", type=int, default=5)
     recommend_formulations.add_argument("--top-n", type=int, default=50)
+    recommend_formulations.add_argument(
+        "--safety-status",
+        help="Optional CSV with strain_id and safety_gate (pass/fail/pending).",
+    )
     recommend_formulations.set_defaults(func=cmd_recommend_formulations)
 
     structure_outcomes = subparsers.add_parser(
@@ -782,23 +805,34 @@ def build_parser() -> argparse.ArgumentParser:
     validate_review.add_argument("review", help="Input outcome review worksheet CSV.")
     validate_review.set_defaults(func=cmd_validate_outcome_review)
 
+    train_obesity = subparsers.add_parser(
+        "train-obesity-models",
+        help="Train leakage-safe sample-level OMS classification and BMI regression baselines.",
+    )
+    train_obesity.add_argument("metadata", help="Sample metadata CSV.")
+    train_obesity.add_argument("features", help="Wide numeric feature matrix with sample_id.")
+    train_obesity.add_argument("metrics", help="Output grouped-validation metrics JSON.")
+    train_obesity.add_argument("classifier", help="Output pickled OMS classifier.")
+    train_obesity.add_argument("bmi_regressor", help="Output pickled BMI regressor.")
+    train_obesity.set_defaults(func=cmd_train_obesity_models)
+
     train_response = subparsers.add_parser(
         "train-response-model",
-        help="Train a supervised study-endpoint response model from structured final outcomes.",
+        help="Train a leakage-safe study-endpoint evidence classifier.",
     )
     train_response.add_argument("structured_outcomes", help="Input structured outcome CSV.")
     train_response.add_argument("row_predictions", help="Output row-level model prediction CSV.")
-    train_response.add_argument("evidence_predictions", help="Output evidence-level response probability CSV.")
+    train_response.add_argument("evidence_predictions", help="Output evidence-level classifier score CSV.")
     train_response.add_argument("metrics", help="Output model metrics JSON.")
     train_response.add_argument("model", help="Output pickled sklearn model.")
     train_response.set_defaults(func=cmd_train_response_model)
 
     apply_response = subparsers.add_parser(
         "apply-response-model",
-        help="Apply evidence-level response model probabilities to combination rankings.",
+        help="Apply informative evidence-classifier scores to combination rankings.",
     )
     apply_response.add_argument("combination_input", help="Input combination ranking CSV.")
-    apply_response.add_argument("evidence_predictions", help="Evidence-level response probability CSV.")
+    apply_response.add_argument("evidence_predictions", help="Evidence-level classifier score CSV.")
     apply_response.add_argument("output", help="Output combination ranking CSV with model probabilities.")
     apply_response.set_defaults(func=cmd_apply_response_model)
     return parser

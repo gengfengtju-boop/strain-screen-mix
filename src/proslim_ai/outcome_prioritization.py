@@ -14,6 +14,9 @@ OUTCOME_FIELDS = [
     "preliminary_response_score",
     "final_outcome_score",
     "final_total_score",
+    "score_type",
+    "outcome_scoring_method",
+    "confirmed_outcome_rows",
     "confidence_level",
     "predicted_usefulness",
     "confirmed_outcome_domains",
@@ -152,16 +155,20 @@ def build_outcome_prioritized_predictions(
         domains: list[str] = []
         signals: list[tuple[float, str]] = []
         limitations: list[str] = []
+        scores_by_domain: dict[str, list[float]] = {}
 
         for outcome in outcomes_by_id.get(evidence_id, []):
             score, signal, limitation = _score_extracted_outcome(outcome)
-            outcome_score += score
-            domains.append(_text(outcome.get("outcome_domain")))
+            domain = _text(outcome.get("outcome_domain")) or "other"
+            scores_by_domain.setdefault(domain, []).append(score)
+            domains.append(domain)
             signals.append((score, signal))
             if limitation:
                 limitations.append(limitation)
 
-        outcome_score = min(outcome_score, 10.0)
+        # Average repeated endpoints within each domain before combining domains,
+        # so studies do not rank higher merely because they report more rows.
+        outcome_score = _aggregate_domain_scores(scores_by_domain)
         total_score = preliminary_score + outcome_score
         if outcome_score <= 0:
             confidence = _text(row.get("confidence_level"))
@@ -182,6 +189,9 @@ def build_outcome_prioritized_predictions(
                 "preliminary_response_score": f"{preliminary_score:.2f}",
                 "final_outcome_score": f"{outcome_score:.2f}",
                 "final_total_score": f"{total_score:.2f}",
+                "score_type": "heuristic_evidence_priority_not_probability",
+                "outcome_scoring_method": "mean_within_domain_then_sum_across_domains",
+                "confirmed_outcome_rows": str(sum(len(values) for values in scores_by_domain.values())),
                 "confidence_level": confidence,
                 "predicted_usefulness": "prioritize_modeling" if outcome_score > 0 else _text(row.get("predicted_usefulness")),
                 "confirmed_outcome_domains": "; ".join(dict.fromkeys(filter(None, domains))),
@@ -200,3 +210,8 @@ def build_outcome_prioritized_predictions(
         writer.writerows(output_rows)
 
     return OutcomePrioritizationResult(output_path, len(output_rows), extracted_rows)
+
+
+def _aggregate_domain_scores(scores_by_domain: dict[str, list[float]]) -> float:
+    score = sum(sum(values) / len(values) for values in scores_by_domain.values() if values)
+    return min(score, 10.0)

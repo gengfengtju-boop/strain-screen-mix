@@ -39,4 +39,4 @@ target-version = "py310"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-p no:cacheprovider --basetemp=.test_tmp/pytest_run"
+addopts = "-p no:cacheprovider"

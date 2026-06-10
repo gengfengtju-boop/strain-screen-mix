@@ -1,7 +1,8 @@
 obesity_models:
   BMI_regression:
-    algorithms:
-      - ElasticNet
+    implementation_status: baseline_implemented_requires_real_sample_data
+    implemented_algorithm: ElasticNet
+    planned_algorithms:
       - RandomForestRegressor
       - XGBoostRegressor
       - LightGBMRegressor
@@ -12,8 +13,9 @@ obesity_models:
       - Pearson
       - Spearman
   obesity_classification:
-    algorithms:
-      - LogisticRegression_regularized
+    implementation_status: baseline_implemented_requires_real_sample_data
+    implemented_algorithm: LogisticRegression_regularized
+    planned_algorithms:
       - RandomForestClassifier
       - XGBoostClassifier
       - LightGBMClassifier
@@ -26,6 +28,10 @@ obesity_models:
       - F1
 
 responder_models:
+  implementation_status: study_endpoint_evidence_classifier_only
+  warning: not_an_individual_responder_model
+  validation: nested_stratified_group_cv_by_evidence_id
+  leakage_policy: label_derived_fields_excluded
   tasks:
     - weight_response
     - BMI_response
@@ -34,15 +40,13 @@ responder_models:
     - glucose_response
     - microbiome_response
     - composite_response
-  algorithms:
+  candidate_algorithms:
     - LogisticRegression_regularized
     - RandomForestClassifier
-    - XGBoostClassifier
-    - LightGBMClassifier
-    - MultiTaskLearning
+    - GradientBoostingClassifier
+    - DummyClassifier_prior
 
 interpretability:
-  feature_importance: true
-  SHAP: true
-  permutation_importance: true
-
+  feature_importance: limited_to_selected_tree_models
+  SHAP: planned
+  permutation_importance: planned

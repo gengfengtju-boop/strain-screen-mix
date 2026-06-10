@@ -18,6 +18,7 @@ PREDICTION_FIELDS = [
     "priority",
     "relevance_score",
     "preliminary_response_score",
+    "score_type",
     "confidence_level",
     "predicted_usefulness",
     "main_positive_signals",
@@ -142,6 +143,7 @@ def build_preliminary_predictions(
                 "priority": _text(screening.get("priority")),
                 "relevance_score": _text(screening.get("relevance_score")),
                 "preliminary_response_score": f"{score:.2f}",
+                "score_type": "heuristic_extraction_priority_not_probability",
                 "confidence_level": confidence,
                 "predicted_usefulness": "prioritize_extraction" if score >= 6 else "defer_or_screen_manually",
                 "main_positive_signals": "; ".join(dict.fromkeys(positive)),
@@ -158,4 +160,3 @@ def build_preliminary_predictions(
         writer.writerows(prediction_rows)
 
     return PreliminaryPredictionResult(output_path=output_path, rows_written=len(prediction_rows))
-

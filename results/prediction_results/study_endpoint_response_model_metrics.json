@@ -1,39 +1,107 @@
 {
-  "average_precision": 0.9347379504386426,
-  "brier_score": 0.06007484095079139,
+  "accuracy": 0.5869565217391305,
+  "average_precision": 0.3225996447744008,
+  "balanced_accuracy": 0.4898580121703854,
+  "brier_score": 0.27681745241002403,
   "evidence_count": 12,
-  "limitation": "Trained on structured study endpoint rows, not subject-level baseline microbiome responders.",
+  "excluded_leakage_features": [
+    "direction",
+    "evidence_modifier",
+    "between_group_p",
+    "within_group_p",
+    "intervention_effect",
+    "control_effect",
+    "effect_difference"
+  ],
+  "f1": 0.17391304347826086,
+  "feature_policy": "leakage_safe_descriptors_only",
+  "limitation": "Classifies study-endpoint evidence from descriptive fields only; it is not an individual microbiome responder model.",
   "model_comparison": [
     {
+      "accuracy": 0.6304347826086957,
       "average_precision": 0.315912893137284,
+      "balanced_accuracy": 0.5,
       "brier_score": 0.2407067240758851,
+      "f1": 0.0,
       "model": "dummy_prior",
+      "positive_prevalence": 0.3695652173913043,
       "roc_auc": 0.37423935091277893
     },
     {
-      "average_precision": 0.9277215767700198,
-      "brier_score": 0.10012727762254449,
+      "accuracy": 0.6086956521739131,
+      "average_precision": 0.4310170720699999,
+      "balanced_accuracy": 0.5801217038539555,
+      "brier_score": 0.25481952889788334,
+      "f1": 0.47058823529411764,
       "model": "logistic_l2_balanced",
-      "roc_auc": 0.9614604462474644
+      "positive_prevalence": 0.3695652173913043,
+      "roc_auc": 0.5628803245436105
     },
     {
-      "average_precision": 0.9877162629757786,
-      "brier_score": 0.11736667425445715,
+      "accuracy": 0.5652173913043478,
+      "average_precision": 0.42297431638135186,
+      "balanced_accuracy": 0.5334685598377282,
+      "brier_score": 0.24549226611106698,
+      "f1": 0.4117647058823529,
       "model": "random_forest_balanced",
-      "roc_auc": 0.9918864097363084
+      "positive_prevalence": 0.3695652173913043,
+      "roc_auc": 0.528397565922921
     },
     {
-      "average_precision": 0.9347379504386426,
-      "brier_score": 0.06007484095079139,
+      "accuracy": 0.5652173913043478,
+      "average_precision": 0.35368438361414634,
+      "balanced_accuracy": 0.48478701825557813,
+      "brier_score": 0.27628801653930873,
+      "f1": 0.23076923076923078,
       "model": "gradient_boosting_shallow",
-      "roc_auc": 0.9705882352941175
+      "positive_prevalence": 0.3695652173913043,
+      "roc_auc": 0.4827586206896552
     }
   ],
-  "model_level": "study_endpoint_level_not_individual_microbiome",
+  "model_level": "study_endpoint_evidence_classifier_not_individual_response",
+  "model_status": "non_informative_do_not_apply_to_combinations",
   "non_positive_rows": 29,
+  "outer_fold_model_selections": [
+    {
+      "fold": 1,
+      "selected_model": "gradient_boosting_shallow",
+      "training_evidence_count": 10,
+      "training_rows": 38,
+      "validation_rows": 8
+    },
+    {
+      "fold": 2,
+      "selected_model": "random_forest_balanced",
+      "training_evidence_count": 9,
+      "training_rows": 35,
+      "validation_rows": 11
+    },
+    {
+      "fold": 3,
+      "selected_model": "dummy_prior",
+      "training_evidence_count": 10,
+      "training_rows": 37,
+      "validation_rows": 9
+    },
+    {
+      "fold": 4,
+      "selected_model": "dummy_prior",
+      "training_evidence_count": 9,
+      "training_rows": 36,
+      "validation_rows": 10
+    },
+    {
+      "fold": 5,
+      "selected_model": "gradient_boosting_shallow",
+      "training_evidence_count": 10,
+      "training_rows": 38,
+      "validation_rows": 8
+    }
+  ],
+  "positive_prevalence": 0.3695652173913043,
   "positive_rows": 17,
-  "roc_auc": 0.9705882352941175,
+  "roc_auc": 0.3914807302231237,
   "rows_used": 46,
-  "selected_model": "gradient_boosting_shallow",
-  "validation": "stratified_group_cross_validated_by_evidence_id"
+  "selected_model": "dummy_prior",
+  "validation": "nested_stratified_group_cross_validated_by_evidence_id"
 }

@@ -96,7 +96,7 @@ try {
     $rowPredictions = Join-RootPath "results/prediction_results/study_endpoint_response_row_predictions.$OutputTag.csv"
     $evidencePredictions = Join-RootPath "results/prediction_results/study_endpoint_response_evidence_predictions.$OutputTag.csv"
     $metrics = Join-RootPath "results/prediction_results/study_endpoint_response_model_metrics.$OutputTag.json"
-    $model = Join-RootPath "models/responder_classifier/study_endpoint_response_model.$OutputTag.pkl"
+    $model = Join-RootPath "models/responder_classifier/study_endpoint_evidence_classifier.$OutputTag.pkl"
     $strainOutput = Join-RootPath "results/candidate_strain_scores/formulation_aware_strain_scores.$OutputTag.csv"
     $formulationOutput = Join-RootPath "results/candidate_strain_scores/formulation_blocks.$OutputTag.csv"
     $combinationOutput = Join-RootPath "results/combination_ranking/formulation_aware_3to5_strain_combinations.$OutputTag.csv"
@@ -184,12 +184,12 @@ try {
     Invoke-ProSlim @("recommend-formulations", $strainOutput, $formulationOutput, $combinationOutput, "--min-strains", "3", "--max-strains", "5", "--top-n", "50")
 
     if ($TrainResponseModel) {
-        Write-Host "`n[12/12] Train study-endpoint response model"
+        Write-Host "`n[12/12] Train study-endpoint evidence classifier"
         Invoke-ProSlim @("structure-outcomes", $reviewForFinalization, $structuredOutcomes)
         Invoke-ProSlim @("train-response-model", $structuredOutcomes, $rowPredictions, $evidencePredictions, $metrics, $model)
 
         if ($ApplyResponseModel) {
-            Write-Host "`n[12b] Apply response model to combination ranking"
+            Write-Host "`n[12b] Apply informative evidence classifier to combination ranking"
             Invoke-ProSlim @("apply-response-model", $combinationOutput, $evidencePredictions, $modelCombinationOutput)
         }
     } else {
