@@ -1,0 +1,8 @@
+formulation_id,formulation_name,evidence_id,outcome_rows,positive_rows,limited_rows,negative_rows,endpoint_coverage,evidence_posterior_mean,evidence_posterior_p10,evidence_posterior_p90,evidence_effective_sample_size,evidence_status
+FORM_LF_K7_K8_K11,Lactobacillus fermentum K7/K8/K11,PMID:37447365,4,4,0,0,adiposity,8.380,6.393,9.809,4.000,observed_outcomes
+FORM_IDCC4301,Bifidobacterium lactis IDCC 4301,PMID:39051504,3,2,0,1,adiposity; metabolic,6.164,3.227,8.780,2.400,observed_outcomes
+FORM_BB536_MCC1274,Bifidobacterium longum BB536 + Bifidobacterium breve MCC1274,PMID:38542727,4,3,0,1,adiposity; metabolic,6.394,3.613,8.842,2.960,observed_outcomes
+FORM_B420_LU,Bifidobacterium animalis subsp. lactis B420 + polydextrose,PMID:27810310,3,2,0,1,adiposity,5.779,2.624,8.746,1.800,observed_outcomes
+FORM_BBR60,Bifidobacterium breve BBr60,PMID:39456659,3,2,0,1,adiposity; metabolic,5.618,2.731,8.367,2.560,observed_outcomes
+FORM_BN202M,Lacticaseibacillus paracasei BEPC22 + Lactiplantibacillus plantarum BELP53,PMID:38999741,4,1,0,3,adiposity; microbiome,4.302,1.484,7.333,2.200,observed_outcomes
+FORM_BC99,Bacillus coagulans BC99,PMID:40416368,3,1,0,2,adiposity; metabolic; microbiome,3.874,0.781,7.363,1.127,observed_outcomes

@@ -1,0 +1,28 @@
+{
+  "model_name": "evidence_constrained_bayesian_robust_combination_optimizer",
+  "structured_outcome_rows": 134,
+  "formulations_scored": 7,
+  "candidate_combinations_scored": 940,
+  "simulations": 5000,
+  "random_seed": 17,
+  "combination_size_range": [
+    3,
+    5
+  ],
+  "endpoint_weights": {
+    "adiposity": 1.0,
+    "metabolic": 0.7,
+    "microbiome": 0.35
+  },
+  "score_weight_center": {
+    "clinical_evidence": 0.45,
+    "module_coverage": 0.2,
+    "formulation_integrity": 0.15,
+    "evidence_independence": 0.1,
+    "genus_diversity": 0.1
+  },
+  "validation": "Monte Carlo sensitivity analysis over evidence posteriors and score weights",
+  "prediction_scope": "preclinical formulation validation priority, not individual response probability",
+  "safety_policy": "failed strains excluded; pending strains remain hypothesis-only",
+  "limitation": "Each formulation is supported by few independent trials. Scores estimate robust validation priority and must not be interpreted as clinical efficacy probabilities."
+}

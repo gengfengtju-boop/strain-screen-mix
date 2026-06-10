@@ -28,6 +28,7 @@ from .obesity_model import train_obesity_models
 from .review import build_review_worksheets
 from .review_filter import filter_review_worksheet
 from .review_validation import validate_outcome_review
+from .robust_combination_optimizer import optimize_strain_combinations
 from .response_model import apply_response_model_to_combinations, train_response_model
 from .schemas import validate_csv_schema
 from .search import search_evidence, search_genomes
@@ -441,6 +442,29 @@ def cmd_recommend_formulations(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_optimize_combinations(args: argparse.Namespace) -> int:
+    result = optimize_strain_combinations(
+        structured_outcomes_path=Path(args.structured_outcomes),
+        formulation_evidence_output=Path(args.formulation_evidence_output),
+        combination_output=Path(args.combination_output),
+        diagnostics_output=Path(args.diagnostics_output),
+        min_strains=args.min_strains,
+        max_strains=args.max_strains,
+        top_n=args.top_n,
+        simulations=args.simulations,
+        random_seed=args.random_seed,
+        safety_status_path=Path(args.safety_status) if args.safety_status else None,
+    )
+    print(
+        f"Formulation evidence: {result.formulation_evidence_output} "
+        f"({result.formulations_scored} rows)"
+    )
+    print(f"Robust combinations: {result.combination_output} ({result.combinations_scored} scored)")
+    print(f"Diagnostics: {result.diagnostics_output}; simulations={result.simulations}")
+    print("Note: output is validation priority, not clinical or individual response probability.")
+    return 0
+
+
 def cmd_structure_outcomes(args: argparse.Namespace) -> int:
     result = structure_outcome_review(
         review_path=Path(args.review),
@@ -774,6 +798,27 @@ def build_parser() -> argparse.ArgumentParser:
         help="Optional CSV with strain_id and safety_gate (pass/fail/pending).",
     )
     recommend_formulations.set_defaults(func=cmd_recommend_formulations)
+
+    optimize_combinations = subparsers.add_parser(
+        "optimize-combinations",
+        help="Robustly rank 3-5 strain hypotheses from confirmed outcome evidence.",
+    )
+    optimize_combinations.add_argument("structured_outcomes", help="Structured outcome CSV.")
+    optimize_combinations.add_argument(
+        "formulation_evidence_output", help="Output formulation evidence posterior CSV."
+    )
+    optimize_combinations.add_argument("combination_output", help="Output robust combination CSV.")
+    optimize_combinations.add_argument("diagnostics_output", help="Output model diagnostics JSON.")
+    optimize_combinations.add_argument("--min-strains", type=int, default=3)
+    optimize_combinations.add_argument("--max-strains", type=int, default=5)
+    optimize_combinations.add_argument("--top-n", type=int, default=50)
+    optimize_combinations.add_argument("--simulations", type=int, default=2000)
+    optimize_combinations.add_argument("--random-seed", type=int, default=17)
+    optimize_combinations.add_argument(
+        "--safety-status",
+        help="Optional CSV with strain_id and safety_gate (pass/fail/pending).",
+    )
+    optimize_combinations.set_defaults(func=cmd_optimize_combinations)
 
     structure_outcomes = subparsers.add_parser(
         "structure-outcomes",
