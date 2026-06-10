@@ -2,13 +2,13 @@
 
 ## 完成范围
 
-- 输入文件：34 个（PDF 与 ClinicalTrials.gov CSV）。
-- 文件哈希去重：30 个唯一文件，识别 4 组完全重复副本。
-- 证据归并：28 个唯一证据 ID，全部完成全文/注册文本解析。
-- 深挖覆盖：28/28 有结果句、数值/P 值候选和表格样式行。
-- Top100 覆盖：25 个证据 ID，93 条 outcome 复核行获得新增全文线索。
+- 输入文件：删除不可获得的缺口记录后保留 23 个 PDF/CSV 来源文件。
+- 文件哈希去重：21 个唯一文件，另有 2 个完全重复副本。
+- 证据归并：保留 20 个有原始研究结果的唯一证据 ID，均完成全文解析。
+- 深挖覆盖：20/20 有结果句、数值/P 值候选和表格样式行。
+- Top100 复核表：删除 36 条无可用结果的候选行后保留 389 行，其中 68 条为已确认结局。
 - 结构化确认：20 个原始研究、68 条 outcome 已填写最终值、比较类型、时间点、P 值、样本量和局限性。
-- 原始研究缺口：20/20 已有人工确认结局；其余 4 项为仅注册记录、4 项为综述，不作为独立疗效队列。
+- 缺口清理：4 个仅注册记录和 4 篇二级证据已从本次补充包删除，详见删除审计表。
 - 合并数据集：原 66 条增强终点加本批 68 条，形成 134 条结构化终点、37 个研究。
 
 ## 关键新增结果
@@ -36,4 +36,4 @@
 
 ## 后续人工复核
 
-详见 `results/pdf_review_extracts/download_supplement_gap_report_remaining_20260610.csv`。本批原始研究已无待补空项；注册记录若无结果不得填写疗效，系统综述仅用于定位原始研究。仍标注“exact p requires table confirmation”的个别字段不得用于正式 Meta 分析，需在统计合并前进行双人复核。
+详见 `results/pdf_review_extracts/download_supplement_gap_report_remaining_20260610.csv`。该表现只保留 20 项已有结果的原始研究，不再包含不可获得的缺口文献。删除记录见 `data/intervention_data/download_supplement_unavailable_evidence_removed_20260610.csv`。仍标注“exact p requires table confirmation”的个别字段不得用于正式 Meta 分析，需在统计合并前进行双人复核。
