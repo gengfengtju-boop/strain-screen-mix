@@ -70,9 +70,13 @@ def test_benchmark_uses_grouped_validation_without_network(monkeypatch) -> None:
     monkeypatch.setitem(sys.modules, "tabpfn", fake_module)
 
     try:
-        metrics = benchmark_tabpfn(outcomes, checkpoint, output)
+        metrics = benchmark_tabpfn(outcomes, checkpoint, output, cv_repeats=2)
 
         assert metrics["validation"].endswith("group_cross_validation_by_evidence_id")
+        assert metrics["cv_repeats"] == 2
+        assert len(metrics["repeat_metrics"]) == 2
+        assert metrics["repeat_metrics"][1]["seed"] == 118
+        assert metrics["roc_auc_std"] >= 0
         assert metrics["evidence_groups"] == 10
         assert json.loads(output.read_text(encoding="utf-8"))["model"] == "TabPFNClassifier"
     finally:

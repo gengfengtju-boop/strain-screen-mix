@@ -1,0 +1,76 @@
+{
+  "model": "TabPFNClassifier",
+  "n_estimators": 4,
+  "tabpfn_checkpoint": "models\\tabpfn\\tabpfn-v2-classifier-finetuned-zk73skhh.ckpt",
+  "rows": 134,
+  "evidence_groups": 37,
+  "validation": "repeated_five_fold_stratified_group_cross_validation_by_evidence_id",
+  "cv_repeats": 5,
+  "repeat_metrics": [
+    {
+      "repeat": 1,
+      "seed": 17,
+      "roc_auc": 0.509375,
+      "average_precision": 0.4361818378787896,
+      "balanced_accuracy": 0.5240740740740741
+    },
+    {
+      "repeat": 2,
+      "seed": 118,
+      "roc_auc": 0.5172453703703703,
+      "average_precision": 0.42031074475545577,
+      "balanced_accuracy": 0.46550925925925923
+    },
+    {
+      "repeat": 3,
+      "seed": 219,
+      "roc_auc": 0.4288194444444445,
+      "average_precision": 0.3806333065343809,
+      "balanced_accuracy": 0.5083333333333333
+    },
+    {
+      "repeat": 4,
+      "seed": 320,
+      "roc_auc": 0.5327546296296296,
+      "average_precision": 0.45114065588881147,
+      "balanced_accuracy": 0.5275462962962963
+    },
+    {
+      "repeat": 5,
+      "seed": 421,
+      "roc_auc": 0.3246527777777778,
+      "average_precision": 0.32342470690797503,
+      "balanced_accuracy": 0.42754629629629626
+    }
+  ],
+  "roc_auc": 0.44363425925925926,
+  "roc_auc_mean": 0.4625694444444444,
+  "roc_auc_std": 0.07780263050905761,
+  "average_precision": 0.3832391112213271,
+  "average_precision_mean": 0.40233825039308246,
+  "average_precision_std": 0.04593152660855753,
+  "balanced_accuracy": 0.4872685185185185,
+  "balanced_accuracy_mean": 0.4906018518518519,
+  "balanced_accuracy_std": 0.038484616045293185,
+  "positive_prevalence": 0.40298507462686567,
+  "eligible_for_combination_fusion": false,
+  "fusion_policy": "auc_mean>=0.55, auc_mean-auc_std>=0.50, ap_mean>prevalence",
+  "feature_policy": "leakage_safe_descriptors_only",
+  "features": [
+    "outcome_domain",
+    "endpoint_type",
+    "analysis_population",
+    "comparison",
+    "intervention_class",
+    "strain_family",
+    "population_group",
+    "blinding",
+    "randomized_design",
+    "placebo_control",
+    "sample_size",
+    "duration_weeks",
+    "log10_cfu_day"
+  ],
+  "review_rows_matched": 114,
+  "review_feature_coverage": 0.8507462686567164
+}

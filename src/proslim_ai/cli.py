@@ -473,11 +473,13 @@ def cmd_benchmark_tabpfn(args: argparse.Namespace) -> int:
         output_path=Path(args.output),
         n_estimators=args.n_estimators,
         random_seed=args.random_seed,
+        cv_repeats=args.cv_repeats,
         review_paths=[Path(path) for path in args.review],
     )
     print(f"Output: {args.output}")
     print(
-        f"AUC={metrics['roc_auc']:.3f}; AP={metrics['average_precision']:.3f}; "
+        f"AUC={metrics['roc_auc_mean']:.3f}+/-{metrics['roc_auc_std']:.3f}; "
+        f"AP={metrics['average_precision_mean']:.3f}; "
         f"eligible_for_combination_fusion={metrics['eligible_for_combination_fusion']}"
     )
     return 0
@@ -847,6 +849,7 @@ def build_parser() -> argparse.ArgumentParser:
     tabpfn_benchmark.add_argument("output", help="Output benchmark metrics JSON.")
     tabpfn_benchmark.add_argument("--n-estimators", type=int, default=2)
     tabpfn_benchmark.add_argument("--random-seed", type=int, default=17)
+    tabpfn_benchmark.add_argument("--cv-repeats", type=int, default=1)
     tabpfn_benchmark.add_argument(
         "--review",
         action="append",

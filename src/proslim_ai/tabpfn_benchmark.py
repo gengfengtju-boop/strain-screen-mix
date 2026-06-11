@@ -34,8 +34,11 @@ def benchmark_tabpfn(
     output_path: Path,
     n_estimators: int = 2,
     random_seed: int = 17,
+    cv_repeats: int = 1,
     review_paths: list[Path] | None = None,
 ) -> dict[str, object]:
+    if cv_repeats < 1:
+        raise ValueError("cv_repeats must be at least 1")
     if not model_path.is_file():
         raise FileNotFoundError(
             f"TabPFN checkpoint not found: {model_path}. "
@@ -56,47 +59,77 @@ def benchmark_tabpfn(
     X_numeric = feature_table[numeric_features].apply(pd.to_numeric, errors="coerce").to_numpy()
     y = data["label"].to_numpy(dtype=int)
     groups = data["evidence_id"].fillna("").astype(str).to_numpy()
-    folds = StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=random_seed)
-    probabilities = np.zeros(len(y), dtype=float)
-    for train, test in folds.split(X_categorical, y, groups):
-        encoder = OrdinalEncoder(handle_unknown="use_encoded_value", unknown_value=-1)
-        train_categorical = encoder.fit_transform(X_categorical[train]).astype(np.float32)
-        test_categorical = encoder.transform(X_categorical[test]).astype(np.float32)
-        train_numeric = X_numeric[train].astype(np.float32)
-        test_numeric = X_numeric[test].astype(np.float32)
-        medians = np.nanmedian(train_numeric, axis=0)
-        medians = np.where(np.isnan(medians), 0.0, medians)
-        train_numeric = np.where(np.isnan(train_numeric), medians, train_numeric)
-        test_numeric = np.where(np.isnan(test_numeric), medians, test_numeric)
-        X_train = np.hstack([train_categorical, train_numeric])
-        X_test = np.hstack([test_categorical, test_numeric])
-        model = TabPFNClassifier(
-            model_path=model_path,
-            device="cpu",
-            n_estimators=n_estimators,
-            n_preprocessing_jobs=1,
-            random_state=random_seed,
-            categorical_features_indices=list(range(len(categorical_features))),
+    repeated_probabilities = []
+    repeat_metrics = []
+    for repeat in range(cv_repeats):
+        repeat_seed = random_seed + repeat * 101
+        folds = StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=repeat_seed)
+        probabilities = np.zeros(len(y), dtype=float)
+        for train, test in folds.split(X_categorical, y, groups):
+            encoder = OrdinalEncoder(handle_unknown="use_encoded_value", unknown_value=-1)
+            train_categorical = encoder.fit_transform(X_categorical[train]).astype(np.float32)
+            test_categorical = encoder.transform(X_categorical[test]).astype(np.float32)
+            train_numeric = X_numeric[train].astype(np.float32)
+            test_numeric = X_numeric[test].astype(np.float32)
+            medians = np.nanmedian(train_numeric, axis=0)
+            medians = np.where(np.isnan(medians), 0.0, medians)
+            train_numeric = np.where(np.isnan(train_numeric), medians, train_numeric)
+            test_numeric = np.where(np.isnan(test_numeric), medians, test_numeric)
+            X_train = np.hstack([train_categorical, train_numeric])
+            X_test = np.hstack([test_categorical, test_numeric])
+            model = TabPFNClassifier(
+                model_path=model_path,
+                device="cpu",
+                n_estimators=n_estimators,
+                n_preprocessing_jobs=1,
+                random_state=repeat_seed,
+                categorical_features_indices=list(range(len(categorical_features))),
+            )
+            model.fit(X_train, y[train])
+            probabilities[test] = model.predict_proba(X_test)[:, 1]
+        repeated_probabilities.append(probabilities)
+        repeat_predictions = probabilities >= 0.5
+        repeat_metrics.append(
+            {
+                "repeat": repeat + 1,
+                "seed": repeat_seed,
+                "roc_auc": float(roc_auc_score(y, probabilities)),
+                "average_precision": float(average_precision_score(y, probabilities)),
+                "balanced_accuracy": float(balanced_accuracy_score(y, repeat_predictions)),
+            }
         )
-        model.fit(X_train, y[train])
-        probabilities[test] = model.predict_proba(X_test)[:, 1]
 
+    probabilities = np.mean(repeated_probabilities, axis=0)
     predictions = probabilities >= 0.5
+    auc_values = np.array([row["roc_auc"] for row in repeat_metrics])
+    ap_values = np.array([row["average_precision"] for row in repeat_metrics])
+    balanced_values = np.array([row["balanced_accuracy"] for row in repeat_metrics])
+    auc_mean = float(auc_values.mean())
+    auc_std = float(auc_values.std())
+    ap_mean = float(ap_values.mean())
     metrics = {
         "model": "TabPFNClassifier",
         "n_estimators": n_estimators,
         "tabpfn_checkpoint": str(model_path),
         "rows": len(y),
         "evidence_groups": int(pd.Series(groups).nunique()),
-        "validation": "five_fold_stratified_group_cross_validation_by_evidence_id",
+        "validation": "repeated_five_fold_stratified_group_cross_validation_by_evidence_id",
+        "cv_repeats": cv_repeats,
+        "repeat_metrics": repeat_metrics,
         "roc_auc": float(roc_auc_score(y, probabilities)),
+        "roc_auc_mean": auc_mean,
+        "roc_auc_std": auc_std,
         "average_precision": float(average_precision_score(y, probabilities)),
+        "average_precision_mean": ap_mean,
+        "average_precision_std": float(ap_values.std()),
         "balanced_accuracy": float(balanced_accuracy_score(y, predictions)),
+        "balanced_accuracy_mean": float(balanced_values.mean()),
+        "balanced_accuracy_std": float(balanced_values.std()),
         "positive_prevalence": float(y.mean()),
         "eligible_for_combination_fusion": bool(
-            roc_auc_score(y, probabilities) >= 0.55
-            and average_precision_score(y, probabilities) > y.mean()
+            auc_mean >= 0.55 and auc_mean - auc_std >= 0.50 and ap_mean > y.mean()
         ),
+        "fusion_policy": "auc_mean>=0.55, auc_mean-auc_std>=0.50, ap_mean>prevalence",
         "feature_policy": "leakage_safe_descriptors_only",
         "features": categorical_features + numeric_features,
         "review_rows_matched": matched_review_rows,
