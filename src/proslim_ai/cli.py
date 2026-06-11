@@ -10,6 +10,7 @@ from .config import load_table_schemas
 from .audit import audit_project
 from .batch_search import run_batch_search
 from .details import build_evidence_details
+from .dose_gap import build_dose_gap_queue
 from .cleaning import clean_sample_metadata
 from .evidence_links import validate_strain_evidence_links
 from .evidence_merge import merge_evidence_candidates
@@ -546,6 +547,17 @@ def cmd_train_response_model(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_build_dose_gap_queue(args: argparse.Namespace) -> int:
+    queue = build_dose_gap_queue(
+        Path(args.structured_outcomes),
+        [Path(path) for path in args.review],
+        Path(args.output),
+    )
+    print(f"Dose-gap studies: {len(queue)}")
+    print(f"Output: {args.output}")
+    return 0
+
+
 def cmd_train_obesity_models(args: argparse.Namespace) -> int:
     result = train_obesity_models(
         metadata_path=Path(args.metadata),
@@ -931,6 +943,15 @@ def build_parser() -> argparse.ArgumentParser:
         default="all",
     )
     train_response.set_defaults(func=cmd_train_response_model)
+
+    dose_gap = subparsers.add_parser(
+        "build-dose-gap-queue",
+        help="Build a study-level manual queue for missing microbial CFU doses.",
+    )
+    dose_gap.add_argument("structured_outcomes")
+    dose_gap.add_argument("output")
+    dose_gap.add_argument("--review", action="append", default=[], required=True)
+    dose_gap.set_defaults(func=cmd_build_dose_gap_queue)
 
     apply_response = subparsers.add_parser(
         "apply-response-model",

@@ -183,7 +183,15 @@ def build_response_feature_table(
     joined_text = table.apply(
         lambda row: " ".join(str(row.get(field, "")) for field in text_fields).lower(), axis=1
     )
-    table["intervention_class"] = joined_text.map(_intervention_class)
+    primary_text = table.apply(
+        lambda row: " ".join(
+            str(row.get(field, "")) for field in ("title", "comparison", "comparison_review")
+        ).lower(),
+        axis=1,
+    )
+    primary_class = primary_text.map(_intervention_class)
+    fallback_class = joined_text.map(_intervention_class)
+    table["intervention_class"] = primary_class.where(primary_class != "other", fallback_class)
     table["strain_family"] = joined_text.map(_strain_family)
     table["population_group"] = joined_text.map(_population_group)
     table["blinding"] = joined_text.map(_blinding)
@@ -193,8 +201,10 @@ def build_response_feature_table(
     table["placebo_control"] = joined_text.map(
         lambda text: "placebo" if "placebo" in text else "other_control"
     )
-    table["sample_size"] = table.get("sample_size_confirmed", "").map(_sample_size)
-    table["duration_weeks"] = table.get("time_point", "").map(_duration_weeks)
+    sample_size = table.get("sample_size_confirmed", pd.Series(index=table.index, dtype=object))
+    time_point = table.get("time_point", pd.Series(index=table.index, dtype=object))
+    table["sample_size"] = sample_size.map(_sample_size)
+    table["duration_weeks"] = time_point.map(_duration_weeks)
     table["log10_cfu_day"] = table.apply(_cfu_log10, axis=1)
     matched = int(table["sample_size_confirmed"].notna().sum())
     numeric_features = [
@@ -211,10 +221,10 @@ def build_response_feature_table(
 def _intervention_class(text: str) -> str:
     if "synbiotic" in text:
         return "synbiotic"
-    if "probiotic" in text or "lactobac" in text or "bifidobacter" in text:
-        return "probiotic"
     if "prebiotic" in text or "inulin" in text or "fiber" in text or "fibre" in text:
         return "prebiotic"
+    if "probiotic" in text or "lactobac" in text or "bifidobacter" in text:
+        return "probiotic"
     if "exercise" in text or "weight-management" in text:
         return "multicomponent_lifestyle"
     if "diet" in text:

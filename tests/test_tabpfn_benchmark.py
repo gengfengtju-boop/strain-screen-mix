@@ -8,7 +8,12 @@ import pandas as pd
 import pytest
 from sklearn.linear_model import LogisticRegression
 
-from proslim_ai.tabpfn_benchmark import _duration_weeks, _sample_size, benchmark_tabpfn
+from proslim_ai.tabpfn_benchmark import (
+    _duration_weeks,
+    _intervention_class,
+    _sample_size,
+    benchmark_tabpfn,
+)
 
 
 class _FakeTabPFNClassifier:
@@ -88,3 +93,4 @@ def test_benchmark_uses_grouped_validation_without_network(monkeypatch) -> None:
 def test_review_numeric_feature_parsers() -> None:
     assert _sample_size("n=96 randomized; n=85 completed") == 96
     assert _duration_weeks("4 months") == pytest.approx(17.38)
+    assert _intervention_class("inulin prebiotic trial with probiotic discussion") == "prebiotic"

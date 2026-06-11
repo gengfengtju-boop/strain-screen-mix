@@ -48,7 +48,7 @@
       "leave_one_study_out_brier_score": 0.2378019235194794
     },
     "next_data_actions": [
-      "Confirm CFU dose for the 114 endpoint rows currently lacking a parsed dose.",
+      "Confirm CFU dose for 60 endpoints across the 17 microbial-intervention studies in microbial_cfu_dose_gap_queue_20260611.csv.",
       "Add an independent external study cohort before any further model selection.",
       "Collect prospective combination outcomes to learn strain interaction effects."
     ]
