@@ -1,0 +1,25 @@
+{
+  "date": "2026-06-11",
+  "primary_model_retained": "numeric_v2_logistic_l2_strong",
+  "primary_validation": {
+    "repeated_group_auc_mean": 0.6539814814814814,
+    "repeated_group_auc_std": 0.01871547461473715,
+    "leave_one_study_out_auc": 0.658912037037037,
+    "study_equal_auc": 0.6369385005890912,
+    "average_precision": 0.602734828932693,
+    "brier_score": 0.2378019235194794
+  },
+  "candidate_results": [
+    {"candidate": "log_transform", "repeated_auc": 0.6384, "leave_one_study_out_auc": 0.6376, "decision": "reject"},
+    {"candidate": "winsorized_numeric", "repeated_auc": 0.6489, "leave_one_study_out_auc": 0.6471, "decision": "reject"},
+    {"candidate": "missing_indicators", "repeated_auc": 0.6028, "leave_one_study_out_auc": 0.6052, "decision": "reject"},
+    {"candidate": "spline_numeric", "repeated_auc": 0.5710, "leave_one_study_out_auc": 0.5715, "decision": "reject"},
+    {"candidate": "soft_label_ridge", "repeated_auc": 0.6406, "leave_one_study_out_auc": 0.6319, "decision": "reject"},
+    {"candidate": "shrinkage_lda", "repeated_auc": 0.6269, "leave_one_study_out_auc": 0.6328, "brier_score": 0.2297, "decision": "reject_lower_auc"},
+    {"candidate": "logistic_lda_ensemble_75_25", "repeated_auc": 0.6399, "leave_one_study_out_auc": 0.6439, "brier_score": 0.2313, "decision": "reject_lower_auc"},
+    {"candidate": "study_equal_training", "repeated_auc": 0.6546, "repeated_auc_std": 0.0439, "leave_one_study_out_auc": 0.6698, "decision": "reject_instability"},
+    {"candidate": "cross_fold_prior_calibration", "repeated_auc": 0.5435, "leave_one_study_out_auc": 0.5084, "decision": "reject_fold_shift"},
+    {"candidate": "nested_threshold_selection", "balanced_accuracy": 0.6153, "baseline_balanced_accuracy": 0.6528, "decision": "reject"}
+  ],
+  "interpretation": "The three-feature strongly regularized logistic model remains the best discrimination-stability tradeoff. Further gains require new dose and external-cohort data rather than additional tuning on the same 37 studies."
+}

@@ -35,5 +35,22 @@
     "The cluster-bootstrap lower AUC bound is only slightly above 0.50.",
     "The model specification was developed on this dataset and requires external validation."
   ],
-  "next_validation": "prospective experiment or independent external study cohort"
+  "next_validation": "prospective experiment or independent external study cohort",
+  "optimization_round_2": {
+    "decision": "retain_numeric_v2",
+    "reason": "No tested transformation, alternative classifier, ensemble, soft-label target, study weighting, calibration, or nested threshold improved the primary repeated and leave-one-study-out discrimination without weakening stability.",
+    "selected_metrics": {
+      "repeated_roc_auc_mean": 0.6539814814814814,
+      "repeated_roc_auc_std": 0.01871547461473715,
+      "leave_one_study_out_roc_auc": 0.658912037037037,
+      "study_equal_roc_auc": 0.6369385005890912,
+      "leave_one_study_out_average_precision": 0.602734828932693,
+      "leave_one_study_out_brier_score": 0.2378019235194794
+    },
+    "next_data_actions": [
+      "Confirm CFU dose for the 114 endpoint rows currently lacking a parsed dose.",
+      "Add an independent external study cohort before any further model selection.",
+      "Collect prospective combination outcomes to learn strain interaction effects."
+    ]
+  }
 }
