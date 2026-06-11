@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import average_precision_score, balanced_accuracy_score, roc_auc_score
 from sklearn.model_selection import StratifiedGroupKFold
+from sklearn.preprocessing import OrdinalEncoder
 
 
 FEATURES = ["outcome_domain", "endpoint_type", "analysis_population", "comparison"]
@@ -32,22 +33,25 @@ def benchmark_tabpfn(
     data = pd.read_csv(structured_outcomes_path)
     data = data[data["positive_efficacy_label"].isin(["yes", "limited", "no"])].copy()
     data["label"] = (data["positive_efficacy_label"] == "yes").astype(int)
-    encoded = pd.get_dummies(data[FEATURES].fillna("missing").astype(str), dtype=float)
-    X = encoded.to_numpy(dtype=np.float32)
+    X_raw = data[FEATURES].fillna("missing").astype(str).to_numpy()
     y = data["label"].to_numpy(dtype=int)
     groups = data["evidence_id"].fillna("").astype(str).to_numpy()
     folds = StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=random_seed)
     probabilities = np.zeros(len(y), dtype=float)
-    for train, test in folds.split(X, y, groups):
+    for train, test in folds.split(X_raw, y, groups):
+        encoder = OrdinalEncoder(handle_unknown="use_encoded_value", unknown_value=-1)
+        X_train = encoder.fit_transform(X_raw[train]).astype(np.float32)
+        X_test = encoder.transform(X_raw[test]).astype(np.float32)
         model = TabPFNClassifier(
             model_path=model_path,
             device="cpu",
             n_estimators=n_estimators,
-            n_jobs=1,
+            n_preprocessing_jobs=1,
             random_state=random_seed,
+            categorical_features_indices=list(range(len(FEATURES))),
         )
-        model.fit(X[train], y[train])
-        probabilities[test] = model.predict_proba(X[test])[:, 1]
+        model.fit(X_train, y[train])
+        probabilities[test] = model.predict_proba(X_test)[:, 1]
 
     predictions = probabilities >= 0.5
     metrics = {

@@ -22,7 +22,9 @@ data/processed_data/*
 models/**/*.pkl
 models/**/*.joblib
 models/**/*.pt
+models/**/*.ckpt
 models/**/*.onnx
+models/**/.cache/
 results/**/*.html
 results/**/*.png
 results/**/*.pdf

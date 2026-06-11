@@ -1,0 +1,19 @@
+{
+  "model": "TabPFNClassifier",
+  "tabpfn_checkpoint": "models\\tabpfn\\tabpfn-v2-classifier-finetuned-zk73skhh.ckpt",
+  "rows": 134,
+  "evidence_groups": 37,
+  "validation": "five_fold_stratified_group_cross_validation_by_evidence_id",
+  "roc_auc": 0.38136574074074076,
+  "average_precision": 0.32930458175644495,
+  "balanced_accuracy": 0.4625,
+  "positive_prevalence": 0.40298507462686567,
+  "eligible_for_combination_fusion": false,
+  "feature_policy": "leakage_safe_descriptors_only",
+  "features": [
+    "outcome_domain",
+    "endpoint_type",
+    "analysis_population",
+    "comparison"
+  ]
+}

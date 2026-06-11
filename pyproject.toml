@@ -23,8 +23,8 @@ modeling = [
   "shap>=0.44"
 ]
 tabular-foundation = [
-  "tabpfn>=2.2,<3",
-  "torch>=2.1,<3"
+  "tabpfn>=8,<9",
+  "torch>=2.5,<3"
 ]
 dev = [
   "pytest>=7.4",

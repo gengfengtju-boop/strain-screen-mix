@@ -12,9 +12,9 @@
 - Chen 等在 Nature Methods 2024 总结计算生物学可解释机器学习的常见陷阱，强调防止标签泄漏、区分预测与解释、采用匹配生物问题的验证方式。
 - 组合治疗和生物设计领域近期工作普遍采用图表示、贝叶斯优化和主动学习，以处理组合空间远大于可实验样本数的问题。当前数据没有菌株基因组嵌入、共培养矩阵或已测组合标签，因此直接训练 GNN/Transformer 会产生无法验证的参数。
 
-2026-06-11 已安装 TabPFN 2.2.1 和 PyTorch 2.12.0 CPU 版，项目全量测试通过。但官方 Hugging Face checkpoint 下载连续 300 秒无响应，故本版本没有伪称运行预训练权重。模型采用其适合本项目且可完全复现的核心原则：小样本后验预测、显式不确定性、跨研究分组验证和不确定性感知决策。
+2026-06-11 已安装 TabPFN 8.0.8 和 PyTorch 2.12.0 CPU 版，并成功下载 29 MB 的官方 TabPFN-v2 分类器 checkpoint。采用 4 个 estimator 对 134 条终点、37 项研究执行五折分组验证，得到 AUC=0.381、AP=0.329、Balanced Accuracy=0.391，未达到 AUC 0.55 且 AP 高于阳性率基线的融合门槛。因此 TabPFN 没有进入组合排名，当前最优组合保持不变。
 
-项目新增 `proslim-ai benchmark-tabpfn` 命令，只接受明确的本地官方 checkpoint，不会在正式流程中隐式联网。该命令采用按研究 ID 的五折分组验证；仅当 AUC 不低于 0.55 且 AP 超过阳性率基线时，输出才标记为可参与组合融合。当前状态见 `results/prediction_results/tabpfn_benchmark_status_20260611.json`，TabPFN 尚未进入组合排名。
+项目新增 `proslim-ai benchmark-tabpfn` 命令，只接受明确的本地官方 checkpoint，不会在正式流程中隐式联网。该命令采用按研究 ID 的五折分组验证；仅当 AUC 不低于 0.55 且 AP 超过阳性率基线时，输出才标记为可参与组合融合。真实指标见 `results/prediction_results/tabpfn_benchmark_metrics_20260611.json`。当前低性能说明描述性终点字段不足以让基础模型学习菌株疗效，需要补充基因组、剂量、基线人群和实测组合交互特征。
 
 ## 算法
 

@@ -1,15 +1,20 @@
 {
   "date": "2026-06-11",
-  "tabpfn_package_version": "2.2.1",
+  "tabpfn_package_version": "8.0.8",
   "torch_version": "2.12.0+cpu",
   "package_installed": true,
-  "official_checkpoint_available": false,
+  "official_checkpoint_available": true,
   "checkpoint_repository": "Prior-Labs/TabPFN-v2-clf",
   "checkpoint_filename": "tabpfn-v2-classifier-finetuned-zk73skhh.ckpt",
-  "download_attempt_seconds": 300,
-  "download_result": "terminated_after_no_response_from_huggingface",
-  "benchmark_completed": false,
+  "download_attempt_seconds": 36,
+  "download_result": "TabPFN-v2 official checkpoint downloaded successfully",
+  "checkpoint_size_bytes": 29009539,
+  "benchmark_completed": true,
+  "benchmark_metrics_file": "results/prediction_results/tabpfn_benchmark_metrics_20260611.json",
+  "roc_auc": 0.38136574074074076,
+  "average_precision": 0.32930458175644495,
+  "balanced_accuracy": 0.4625,
   "included_in_combination_ranking": false,
-  "reason": "Official pretrained weights were unreachable; unvalidated foundation-model output must not affect rankings.",
-  "next_step": "Provide the official checkpoint locally and run proslim-ai benchmark-tabpfn."
+  "reason": "Grouped validation performance was below AUC 0.55 and average precision did not exceed the prevalence baseline; fusion would reduce ranking reliability.",
+  "next_step": "Add strain-genome, dose, baseline-population and measured combination-interaction features before reassessing foundation-model fusion."
 }
