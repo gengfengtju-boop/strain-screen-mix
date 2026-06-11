@@ -1,0 +1,28 @@
+{
+  "date": "2026-06-11",
+  "status": "internal_auc_requirement_met",
+  "model": "logistic_l2_conservative",
+  "feature_count": 13,
+  "rows": 134,
+  "evidence_groups": 37,
+  "review_feature_coverage": 0.8507462686567164,
+  "repeated_group_cv": {
+    "repeats": 5,
+    "roc_auc_mean": 0.599837962962963,
+    "roc_auc_std": 0.04419475580121713,
+    "roc_auc_mean_minus_std": 0.5556432071617459,
+    "average_precision_mean": 0.5370324198665998,
+    "average_precision_std": 0.03694874543266625
+  },
+  "leave_one_study_out": {
+    "roc_auc": 0.5952546296296296,
+    "average_precision": 0.5392721011192053,
+    "balanced_accuracy": 0.5655092592592592,
+    "brier_score": 0.23785141473480295
+  },
+  "acceptance_policy": "repeated AUC mean >= 0.55, mean minus one standard deviation >= 0.50, mean AP above prevalence, and leave-one-study-out AUC >= 0.55",
+  "eligible_for_hypothesis_ranking": true,
+  "eligible_for_clinical_claims": false,
+  "combination_fusion_action": "not automatically fused because the response model and Bayesian evidence score reuse the same outcome labels",
+  "next_validation": "prospective experiment or independent external study cohort"
+}

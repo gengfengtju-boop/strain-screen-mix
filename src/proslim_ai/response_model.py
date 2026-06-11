@@ -22,7 +22,12 @@ from sklearn.metrics import (
     f1_score,
     roc_auc_score,
 )
-from sklearn.model_selection import StratifiedGroupKFold, StratifiedKFold, cross_val_predict
+from sklearn.model_selection import (
+    LeaveOneGroupOut,
+    StratifiedGroupKFold,
+    StratifiedKFold,
+    cross_val_predict,
+)
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
@@ -99,6 +104,7 @@ def train_response_model(
     review_paths: list[Path] | None = None,
     cv_repeats: int = 1,
     random_seed: int = 17,
+    locked_model: str | None = None,
 ) -> ResponseModelResult:
     if cv_repeats < 1:
         raise ValueError("cv_repeats must be at least 1")
@@ -122,14 +128,41 @@ def train_response_model(
     y = data["label"]
     groups = data["evidence_id"].fillna("").astype(str)
     model_candidates = _model_candidates(numeric_features, categorical_features)
-    selected_name, probabilities, comparison, validation, fold_selections, repeat_metrics = (
-        _nested_group_predictions(
-            model_candidates, X, y, groups, cv_repeats=cv_repeats, random_seed=random_seed
+    if locked_model:
+        if locked_model not in model_candidates:
+            raise ValueError(
+                f"Unknown locked model {locked_model!r}; choose from {sorted(model_candidates)}"
+            )
+        selected_name, probabilities, comparison, validation, fold_selections, repeat_metrics = (
+            _locked_group_predictions(
+                model_candidates,
+                locked_model,
+                X,
+                y,
+                groups,
+                cv_repeats=cv_repeats,
+                random_seed=random_seed,
+            )
         )
-    )
+    else:
+        selected_name, probabilities, comparison, validation, fold_selections, repeat_metrics = (
+            _nested_group_predictions(
+                model_candidates, X, y, groups, cv_repeats=cv_repeats, random_seed=random_seed
+            )
+        )
 
     metrics = _metrics(y.to_numpy(), probabilities)
     model_status = _model_status(selected_name, metrics, repeat_metrics)
+    leave_one_group_out_metrics = None
+    if locked_model:
+        leave_one_group_out_metrics = _leave_one_group_out_metrics(
+            model_candidates[locked_model], X, y, groups
+        )
+        if (
+            float(leave_one_group_out_metrics["roc_auc"] or 0.0) < 0.55
+            or float(leave_one_group_out_metrics["average_precision"] or 0.0) <= float(y.mean())
+        ):
+            model_status = "non_informative_do_not_apply_to_combinations"
     model_level = "study_endpoint_evidence_classifier_not_individual_response"
 
     final_model = clone(model_candidates[selected_name])
@@ -174,12 +207,16 @@ def train_response_model(
             "review_rows_matched": matched_review_rows,
             "review_feature_coverage": float(matched_review_rows / len(data)),
             "model_selection_policy": (
-                "maximize_auc_plus_average_precision_among_models_beating_random_and_prevalence"
+                f"locked_model:{locked_model}"
+                if locked_model
+                else "maximize_auc_plus_average_precision_among_models_beating_random_and_prevalence"
             ),
             "stability_policy": (
                 "for_repeated_cv: auc_mean>=0.55, auc_mean-auc_std>=0.50, "
-                "ap_mean>prevalence"
+                "ap_mean>prevalence; for locked models: leave-one-study-out auc>=0.55 "
+                "and ap>prevalence"
             ),
+            "leave_one_group_out_metrics": leave_one_group_out_metrics,
             "excluded_leakage_features": EXCLUDED_LABEL_DERIVED_FEATURES,
             "limitation": (
                 "Classifies study-endpoint evidence from descriptive fields only; "
@@ -216,6 +253,85 @@ def train_response_model(
     )
 
 
+def _locked_group_predictions(
+    models: dict[str, Pipeline],
+    locked_model: str,
+    X: pd.DataFrame,
+    y: pd.Series,
+    groups: pd.Series,
+    cv_repeats: int,
+    random_seed: int,
+) -> tuple[
+    str,
+    np.ndarray,
+    list[dict[str, object]],
+    str,
+    list[dict[str, object]],
+    list[dict[str, float | int]],
+]:
+    repeated_probabilities: list[np.ndarray] = []
+    repeat_metrics: list[dict[str, float | int]] = []
+    fold_selections: list[dict[str, object]] = []
+    validation = ""
+    for repeat in range(cv_repeats):
+        repeat_seed = random_seed + repeat * 101
+        validation, cv, use_groups = _cross_validation_strategy(y, groups, repeat_seed)
+        if cv is None or not use_groups:
+            raise ValueError(
+                "Leakage-safe evaluation requires at least two evidence groups for grouped validation."
+            )
+        probabilities = np.zeros(len(y), dtype=float)
+        for fold, (train_index, test_index) in enumerate(cv.split(X, y, groups), start=1):
+            fitted = clone(models[locked_model])
+            fitted.fit(X.iloc[train_index], y.iloc[train_index])
+            probabilities[test_index] = fitted.predict_proba(X.iloc[test_index])[:, 1]
+            fold_selections.append(
+                {
+                    "repeat": repeat + 1,
+                    "seed": repeat_seed,
+                    "fold": fold,
+                    "selected_model": locked_model,
+                    "training_rows": int(len(train_index)),
+                    "validation_rows": int(len(test_index)),
+                    "training_evidence_count": int(groups.iloc[train_index].nunique()),
+                }
+            )
+        repeated_probabilities.append(probabilities)
+        result = _metrics(y.to_numpy(), probabilities)
+        repeat_metrics.append(
+            {
+                "repeat": repeat + 1,
+                "seed": repeat_seed,
+                "roc_auc": float(result["roc_auc"] or 0.0),
+                "average_precision": float(result["average_precision"] or 0.0),
+                "balanced_accuracy": float(result["balanced_accuracy"] or 0.0),
+                "brier_score": float(result["brier_score"] or 0.0),
+            }
+        )
+    combined_probabilities = np.mean(repeated_probabilities, axis=0)
+    comparison = [{"model": locked_model, **_metrics(y.to_numpy(), combined_probabilities)}]
+    return (
+        locked_model,
+        combined_probabilities,
+        comparison,
+        f"locked_repeated_{validation}",
+        fold_selections,
+        repeat_metrics,
+    )
+
+
+def _leave_one_group_out_metrics(
+    model: Pipeline,
+    X: pd.DataFrame,
+    y: pd.Series,
+    groups: pd.Series,
+) -> dict[str, float | None]:
+    probabilities = np.zeros(len(y), dtype=float)
+    for train_index, test_index in LeaveOneGroupOut().split(X, y, groups):
+        fitted = clone(model)
+        fitted.fit(X.iloc[train_index], y.iloc[train_index])
+        probabilities[test_index] = fitted.predict_proba(X.iloc[test_index])[:, 1]
+    return _metrics(y.to_numpy(), probabilities)
 def apply_response_model_to_combinations(
     combination_input: Path,
     evidence_predictions_path: Path,

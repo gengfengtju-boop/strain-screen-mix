@@ -126,6 +126,41 @@ def test_training_accepts_review_features(monkeypatch) -> None:
             path.unlink(missing_ok=True)
 
 
+def test_training_can_lock_prespecified_model(monkeypatch) -> None:
+    _, paths = _test_paths()
+    structured, rows_output, evidence_output, metrics_output, model_output = paths
+    _structured_rows().to_csv(structured, index=False)
+
+    def fast_candidates(numeric_features, categorical_features):
+        return {
+            "locked_dummy": _build_model(
+                numeric_features,
+                categorical_features,
+                DummyClassifier(strategy="prior"),
+            )
+        }
+
+    try:
+        monkeypatch.setattr("proslim_ai.response_model._model_candidates", fast_candidates)
+        train_response_model(
+            structured,
+            rows_output,
+            evidence_output,
+            metrics_output,
+            model_output,
+            cv_repeats=2,
+            locked_model="locked_dummy",
+        )
+        metrics = json.loads(metrics_output.read_text(encoding="utf-8"))
+        assert metrics["selected_model"] == "locked_dummy"
+        assert metrics["validation"].startswith("locked_repeated_")
+        assert len(metrics["repeat_metrics"]) == 2
+        assert metrics["leave_one_group_out_metrics"] is not None
+    finally:
+        for path in paths:
+            path.unlink(missing_ok=True)
+
+
 def test_non_informative_classifier_is_not_applied_to_combinations() -> None:
     directory = Path(__file__).resolve().parent / "fixtures"
     token = uuid4().hex
