@@ -52,8 +52,8 @@ def benchmark_tabpfn(
     data = pd.read_csv(structured_outcomes_path)
     data = data[data["positive_efficacy_label"].isin(["yes", "limited", "no"])].copy()
     data["label"] = (data["positive_efficacy_label"] == "yes").astype(int)
-    feature_table, categorical_features, numeric_features, matched_review_rows = _feature_table(
-        data, review_paths or []
+    feature_table, categorical_features, numeric_features, matched_review_rows = (
+        build_response_feature_table(data, review_paths or [])
     )
     X_categorical = feature_table[categorical_features].fillna("missing").astype(str).to_numpy()
     X_numeric = feature_table[numeric_features].apply(pd.to_numeric, errors="coerce").to_numpy()
@@ -140,7 +140,7 @@ def benchmark_tabpfn(
     return metrics
 
 
-def _feature_table(
+def build_response_feature_table(
     data: pd.DataFrame,
     review_paths: list[Path],
 ) -> tuple[pd.DataFrame, list[str], list[str], int]:
@@ -197,10 +197,13 @@ def _feature_table(
     table["duration_weeks"] = table.get("time_point", "").map(_duration_weeks)
     table["log10_cfu_day"] = table.apply(_cfu_log10, axis=1)
     matched = int(table["sample_size_confirmed"].notna().sum())
+    numeric_features = [
+        column for column in ENRICHED_NUMERIC_FEATURES if table[column].notna().any()
+    ]
     return (
         table,
         BASE_CATEGORICAL_FEATURES + ENRICHED_CATEGORICAL_FEATURES,
-        ENRICHED_NUMERIC_FEATURES,
+        numeric_features,
         matched,
     )
 

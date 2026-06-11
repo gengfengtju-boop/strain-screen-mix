@@ -530,6 +530,9 @@ def cmd_train_response_model(args: argparse.Namespace) -> int:
         evidence_predictions_output=Path(args.evidence_predictions),
         metrics_output=Path(args.metrics),
         model_output=Path(args.model),
+        review_paths=[Path(path) for path in args.review],
+        cv_repeats=args.cv_repeats,
+        random_seed=args.random_seed,
     )
     print(f"Rows used: {result.rows_used}")
     print(f"Evidence ids: {result.evidence_count}")
@@ -908,6 +911,14 @@ def build_parser() -> argparse.ArgumentParser:
     train_response.add_argument("evidence_predictions", help="Output evidence-level classifier score CSV.")
     train_response.add_argument("metrics", help="Output model metrics JSON.")
     train_response.add_argument("model", help="Output pickled sklearn model.")
+    train_response.add_argument(
+        "--review",
+        action="append",
+        default=[],
+        help="Extracted outcome review CSV used for leakage-safe intervention features; repeatable.",
+    )
+    train_response.add_argument("--cv-repeats", type=int, default=1)
+    train_response.add_argument("--random-seed", type=int, default=17)
     train_response.set_defaults(func=cmd_train_response_model)
 
     apply_response = subparsers.add_parser(

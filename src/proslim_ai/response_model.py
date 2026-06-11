@@ -26,6 +26,8 @@ from sklearn.model_selection import StratifiedGroupKFold, StratifiedKFold, cross
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
+from .tabpfn_benchmark import build_response_feature_table
+
 
 ROW_PREDICTION_FIELDS = [
     "evidence_id",
@@ -94,7 +96,12 @@ def train_response_model(
     evidence_predictions_output: Path,
     metrics_output: Path,
     model_output: Path,
+    review_paths: list[Path] | None = None,
+    cv_repeats: int = 1,
+    random_seed: int = 17,
 ) -> ResponseModelResult:
+    if cv_repeats < 1:
+        raise ValueError("cv_repeats must be at least 1")
     data = pd.read_csv(structured_outcome_path)
     data = data[data["positive_efficacy_label"].isin(["yes", "limited", "no"])].copy()
     data["label"] = (data["positive_efficacy_label"] == "yes").astype(int)
@@ -105,21 +112,24 @@ def train_response_model(
     # The efficacy label is derived from direction, between-group P value, and
     # evidence modifiers. Those fields, and post-outcome effect values, must not
     # be used as predictors or cross-validation performance becomes label leakage.
-    numeric_features = list(LEAKAGE_SAFE_NUMERIC_FEATURES)
-    categorical_features = list(LEAKAGE_SAFE_CATEGORICAL_FEATURES)
+    feature_data, categorical_features, numeric_features, matched_review_rows = (
+        build_response_feature_table(data, review_paths or [])
+    )
     for column in categorical_features:
-        data[column] = data.get(column, "").fillna("").astype(str)
+        feature_data[column] = feature_data.get(column, "").fillna("").astype(str)
 
-    X = data[numeric_features + categorical_features]
+    X = feature_data[numeric_features + categorical_features]
     y = data["label"]
     groups = data["evidence_id"].fillna("").astype(str)
     model_candidates = _model_candidates(numeric_features, categorical_features)
-    selected_name, probabilities, comparison, validation, fold_selections = _nested_group_predictions(
-        model_candidates, X, y, groups
+    selected_name, probabilities, comparison, validation, fold_selections, repeat_metrics = (
+        _nested_group_predictions(
+            model_candidates, X, y, groups, cv_repeats=cv_repeats, random_seed=random_seed
+        )
     )
 
     metrics = _metrics(y.to_numpy(), probabilities)
-    model_status = _model_status(selected_name, metrics)
+    model_status = _model_status(selected_name, metrics, repeat_metrics)
     model_level = "study_endpoint_evidence_classifier_not_individual_response"
 
     final_model = clone(model_candidates[selected_name])
@@ -142,6 +152,16 @@ def train_response_model(
             "selected_model": selected_name,
             "model_comparison": comparison,
             "outer_fold_model_selections": fold_selections,
+            "cv_repeats": cv_repeats,
+            "repeat_metrics": repeat_metrics,
+            "roc_auc_mean": float(np.mean([row["roc_auc"] for row in repeat_metrics])),
+            "roc_auc_std": float(np.std([row["roc_auc"] for row in repeat_metrics])),
+            "average_precision_mean": float(
+                np.mean([row["average_precision"] for row in repeat_metrics])
+            ),
+            "average_precision_std": float(
+                np.std([row["average_precision"] for row in repeat_metrics])
+            ),
             "validation": validation,
             "rows_used": int(len(data)),
             "positive_rows": int(y.sum()),
@@ -150,6 +170,16 @@ def train_response_model(
             "model_level": "study_endpoint_evidence_classifier_not_individual_response",
             "model_status": model_status,
             "feature_policy": "leakage_safe_descriptors_only",
+            "features": categorical_features + numeric_features,
+            "review_rows_matched": matched_review_rows,
+            "review_feature_coverage": float(matched_review_rows / len(data)),
+            "model_selection_policy": (
+                "maximize_auc_plus_average_precision_among_models_beating_random_and_prevalence"
+            ),
+            "stability_policy": (
+                "for_repeated_cv: auc_mean>=0.55, auc_mean-auc_std>=0.50, "
+                "ap_mean>prevalence"
+            ),
             "excluded_leakage_features": EXCLUDED_LABEL_DERIVED_FEATURES,
             "limitation": (
                 "Classifies study-endpoint evidence from descriptive fields only; "
@@ -170,6 +200,7 @@ def train_response_model(
                 "categorical_features": categorical_features,
                 "model_level": "study_endpoint_evidence_classifier_not_individual_response",
                 "feature_policy": "leakage_safe_descriptors_only",
+                "review_rows_matched": matched_review_rows,
                 "model_status": model_status,
             },
             handle,
@@ -299,6 +330,20 @@ def _model_candidates(numeric_features: list[str], categorical_features: list[st
             categorical_features,
             LogisticRegression(class_weight="balanced", max_iter=1000, random_state=17),
         ),
+        "logistic_l2_conservative": _build_model(
+            numeric_features,
+            categorical_features,
+            LogisticRegression(
+                C=0.03, class_weight="balanced", max_iter=1000, random_state=17
+            ),
+        ),
+        "logistic_l2_moderate": _build_model(
+            numeric_features,
+            categorical_features,
+            LogisticRegression(
+                C=0.3, class_weight="balanced", max_iter=1000, random_state=17
+            ),
+        ),
         "random_forest_balanced": _build_model(
             numeric_features,
             categorical_features,
@@ -331,38 +376,100 @@ def _nested_group_predictions(
     X: pd.DataFrame,
     y: pd.Series,
     groups: pd.Series,
-) -> tuple[str, np.ndarray, list[dict[str, object]], str, list[dict[str, object]]]:
-    validation, outer_cv, use_groups = _cross_validation_strategy(y, groups)
-    if outer_cv is None or not use_groups:
-        raise ValueError("Leakage-safe evaluation requires at least two evidence groups for grouped validation.")
+    cv_repeats: int = 1,
+    random_seed: int = 17,
+) -> tuple[
+    str,
+    np.ndarray,
+    list[dict[str, object]],
+    str,
+    list[dict[str, object]],
+    list[dict[str, float | int]],
+]:
+    return _repeated_nested_group_predictions(
+        models, X, y, groups, cv_repeats=cv_repeats, random_seed=random_seed
+    )
 
-    probabilities = np.zeros(len(y), dtype=float)
+
+def _repeated_nested_group_predictions(
+    models: dict[str, Pipeline],
+    X: pd.DataFrame,
+    y: pd.Series,
+    groups: pd.Series,
+    cv_repeats: int = 1,
+    random_seed: int = 17,
+) -> tuple[
+    str,
+    np.ndarray,
+    list[dict[str, object]],
+    str,
+    list[dict[str, object]],
+    list[dict[str, float | int]],
+]:
+    repeated_probabilities: list[np.ndarray] = []
     fold_selections: list[dict[str, object]] = []
-    for fold, (train_index, test_index) in enumerate(outer_cv.split(X, y, groups), start=1):
-        X_train = X.iloc[train_index]
-        y_train = y.iloc[train_index]
-        groups_train = groups.iloc[train_index]
-        if y_train.nunique() < 2:
-            selected_name = "dummy_prior"
-        else:
-            selected_name, _ = _select_model_on_training_groups(
-                models, X_train, y_train, groups_train
+    repeat_metrics: list[dict[str, float | int]] = []
+    validation = ""
+    for repeat in range(cv_repeats):
+        repeat_seed = random_seed + repeat * 101
+        validation, outer_cv, use_groups = _cross_validation_strategy(y, groups, repeat_seed)
+        if outer_cv is None or not use_groups:
+            raise ValueError(
+                "Leakage-safe evaluation requires at least two evidence groups for grouped validation."
             )
-        fitted = clone(models[selected_name])
-        fitted.fit(X_train, y_train)
-        probabilities[test_index] = fitted.predict_proba(X.iloc[test_index])[:, 1]
-        fold_selections.append(
+        probabilities = np.zeros(len(y), dtype=float)
+        for fold, (train_index, test_index) in enumerate(
+            outer_cv.split(X, y, groups), start=1
+        ):
+            X_train = X.iloc[train_index]
+            y_train = y.iloc[train_index]
+            groups_train = groups.iloc[train_index]
+            if y_train.nunique() < 2:
+                selected_name = "dummy_prior"
+            else:
+                selected_name, _ = _select_model_on_training_groups(
+                    models, X_train, y_train, groups_train, random_seed=repeat_seed + fold
+                )
+            fitted = clone(models[selected_name])
+            fitted.fit(X_train, y_train)
+            probabilities[test_index] = fitted.predict_proba(X.iloc[test_index])[:, 1]
+            fold_selections.append(
+                {
+                    "repeat": repeat + 1,
+                    "seed": repeat_seed,
+                    "fold": fold,
+                    "selected_model": selected_name,
+                    "training_rows": int(len(train_index)),
+                    "validation_rows": int(len(test_index)),
+                    "training_evidence_count": int(groups_train.nunique()),
+                }
+            )
+        repeated_probabilities.append(probabilities)
+        repeat_result = _metrics(y.to_numpy(), probabilities)
+        repeat_metrics.append(
             {
-                "fold": fold,
-                "selected_model": selected_name,
-                "training_rows": int(len(train_index)),
-                "validation_rows": int(len(test_index)),
-                "training_evidence_count": int(groups_train.nunique()),
+                "repeat": repeat + 1,
+                "seed": repeat_seed,
+                "roc_auc": float(repeat_result["roc_auc"] or 0.0),
+                "average_precision": float(repeat_result["average_precision"] or 0.0),
+                "balanced_accuracy": float(repeat_result["balanced_accuracy"] or 0.0),
+                "brier_score": float(repeat_result["brier_score"] or 0.0),
             }
         )
 
-    selected_name, comparison = _select_model_on_training_groups(models, X, y, groups)
-    return selected_name, probabilities, comparison, f"nested_{validation}", fold_selections
+    probabilities = np.mean(repeated_probabilities, axis=0)
+    selected_name, comparison = _select_model_on_training_groups(
+        models, X, y, groups, random_seed=random_seed
+    )
+    validation_prefix = "repeated_nested" if cv_repeats > 1 else "nested"
+    return (
+        selected_name,
+        probabilities,
+        comparison,
+        f"{validation_prefix}_{validation}",
+        fold_selections,
+        repeat_metrics,
+    )
 
 
 def _select_model_on_training_groups(
@@ -370,42 +477,59 @@ def _select_model_on_training_groups(
     X: pd.DataFrame,
     y: pd.Series,
     groups: pd.Series,
+    random_seed: int = 17,
 ) -> tuple[str, list[dict[str, object]]]:
-    _, cv, use_groups = _cross_validation_strategy(y, groups)
+    _, cv, use_groups = _cross_validation_strategy(y, groups, random_seed)
     comparison: list[dict[str, object]] = []
     best_name = ""
-    best_key: tuple[float, float] | None = None
+    viable_models: list[tuple[str, dict[str, float | None]]] = []
 
     for name, model in models.items():
         probabilities = _cross_validated_probabilities(model, X, y, groups, cv, use_groups)
         metrics = _metrics(y.to_numpy(), probabilities)
         row = {"model": name, **metrics}
         comparison.append(row)
-        brier = float(metrics["brier_score"] if metrics["brier_score"] is not None else 1.0)
-        average_precision = float(metrics["average_precision"] if metrics["average_precision"] is not None else 0.0)
-        key = (brier, -average_precision)
-        if best_key is None or key < best_key:
-            best_name = name
-            best_key = key
+        roc_auc = float(metrics["roc_auc"] or 0.0)
+        average_precision = float(metrics["average_precision"] or 0.0)
+        prevalence = float(metrics["positive_prevalence"] or 0.0)
+        if name != "dummy_prior" and roc_auc >= 0.50 and average_precision > prevalence:
+            viable_models.append((name, metrics))
+
+    if viable_models:
+        best_name, _ = max(
+            viable_models,
+            key=lambda item: (
+                float(item[1]["roc_auc"] or 0.0) + float(item[1]["average_precision"] or 0.0),
+                -float(item[1]["brier_score"] or 1.0),
+            ),
+        )
+    elif "dummy_prior" in models:
+        best_name = "dummy_prior"
 
     if not best_name:
         raise RuntimeError("No evidence classifier candidate produced probabilities.")
     return best_name, comparison
 
 
-def _cross_validation_strategy(y: pd.Series, groups: pd.Series) -> tuple[str, object | None, bool]:
+def _cross_validation_strategy(
+    y: pd.Series, groups: pd.Series, random_seed: int = 17
+) -> tuple[str, object | None, bool]:
     min_class_count = int(y.value_counts().min())
     group_count = int(groups.nunique())
     n_splits = min(5, min_class_count, group_count)
     if n_splits >= 2:
         return (
             "stratified_group_cross_validated_by_evidence_id",
-            StratifiedGroupKFold(n_splits=n_splits, shuffle=True, random_state=17),
+            StratifiedGroupKFold(n_splits=n_splits, shuffle=True, random_state=random_seed),
             True,
         )
     n_splits = min(5, min_class_count)
     if n_splits >= 2:
-        return ("stratified_cross_validated", StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=17), False)
+        return (
+            "stratified_cross_validated",
+            StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=random_seed),
+            False,
+        )
     return ("resubstitution_small_class_count", None, False)
 
 
@@ -491,7 +615,11 @@ def _metrics(y_true: np.ndarray, probabilities: np.ndarray) -> dict[str, float |
     return metrics
 
 
-def _model_status(selected_model: str, metrics: dict[str, float | None]) -> str:
+def _model_status(
+    selected_model: str,
+    metrics: dict[str, float | None],
+    repeat_metrics: list[dict[str, float | int]] | None = None,
+) -> str:
     roc_auc = metrics.get("roc_auc")
     average_precision = metrics.get("average_precision")
     positive_prevalence = metrics.get("positive_prevalence")
@@ -501,6 +629,13 @@ def _model_status(selected_model: str, metrics: dict[str, float | None]) -> str:
         return "non_informative_do_not_apply_to_combinations"
     if average_precision is None or positive_prevalence is None or average_precision <= positive_prevalence:
         return "non_informative_do_not_apply_to_combinations"
+    if repeat_metrics and len(repeat_metrics) > 1:
+        auc_values = np.array([float(row["roc_auc"]) for row in repeat_metrics])
+        ap_values = np.array([float(row["average_precision"]) for row in repeat_metrics])
+        if float(auc_values.mean()) < 0.55 or float(auc_values.mean() - auc_values.std()) < 0.50:
+            return "non_informative_do_not_apply_to_combinations"
+        if float(ap_values.mean()) <= positive_prevalence:
+            return "non_informative_do_not_apply_to_combinations"
     return "informative_for_hypothesis_ranking"
 
 

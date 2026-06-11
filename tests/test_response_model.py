@@ -78,6 +78,54 @@ def test_training_excludes_label_derived_features_and_uses_nested_groups(monkeyp
             path.unlink(missing_ok=True)
 
 
+def test_training_accepts_review_features(monkeypatch) -> None:
+    directory, paths = _test_paths()
+    structured, rows_output, evidence_output, metrics_output, model_output = paths
+    review = directory / f"response_model_{uuid4().hex}_review.csv"
+    source = _structured_rows()
+    source.to_csv(structured, index=False)
+    pd.DataFrame(
+        {
+            "evidence_id": source["evidence_id"],
+            "outcome_domain": source["outcome_domain"],
+            "review_status": "extracted",
+            "sample_size_confirmed": "n=80",
+            "time_point": "12 weeks",
+            "title": "Randomized double-blind probiotic trial in adults with obesity",
+        }
+    ).to_csv(review, index=False)
+
+    def fast_candidates(numeric_features, categorical_features):
+        assert "sample_size" in numeric_features
+        assert "intervention_class" in categorical_features
+        return {
+            "dummy_prior": _build_model(
+                numeric_features,
+                categorical_features,
+                DummyClassifier(strategy="prior"),
+            )
+        }
+
+    try:
+        monkeypatch.setattr("proslim_ai.response_model._model_candidates", fast_candidates)
+        train_response_model(
+            structured,
+            rows_output,
+            evidence_output,
+            metrics_output,
+            model_output,
+            review_paths=[review],
+        )
+        metrics = json.loads(metrics_output.read_text(encoding="utf-8"))
+        assert metrics["review_rows_matched"] == len(source)
+        assert metrics["review_feature_coverage"] == 1.0
+        assert "duration_weeks" in metrics["features"]
+    finally:
+        review.unlink(missing_ok=True)
+        for path in paths:
+            path.unlink(missing_ok=True)
+
+
 def test_non_informative_classifier_is_not_applied_to_combinations() -> None:
     directory = Path(__file__).resolve().parent / "fixtures"
     token = uuid4().hex
