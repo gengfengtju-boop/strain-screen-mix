@@ -534,6 +534,7 @@ def cmd_train_response_model(args: argparse.Namespace) -> int:
         cv_repeats=args.cv_repeats,
         random_seed=args.random_seed,
         locked_model=args.locked_model,
+        feature_profile=args.feature_profile,
     )
     print(f"Rows used: {result.rows_used}")
     print(f"Evidence ids: {result.evidence_count}")
@@ -923,6 +924,11 @@ def build_parser() -> argparse.ArgumentParser:
     train_response.add_argument(
         "--locked-model",
         help="Evaluate one prespecified candidate across grouped repeats without fold-wise selection.",
+    )
+    train_response.add_argument(
+        "--feature-profile",
+        choices=["all", "numeric_only", "size_duration"],
+        default="all",
     )
     train_response.set_defaults(func=cmd_train_response_model)
 

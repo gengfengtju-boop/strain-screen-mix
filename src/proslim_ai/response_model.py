@@ -105,6 +105,7 @@ def train_response_model(
     cv_repeats: int = 1,
     random_seed: int = 17,
     locked_model: str | None = None,
+    feature_profile: str = "all",
 ) -> ResponseModelResult:
     if cv_repeats < 1:
         raise ValueError("cv_repeats must be at least 1")
@@ -120,6 +121,9 @@ def train_response_model(
     # be used as predictors or cross-validation performance becomes label leakage.
     feature_data, categorical_features, numeric_features, matched_review_rows = (
         build_response_feature_table(data, review_paths or [])
+    )
+    categorical_features, numeric_features = _select_feature_profile(
+        categorical_features, numeric_features, feature_profile
     )
     for column in categorical_features:
         feature_data[column] = feature_data.get(column, "").fillna("").astype(str)
@@ -161,6 +165,9 @@ def train_response_model(
         if (
             float(leave_one_group_out_metrics["roc_auc"] or 0.0) < 0.55
             or float(leave_one_group_out_metrics["average_precision"] or 0.0) <= float(y.mean())
+            or float(leave_one_group_out_metrics["study_equal_roc_auc"] or 0.0) < 0.55
+            or float(leave_one_group_out_metrics["cluster_bootstrap_roc_auc_p025"] or 0.0)
+            < 0.50
         ):
             model_status = "non_informative_do_not_apply_to_combinations"
     model_level = "study_endpoint_evidence_classifier_not_individual_response"
@@ -204,6 +211,7 @@ def train_response_model(
             "model_status": model_status,
             "feature_policy": "leakage_safe_descriptors_only",
             "features": categorical_features + numeric_features,
+            "feature_profile": feature_profile,
             "review_rows_matched": matched_review_rows,
             "review_feature_coverage": float(matched_review_rows / len(data)),
             "model_selection_policy": (
@@ -214,7 +222,7 @@ def train_response_model(
             "stability_policy": (
                 "for_repeated_cv: auc_mean>=0.55, auc_mean-auc_std>=0.50, "
                 "ap_mean>prevalence; for locked models: leave-one-study-out auc>=0.55 "
-                "and ap>prevalence"
+                "and ap>prevalence, study-equal auc>=0.55, cluster-bootstrap p025>=0.50"
             ),
             "leave_one_group_out_metrics": leave_one_group_out_metrics,
             "excluded_leakage_features": EXCLUDED_LABEL_DERIVED_FEATURES,
@@ -331,7 +339,58 @@ def _leave_one_group_out_metrics(
         fitted = clone(model)
         fitted.fit(X.iloc[train_index], y.iloc[train_index])
         probabilities[test_index] = fitted.predict_proba(X.iloc[test_index])[:, 1]
-    return _metrics(y.to_numpy(), probabilities)
+    metrics = _metrics(y.to_numpy(), probabilities)
+    group_counts = groups.value_counts()
+    sample_weights = groups.map(lambda group: 1.0 / group_counts[group]).to_numpy()
+    metrics["study_equal_roc_auc"] = float(
+        roc_auc_score(y.to_numpy(), probabilities, sample_weight=sample_weights)
+    )
+    metrics["study_equal_average_precision"] = float(
+        average_precision_score(y.to_numpy(), probabilities, sample_weight=sample_weights)
+    )
+    bootstrap_auc = _cluster_bootstrap_auc(
+        y.to_numpy(), probabilities, groups.to_numpy(), random_seed=17
+    )
+    metrics["cluster_bootstrap_roc_auc_p025"] = float(np.quantile(bootstrap_auc, 0.025))
+    metrics["cluster_bootstrap_roc_auc_p975"] = float(np.quantile(bootstrap_auc, 0.975))
+    return metrics
+
+
+def _cluster_bootstrap_auc(
+    y: np.ndarray,
+    probabilities: np.ndarray,
+    groups: np.ndarray,
+    random_seed: int,
+    simulations: int = 2000,
+) -> np.ndarray:
+    rng = np.random.default_rng(random_seed)
+    unique_groups = np.unique(groups)
+    auc_values: list[float] = []
+    for _ in range(simulations):
+        sampled_groups = rng.choice(unique_groups, len(unique_groups), replace=True)
+        indices = np.concatenate([np.flatnonzero(groups == group) for group in sampled_groups])
+        if np.unique(y[indices]).size == 2:
+            auc_values.append(float(roc_auc_score(y[indices], probabilities[indices])))
+    return np.asarray(auc_values)
+
+
+def _select_feature_profile(
+    categorical_features: list[str],
+    numeric_features: list[str],
+    feature_profile: str,
+) -> tuple[list[str], list[str]]:
+    if feature_profile == "all":
+        return categorical_features, numeric_features
+    if feature_profile == "numeric_only":
+        return [], numeric_features
+    if feature_profile == "size_duration":
+        selected = [
+            feature for feature in ("sample_size", "duration_weeks") if feature in numeric_features
+        ]
+        return [], selected
+    raise ValueError("feature_profile must be one of: all, numeric_only, size_duration")
+
+
 def apply_response_model_to_combinations(
     combination_input: Path,
     evidence_predictions_path: Path,
@@ -451,6 +510,13 @@ def _model_candidates(numeric_features: list[str], categorical_features: list[st
             categorical_features,
             LogisticRegression(
                 C=0.03, class_weight="balanced", max_iter=1000, random_state=17
+            ),
+        ),
+        "logistic_l2_strong": _build_model(
+            numeric_features,
+            categorical_features,
+            LogisticRegression(
+                C=0.01, class_weight="balanced", max_iter=1000, random_state=17
             ),
         ),
         "logistic_l2_moderate": _build_model(

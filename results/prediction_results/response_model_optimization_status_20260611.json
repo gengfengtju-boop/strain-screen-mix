@@ -1,28 +1,39 @@
 {
   "date": "2026-06-11",
   "status": "internal_auc_requirement_met",
-  "model": "logistic_l2_conservative",
-  "feature_count": 13,
+  "model": "logistic_l2_strong",
+  "feature_profile": "numeric_only",
+  "features": ["sample_size", "duration_weeks", "log10_cfu_day"],
+  "feature_count": 3,
   "rows": 134,
   "evidence_groups": 37,
   "review_feature_coverage": 0.8507462686567164,
   "repeated_group_cv": {
     "repeats": 5,
-    "roc_auc_mean": 0.599837962962963,
-    "roc_auc_std": 0.04419475580121713,
-    "roc_auc_mean_minus_std": 0.5556432071617459,
-    "average_precision_mean": 0.5370324198665998,
-    "average_precision_std": 0.03694874543266625
+    "roc_auc_mean": 0.6539814814814814,
+    "roc_auc_std": 0.01871547461473715,
+    "roc_auc_mean_minus_std": 0.6352660068667443,
+    "average_precision_mean": 0.5864345306877036,
+    "average_precision_std": 0.02310071300921204
   },
   "leave_one_study_out": {
-    "roc_auc": 0.5952546296296296,
-    "average_precision": 0.5392721011192053,
-    "balanced_accuracy": 0.5655092592592592,
-    "brier_score": 0.23785141473480295
+    "roc_auc": 0.658912037037037,
+    "average_precision": 0.602734828932693,
+    "balanced_accuracy": 0.6527777777777778,
+    "brier_score": 0.2378019235194794,
+    "study_equal_roc_auc": 0.6369385005890912,
+    "study_equal_average_precision": 0.5782844149321923,
+    "cluster_bootstrap_roc_auc_p025": 0.5021095650364694,
+    "cluster_bootstrap_roc_auc_p975": 0.7877892654896734
   },
-  "acceptance_policy": "repeated AUC mean >= 0.55, mean minus one standard deviation >= 0.50, mean AP above prevalence, and leave-one-study-out AUC >= 0.55",
+  "acceptance_policy": "repeated AUC mean >= 0.55, mean minus one standard deviation >= 0.50, mean AP above prevalence, leave-one-study-out and study-equal AUC >= 0.55, and cluster-bootstrap AUC p025 >= 0.50",
   "eligible_for_hypothesis_ranking": true,
   "eligible_for_clinical_claims": false,
   "combination_fusion_action": "not automatically fused because the response model and Bayesian evidence score reuse the same outcome labels",
+  "limitations": [
+    "CFU dose is observed for only 20 of 134 endpoint rows.",
+    "The cluster-bootstrap lower AUC bound is only slightly above 0.50.",
+    "The model specification was developed on this dataset and requires external validation."
+  ],
   "next_validation": "prospective experiment or independent external study cohort"
 }

@@ -10,6 +10,7 @@ from proslim_ai.response_model import (
     EXCLUDED_LABEL_DERIVED_FEATURES,
     LEAKAGE_SAFE_CATEGORICAL_FEATURES,
     _build_model,
+    _select_feature_profile,
     apply_response_model_to_combinations,
     train_response_model,
 )
@@ -156,6 +157,7 @@ def test_training_can_lock_prespecified_model(monkeypatch) -> None:
         assert metrics["validation"].startswith("locked_repeated_")
         assert len(metrics["repeat_metrics"]) == 2
         assert metrics["leave_one_group_out_metrics"] is not None
+        assert "study_equal_roc_auc" in metrics["leave_one_group_out_metrics"]
     finally:
         for path in paths:
             path.unlink(missing_ok=True)
@@ -215,3 +217,13 @@ def test_non_informative_classifier_is_not_applied_to_combinations() -> None:
         evidence.unlink(missing_ok=True)
         combinations.unlink(missing_ok=True)
         output.unlink(missing_ok=True)
+
+
+def test_numeric_feature_profile_excludes_high_cardinality_categories() -> None:
+    categorical, numeric = _select_feature_profile(
+        ["comparison", "intervention_class"],
+        ["sample_size", "duration_weeks", "log10_cfu_day"],
+        "numeric_only",
+    )
+    assert categorical == []
+    assert numeric == ["sample_size", "duration_weeks", "log10_cfu_day"]

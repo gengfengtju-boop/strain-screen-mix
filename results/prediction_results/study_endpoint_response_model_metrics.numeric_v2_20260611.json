@@ -1,0 +1,337 @@
+{
+  "accuracy": 0.6716417910447762,
+  "average_precision": 0.59430573643583,
+  "average_precision_mean": 0.5864345306877036,
+  "average_precision_std": 0.02310071300921204,
+  "balanced_accuracy": 0.6527777777777778,
+  "brier_score": 0.2386714067087672,
+  "cv_repeats": 5,
+  "evidence_count": 37,
+  "excluded_leakage_features": [
+    "direction",
+    "evidence_modifier",
+    "between_group_p",
+    "within_group_p",
+    "intervention_effect",
+    "control_effect",
+    "effect_difference"
+  ],
+  "f1": 0.5769230769230769,
+  "feature_policy": "leakage_safe_descriptors_only",
+  "feature_profile": "numeric_only",
+  "features": [
+    "sample_size",
+    "duration_weeks",
+    "log10_cfu_day"
+  ],
+  "leave_one_group_out_metrics": {
+    "accuracy": 0.6716417910447762,
+    "average_precision": 0.602734828932693,
+    "balanced_accuracy": 0.6527777777777778,
+    "brier_score": 0.2378019235194794,
+    "cluster_bootstrap_roc_auc_p025": 0.5021095650364694,
+    "cluster_bootstrap_roc_auc_p975": 0.7877892654896734,
+    "f1": 0.5769230769230769,
+    "positive_prevalence": 0.40298507462686567,
+    "roc_auc": 0.658912037037037,
+    "study_equal_average_precision": 0.5782844149321923,
+    "study_equal_roc_auc": 0.6369385005890912
+  },
+  "limitation": "Classifies study-endpoint evidence from descriptive fields only; it is not an individual microbiome responder model.",
+  "model_comparison": [
+    {
+      "accuracy": 0.6716417910447762,
+      "average_precision": 0.59430573643583,
+      "balanced_accuracy": 0.6527777777777778,
+      "brier_score": 0.2386714067087672,
+      "f1": 0.5769230769230769,
+      "model": "logistic_l2_strong",
+      "positive_prevalence": 0.40298507462686567,
+      "roc_auc": 0.6568287037037037
+    }
+  ],
+  "model_level": "study_endpoint_evidence_classifier_not_individual_response",
+  "model_selection_policy": "locked_model:logistic_l2_strong",
+  "model_status": "informative_for_hypothesis_ranking",
+  "non_positive_rows": 80,
+  "outer_fold_model_selections": [
+    {
+      "fold": 1,
+      "repeat": 1,
+      "seed": 17,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 30,
+      "training_rows": 108,
+      "validation_rows": 26
+    },
+    {
+      "fold": 2,
+      "repeat": 1,
+      "seed": 17,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 29,
+      "training_rows": 99,
+      "validation_rows": 35
+    },
+    {
+      "fold": 3,
+      "repeat": 1,
+      "seed": 17,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 31,
+      "training_rows": 116,
+      "validation_rows": 18
+    },
+    {
+      "fold": 4,
+      "repeat": 1,
+      "seed": 17,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 29,
+      "training_rows": 102,
+      "validation_rows": 32
+    },
+    {
+      "fold": 5,
+      "repeat": 1,
+      "seed": 17,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 29,
+      "training_rows": 111,
+      "validation_rows": 23
+    },
+    {
+      "fold": 1,
+      "repeat": 2,
+      "seed": 118,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 30,
+      "training_rows": 105,
+      "validation_rows": 29
+    },
+    {
+      "fold": 2,
+      "repeat": 2,
+      "seed": 118,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 28,
+      "training_rows": 105,
+      "validation_rows": 29
+    },
+    {
+      "fold": 3,
+      "repeat": 2,
+      "seed": 118,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 28,
+      "training_rows": 103,
+      "validation_rows": 31
+    },
+    {
+      "fold": 4,
+      "repeat": 2,
+      "seed": 118,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 31,
+      "training_rows": 111,
+      "validation_rows": 23
+    },
+    {
+      "fold": 5,
+      "repeat": 2,
+      "seed": 118,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 31,
+      "training_rows": 112,
+      "validation_rows": 22
+    },
+    {
+      "fold": 1,
+      "repeat": 3,
+      "seed": 219,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 31,
+      "training_rows": 110,
+      "validation_rows": 24
+    },
+    {
+      "fold": 2,
+      "repeat": 3,
+      "seed": 219,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 29,
+      "training_rows": 105,
+      "validation_rows": 29
+    },
+    {
+      "fold": 3,
+      "repeat": 3,
+      "seed": 219,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 29,
+      "training_rows": 105,
+      "validation_rows": 29
+    },
+    {
+      "fold": 4,
+      "repeat": 3,
+      "seed": 219,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 30,
+      "training_rows": 111,
+      "validation_rows": 23
+    },
+    {
+      "fold": 5,
+      "repeat": 3,
+      "seed": 219,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 29,
+      "training_rows": 105,
+      "validation_rows": 29
+    },
+    {
+      "fold": 1,
+      "repeat": 4,
+      "seed": 320,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 30,
+      "training_rows": 103,
+      "validation_rows": 31
+    },
+    {
+      "fold": 2,
+      "repeat": 4,
+      "seed": 320,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 30,
+      "training_rows": 111,
+      "validation_rows": 23
+    },
+    {
+      "fold": 3,
+      "repeat": 4,
+      "seed": 320,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 29,
+      "training_rows": 104,
+      "validation_rows": 30
+    },
+    {
+      "fold": 4,
+      "repeat": 4,
+      "seed": 320,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 29,
+      "training_rows": 106,
+      "validation_rows": 28
+    },
+    {
+      "fold": 5,
+      "repeat": 4,
+      "seed": 320,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 30,
+      "training_rows": 112,
+      "validation_rows": 22
+    },
+    {
+      "fold": 1,
+      "repeat": 5,
+      "seed": 421,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 29,
+      "training_rows": 108,
+      "validation_rows": 26
+    },
+    {
+      "fold": 2,
+      "repeat": 5,
+      "seed": 421,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 28,
+      "training_rows": 94,
+      "validation_rows": 40
+    },
+    {
+      "fold": 3,
+      "repeat": 5,
+      "seed": 421,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 30,
+      "training_rows": 113,
+      "validation_rows": 21
+    },
+    {
+      "fold": 4,
+      "repeat": 5,
+      "seed": 421,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 31,
+      "training_rows": 110,
+      "validation_rows": 24
+    },
+    {
+      "fold": 5,
+      "repeat": 5,
+      "seed": 421,
+      "selected_model": "logistic_l2_strong",
+      "training_evidence_count": 30,
+      "training_rows": 111,
+      "validation_rows": 23
+    }
+  ],
+  "positive_prevalence": 0.40298507462686567,
+  "positive_rows": 54,
+  "repeat_metrics": [
+    {
+      "average_precision": 0.5621660920137289,
+      "balanced_accuracy": 0.6368055555555556,
+      "brier_score": 0.24122568875917919,
+      "repeat": 1,
+      "roc_auc": 0.6520833333333333,
+      "seed": 17
+    },
+    {
+      "average_precision": 0.6023049572077809,
+      "balanced_accuracy": 0.6682870370370371,
+      "brier_score": 0.2371931345323946,
+      "repeat": 2,
+      "roc_auc": 0.6549768518518517,
+      "seed": 118
+    },
+    {
+      "average_precision": 0.5826080609175726,
+      "balanced_accuracy": 0.6118055555555556,
+      "brier_score": 0.2400120665853712,
+      "repeat": 3,
+      "roc_auc": 0.6608796296296297,
+      "seed": 219
+    },
+    {
+      "average_precision": 0.6220258006704562,
+      "balanced_accuracy": 0.6527777777777778,
+      "brier_score": 0.2362868971332759,
+      "repeat": 4,
+      "roc_auc": 0.6799768518518519,
+      "seed": 320
+    },
+    {
+      "average_precision": 0.5630677426289794,
+      "balanced_accuracy": 0.5435185185185185,
+      "brier_score": 0.23912669631884173,
+      "repeat": 5,
+      "roc_auc": 0.6219907407407407,
+      "seed": 421
+    }
+  ],
+  "review_feature_coverage": 0.8507462686567164,
+  "review_rows_matched": 114,
+  "roc_auc": 0.6568287037037037,
+  "roc_auc_mean": 0.6539814814814814,
+  "roc_auc_std": 0.01871547461473715,
+  "rows_used": 134,
+  "selected_model": "logistic_l2_strong",
+  "stability_policy": "for_repeated_cv: auc_mean>=0.55, auc_mean-auc_std>=0.50, ap_mean>prevalence; for locked models: leave-one-study-out auc>=0.55 and ap>prevalence, study-equal auc>=0.55, cluster-bootstrap p025>=0.50",
+  "validation": "locked_repeated_stratified_group_cross_validated_by_evidence_id"
+}
