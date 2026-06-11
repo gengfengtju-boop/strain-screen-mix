@@ -1,0 +1,15 @@
+{
+  "date": "2026-06-11",
+  "tabpfn_package_version": "2.2.1",
+  "torch_version": "2.12.0+cpu",
+  "package_installed": true,
+  "official_checkpoint_available": false,
+  "checkpoint_repository": "Prior-Labs/TabPFN-v2-clf",
+  "checkpoint_filename": "tabpfn-v2-classifier-finetuned-zk73skhh.ckpt",
+  "download_attempt_seconds": 300,
+  "download_result": "terminated_after_no_response_from_huggingface",
+  "benchmark_completed": false,
+  "included_in_combination_ranking": false,
+  "reason": "Official pretrained weights were unreachable; unvalidated foundation-model output must not affect rankings.",
+  "next_step": "Provide the official checkpoint locally and run proslim-ai benchmark-tabpfn."
+}

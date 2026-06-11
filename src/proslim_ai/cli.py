@@ -34,6 +34,7 @@ from .schemas import validate_csv_schema
 from .search import search_evidence, search_genomes
 from .search_clients import ApiRequestError
 from .screening import screen_evidence_registry
+from .tabpfn_benchmark import benchmark_tabpfn
 
 
 def _paths(root: str | None) -> ProjectPaths:
@@ -465,6 +466,22 @@ def cmd_optimize_combinations(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_benchmark_tabpfn(args: argparse.Namespace) -> int:
+    metrics = benchmark_tabpfn(
+        structured_outcomes_path=Path(args.structured_outcomes),
+        model_path=Path(args.model_path),
+        output_path=Path(args.output),
+        n_estimators=args.n_estimators,
+        random_seed=args.random_seed,
+    )
+    print(f"Output: {args.output}")
+    print(
+        f"AUC={metrics['roc_auc']:.3f}; AP={metrics['average_precision']:.3f}; "
+        f"eligible_for_combination_fusion={metrics['eligible_for_combination_fusion']}"
+    )
+    return 0
+
+
 def cmd_structure_outcomes(args: argparse.Namespace) -> int:
     result = structure_outcome_review(
         review_path=Path(args.review),
@@ -819,6 +836,17 @@ def build_parser() -> argparse.ArgumentParser:
         help="Optional CSV with strain_id and safety_gate (pass/fail/pending).",
     )
     optimize_combinations.set_defaults(func=cmd_optimize_combinations)
+
+    tabpfn_benchmark = subparsers.add_parser(
+        "benchmark-tabpfn",
+        help="Benchmark a local TabPFN checkpoint with leakage-safe grouped validation.",
+    )
+    tabpfn_benchmark.add_argument("structured_outcomes", help="Structured outcome CSV.")
+    tabpfn_benchmark.add_argument("model_path", help="Local official TabPFN classifier checkpoint.")
+    tabpfn_benchmark.add_argument("output", help="Output benchmark metrics JSON.")
+    tabpfn_benchmark.add_argument("--n-estimators", type=int, default=2)
+    tabpfn_benchmark.add_argument("--random-seed", type=int, default=17)
+    tabpfn_benchmark.set_defaults(func=cmd_benchmark_tabpfn)
 
     structure_outcomes = subparsers.add_parser(
         "structure-outcomes",
