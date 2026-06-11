@@ -473,6 +473,7 @@ def cmd_benchmark_tabpfn(args: argparse.Namespace) -> int:
         output_path=Path(args.output),
         n_estimators=args.n_estimators,
         random_seed=args.random_seed,
+        review_paths=[Path(path) for path in args.review],
     )
     print(f"Output: {args.output}")
     print(
@@ -846,6 +847,12 @@ def build_parser() -> argparse.ArgumentParser:
     tabpfn_benchmark.add_argument("output", help="Output benchmark metrics JSON.")
     tabpfn_benchmark.add_argument("--n-estimators", type=int, default=2)
     tabpfn_benchmark.add_argument("--random-seed", type=int, default=17)
+    tabpfn_benchmark.add_argument(
+        "--review",
+        action="append",
+        default=[],
+        help="Extracted outcome review CSV used for leakage-safe intervention features; repeatable.",
+    )
     tabpfn_benchmark.set_defaults(func=cmd_benchmark_tabpfn)
 
     structure_outcomes = subparsers.add_parser(

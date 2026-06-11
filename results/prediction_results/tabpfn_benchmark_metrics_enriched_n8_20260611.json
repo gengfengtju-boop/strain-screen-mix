@@ -1,0 +1,31 @@
+{
+  "model": "TabPFNClassifier",
+  "n_estimators": 8,
+  "tabpfn_checkpoint": "models\\tabpfn\\tabpfn-v2-classifier-finetuned-zk73skhh.ckpt",
+  "rows": 134,
+  "evidence_groups": 37,
+  "validation": "five_fold_stratified_group_cross_validation_by_evidence_id",
+  "roc_auc": 0.4862268518518519,
+  "average_precision": 0.426808157973988,
+  "balanced_accuracy": 0.5023148148148148,
+  "positive_prevalence": 0.40298507462686567,
+  "eligible_for_combination_fusion": false,
+  "feature_policy": "leakage_safe_descriptors_only",
+  "features": [
+    "outcome_domain",
+    "endpoint_type",
+    "analysis_population",
+    "comparison",
+    "intervention_class",
+    "strain_family",
+    "population_group",
+    "blinding",
+    "randomized_design",
+    "placebo_control",
+    "sample_size",
+    "duration_weeks",
+    "log10_cfu_day"
+  ],
+  "review_rows_matched": 114,
+  "review_feature_coverage": 0.8507462686567164
+}
