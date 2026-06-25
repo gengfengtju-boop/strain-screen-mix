@@ -42,14 +42,55 @@ def get(url: str, timeout: int = 50) -> str:
     ).read().decode("utf-8", "replace")
 
 
+ADIPOSITY = re.compile(
+    r"(obes|overweight|body weight|body fat|adipos|\bBMI\b|waist|weight loss|"
+    r"fat mass|visceral|body composition|weight management|weight reduction)", re.I)
+INTERVENTION = re.compile(
+    r"(randomi|placebo|double[- ]blind|supplement|received|administered|"
+    r"intervention|parallel[- ]group|cross[- ]?over\b|weeks of)", re.I)
+CROSS_SECTIONAL = re.compile(r"cross[- ]?sectional|observational cohort|case[- ]control", re.I)
+EXCLUDE_POP = re.compile(
+    r"(infant|breastfed|breast-fed|neonat|newborn|preterm|toddler|"
+    r"\bmice\b|\bmouse\b|murine|\brats?\b|broiler|piglet|weaned|laying hen)", re.I)
+
+
+def relevance(title: str, abstract: str) -> dict:
+    """Score whether an article is an adiposity-outcome interventional human study."""
+    text = f"{title} {abstract}"
+    has_adiposity = bool(ADIPOSITY.search(text))
+    is_interventional = bool(INTERVENTION.search(text))
+    is_cross_sectional = bool(CROSS_SECTIONAL.search(text)) and not re.search(
+        r"randomi|placebo", text, re.I)
+    excluded_pop = bool(EXCLUDE_POP.search(text))
+    on_target = has_adiposity and is_interventional and not is_cross_sectional and not excluded_pop
+    reason = []
+    if not has_adiposity:
+        reason.append("no_adiposity_outcome")
+    if not is_interventional:
+        reason.append("not_interventional")
+    if is_cross_sectional:
+        reason.append("cross_sectional")
+    if excluded_pop:
+        reason.append("excluded_population")
+    return {
+        "adiposity_outcome": has_adiposity,
+        "interventional": is_interventional,
+        "on_target": on_target,
+        "relevance_reason": "; ".join(reason) if reason else "on_target",
+    }
+
+
 def search_pmids() -> list[dict]:
+    """Search EuropePMC (core results carry the abstract, so relevance is gated here
+    with no extra request) and keep only on-target adiposity interventional studies."""
     out: list[dict] = []
+    screened = 0
     cursor = "*"
-    while len(out) < MAX_PMIDS:
+    while screened < MAX_PMIDS:
         url = (
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query="
             + urllib.parse.quote(QUERY)
-            + "&format=json&pageSize=100&resultType=lite&cursorMark="
+            + "&format=json&pageSize=100&resultType=core&cursorMark="
             + urllib.parse.quote(cursor)
         )
         j = json.loads(get(url))
@@ -57,18 +98,26 @@ def search_pmids() -> list[dict]:
         if not res:
             break
         for r in res:
-            if r.get("pmid"):
-                out.append({
-                    "pmid": r["pmid"], "year": r.get("pubYear", ""),
-                    "title": (r.get("title", "") or "").replace("\n", " "),
-                    "is_open_access": r.get("isOpenAccess", ""),
-                })
+            if not r.get("pmid"):
+                continue
+            screened += 1
+            abstract = re.sub("<[^>]+>", " ", r.get("abstractText", "") or "")
+            rel = relevance(r.get("title", "") or "", abstract)
+            if not rel["on_target"]:
+                continue
+            out.append({
+                "pmid": r["pmid"], "year": r.get("pubYear", ""),
+                "title": (r.get("title", "") or "").replace("\n", " "),
+                "is_open_access": r.get("isOpenAccess", ""),
+                **rel,
+            })
         nxt = j.get("nextCursorMark")
         if not nxt or nxt == cursor:
             break
         cursor = nxt
         time.sleep(0.2)
-    return out[:MAX_PMIDS]
+    out.append({"_screened": screened})
+    return out
 
 
 def datalinks(pmid: str) -> tuple[list[str], list[str]]:
@@ -102,6 +151,8 @@ def datalinks(pmid: str) -> tuple[list[str], list[str]]:
 def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     studies = search_pmids()
+    screened = next((s["_screened"] for s in studies if "_screened" in s), len(studies))
+    studies = [s for s in studies if "_screened" not in s]
     candidates = []
     for i, s in enumerate(studies):
         accs, repos = datalinks(s["pmid"])
@@ -117,7 +168,8 @@ def main() -> None:
             candidates.append(s)
         time.sleep(0.12)
 
-    fields = ["pmid", "year", "title", "is_open_access", "sequencing_accessions",
+    fields = ["pmid", "year", "title", "is_open_access", "adiposity_outcome",
+              "interventional", "relevance_reason", "sequencing_accessions",
               "repositories", "triage_status", "ipd_requirement"]
     suffix = os.environ.get("IPD_OUT_SUFFIX", "20260625")
     out_csv = OUT_DIR / f"ipd_candidate_studies_{suffix}.csv"
@@ -131,10 +183,15 @@ def main() -> None:
     summary = {
         "run_stamp": "20260625",
         "query": QUERY,
-        "pmids_screened": len(studies),
+        "pmids_screened": screened,
+        "on_target_after_outcome_filter": len(studies),
         "candidates_with_sequencing_deposit": len(candidates),
         "with_extractable_accession": sum(1 for c in candidates if c["sequencing_accessions"]),
-        "method": "EuropePMC search + per-article datalinks API (BioProject/ENA/SRA)",
+        "relevance_filter": (
+            "kept only studies whose title/abstract show an adiposity outcome AND an "
+            "interventional design, excluding cross-sectional and infant/animal populations"
+        ),
+        "method": "EuropePMC search + abstract relevance gate + per-article datalinks API",
         "limitation": (
             "Datalinks presence does not guarantee per-subject paired baseline+outcome "
             "design; each candidate requires manual confirmation. Studies without a "
@@ -144,7 +201,7 @@ def main() -> None:
     }
     out_json = OUT_DIR / f"ipd_candidate_search_summary_{suffix}.json"
     out_json.write_text(json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8")
-    print("screened:", len(studies), "candidates:", len(candidates),
+    print("screened:", screened, "on_target:", len(studies), "candidates:", len(candidates),
           "with_accession:", summary["with_extractable_accession"])
     print("wrote", out_csv.relative_to(ROOT))
     print("wrote", out_json.relative_to(ROOT))

@@ -48,3 +48,4 @@ outputs/*.png
 !models/**/.gitkeep
 !results/**/.gitkeep
 data/ipd_search/expanded_search.log
+data/ipd_search/filtered_search.log
