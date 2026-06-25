@@ -4,6 +4,7 @@ __pycache__/
 .pytest_cache/
 .pytest_tmp/
 .test_tmp/
+.git-backup-*/
 pytest-cache-files-*/
 .ruff_cache/
 .mypy_cache/
@@ -30,6 +31,17 @@ results/**/*.png
 results/**/*.pdf
 results/smoke_tests/
 archives/
+
+# Large local source PDFs and full-text extraction scratch (kept local only)
+pdf/
+.fulltext_extract/
+
+# Leftover git-recovery directories
+.git.corrupt_*/
+.git-recovered-*/
+
+# Render artifacts under outputs/ (keep xlsx/ndjson, drop previews)
+outputs/*.png
 
 # Keep directory placeholders
 !data/**/.gitkeep
