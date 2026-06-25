@@ -1,0 +1,6 @@
+species,direction,median_abund_diff_pp,abs_median_diff_pp,median_log2fc,pooled_cohens_d,studies_consistent,n_studies,consistency,mean_abund_lean_pp,mean_abund_obese_pp,trusted
+Prevotella_copri,obese_enriched,-2.6211,2.6211,-0.392,-0.159,12,15,0.8,7.0882,10.4996,True
+Roseburia_faecis,obese_enriched,-0.6342,0.6342,-0.317,-0.175,12,15,0.8,2.0508,2.7963,True
+Eubacterium_siraeum,lean_enriched,0.5807,0.5807,0.956,0.228,12,15,0.8,1.1471,0.8708,True
+Akkermansia_muciniphila,lean_enriched,0.4342,0.4342,0.849,0.214,11,15,0.73,1.8234,1.2301,True
+Butyrivibrio_crossotus,lean_enriched,0.3723,0.3723,0.958,0.157,12,15,0.8,1.0241,0.844,True
