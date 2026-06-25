@@ -1,0 +1,15 @@
+species,genus,cohens_d,median_abund_diff_pp,butyrate,propionate,mucin,bsh,fat_loss_potential,cholesterol_potential,strain_quality,culturability_class
+Bacteroides_intestinalis,Bacteroides,0.266,0.1726,0,2,1,1,0.885,0.5,0.95,culturable_easy
+Akkermansia_muciniphila,Akkermansia,0.214,0.4342,0,2,2,0,0.812,0.0,1.0,culturable_commercial
+Barnesiella_intestinihominis,Barnesiella,0.256,0.2376,0,2,1,0,0.871,0.0,0.8,culturable_anaerobe
+Bacteroides_massiliensis,Bacteroides,0.156,0.0509,0,2,1,1,0.73,0.5,0.95,culturable_easy
+Bacteroides_cellulosilyticus,Bacteroides,0.151,0.2306,0,2,1,1,0.723,0.5,0.95,culturable_easy
+Bacteroides_plebeius,Bacteroides,0.136,0.1356,0,2,1,1,0.702,0.5,0.95,culturable_easy
+Bacteroides_salyersiae,Bacteroides,0.127,0.0558,0,2,1,1,0.689,0.5,0.95,culturable_easy
+Odoribacter_splanchnicus,Odoribacter,0.319,0.148,0,2,0,0,0.684,0.0,0.8,culturable_anaerobe
+Alistipes_shahii,Alistipes,0.283,0.0924,0,2,0,0,0.634,0.0,0.8,culturable_anaerobe
+Bacteroides_caccae,Bacteroides,0.086,0.175,0,2,1,1,0.632,0.5,0.95,culturable_easy
+Alistipes_indistinctus,Alistipes,0.24,0.042,0,2,0,0,0.573,0.0,0.8,culturable_anaerobe
+Butyrivibrio_crossotus,Butyrivibrio,0.157,0.3723,2,0,0,0,0.614,0.0,0.8,culturable_anaerobe
+Oscillibacter_sp_57_20,Oscillibacter,0.19,0.1166,2,0,0,0,0.66,0.0,0.6,fastidious_anaerobe
+Intestinimonas_butyriciproducens,Intestinimonas,0.173,0.011,2,0,0,0,0.636,0.0,0.65,named_isolate_likely
