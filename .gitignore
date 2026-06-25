@@ -47,3 +47,4 @@ outputs/*.png
 !data/**/.gitkeep
 !models/**/.gitkeep
 !results/**/.gitkeep
+data/ipd_search/expanded_search.log

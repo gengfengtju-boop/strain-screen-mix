@@ -1,0 +1,10 @@
+{
+  "run_stamp": "20260625",
+  "query": "(probiotic OR synbiotic OR Lactobacillus OR Bifidobacterium OR Lactiplantibacillus) AND (obesity OR overweight OR \"body weight\" OR BMI OR \"body fat\" OR adiposity) AND (16S OR metagenom* OR shotgun OR microbiota OR microbiome) AND (randomi* OR placebo OR intervention OR trial) AND NOT (PUB_TYPE:\"review-article\" OR PUB_TYPE:\"review\")",
+  "pmids_screened": 400,
+  "candidates_with_sequencing_deposit": 25,
+  "with_extractable_accession": 14,
+  "method": "EuropePMC search + per-article datalinks API (BioProject/ENA/SRA)",
+  "limitation": "Datalinks presence does not guarantee per-subject paired baseline+outcome design; each candidate requires manual confirmation. Studies without a deposit are not IPD-usable from public data.",
+  "output": "data/ipd_search/ipd_candidate_studies_expanded_20260625.csv"
+}
