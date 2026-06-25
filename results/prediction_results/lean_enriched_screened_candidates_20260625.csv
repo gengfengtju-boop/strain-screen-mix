@@ -1,0 +1,54 @@
+species,genus,median_abund_diff_pp,median_log2fc,cohens_d,consistency,butyrate,propionate,mucin,bsh,lactate,adverse_flag,obesity_mechanism,culturability_class,culturability_score,complementarity_score,functional_score,effect_score,composite_screen_score
+Bacteroides_intestinalis,Bacteroides,0.1726,2.11,0.266,14/15,0,2,1,1,0,False,propionate -> satiety/lipogenesis modulation (favorable),culturable_easy,0.95,1.2,0.75,0.89,0.776
+Barnesiella_intestinihominis,Barnesiella,0.2376,0.683,0.256,14/15,0,2,1,0,0,False,propionate -> satiety/lipogenesis modulation (favorable),culturable_anaerobe,0.8,1.2,0.6,0.85,0.706
+Akkermansia_muciniphila,Akkermansia,0.4342,0.849,0.214,11/15,0,2,2,0,0,False,"mucin-degradation -> propionate, barrier (Akkermansia-type, favorable)",culturable_commercial,1.0,1.2,0.6,0.71,0.701
+Bacteroides_massiliensis,Bacteroides,0.0509,0.877,0.156,11/15,0,2,1,1,0,False,propionate -> satiety/lipogenesis modulation (favorable),culturable_easy,0.95,1.2,0.75,0.52,0.659
+Bacteroides_cellulosilyticus,Bacteroides,0.2306,0.78,0.151,13/15,0,2,1,1,0,False,propionate -> satiety/lipogenesis modulation (favorable),culturable_easy,0.95,1.2,0.75,0.5,0.654
+Bacteroides_plebeius,Bacteroides,0.1356,0.696,0.136,11/15,0,2,1,1,0,False,propionate -> satiety/lipogenesis modulation (favorable),culturable_easy,0.95,1.2,0.75,0.45,0.638
+Bacteroides_salyersiae,Bacteroides,0.0558,0.613,0.127,11/15,0,2,1,1,0,False,propionate -> satiety/lipogenesis modulation (favorable),culturable_easy,0.95,1.2,0.75,0.42,0.628
+Bacteroides_caccae,Bacteroides,0.175,0.249,0.086,12/15,0,2,1,1,0,False,propionate -> satiety/lipogenesis modulation (favorable),culturable_easy,0.95,1.2,0.75,0.29,0.584
+Odoribacter_splanchnicus,Odoribacter,0.148,0.773,0.319,15/15,0,2,0,0,0,False,propionate -> satiety/lipogenesis modulation (favorable),culturable_anaerobe,0.8,0.5,0.2,1.0,0.584
+Alistipes_shahii,Alistipes,0.0924,0.883,0.283,14/15,0,2,0,0,0,False,propionate -> satiety/lipogenesis modulation (favorable),culturable_anaerobe,0.8,0.5,0.2,0.94,0.566
+Butyrivibrio_crossotus,Butyrivibrio,0.3723,0.958,0.157,12/15,2,0,0,0,0,False,"SCFA/butyrate -> barrier, GLP-1, energy regulation (favorable)",culturable_anaerobe,0.8,1.0,0.5,0.52,0.555
+Oscillibacter_sp_57_20,Oscillibacter,0.1166,0.43,0.19,12/15,2,0,0,0,0,False,"SCFA/butyrate -> barrier, GLP-1, energy regulation (favorable)",fastidious_anaerobe,0.6,1.0,0.5,0.63,0.55
+Intestinimonas_butyriciproducens,Intestinimonas,0.011,0.943,0.173,12/15,2,0,0,0,0,False,"SCFA/butyrate -> barrier, GLP-1, energy regulation (favorable)",named_isolate_likely,0.65,1.0,0.5,0.58,0.542
+Alistipes_indistinctus,Alistipes,0.042,0.847,0.24,14/15,0,2,0,0,0,False,propionate -> satiety/lipogenesis modulation (favorable),culturable_anaerobe,0.8,0.5,0.2,0.8,0.52
+Ruthenibacterium_lactatiformans,Ruthenibacterium,0.0573,0.683,0.145,11/15,2,0,0,0,0,False,"SCFA/butyrate -> barrier, GLP-1, energy regulation (favorable)",named_isolate_likely,0.65,1.0,0.5,0.48,0.512
+Coprococcus_catus,Coprococcus,0.0218,0.249,0.106,12/15,2,0,0,0,0,False,"SCFA/butyrate -> barrier, GLP-1, energy regulation (favorable)",culturable_anaerobe,0.8,1.0,0.5,0.35,0.5
+Butyricimonas_synergistica,Butyricimonas,0.0021,0.364,0.119,11/15,2,0,0,0,0,False,"SCFA/butyrate -> barrier, GLP-1, energy regulation (favorable)",named_isolate_likely,0.65,1.0,0.5,0.4,0.484
+Roseburia_hominis,Roseburia,0.0491,0.15,0.073,12/15,2,0,0,0,0,False,"SCFA/butyrate -> barrier, GLP-1, energy regulation (favorable)",culturable_anaerobe,0.85,1.0,0.5,0.24,0.475
+Roseburia_sp_CAG_303,Roseburia,0.0188,1.277,0.185,12/15,2,0,0,0,0,False,"SCFA/butyrate -> barrier, GLP-1, energy regulation (favorable)",uncultured_or_MAG,0.2,1.0,0.5,0.62,0.465
+Oscillibacter_sp_PC13,Oscillibacter,0.0002,0.196,0.102,11/15,2,0,0,0,0,False,"SCFA/butyrate -> barrier, GLP-1, energy regulation (favorable)",fastidious_anaerobe,0.6,1.0,0.5,0.34,0.456
+Coprococcus_eutactus,Coprococcus,0.1533,0.193,0.059,13/15,2,0,0,0,0,False,"SCFA/butyrate -> barrier, GLP-1, energy regulation (favorable)",culturable_anaerobe,0.8,1.0,0.5,0.2,0.45
+Alistipes_finegoldii,Alistipes,0.2897,0.642,0.166,12/15,0,2,0,0,0,False,propionate -> satiety/lipogenesis modulation (favorable),culturable_anaerobe,0.8,0.5,0.2,0.55,0.441
+Parabacteroides_distasonis,Parabacteroides,0.1345,0.23,0.137,12/15,0,2,0,0,0,False,propionate -> satiety/lipogenesis modulation (favorable),culturable_easy,0.9,0.5,0.2,0.46,0.43
+Gemmiger_formicilis,Gemmiger,0.0371,0.126,0.067,11/15,2,0,0,0,0,False,"SCFA/butyrate -> barrier, GLP-1, energy regulation (favorable)",named_isolate_likely,0.65,1.0,0.5,0.22,0.429
+Anaeromassilibacillus_sp_An250,Anaeromassilibacillus,0.0047,0.496,0.133,11/15,2,0,0,0,0,False,"SCFA/butyrate -> barrier, GLP-1, energy regulation (favorable)",uncultured_or_MAG,0.25,1.0,0.5,0.44,0.419
+Eubacterium_siraeum,Eubacterium,0.5807,0.956,0.228,12/15,0,0,0,0,0,False,no characterized obesity-relevant SCFA/bile mechanism,culturable_anaerobe,0.85,0.0,0.0,0.76,0.413
+Roseburia_sp_CAG_182,Roseburia,0.0099,0.998,0.132,11/15,2,0,0,0,0,False,"SCFA/butyrate -> barrier, GLP-1, energy regulation (favorable)",uncultured_or_MAG,0.2,1.0,0.5,0.44,0.408
+Roseburia_sp_CAG_309,Roseburia,0.0052,0.853,0.132,13/15,2,0,0,0,0,False,"SCFA/butyrate -> barrier, GLP-1, energy regulation (favorable)",uncultured_or_MAG,0.2,1.0,0.5,0.44,0.408
+Ruminococcus_lactaris,Ruminococcus,0.1082,0.227,0.1,11/15,0,0,1,0,0,False,no characterized obesity-relevant SCFA/bile mechanism,named_isolate_likely,0.65,0.7,0.4,0.33,0.406
+Phascolarctobacterium_faecium,Phascolarctobacterium,0.064,0.532,0.157,13/15,0,2,0,0,0,False,propionate -> satiety/lipogenesis modulation (favorable),named_isolate_likely,0.65,0.5,0.2,0.52,0.401
+Alistipes_inops,Alistipes,0.0666,0.632,0.121,11/15,0,2,0,0,0,False,propionate -> satiety/lipogenesis modulation (favorable),culturable_anaerobe,0.8,0.5,0.2,0.4,0.393
+Parasutterella_excrementihominis,Parasutterella,0.0529,0.582,0.143,11/15,0,2,0,0,0,False,propionate -> satiety/lipogenesis modulation (favorable),named_isolate_likely,0.65,0.5,0.2,0.48,0.386
+Alistipes_putredinis,Alistipes,0.3702,0.239,0.109,13/15,0,2,0,0,0,False,propionate -> satiety/lipogenesis modulation (favorable),culturable_anaerobe,0.8,0.5,0.2,0.36,0.38
+Lactobacillus_rogosae,Lactobacillus,0.0097,0.691,0.188,11/15,0,0,0,2,2,False,bile salt hydrolase -> cholesterol/lipid lowering (favorable),named_isolate_likely,0.65,0.0,0.15,0.63,0.361
+Clostridium_spiroforme,Clostridium,0.0047,0.4,0.125,11/15,0,0,0,1,0,False,bile salt hydrolase -> cholesterol/lipid lowering (favorable),culturable_anaerobe,0.8,0.0,0.15,0.42,0.323
+Bifidobacterium_longum,Bifidobacterium,0.0485,0.373,0.147,11/15,0,0,0,1,2,False,bile salt hydrolase -> cholesterol/lipid lowering (favorable),named_isolate_likely,0.65,0.0,0.15,0.49,0.317
+Firmicutes_bacterium_CAG_110,Firmicutes,0.0926,0.754,0.256,13/15,0,0,0,0,0,False,no characterized obesity-relevant SCFA/bile mechanism,uncultured_or_MAG,0.2,0.0,0.0,0.85,0.313
+Coprobacter_secundus,Coprobacter,0.0052,0.346,0.074,11/15,0,2,0,0,0,False,propionate -> satiety/lipogenesis modulation (favorable),named_isolate_likely,0.65,0.5,0.2,0.25,0.313
+Dialister_invisus,Dialister,0.035,0.599,0.065,11/15,0,2,0,0,0,False,propionate -> satiety/lipogenesis modulation (favorable),named_isolate_likely,0.65,0.5,0.2,0.22,0.303
+Methanobrevibacter_smithii,Methanobrevibacter,0.1449,0.966,0.205,13/15,0,0,0,0,0,False,no characterized obesity-relevant SCFA/bile mechanism,archaea_special_culture,0.4,0.0,0.0,0.68,0.299
+Bilophila_wadsworthia,Bilophila,0.0093,0.406,0.155,11/15,0,0,0,0,0,True,PRO-INFLAMMATORY metabolite producer (unfavorable - do not supplement),named_isolate_likely,0.65,0.0,0.0,0.52,0.295
+Desulfovibrio_piger,Desulfovibrio,0.0203,0.665,0.142,13/15,0,0,0,0,0,True,PRO-INFLAMMATORY metabolite producer (unfavorable - do not supplement),named_isolate_likely,0.65,0.0,0.0,0.47,0.281
+Fretibacterium_fastidiosum,Fretibacterium,0.0001,0.071,0.13,11/15,0,0,0,0,0,False,no characterized obesity-relevant SCFA/bile mechanism,named_isolate_likely,0.65,0.0,0.0,0.43,0.269
+Victivallis_vadensis,Victivallis,0.0039,0.83,0.129,12/15,0,0,0,0,0,False,no characterized obesity-relevant SCFA/bile mechanism,named_isolate_likely,0.65,0.0,0.0,0.43,0.268
+Romboutsia_ilealis,Romboutsia,0.0002,0.14,0.127,11/15,0,0,0,0,0,False,no characterized obesity-relevant SCFA/bile mechanism,named_isolate_likely,0.65,0.0,0.0,0.42,0.265
+Turicibacter_sanguinis,Turicibacter,0.0033,0.428,0.1,11/15,0,0,0,0,0,False,no characterized obesity-relevant SCFA/bile mechanism,named_isolate_likely,0.65,0.0,0.0,0.33,0.237
+Ruminococcaceae_bacterium_D5,Ruminococcaceae,0.0034,0.909,0.178,13/15,0,0,0,0,0,False,no characterized obesity-relevant SCFA/bile mechanism,uncultured_or_MAG,0.2,0.0,0.0,0.59,0.23
+Clostridium_sp_CAG_167,Clostridium,0.0175,0.592,0.146,11/15,0,0,0,1,0,False,bile salt hydrolase -> cholesterol/lipid lowering (favorable),uncultured_or_MAG,0.2,0.0,0.15,0.49,0.226
+Dielma_fastidiosa,Dielma,0.003,0.555,0.088,11/15,0,0,0,0,0,False,no characterized obesity-relevant SCFA/bile mechanism,named_isolate_likely,0.65,0.0,0.0,0.29,0.224
+Firmicutes_bacterium_CAG_95,Firmicutes,0.0313,0.917,0.141,14/15,0,0,0,0,0,False,no characterized obesity-relevant SCFA/bile mechanism,uncultured_or_MAG,0.2,0.0,0.0,0.47,0.19
+Firmicutes_bacterium_CAG_238,Firmicutes,0.0381,0.895,0.128,13/15,0,0,0,0,0,False,no characterized obesity-relevant SCFA/bile mechanism,uncultured_or_MAG,0.2,0.0,0.0,0.43,0.177
+Firmicutes_bacterium_CAG_94,Firmicutes,0.0029,0.641,0.122,11/15,0,0,0,0,0,False,no characterized obesity-relevant SCFA/bile mechanism,uncultured_or_MAG,0.2,0.0,0.0,0.41,0.17
+Firmicutes_bacterium_CAG_170,Firmicutes,0.0498,0.662,0.097,13/15,0,0,0,0,0,False,no characterized obesity-relevant SCFA/bile mechanism,uncultured_or_MAG,0.2,0.0,0.0,0.32,0.143
