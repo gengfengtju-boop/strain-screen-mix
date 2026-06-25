@@ -49,3 +49,9 @@ outputs/*.png
 !results/**/.gitkeep
 data/ipd_search/expanded_search.log
 data/ipd_search/filtered_search.log
+
+# IPD pilot raw downloads and profiles (keep manifests/templates/readme)
+data/ipd_pilot/raw/
+data/ipd_pilot/*.fastq.gz
+data/ipd_pilot/*.profile.tsv
+data/ipd_pilot/*_species_table.tsv
