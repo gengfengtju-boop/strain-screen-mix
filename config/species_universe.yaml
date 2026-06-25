@@ -1,0 +1,44 @@
+# Species universe for candidate-strain prediction.
+#
+# Defines which microbial genera/species the pipeline recognizes and predicts over.
+# Split by safety/source category because human-derived next-generation probiotics
+# (NGPs) and commensals have different regulatory/safety profiles than food-grade
+# probiotics and MUST pass genome safety screening before any recommendation.
+
+# Traditional food-grade / fermentation probiotics (QPS / GRAS history)
+food_grade_probiotics:
+  Lactobacillus: [acidophilus, gasseri, helveticus, johnsonii, crispatus]
+  Lacticaseibacillus: [rhamnosus, paracasei, casei]
+  Lactiplantibacillus: [plantarum]
+  Limosilactobacillus: [reuteri, fermentum]
+  Bifidobacterium: [animalis, longum, breve, bifidum, adolescentis]
+  Streptococcus: [thermophilus]
+  Lactococcus: [lactis]
+  Pediococcus: [acidilactici, pentosaceus]
+  Bacillus: [coagulans, subtilis]
+  Saccharomyces: [boulardii]
+
+# Human-derived gut microbes / next-generation probiotics (commensal-sourced).
+# Require strain-level genome safety, AMR/virulence screening, and (most) are
+# live-biotherapeutic-product (LBP) regulated, not food supplements.
+human_derived_ngp:
+  Akkermansia: [muciniphila]                 # mucin degrader; pasteurized form trialled
+  Faecalibacterium: [prausnitzii]            # major butyrate producer, anti-inflammatory
+  Bacteroides: [uniformis, fragilis, thetaiotaomicron, ovatus, xylanisolvens]
+  Parabacteroides: [distasonis, goldsteinii]
+  Roseburia: [intestinalis, hominis]         # butyrate producer
+  Anaerobutyricum: [hallii]                  # (Eubacterium hallii) butyrate/propionate
+  Anaerostipes: [caccae]
+  Christensenella: [minuta]                   # heritable, inversely linked to BMI
+  Blautia: [wexlerae, coccoides]
+  Eubacterium: [rectale, hallii]
+  Phascolarctobacterium: [faecium]            # succinate->propionate
+  Clostridium: [butyricum]                    # butyrate producer (probiotic in Asia)
+  Hafnia: [alvei]                             # appetite/satiety (ClpB mimicry)
+  Dysosmobacter: [welbionis]                  # butyrate producer, anti-adiposity
+  Coprococcus: [comes, eutactus]
+
+# Categories that gate downstream safety handling.
+safety_categories:
+  food_grade_probiotics: qps_gras_history_lower_barrier
+  human_derived_ngp: requires_genome_safety_and_lbp_regulatory_review

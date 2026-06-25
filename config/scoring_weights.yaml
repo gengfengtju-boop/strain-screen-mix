@@ -11,11 +11,28 @@ strain_scores:
   probiotic_use_history: 0.10
 
 combination_scores:
-  complementarity_score: 0.25
-  microbiome_matching_score: 0.25
-  predicted_response_score: 0.20
-  literature_evidence_score: 0.15
-  validation_feasibility_score: 0.15
+  clinical_evidence_score: 0.45
+  combination_design_score: 0.55
+
+combination_design_weights:
+  complementarity_score: 0.35
+  synergy_score: 0.30
+  microbiome_matching_score: 0.20
+  formulation_recovery_score: 0.15
+
+robust_optimizer:
+  endpoint_weights:
+    adiposity: 1.0
+    metabolic: 0.7
+    microbiome: 0.35
+    other: 0.5
+  score_weight_center:
+    clinical_evidence: 0.45
+    module_coverage: 0.20
+    formulation_integrity: 0.15
+    evidence_independence: 0.10
+    genus_diversity: 0.10
+  dirichlet_concentration: 80.0
 
 combination_generation:
   min_strains: 3

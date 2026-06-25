@@ -22,6 +22,9 @@ modeling = [
   "lightgbm>=4.0",
   "shap>=0.44"
 ]
+modern-modeling = [
+  "catboost>=1.2.10,<2"
+]
 tabular-foundation = [
   "tabpfn>=8,<9",
   "torch>=2.5,<3"

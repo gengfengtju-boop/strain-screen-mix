@@ -20,7 +20,7 @@
 | 肥胖模型 | `scripts/obesity_model` | 训练 BMI 回归和肥胖状态分类模型 |
 | 响应模型 | `scripts/responder_model` | 预测益生菌或合生元干预响应概率 |
 | 菌株注释 | `scripts/strain_annotation` | 建立候选菌株安全性和功能矩阵 |
-| 组合推荐 | `scripts/combination_recommendation` | 生成并排序 2-4 株益生菌组合 |
+| 组合推荐 | `scripts/combination_recommendation` | 生成并排序 3-5 株益生菌组合 |
 | 可视化 | `scripts/visualization` | 输出 SHAP、特征排名、功能覆盖和组合排序图 |
 | 报告生成 | `scripts/report_generation` | 生成肥胖菌群状态、响应预测、菌株评分和组合推荐报告 |
 

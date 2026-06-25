@@ -1,7 +1,7 @@
 obesity_models:
   BMI_regression:
     implementation_status: baseline_implemented_requires_real_sample_data
-    implemented_algorithm: ElasticNet
+    implemented_algorithm: HistGradientBoostingRegressor
     planned_algorithms:
       - RandomForestRegressor
       - XGBoostRegressor
@@ -14,7 +14,7 @@ obesity_models:
       - Spearman
   obesity_classification:
     implementation_status: baseline_implemented_requires_real_sample_data
-    implemented_algorithm: LogisticRegression_regularized
+    implemented_algorithm: HistGradientBoostingClassifier
     planned_algorithms:
       - RandomForestClassifier
       - XGBoostClassifier
@@ -44,6 +44,11 @@ responder_models:
     - LogisticRegression_regularized
     - RandomForestClassifier
     - GradientBoostingClassifier
+    - HistGradientBoostingClassifier_regularized
+    - ExtraTreesClassifier_regularized
+    - LightGBM_regularized
+    - CatBoost_ordered_regularized
+    - TabPFNClassifier
     - DummyClassifier_prior
 
 interpretability:

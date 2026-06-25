@@ -9,10 +9,12 @@ validation_strategies:
     enabled: true
     group_column: study_id
   external_database_validation:
-    enabled: true
+    enabled: false
+    implementation_status: planned_requires_independent_dataset
     group_column: database_source
   country_region_validation:
-    enabled: true
+    enabled: false
+    implementation_status: planned_requires_sufficient_country_coverage
     group_column: country
 
 batch_variables:
@@ -25,4 +27,3 @@ batch_variables:
 
 decision_rule:
   require_leave_one_study_out_for_recommendation: true
-
