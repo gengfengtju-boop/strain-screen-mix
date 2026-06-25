@@ -1,0 +1,22 @@
+evidence_id,lipid_subtype,effect_difference_mgdl,raw_value,source_unit,between_group_p,source_clause
+PMID:40409234,TG,0.0,0.0,mg/dL,0.10,probiotic 0 (-49
+PMID:40409234,TG,0.0,0.0,mg/dL,0.10,0) vs control 0 (-10
+PMID:40409234,TG,6.0,6.0,mg/dL,0.10,6)
+PMID:40385498,HDL,-5.0,-5.0,mg/dL,0.011,"HDL intervention -3 (-15, 9) vs placebo +2 (-2.75, 7.00)"
+PMID:40385498,TG,21.5,21.5,mg/dL,0.011,TG intervention +13.50 vs placebo -8.00
+PMID:39051504,TG,-28.0,-28.0,mg/dL,0.0088,probiotic -15 +/- 62 vs placebo +13 +/- 60
+PMID:38542727,TG,-18.59,-18.59,mg/dL,0.021,probiotics 108.98 vs placebo 127.57 at week 16
+PMID:38542727,TG,-21.89,-21.89,mg/dL,0.021,probiotics -21.89 from baseline
+PMID:40066582,TC,-10.59,-10.59,mg/dL,0.193,TC probiotic -36.50 +/- 19.27 vs placebo -25.91 +/- 19.25
+PMID:40066582,LDL,0.16,0.16,mg/dL,0.193,LDL probiotic -31.75 +/- 18.11 vs placebo -31.91 +/- 31.00
+PMID:40066582,TG,-3.58,-3.58,mg/dL,0.193,TG probiotic -31.83 +/- 67.37 vs placebo -28.25 +/- 59.09
+EUROPEPMC:40676704,TG,21.0,21.0,mg/dL,nan,BL21 -0.21 +/- 1.09
+EUROPEPMC:41413231,LDL,-10.83,-10.83,mg/dL,0.002,LDL-C -10.83 mg/dL
+EUROPEPMC:41413231,TC,-11.78,-11.78,mg/dL,0.002,total cholesterol -11.78 mg/dL
+PMID:40828642,TC,-23.59,-0.61,mmol/L,<0.001,total cholesterol -0.70 vs -0.09
+PMID:40828642,LDL,-18.17,-0.47,mmol/L,<0.001,LDL-C -0.53 vs -0.06
+PMID:37545298,LDL,14.31,0.37,mmol/L,0.03,LDL-C +0.34 vs -0.03
+PMID:37545298,TG,-8.86,-0.1,mmol/L,0.03,TG -0.19 vs -0.09
+PMID:37545298,TC,15.47,0.4,mmol/L,0.03,total cholesterol +0.20 vs -0.20
+NCT:NCT06795607,LDL,0.1,0.1,mg/dL,0.048,HDL/LDL ratio +0.1 vs 0
+NCT:NCT06795607,TC,-17.2,-17.2,mg/dL,0.048,total cholesterol -11 vs +6.2 mg/dL

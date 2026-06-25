@@ -1,0 +1,18 @@
+genus,bsh_potential,butyrate_scfa_potential,mucin_interaction,lactate_acetate,propionate_potential,reference_genome_example,provenance
+Lactobacillus,2,0,1,2,0,GCF_000014425,taxonomy-assigned from comparative genomics (BSH widespread; homofermentative lactate; no butyrate)
+Lacticaseibacillus,2,0,1,2,0,GCF_000026505,taxonomy-assigned (BSH+; lactate; adhesion)
+Lactiplantibacillus,2,0,1,2,0,GCF_000203855,taxonomy-assigned (BSH+; lactate; EPS/adhesion)
+Limosilactobacillus,2,0,1,2,0,GCF_000159475,taxonomy-assigned (reuteri/fermentum BSH+; reuterin)
+Bifidobacterium,1,0,1,2,0,GCF_000007525,taxonomy-assigned (bifid shunt acetate/lactate; BSH variable; no butyrate)
+Bacillus,1,0,0,1,0,GCF_000832905,taxonomy-assigned (spore-former; some BSH; lactate)
+Streptococcus,0,0,0,2,0,GCF_000011765,taxonomy-assigned (thermophilus lactate; no BSH/butyrate)
+Akkermansia,0,0,2,1,2,GCF_000020225,"taxonomy-assigned (mucin degrader -> propionate/acetate; NO BSH; NO butyrate)"
+Faecalibacterium,0,2,0,0,0,GCF_003312465,taxonomy-assigned (major butyrate producer; anti-inflammatory)
+Roseburia,0,2,0,0,0,GCF_000209855,taxonomy-assigned (butyrate producer from fiber)
+Anaerostipes,0,2,0,0,0,GCF_002161765,taxonomy-assigned (lactate->butyrate cross-feeder)
+Anaerobutyricum,0,2,0,0,1,GCF_008725655,taxonomy-assigned (E. hallii; butyrate/propionate)
+Clostridium,0,2,0,0,0,GCF_009363595,taxonomy-assigned (C. butyricum butyrate producer)
+Phascolarctobacterium,0,0,0,0,2,GCF_000159855,taxonomy-assigned (succinate->propionate)
+Parabacteroides,0,1,1,0,2,GCF_000012845,taxonomy-assigned (propionate/succinate; bile acid metabolism)
+Bacteroides,0,1,1,1,2,GCF_000011065,taxonomy-assigned (saccharolytic; propionate; some BSH)
+Hafnia,0,0,0,1,0,GCF_000730045,taxonomy-assigned (ClpB appetite signalling; no SCFA niche)

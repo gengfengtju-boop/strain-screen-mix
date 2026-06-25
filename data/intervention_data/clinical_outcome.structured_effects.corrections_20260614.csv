@@ -1,0 +1,3 @@
+evidence_id,outcome_domain,comparison,effect_difference,effect_unit,between_group_p,source_final_value,source_note
+PMID:40066582,body_fat,probiotic_vs_placebo_change,-0.42,percentage-point body fat change,0.443,"fat mass % probiotic -1.98 +/- 1.63 vs placebo -1.56 +/- 2.20","Corrected split of a mixed-unit source row; both groups received low-calorie medical nutrition therapy."
+PMID:40066582,body_fat,probiotic_vs_placebo_change,0.65,kg fat mass change,0.347,"fat mass kg probiotic -2.04 +/- 2.29 vs placebo -2.69 +/- 2.34","Corrected split of a mixed-unit source row; positive values favor placebo; both groups received low-calorie medical nutrition therapy."
