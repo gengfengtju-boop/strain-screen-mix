@@ -101,6 +101,7 @@ try {
     $formulationOutput = Join-RootPath "results/candidate_strain_scores/formulation_blocks.$OutputTag.csv"
     $combinationOutput = Join-RootPath "results/combination_ranking/formulation_aware_3to5_strain_combinations.$OutputTag.csv"
     $modelCombinationOutput = Join-RootPath "results/combination_ranking/model_response_3to5_strain_combinations.$OutputTag.csv"
+    $safetyStatus = Join-RootPath "results/candidate_strain_scores/combination_safety_gate_eligibility_20260613.csv"
 
     foreach ($dir in @($literatureDir, $interventionDir, $predictionDir, $strainScoreDir, $combinationDir, $modelDir)) {
         New-Item -ItemType Directory -Force -Path $dir | Out-Null
@@ -181,7 +182,13 @@ try {
     Invoke-ProSlim @("prioritize-with-outcomes", $preliminary, $reviewForFinalization, $outcomeAware)
 
     Write-Host "`n[11/12] Generate formulation-aware strain and combination ranking"
-    Invoke-ProSlim @("recommend-formulations", $strainOutput, $formulationOutput, $combinationOutput, "--min-strains", "3", "--max-strains", "5", "--top-n", "50")
+    $recommendArgs = @("recommend-formulations", $strainOutput, $formulationOutput, $combinationOutput, "--min-strains", "3", "--max-strains", "5", "--top-n", "50")
+    if (Test-Path $safetyStatus) {
+        $recommendArgs += @("--safety-status", $safetyStatus)
+    } else {
+        Write-Warning "Safety-status table not found; all candidate strains remain pending."
+    }
+    Invoke-ProSlim $recommendArgs
 
     if ($TrainResponseModel) {
         Write-Host "`n[12/12] Train study-endpoint evidence classifier"
