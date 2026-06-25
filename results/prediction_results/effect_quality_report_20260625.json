@@ -1,0 +1,42 @@
+{
+  "date": "2026-06-25",
+  "effect_rows": 137,
+  "analysis_trial_ids": 78,
+  "primary_analysis_eligible_rows": 55,
+  "primary_analysis_trials": 19,
+  "flag_counts": {
+    "is_microbial_arm": 79,
+    "comparison_matches_microbial_arm": 137,
+    "is_high_confidence": 68,
+    "has_variance": 57,
+    "has_direct_variance": 27,
+    "mixed_or_unspecified_unit": 5,
+    "review_like_title": 9,
+    "robust_outlier_flag": 2,
+    "duplicate_publication_alias": 11,
+    "multiple_effects_same_trial_stratum": 10,
+    "primary_analysis_eligible": 55
+  },
+  "cointervention_rows": 18,
+  "excluded_nonmicrobial_comparisons": [],
+  "duplicate_alias_groups": {
+    "DOI:10.3803/EnM.2020.35.2.425": [
+      "DOI:10.3803/EnM.2020.35.2.425",
+      "PMID:32615727"
+    ],
+    "PMID:36530587": [
+      "EUROPEPMC:36530587",
+      "PMID:36530587"
+    ],
+    "PMID:40951500": [
+      "EUROPEPMC:40951500",
+      "PMID:40951500"
+    ],
+    "PMID:41003008": [
+      "EUROPEPMC:41003008",
+      "PMID:41003008"
+    ]
+  },
+  "policy": "Primary analysis requires a high-confidence microbial-arm effect, a matching microbial contrast, a comparable physical unit, a primary-study title, and no robust within-stratum outlier flag calculated only among otherwise eligible records. Missing variance and balanced cointerventions are retained but explicitly audited.",
+  "audit_table": "results/prediction_results/effect_quality_audit_20260625.csv"
+}

@@ -1,0 +1,11 @@
+{
+  "run_stamp": "20260625",
+  "candidate_rows": 12,
+  "ready_for_manual_confirmation": 0,
+  "balanced_n_sensitivity_only": 12,
+  "needs_full_text_arm_n": 0,
+  "blocked_rows": 6,
+  "production_manifest_updated": false,
+  "candidate_output": "data/intervention_data/clinical_outcome.structured_effects.direct_variance_candidates_20260625.csv",
+  "blocked_output": "results/prediction_results/direct_variance_candidate_blocked_20260625.csv"
+}

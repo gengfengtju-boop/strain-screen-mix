@@ -1,0 +1,41 @@
+{
+  "run_stamp": "20260625",
+  "policy": {
+    "schema_version": 1,
+    "minimum_relative_mae_improvement": 0.1,
+    "minimum_external_studies": 5,
+    "minimum_direct_variance_studies_per_stratum": 5,
+    "maximum_i2_percent": 50.0,
+    "require_prediction_interval_excludes_zero": true,
+    "require_temporal_or_prospective_external_validation": true,
+    "combination_ranking_enabled_before_all_gates_pass": false
+  },
+  "eligible_independent_studies": 19,
+  "identifier_source_counts": {
+    "PMID": 18,
+    "DOI": 1
+  },
+  "study_registry": "data/intervention_data/study_publication_registry.csv",
+  "studies_with_structured_publication_date": 19,
+  "studies_with_parseable_publication_year": 19,
+  "publication_year_min": 2019,
+  "publication_year_max": 2026,
+  "enrollment_source_counts": {
+    "ClinicalTrials.gov": 4,
+    "CRIS (Korea)": 1,
+    "ReBEC (Brazil)": 1,
+    "ChiCTR (China)": 1
+  },
+  "studies_with_known_enrollment_source": 7,
+  "temporal_holdout_ready": true,
+  "source_holdout_ready": false,
+  "prospective_external_cohort_available": false,
+  "external_validation_gate_passed": false,
+  "blocking_reasons": [
+    "no second enrollment source (trial registry) covers enough independent studies for a source-stratified holdout",
+    "no prospective external cohort has been supplied"
+  ],
+  "temporal_split_feasible": true,
+  "required_next_data": "Publication dates are now recorded in the study registry, so a temporal holdout is feasible. Still required before the gate can pass: a second enrollment source with >=5 independent studies, or at least five wholly unseen canonical trials or a prospective external cohort.",
+  "combination_ranking_enabled": false
+}

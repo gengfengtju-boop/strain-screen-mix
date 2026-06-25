@@ -1,0 +1,160 @@
+{
+  "model_level": "small_sample_random_effects_meta_analysis",
+  "method": "Paule-Mandel tau2 plus modified Hartung-Knapp-Sidik-Jonkman interval; DerSimonian-Laird retained as sensitivity; one most-precise effect per study",
+  "minimum_direct_variance_studies": 3,
+  "strata_meta_analyzed": 2,
+  "strata_with_pooled_effect_excluding_zero": 2,
+  "strata_replication_ready": 1,
+  "strata": [
+    {
+      "k_studies": 5,
+      "pooled_effect": -0.4384,
+      "standard_error": 0.034,
+      "ci95_low": -0.5326,
+      "ci95_high": -0.3441,
+      "ci_excludes_zero": true,
+      "tau2": 0.0,
+      "i2_percent": 0.0,
+      "cochran_q": 0.4987,
+      "q_pvalue": 0.9736,
+      "prediction_interval_low": -0.5464,
+      "prediction_interval_high": -0.3303,
+      "tau2_method": "Paule-Mandel",
+      "interval_method": "modified Hartung-Knapp-Sidik-Jonkman",
+      "hksj_variance_safeguard_applied": true,
+      "dersimonian_laird_sensitivity": {
+        "pooled_effect": -0.4384,
+        "ci95_low": -0.5049,
+        "ci95_high": -0.3718,
+        "ci_excludes_zero": true,
+        "tau2": 0.0
+      },
+      "stratum": "BMI|kg/m2",
+      "status": "random_effects_meta_analyzed",
+      "variance_policy": "reported_ci_or_arm_sd_and_n_only",
+      "pvalue_backcalculated_sensitivity": {
+        "k_studies": 9,
+        "pooled_effect": -0.2381,
+        "standard_error": 0.0977,
+        "ci95_low": -0.4635,
+        "ci95_high": -0.0127,
+        "ci_excludes_zero": true,
+        "tau2": 0.047,
+        "i2_percent": 66.9,
+        "cochran_q": 24.157,
+        "q_pvalue": 0.0022,
+        "prediction_interval_low": -0.8005,
+        "prediction_interval_high": 0.3243,
+        "tau2_method": "Paule-Mandel",
+        "interval_method": "modified Hartung-Knapp-Sidik-Jonkman",
+        "hksj_variance_safeguard_applied": true
+      },
+      "transfer_interval_excludes_zero": true,
+      "replication_ready": true,
+      "evidence_state": "replication_ready_statistical_signal"
+    },
+    {
+      "stratum": "body_fat|%",
+      "k_studies": 0,
+      "pvalue_backcalculated_studies_excluded": 1,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "stratum": "body_fat|cm",
+      "k_studies": 0,
+      "pvalue_backcalculated_studies_excluded": 1,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "stratum": "body_fat|kg",
+      "k_studies": 2,
+      "pvalue_backcalculated_studies_excluded": 4,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "stratum": "glucose|mmol/mol",
+      "k_studies": 1,
+      "pvalue_backcalculated_studies_excluded": 0,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "stratum": "lipid_LDL|mg/dL",
+      "k_studies": 0,
+      "pvalue_backcalculated_studies_excluded": 1,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "stratum": "lipid_TC|mg/dL",
+      "k_studies": 0,
+      "pvalue_backcalculated_studies_excluded": 1,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "stratum": "lipid_TG|mg/dL",
+      "k_studies": 1,
+      "pvalue_backcalculated_studies_excluded": 2,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "stratum": "waist|cm",
+      "k_studies": 1,
+      "pvalue_backcalculated_studies_excluded": 3,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "stratum": "waist|ratio",
+      "k_studies": 1,
+      "pvalue_backcalculated_studies_excluded": 0,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "k_studies": 7,
+      "pooled_effect": -1.3947,
+      "standard_error": 0.2917,
+      "ci95_low": -2.1083,
+      "ci95_high": -0.681,
+      "ci_excludes_zero": true,
+      "tau2": 0.2918,
+      "i2_percent": 54.8,
+      "cochran_q": 13.265,
+      "q_pvalue": 0.039,
+      "prediction_interval_low": -2.9726,
+      "prediction_interval_high": 0.1833,
+      "tau2_method": "Paule-Mandel",
+      "interval_method": "modified Hartung-Knapp-Sidik-Jonkman",
+      "hksj_variance_safeguard_applied": true,
+      "dersimonian_laird_sensitivity": {
+        "pooled_effect": -1.2501,
+        "ci95_low": -1.6491,
+        "ci95_high": -0.8511,
+        "ci_excludes_zero": true,
+        "tau2": 0.104
+      },
+      "stratum": "weight|kg",
+      "status": "random_effects_meta_analyzed",
+      "variance_policy": "reported_ci_or_arm_sd_and_n_only",
+      "pvalue_backcalculated_sensitivity": {
+        "k_studies": 11,
+        "pooled_effect": -0.9192,
+        "standard_error": 0.3975,
+        "ci95_low": -1.8048,
+        "ci95_high": -0.0336,
+        "ci_excludes_zero": true,
+        "tau2": 1.045,
+        "i2_percent": 64.9,
+        "cochran_q": 28.4786,
+        "q_pvalue": 0.0015,
+        "prediction_interval_low": -3.4003,
+        "prediction_interval_high": 1.5619,
+        "tau2_method": "Paule-Mandel",
+        "interval_method": "modified Hartung-Knapp-Sidik-Jonkman",
+        "hksj_variance_safeguard_applied": false
+      },
+      "transfer_interval_excludes_zero": false,
+      "replication_ready": false,
+      "evidence_state": "statistical_interval_only_not_replication_ready"
+    }
+  ],
+  "combination_ranking_enabled": false,
+  "limitation": "Primary synthesis uses only reported confidence intervals or arm SD and n. P-value-backcalculated standard errors are sensitivity-only. Internal small-sample random-effects synthesis of curated between-group effects. A pooled CI excluding zero indicates a consistent direction across these studies; it is not external/clinical validation and high I^2 signals the pooled estimate may not transfer to a new population."
+}
