@@ -30,6 +30,7 @@
     "data/literature_database/evidence_details.expansion2_new_top300.csv",
     "data/literature_database/evidence_details.supplement_new_top160.csv",
     "data/literature_database/evidence_details.supplement_next_top160.csv",
-    "data/literature_database/evidence_details.top100.csv"
+    "data/literature_database/evidence_details.top100.csv",
+    "data/literature_database/evidence_details.direct_variance_patch_20260617.csv"
   ]
 }
