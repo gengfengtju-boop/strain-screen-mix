@@ -1,0 +1,47 @@
+{
+  "run_stamp": "20260617",
+  "sensitivity_rows_added": 5,
+  "production_policy": "balanced_arm_n_inferred rows are sensitivity-only and are not counted as reported_ci or arm_sd_and_n direct variance.",
+  "strata": [
+    {
+      "stratum": "BMI|kg/m2",
+      "high_confidence_studies": 14,
+      "direct_variance_studies": 7,
+      "direct_plus_balanced_n_studies": 9,
+      "balanced_n_increment": 2,
+      "meets_10_study_direct_target_in_sensitivity": false
+    },
+    {
+      "stratum": "body_fat|kg",
+      "high_confidence_studies": 6,
+      "direct_variance_studies": 2,
+      "direct_plus_balanced_n_studies": 4,
+      "balanced_n_increment": 2,
+      "meets_10_study_direct_target_in_sensitivity": false
+    },
+    {
+      "stratum": "lipid_TG|mg/dL",
+      "high_confidence_studies": 6,
+      "direct_variance_studies": 1,
+      "direct_plus_balanced_n_studies": 1,
+      "balanced_n_increment": 0,
+      "meets_10_study_direct_target_in_sensitivity": false
+    },
+    {
+      "stratum": "waist|cm",
+      "high_confidence_studies": 5,
+      "direct_variance_studies": 2,
+      "direct_plus_balanced_n_studies": 2,
+      "balanced_n_increment": 0,
+      "meets_10_study_direct_target_in_sensitivity": false
+    },
+    {
+      "stratum": "weight|kg",
+      "high_confidence_studies": 17,
+      "direct_variance_studies": 10,
+      "direct_plus_balanced_n_studies": 11,
+      "balanced_n_increment": 1,
+      "meets_10_study_direct_target_in_sensitivity": true
+    }
+  ]
+}

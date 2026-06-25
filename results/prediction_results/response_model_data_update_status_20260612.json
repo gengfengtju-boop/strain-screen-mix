@@ -1,0 +1,44 @@
+{
+  "date": "2026-06-12",
+  "update": "primary-source-confirmed probiotic dose enrichment",
+  "confirmed_evidence_ids": [
+    "PMID:39456659",
+    "PMID:38542727",
+    "PMID:40409234"
+  ],
+  "pending_evidence": {
+    "PMID:39051504": "source reports >5.0e9 CFU/day; lower-bound censoring not represented",
+    "PMID:40066582": "source reports 1.5e9 CFU/g concentration but not total daily grams"
+  },
+  "dose_coverage_rows": {
+    "before": 20,
+    "after": 33
+  },
+  "dose_coverage_studies_after": 10,
+  "remaining_dose_gap_studies": 14,
+  "primary_sources": [
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11507383/fullTextXML",
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10974859/fullTextXML",
+    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=40409234&retmode=xml",
+    "https://pubs.rsc.org/en/content/articlelanding/2024/fo/d4fo00535j",
+    "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=40066582&retmode=xml"
+  ],
+  "validation_before": {
+    "repeated_auc_mean": 0.6539814814814814,
+    "leave_one_study_out_auc": 0.658912037037037,
+    "study_equal_auc": 0.6369385005890912,
+    "bootstrap_auc_p025": 0.5021095650364694,
+    "model_status": "informative_for_hypothesis_ranking"
+  },
+  "validation_after": {
+    "repeated_auc_mean": 0.6305324074074075,
+    "leave_one_study_out_auc": 0.6269675925925926,
+    "study_equal_auc": 0.6211880154549864,
+    "bootstrap_auc_p025": 0.4691212083123848,
+    "model_status": "non_informative_do_not_apply_to_combinations"
+  },
+  "decision": "downgrade_response_model_and_disable_combination_application",
+  "combination_output": "results/combination_ranking/model_response_3to5_strain_combinations.dose_v3_20260612.csv",
+  "combinations_with_model_probability": 0,
+  "interpretation": "Dose enrichment exposed instability in the prior sparse-dose model. Retain artifacts for audit, but do not use response probabilities for combination ranking until more studies or external validation are available."
+}

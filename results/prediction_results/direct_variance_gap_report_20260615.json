@@ -1,0 +1,15 @@
+{
+  "run_stamp": "20260615",
+  "target_direct_studies_per_core_stratum": 10,
+  "current_direct_studies": {
+    "BMI|kg/m2": 2,
+    "body_fat|kg": 1,
+    "lipid_TG|mg/dL": 1,
+    "waist|cm": 0,
+    "weight|kg": 4
+  },
+  "queue_rows": 106,
+  "included_missing_direct_rows": 33,
+  "new_direct_variance_candidate_rows": 73,
+  "output": "results/prediction_results/direct_variance_review_queue_20260615.csv"
+}

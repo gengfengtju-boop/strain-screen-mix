@@ -1,0 +1,29 @@
+{
+  "experiment": "E3_normalization_batch_transfer",
+  "note": "ComBat/MMUPHin excluded: batch params unknown for a new cohort -> not transferable.",
+  "transforms": {
+    "log10": {
+      "grouped_cv_auc": 0.7278,
+      "random_cv_auc": 0.8238,
+      "optimism_gap": 0.096,
+      "loso_pooled_external_auc": 0.7204
+    },
+    "clr": {
+      "grouped_cv_auc": 0.726,
+      "random_cv_auc": 0.8198,
+      "optimism_gap": 0.0938,
+      "loso_pooled_external_auc": 0.7121
+    },
+    "rank_within_sample": {
+      "grouped_cv_auc": 0.7255,
+      "random_cv_auc": 0.8179,
+      "optimism_gap": 0.0923,
+      "loso_pooled_external_auc": 0.715
+    }
+  },
+  "baseline": "log10",
+  "best_external_transform": "log10",
+  "best_external_auc": 0.7204,
+  "improves_external_vs_baseline": false,
+  "optimism_gap_reduction_best": 0.0037
+}

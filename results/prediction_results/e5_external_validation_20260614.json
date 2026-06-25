@@ -1,0 +1,152 @@
+{
+  "experiment": "E5_external_validation_obesity_classifier",
+  "design": "leave-one-study-out + study-level 70/30 holdout; lean vs obesity",
+  "internal_grouped_cv_auc_reference": 0.729,
+  "preregistered_success_threshold": 0.65,
+  "loso": {
+    "studies_with_both_classes": 20,
+    "pooled_external_auc": 0.7204,
+    "per_study_auc_median": 0.6443,
+    "per_study_auc_iqr": [
+      0.6122,
+      0.6784
+    ],
+    "per_study_auc_min_max": [
+      0.5312,
+      0.9316
+    ],
+    "fraction_studies_auc_above_0p65": 0.45,
+    "per_study": [
+      {
+        "study": "NagySzakalD_2017",
+        "n": 36,
+        "obese_frac": 0.22,
+        "external_auc": 0.5312
+      },
+      {
+        "study": "HanniganGD_2017",
+        "n": 21,
+        "obese_frac": 0.38,
+        "external_auc": 0.5769
+      },
+      {
+        "study": "JieZ_2017",
+        "n": 121,
+        "obese_frac": 0.09,
+        "external_auc": 0.5884
+      },
+      {
+        "study": "VogtmannE_2016",
+        "n": 40,
+        "obese_frac": 0.2,
+        "external_auc": 0.5977
+      },
+      {
+        "study": "SchirmerM_2016",
+        "n": 388,
+        "obese_frac": 0.02,
+        "external_auc": 0.6043
+      },
+      {
+        "study": "XieH_2016",
+        "n": 119,
+        "obese_frac": 0.21,
+        "external_auc": 0.6149
+      },
+      {
+        "study": "AsnicarF_2021",
+        "n": 742,
+        "obese_frac": 0.22,
+        "external_auc": 0.6165
+      },
+      {
+        "study": "HMP_2012",
+        "n": 95,
+        "obese_frac": 0.18,
+        "external_auc": 0.6237
+      },
+      {
+        "study": "MetaCardis_2020_a",
+        "n": 507,
+        "obese_frac": 0.64,
+        "external_auc": 0.6299
+      },
+      {
+        "study": "LifeLinesDeep_2016",
+        "n": 746,
+        "obese_frac": 0.18,
+        "external_auc": 0.6416
+      },
+      {
+        "study": "HMP_2019_ibdmdb",
+        "n": 268,
+        "obese_frac": 0.19,
+        "external_auc": 0.647
+      },
+      {
+        "study": "CosteaPI_2017",
+        "n": 100,
+        "obese_frac": 0.46,
+        "external_auc": 0.6502
+      },
+      {
+        "study": "ZeeviD_2015",
+        "n": 582,
+        "obese_frac": 0.33,
+        "external_auc": 0.6524
+      },
+      {
+        "study": "KarlssonFH_2013",
+        "n": 82,
+        "obese_frac": 0.4,
+        "external_auc": 0.6673
+      },
+      {
+        "study": "KeohaneDM_2020",
+        "n": 78,
+        "obese_frac": 0.77,
+        "external_auc": 0.6694
+      },
+      {
+        "study": "LiJ_2014",
+        "n": 64,
+        "obese_frac": 0.55,
+        "external_auc": 0.7054
+      },
+      {
+        "study": "RubelMA_2020",
+        "n": 66,
+        "obese_frac": 0.15,
+        "external_auc": 0.7107
+      },
+      {
+        "study": "HansenLBS_2018",
+        "n": 87,
+        "obese_frac": 0.8,
+        "external_auc": 0.7496
+      },
+      {
+        "study": "LeChatelierE_2013",
+        "n": 264,
+        "obese_frac": 0.64,
+        "external_auc": 0.8706
+      },
+      {
+        "study": "NielsenHB_2014",
+        "n": 203,
+        "obese_frac": 0.51,
+        "external_auc": 0.9316
+      }
+    ]
+  },
+  "study_holdout_70_30": {
+    "repeats": 10,
+    "mean_external_auc": 0.7225,
+    "std": 0.0464,
+    "min_max": [
+      0.6426,
+      0.7835
+    ]
+  },
+  "verdict": "transfers_external_auc_above_threshold"
+}

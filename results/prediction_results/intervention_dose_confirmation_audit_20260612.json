@@ -1,0 +1,32 @@
+{
+  "review_file": "F:\\strain screen mix\\data\\intervention_data\\intervention_review_worksheet.expanded_top160.dose_confirmed_20260612.csv",
+  "extracted_rows": 3,
+  "checked_dose_rows": 3,
+  "all_log10_consistent": true,
+  "rows": [
+    {
+      "evidence_id": "PMID:40409234",
+      "total_cfu_per_day": "30000000000",
+      "log10_cfu_per_day": "10.477121",
+      "duration_weeks": "12",
+      "consistent_log10": true,
+      "reviewer": "codex_verified_20260612"
+    },
+    {
+      "evidence_id": "PMID:39456659",
+      "total_cfu_per_day": "10000000000",
+      "log10_cfu_per_day": "10.000000",
+      "duration_weeks": "12",
+      "consistent_log10": true,
+      "reviewer": "codex_verified_20260612"
+    },
+    {
+      "evidence_id": "PMID:38542727",
+      "total_cfu_per_day": "15000000000",
+      "log10_cfu_per_day": "10.176091",
+      "duration_weeks": "16",
+      "consistent_log10": true,
+      "reviewer": "codex_verified_20260612"
+    }
+  ]
+}

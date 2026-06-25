@@ -1,0 +1,38 @@
+{
+  "date": "2026-06-12",
+  "update": "second primary-source dose enrichment and grouped model revalidation",
+  "dose_coverage_rows": {
+    "before": 33,
+    "after": 58
+  },
+  "dose_coverage_studies": {
+    "before": 10,
+    "after": 17
+  },
+  "remaining_dose_gap_studies": 7,
+  "validation_before": {
+    "repeated_auc_mean": 0.6305324074074075,
+    "repeated_auc_std": 0.024420078519751674,
+    "leave_one_study_out_auc": 0.6269675925925926,
+    "study_equal_auc": 0.6211880154549864,
+    "bootstrap_auc_p025": 0.4691212083123848,
+    "model_status": "non_informative_do_not_apply_to_combinations"
+  },
+  "validation_after": {
+    "repeated_auc_mean": 0.6044212962962963,
+    "repeated_auc_std": 0.022531889457477923,
+    "leave_one_study_out_auc": 0.6153935185185185,
+    "study_equal_auc": 0.6054951399958415,
+    "bootstrap_auc_p025": 0.4644500074241806,
+    "model_status": "non_informative_do_not_apply_to_combinations"
+  },
+  "modern_benchmark": {
+    "selected_model": "logistic_l2_strong",
+    "promoted_model": null,
+    "decision": "retain_logistic_l2_strong"
+  },
+  "decision": "retain_probability_gate_and_do_not_apply_model_to_combinations",
+  "combination_output": "results/combination_ranking/model_response_3to5_strain_combinations.dose_v4_20260612.csv",
+  "combinations_with_model_probability": 0,
+  "interpretation": "Broader confirmed-dose coverage reduced apparent discrimination. Dose alone, sample size, and duration do not support stable cross-study response ranking in the current 37-study evidence set."
+}

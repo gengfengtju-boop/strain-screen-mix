@@ -1,0 +1,15 @@
+{
+  "date": "2026-06-17",
+  "target_stratum": "body_fat|kg",
+  "studies": 6,
+  "observed_variance_studies": 2,
+  "negative_effect_studies": 4,
+  "positive_effect_studies": 2,
+  "studies_with_cointervention_flags": 2,
+  "moderator_ready_studies": 3,
+  "outlier_rows_trimmed": 0,
+  "influence_analysis": null,
+  "decision": "priority_replication_hypothesis_not_efficacy_signal",
+  "reason": "The corrected kg-scale evidence contains effects in both directions, sparse strain/dose metadata, and a small observed-variance subset. Influence results are hypothesis-generating only.",
+  "study_table": "results/prediction_results/body_fat_hypothesis_studies_20260617.csv"
+}

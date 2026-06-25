@@ -1,0 +1,37 @@
+{
+  "date": "2026-06-12",
+  "batch": "dose_v4_primary_source_confirmation",
+  "newly_confirmed_evidence_ids": [
+    "PMID:35845797",
+    "PMID:38999741",
+    "PMID:37111082",
+    "PMID:40416368",
+    "PMID:34434546",
+    "PMID:36606510",
+    "EUROPEPMC:40676704"
+  ],
+  "confirmed_rows_total": 10,
+  "remaining_gap_evidence_ids": [
+    "PMID:37447365",
+    "NCT:NCT03261466",
+    "PMID:41512635",
+    "PMID:40066582",
+    "PMID:40385498",
+    "PMID:39051504",
+    "NCT:NCT06795607"
+  ],
+  "remaining_gap_count": 7,
+  "arm_specific_pending": {
+    "PMID:37447365": "Two active arms have different measured daily doses: probiotic 5.46e9 and synbiotic 1.97e9 CFU/day."
+  },
+  "primary_sources": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9286749/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11243028/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10141052/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12100662/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8376682/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10000630/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12273011/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10346309/"
+  ]
+}

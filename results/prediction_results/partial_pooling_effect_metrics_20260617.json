@@ -1,0 +1,49 @@
+{
+  "model_level": "cross_outcome_partial_pooling_ridge_baseline",
+  "validation": "leave_one_canonical_trial_out_with_fold_local_stratum_scaling",
+  "rows_evaluated": 37,
+  "studies_evaluated": 17,
+  "strata_evaluated": 4,
+  "minimum_relative_mae_improvement": 0.1,
+  "strata_passing_improvement_gate": 0,
+  "strata": [
+    {
+      "stratum": "BMI|kg/m2",
+      "rows": 11,
+      "studies": 11,
+      "mae": 0.3198641445732476,
+      "null_mae": 0.3047272727272727,
+      "relative_mae_improvement": -0.04967350546113482,
+      "passes_improvement_gate": false
+    },
+    {
+      "stratum": "body_fat|kg",
+      "rows": 6,
+      "studies": 6,
+      "mae": 0.8318622364562223,
+      "null_mae": 0.896,
+      "relative_mae_improvement": 0.07158232538368053,
+      "passes_improvement_gate": false
+    },
+    {
+      "stratum": "lipid_TG|mg/dL",
+      "rows": 6,
+      "studies": 6,
+      "mae": 19.307835947312363,
+      "null_mae": 17.462,
+      "relative_mae_improvement": -0.10570587259834859,
+      "passes_improvement_gate": false
+    },
+    {
+      "stratum": "weight|kg",
+      "rows": 14,
+      "studies": 14,
+      "mae": 1.468981418282788,
+      "null_mae": 1.1980219780219776,
+      "relative_mae_improvement": -0.22617234510854667,
+      "passes_improvement_gate": false
+    }
+  ],
+  "combination_ranking_enabled": false,
+  "limitation": "Shared ridge coefficients provide partial pooling after fold-local outcome standardization. This is not a strain-specific random-effects estimate and does not replace prospective external validation."
+}

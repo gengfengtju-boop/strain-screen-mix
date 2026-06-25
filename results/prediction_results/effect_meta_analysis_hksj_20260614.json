@@ -1,0 +1,113 @@
+{
+  "model_level": "small_sample_random_effects_meta_analysis",
+  "method": "Paule-Mandel tau2 plus modified Hartung-Knapp-Sidik-Jonkman interval; DerSimonian-Laird retained as sensitivity; one most-precise effect per study",
+  "minimum_direct_variance_studies": 3,
+  "strata_meta_analyzed": 1,
+  "strata_with_pooled_effect_excluding_zero": 1,
+  "strata_replication_ready": 0,
+  "strata": [
+    {
+      "stratum": "BMI|kg/m2",
+      "k_studies": 2,
+      "pvalue_backcalculated_studies_excluded": 2,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "stratum": "body_fat|%",
+      "k_studies": 0,
+      "pvalue_backcalculated_studies_excluded": 1,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "stratum": "body_fat|kg",
+      "k_studies": 1,
+      "pvalue_backcalculated_studies_excluded": 3,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "stratum": "glucose|mmol/mol",
+      "k_studies": 1,
+      "pvalue_backcalculated_studies_excluded": 0,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "stratum": "lipid_LDL|mg/dL",
+      "k_studies": 0,
+      "pvalue_backcalculated_studies_excluded": 1,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "stratum": "lipid_TC|mg/dL",
+      "k_studies": 0,
+      "pvalue_backcalculated_studies_excluded": 1,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "stratum": "lipid_TG|mg/dL",
+      "k_studies": 1,
+      "pvalue_backcalculated_studies_excluded": 2,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "stratum": "waist|cm",
+      "k_studies": 0,
+      "pvalue_backcalculated_studies_excluded": 1,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "stratum": "waist|ratio",
+      "k_studies": 1,
+      "pvalue_backcalculated_studies_excluded": 0,
+      "status": "insufficient_direct_variance_studies"
+    },
+    {
+      "k_studies": 4,
+      "pooled_effect": -1.6238,
+      "standard_error": 0.5085,
+      "ci95_low": -3.242,
+      "ci95_high": -0.0057,
+      "ci_excludes_zero": true,
+      "tau2": 0.7896,
+      "i2_percent": 76.4,
+      "cochran_q": 12.7164,
+      "q_pvalue": 0.0053,
+      "prediction_interval_low": -6.0288,
+      "prediction_interval_high": 2.7812,
+      "tau2_method": "Paule-Mandel",
+      "interval_method": "modified Hartung-Knapp-Sidik-Jonkman",
+      "hksj_variance_safeguard_applied": false,
+      "dersimonian_laird_sensitivity": {
+        "pooled_effect": -1.3405,
+        "ci95_low": -1.8809,
+        "ci95_high": -0.8001,
+        "ci_excludes_zero": true,
+        "tau2": 0.1692
+      },
+      "stratum": "weight|kg",
+      "status": "random_effects_meta_analyzed",
+      "variance_policy": "reported_ci_or_arm_sd_and_n_only",
+      "pvalue_backcalculated_sensitivity": {
+        "k_studies": 5,
+        "pooled_effect": -1.3045,
+        "standard_error": 0.6768,
+        "ci95_low": -3.1837,
+        "ci95_high": 0.5746,
+        "ci_excludes_zero": false,
+        "tau2": 1.8348,
+        "i2_percent": 76.2,
+        "cochran_q": 16.7927,
+        "q_pvalue": 0.0021,
+        "prediction_interval_low": -6.1235,
+        "prediction_interval_high": 3.5144,
+        "tau2_method": "Paule-Mandel",
+        "interval_method": "modified Hartung-Knapp-Sidik-Jonkman",
+        "hksj_variance_safeguard_applied": true
+      },
+      "transfer_interval_excludes_zero": false,
+      "replication_ready": false,
+      "evidence_state": "statistical_interval_only_not_replication_ready"
+    }
+  ],
+  "combination_ranking_enabled": false,
+  "limitation": "Primary synthesis uses only reported confidence intervals or arm SD and n. P-value-backcalculated standard errors are sensitivity-only. Internal small-sample random-effects synthesis of curated between-group effects. A pooled CI excluding zero indicates a consistent direction across these studies; it is not external/clinical validation and high I^2 signals the pooled estimate may not transfer to a new population."
+}

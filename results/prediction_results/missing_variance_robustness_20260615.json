@@ -1,0 +1,364 @@
+{
+  "model_level": "missing_variance_robustness_triangulation",
+  "method": "Direct-variance PM/HKSJ (reported CI or arm SD+n); median- and upper-quartile-variance imputation as sensitivity analyses; study-level median bootstrap and exact sign test",
+  "minimum_studies": 3,
+  "bootstrap_iterations": 10000,
+  "strata_analyzed": 5,
+  "evidence_state_counts": {
+    "directionally_consistent_but_uncertain": 2,
+    "sensitivity_only_insufficient_observed_variances": 3
+  },
+  "strata": [
+    {
+      "k_studies": 11,
+      "observed_variance_studies": 2,
+      "missing_variance_studies": 9,
+      "variance_scenarios": {
+        "observed_variance_only": {
+          "k_studies": 2,
+          "pooled_effect": -0.4421,
+          "standard_error": 0.0355,
+          "ci95_low": -0.8927,
+          "ci95_high": 0.0085,
+          "ci_excludes_zero": false,
+          "tau2": 0.0,
+          "i2_percent": 0.0,
+          "cochran_q": 0.0217,
+          "q_pvalue": 0.8829,
+          "prediction_interval_low": null,
+          "prediction_interval_high": null,
+          "tau2_method": "Paule-Mandel",
+          "interval_method": "modified Hartung-Knapp-Sidik-Jonkman",
+          "hksj_variance_safeguard_applied": true
+        },
+        "impute_stratum_median_variance": {
+          "k_studies": 11,
+          "pooled_effect": -0.0468,
+          "standard_error": 0.1324,
+          "ci95_low": -0.3418,
+          "ci95_high": 0.2482,
+          "ci_excludes_zero": false,
+          "tau2": 0.1877,
+          "i2_percent": 97.6,
+          "cochran_q": 424.1168,
+          "q_pvalue": 0.0,
+          "prediction_interval_low": -1.0716,
+          "prediction_interval_high": 0.9779,
+          "tau2_method": "Paule-Mandel",
+          "interval_method": "modified Hartung-Knapp-Sidik-Jonkman",
+          "hksj_variance_safeguard_applied": true
+        },
+        "impute_stratum_upper_quartile_variance": {
+          "k_studies": 11,
+          "pooled_effect": -0.0475,
+          "standard_error": 0.1324,
+          "ci95_low": -0.3425,
+          "ci95_high": 0.2475,
+          "ci_excludes_zero": false,
+          "tau2": 0.1861,
+          "i2_percent": 97.0,
+          "cochran_q": 332.939,
+          "q_pvalue": 0.0,
+          "prediction_interval_low": -1.0684,
+          "prediction_interval_high": 0.9733,
+          "tau2_method": "Paule-Mandel",
+          "interval_method": "modified Hartung-Knapp-Sidik-Jonkman",
+          "hksj_variance_safeguard_applied": false
+        }
+      },
+      "nonparametric_sensitivity": {
+        "k_studies": 11,
+        "median_effect": -0.07,
+        "bootstrap_ci95_low": -0.44,
+        "bootstrap_ci95_high": 0.21,
+        "bootstrap_probability_below_zero": 0.6218,
+        "negative_effect_studies": 6,
+        "positive_effect_studies": 5,
+        "zero_effect_studies": 0,
+        "exact_sign_test_pvalue": 1.0,
+        "leave_one_study_out_direction_stability": 1.0
+      },
+      "evidence_state": "directionally_consistent_but_uncertain",
+      "imputation_is_sensitivity_only": true,
+      "stratum": "BMI|kg/m2",
+      "status": "missing_variance_robustness_analyzed",
+      "outlier_rows_trimmed": 1
+    },
+    {
+      "stratum": "body_fat|%",
+      "k_studies": 2,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "body_fat|cm",
+      "k_studies": 2,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "k_studies": 6,
+      "observed_variance_studies": 1,
+      "missing_variance_studies": 5,
+      "variance_scenarios": {
+        "impute_stratum_median_variance": {
+          "k_studies": 6,
+          "pooled_effect": -0.24,
+          "standard_error": 0.3855,
+          "ci95_low": -1.2309,
+          "ci95_high": 0.7509,
+          "ci_excludes_zero": false,
+          "tau2": 0.2168,
+          "i2_percent": 24.3,
+          "cochran_q": 6.6063,
+          "q_pvalue": 0.2516,
+          "prediction_interval_low": -1.9182,
+          "prediction_interval_high": 1.4382,
+          "tau2_method": "Paule-Mandel",
+          "interval_method": "modified Hartung-Knapp-Sidik-Jonkman",
+          "hksj_variance_safeguard_applied": false
+        },
+        "impute_stratum_upper_quartile_variance": {
+          "k_studies": 6,
+          "pooled_effect": -0.24,
+          "standard_error": 0.3855,
+          "ci95_low": -1.2309,
+          "ci95_high": 0.7509,
+          "ci_excludes_zero": false,
+          "tau2": 0.2168,
+          "i2_percent": 24.3,
+          "cochran_q": 6.6063,
+          "q_pvalue": 0.2516,
+          "prediction_interval_low": -1.9182,
+          "prediction_interval_high": 1.4382,
+          "tau2_method": "Paule-Mandel",
+          "interval_method": "modified Hartung-Knapp-Sidik-Jonkman",
+          "hksj_variance_safeguard_applied": false
+        }
+      },
+      "nonparametric_sensitivity": {
+        "k_studies": 6,
+        "median_effect": -0.515,
+        "bootstrap_ci95_low": -1.085,
+        "bootstrap_ci95_high": 0.88,
+        "bootstrap_probability_below_zero": 0.7655,
+        "negative_effect_studies": 4,
+        "positive_effect_studies": 2,
+        "zero_effect_studies": 0,
+        "exact_sign_test_pvalue": 0.6875,
+        "leave_one_study_out_direction_stability": 1.0
+      },
+      "evidence_state": "sensitivity_only_insufficient_observed_variances",
+      "imputation_is_sensitivity_only": true,
+      "stratum": "body_fat|kg",
+      "status": "missing_variance_robustness_analyzed",
+      "outlier_rows_trimmed": 0
+    },
+    {
+      "stratum": "glucose|%",
+      "k_studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "glucose|mg/dL",
+      "k_studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "glucose|mmol/L",
+      "k_studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "glucose|mmol/mol",
+      "k_studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "lipid_HDL|mg/dL",
+      "k_studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "lipid_LDL|mg/dL",
+      "k_studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "lipid_TC|mg/dL",
+      "k_studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "k_studies": 6,
+      "observed_variance_studies": 1,
+      "missing_variance_studies": 5,
+      "variance_scenarios": {
+        "impute_stratum_median_variance": {
+          "k_studies": 6,
+          "pooled_effect": -8.5783,
+          "standard_error": 7.4899,
+          "ci95_low": -27.8318,
+          "ci95_high": 10.6751,
+          "ci_excludes_zero": false,
+          "tau2": 201.8678,
+          "i2_percent": 60.0,
+          "cochran_q": 12.4918,
+          "q_pvalue": 0.0286,
+          "prediction_interval_low": -53.1718,
+          "prediction_interval_high": 36.0151,
+          "tau2_method": "Paule-Mandel",
+          "interval_method": "modified Hartung-Knapp-Sidik-Jonkman",
+          "hksj_variance_safeguard_applied": false
+        },
+        "impute_stratum_upper_quartile_variance": {
+          "k_studies": 6,
+          "pooled_effect": -8.5783,
+          "standard_error": 7.4899,
+          "ci95_low": -27.8318,
+          "ci95_high": 10.6751,
+          "ci_excludes_zero": false,
+          "tau2": 201.8678,
+          "i2_percent": 60.0,
+          "cochran_q": 12.4918,
+          "q_pvalue": 0.0286,
+          "prediction_interval_low": -53.1718,
+          "prediction_interval_high": 36.0151,
+          "tau2_method": "Paule-Mandel",
+          "interval_method": "modified Hartung-Knapp-Sidik-Jonkman",
+          "hksj_variance_safeguard_applied": false
+        }
+      },
+      "nonparametric_sensitivity": {
+        "k_studies": 6,
+        "median_effect": -11.085,
+        "bootstrap_ci95_low": -25.4,
+        "bootstrap_ci95_high": 10.75,
+        "bootstrap_probability_below_zero": 0.8756,
+        "negative_effect_studies": 4,
+        "positive_effect_studies": 1,
+        "zero_effect_studies": 1,
+        "exact_sign_test_pvalue": 0.375,
+        "leave_one_study_out_direction_stability": 1.0
+      },
+      "evidence_state": "sensitivity_only_insufficient_observed_variances",
+      "imputation_is_sensitivity_only": true,
+      "stratum": "lipid_TG|mg/dL",
+      "status": "missing_variance_robustness_analyzed",
+      "outlier_rows_trimmed": 0
+    },
+    {
+      "stratum": "lipid|mmol/L",
+      "k_studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "waist|%",
+      "k_studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "k_studies": 4,
+      "observed_variance_studies": 0,
+      "missing_variance_studies": 4,
+      "variance_scenarios": {},
+      "nonparametric_sensitivity": {
+        "k_studies": 4,
+        "median_effect": -0.505,
+        "bootstrap_ci95_low": -1.17,
+        "bootstrap_ci95_high": 1.2,
+        "bootstrap_probability_below_zero": 0.7442,
+        "negative_effect_studies": 3,
+        "positive_effect_studies": 1,
+        "zero_effect_studies": 0,
+        "exact_sign_test_pvalue": 0.625,
+        "leave_one_study_out_direction_stability": 1.0
+      },
+      "evidence_state": "sensitivity_only_insufficient_observed_variances",
+      "imputation_is_sensitivity_only": true,
+      "stratum": "waist|cm",
+      "status": "missing_variance_robustness_analyzed",
+      "outlier_rows_trimmed": 0
+    },
+    {
+      "stratum": "waist|ratio",
+      "k_studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "k_studies": 14,
+      "observed_variance_studies": 4,
+      "missing_variance_studies": 10,
+      "variance_scenarios": {
+        "observed_variance_only": {
+          "k_studies": 4,
+          "pooled_effect": -1.6238,
+          "standard_error": 0.5085,
+          "ci95_low": -3.242,
+          "ci95_high": -0.0057,
+          "ci_excludes_zero": true,
+          "tau2": 0.7896,
+          "i2_percent": 76.4,
+          "cochran_q": 12.7164,
+          "q_pvalue": 0.0053,
+          "prediction_interval_low": -6.0288,
+          "prediction_interval_high": 2.7812,
+          "tau2_method": "Paule-Mandel",
+          "interval_method": "modified Hartung-Knapp-Sidik-Jonkman",
+          "hksj_variance_safeguard_applied": false
+        },
+        "impute_stratum_median_variance": {
+          "k_studies": 14,
+          "pooled_effect": -0.2618,
+          "standard_error": 0.4286,
+          "ci95_low": -1.1878,
+          "ci95_high": 0.6642,
+          "ci_excludes_zero": false,
+          "tau2": 2.302,
+          "i2_percent": 91.0,
+          "cochran_q": 144.775,
+          "q_pvalue": 0.0,
+          "prediction_interval_low": -3.6969,
+          "prediction_interval_high": 3.1733,
+          "tau2_method": "Paule-Mandel",
+          "interval_method": "modified Hartung-Knapp-Sidik-Jonkman",
+          "hksj_variance_safeguard_applied": true
+        },
+        "impute_stratum_upper_quartile_variance": {
+          "k_studies": 14,
+          "pooled_effect": -0.3143,
+          "standard_error": 0.4298,
+          "ci95_low": -1.2428,
+          "ci95_high": 0.6143,
+          "ci_excludes_zero": false,
+          "tau2": 2.0961,
+          "i2_percent": 82.8,
+          "cochran_q": 75.6646,
+          "q_pvalue": 0.0,
+          "prediction_interval_low": -3.6048,
+          "prediction_interval_high": 2.9763,
+          "tau2_method": "Paule-Mandel",
+          "interval_method": "modified Hartung-Knapp-Sidik-Jonkman",
+          "hksj_variance_safeguard_applied": true
+        }
+      },
+      "nonparametric_sensitivity": {
+        "k_studies": 14,
+        "median_effect": -0.53,
+        "bootstrap_ci95_low": -1.16,
+        "bootstrap_ci95_high": 0.755,
+        "bootstrap_probability_below_zero": 0.8434,
+        "negative_effect_studies": 9,
+        "positive_effect_studies": 5,
+        "zero_effect_studies": 0,
+        "exact_sign_test_pvalue": 0.424,
+        "leave_one_study_out_direction_stability": 1.0
+      },
+      "evidence_state": "directionally_consistent_but_uncertain",
+      "imputation_is_sensitivity_only": true,
+      "stratum": "weight|kg",
+      "status": "missing_variance_robustness_analyzed",
+      "outlier_rows_trimmed": 1
+    }
+  ],
+  "combination_ranking_enabled": false,
+  "limitation": "P-value-backcalculated standard errors are treated as missing variance here. Imputed variances do not create new information and are never treated as primary evidence. Sign and median analyses ignore study precision and are used only to check whether conclusions depend entirely on variance availability."
+}

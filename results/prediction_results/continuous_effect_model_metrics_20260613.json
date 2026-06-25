@@ -1,0 +1,306 @@
+{
+  "model_level": "study_arm_continuous_effect_meta_regression",
+  "confidence_policy": "high_confidence_only",
+  "effect_rows_available": 146,
+  "modeling_rows_all_confidence": 70,
+  "modeling_rows_high_confidence": 51,
+  "validation_ready_rows_high_confidence": 16,
+  "high_confidence_independent_studies": 16,
+  "weighting_policy": "inverse_variance_where_available_else_stratum_median",
+  "modeled_strata": 5,
+  "strata_beating_null_baseline": 0,
+  "minimum_studies_per_stratum": 4,
+  "strata": [
+    {
+      "stratum": "BMI|kg/m2",
+      "rows": 10,
+      "studies": 10,
+      "status": "leave_one_study_out_internal_validation",
+      "rows_with_computed_variance": 3,
+      "outlier_rows_trimmed": 1,
+      "weighting": "uniform_ols",
+      "mae": 0.8865800876900647,
+      "rmse": 1.7296806431899598,
+      "weighted_null_mae": 0.3249999999999999,
+      "beats_null_baseline": false
+    },
+    {
+      "stratum": "body_fat|%",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "body_fat|cm",
+      "rows": 2,
+      "studies": 2,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "body_fat|kg",
+      "rows": 5,
+      "studies": 5,
+      "status": "leave_one_study_out_internal_validation",
+      "rows_with_computed_variance": 4,
+      "outlier_rows_trimmed": 1,
+      "weighting": "inverse_variance",
+      "mae": 0.566419116042306,
+      "rmse": 0.6384770627601848,
+      "weighted_null_mae": 0.1876700163497409,
+      "beats_null_baseline": false
+    },
+    {
+      "stratum": "glucose|%",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "glucose|mg/dL",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "glucose|mmol/L",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "lipid_HDL|mg/dL",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "lipid_LDL|mg/dL",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "lipid_TC|mg/dL",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "lipid_TG|mg/dL",
+      "rows": 5,
+      "studies": 5,
+      "status": "leave_one_study_out_internal_validation",
+      "rows_with_computed_variance": 2,
+      "outlier_rows_trimmed": 0,
+      "weighting": "uniform_ols",
+      "mae": 17.654500000000002,
+      "rmse": 20.94641470515832,
+      "weighted_null_mae": 14.0488,
+      "beats_null_baseline": false
+    },
+    {
+      "stratum": "lipid|mg/dL",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "lipid|mmol/L",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "waist|%",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "waist|cm",
+      "rows": 4,
+      "studies": 4,
+      "status": "leave_one_study_out_internal_validation",
+      "rows_with_computed_variance": 1,
+      "outlier_rows_trimmed": 0,
+      "weighting": "uniform_ols",
+      "mae": 1.0004901960784314,
+      "rmse": 1.2200433857570663,
+      "weighted_null_mae": 0.74,
+      "beats_null_baseline": false
+    },
+    {
+      "stratum": "weight|kg",
+      "rows": 12,
+      "studies": 12,
+      "status": "leave_one_study_out_internal_validation",
+      "rows_with_computed_variance": 3,
+      "outlier_rows_trimmed": 1,
+      "weighting": "uniform_ols",
+      "mae": 1.5274674703515407,
+      "rmse": 2.0248844891035738,
+      "weighted_null_mae": 1.3574999999999997,
+      "beats_null_baseline": false
+    }
+  ],
+  "sensitivity_including_abstract_mined": [
+    {
+      "stratum": "BMI|%",
+      "rows": 3,
+      "studies": 3,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "BMI|kg",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "BMI|kg/m2",
+      "rows": 12,
+      "studies": 12,
+      "status": "leave_one_study_out_internal_validation",
+      "rows_with_computed_variance": 3,
+      "outlier_rows_trimmed": 2,
+      "weighting": "uniform_ols",
+      "mae": 0.9864143362874188,
+      "rmse": 1.9279724258533595,
+      "weighted_null_mae": 0.42791666666666667,
+      "beats_null_baseline": false
+    },
+    {
+      "stratum": "body_fat|%",
+      "rows": 2,
+      "studies": 2,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "body_fat|cm",
+      "rows": 2,
+      "studies": 2,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "body_fat|kg",
+      "rows": 8,
+      "studies": 8,
+      "status": "leave_one_study_out_internal_validation",
+      "rows_with_computed_variance": 6,
+      "outlier_rows_trimmed": 0,
+      "weighting": "inverse_variance",
+      "mae": 0.7353006850463217,
+      "rmse": 0.8452008666192541,
+      "weighted_null_mae": 0.2838037890275074,
+      "beats_null_baseline": false
+    },
+    {
+      "stratum": "glucose|%",
+      "rows": 2,
+      "studies": 2,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "glucose|mg/dL",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "glucose|mmol/L",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "lipid_HDL|mg/dL",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "lipid_LDL|mg/dL",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "lipid_TC|mg/dL",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "lipid_TG|mg/dL",
+      "rows": 5,
+      "studies": 5,
+      "status": "leave_one_study_out_internal_validation",
+      "rows_with_computed_variance": 2,
+      "outlier_rows_trimmed": 0,
+      "weighting": "uniform_ols",
+      "mae": 17.654500000000002,
+      "rmse": 20.94641470515832,
+      "weighted_null_mae": 14.0488,
+      "beats_null_baseline": false
+    },
+    {
+      "stratum": "lipid|%",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "lipid|mg/dL",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "lipid|mmol/L",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "waist|%",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "waist|cm",
+      "rows": 5,
+      "studies": 5,
+      "status": "leave_one_study_out_internal_validation",
+      "rows_with_computed_variance": 2,
+      "outlier_rows_trimmed": 0,
+      "weighting": "uniform_ols",
+      "mae": 1.0533695652173913,
+      "rmse": 1.2830644814702752,
+      "weighted_null_mae": 0.8408,
+      "beats_null_baseline": false
+    },
+    {
+      "stratum": "weight|%",
+      "rows": 1,
+      "studies": 1,
+      "status": "insufficient_independent_studies"
+    },
+    {
+      "stratum": "weight|kg",
+      "rows": 16,
+      "studies": 16,
+      "status": "leave_one_study_out_internal_validation",
+      "rows_with_computed_variance": 3,
+      "outlier_rows_trimmed": 2,
+      "weighting": "uniform_ols",
+      "mae": 2.349891108951322,
+      "rmse": 5.624820854550049,
+      "weighted_null_mae": 0.9509374999999995,
+      "beats_null_baseline": false
+    }
+  ],
+  "model_status": "fitted_but_no_signal_above_null_baseline",
+  "combination_ranking_enabled": false,
+  "limitation": "Endpoint-unit specific leave-one-study-out internal validation only. Requires external-study validation and predictive lift over the stratum mean before any combination-ranking use."
+}

@@ -1,0 +1,84 @@
+{
+  "model_level": "random_effects_meta_analysis_dersimonian_laird",
+  "method": "DerSimonian-Laird random-effects; one most-precise effect per study",
+  "minimum_se_bearing_studies": 3,
+  "strata_meta_analyzed": 3,
+  "strata_with_pooled_effect_excluding_zero": 1,
+  "strata": [
+    {
+      "k_studies": 3,
+      "pooled_effect": -0.2565,
+      "standard_error": 0.1403,
+      "ci95_low": -0.5316,
+      "ci95_high": 0.0185,
+      "ci_excludes_zero": false,
+      "tau2": 0.029,
+      "i2_percent": 53.0,
+      "cochran_q": 4.251,
+      "q_pvalue": 0.1194,
+      "prediction_interval_low": -3.0607,
+      "prediction_interval_high": 2.5476,
+      "stratum": "BMI|kg/m2",
+      "status": "random_effects_meta_analyzed"
+    },
+    {
+      "k_studies": 4,
+      "pooled_effect": -0.4357,
+      "standard_error": 0.1546,
+      "ci95_low": -0.7388,
+      "ci95_high": -0.1326,
+      "ci_excludes_zero": true,
+      "tau2": 0.0156,
+      "i2_percent": 11.6,
+      "cochran_q": 3.3951,
+      "q_pvalue": 0.3346,
+      "prediction_interval_low": -1.2911,
+      "prediction_interval_high": 0.4197,
+      "stratum": "body_fat|kg",
+      "status": "random_effects_meta_analyzed"
+    },
+    {
+      "stratum": "lipid_LDL|mg/dL",
+      "k_studies": 1,
+      "status": "insufficient_se_bearing_studies"
+    },
+    {
+      "stratum": "lipid_TC|mg/dL",
+      "k_studies": 1,
+      "status": "insufficient_se_bearing_studies"
+    },
+    {
+      "stratum": "lipid_TG|mg/dL",
+      "k_studies": 2,
+      "status": "insufficient_se_bearing_studies"
+    },
+    {
+      "stratum": "lipid|mg/dL",
+      "k_studies": 1,
+      "status": "insufficient_se_bearing_studies"
+    },
+    {
+      "stratum": "waist|cm",
+      "k_studies": 1,
+      "status": "insufficient_se_bearing_studies"
+    },
+    {
+      "k_studies": 3,
+      "pooled_effect": -1.5109,
+      "standard_error": 1.203,
+      "ci95_low": -3.8688,
+      "ci95_high": 0.847,
+      "ci_excludes_zero": false,
+      "tau2": 3.438,
+      "i2_percent": 80.2,
+      "cochran_q": 10.0881,
+      "q_pvalue": 0.0064,
+      "prediction_interval_low": -29.595,
+      "prediction_interval_high": 26.5732,
+      "stratum": "weight|kg",
+      "status": "random_effects_meta_analyzed"
+    }
+  ],
+  "combination_ranking_enabled": false,
+  "limitation": "Internal random-effects synthesis of curated between-group effects. A pooled CI excluding zero indicates a consistent direction across these studies; it is not external/clinical validation and high I^2 signals the pooled estimate may not transfer to a new population."
+}

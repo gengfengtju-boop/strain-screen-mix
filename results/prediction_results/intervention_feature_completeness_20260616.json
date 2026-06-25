@@ -1,0 +1,40 @@
+{
+  "run_stamp": "20260616",
+  "intervention_studies": 93,
+  "primary_effect_studies": 19,
+  "coverage_all_intervention_studies": {
+    "species_known": 0.08602150537634409,
+    "strain_known": 0.06451612903225806,
+    "dose_known": 0.07526881720430108,
+    "duration_known": 0.27956989247311825,
+    "dosage_form_known": 0.06451612903225806,
+    "moderator_complete": 0.06451612903225806
+  },
+  "coverage_primary_effect_studies": {
+    "species_known": 0.42105263157894735,
+    "strain_known": 0.3157894736842105,
+    "dose_known": 0.3684210526315789,
+    "duration_known": 0.631578947368421,
+    "dosage_form_known": 0.3157894736842105,
+    "moderator_complete": 0.3157894736842105
+  },
+  "feature_categories_primary": {
+    "microbial_family": {
+      "other_or_unknown": 11,
+      "mixed_family": 5,
+      "bifidobacterium": 2,
+      "bacillus": 1
+    },
+    "formulation_complexity": {
+      "unknown": 11,
+      "multi_component": 5,
+      "single_or_named": 3
+    },
+    "dosage_form_group": {
+      "unknown_or_other": 13,
+      "powder_or_sachet": 3,
+      "capsule_or_tablet": 3
+    }
+  },
+  "modeling_decision": "use coarse pre-intervention categories; do not fit strain-specific effects until moderator_complete coverage and per-level study counts improve"
+}

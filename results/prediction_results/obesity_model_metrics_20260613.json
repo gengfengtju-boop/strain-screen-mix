@@ -1,0 +1,31 @@
+{
+  "samples": 8304,
+  "n_species_features": 206,
+  "n_studies": 45,
+  "validation": "study_grouped_10fold_is_primary; random_10fold_shows_optimism_gap",
+  "bmi_regression": {
+    "study_grouped_cv": {
+      "r2": 0.1031,
+      "mae": 3.8711
+    },
+    "random_cv": {
+      "r2": 0.2245,
+      "mae": 3.5984
+    },
+    "null_mae_predict_mean": 4.1498,
+    "beats_null": true
+  },
+  "obesity_classifier_lean_vs_obesity": {
+    "n": 5994,
+    "prevalence": 0.2606,
+    "study_grouped_cv": {
+      "roc_auc": 0.7286,
+      "ap": 0.5396
+    },
+    "random_cv": {
+      "roc_auc": 0.8253,
+      "ap": 0.6723
+    },
+    "beats_null": true
+  }
+}

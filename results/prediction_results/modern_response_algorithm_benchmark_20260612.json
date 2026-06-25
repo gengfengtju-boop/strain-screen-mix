@@ -1,0 +1,370 @@
+{
+  "baseline_model": "logistic_l2_strong",
+  "benchmark": "modern_study_endpoint_response_algorithms",
+  "candidate_results": [
+    {
+      "leave_one_study_out": {
+        "accuracy": 0.6716417910447762,
+        "average_precision": 0.602734828932693,
+        "balanced_accuracy": 0.6527777777777778,
+        "brier_score": 0.2378019235194794,
+        "cluster_bootstrap_roc_auc_p025": 0.5021095650364694,
+        "cluster_bootstrap_roc_auc_p975": 0.7877892654896734,
+        "f1": 0.5769230769230769,
+        "positive_prevalence": 0.40298507462686567,
+        "roc_auc": 0.658912037037037,
+        "study_equal_average_precision": 0.5782844149321923,
+        "study_equal_roc_auc": 0.6369385005890912
+      },
+      "model": "logistic_l2_strong",
+      "promotion_eligible": false,
+      "promotion_reasons": [
+        "baseline_reference"
+      ],
+      "repeat_metrics": [
+        {
+          "average_precision": 0.5621660920137289,
+          "balanced_accuracy": 0.6368055555555556,
+          "brier_score": 0.24122568875917919,
+          "repeat": 1,
+          "roc_auc": 0.6520833333333333,
+          "seed": 17
+        },
+        {
+          "average_precision": 0.6023049572077809,
+          "balanced_accuracy": 0.6682870370370371,
+          "brier_score": 0.2371931345323946,
+          "repeat": 2,
+          "roc_auc": 0.6549768518518517,
+          "seed": 118
+        },
+        {
+          "average_precision": 0.5826080609175726,
+          "balanced_accuracy": 0.6118055555555556,
+          "brier_score": 0.2400120665853712,
+          "repeat": 3,
+          "roc_auc": 0.6608796296296297,
+          "seed": 219
+        },
+        {
+          "average_precision": 0.6220258006704562,
+          "balanced_accuracy": 0.6527777777777778,
+          "brier_score": 0.2362868971332759,
+          "repeat": 4,
+          "roc_auc": 0.6799768518518519,
+          "seed": 320
+        },
+        {
+          "average_precision": 0.5630677426289794,
+          "balanced_accuracy": 0.5435185185185185,
+          "brier_score": 0.23912669631884173,
+          "repeat": 5,
+          "roc_auc": 0.6219907407407407,
+          "seed": 421
+        }
+      ],
+      "repeated_average_precision_mean": 0.5864345306877036,
+      "repeated_roc_auc_mean": 0.6539814814814815,
+      "repeated_roc_auc_std": 0.01871547461473715,
+      "validation": "locked_repeated_stratified_group_cross_validated_by_evidence_id"
+    },
+    {
+      "leave_one_study_out": {
+        "accuracy": 0.6865671641791045,
+        "average_precision": 0.48959556175017194,
+        "balanced_accuracy": 0.6381944444444444,
+        "brier_score": 0.22628132928395367,
+        "cluster_bootstrap_roc_auc_p025": 0.28324942791762014,
+        "cluster_bootstrap_roc_auc_p975": 0.632084479559849,
+        "f1": 0.5,
+        "positive_prevalence": 0.40298507462686567,
+        "roc_auc": 0.4631944444444444,
+        "study_equal_average_precision": 0.4373427026352097,
+        "study_equal_roc_auc": 0.44385300436620684
+      },
+      "model": "hist_gradient_boosting_regularized",
+      "promotion_eligible": false,
+      "promotion_reasons": [
+        "repeated_auc_gain",
+        "leave_one_study_out_auc_not_lower",
+        "study_equal_auc_not_lower",
+        "bootstrap_lower_bound"
+      ],
+      "repeat_metrics": [
+        {
+          "average_precision": 0.5316332847130966,
+          "balanced_accuracy": 0.6319444444444444,
+          "brier_score": 0.22790046914378656,
+          "repeat": 1,
+          "roc_auc": 0.5755787037037037,
+          "seed": 17
+        },
+        {
+          "average_precision": 0.553596389887597,
+          "balanced_accuracy": 0.6569444444444444,
+          "brier_score": 0.22567703568487743,
+          "repeat": 2,
+          "roc_auc": 0.5664351851851852,
+          "seed": 118
+        },
+        {
+          "average_precision": 0.516955025499098,
+          "balanced_accuracy": 0.537962962962963,
+          "brier_score": 0.241688424015096,
+          "repeat": 3,
+          "roc_auc": 0.5041666666666667,
+          "seed": 219
+        },
+        {
+          "average_precision": 0.5180488387228704,
+          "balanced_accuracy": 0.631712962962963,
+          "brier_score": 0.22984047567525256,
+          "repeat": 4,
+          "roc_auc": 0.5621527777777778,
+          "seed": 320
+        },
+        {
+          "average_precision": 0.45730190347914895,
+          "balanced_accuracy": 0.475,
+          "brier_score": 0.2618637892015974,
+          "repeat": 5,
+          "roc_auc": 0.4608796296296296,
+          "seed": 421
+        }
+      ],
+      "repeated_average_precision_mean": 0.5155070884603622,
+      "repeated_roc_auc_mean": 0.5338425925925926,
+      "repeated_roc_auc_std": 0.04429424610872381,
+      "validation": "locked_repeated_stratified_group_cross_validated_by_evidence_id"
+    },
+    {
+      "leave_one_study_out": {
+        "accuracy": 0.6417910447761194,
+        "average_precision": 0.5009683774490444,
+        "balanced_accuracy": 0.6097222222222223,
+        "brier_score": 0.24718973913284545,
+        "cluster_bootstrap_roc_auc_p025": 0.37224342105263153,
+        "cluster_bootstrap_roc_auc_p975": 0.6892791358429781,
+        "f1": 0.5,
+        "positive_prevalence": 0.40298507462686567,
+        "roc_auc": 0.5392361111111109,
+        "study_equal_average_precision": 0.4810100826846987,
+        "study_equal_roc_auc": 0.5269222139441402
+      },
+      "model": "extra_trees_regularized",
+      "promotion_eligible": false,
+      "promotion_reasons": [
+        "repeated_auc_gain",
+        "leave_one_study_out_auc_not_lower",
+        "study_equal_auc_not_lower",
+        "bootstrap_lower_bound"
+      ],
+      "repeat_metrics": [
+        {
+          "average_precision": 0.48964139325828415,
+          "balanced_accuracy": 0.6002314814814815,
+          "brier_score": 0.24532755985786392,
+          "repeat": 1,
+          "roc_auc": 0.5582175925925925,
+          "seed": 17
+        },
+        {
+          "average_precision": 0.5322127091531409,
+          "balanced_accuracy": 0.5969907407407408,
+          "brier_score": 0.2453769004830421,
+          "repeat": 2,
+          "roc_auc": 0.5681712962962964,
+          "seed": 118
+        },
+        {
+          "average_precision": 0.5240756585822368,
+          "balanced_accuracy": 0.5722222222222222,
+          "brier_score": 0.2518470706817437,
+          "repeat": 3,
+          "roc_auc": 0.49629629629629635,
+          "seed": 219
+        },
+        {
+          "average_precision": 0.5615811309418497,
+          "balanced_accuracy": 0.6127314814814815,
+          "brier_score": 0.23785899075532518,
+          "repeat": 4,
+          "roc_auc": 0.6199074074074074,
+          "seed": 320
+        },
+        {
+          "average_precision": 0.4599292424339822,
+          "balanced_accuracy": 0.5314814814814814,
+          "brier_score": 0.2592255250498208,
+          "repeat": 5,
+          "roc_auc": 0.46192129629629636,
+          "seed": 421
+        }
+      ],
+      "repeated_average_precision_mean": 0.5134880268738987,
+      "repeated_roc_auc_mean": 0.5409027777777778,
+      "repeated_roc_auc_std": 0.0557008420481206,
+      "validation": "locked_repeated_stratified_group_cross_validated_by_evidence_id"
+    },
+    {
+      "leave_one_study_out": {
+        "accuracy": 0.7089552238805971,
+        "average_precision": 0.48720914867468634,
+        "balanced_accuracy": 0.6569444444444444,
+        "brier_score": 0.22881898313874688,
+        "cluster_bootstrap_roc_auc_p025": 0.2895264090717983,
+        "cluster_bootstrap_roc_auc_p975": 0.6353898183592855,
+        "f1": 0.5185185185185185,
+        "positive_prevalence": 0.40298507462686567,
+        "roc_auc": 0.4696759259259259,
+        "study_equal_average_precision": 0.4354568398471556,
+        "study_equal_roc_auc": 0.44592452699424756
+      },
+      "model": "lightgbm_regularized",
+      "promotion_eligible": false,
+      "promotion_reasons": [
+        "repeated_auc_gain",
+        "leave_one_study_out_auc_not_lower",
+        "study_equal_auc_not_lower",
+        "bootstrap_lower_bound"
+      ],
+      "repeat_metrics": [
+        {
+          "average_precision": 0.5095274341906026,
+          "balanced_accuracy": 0.6069444444444444,
+          "brier_score": 0.23385297257970936,
+          "repeat": 1,
+          "roc_auc": 0.5386574074074073,
+          "seed": 17
+        },
+        {
+          "average_precision": 0.5476958313115708,
+          "balanced_accuracy": 0.6569444444444444,
+          "brier_score": 0.23146396455482104,
+          "repeat": 2,
+          "roc_auc": 0.5616898148148148,
+          "seed": 118
+        },
+        {
+          "average_precision": 0.5530853938364186,
+          "balanced_accuracy": 0.6287037037037037,
+          "brier_score": 0.23446920582400577,
+          "repeat": 3,
+          "roc_auc": 0.512962962962963,
+          "seed": 219
+        },
+        {
+          "average_precision": 0.5173611294392594,
+          "balanced_accuracy": 0.631712962962963,
+          "brier_score": 0.2347589981938606,
+          "repeat": 4,
+          "roc_auc": 0.5481481481481482,
+          "seed": 320
+        },
+        {
+          "average_precision": 0.4662301921038367,
+          "balanced_accuracy": 0.5064814814814815,
+          "brier_score": 0.25388715065288375,
+          "repeat": 5,
+          "roc_auc": 0.48240740740740745,
+          "seed": 421
+        }
+      ],
+      "repeated_average_precision_mean": 0.5187799961763376,
+      "repeated_roc_auc_mean": 0.5287731481481481,
+      "repeated_roc_auc_std": 0.028129486382001818,
+      "validation": "locked_repeated_stratified_group_cross_validated_by_evidence_id"
+    },
+    {
+      "leave_one_study_out": {
+        "accuracy": 0.664179104477612,
+        "average_precision": 0.49060802681565496,
+        "balanced_accuracy": 0.6194444444444445,
+        "brier_score": 0.23419152288751224,
+        "cluster_bootstrap_roc_auc_p025": 0.2961556949339968,
+        "cluster_bootstrap_roc_auc_p975": 0.6548141359501083,
+        "f1": 0.4827586206896552,
+        "positive_prevalence": 0.40298507462686567,
+        "roc_auc": 0.48055555555555557,
+        "study_equal_average_precision": 0.43366060101820175,
+        "study_equal_roc_auc": 0.45599833668306866
+      },
+      "model": "catboost_ordered_regularized",
+      "promotion_eligible": false,
+      "promotion_reasons": [
+        "repeated_auc_gain",
+        "leave_one_study_out_auc_not_lower",
+        "study_equal_auc_not_lower",
+        "bootstrap_lower_bound"
+      ],
+      "repeat_metrics": [
+        {
+          "average_precision": 0.5199145371382418,
+          "balanced_accuracy": 0.6131944444444445,
+          "brier_score": 0.23356162080615492,
+          "repeat": 1,
+          "roc_auc": 0.5549768518518519,
+          "seed": 17
+        },
+        {
+          "average_precision": 0.541593329500398,
+          "balanced_accuracy": 0.6224537037037037,
+          "brier_score": 0.23405724906730657,
+          "repeat": 2,
+          "roc_auc": 0.5549768518518519,
+          "seed": 118
+        },
+        {
+          "average_precision": 0.5144737168053954,
+          "balanced_accuracy": 0.5502314814814815,
+          "brier_score": 0.24884234312743342,
+          "repeat": 3,
+          "roc_auc": 0.5190972222222221,
+          "seed": 219
+        },
+        {
+          "average_precision": 0.5124587217854895,
+          "balanced_accuracy": 0.6569444444444444,
+          "brier_score": 0.2302170135520558,
+          "repeat": 4,
+          "roc_auc": 0.5358796296296297,
+          "seed": 320
+        },
+        {
+          "average_precision": 0.4640045188408352,
+          "balanced_accuracy": 0.49189814814814814,
+          "brier_score": 0.25767741729862603,
+          "repeat": 5,
+          "roc_auc": 0.42615740740740743,
+          "seed": 421
+        }
+      ],
+      "repeated_average_precision_mean": 0.510488964814072,
+      "repeated_roc_auc_mean": 0.5182175925925926,
+      "repeated_roc_auc_std": 0.04793805436079452,
+      "validation": "locked_repeated_stratified_group_cross_validated_by_evidence_id"
+    }
+  ],
+  "cv_repeats": 5,
+  "decision": "retain_logistic_l2_strong",
+  "evidence_count": 37,
+  "features": [
+    "sample_size",
+    "duration_weeks",
+    "log10_cfu_day"
+  ],
+  "limitation": "Internal grouped validation only. Algorithm promotion does not establish external or clinical validity.",
+  "package_versions": {
+    "catboost": "1.2.10",
+    "lightgbm": "4.6.0",
+    "scikit-learn": "1.6.1"
+  },
+  "positive_prevalence": 0.40298507462686567,
+  "promoted_model": null,
+  "promotion_policy": "repeated AUC gain >= 0.010; leave-one-study-out AUC and study-equal AUC must not decline; cluster-bootstrap AUC p025 >= 0.50; leave-one-study-out AP must exceed prevalence",
+  "random_seed": 17,
+  "review_rows_matched": 114,
+  "rows_used": 134,
+  "selected_model": "logistic_l2_strong",
+  "unavailable_optional_algorithms": []
+}

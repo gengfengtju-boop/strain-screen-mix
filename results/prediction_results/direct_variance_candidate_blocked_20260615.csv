@@ -1,0 +1,7 @@
+evidence_id,outcome_domain,effect_unit,block_reason,source_final_value
+DOI:10.3803/EnM.2020.35.2.425,body_fat,kg,source_final_value_not_parseable_for_ci_or_arm_sd,"Body fat mass change CJLS03 -0.2 kg vs placebo +0.6 kg; 0.8 kg between-group difference, P=0.018"
+DOI:10.3803/EnM.2020.35.2.425,waist,cm,source_final_value_not_parseable_for_ci_or_arm_sd,"Waist circumference 0.8 cm smaller in CJLS03 than placebo at 12 weeks, P=0.013"
+PMID:38542727,BMI,kg/m2 endpoint and approximate change,source_final_value_not_parseable_for_ci_or_arm_sd,"probiotics 26.28 vs placebo 26.35 at week 16; placebo +0.33, probiotics +0.08 from baseline"
+PMID:38542727,weight,kg endpoint and approximate change,source_final_value_not_parseable_for_ci_or_arm_sd,"probiotics 73.82 vs placebo 74.64 at week 16; placebo +0.90, probiotics +0.27 from baseline"
+PMID:40385498,BMI,"kg/m2 change, median (IQR)",source_final_value_not_parseable_for_ci_or_arm_sd,"intervention -0.31 (-0.59, -0.04) vs placebo -0.35 (-0.79, 0.22)"
+PMID:40385498,weight,"kg change, median (IQR)",source_final_value_not_parseable_for_ci_or_arm_sd,"intervention -0.80 (-1.49, -0.09) vs placebo -0.95 (-1.98, 0.70)"

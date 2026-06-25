@@ -1,0 +1,33 @@
+{
+  "experiment": "E1a_ecological_features",
+  "added_features": [
+    "shannon",
+    "observed_richness",
+    "simpson",
+    "pielou_evenness",
+    "log_firmicutes_bacteroidetes",
+    "phylum_Firmicutes",
+    "phylum_Bacteroidetes",
+    "phylum_Actinobacteria",
+    "phylum_Proteobacteria",
+    "phylum_Verrucomicrobia",
+    "phylum_Euryarchaeota"
+  ],
+  "results": {
+    "species_only": {
+      "n_features": 205,
+      "grouped_cv_auc": 0.7278,
+      "loso_external_auc": 0.7204
+    },
+    "species_plus_ecology": {
+      "n_features": 216,
+      "grouped_cv_auc": 0.7276,
+      "loso_external_auc": 0.7193
+    }
+  },
+  "grouped_delta": -0.0002,
+  "external_delta": -0.0011,
+  "preregistered_success": "grouped or external AUC +>=0.02",
+  "verdict": "no_meaningful_gain",
+  "note": "E1b (HUMAnN functional pathways = orthogonal information) still pending a new fetch."
+}

@@ -1,0 +1,320 @@
+{
+  "date": "2026-06-15",
+  "upgrade": "pinned arm-level continuous effects with leakage-safe validation",
+  "input_manifest": "config/continuous_effect_upgrade_manifest.json",
+  "arm_registry": {
+    "studies": 93,
+    "arms": 186
+  },
+  "continuous_effects": {
+    "rows_all_confidence": 137,
+    "studies_all_confidence": 82,
+    "high_confidence_rows": 68,
+    "high_confidence_studies": 23,
+    "direct_variance_high_confidence_rows": 17,
+    "direct_variance_high_confidence_studies": 9,
+    "pvalue_backcalculated_rows": 13
+  },
+  "predictive_model": {
+    "modeled_strata": 4,
+    "strata_beating_null_baseline": 1,
+    "minimum_relative_mae_improvement": 0.1,
+    "model_status": "predictive_signal_above_null_internal_only",
+    "combination_ranking_enabled": false
+  },
+  "small_sample_meta_analysis": {
+    "strata_meta_analyzed": 1,
+    "strata_with_ci_excluding_zero": 1,
+    "strata_replication_ready": 0,
+    "strata": [
+      {
+        "stratum": "weight|kg",
+        "k_studies": 4,
+        "pooled_effect": -1.6238,
+        "ci95_low": -3.242,
+        "ci95_high": -0.0057,
+        "i2_percent": 76.4,
+        "prediction_interval_low": -6.0288,
+        "prediction_interval_high": 2.7812,
+        "evidence_state": "statistical_interval_only_not_replication_ready",
+        "replication_ready": false
+      }
+    ]
+  },
+  "missing_variance_robustness": {
+    "strata_analyzed": 5,
+    "evidence_state_counts": {
+      "directionally_consistent_but_uncertain": 2,
+      "sensitivity_only_insufficient_observed_variances": 3
+    },
+    "pvalue_backcalculated_variance_policy": "treated_as_missing"
+  },
+  "effect_quality_audit": {
+    "date": "2026-06-15",
+    "effect_rows": 137,
+    "analysis_trial_ids": 78,
+    "primary_analysis_eligible_rows": 55,
+    "primary_analysis_trials": 19,
+    "flag_counts": {
+      "is_microbial_arm": 79,
+      "comparison_matches_microbial_arm": 137,
+      "is_high_confidence": 68,
+      "has_variance": 40,
+      "has_direct_variance": 18,
+      "mixed_or_unspecified_unit": 5,
+      "review_like_title": 9,
+      "robust_outlier_flag": 2,
+      "duplicate_publication_alias": 11,
+      "multiple_effects_same_trial_stratum": 10,
+      "primary_analysis_eligible": 55
+    },
+    "cointervention_rows": 18,
+    "excluded_nonmicrobial_comparisons": [],
+    "duplicate_alias_groups": {
+      "DOI:10.3803/EnM.2020.35.2.425": [
+        "DOI:10.3803/EnM.2020.35.2.425",
+        "PMID:32615727"
+      ],
+      "PMID:36530587": [
+        "EUROPEPMC:36530587",
+        "PMID:36530587"
+      ],
+      "PMID:40951500": [
+        "EUROPEPMC:40951500",
+        "PMID:40951500"
+      ],
+      "PMID:41003008": [
+        "EUROPEPMC:41003008",
+        "PMID:41003008"
+      ]
+    },
+    "policy": "Primary analysis requires a high-confidence microbial-arm effect, a matching microbial contrast, a comparable physical unit, a primary-study title, and no robust within-stratum outlier flag calculated only among otherwise eligible records. Missing variance and balanced cointerventions are retained but explicitly audited.",
+    "audit_table": "results/prediction_results/effect_quality_audit_20260615.csv"
+  },
+  "evidence_layer_sensitivity": {
+    "strata_analyzed": 5,
+    "conclusion_counts": {
+      "interval_support_is_subset_dependent": 2,
+      "stable_direction_but_uncertain": 3
+    }
+  },
+  "body_fat_hypothesis_audit": {
+    "date": "2026-06-15",
+    "target_stratum": "body_fat|kg",
+    "studies": 6,
+    "observed_variance_studies": 1,
+    "negative_effect_studies": 4,
+    "positive_effect_studies": 2,
+    "studies_with_cointervention_flags": 2,
+    "moderator_ready_studies": 3,
+    "outlier_rows_trimmed": 0,
+    "influence_analysis": null,
+    "decision": "priority_replication_hypothesis_not_efficacy_signal",
+    "reason": "The corrected kg-scale evidence contains effects in both directions, sparse strain/dose metadata, and a small observed-variance subset. Influence results are hypothesis-generating only.",
+    "study_table": "results/prediction_results/body_fat_hypothesis_studies_20260615.csv"
+  },
+  "direct_variance_curation": {
+    "run_stamp": "20260615",
+    "target_direct_studies_per_core_stratum": 10,
+    "current_direct_studies": {
+      "BMI|kg/m2": 2,
+      "body_fat|kg": 1,
+      "lipid_TG|mg/dL": 1,
+      "waist|cm": 0,
+      "weight|kg": 4
+    },
+    "queue_rows": 106,
+    "included_missing_direct_rows": 33,
+    "new_direct_variance_candidate_rows": 73,
+    "output": "results/prediction_results/direct_variance_review_queue_20260615.csv"
+  },
+  "direct_variance_candidate_patch": {
+    "run_stamp": "20260615",
+    "candidate_rows": 21,
+    "ready_for_manual_confirmation": 0,
+    "balanced_n_sensitivity_only": 5,
+    "needs_full_text_arm_n": 16,
+    "blocked_rows": 6,
+    "production_manifest_updated": false,
+    "candidate_output": "data/intervention_data/clinical_outcome.structured_effects.direct_variance_candidates_20260615.csv",
+    "blocked_output": "results/prediction_results/direct_variance_candidate_blocked_20260615.csv"
+  },
+  "balanced_arm_n_sensitivity": {
+    "run_stamp": "20260615",
+    "sensitivity_rows_added": 5,
+    "production_policy": "balanced_arm_n_inferred rows are sensitivity-only and are not counted as reported_ci or arm_sd_and_n direct variance.",
+    "strata": [
+      {
+        "stratum": "BMI|kg/m2",
+        "high_confidence_studies": 14,
+        "direct_variance_studies": 4,
+        "direct_plus_balanced_n_studies": 6,
+        "balanced_n_increment": 2,
+        "meets_10_study_direct_target_in_sensitivity": false
+      },
+      {
+        "stratum": "body_fat|kg",
+        "high_confidence_studies": 6,
+        "direct_variance_studies": 1,
+        "direct_plus_balanced_n_studies": 3,
+        "balanced_n_increment": 2,
+        "meets_10_study_direct_target_in_sensitivity": false
+      },
+      {
+        "stratum": "lipid_TG|mg/dL",
+        "high_confidence_studies": 6,
+        "direct_variance_studies": 1,
+        "direct_plus_balanced_n_studies": 1,
+        "balanced_n_increment": 0,
+        "meets_10_study_direct_target_in_sensitivity": false
+      },
+      {
+        "stratum": "waist|cm",
+        "high_confidence_studies": 5,
+        "direct_variance_studies": 1,
+        "direct_plus_balanced_n_studies": 1,
+        "balanced_n_increment": 0,
+        "meets_10_study_direct_target_in_sensitivity": false
+      },
+      {
+        "stratum": "weight|kg",
+        "high_confidence_studies": 17,
+        "direct_variance_studies": 6,
+        "direct_plus_balanced_n_studies": 7,
+        "balanced_n_increment": 1,
+        "meets_10_study_direct_target_in_sensitivity": false
+      }
+    ]
+  },
+  "intervention_feature_completeness": {
+    "run_stamp": "20260615",
+    "intervention_studies": 93,
+    "primary_effect_studies": 19,
+    "coverage_all_intervention_studies": {
+      "species_known": 0.08602150537634409,
+      "strain_known": 0.06451612903225806,
+      "dose_known": 0.07526881720430108,
+      "duration_known": 0.27956989247311825,
+      "dosage_form_known": 0.06451612903225806,
+      "moderator_complete": 0.06451612903225806
+    },
+    "coverage_primary_effect_studies": {
+      "species_known": 0.42105263157894735,
+      "strain_known": 0.3157894736842105,
+      "dose_known": 0.3684210526315789,
+      "duration_known": 0.631578947368421,
+      "dosage_form_known": 0.3157894736842105,
+      "moderator_complete": 0.3157894736842105
+    },
+    "feature_categories_primary": {
+      "microbial_family": {
+        "other_or_unknown": 11,
+        "mixed_family": 5,
+        "bifidobacterium": 2,
+        "bacillus": 1
+      },
+      "formulation_complexity": {
+        "unknown": 11,
+        "multi_component": 5,
+        "single_or_named": 3
+      },
+      "dosage_form_group": {
+        "unknown_or_other": 13,
+        "powder_or_sachet": 3,
+        "capsule_or_tablet": 3
+      }
+    },
+    "modeling_decision": "use coarse pre-intervention categories; do not fit strain-specific effects until moderator_complete coverage and per-level study counts improve"
+  },
+  "partial_pooling_baseline": {
+    "model_level": "cross_outcome_partial_pooling_ridge_baseline",
+    "validation": "leave_one_canonical_trial_out_with_fold_local_stratum_scaling",
+    "rows_evaluated": 37,
+    "studies_evaluated": 17,
+    "strata_evaluated": 4,
+    "minimum_relative_mae_improvement": 0.1,
+    "strata_passing_improvement_gate": 0,
+    "strata": [
+      {
+        "stratum": "BMI|kg/m2",
+        "rows": 11,
+        "studies": 11,
+        "mae": 0.3509987848312883,
+        "null_mae": 0.3648181818181818,
+        "relative_mae_improvement": 0.0378802309633263,
+        "passes_improvement_gate": false
+      },
+      {
+        "stratum": "body_fat|kg",
+        "rows": 6,
+        "studies": 6,
+        "mae": 0.8514638215596778,
+        "null_mae": 0.896,
+        "relative_mae_improvement": 0.04970555629500246,
+        "passes_improvement_gate": false
+      },
+      {
+        "stratum": "lipid_TG|mg/dL",
+        "rows": 6,
+        "studies": 6,
+        "mae": 20.502787432364205,
+        "null_mae": 17.462,
+        "relative_mae_improvement": -0.17413740879419337,
+        "passes_improvement_gate": false
+      },
+      {
+        "stratum": "weight|kg",
+        "rows": 14,
+        "studies": 14,
+        "mae": 1.439476043743482,
+        "null_mae": 1.369230769230769,
+        "relative_mae_improvement": -0.051302728576700436,
+        "passes_improvement_gate": false
+      }
+    ],
+    "combination_ranking_enabled": false,
+    "limitation": "Shared ridge coefficients provide partial pooling after fold-local outcome standardization. This is not a strain-specific random-effects estimate and does not replace prospective external validation."
+  },
+  "external_validation_readiness": {
+    "run_stamp": "20260615",
+    "policy": {
+      "schema_version": 1,
+      "minimum_relative_mae_improvement": 0.1,
+      "minimum_external_studies": 5,
+      "minimum_direct_variance_studies_per_stratum": 5,
+      "maximum_i2_percent": 50.0,
+      "require_prediction_interval_excludes_zero": true,
+      "require_temporal_or_prospective_external_validation": true,
+      "combination_ranking_enabled_before_all_gates_pass": false
+    },
+    "eligible_independent_studies": 19,
+    "identifier_source_counts": {
+      "PMID": 18,
+      "DOI": 1
+    },
+    "studies_with_parseable_publication_year": 3,
+    "temporal_holdout_ready": false,
+    "source_holdout_ready": false,
+    "prospective_external_cohort_available": false,
+    "external_validation_gate_passed": false,
+    "blocking_reasons": [
+      "publication year is unavailable for a reliable temporal split",
+      "no second source contains enough independent studies",
+      "no prospective external cohort has been supplied"
+    ],
+    "required_next_data": "Add publication_date and enrollment_source fields to the study registry, then reserve at least five wholly unseen canonical trials or a prospective cohort.",
+    "combination_ranking_enabled": false
+  },
+  "overall_decision": "continuous_effect_model_not_enabled_for_combination_ranking; retain endpoint findings as replication hypotheses",
+  "artifacts": {
+    "arms": "data/intervention_data/study_arm_registry.upgrade_20260615.csv",
+    "effects": "data/intervention_data/continuous_effect_sizes.upgrade_20260615.csv",
+    "model_metrics": "results/prediction_results/continuous_effect_model_metrics_20260615.json",
+    "meta_analysis": "results/prediction_results/effect_meta_analysis_hksj_20260615.json",
+    "missing_variance_robustness": "results/prediction_results/missing_variance_robustness_20260615.json",
+    "partial_pooling_metrics": "results/prediction_results/partial_pooling_effect_metrics_20260615.json",
+    "external_validation_readiness": "results/prediction_results/external_validation_readiness_20260615.json",
+    "direct_variance_candidate_report": "results/prediction_results/direct_variance_candidate_report_20260615.json",
+    "balanced_arm_n_sensitivity": "results/prediction_results/balanced_arm_n_sensitivity_20260615.json"
+  }
+}

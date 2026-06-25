@@ -1,0 +1,149 @@
+{
+  "date": "2026-06-14",
+  "upgrade": "arm-level continuous effects with small-sample robust synthesis",
+  "arm_registry": {
+    "studies": 95,
+    "arms": 190
+  },
+  "continuous_effects": {
+    "rows_all_confidence": 154,
+    "studies_all_confidence": 85,
+    "high_confidence_rows": 85,
+    "high_confidence_studies": 27,
+    "se_bearing_high_confidence_rows": 39,
+    "se_bearing_high_confidence_studies": 13,
+    "modeling_eligible_rows_all_confidence": 66,
+    "modeling_eligible_rows_high_confidence": 55,
+    "modeling_high_confidence_studies": 18,
+    "validation_ready_modeling_rows_high_confidence": 20,
+    "newly_curated_studies": [
+      "PMID:31965834",
+      "PMID:34919684",
+      "PMID:35332040"
+    ]
+  },
+  "predictive_model": {
+    "modeled_strata": 4,
+    "strata_beating_null_baseline": 0,
+    "model_status": "fitted_but_no_signal_above_null_baseline",
+    "combination_ranking_enabled": false
+  },
+  "small_sample_meta_analysis": {
+    "method": "Paule-Mandel tau2 plus modified Hartung-Knapp-Sidik-Jonkman interval; DerSimonian-Laird retained as sensitivity; one most-precise effect per study",
+    "strata_meta_analyzed": 4,
+    "strata_with_ci_excluding_zero": 0,
+    "strata": [
+      {
+        "stratum": "BMI|kg/m2",
+        "k_studies": 3,
+        "pooled_effect": -0.2644,
+        "ci95_low": -0.8987,
+        "ci95_high": 0.3698,
+        "i2_percent": 63.0,
+        "ci_excludes_zero": false
+      },
+      {
+        "stratum": "body_fat|kg",
+        "k_studies": 4,
+        "pooled_effect": -0.4333,
+        "ci95_low": -1.502,
+        "ci95_high": 0.6353,
+        "i2_percent": 46.3,
+        "ci_excludes_zero": false
+      },
+      {
+        "stratum": "lipid_TG|mg/dL",
+        "k_studies": 3,
+        "pooled_effect": -24.8664,
+        "ci95_low": -58.1172,
+        "ci95_high": 8.3844,
+        "i2_percent": 0.0,
+        "ci_excludes_zero": false
+      },
+      {
+        "stratum": "weight|kg",
+        "k_studies": 4,
+        "pooled_effect": -1.3251,
+        "ci95_low": -4.2559,
+        "ci95_high": 1.6058,
+        "i2_percent": 80.8,
+        "ci_excludes_zero": false
+      }
+    ],
+    "interpretation": "No endpoint stratum excludes zero under the modified Hartung-Knapp interval. The earlier DerSimonian-Laird body-fat signal is not robust to small-study inference."
+  },
+  "missing_variance_robustness": {
+    "method": "Observed-variance PM/HKSJ; median- and upper-quartile-variance imputation as sensitivity analyses; study-level median bootstrap and exact sign test",
+    "strata_analyzed": 5,
+    "evidence_state_counts": {
+      "directionally_consistent_but_uncertain": 4,
+      "sensitivity_only_insufficient_observed_variances": 1
+    },
+    "combination_ranking_enabled": false,
+    "interpretation": "After splitting a mixed percent/kg extraction, body-fat reduction remains a replication hypothesis only. Its observed-variance PM/HKSJ interval and nonparametric bootstrap interval both cross zero."
+  },
+  "body_fat_hypothesis_audit": {
+    "studies": 6,
+    "observed_variance_studies": 4,
+    "negative_effect_studies": 4,
+    "positive_effect_studies": 2,
+    "studies_with_cointervention_flags": 2,
+    "moderator_ready_studies": 2,
+    "decision": "priority_replication_hypothesis_not_efficacy_signal"
+  },
+  "effect_quality_audit": {
+    "analysis_trial_ids": 81,
+    "primary_analysis_eligible_rows": 53,
+    "primary_analysis_trials": 18,
+    "cointervention_rows": 27,
+    "duplicate_alias_groups": {
+      "DOI:10.3803/EnM.2020.35.2.425": [
+        "DOI:10.3803/EnM.2020.35.2.425",
+        "PMID:32615727"
+      ],
+      "PMID:36530587": [
+        "EUROPEPMC:36530587",
+        "PMID:36530587"
+      ],
+      "PMID:40951500": [
+        "EUROPEPMC:40951500",
+        "PMID:40951500"
+      ],
+      "PMID:41003008": [
+        "EUROPEPMC:41003008",
+        "PMID:41003008"
+      ]
+    },
+    "excluded_nonmicrobial_comparisons": [
+      "PMID:28730743",
+      "PMID:40828642"
+    ]
+  },
+  "evidence_layer_sensitivity": {
+    "strata_analyzed": 5,
+    "conclusion_counts": {
+      "interval_support_is_subset_dependent": 3,
+      "stable_direction_but_uncertain": 2
+    },
+    "combination_ranking_enabled": false,
+    "interpretation": "Any interval support confined to a stricter subset is treated as possible selection sensitivity, not confirmation of efficacy."
+  },
+  "next_curation_batch": {
+    "eligible_primary_trials": 90,
+    "trials_with_ci_or_sd": 32,
+    "review_like_titles_remaining": 0,
+    "outcome_review_draft": "data/intervention_data/outcome_review_worksheet.variance_rich_draft_20260614.csv",
+    "intervention_review_draft": "data/intervention_data/intervention_review_worksheet.variance_rich_draft_20260614.csv"
+  },
+  "artifacts": {
+    "arms": "data/intervention_data/study_arm_registry.upgrade_20260614.csv",
+    "effects": "data/intervention_data/continuous_effect_sizes.upgrade_20260614.csv",
+    "model_metrics": "results/prediction_results/continuous_effect_model_metrics_20260614.json",
+    "meta_analysis": "results/prediction_results/effect_meta_analysis_hksj_20260614.json",
+    "missing_variance_robustness": "results/prediction_results/missing_variance_robustness_20260614.json",
+    "body_fat_hypothesis_audit": "results/prediction_results/body_fat_hypothesis_audit_20260614.json",
+    "effect_quality_audit": "results/prediction_results/effect_quality_report_20260614.json",
+    "evidence_layer_sensitivity": "results/prediction_results/evidence_layer_sensitivity_20260614.json",
+    "curation_queue": "results/prediction_results/variance_rich_curation_queue_20260614.csv"
+  }
+}
