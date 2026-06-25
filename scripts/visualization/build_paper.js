@@ -38,7 +38,8 @@ function figRatio(name) {
   // figsize ratios (height/width) from the generator
   const r = { fig1_pipeline: 0.511, fig2_obesity_model: 0.476, fig3_forest: 0.372,
               fig4_gate_funnel: 0.579, fig5_balanced_sensitivity: 0.476,
-              fig6_combinations: 0.535, fig7_mechanism: 0.667, fig8_ipd_funnel: 0.426 };
+              fig6_combinations: 0.535, fig7_mechanism: 0.667, fig8_ipd_funnel: 0.426,
+              fig9_strain_membership: 0.509 };
   return r[name];
 }
 function figure(name, caption) {
@@ -151,6 +152,8 @@ const combos = [
 ];
 children.push(table(["#", "组合（菌株）", "株数", "后验综合分", "Top10 概率"], combos, [560, 6066, 700, 850, 850]));
 children.push(caption("表 1  Top-5 益生菌组合（临床前验证优先级，非疗效预测）"));
+children.push(body("为直观呈现全部预测组合的菌株构成，图 9 以菌株×组合成员矩阵列出 Top-10 组合：乳杆菌 K7/K8/K11 三联出现在 9/10 个组合中，构成核心骨架，双歧杆菌（IDCC4301、BBr60、B420 等）与少量芽孢杆菌作机制与生态位互补。"));
+children.push(...figure("fig9_strain_membership", "图 9  预测的 Top-10 益生菌减脂组合及其菌株构成"));
 
 children.push(h2("3.7  机制盲区"));
 children.push(body("按属级功能 guild 解析（图 7），全部 Top 组合仅覆盖 5 条机制轴中的 BSH（胆盐水解→降脂）与乳酸/乙酸两条，普遍缺失丁酸、丙酸与黏液屏障三条——因为高证据菌株几乎都是乳杆菌与双歧杆菌。这是证据驱动排序的固有偏向，提示应主动纳入丁酸/黏液轴候选作为机制对照臂。"));

@@ -243,7 +243,63 @@ def fig8_ipd_funnel():
     save(fig, "fig8_ipd_funnel.png")
 
 
+def fig9_strain_membership():
+    df = pd.read_csv(ROOT / "results/combination_recommendations/robust_strain_combinations_20260610.csv").sort_values("robust_rank").head(10)
+    from collections import Counter
+    members = [[x.strip() for x in str(r["strains"]).split(";")] for _, r in df.iterrows()]
+    freq = Counter(s for m in members for s in m)
+    strains = [s for s, _ in freq.most_common()]
+    n_s, n_c = len(strains), len(df)
+    sidx = {s: i for i, s in enumerate(strains)}
+
+    def genus_color(s):
+        if s.startswith("Lactobacillus"): return C["blue"]
+        if s.startswith("Bifidobacterium"): return C["green"]
+        if s.startswith("Bacillus"): return C["orange"]
+        return C["purple"]
+
+    fig, ax = plt.subplots(figsize=(11, 5.6))
+    # score bar across top
+    scores = df["posterior_score_mean"].values
+    smin, smax = scores.min(), scores.max()
+    for j, sc in enumerate(scores):
+        hh = 0.55 * (sc - smin + 0.3) / (smax - smin + 0.3)
+        ax.add_patch(mpatches.Rectangle((j + 0.18, n_s + 0.15), 0.64, hh,
+                     fc=C["light"], ec=C["blue"], lw=0.8))
+        ax.text(j + 0.5, n_s + 0.18 + hh + 0.05, f"{sc:.2f}", ha="center", va="bottom", fontsize=7.5)
+    ax.text(-0.3, n_s + 0.45, "后验分", ha="right", va="center", fontsize=8.5, color=C["blue"])
+    # membership cells
+    for j, m in enumerate(members):
+        for s in m:
+            i = n_s - 1 - sidx[s]
+            ax.add_patch(mpatches.FancyBboxPatch((j + 0.12, i + 0.12), 0.76, 0.76,
+                         boxstyle="round,pad=0.005,rounding_size=0.06",
+                         fc=genus_color(s), ec="white", lw=1.2))
+    # grid + labels
+    for i, s in enumerate(strains):
+        y = n_s - 1 - i
+        ax.text(-0.3, y + 0.5, s, ha="right", va="center", fontsize=9)
+        ax.text(n_c + 0.25, y + 0.5, f"{freq[s]}/10", ha="left", va="center",
+                fontsize=8.5, color=C["grey"])
+    for j in range(n_c):
+        cid = df.iloc[j]["combination_id"]
+        ax.text(j + 0.5, -0.35, f"#{j+1}\n{cid.split('_')[1]}", ha="center", va="top", fontsize=8)
+    ax.text(n_c + 0.25, n_s + 0.0, "出现\n频次", ha="left", va="center", fontsize=8, color=C["grey"])
+    ax.set_xlim(-3.4, n_c + 1.2); ax.set_ylim(-1.9, n_s + 0.95)
+    ax.axis("off")
+    # genus legend
+    handles = [mpatches.Patch(color=C["blue"], label="Lactobacillus（乳杆菌）"),
+               mpatches.Patch(color=C["green"], label="Bifidobacterium（双歧杆菌）"),
+               mpatches.Patch(color=C["orange"], label="Bacillus（芽孢杆菌）"),
+               mpatches.Patch(color=C["purple"], label="其他乳酸菌属")]
+    ax.legend(handles=handles, loc="upper center", bbox_to_anchor=(0.42, -0.04),
+              ncol=4, fontsize=8.5, frameon=False)
+    ax.set_title("图9  预测的 Top-10 益生菌减脂组合及其菌株构成（行=菌株，列=组合）", y=1.02)
+    save(fig, "fig9_strain_membership.png")
+
+
 if __name__ == "__main__":
     fig1_pipeline(); fig2_obesity_model(); fig3_forest(); fig4_gate_funnel()
     fig5_balanced_sensitivity(); fig6_combinations(); fig7_mechanism(); fig8_ipd_funnel()
+    fig9_strain_membership()
     print("all figures done")
