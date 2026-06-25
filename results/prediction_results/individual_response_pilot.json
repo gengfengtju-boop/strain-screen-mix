@@ -1,0 +1,30 @@
+{
+  "mode": "synthetic_self_test",
+  "note": "No real IPD cohort supplied. This only proves the LOSO pipeline recovers planted signal and correctly rejects noise. Supply --profiles and --outcomes from a curated cohort for a real run.",
+  "planted_signal": {
+    "task": "regression",
+    "n_subjects": 40,
+    "n_features": 25,
+    "metric_name": "mae",
+    "metric_value": 0.2762,
+    "null_value": 0.3325,
+    "beats_null": true,
+    "individual_model_enabled": true,
+    "notes": [
+      "relative_mae_improvement=0.169"
+    ]
+  },
+  "pure_noise": {
+    "task": "regression",
+    "n_subjects": 40,
+    "n_features": 25,
+    "metric_name": "mae",
+    "metric_value": 1.0785,
+    "null_value": 0.8562,
+    "beats_null": false,
+    "individual_model_enabled": false,
+    "notes": [
+      "relative_mae_improvement=-0.260"
+    ]
+  }
+}

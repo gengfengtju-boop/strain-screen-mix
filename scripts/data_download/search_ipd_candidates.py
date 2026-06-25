@@ -29,7 +29,8 @@ QUERY = (
     "AND (randomi* OR placebo OR intervention OR trial) "
     'AND NOT (PUB_TYPE:"review-article" OR PUB_TYPE:"review")'
 )
-MAX_PMIDS = 100
+import os
+MAX_PMIDS = int(os.environ.get("IPD_MAX_PMIDS", "100"))
 SEQ_HINTS = ("bioproject", "nucleotide", "sequence read", "european nucleotide",
              "ena", "sra", "gene expression omnibus", "biostudies", "metagenom")
 ACC = re.compile(r"\b(PRJNA\d+|PRJEB\d+|PRJDB\d+|SRP\d{5,}|ERP\d{5,}|DRP\d{5,}|GSE\d{4,})\b")
@@ -118,7 +119,8 @@ def main() -> None:
 
     fields = ["pmid", "year", "title", "is_open_access", "sequencing_accessions",
               "repositories", "triage_status", "ipd_requirement"]
-    out_csv = OUT_DIR / "ipd_candidate_studies_20260625.csv"
+    suffix = os.environ.get("IPD_OUT_SUFFIX", "20260625")
+    out_csv = OUT_DIR / f"ipd_candidate_studies_{suffix}.csv"
     import csv
     with out_csv.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields)
@@ -140,7 +142,7 @@ def main() -> None:
         ),
         "output": str(out_csv.relative_to(ROOT)).replace("\\", "/"),
     }
-    out_json = OUT_DIR / "ipd_candidate_search_summary_20260625.json"
+    out_json = OUT_DIR / f"ipd_candidate_search_summary_{suffix}.json"
     out_json.write_text(json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8")
     print("screened:", len(studies), "candidates:", len(candidates),
           "with_accession:", summary["with_extractable_accession"])

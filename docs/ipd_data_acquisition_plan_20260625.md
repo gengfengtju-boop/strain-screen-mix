@@ -56,6 +56,28 @@
 （跑通预处理→留一受试者 CV→标志物），等真正的益生菌 IPD 到位即可复用。这再次量化了瓶颈：
 **益生菌 RCT 极少沉积每受试者测序**。
 
+## Pilot 可行性核验（PRJNA1211859）与建模脚手架
+
+对这个唯一配对的人源队列做了硬核可行性核验：
+
+| 维度 | 实情 | 影响 |
+|------|------|------|
+| 测序类型 | **16S 扩增子**（非 shotgun），59 run 合计 **~1.23 GB** | 可下载；但需 DADA2/QIIME2 出 ASV/属表，**不能用 MetaPhlAn** |
+| 预处理工具 | 本机 **无** metaphlan/bowtie2/dada2/qiime2 | 16S→丰度表这一步当前环境跑不了 |
+| MGnify 预分析 | **0** 条 | 无法绕过本地处理直接取丰度表 |
+| 个体结局（ΔBMI/Δ体重）| **不在** ENA/BioSample 属性里（仅有 subject_id+timepoint+采样日期）| 标签需从论文补充材料取（OA，PMID 41377121），多半仅组级 |
+
+**诚实结论**：当前环境**无法**端到端训练真 pilot——卡在「16S 无本地处理链」+「个体结局标签不在公开元数据」。
+这与项目既有的"本环境做不了真版生信"边界一致。**未伪造任何模型结果。**
+
+### 已交付的真实产物
+- **样本清单**（可行、已存）：`data/ipd_search/PRJNA1211859_sample_manifest_20260625.csv`
+  —— 59 run × (subject_id, arm, week, 采样日, fastq_ftp)，含 19 个 w0+w6+w12 配对受试者。
+- **建模脚手架**（已测试）：`src/proslim_ai/individual_response.py` + `scripts/modeling/individual_response_pilot.py`
+  —— 留一受试者 CV（回归/分类），诚实门控（min 12 受试者 + 越过均值/AUC≥0.65）。
+  合成自检证明它**能识别植入信号、能拒绝纯噪声**（`results/prediction_results/individual_response_pilot.json`）。
+  真实数据（丰度表 + 个体结局）一就位即可直接跑。
+
 ## 下一步
 
 1. **扩大搜寻**：把 `MAX_PMIDS` 提到 300–500（后台跑），并对窄化的干预查询全量翻页。
