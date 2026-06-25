@@ -8,6 +8,9 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+
+from .arm_effects import _canonical_trial_ids
+from .research_gate import require_combination_ranking_gate
 from sklearn.base import clone
 from sklearn.compose import ColumnTransformer
 from sklearn.dummy import DummyClassifier
@@ -130,7 +133,15 @@ def train_response_model(
 
     X = feature_data[numeric_features + categorical_features]
     y = data["label"]
-    groups = data["evidence_id"].fillna("").astype(str)
+    identity = pd.DataFrame(
+        {
+            "study_id": data["evidence_id"],
+            "source_title": data.get("title", pd.Series(index=data.index, dtype=object)),
+        },
+        index=data.index,
+    )
+    data["analysis_study_id"] = _canonical_trial_ids(identity)
+    groups = data["analysis_study_id"].fillna("").astype(str)
     model_candidates = _model_candidates(numeric_features, categorical_features)
     if locked_model:
         if locked_model not in model_candidates:
@@ -395,7 +406,12 @@ def apply_response_model_to_combinations(
     combination_input: Path,
     evidence_predictions_path: Path,
     output_path: Path,
+    research_status_path: Path | None = None,
+    hypothesis_only: bool = False,
 ) -> CombinationResponseApplicationResult:
+    require_combination_ranking_gate(
+        research_status_path, hypothesis_only=hypothesis_only
+    )
     with evidence_predictions_path.open("r", newline="", encoding="utf-8-sig") as handle:
         evidence_probabilities: dict[str, float] = {}
         for row in csv.DictReader(handle):
@@ -734,7 +750,10 @@ def _cross_validated_probabilities(
 
 def _aggregate_evidence_predictions(row_predictions: pd.DataFrame, model_status: str) -> pd.DataFrame:
     rows: list[dict[str, object]] = []
-    for evidence_id, group in row_predictions.groupby("evidence_id", sort=False):
+    group_column = (
+        "analysis_study_id" if "analysis_study_id" in row_predictions else "evidence_id"
+    )
+    for evidence_id, group in row_predictions.groupby(group_column, sort=False):
         adiposity = group[group["endpoint_type"] == "adiposity"]["model_response_probability"]
         metabolic = group[group["endpoint_type"] == "metabolic"]["model_response_probability"]
         microbiome = group[group["endpoint_type"] == "microbiome"]["model_response_probability"]

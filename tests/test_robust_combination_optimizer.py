@@ -1,6 +1,4 @@
 import json
-from pathlib import Path
-from uuid import uuid4
 
 import pandas as pd
 
@@ -33,14 +31,12 @@ def _outcomes() -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def test_optimizer_is_deterministic_and_preserves_tested_formulations() -> None:
-    directory = Path(__file__).resolve().parent / "fixtures"
-    token = uuid4().hex
+def test_optimizer_is_deterministic_and_preserves_tested_formulations(tmp_path) -> None:
     paths = [
-        directory / f"robust_{token}_outcomes.csv",
-        directory / f"robust_{token}_evidence.csv",
-        directory / f"robust_{token}_combinations.csv",
-        directory / f"robust_{token}_diagnostics.json",
+        tmp_path / "outcomes.csv",
+        tmp_path / "evidence.csv",
+        tmp_path / "combinations.csv",
+        tmp_path / "diagnostics.json",
     ]
     _outcomes().to_csv(paths[0], index=False)
     try:
@@ -57,20 +53,21 @@ def test_optimizer_is_deterministic_and_preserves_tested_formulations() -> None:
         assert combinations.iloc[0]["prediction_scope"].endswith("not_response_probability")
         assert combinations["top10_probability"].between(0, 1).all()
         assert diagnostics["simulations"] == 200
+        evidence = pd.read_csv(paths[1])
+        assert evidence["independent_studies"].max() == 1
+        assert evidence["evidence_effective_sample_size"].astype(float).max() <= 1.0
     finally:
         for path in paths:
             path.unlink(missing_ok=True)
 
 
-def test_failed_strain_is_excluded_from_robust_results() -> None:
-    directory = Path(__file__).resolve().parent / "fixtures"
-    token = uuid4().hex
+def test_failed_strain_is_excluded_from_robust_results(tmp_path) -> None:
     paths = [
-        directory / f"robust_{token}_outcomes.csv",
-        directory / f"robust_{token}_evidence.csv",
-        directory / f"robust_{token}_combinations.csv",
-        directory / f"robust_{token}_diagnostics.json",
-        directory / f"robust_{token}_safety.csv",
+        tmp_path / "outcomes.csv",
+        tmp_path / "evidence.csv",
+        tmp_path / "combinations.csv",
+        tmp_path / "diagnostics.json",
+        tmp_path / "safety.csv",
     ]
     _outcomes().to_csv(paths[0], index=False)
     pd.DataFrame([{"strain_id": "LF_K7", "safety_gate": "fail"}]).to_csv(paths[4], index=False)
@@ -89,3 +86,28 @@ def test_failed_strain_is_excluded_from_robust_results() -> None:
     finally:
         for path in paths:
             path.unlink(missing_ok=True)
+
+
+def test_species_level_safety_catalog_maps_to_known_strains(tmp_path) -> None:
+    outcomes = tmp_path / "outcomes.csv"
+    evidence = tmp_path / "evidence.csv"
+    combinations = tmp_path / "combinations.csv"
+    diagnostics = tmp_path / "diagnostics.json"
+    safety = tmp_path / "safety.csv"
+    _outcomes().to_csv(outcomes, index=False)
+    pd.DataFrame(
+        [{"species": "Lactobacillus_fermentum", "combination_safety_gate": "fail"}]
+    ).to_csv(safety, index=False)
+
+    optimize_strain_combinations(
+        outcomes,
+        evidence,
+        combinations,
+        diagnostics,
+        top_n=50,
+        simulations=100,
+        safety_status_path=safety,
+    )
+
+    result = pd.read_csv(combinations)
+    assert not result["source_strain_ids"].str.contains("LF_K7|LF_K8|LF_K11").any()

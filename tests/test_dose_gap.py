@@ -1,17 +1,13 @@
-from pathlib import Path
-from uuid import uuid4
-
 import pandas as pd
 
 from proslim_ai.dose_gap import build_dose_gap_queue
 
 
-def test_build_dose_gap_queue_excludes_non_microbial_interventions() -> None:
-    root = Path(__file__).resolve().parent / "fixtures"
-    token = uuid4().hex
-    outcomes = root / f"dose_gap_{token}_outcomes.csv"
-    review = root / f"dose_gap_{token}_review.csv"
-    output = root / f"dose_gap_{token}_output.csv"
+def test_build_dose_gap_queue_excludes_non_microbial_interventions(tmp_path) -> None:
+    outcomes = tmp_path / "outcomes.csv"
+    review = tmp_path / "review.csv"
+    intervention_review = tmp_path / "intervention_review.csv"
+    output = tmp_path / "output.csv"
     pd.DataFrame(
         [
             {
@@ -50,11 +46,23 @@ def test_build_dose_gap_queue_excludes_non_microbial_interventions() -> None:
             },
         ]
     ).to_csv(review, index=False)
+    pd.DataFrame(
+        [
+            {
+                "evidence_id": "PMID:1",
+                "review_status": "pending",
+                "suggested_cfu": "3 x 10^10 CFU/day",
+            }
+        ]
+    ).to_csv(intervention_review, index=False)
     try:
-        queue = build_dose_gap_queue(outcomes, [review], output)
+        queue = build_dose_gap_queue(outcomes, [review, intervention_review], output)
         assert queue["evidence_id"].tolist() == ["PMID:1"]
         assert queue.iloc[0]["review_status"] == "pending_manual_dose_review"
+        assert queue.iloc[0]["suggested_cfu"] == "3 x 10^10 CFU/day"
+        assert "3 x 10^10 CFU/day" in queue.iloc[0]["existing_dose_text"]
     finally:
         outcomes.unlink(missing_ok=True)
         review.unlink(missing_ok=True)
+        intervention_review.unlink(missing_ok=True)
         output.unlink(missing_ok=True)

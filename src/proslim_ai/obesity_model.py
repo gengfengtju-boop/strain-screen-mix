@@ -8,10 +8,12 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from sklearn.compose import ColumnTransformer
+from sklearn.ensemble import HistGradientBoostingClassifier, HistGradientBoostingRegressor
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import ElasticNet, LogisticRegression
 from sklearn.metrics import (
     accuracy_score,
+    average_precision_score,
     balanced_accuracy_score,
     f1_score,
     mean_absolute_error,
@@ -19,9 +21,13 @@ from sklearn.metrics import (
     r2_score,
     roc_auc_score,
 )
-from sklearn.model_selection import GroupKFold, StratifiedGroupKFold, cross_val_predict
+from sklearn.model_selection import (
+    GroupKFold,
+    StratifiedGroupKFold,
+    StratifiedKFold,
+    cross_val_predict,
+)
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import StandardScaler
 
 
 MIN_SAMPLES = 30
@@ -44,6 +50,8 @@ def train_obesity_models(
     metrics_output: Path,
     classifier_output: Path,
     bmi_regressor_output: Path,
+    signature_output: Path | None = None,
+    sample_score_output: Path | None = None,
 ) -> ObesityModelResult:
     metadata = pd.read_csv(metadata_path)
     features = pd.read_csv(feature_matrix_path)
@@ -51,9 +59,14 @@ def train_obesity_models(
     _validate_training_data(data, feature_columns)
 
     groups = data["study_id"].astype(str)
+    compact_training = len(data) < 200
+    max_iter = 10 if compact_training else 400
+    min_samples_leaf = 5 if compact_training else 20
     classification = data[data["obesity_label"].notna()].copy()
     classification_groups = classification["study_id"].astype(str)
-    classifier = _classification_pipeline(feature_columns)
+    classifier = _classification_pipeline(
+        feature_columns, max_iter, min_samples_leaf, compact_training
+    )
     classifier_cv = StratifiedGroupKFold(
         n_splits=min(5, classification_groups.nunique()), shuffle=True, random_state=17
     )
@@ -67,9 +80,23 @@ def train_obesity_models(
     )[:, 1]
     classifier.fit(classification[feature_columns], classification["obesity_label"].astype(int))
 
+    if compact_training:
+        random_classifier_probability = classifier_probability
+    else:
+        random_classifier_cv = StratifiedKFold(n_splits=10, shuffle=True, random_state=17)
+        random_classifier_probability = cross_val_predict(
+            _classification_pipeline(
+                feature_columns, max_iter, min_samples_leaf, compact_training
+            ),
+            classification[feature_columns],
+            classification["obesity_label"].astype(int),
+            cv=random_classifier_cv,
+            method="predict_proba",
+        )[:, 1]
+
     regression = data[data["BMI"].notna()].copy()
     regression_groups = regression["study_id"].astype(str)
-    regressor = _regression_pipeline(feature_columns)
+    regressor = _regression_pipeline(feature_columns, max_iter, min_samples_leaf, compact_training)
     regression_cv = GroupKFold(n_splits=min(5, regression_groups.nunique()))
     bmi_prediction = cross_val_predict(
         regressor,
@@ -80,6 +107,20 @@ def train_obesity_models(
     )
     regressor.fit(regression[feature_columns], regression["BMI"].astype(float))
 
+    if compact_training:
+        random_bmi_prediction = bmi_prediction
+    else:
+        bmi_strata = (regression["BMI"] > regression["BMI"].median()).astype(int)
+        random_regression_cv = StratifiedKFold(n_splits=10, shuffle=True, random_state=17)
+        random_bmi_prediction = cross_val_predict(
+            _regression_pipeline(
+                feature_columns, max_iter, min_samples_leaf, compact_training
+            ),
+            regression[feature_columns],
+            regression["BMI"].astype(float),
+            cv=random_regression_cv.split(regression[feature_columns], bmi_strata),
+        )
+
     labels = classification["obesity_label"].astype(int).to_numpy()
     predicted_labels = (classifier_probability >= 0.5).astype(int)
     metrics = {
@@ -88,18 +129,36 @@ def train_obesity_models(
         "samples_used": int(len(data)),
         "studies_used": int(groups.nunique()),
         "feature_count": len(feature_columns),
+        "model_parameters": {
+            "max_iter": max_iter,
+            "min_samples_leaf": min_samples_leaf,
+            "compact_training_policy": compact_training,
+            "random_split_comparison_executed": not compact_training,
+            "classifier_algorithm": (
+                "LogisticRegression" if compact_training else "HistGradientBoostingClassifier"
+            ),
+            "regressor_algorithm": (
+                "ElasticNet" if compact_training else "HistGradientBoostingRegressor"
+            ),
+        },
         "obesity_classification": {
             "rows": int(len(classification)),
             "auc": float(roc_auc_score(labels, classifier_probability)),
             "accuracy": float(accuracy_score(labels, predicted_labels)),
             "balanced_accuracy": float(balanced_accuracy_score(labels, predicted_labels)),
             "f1": float(f1_score(labels, predicted_labels, zero_division=0)),
+            "average_precision": float(average_precision_score(labels, classifier_probability)),
+            "random_split_auc": float(roc_auc_score(labels, random_classifier_probability)),
         },
         "bmi_regression": {
             "rows": int(len(regression)),
             "r2": float(r2_score(regression["BMI"], bmi_prediction)),
             "mae": float(mean_absolute_error(regression["BMI"], bmi_prediction)),
             "rmse": float(np.sqrt(mean_squared_error(regression["BMI"], bmi_prediction))),
+            "random_split_r2": float(r2_score(regression["BMI"], random_bmi_prediction)),
+            "random_split_mae": float(
+                mean_absolute_error(regression["BMI"], random_bmi_prediction)
+            ),
         },
         "limitations": [
             "Internal grouped cross-validation is not an external validation cohort.",
@@ -110,6 +169,20 @@ def train_obesity_models(
     metrics_output.write_text(json.dumps(metrics, indent=2, sort_keys=True), encoding="utf-8")
     _write_model(classifier_output, classifier, feature_columns, "obesity_microbiome_classifier")
     _write_model(bmi_regressor_output, regressor, feature_columns, "bmi_regressor")
+    if signature_output is not None:
+        correlations = classification[feature_columns].corrwith(
+            classification["obesity_label"].astype(int)
+        )
+        signature = correlations.reindex(correlations.abs().sort_values(ascending=False).index)
+        signature_output.parent.mkdir(parents=True, exist_ok=True)
+        signature.rename("obesity_point_biserial_corr").head(40).to_csv(signature_output)
+    if sample_score_output is not None:
+        score = data[["sample_id", "study_id", "BMI", "obesity_status"]].copy()
+        score["obesity_microbiome_score"] = pd.Series(
+            classifier_probability, index=classification.index
+        ).reindex(data.index)
+        sample_score_output.parent.mkdir(parents=True, exist_ok=True)
+        score.to_csv(sample_score_output, index=False)
     return ObesityModelResult(
         metrics_output=metrics_output,
         classifier_output=classifier_output,
@@ -136,9 +209,13 @@ def _prepare_training_data(
     data = metadata.merge(features, on="sample_id", how="inner", validate="one_to_one")
     data["BMI"] = pd.to_numeric(data["BMI"], errors="coerce")
     data["obesity_label"] = data["obesity_status"].map(_obesity_label)
-    usable_features = [
-        column for column in feature_columns if int(data[column].notna().sum()) >= MIN_CLASS_SAMPLES
-    ]
+    usable_features = []
+    for column in feature_columns:
+        observed = data[column].notna()
+        prevalence = (data.loc[observed, column] > 0).mean() if observed.any() else 0.0
+        if int(observed.sum()) >= MIN_CLASS_SAMPLES and prevalence >= 0.10:
+            data[column] = np.log10(data[column].clip(lower=0) + 1e-4)
+            usable_features.append(column)
     return data, usable_features
 
 
@@ -176,7 +253,6 @@ def _preprocessor(feature_columns: list[str]) -> ColumnTransformer:
                 Pipeline(
                     [
                         ("imputer", SimpleImputer(strategy="median")),
-                        ("scaler", StandardScaler()),
                     ]
                 ),
                 feature_columns,
@@ -185,20 +261,54 @@ def _preprocessor(feature_columns: list[str]) -> ColumnTransformer:
     )
 
 
-def _classification_pipeline(feature_columns: list[str]) -> Pipeline:
+def _classification_pipeline(
+    feature_columns: list[str],
+    max_iter: int = 400,
+    min_samples_leaf: int = 20,
+    compact_training: bool = False,
+) -> Pipeline:
+    estimator = (
+        LogisticRegression(class_weight="balanced", max_iter=2000, random_state=17)
+        if compact_training
+        else HistGradientBoostingClassifier(
+            max_depth=3,
+            learning_rate=0.05,
+            max_iter=max_iter,
+            min_samples_leaf=min_samples_leaf,
+            l2_regularization=1.0,
+            random_state=17,
+        )
+    )
     return Pipeline(
         [
             ("preprocess", _preprocessor(feature_columns)),
-            ("classifier", LogisticRegression(class_weight="balanced", max_iter=2000, random_state=17)),
+            ("classifier", estimator),
         ]
     )
 
 
-def _regression_pipeline(feature_columns: list[str]) -> Pipeline:
+def _regression_pipeline(
+    feature_columns: list[str],
+    max_iter: int = 400,
+    min_samples_leaf: int = 20,
+    compact_training: bool = False,
+) -> Pipeline:
+    estimator = (
+        ElasticNet(alpha=0.05, l1_ratio=0.5, max_iter=5000, random_state=17)
+        if compact_training
+        else HistGradientBoostingRegressor(
+            max_depth=3,
+            learning_rate=0.05,
+            max_iter=max_iter,
+            min_samples_leaf=min_samples_leaf,
+            l2_regularization=1.0,
+            random_state=17,
+        )
+    )
     return Pipeline(
         [
             ("preprocess", _preprocessor(feature_columns)),
-            ("regressor", ElasticNet(alpha=0.05, l1_ratio=0.5, max_iter=5000, random_state=17)),
+            ("regressor", estimator),
         ]
     )
 

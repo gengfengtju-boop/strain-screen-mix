@@ -4,10 +4,18 @@ import argparse
 from pathlib import Path
 
 from .modules import MODULES
+from .modern_response_benchmark import benchmark_modern_response_models
 from .paths import ProjectPaths, find_project_root
 from .project import check_project, write_template_tables
 from .config import load_table_schemas
 from .audit import audit_project
+from .arm_effects import (
+    build_arm_level_dataset,
+    build_continuous_effects,
+    missing_variance_robustness_analysis,
+    random_effects_meta_analysis,
+    train_continuous_effect_models,
+)
 from .batch_search import run_batch_search
 from .details import build_evidence_details
 from .dose_gap import build_dose_gap_queue
@@ -21,8 +29,10 @@ from .extraction_queue import build_extraction_queue
 from .finalize import finalize_clinical_outcomes
 from .formulation_recommendation import build_formulation_recommendations
 from .hints import extract_detail_hints
+from .input_manifest import load_input_manifest
 from .provenance import validate_provenance
 from .preliminary_prediction import build_preliminary_predictions
+from .research_gate import require_combination_ranking_gate
 from .outcome_prioritization import build_outcome_prioritized_predictions
 from .outcome_structuring import structure_outcome_review
 from .obesity_model import train_obesity_models
@@ -89,8 +99,12 @@ def cmd_audit(args: argparse.Namespace) -> int:
         print("Source registry errors:")
         for item in result.source_registry_errors:
             print(f"  - {item}")
+    if result.configuration_errors:
+        print("Configuration errors:")
+        for item in result.configuration_errors:
+            print(f"  - {item}")
     if result.ok:
-        print("OK: project structure, templates, and source registry are consistent.")
+        print("OK: project structure, templates, source registry, and model configuration are consistent.")
         return 0
     return 1
 
@@ -428,6 +442,11 @@ def cmd_prioritize_with_outcomes(args: argparse.Namespace) -> int:
 
 
 def cmd_recommend_formulations(args: argparse.Namespace) -> int:
+    paths = _paths(args.root)
+    gate = require_combination_ranking_gate(
+        Path(args.research_status) if args.research_status else None,
+        hypothesis_only=args.hypothesis_only,
+    )
     result = build_formulation_recommendations(
         strain_output=Path(args.strain_output),
         formulation_output=Path(args.formulation_output),
@@ -436,15 +455,22 @@ def cmd_recommend_formulations(args: argparse.Namespace) -> int:
         max_strains=args.max_strains,
         top_n=args.top_n,
         safety_status_path=Path(args.safety_status) if args.safety_status else None,
+        scoring_config_path=paths.config / "scoring_weights.yaml",
     )
     print(f"Strains: {result.strain_output} ({result.strains_written} rows)")
     print(f"Formulations: {result.formulation_output} ({result.formulations_written} rows)")
     print(f"Combinations: {result.combination_output} ({result.combinations_written} rows)")
+    print(f"Hypothesis only: {gate['hypothesis_only']}")
     print("Note: pending-safety combinations are hypothesis-ranked but not validation-eligible.")
     return 0
 
 
 def cmd_optimize_combinations(args: argparse.Namespace) -> int:
+    paths = _paths(args.root)
+    gate = require_combination_ranking_gate(
+        Path(args.research_status) if args.research_status else None,
+        hypothesis_only=args.hypothesis_only,
+    )
     result = optimize_strain_combinations(
         structured_outcomes_path=Path(args.structured_outcomes),
         formulation_evidence_output=Path(args.formulation_evidence_output),
@@ -456,6 +482,7 @@ def cmd_optimize_combinations(args: argparse.Namespace) -> int:
         simulations=args.simulations,
         random_seed=args.random_seed,
         safety_status_path=Path(args.safety_status) if args.safety_status else None,
+        scoring_config_path=paths.config / "scoring_weights.yaml",
     )
     print(
         f"Formulation evidence: {result.formulation_evidence_output} "
@@ -463,6 +490,7 @@ def cmd_optimize_combinations(args: argparse.Namespace) -> int:
     )
     print(f"Robust combinations: {result.combination_output} ({result.combinations_scored} scored)")
     print(f"Diagnostics: {result.diagnostics_output}; simulations={result.simulations}")
+    print(f"Hypothesis only: {gate['hypothesis_only']}")
     print("Note: output is validation priority, not clinical or individual response probability.")
     return 0
 
@@ -558,6 +586,23 @@ def cmd_build_dose_gap_queue(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_benchmark_modern_response_models(args: argparse.Namespace) -> int:
+    result = benchmark_modern_response_models(
+        structured_outcomes_path=Path(args.structured_outcomes),
+        output_path=Path(args.output),
+        review_paths=[Path(path) for path in args.review],
+        cv_repeats=args.cv_repeats,
+        random_seed=args.random_seed,
+        minimum_auc_gain=args.minimum_auc_gain,
+    )
+    print(f"Rows used: {result.rows_used}")
+    print(f"Evidence ids: {result.evidence_count}")
+    print(f"Selected model: {result.selected_model}")
+    print(f"Promoted model: {result.promoted_model or 'none'}")
+    print(f"Benchmark report: {result.output_path}")
+    return 0
+
+
 def cmd_train_obesity_models(args: argparse.Namespace) -> int:
     result = train_obesity_models(
         metadata_path=Path(args.metadata),
@@ -580,11 +625,100 @@ def cmd_apply_response_model(args: argparse.Namespace) -> int:
         combination_input=Path(args.combination_input),
         evidence_predictions_path=Path(args.evidence_predictions),
         output_path=Path(args.output),
+        research_status_path=Path(args.research_status) if args.research_status else None,
+        hypothesis_only=args.hypothesis_only,
     )
     print(f"Output: {result.output_path}")
     print(f"Rows written: {result.rows_written}")
     print(f"Rows with model probability: {result.combinations_with_model_probability}")
     print("Note: probabilities are applied only when the evidence classifier passes its informativeness gate.")
+    return 0
+
+
+def cmd_build_arm_dataset(args: argparse.Namespace) -> int:
+    result = build_arm_level_dataset(
+        review_paths=[Path(path) for path in args.review],
+        intervention_review_paths=[Path(path) for path in args.intervention_review],
+        output_path=Path(args.output),
+        target_studies=args.target_studies,
+        structured_paths=[Path(path) for path in args.structured],
+    )
+    print(f"Studies: {result.studies}")
+    print(f"Arms: {result.arms}")
+    print(f"Output: {result.output_path}")
+    return 0
+
+
+def cmd_validate_continuous_manifest(args: argparse.Namespace) -> int:
+    result = load_input_manifest(Path(args.manifest))
+    print(f"Manifest: {result['manifest_path']}")
+    print(f"Structured rows: {result['structured_rows']}")
+    print(f"Structured studies: {result['structured_studies']}")
+    return 0
+
+
+def cmd_build_continuous_effects(args: argparse.Namespace) -> int:
+    result = build_continuous_effects(
+        review_paths=[Path(path) for path in args.review],
+        arm_path=Path(args.arms),
+        output_path=Path(args.output),
+        structured_paths=[Path(path) for path in args.structured],
+        detail_paths=[Path(path) for path in args.details],
+        include_abstract_mined=args.include_abstract_mined,
+    )
+    print(f"Continuous effects: {result.effects}")
+    print(f"Validation-ready effects: {result.validation_ready_effects}")
+    print(f"Output: {result.output_path}")
+    return 0
+
+
+def cmd_train_continuous_effect_model(args: argparse.Namespace) -> int:
+    result = train_continuous_effect_models(
+        effect_path=Path(args.effects),
+        arm_path=Path(args.arms),
+        metrics_output=Path(args.metrics),
+        predictions_output=Path(args.predictions),
+        model_output=Path(args.model),
+        minimum_studies=args.minimum_studies,
+        confidence_policy=args.confidence_policy,
+    )
+    print(f"Modeled endpoint-unit strata: {result.modeled_strata}")
+    print(f"Metrics: {result.metrics_output}")
+    print(f"Predictions: {result.predictions_output}")
+    print(f"Model: {result.model_output}")
+    return 0
+
+
+def cmd_meta_analyze_effects(args: argparse.Namespace) -> int:
+    report = random_effects_meta_analysis(
+        effect_path=Path(args.effects),
+        arm_path=Path(args.arms),
+        output_path=Path(args.output),
+        minimum_studies=args.minimum_studies,
+    )
+    print(f"Strata meta-analyzed: {report['strata_meta_analyzed']}")
+    print(f"Strata with pooled 95% CI excluding zero: {report['strata_with_pooled_effect_excluding_zero']}")
+    for s in report["strata"]:
+        if s.get("status") == "random_effects_meta_analyzed":
+            flag = " <CI excludes 0>" if s["ci_excludes_zero"] else ""
+            print(f"  {s['stratum']}: pooled {s['pooled_effect']} "
+                  f"[{s['ci95_low']}, {s['ci95_high']}] I2={s['i2_percent']}%{flag}")
+    print(f"Report: {args.output}")
+    return 0
+
+
+def cmd_analyze_missing_variance(args: argparse.Namespace) -> int:
+    report = missing_variance_robustness_analysis(
+        effect_path=Path(args.effects),
+        arm_path=Path(args.arms),
+        output_path=Path(args.output),
+        minimum_studies=args.minimum_studies,
+        bootstrap_iterations=args.bootstrap_iterations,
+    )
+    print(f"Strata analyzed: {report['strata_analyzed']}")
+    for state, count in report["evidence_state_counts"].items():
+        print(f"  {state}: {count}")
+    print(f"Report: {args.output}")
     return 0
 
 
@@ -834,6 +968,8 @@ def build_parser() -> argparse.ArgumentParser:
         "--safety-status",
         help="Optional CSV with strain_id and safety_gate (pass/fail/pending).",
     )
+    recommend_formulations.add_argument("--research-status", required=True)
+    recommend_formulations.add_argument("--hypothesis-only", action="store_true")
     recommend_formulations.set_defaults(func=cmd_recommend_formulations)
 
     optimize_combinations = subparsers.add_parser(
@@ -855,6 +991,8 @@ def build_parser() -> argparse.ArgumentParser:
         "--safety-status",
         help="Optional CSV with strain_id and safety_gate (pass/fail/pending).",
     )
+    optimize_combinations.add_argument("--research-status", required=True)
+    optimize_combinations.add_argument("--hypothesis-only", action="store_true")
     optimize_combinations.set_defaults(func=cmd_optimize_combinations)
 
     tabpfn_benchmark = subparsers.add_parser(
@@ -907,7 +1045,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     train_obesity = subparsers.add_parser(
         "train-obesity-models",
-        help="Train leakage-safe sample-level OMS classification and BMI regression baselines.",
+        help="Train canonical sample-level obesity classification and BMI regression models.",
     )
     train_obesity.add_argument("metadata", help="Sample metadata CSV.")
     train_obesity.add_argument("features", help="Wide numeric feature matrix with sample_id.")
@@ -944,6 +1082,18 @@ def build_parser() -> argparse.ArgumentParser:
     )
     train_response.set_defaults(func=cmd_train_response_model)
 
+    modern_response = subparsers.add_parser(
+        "benchmark-modern-response-models",
+        help="Benchmark modern tabular classifiers with grouped and leave-one-study-out validation.",
+    )
+    modern_response.add_argument("structured_outcomes")
+    modern_response.add_argument("output")
+    modern_response.add_argument("--review", action="append", default=[])
+    modern_response.add_argument("--cv-repeats", type=int, default=5)
+    modern_response.add_argument("--random-seed", type=int, default=17)
+    modern_response.add_argument("--minimum-auc-gain", type=float, default=0.01)
+    modern_response.set_defaults(func=cmd_benchmark_modern_response_models)
+
     dose_gap = subparsers.add_parser(
         "build-dose-gap-queue",
         help="Build a study-level manual queue for missing microbial CFU doses.",
@@ -960,7 +1110,77 @@ def build_parser() -> argparse.ArgumentParser:
     apply_response.add_argument("combination_input", help="Input combination ranking CSV.")
     apply_response.add_argument("evidence_predictions", help="Evidence-level classifier score CSV.")
     apply_response.add_argument("output", help="Output combination ranking CSV with model probabilities.")
+    apply_response.add_argument("--research-status", required=True)
+    apply_response.add_argument("--hypothesis-only", action="store_true")
     apply_response.set_defaults(func=cmd_apply_response_model)
+
+    manifest = subparsers.add_parser(
+        "validate-continuous-manifest",
+        help="Validate pinned continuous-effect inputs and reject numeric conflicts.",
+    )
+    manifest.add_argument("manifest")
+    manifest.set_defaults(func=cmd_validate_continuous_manifest)
+
+    arm_dataset = subparsers.add_parser(
+        "build-arm-dataset",
+        help="Build an intervention-arm registry from prioritized outcome reviews.",
+    )
+    arm_dataset.add_argument("output")
+    arm_dataset.add_argument("--review", action="append", default=[], required=True)
+    arm_dataset.add_argument("--intervention-review", action="append", default=[])
+    arm_dataset.add_argument("--structured", action="append", default=[])
+    arm_dataset.add_argument("--target-studies", type=int, default=80)
+    arm_dataset.set_defaults(func=cmd_build_arm_dataset)
+
+    continuous_effects = subparsers.add_parser(
+        "build-continuous-effects",
+        help="Extract analysis-ready continuous effects linked to intervention arms.",
+    )
+    continuous_effects.add_argument("arms")
+    continuous_effects.add_argument("output")
+    continuous_effects.add_argument("--review", action="append", default=[], required=True)
+    continuous_effects.add_argument("--structured", action="append", default=[])
+    continuous_effects.add_argument("--details", action="append", default=[])
+    continuous_effects.add_argument("--include-abstract-mined", action="store_true")
+    continuous_effects.set_defaults(func=cmd_build_continuous_effects)
+
+    continuous_model = subparsers.add_parser(
+        "train-continuous-effect-model",
+        help="Train endpoint-unit-specific weighted continuous effect models.",
+    )
+    continuous_model.add_argument("effects")
+    continuous_model.add_argument("arms")
+    continuous_model.add_argument("metrics")
+    continuous_model.add_argument("predictions")
+    continuous_model.add_argument("model")
+    continuous_model.add_argument("--minimum-studies", type=int, default=5)
+    continuous_model.add_argument(
+        "--confidence-policy",
+        choices=["high_confidence_only", "all"],
+        default="high_confidence_only",
+    )
+    continuous_model.set_defaults(func=cmd_train_continuous_effect_model)
+
+    meta = subparsers.add_parser(
+        "meta-analyze-effects",
+        help="Small-sample robust random-effects meta-analysis per outcome stratum.",
+    )
+    meta.add_argument("effects")
+    meta.add_argument("arms")
+    meta.add_argument("output")
+    meta.add_argument("--minimum-studies", type=int, default=3)
+    meta.set_defaults(func=cmd_meta_analyze_effects)
+
+    missing_variance = subparsers.add_parser(
+        "analyze-missing-variance",
+        help="Triangulate continuous effects when study variances are incompletely reported.",
+    )
+    missing_variance.add_argument("effects")
+    missing_variance.add_argument("arms")
+    missing_variance.add_argument("output")
+    missing_variance.add_argument("--minimum-studies", type=int, default=3)
+    missing_variance.add_argument("--bootstrap-iterations", type=int, default=10000)
+    missing_variance.set_defaults(func=cmd_analyze_missing_variance)
     return parser
 
 

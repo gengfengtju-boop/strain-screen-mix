@@ -38,16 +38,33 @@ INTERVENTION_PATTERNS = {
 
 
 TAXA_PATTERNS = [
+    # food-grade / fermentation probiotics
     "Lactobacillus",
     "Lacticaseibacillus",
     "Lactiplantibacillus",
     "Limosilactobacillus",
     "Bifidobacterium",
-    "Akkermansia",
     "Bacillus",
     "Saccharomyces",
     "Streptococcus",
     "Enterococcus",
+    "Lactococcus",
+    "Pediococcus",
+    # human-derived gut microbes / next-generation probiotics (commensal-sourced)
+    "Akkermansia",
+    "Faecalibacterium",
+    "Bacteroides",
+    "Parabacteroides",
+    "Roseburia",
+    "Anaerobutyricum",
+    "Anaerostipes",
+    "Christensenella",
+    "Blautia",
+    "Eubacterium",
+    "Phascolarctobacterium",
+    "Clostridium",
+    "Hafnia",
+    "Dysosmobacter",
     "Coprococcus",
 ]
 

@@ -8,13 +8,15 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from .formulation_recommendation import FORMULATIONS, _candidate_strains
+from .config import load_yaml
+from .formulation_recommendation import FORMULATIONS, _candidate_strains, _load_safety_statuses
 
 
 FORMULATION_EVIDENCE_FIELDS = [
     "formulation_id",
     "formulation_name",
     "evidence_id",
+    "independent_studies",
     "outcome_rows",
     "positive_rows",
     "limited_rows",
@@ -87,15 +89,25 @@ def optimize_strain_combinations(
     simulations: int = 2000,
     random_seed: int = 17,
     safety_status_path: Path | None = None,
+    scoring_config_path: Path | None = None,
 ) -> RobustCombinationOptimizationResult:
     if simulations < 100:
         raise ValueError("Robust optimization requires at least 100 simulations.")
     outcomes = pd.read_csv(structured_outcomes_path)
     rng = np.random.default_rng(random_seed)
     safety_statuses = _load_safety_statuses(safety_status_path)
-    evidence_rows, evidence_draws = _score_formulation_evidence(outcomes, simulations, rng)
+    optimizer_config = _load_optimizer_config(scoring_config_path)
+    evidence_rows, evidence_draws = _score_formulation_evidence(
+        outcomes, simulations, rng, optimizer_config["endpoint_weights"]
+    )
     candidates = _enumerate_candidates(min_strains, max_strains, safety_statuses)
-    scored = _simulate_combination_scores(candidates, evidence_draws, rng)
+    scored = _simulate_combination_scores(
+        candidates,
+        evidence_draws,
+        rng,
+        optimizer_config["score_weight_center"],
+        optimizer_config["dirichlet_concentration"],
+    )
     rows = _rank_combinations(scored, top_n)
 
     formulation_evidence_output.parent.mkdir(parents=True, exist_ok=True)
@@ -113,15 +125,12 @@ def optimize_strain_combinations(
         "simulations": simulations,
         "random_seed": random_seed,
         "combination_size_range": [min_strains, max_strains],
-        "endpoint_weights": ENDPOINT_WEIGHTS,
-        "score_weight_center": {
-            "clinical_evidence": 0.45,
-            "module_coverage": 0.20,
-            "formulation_integrity": 0.15,
-            "evidence_independence": 0.10,
-            "genus_diversity": 0.10,
-        },
-        "validation": "Monte Carlo sensitivity analysis over evidence posteriors and score weights",
+        "endpoint_weights": optimizer_config["endpoint_weights"],
+        "score_weight_center": optimizer_config["score_weight_center"],
+        "validation": (
+            "Monte Carlo sensitivity analysis over study-level evidence posteriors and score weights; "
+            "correlated endpoints are aggregated within study"
+        ),
         "decision_layer": "Pareto frontier plus uncertainty-aware active-learning batch selection",
         "literature_basis": [
             {
@@ -161,6 +170,7 @@ def _score_formulation_evidence(
     outcomes: pd.DataFrame,
     simulations: int,
     rng: np.random.Generator,
+    endpoint_weights_config: dict[str, float],
 ) -> tuple[list[dict[str, object]], dict[str, np.ndarray]]:
     rows: list[dict[str, object]] = []
     draws: dict[str, np.ndarray] = {}
@@ -170,14 +180,28 @@ def _score_formulation_evidence(
         group = group[group["positive_efficacy_label"].isin(LABEL_VALUES)].copy()
         successes = 0.0
         failures = 0.0
-        for _, outcome in group.iterrows():
-            label = str(outcome["positive_efficacy_label"])
-            value = LABEL_VALUES[label]
-            endpoint_weight = ENDPOINT_WEIGHTS.get(str(outcome.get("endpoint_type", "")), 0.5)
-            quality = _quality_factor(outcome, formulation)
-            weight = endpoint_weight * quality
-            successes += weight * value
-            failures += weight * (1.0 - value)
+        independent_studies = 0
+        if not group.empty:
+            endpoint_values: list[float] = []
+            endpoint_weights: list[float] = []
+            quality_values: list[float] = []
+            for _, outcome in group.iterrows():
+                label = str(outcome["positive_efficacy_label"])
+                endpoint_values.append(LABEL_VALUES[label])
+                endpoint_weights.append(
+                    endpoint_weights_config.get(
+                        str(outcome.get("endpoint_type", "")), endpoint_weights_config["other"]
+                    )
+                )
+                quality_values.append(_quality_factor(outcome, formulation))
+
+            # Correlated endpoints from one trial count as one independent study.
+            combined_weights = np.asarray(endpoint_weights) * np.asarray(quality_values)
+            study_score = float(np.average(endpoint_values, weights=combined_weights))
+            study_strength = float(min(max(quality_values), 1.0))
+            successes = study_strength * study_score
+            failures = study_strength * (1.0 - study_score)
+            independent_studies = 1
         alpha = 1.0 + successes
         beta = 1.0 + failures
         posterior = rng.beta(alpha, beta, size=simulations) * 10.0
@@ -189,6 +213,7 @@ def _score_formulation_evidence(
                 "formulation_id": formulation["formulation_id"],
                 "formulation_name": formulation["formulation_name"],
                 "evidence_id": evidence_id,
+                "independent_studies": independent_studies,
                 "outcome_rows": int(len(group)),
                 "positive_rows": int(labels.get("yes", 0)),
                 "limited_rows": int(labels.get("limited", 0)),
@@ -301,10 +326,20 @@ def _simulate_combination_scores(
     candidates: list[dict[str, object]],
     evidence_draws: dict[str, np.ndarray],
     rng: np.random.Generator,
+    score_weight_center: dict[str, float],
+    dirichlet_concentration: float,
 ) -> list[dict[str, object]]:
     simulations = len(next(iter(evidence_draws.values())))
-    weight_center = np.array([0.45, 0.20, 0.15, 0.10, 0.10])
-    weights = rng.dirichlet(weight_center * 80.0, size=simulations)
+    weight_center = np.array(
+        [
+            score_weight_center["clinical_evidence"],
+            score_weight_center["module_coverage"],
+            score_weight_center["formulation_integrity"],
+            score_weight_center["evidence_independence"],
+            score_weight_center["genus_diversity"],
+        ]
+    )
+    weights = rng.dirichlet(weight_center * dirichlet_concentration, size=simulations)
     score_matrix = np.zeros((len(candidates), simulations), dtype=float)
     clinical_matrix = np.zeros_like(score_matrix)
     for index, candidate in enumerate(candidates):
@@ -473,14 +508,31 @@ def _validation_recommendation(rank: int, strain_count: int, safety_passed: bool
     return "reserve candidate for sensitivity panel"
 
 
-def _load_safety_statuses(path: Path | None) -> dict[str, str]:
+def _load_optimizer_config(path: Path | None) -> dict[str, object]:
+    defaults: dict[str, object] = {
+        "endpoint_weights": {**ENDPOINT_WEIGHTS, "other": 0.5},
+        "score_weight_center": {
+            "clinical_evidence": 0.45,
+            "module_coverage": 0.20,
+            "formulation_integrity": 0.15,
+            "evidence_independence": 0.10,
+            "genus_diversity": 0.10,
+        },
+        "dirichlet_concentration": 80.0,
+    }
     if path is None:
-        return {}
-    table = pd.read_csv(path)
-    statuses: dict[str, str] = {}
-    for _, row in table.iterrows():
-        strain_id = str(row.get("strain_id", "")).strip()
-        status = str(row.get("safety_gate", "")).strip().lower()
-        if strain_id and status in {"pass", "fail", "pending"}:
-            statuses[strain_id] = status
-    return statuses
+        return defaults
+    configured = load_yaml(path).get("robust_optimizer", {})
+    return {
+        "endpoint_weights": {
+            key: float(configured.get("endpoint_weights", {}).get(key, value))
+            for key, value in defaults["endpoint_weights"].items()
+        },
+        "score_weight_center": {
+            key: float(configured.get("score_weight_center", {}).get(key, value))
+            for key, value in defaults["score_weight_center"].items()
+        },
+        "dirichlet_concentration": float(
+            configured.get("dirichlet_concentration", defaults["dirichlet_concentration"])
+        ),
+    }

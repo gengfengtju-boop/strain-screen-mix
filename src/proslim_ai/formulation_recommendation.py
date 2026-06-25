@@ -1,9 +1,12 @@
 from __future__ import annotations
 
 import csv
+import re
 from dataclasses import dataclass
 from itertools import combinations
 from pathlib import Path
+
+from .config import load_yaml
 
 
 STRAIN_FIELDS = [
@@ -199,8 +202,10 @@ def build_formulation_recommendations(
     max_strains: int = 5,
     top_n: int = 50,
     safety_status_path: Path | None = None,
+    scoring_config_path: Path | None = None,
 ) -> FormulationRecommendationResult:
     safety_statuses = _load_safety_statuses(safety_status_path)
+    score_weights = _load_score_weights(scoring_config_path)
     strains = _build_strain_rows(safety_statuses)
     formulations = _build_formulation_rows()
     combinations_rows = _build_combination_rows(
@@ -208,6 +213,7 @@ def build_formulation_recommendations(
         max_strains=max_strains,
         top_n=top_n,
         safety_statuses=safety_statuses,
+        score_weights=score_weights,
     )
 
     _write_rows(strain_output, STRAIN_FIELDS, strains)
@@ -280,8 +286,10 @@ def _build_combination_rows(
     max_strains: int,
     top_n: int,
     safety_statuses: dict[str, str] | None = None,
+    score_weights: dict[str, dict[str, float]] | None = None,
 ) -> list[dict[str, str]]:
     strains = _candidate_strains(safety_statuses or {})
+    weights = score_weights or _default_score_weights()
     rows: list[dict[str, str]] = []
     for size in range(min_strains, min(max_strains, len(strains)) + 1):
         for strain_set in combinations(strains, size):
@@ -289,7 +297,7 @@ def _build_combination_rows(
                 continue
             if len({strain["genus"] for strain in strain_set}) < 2:
                 continue
-            row = _score_strains(strain_set, len(rows) + 1)
+            row = _score_strains(strain_set, len(rows) + 1, weights)
             rows.append(row)
     rows.sort(key=lambda row: float(row["hypothesis_priority"]), reverse=True)
     for index, row in enumerate(rows[:top_n], start=1):
@@ -297,7 +305,9 @@ def _build_combination_rows(
     return rows[:top_n]
 
 
-def _score_strains(strains: tuple[dict, ...], index: int) -> dict[str, str]:
+def _score_strains(
+    strains: tuple[dict, ...], index: int, score_weights: dict[str, dict[str, float]]
+) -> dict[str, str]:
     modules = set().union(*(strain["modules"] for strain in strains))
     strain_ids = [str(strain["strain_id"]) for strain in strains]
     strain_names = [str(strain["strain_name"]) for strain in strains]
@@ -312,16 +322,21 @@ def _score_strains(strains: tuple[dict, ...], index: int) -> dict[str, str]:
     genera = {str(strain["genus"]) for strain in strains}
     microbiome_match = min(7.0 + len(genera) + ("bifidobacterium_niche" in modules) + ("body_fat" in modules), 10.0)
     pp_penalty = sum(0.2 for strain in strains if "ITT_not_significant" in str(strain["analysis_population"]))
+    design_weights = score_weights["combination_design_weights"]
     combination_design = max(
         0.0,
-        0.35 * complementarity
-        + 0.30 * synergy
-        + 0.20 * microbiome_match
-        + 0.15 * recovery
+        design_weights["complementarity_score"] * complementarity
+        + design_weights["synergy_score"] * synergy
+        + design_weights["microbiome_matching_score"] * microbiome_match
+        + design_weights["formulation_recovery_score"] * recovery
         - split_penalty
         - pp_penalty,
     )
-    validation_priority = 0.45 * clinical + 0.55 * combination_design
+    combination_weights = score_weights["combination_scores"]
+    validation_priority = (
+        combination_weights["clinical_evidence_score"] * clinical
+        + combination_weights["combination_design_score"] * combination_design
+    )
     safety_passed = all(strain["safety_gate"] == "pass" for strain in strains)
     return {
         "combination_id": f"FMB3TO5_{index:03d}",
@@ -382,14 +397,62 @@ def _load_safety_statuses(path: Path | None) -> dict[str, str]:
         return {}
     with path.open("r", newline="", encoding="utf-8-sig") as handle:
         rows = list(csv.DictReader(handle))
+    taxon_to_strains: dict[str, set[str]] = {}
+    for formulation in FORMULATIONS:
+        for strain_id, genus, species, _ in formulation["members"]:
+            taxon_to_strains.setdefault(_taxon_key(f"{genus}_{species}"), set()).add(strain_id)
+
     statuses: dict[str, str] = {}
+    priority = {"pass": 0, "pending": 1, "fail": 2}
     for row in rows:
         strain_id = str(row.get("strain_id") or "").strip()
-        status = str(row.get("safety_gate") or "").strip().lower()
-        if not strain_id or status not in {"pass", "fail", "pending"}:
+        status = str(
+            row.get("safety_gate") or row.get("combination_safety_gate") or ""
+        ).strip().lower()
+        if status not in priority:
             continue
-        statuses[strain_id] = status
+        matching_ids = {strain_id} if strain_id else taxon_to_strains.get(
+            _taxon_key(row.get("species")), set()
+        )
+        for matching_id in matching_ids:
+            previous = statuses.get(matching_id)
+            if previous is None or priority[status] > priority[previous]:
+                statuses[matching_id] = status
     return statuses
+
+
+def _default_score_weights() -> dict[str, dict[str, float]]:
+    return {
+        "combination_scores": {
+            "clinical_evidence_score": 0.45,
+            "combination_design_score": 0.55,
+        },
+        "combination_design_weights": {
+            "complementarity_score": 0.35,
+            "synergy_score": 0.30,
+            "microbiome_matching_score": 0.20,
+            "formulation_recovery_score": 0.15,
+        },
+    }
+
+
+def _load_score_weights(path: Path | None) -> dict[str, dict[str, float]]:
+    if path is None:
+        return _default_score_weights()
+    config = load_yaml(path)
+    defaults = _default_score_weights()
+    return {
+        section: {
+            key: float(config.get(section, {}).get(key, value))
+            for key, value in values.items()
+        }
+        for section, values in defaults.items()
+    }
+
+
+def _taxon_key(value: object) -> str:
+    text = re.sub(r"\bsubsp\.?\b.*$", "", str(value or ""), flags=re.IGNORECASE)
+    return "_".join(re.findall(r"[a-z0-9]+", text.lower())[:2])
 
 
 def _member_evidence_score(formulation: dict) -> float:

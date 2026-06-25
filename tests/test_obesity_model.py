@@ -1,23 +1,18 @@
 import json
-from pathlib import Path
-from uuid import uuid4
-
 import pandas as pd
 import pytest
 
 from proslim_ai.obesity_model import train_obesity_models
 
 
-def _paths() -> list[Path]:
-    directory = Path(__file__).resolve().parent / "fixtures"
-    token = uuid4().hex
-    return [directory / f"obesity_{token}_{name}" for name in (
+def _paths(tmp_path):
+    return [tmp_path / name for name in (
         "metadata.csv", "features.csv", "metrics.json", "classifier.pkl", "regressor.pkl"
     )]
 
 
-def test_obesity_models_reject_example_sized_data() -> None:
-    metadata_path, features_path, metrics_path, classifier_path, regressor_path = _paths()
+def test_obesity_models_reject_example_sized_data(tmp_path) -> None:
+    metadata_path, features_path, metrics_path, classifier_path, regressor_path = _paths(tmp_path)
     metadata = pd.DataFrame(
         [
             {"sample_id": "S1", "study_id": "A", "BMI": 31, "obesity_status": "obese"},
@@ -37,8 +32,8 @@ def test_obesity_models_reject_example_sized_data() -> None:
             path.unlink(missing_ok=True)
 
 
-def test_obesity_models_train_with_grouped_validation() -> None:
-    metadata_path, features_path, metrics_path, classifier_path, regressor_path = _paths()
+def test_obesity_models_train_with_grouped_validation(tmp_path) -> None:
+    metadata_path, features_path, metrics_path, classifier_path, regressor_path = _paths(tmp_path)
     metadata_rows = []
     feature_rows = []
     for index in range(36):

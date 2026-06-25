@@ -1,9 +1,8 @@
 import csv
 import json
-from pathlib import Path
-from uuid import uuid4
 
 import pandas as pd
+import pytest
 from sklearn.dummy import DummyClassifier
 
 from proslim_ai.response_model import (
@@ -41,17 +40,15 @@ def _structured_rows() -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def _test_paths() -> tuple[Path, list[Path]]:
-    directory = Path(__file__).resolve().parent / "fixtures"
-    token = uuid4().hex
-    paths = [directory / f"response_model_{token}_{name}" for name in (
+def _test_paths(tmp_path):
+    paths = [tmp_path / name for name in (
         "structured.csv", "rows.csv", "evidence.csv", "metrics.json", "model.pkl"
     )]
-    return directory, paths
+    return paths
 
 
-def test_training_excludes_label_derived_features_and_uses_nested_groups(monkeypatch) -> None:
-    _, paths = _test_paths()
+def test_training_excludes_label_derived_features_and_uses_nested_groups(monkeypatch, tmp_path) -> None:
+    paths = _test_paths(tmp_path)
     structured, rows_output, evidence_output, metrics_output, model_output = paths
     _structured_rows().to_csv(structured, index=False)
 
@@ -79,10 +76,10 @@ def test_training_excludes_label_derived_features_and_uses_nested_groups(monkeyp
             path.unlink(missing_ok=True)
 
 
-def test_training_accepts_review_features(monkeypatch) -> None:
-    directory, paths = _test_paths()
+def test_training_accepts_review_features(monkeypatch, tmp_path) -> None:
+    paths = _test_paths(tmp_path)
     structured, rows_output, evidence_output, metrics_output, model_output = paths
-    review = directory / f"response_model_{uuid4().hex}_review.csv"
+    review = tmp_path / "review.csv"
     source = _structured_rows()
     source.to_csv(structured, index=False)
     pd.DataFrame(
@@ -127,8 +124,8 @@ def test_training_accepts_review_features(monkeypatch) -> None:
             path.unlink(missing_ok=True)
 
 
-def test_training_can_lock_prespecified_model(monkeypatch) -> None:
-    _, paths = _test_paths()
+def test_training_can_lock_prespecified_model(monkeypatch, tmp_path) -> None:
+    paths = _test_paths(tmp_path)
     structured, rows_output, evidence_output, metrics_output, model_output = paths
     _structured_rows().to_csv(structured, index=False)
 
@@ -163,12 +160,15 @@ def test_training_can_lock_prespecified_model(monkeypatch) -> None:
             path.unlink(missing_ok=True)
 
 
-def test_non_informative_classifier_is_not_applied_to_combinations() -> None:
-    directory = Path(__file__).resolve().parent / "fixtures"
-    token = uuid4().hex
-    evidence = directory / f"evidence_{token}.csv"
-    combinations = directory / f"combinations_{token}.csv"
-    output = directory / f"combination_output_{token}.csv"
+def test_non_informative_classifier_is_not_applied_to_combinations(tmp_path) -> None:
+    evidence = tmp_path / "evidence.csv"
+    combinations = tmp_path / "combinations.csv"
+    output = tmp_path / "combination_output.csv"
+    status = tmp_path / "status.json"
+    status.write_text(
+        '{"predictive_model":{"model_status":"disabled","combination_ranking_enabled":false}}',
+        encoding="utf-8",
+    )
     with evidence.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(
             handle,
@@ -207,7 +207,13 @@ def test_non_informative_classifier_is_not_applied_to_combinations() -> None:
         )
 
     try:
-        result = apply_response_model_to_combinations(combinations, evidence, output)
+        result = apply_response_model_to_combinations(
+            combinations,
+            evidence,
+            output,
+            research_status_path=status,
+            hypothesis_only=True,
+        )
         with output.open(encoding="utf-8") as handle:
             row = next(csv.DictReader(handle))
         assert result.combinations_with_model_probability == 0
@@ -217,6 +223,22 @@ def test_non_informative_classifier_is_not_applied_to_combinations() -> None:
         evidence.unlink(missing_ok=True)
         combinations.unlink(missing_ok=True)
         output.unlink(missing_ok=True)
+        status.unlink(missing_ok=True)
+
+
+def test_combination_application_obeys_disabled_research_gate(tmp_path) -> None:
+    status = tmp_path / "status.json"
+    status.write_text(
+        '{"predictive_model":{"model_status":"no_signal","combination_ranking_enabled":false}}',
+        encoding="utf-8",
+    )
+    with pytest.raises(ValueError, match="disabled by the research status"):
+        apply_response_model_to_combinations(
+            tmp_path / "combinations.csv",
+            tmp_path / "evidence.csv",
+            tmp_path / "output.csv",
+            research_status_path=status,
+        )
 
 
 def test_numeric_feature_profile_excludes_high_cardinality_categories() -> None:

@@ -10,6 +10,8 @@ from sklearn.metrics import average_precision_score, balanced_accuracy_score, ro
 from sklearn.model_selection import StratifiedGroupKFold
 from sklearn.preprocessing import OrdinalEncoder
 
+from .arm_effects import _canonical_trial_ids
+
 
 BASE_CATEGORICAL_FEATURES = [
     "outcome_domain",
@@ -58,7 +60,14 @@ def benchmark_tabpfn(
     X_categorical = feature_table[categorical_features].fillna("missing").astype(str).to_numpy()
     X_numeric = feature_table[numeric_features].apply(pd.to_numeric, errors="coerce").to_numpy()
     y = data["label"].to_numpy(dtype=int)
-    groups = data["evidence_id"].fillna("").astype(str).to_numpy()
+    identity = pd.DataFrame(
+        {
+            "study_id": data["evidence_id"],
+            "source_title": data.get("title", pd.Series(index=data.index, dtype=object)),
+        },
+        index=data.index,
+    )
+    groups = _canonical_trial_ids(identity).to_numpy()
     repeated_probabilities = []
     repeat_metrics = []
     for repeat in range(cv_repeats):
@@ -147,14 +156,19 @@ def build_response_feature_table(
     table = data.copy()
     if not review_paths:
         return table, BASE_CATEGORICAL_FEATURES, [], 0
-    review_rows = []
+    outcome_review_rows = []
+    intervention_review_rows = []
     for path in review_paths:
         review = pd.read_csv(path)
         if "review_status" in review:
-            review = review[review["review_status"] == "extracted"]
-        review_rows.append(review)
-    review = pd.concat(review_rows, ignore_index=True)
-    review = review.drop_duplicates(["evidence_id", "outcome_domain"], keep="last")
+            review = review[
+                review["review_status"].fillna("").astype(str).str.lower() == "extracted"
+            ]
+        if "outcome_domain" in review:
+            outcome_review_rows.append(review)
+        else:
+            intervention_review_rows.append(review)
+
     text_fields = [
         "title",
         "comparison",
@@ -166,22 +180,63 @@ def build_response_feature_table(
         "second_pass_intervention_snippets",
         "second_pass_design_terms",
     ]
-    keep = [
-        "evidence_id",
-        "outcome_domain",
-        "time_point",
-        "sample_size_confirmed",
-        "pdf_deep_dose_terms",
-        "download_deep_dose_terms",
-        "second_pass_dose_terms",
-        *text_fields,
+    if outcome_review_rows:
+        review = pd.concat(outcome_review_rows, ignore_index=True, sort=False)
+        review = review.drop_duplicates(["evidence_id", "outcome_domain"], keep="last")
+        keep = [
+            "evidence_id",
+            "outcome_domain",
+            "time_point",
+            "sample_size_confirmed",
+            "pdf_deep_dose_terms",
+            "download_deep_dose_terms",
+            "second_pass_dose_terms",
+            *text_fields,
+        ]
+        keep = [column for column in keep if column in review.columns]
+        table = table.merge(
+            review[keep],
+            on=["evidence_id", "outcome_domain"],
+            how="left",
+            suffixes=("", "_review"),
+        )
+
+    intervention_text_fields = [
+        "title",
+        "intervention_component",
+        "suggested_intervention",
+        "final_species",
+        "final_strain",
+        "final_prebiotic_type",
+        "final_dosage_form",
+        "reviewer_note",
     ]
-    keep = [column for column in keep if column in review.columns]
-    table = table.merge(
-        review[keep], on=["evidence_id", "outcome_domain"], how="left", suffixes=("", "_review")
-    )
+    if intervention_review_rows:
+        intervention = pd.concat(intervention_review_rows, ignore_index=True, sort=False)
+        intervention = intervention.drop_duplicates(["evidence_id"], keep="last")
+        keep = [
+            "evidence_id",
+            "final_total_CFU_per_day",
+            "final_log10_CFU_per_day",
+            "final_duration_weeks",
+            *intervention_text_fields,
+        ]
+        keep = [column for column in keep if column in intervention.columns]
+        table = table.merge(
+            intervention[keep],
+            on="evidence_id",
+            how="left",
+            suffixes=("", "_intervention"),
+        )
+
     joined_text = table.apply(
-        lambda row: " ".join(str(row.get(field, "")) for field in text_fields).lower(), axis=1
+        lambda row: " ".join(
+            str(row.get(field, ""))
+            for field in text_fields
+            + intervention_text_fields
+            + [f"{field}_intervention" for field in intervention_text_fields]
+        ).lower(),
+        axis=1,
     )
     primary_text = table.apply(
         lambda row: " ".join(
@@ -204,9 +259,13 @@ def build_response_feature_table(
     sample_size = table.get("sample_size_confirmed", pd.Series(index=table.index, dtype=object))
     time_point = table.get("time_point", pd.Series(index=table.index, dtype=object))
     table["sample_size"] = sample_size.map(_sample_size)
-    table["duration_weeks"] = time_point.map(_duration_weeks)
+    duration_weeks = time_point.map(_duration_weeks)
+    if "final_duration_weeks" in table:
+        confirmed_duration = pd.to_numeric(table["final_duration_weeks"], errors="coerce")
+        duration_weeks = confirmed_duration.combine_first(duration_weeks)
+    table["duration_weeks"] = duration_weeks
     table["log10_cfu_day"] = table.apply(_cfu_log10, axis=1)
-    matched = int(table["sample_size_confirmed"].notna().sum())
+    matched = int(sample_size.notna().sum())
     numeric_features = [
         column for column in ENRICHED_NUMERIC_FEATURES if table[column].notna().any()
     ]
@@ -232,16 +291,38 @@ def _intervention_class(text: str) -> str:
     return "other"
 
 
+# human-derived gut microbes / next-generation probiotics (commensal-sourced).
+# Kept distinct from food-grade probiotics because their evidence base, safety
+# barrier (LBP regulation, genome screening) and mechanisms differ.
+HUMAN_DERIVED_NGP_TERMS = (
+    "akkermansia", "faecalibacterium", "bacteroides", "parabacteroides",
+    "roseburia", "anaerobutyricum", "eubacterium hallii", "anaerostipes",
+    "christensenella", "blautia", "phascolarctobacterium", "hafnia",
+    "dysosmobacter", "clostridium butyricum",
+)
+
+
 def _strain_family(text: str) -> str:
     families = []
     for name, terms in {
-        "lactobacillaceae": ("lactobac", "lacticaseibac", "lactiplantibac"),
+        "lactobacillaceae": (
+            "lactobac", "lacticaseibac", "lactiplantibac", "limosilactobac",
+            "pediococc", "lactococc",
+        ),
         "bifidobacterium": ("bifidobacter",),
         "akkermansia": ("akkermansia",),
         "bacillus": ("bacillus",),
+        "faecalibacterium": ("faecalibacterium",),
+        "bacteroidetes": ("bacteroides", "parabacteroides"),
+        "butyrate_producer": (
+            "roseburia", "anaerobutyricum", "anaerostipes", "clostridium butyricum",
+            "eubacterium hallii", "dysosmobacter",
+        ),
     }.items():
         if any(term in text for term in terms):
             families.append(name)
+    if any(term in text for term in HUMAN_DERIVED_NGP_TERMS):
+        families.append("human_derived_ngp")
     return "+".join(families) if families else "non_strain_or_unreported"
 
 
@@ -284,14 +365,43 @@ def _duration_weeks(value: object) -> float:
 
 
 def _cfu_log10(row: pd.Series) -> float:
+    confirmed_log10 = pd.to_numeric(row.get("final_log10_CFU_per_day"), errors="coerce")
+    if pd.notna(confirmed_log10):
+        return float(confirmed_log10)
+    confirmed_total = _parse_cfu_log10(row.get("final_total_CFU_per_day"), require_cfu=False)
+    if pd.notna(confirmed_total):
+        return confirmed_total
     text = " ".join(
         str(row.get(field, ""))
         for field in ("pdf_deep_dose_terms", "download_deep_dose_terms", "second_pass_dose_terms")
     ).lower()
-    power = re.search(r"10\s*(?:\^|×|x)?\s*(\d{1,2})\s*cfu", text)
+    return _parse_cfu_log10(text, require_cfu=True)
+
+
+def _parse_cfu_log10(value: object, require_cfu: bool = True) -> float:
+    text = str(value or "").lower().replace(",", "")
+    if not text or text == "nan":
+        return np.nan
+    if require_cfu and not any(term in text for term in ("cfu", "colony", "viable cell")):
+        return np.nan
+
+    scientific = re.search(r"(\d+(?:\.\d+)?)\s*(?:x|×|\*)\s*10\s*\^?\s*(\d{1,2})", text)
+    if scientific:
+        return float(np.log10(float(scientific.group(1))) + int(scientific.group(2)))
+    e_notation = re.search(r"(\d+(?:\.\d+)?)\s*e\s*\+?(\d{1,2})", text)
+    if e_notation:
+        return float(np.log10(float(e_notation.group(1))) + int(e_notation.group(2)))
+    power = re.search(r"10\s*(?:\^|×|x)?\s*(\d{1,2})", text)
     if power:
         return float(power.group(1))
-    billion = re.search(r"(\d+(?:\.\d+)?)\s*billion\s*cfu", text)
-    if billion:
-        return float(np.log10(float(billion.group(1)) * 1e9))
+    named_scale = re.search(r"(\d+(?:\.\d+)?)\s*(million|billion|trillion)", text)
+    if named_scale:
+        multiplier = {"million": 1e6, "billion": 1e9, "trillion": 1e12}[
+            named_scale.group(2)
+        ]
+        return float(np.log10(float(named_scale.group(1)) * multiplier))
+    if not require_cfu:
+        numeric = pd.to_numeric(text.strip(), errors="coerce")
+        if pd.notna(numeric) and float(numeric) > 0:
+            return float(np.log10(float(numeric)))
     return np.nan

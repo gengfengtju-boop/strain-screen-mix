@@ -38,11 +38,23 @@ def build_dose_gap_queue(
                     sorted(set(group["positive_efficacy_label"].astype(str)))
                 ),
                 "source_file": _first_nonempty(
-                    evidence_source, ["second_pass_source_file", "pdf_source_file"]
+                    evidence_source,
+                    ["second_pass_source_file", "pdf_source_file", "source_file"],
+                ),
+                "suggested_cfu": _first_nonempty(evidence_source, ["suggested_cfu"]),
+                "confirmed_total_cfu_per_day": _first_nonempty(
+                    evidence_source, ["final_total_CFU_per_day"]
+                ),
+                "confirmed_log10_cfu_per_day": _first_nonempty(
+                    evidence_source, ["final_log10_CFU_per_day"]
                 ),
                 "existing_dose_text": _joined_nonempty(
                     evidence_source,
                     [
+                        "final_total_CFU_per_day",
+                        "final_log10_CFU_per_day",
+                        "suggested_cfu",
+                        "suggested_dose",
                         "second_pass_dose_terms",
                         "download_deep_dose_terms",
                         "pdf_deep_dose_terms",
@@ -69,7 +81,11 @@ def build_dose_gap_queue(
 
 
 def _review_sources(review_paths: list[Path]) -> pd.DataFrame:
-    frames = [pd.read_csv(path) for path in review_paths]
+    frames = []
+    for path in review_paths:
+        frame = pd.read_csv(path)
+        frame["source_review_file"] = path.name
+        frames.append(frame)
     return pd.concat(frames, ignore_index=True, sort=False) if frames else pd.DataFrame()
 
 

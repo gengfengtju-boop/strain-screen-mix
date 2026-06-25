@@ -11,4 +11,4 @@ def test_audit_project_passes_for_current_repository():
     assert result.ok
     assert not result.template_errors
     assert not result.source_registry_errors
-
+    assert not result.configuration_errors
