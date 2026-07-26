@@ -1,0 +1,64 @@
+{
+  "strata": [
+    {
+      "stratum": "西欧",
+      "kind": "region",
+      "lean": 2220,
+      "obese": 1136,
+      "studies": 20,
+      "n_species_tested": 192,
+      "ai_cv_auc": 0.745,
+      "ai_cv": "group_5fold"
+    },
+    {
+      "stratum": "北美",
+      "kind": "region",
+      "lean": 485,
+      "obese": 139,
+      "studies": 10,
+      "n_species_tested": 167,
+      "ai_cv_auc": 0.55,
+      "ai_cv": "group_5fold"
+    },
+    {
+      "stratum": "东亚",
+      "kind": "region",
+      "lean": 697,
+      "obese": 26,
+      "studies": 8,
+      "n_species_tested": 202,
+      "ai_cv_auc": 0.636,
+      "ai_cv": "group_5fold"
+    },
+    {
+      "stratum": "中东",
+      "kind": "region",
+      "lean": 390,
+      "obese": 192,
+      "studies": 1,
+      "n_species_tested": 186,
+      "ai_cv_auc": 0.702,
+      "ai_cv": "stratified_5fold_single_study_confounded"
+    },
+    {
+      "stratum": "healthy",
+      "kind": "disease",
+      "lean": 4214,
+      "obese": 1157,
+      "studies": 45,
+      "n_species_tested": 203,
+      "ai_cv_auc": 0.599,
+      "ai_cv": "group_5fold"
+    },
+    {
+      "stratum": "T2D",
+      "kind": "disease",
+      "lean": 166,
+      "obese": 389,
+      "studies": 6,
+      "n_species_tested": 204,
+      "ai_cv_auc": 0.173,
+      "ai_cv": "group_5fold"
+    }
+  ]
+}
