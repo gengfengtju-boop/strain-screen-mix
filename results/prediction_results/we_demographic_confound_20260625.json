@@ -1,0 +1,7 @@
+{
+  "demographics_only_auc": 0.722,
+  "microbiome_only_auc": 0.695,
+  "microbiome_plus_demo_auc": 0.761,
+  "age_sex_matched_microbiome_auc": 0.73,
+  "matched_n": 1356
+}

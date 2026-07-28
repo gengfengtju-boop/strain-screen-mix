@@ -1,0 +1,75 @@
+{
+  "confound_and_honest_cv": {
+    "all_obese_incl_T2D": {
+      "lean": 2220,
+      "obese": 1136,
+      "studies": 20,
+      "n_species": 192,
+      "grouped5fold_auc": 0.744,
+      "leave_one_study_out_auc": 0.751
+    },
+    "healthy_only_obese": {
+      "lean": 2220,
+      "obese": 753,
+      "studies": 20,
+      "n_species": 192,
+      "grouped5fold_auc": 0.707,
+      "leave_one_study_out_auc": 0.699
+    }
+  },
+  "t2d_vs_healthy_within_obese_auc": 0.504,
+  "cross_country_holdout": {
+    "NLD": {
+      "auc": 0.622,
+      "lean": 990,
+      "obese": 144
+    },
+    "GBR": {
+      "auc": 0.579,
+      "lean": 632,
+      "obese": 169
+    },
+    "DNK": {
+      "auc": 0.695,
+      "lean": 168,
+      "obese": 338
+    },
+    "DEU": {
+      "auc": 0.565,
+      "lean": 120,
+      "obese": 12
+    }
+  },
+  "stable_markers_file": "results/prediction_results/western_europe_stable_markers_20260625.csv",
+  "n_stable_markers_agree75": 119,
+  "demographics": {
+    "all": {
+      "lean": {
+        "n": 2220,
+        "age_mean": 42.1,
+        "female_frac": 0.66,
+        "bmi_mean": 22.1
+      },
+      "obese": {
+        "n": 1136,
+        "age_mean": 54.7,
+        "female_frac": 0.56,
+        "bmi_mean": 34.5
+      }
+    },
+    "healthy_only": {
+      "lean": {
+        "n": 2220,
+        "age_mean": 42.1,
+        "female_frac": 0.66,
+        "bmi_mean": 22.1
+      },
+      "obese": {
+        "n": 753,
+        "age_mean": 51.9,
+        "female_frac": 0.55,
+        "bmi_mean": 33.9
+      }
+    }
+  }
+}
