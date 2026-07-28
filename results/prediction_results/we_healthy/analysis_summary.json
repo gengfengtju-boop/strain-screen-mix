@@ -1,0 +1,60 @@
+{
+  "cohort_filter_steps": [
+    {
+      "step": "原始样本",
+      "n": 8304
+    },
+    {
+      "step": "西欧国家",
+      "n": 4869
+    },
+    {
+      "step": "无疾病(排除T2D/IGT/高血压)",
+      "n": 4151
+    },
+    {
+      "step": "瘦或肥胖(排除超重)",
+      "n": 2973
+    },
+    {
+      "step": "年龄性别完整",
+      "n": 2839
+    },
+    {
+      "step": "研究内两组各≥10",
+      "n": 2049
+    }
+  ],
+  "eligible_studies": 7,
+  "countries": [
+    "DNK",
+    "GBR",
+    "IRL",
+    "NLD"
+  ],
+  "n_lean_total": 1380,
+  "n_obese_total": 628,
+  "matched": {
+    "n": 904,
+    "lean": 452,
+    "obese": 452,
+    "age_lean": 51.2,
+    "age_obese": 51.4,
+    "female_lean": 0.7,
+    "female_obese": 0.7
+  },
+  "n_species_tested": 199,
+  "n_fdr_significant": 41,
+  "n_robust": 37,
+  "ai_matched_loso_auc": 0.749,
+  "ai_demographics_only_auc": 0.527,
+  "ai_per_study_auc": {
+    "AsnicarF_2021": 0.665,
+    "HansenLBS_2018": 0.924,
+    "KeohaneDM_2020": 0.479,
+    "LeChatelierE_2013": 0.996,
+    "LifeLinesDeep_2016": 0.657,
+    "NielsenHB_2014": 0.886,
+    "XieH_2016": 0.653
+  }
+}
