@@ -1,0 +1,127 @@
+{
+  "n_species": 41,
+  "n_lean": 34,
+  "n_obese": 7,
+  "loso_genus_auc": 0.874,
+  "single_features": [
+    {
+      "feature": "lean_marker_affinity",
+      "auc": 0.962,
+      "direction": "越高越瘦",
+      "lean_mean": 0.129,
+      "obese_mean": -0.049,
+      "p_mannwhitney": 8.362267669071263e-06,
+      "fdr": 7.526040902164137e-05
+    },
+    {
+      "feature": "diversity_association",
+      "auc": 0.92,
+      "direction": "越高越瘦",
+      "lean_mean": 0.193,
+      "obese_mean": 0.025,
+      "p_mannwhitney": 0.00013139435475764102,
+      "fdr": 0.0011825491928187692
+    },
+    {
+      "feature": "spore_former",
+      "auc": 0.695,
+      "direction": "越高越胖",
+      "lean_mean": 0.324,
+      "obese_mean": 0.714,
+      "p_mannwhitney": 0.059319734942892804,
+      "fdr": 0.5338776144860352
+    },
+    {
+      "feature": "oral_origin",
+      "auc": 0.571,
+      "direction": "越高越胖",
+      "lean_mean": 0.0,
+      "obese_mean": 0.143,
+      "p_mannwhitney": 0.0324298143728967,
+      "fdr": 0.2918683293560703
+    },
+    {
+      "feature": "strict_anaerobe",
+      "auc": 0.557,
+      "direction": "越高越瘦",
+      "lean_mean": 0.971,
+      "obese_mean": 0.857,
+      "p_mannwhitney": 0.227474643212064,
+      "fdr": 1.0
+    },
+    {
+      "feature": "fiber_degrader",
+      "auc": 0.536,
+      "direction": "越高越瘦",
+      "lean_mean": 0.5,
+      "obese_mean": 0.429,
+      "p_mannwhitney": 0.7489198005835178,
+      "fdr": 1.0
+    },
+    {
+      "feature": "prevalence",
+      "auc": 0.517,
+      "direction": "越高越胖",
+      "lean_mean": 0.468,
+      "obese_mean": 0.508,
+      "p_mannwhitney": 0.9034747301340622,
+      "fdr": 1.0
+    },
+    {
+      "feature": "cooccurrence_degree",
+      "auc": 0.515,
+      "direction": "越高越瘦",
+      "lean_mean": 7.176,
+      "obese_mean": 7.286,
+      "p_mannwhitney": 0.9165080059617243,
+      "fdr": 1.0
+    },
+    {
+      "feature": "mean_log_abundance",
+      "auc": 0.504,
+      "direction": "越高越瘦",
+      "lean_mean": -1.942,
+      "obese_mean": -1.889,
+      "p_mannwhitney": 0.9864892442556114,
+      "fdr": 1.0
+    }
+  ],
+  "coefficients": [
+    {
+      "feature": "lean_marker_affinity",
+      "coef_std": 0.973
+    },
+    {
+      "feature": "diversity_association",
+      "coef_std": 0.76
+    },
+    {
+      "feature": "fiber_degrader",
+      "coef_std": 0.341
+    },
+    {
+      "feature": "cooccurrence_degree",
+      "coef_std": 0.101
+    },
+    {
+      "feature": "mean_log_abundance",
+      "coef_std": -0.108
+    },
+    {
+      "feature": "strict_anaerobe",
+      "coef_std": -0.172
+    },
+    {
+      "feature": "prevalence",
+      "coef_std": -0.209
+    },
+    {
+      "feature": "oral_origin",
+      "coef_std": -0.426
+    },
+    {
+      "feature": "spore_former",
+      "coef_std": -0.573
+    }
+  ]
+}
