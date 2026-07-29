@@ -1,0 +1,61 @@
+{
+  "version": 2,
+  "weights": {
+    "diversity": 0.3,
+    "effect": 0.24,
+    "complementarity": 0.16,
+    "propionate": 0.12,
+    "quality": 0.1,
+    "genus_diversity": 0.08
+  },
+  "penalties": {
+    "spore_former": 0.05,
+    "oral_origin": 0.1
+  },
+  "pool_source": "we_healthy robust lean-enriched (T2D-excluded, age/sex-matched, FDR+meta)",
+  "pool_size": 16,
+  "n_combinations": 6519,
+  "removed_from_v1": {
+    "bsh_cholesterol_weight": 0.16,
+    "reason": "AUC 0.517 (P=0.85); cross-genus 0.027; adding it degraded 0.878->0.798"
+  },
+  "top1": {
+    "rank": 1,
+    "members": "Barnesiella_intestinihominis; Odoribacter_splanchnicus; Alistipes_putredinis",
+    "n_strains": 3,
+    "axes": "propionate+mucin",
+    "n_axes": 2,
+    "diversity_mean": 0.346,
+    "effect_mean_g": 0.18,
+    "propionate_frac": 1.0,
+    "culturability_mean": 0.8,
+    "genus_diversity": 1.0,
+    "spore_frac": 0.0,
+    "composite_v2": 0.7631
+  },
+  "v1_vs_v2": {
+    "v1_top1": [
+      "Akkermansia_muciniphila",
+      "Bacteroides_intestinalis",
+      "Barnesiella_intestinihominis",
+      "Butyrivibrio_crossotus"
+    ],
+    "v2_top1": [
+      "Alistipes_putredinis",
+      "Barnesiella_intestinihominis",
+      "Odoribacter_splanchnicus"
+    ],
+    "shared": [
+      "Barnesiella_intestinihominis"
+    ],
+    "dropped_from_v1": [
+      "Akkermansia_muciniphila",
+      "Bacteroides_intestinalis",
+      "Butyrivibrio_crossotus"
+    ],
+    "new_in_v2": [
+      "Alistipes_putredinis",
+      "Odoribacter_splanchnicus"
+    ]
+  }
+}
