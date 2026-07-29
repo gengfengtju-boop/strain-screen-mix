@@ -1,0 +1,27 @@
+{
+  "scope": "HUMAnN/MetaCyc pathway abundance from shotgun metagenomes = metabolic POTENTIAL, not measured metabolites",
+  "cohorts_with_pathway_data": {
+    "AsnicarF_2021": 682,
+    "BedarfJR_2017": 10
+  },
+  "primary": {
+    "design": "age/sex-matched pairs, single cohort (batch controlled by design)",
+    "n": 288,
+    "lean": 144,
+    "obese": 144,
+    "age_lean": 49.2,
+    "age_obese": 49.2,
+    "n_pathways": 395,
+    "n_fdr_sig": 34
+  },
+  "secondary": {
+    "design": "full disease-free set, age+sex(+study) adjusted",
+    "n": 692,
+    "lean": 544,
+    "obese": 148,
+    "n_pathways": 394,
+    "n_fdr_sig": 66
+  },
+  "consistent_between_analyses": 33,
+  "limitation": "pathway data covers essentially one Western-European cohort; no cross-study meta-analysis possible"
+}
