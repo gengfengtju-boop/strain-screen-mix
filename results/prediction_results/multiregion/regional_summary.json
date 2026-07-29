@@ -1,0 +1,128 @@
+{
+  "pipeline": "identical to Western-Europe: disease-free, lean vs obese, within-study 1:1 age(±5y)/sex matching, OLS+BH-FDR, DL random-effects meta when >=3 studies, robust=FDR+CI+direction",
+  "regions": [
+    {
+      "region": "西欧",
+      "tier": "robust_capable",
+      "studies": 7,
+      "study_ids": [
+        "AsnicarF_2021",
+        "HansenLBS_2018",
+        "KeohaneDM_2020",
+        "LeChatelierE_2013",
+        "LifeLinesDeep_2016",
+        "NielsenHB_2014",
+        "XieH_2016"
+      ],
+      "matched_n": 904,
+      "lean": 452,
+      "obese": 452,
+      "age_lean": 51.2,
+      "age_obese": 51.4,
+      "female_lean": 0.7,
+      "female_obese": 0.7,
+      "n_species": 199,
+      "n_fdr_sig": 41,
+      "n_lean_enriched_sig": 34,
+      "n_robust": 37
+    },
+    {
+      "region": "北美",
+      "tier": "robust_capable",
+      "studies": 3,
+      "study_ids": [
+        "AsnicarF_2021",
+        "HMP_2012",
+        "HMP_2019_ibdmdb"
+      ],
+      "matched_n": 134,
+      "lean": 67,
+      "obese": 67,
+      "age_lean": 24.0,
+      "age_obese": 24.6,
+      "female_lean": 0.79,
+      "female_obese": 0.79,
+      "n_species": 156,
+      "n_fdr_sig": 63,
+      "n_lean_enriched_sig": 18,
+      "n_robust": 9
+    },
+    {
+      "region": "中东",
+      "tier": "adjusted_only_single_study",
+      "studies": 1,
+      "study_ids": [
+        "ZeeviD_2015"
+      ],
+      "matched_n": 328,
+      "lean": 164,
+      "obese": 164,
+      "age_lean": 47.6,
+      "age_obese": 47.8,
+      "female_lean": 0.6,
+      "female_obese": 0.6,
+      "n_species": 189,
+      "n_fdr_sig": 31,
+      "n_lean_enriched_sig": 28,
+      "n_robust": 0
+    },
+    {
+      "region": "中亚",
+      "tier": "adjusted_only_single_study",
+      "studies": 1,
+      "study_ids": [
+        "CosteaPI_2017"
+      ],
+      "matched_n": 60,
+      "lean": 30,
+      "obese": 30,
+      "age_lean": 48.1,
+      "age_obese": 48.9,
+      "female_lean": 0.67,
+      "female_obese": 0.67,
+      "n_species": 223,
+      "n_fdr_sig": 2,
+      "n_lean_enriched_sig": 0,
+      "n_robust": 0
+    },
+    {
+      "region": "东亚",
+      "tier": "adjusted_only_single_study",
+      "studies": 1,
+      "study_ids": [
+        "JieZ_2017"
+      ],
+      "matched_n": 20,
+      "lean": 10,
+      "obese": 10,
+      "age_lean": 58.2,
+      "age_obese": 58.8,
+      "female_lean": 0.7,
+      "female_obese": 0.7,
+      "n_species": 242,
+      "n_fdr_sig": 0,
+      "n_lean_enriched_sig": 0,
+      "n_robust": 0
+    },
+    {
+      "region": "非洲",
+      "tier": "adjusted_only_single_study",
+      "studies": 1,
+      "study_ids": [
+        "RubelMA_2020"
+      ],
+      "matched_n": 20,
+      "lean": 10,
+      "obese": 10,
+      "age_lean": 52.7,
+      "age_obese": 53.4,
+      "female_lean": 0.8,
+      "female_obese": 0.8,
+      "n_species": 134,
+      "n_fdr_sig": 0,
+      "n_lean_enriched_sig": 0,
+      "n_robust": 0
+    }
+  ],
+  "n_species_lean_enriched_in_2plus_regions": 18
+}
