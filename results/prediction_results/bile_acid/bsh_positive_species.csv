@@ -1,0 +1,8 @@
+﻿species,genus,bsh,direction,fold_change_obese_vs_lean,meta_g,fdr,diversity_rho
+Bacteroides_cellulosilyticus,Bacteroides,1.0,lean_enriched,0.415,0.311,0.0003112901299038,0.209
+Bifidobacterium_animalis,Bifidobacterium,1.0,lean_enriched,0.625,0.18,0.003603411147088,0.073
+Clostridium_sp_CAG_58,Clostridium,1.0,obese_enriched,1.561,-0.198,0.0146529772698941,0.09
+Bacteroides_intestinalis,Bacteroides,1.0,lean_enriched,0.609,0.224,0.0231902655149946,0.159
+Bacteroides_salyersiae,Bacteroides,1.0,lean_enriched,0.667,0.201,0.0268837474784115,0.151
+Bacteroides_dorei,Bacteroides,1.0,lean_enriched,0.534,0.176,0.0292855827812073,0.19
+Bifidobacterium_longum,Bifidobacterium,1.0,lean_enriched,0.652,0.141,0.0421634018311797,0.099

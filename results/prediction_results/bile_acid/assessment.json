@@ -1,0 +1,76 @@
+{
+  "n_species": 41,
+  "single_axis": [
+    {
+      "axis": "BSH 潜能(0/1/2)",
+      "auc": 0.517,
+      "direction": "越高越瘦",
+      "lean_mean": 0.176,
+      "obese_mean": 0.143,
+      "p": 0.8524319530242415
+    },
+    {
+      "axis": "BSH 阳性(二值)",
+      "auc": 0.517,
+      "direction": "越高越瘦",
+      "lean_mean": 0.176,
+      "obese_mean": 0.143,
+      "p": 0.8524319530242415
+    },
+    {
+      "axis": "胆汁耐受属",
+      "auc": 0.618,
+      "direction": "越高越瘦",
+      "lean_mean": 0.235,
+      "obese_mean": 0.0,
+      "p": 0.16522193824216835
+    },
+    {
+      "axis": "胆汁敏感属",
+      "auc": 0.54,
+      "direction": "越高越胖",
+      "lean_mean": 0.206,
+      "obese_mean": 0.286,
+      "p": 0.6636870784245155
+    },
+    {
+      "axis": "丙酸潜能(对照)",
+      "auc": 0.647,
+      "direction": "越高越瘦",
+      "lean_mean": 0.588,
+      "obese_mean": 0.0,
+      "p": 0.10814051983257472
+    },
+    {
+      "axis": "多样性关联(对照)",
+      "auc": 0.92,
+      "direction": "越高越瘦",
+      "lean_mean": 0.193,
+      "obese_mean": 0.025,
+      "p": 0.0005655473737156734
+    }
+  ],
+  "bsh_positive_n": 7,
+  "bsh_positive_lean": 6,
+  "bsh_positive_obese": 1,
+  "annotation_coverage": {
+    "物种总数": 199,
+    "有BSH注释": 196,
+    "BSH阳性": 47,
+    "强BSH(=2)": 2
+  },
+  "cross_genus_auc": {
+    "仅 BSH": 0.027,
+    "胆汁酸全轴(BSH+脱羟基+耐受)": 0.246,
+    "仅丙酸(对照)": 0.321,
+    "仅多样性关联(对照)": 0.878,
+    "多样性+BSH": 0.798
+  },
+  "rct_cholesterol_evidence": {
+    "血脂结局行": 18,
+    "高置信行": 11,
+    "可关联干预菌种的行": 6,
+    "含乳杆菌(强BSH)的行": 3,
+    "可检验": false
+  }
+}
