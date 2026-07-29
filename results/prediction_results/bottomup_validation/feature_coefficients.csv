@@ -1,0 +1,11 @@
+﻿feature,coef_std
+propionate,0.781
+is_uncultured_cag,0.475
+is_bacteroides,0.168
+bsh,0.038
+lactate,-0.124
+butyrate,-0.13
+mucin,-0.39
+is_clostridia,-0.412
+mean_abs_shap,-0.763
+abundance_shap_corr,-1.377

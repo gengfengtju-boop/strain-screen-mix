@@ -1,0 +1,11 @@
+﻿feature,auc_alone,direction,lean_mean,obese_mean
+abundance_shap_corr,0.87,越高越胖,-0.358,0.629
+mean_abs_shap,0.794,越高越胖,0.032,0.078
+propionate,0.647,越高越瘦,0.588,0.0
+is_uncultured_cag,0.576,越高越瘦,0.294,0.143
+is_bacteroides,0.559,越高越瘦,0.118,0.0
+lactate,0.542,越高越胖,0.118,0.286
+butyrate,0.54,越高越胖,0.412,0.571
+mucin,0.534,越高越瘦,0.235,0.143
+bsh,0.517,越高越瘦,0.176,0.143
+is_clostridia,0.506,越高越瘦,0.441,0.429

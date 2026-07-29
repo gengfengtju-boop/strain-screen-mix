@@ -1,0 +1,169 @@
+{
+  "concordance": {
+    "全部受检物种": {
+      "n": 190,
+      "一致率": 0.616,
+      "kappa": 0.21,
+      "混淆矩阵": {
+        "lean_enriched": {
+          "lean_enriched": 78,
+          "obese_enriched": 48
+        },
+        "obese_enriched": {
+          "lean_enriched": 25,
+          "obese_enriched": 39
+        }
+      }
+    },
+    "FDR<0.05 显著": {
+      "n": 41,
+      "一致率": 0.805,
+      "kappa": 0.486,
+      "混淆矩阵": {
+        "lean_enriched": {
+          "lean_enriched": 27,
+          "obese_enriched": 7
+        },
+        "obese_enriched": {
+          "lean_enriched": 1,
+          "obese_enriched": 6
+        }
+      }
+    },
+    "稳健差异菌": {
+      "n": 37,
+      "一致率": 0.811,
+      "kappa": 0.516,
+      "混淆矩阵": {
+        "lean_enriched": {
+          "lean_enriched": 24,
+          "obese_enriched": 6
+        },
+        "obese_enriched": {
+          "lean_enriched": 1,
+          "obese_enriched": 6
+        }
+      }
+    }
+  },
+  "feature_discovery": {
+    "n_species": 41,
+    "n_genera": 24,
+    "loso_genus_auc_logreg": 0.697,
+    "loso_genus_auc_rf": 0.845,
+    "single_feature_auc": [
+      {
+        "feature": "abundance_shap_corr",
+        "auc_alone": 0.87,
+        "direction": "越高越胖",
+        "lean_mean": -0.358,
+        "obese_mean": 0.629
+      },
+      {
+        "feature": "mean_abs_shap",
+        "auc_alone": 0.794,
+        "direction": "越高越胖",
+        "lean_mean": 0.032,
+        "obese_mean": 0.078
+      },
+      {
+        "feature": "propionate",
+        "auc_alone": 0.647,
+        "direction": "越高越瘦",
+        "lean_mean": 0.588,
+        "obese_mean": 0.0
+      },
+      {
+        "feature": "is_uncultured_cag",
+        "auc_alone": 0.576,
+        "direction": "越高越瘦",
+        "lean_mean": 0.294,
+        "obese_mean": 0.143
+      },
+      {
+        "feature": "is_bacteroides",
+        "auc_alone": 0.559,
+        "direction": "越高越瘦",
+        "lean_mean": 0.118,
+        "obese_mean": 0.0
+      },
+      {
+        "feature": "lactate",
+        "auc_alone": 0.542,
+        "direction": "越高越胖",
+        "lean_mean": 0.118,
+        "obese_mean": 0.286
+      },
+      {
+        "feature": "butyrate",
+        "auc_alone": 0.54,
+        "direction": "越高越胖",
+        "lean_mean": 0.412,
+        "obese_mean": 0.571
+      },
+      {
+        "feature": "mucin",
+        "auc_alone": 0.534,
+        "direction": "越高越瘦",
+        "lean_mean": 0.235,
+        "obese_mean": 0.143
+      },
+      {
+        "feature": "bsh",
+        "auc_alone": 0.517,
+        "direction": "越高越瘦",
+        "lean_mean": 0.176,
+        "obese_mean": 0.143
+      },
+      {
+        "feature": "is_clostridia",
+        "auc_alone": 0.506,
+        "direction": "越高越瘦",
+        "lean_mean": 0.441,
+        "obese_mean": 0.429
+      }
+    ],
+    "multivariate_coefficients": [
+      {
+        "feature": "propionate",
+        "coef_std": 0.781
+      },
+      {
+        "feature": "is_uncultured_cag",
+        "coef_std": 0.475
+      },
+      {
+        "feature": "is_bacteroides",
+        "coef_std": 0.168
+      },
+      {
+        "feature": "bsh",
+        "coef_std": 0.038
+      },
+      {
+        "feature": "lactate",
+        "coef_std": -0.124
+      },
+      {
+        "feature": "butyrate",
+        "coef_std": -0.13
+      },
+      {
+        "feature": "mucin",
+        "coef_std": -0.39
+      },
+      {
+        "feature": "is_clostridia",
+        "coef_std": -0.412
+      },
+      {
+        "feature": "mean_abs_shap",
+        "coef_std": -0.763
+      },
+      {
+        "feature": "abundance_shap_corr",
+        "coef_std": -1.377
+      }
+    ]
+  }
+}

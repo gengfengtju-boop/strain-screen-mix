@@ -1,0 +1,8 @@
+{
+  "bio_only_loso_genus_auc_logreg": 0.317,
+  "bio_only_loso_genus_auc_rf": 0.489,
+  "propionate_pos_lean_rate": 1.0,
+  "propionate_neg_lean_rate": 0.774,
+  "butyrate_pos_lean_rate": 0.778,
+  "butyrate_neg_lean_rate": 0.844
+}
