@@ -35,6 +35,7 @@ v1 outputs are left untouched; v2 writes *_v2_20260625.csv.
 from __future__ import annotations
 
 import json
+import os
 import re
 from itertools import combinations
 from pathlib import Path
@@ -75,11 +76,15 @@ def culturability(sp, genus):
     return ("named_isolate_likely", 0.65)
 
 
+MODE = os.environ.get("POOL_MODE", "robust")  # robust | relaxed
+
+
 def build_pool():
     da = pd.read_csv(PR / "we_healthy/differential_abundance_adjusted.csv")
     div = pd.read_csv(PR / "lean_factors/diversity_association_all_species.csv")[["species", "diversity_rho"]]
     guild = pd.read_csv(ROOT / "data/strain_genome/genus_functional_guild_reference_20260613.csv").set_index("genus")
-    p = da[(da.robust == True) & (da.direction == "lean_enriched")].merge(div, on="species", how="left").copy()
+    sel = (da.robust == True) if MODE == "robust" else (da.fdr < 0.05)
+    p = da[sel & (da.direction == "lean_enriched")].merge(div, on="species", how="left").copy()
     p["genus"] = p.species.str.split("_").str[0]
     for col, g in [("butyrate", "butyrate_scfa_potential"), ("propionate", "propionate_potential"),
                    ("mucin", "mucin_interaction"), ("bsh", "bsh_potential")]:
@@ -101,7 +106,7 @@ def build_pool():
 def main():
     pool = build_pool()
     pool = pool.sort_values("diversity_score", ascending=False)
-    pool.to_csv(OUT / "synergistic_pool_v2_20260625.csv", index=False, encoding="utf-8-sig")
+    pool.to_csv(OUT / f"synergistic_pool_v2_{MODE}_20260625.csv", index=False, encoding="utf-8-sig")
     print(f"=== v2 候选池：{len(pool)} 株（西欧严格验证的稳健瘦人富集菌，去除促炎/未培养/古菌）===")
     for r in pool.itertuples():
         print(f"  {r.species[:34]:34} ρ={r.diversity_rho:+.2f} g={r.meta_g:+.2f} "
@@ -141,7 +146,7 @@ def main():
                          "composite_v2": round(float(score), 4)})
     res = pd.DataFrame(recs).sort_values("composite_v2", ascending=False).drop_duplicates("members").reset_index(drop=True)
     res.insert(0, "rank", range(1, len(res) + 1))
-    res.to_csv(OUT / "synergistic_lean_combinations_v2_20260625.csv", index=False, encoding="utf-8-sig")
+    res.to_csv(OUT / f"synergistic_lean_combinations_v2_{MODE}_20260625.csv", index=False, encoding="utf-8-sig")
 
     print(f"\n=== v2 组合评分：{len(res)} 个候选 ===")
     print("\nTop 8：")
@@ -167,15 +172,15 @@ def main():
         print("  剔除:", ", ".join(x.replace("_", " ") for x in cmp["dropped_from_v1"]) or "无")
         print("  新增:", ", ".join(x.replace("_", " ") for x in cmp["new_in_v2"]) or "无")
 
-    (OUT / "synergistic_v2_summary_20260625.json").write_text(json.dumps({
-        "version": 2, "weights": W, "penalties": PENALTY,
+    (OUT / f"synergistic_v2_{MODE}_summary_20260625.json").write_text(json.dumps({
+        "version": 2, "pool_mode": MODE, "weights": W, "penalties": PENALTY,
         "pool_source": "we_healthy robust lean-enriched (T2D-excluded, age/sex-matched, FDR+meta)",
         "pool_size": int(len(pool)), "n_combinations": int(len(res)),
         "removed_from_v1": {"bsh_cholesterol_weight": 0.16,
                             "reason": "AUC 0.517 (P=0.85); cross-genus 0.027; adding it degraded 0.878->0.798"},
         "top1": res.head(1).to_dict("records")[0], "v1_vs_v2": cmp},
         indent=2, ensure_ascii=False), encoding="utf-8")
-    print("\nwrote", (OUT / "synergistic_lean_combinations_v2_20260625.csv").relative_to(ROOT))
+    print("\nwrote", (OUT / f"synergistic_lean_combinations_v2_{MODE}_20260625.csv").relative_to(ROOT))
 
 
 if __name__ == "__main__":
