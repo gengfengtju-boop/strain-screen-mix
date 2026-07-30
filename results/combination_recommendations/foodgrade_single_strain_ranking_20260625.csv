@@ -1,0 +1,39 @@
+﻿排名,同分组,物种(拉丁名),中文名,v3性质分,交叉喂养,BSH胆汁酸,安全等级,临床证据,工业可行,肥胖特征惩罚,队列证据,队列详情,推荐意见,属,目录优先层级
+1,1,Lacticaseibacillus_paracasei,副干酪乳酪杆菌,0.866,1.0,1.0,1.0,1.0,0.9,0.0,队列无数据（不可得）,,推荐：性质优 + 临床先例（缺队列证据）,Lacticaseibacillus,A_clinical_evidence
+2,1,Lactiplantibacillus_plantarum,植物乳植杆菌,0.866,1.0,1.0,1.0,1.0,0.9,0.0,队列无数据（不可得）,,推荐：性质优 + 临床先例（缺队列证据）,Lactiplantibacillus,A_clinical_evidence
+3,2,Lacticaseibacillus_casei,干酪乳酪杆菌,0.7685,1.0,1.0,1.0,0.35,0.9,0.0,队列无数据（不可得）,,备选：性质优，但仅筛选级证据,Lacticaseibacillus,B_food_grade_screening
+4,2,Lacticaseibacillus_rhamnosus,鼠李糖乳酪杆菌,0.7685,1.0,1.0,1.0,0.35,0.9,0.0,队列无数据（不可得）,,备选：性质优，但仅筛选级证据,Lacticaseibacillus,B_food_grade_screening
+5,3,Lactobacillus_acidophilus,嗜酸乳杆菌,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列受检但不显著,,备选：性质优，但仅筛选级证据,Lactobacillus,B_food_grade_screening
+6,3,Lactobacillus_crispatus,卷曲乳杆菌,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列无数据（不可得）,,备选：性质优，但仅筛选级证据,Lactobacillus,B_food_grade_screening
+7,3,Lactobacillus_gasseri,格氏乳杆菌,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列无数据（不可得）,,备选：性质优，但仅筛选级证据,Lactobacillus,B_food_grade_screening
+8,3,Lactobacillus_helveticus,瑞士乳杆菌,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列无数据（不可得）,,备选：性质优，但仅筛选级证据,Lactobacillus,B_food_grade_screening
+9,3,Lactobacillus_johnsonii,约氏乳杆菌,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列无数据（不可得）,,备选：性质优，但仅筛选级证据,Lactobacillus,B_food_grade_screening
+10,3,Lactobacillus_rogosae,罗戈萨乳杆菌,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列受检但不显著,,备选：性质优，但仅筛选级证据,Lactobacillus,B_food_grade_screening
+11,3,Lactobacillus_ruminis,瘤胃乳杆菌,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列受检但不显著,,备选：性质优，但仅筛选级证据,Lactobacillus,B_food_grade_screening
+12,3,Limosilactobacillus_fermentum,发酵黏液乳杆菌,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列无数据（不可得）,,备选：性质优，但仅筛选级证据,Limosilactobacillus,B_food_grade_screening
+13,3,Limosilactobacillus_reuteri,罗伊氏黏液乳杆菌,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列无数据（不可得）,,备选：性质优，但仅筛选级证据,Limosilactobacillus,B_food_grade_screening
+14,4,Bifidobacterium_animalis,动物双歧杆菌,0.749,1.0,0.5,1.0,1.0,0.6,0.0,队列支持：瘦人富集,西欧 FC=0.62,首选：性质优 + 临床先例 + 队列支持,Bifidobacterium,A_clinical_evidence
+15,4,Bifidobacterium_longum,长双歧杆菌,0.749,1.0,0.5,1.0,1.0,0.6,0.0,队列支持：瘦人富集,西欧 FC=0.65,首选：性质优 + 临床先例 + 队列支持,Bifidobacterium,A_clinical_evidence
+16,4,Bifidobacterium_breve,短双歧杆菌,0.749,1.0,0.5,1.0,1.0,0.6,0.0,队列反证：肥胖富集,北美 FC=4.94,慎用：队列反证，需人群验证后再定位,Bifidobacterium,A_clinical_evidence
+17,5,Bifidobacterium_catenulatum,链状双歧杆菌,0.6515,1.0,0.5,1.0,0.35,0.6,0.0,队列支持：瘦人富集,中东 FC=0.48,低优先：关键性质缺失,Bifidobacterium,B_protective_screening
+18,5,Bifidobacterium_dentium,齿双歧杆菌,0.6515,1.0,0.5,1.0,0.35,0.6,0.0,队列受检但不显著,,低优先：关键性质缺失,Bifidobacterium,B_protective_screening
+19,5,Bifidobacterium_adolescentis,青春双歧杆菌,0.6515,1.0,0.5,1.0,0.35,0.6,0.0,队列反证：肥胖富集,北美 FC=5.65,慎用：队列反证，需人群验证后再定位,Bifidobacterium,B_food_grade_screening
+20,5,Bifidobacterium_bifidum,两歧双歧杆菌,0.6515,1.0,0.5,1.0,0.35,0.6,0.0,队列反证：肥胖富集,北美 FC=7.39,慎用：队列反证，需人群验证后再定位,Bifidobacterium,B_protective_screening
+21,5,Bifidobacterium_pseudocatenulatum,假链状双歧杆菌,0.6515,1.0,0.5,1.0,0.35,0.6,0.0,队列反证：肥胖富集,北美 FC=3.15,慎用：队列反证，需人群验证后再定位,Bifidobacterium,B_protective_screening
+22,6,Lactococcus_lactis,乳酸乳球菌,0.6385,1.0,0.5,1.0,0.35,0.85,0.4,队列受检但不显著,,低优先：关键性质缺失,Lactococcus,B_food_grade_screening
+23,7,Pediococcus_acidilactici,乳酸片球菌,0.5635,1.0,0.0,1.0,0.35,0.85,0.4,队列无数据（不可得）,,低优先：关键性质缺失,Pediococcus,B_food_grade_screening
+24,7,Pediococcus_pentosaceus,戊糖片球菌,0.5635,1.0,0.0,1.0,0.35,0.85,0.4,队列无数据（不可得）,,低优先：关键性质缺失,Pediococcus,B_food_grade_screening
+25,8,Bacillus_coagulans,凝结芽孢杆菌,0.4125,0.0,0.0,1.0,0.35,1.0,0.0,队列无数据（不可得）,,低优先：关键性质缺失,Bacillus,B_food_grade_screening
+26,8,Bacillus_subtilis,枯草芽孢杆菌,0.4125,0.0,0.0,1.0,0.35,1.0,0.0,队列无数据（不可得）,,低优先：关键性质缺失,Bacillus,B_food_grade_screening
+27,9,Saccharomyces_boulardii,布拉氏酵母,0.4055,0.0,0.0,1.0,0.35,0.95,0.0,队列无数据（不可得）,,低优先：关键性质缺失,Saccharomyces,B_food_grade_screening
+28,10,Streptococcus_anginosus_group,咽峡炎链球菌群,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,不推荐：需菌株级安全审查（病原属）,Streptococcus,C_pathogen_genus_review
+29,10,Streptococcus_australis,澳大利亚链球菌,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,不推荐：需菌株级安全审查（病原属）,Streptococcus,C_pathogen_genus_review
+30,10,Streptococcus_gordonii,戈氏链球菌,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,不推荐：需菌株级安全审查（病原属）,Streptococcus,C_pathogen_genus_review
+31,10,Streptococcus_mitis,缓症链球菌,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,不推荐：需菌株级安全审查（病原属）,Streptococcus,C_pathogen_genus_review
+32,10,Streptococcus_oralis,口腔链球菌,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,不推荐：需菌株级安全审查（病原属）,Streptococcus,C_pathogen_genus_review
+33,10,Streptococcus_parasanguinis,副血链球菌,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,不推荐：需菌株级安全审查（病原属）,Streptococcus,C_pathogen_genus_review
+34,10,Streptococcus_salivarius,唾液链球菌,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,不推荐：需菌株级安全审查（病原属）,Streptococcus,C_pathogen_genus_review
+35,10,Streptococcus_sanguinis,血链球菌,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,不推荐：需菌株级安全审查（病原属）,Streptococcus,C_pathogen_genus_review
+36,10,Streptococcus_sp_A12,链球菌 sp. A12,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,不推荐：需菌株级安全审查（病原属）,Streptococcus,C_pathogen_genus_review
+37,10,Streptococcus_thermophilus,嗜热链球菌,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,不推荐：需菌株级安全审查（病原属）,Streptococcus,C_pathogen_genus_review
+38,10,Streptococcus_vestibularis,前庭链球菌,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列反证：肥胖富集,西欧 FC=1.35,不推荐：需菌株级安全审查（病原属）,Streptococcus,C_pathogen_genus_review
