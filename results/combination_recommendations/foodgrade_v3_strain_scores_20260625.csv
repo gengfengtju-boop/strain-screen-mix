@@ -1,0 +1,39 @@
+﻿species,genus,v3_score,cross_feeding,bile_acid,safety,clinical,industrial,obesity_signature,cohort_flag,cohort_detail,safety_tier,clinical_evidence,priority_tier
+Lacticaseibacillus_paracasei,Lacticaseibacillus,0.866,1.0,1.0,1.0,1.0,0.9,0.0,队列无数据（不可得）,,qps_gras_lower_barrier,yes,A_clinical_evidence
+Lactiplantibacillus_plantarum,Lactiplantibacillus,0.866,1.0,1.0,1.0,1.0,0.9,0.0,队列无数据（不可得）,,qps_gras_lower_barrier,yes,A_clinical_evidence
+Lacticaseibacillus_rhamnosus,Lacticaseibacillus,0.7685,1.0,1.0,1.0,0.35,0.9,0.0,队列无数据（不可得）,,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Lacticaseibacillus_casei,Lacticaseibacillus,0.7685,1.0,1.0,1.0,0.35,0.9,0.0,队列无数据（不可得）,,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Lactobacillus_acidophilus,Lactobacillus,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列受检但不显著,,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Lactobacillus_gasseri,Lactobacillus,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列无数据（不可得）,,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Lactobacillus_rogosae,Lactobacillus,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列受检但不显著,,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Lactobacillus_ruminis,Lactobacillus,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列受检但不显著,,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Limosilactobacillus_reuteri,Limosilactobacillus,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列无数据（不可得）,,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Lactobacillus_helveticus,Lactobacillus,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列无数据（不可得）,,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Lactobacillus_crispatus,Lactobacillus,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列无数据（不可得）,,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Lactobacillus_johnsonii,Lactobacillus,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列无数据（不可得）,,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Limosilactobacillus_fermentum,Limosilactobacillus,0.7615,1.0,1.0,1.0,0.35,0.85,0.0,队列无数据（不可得）,,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Bifidobacterium_breve,Bifidobacterium,0.749,1.0,0.5,1.0,1.0,0.6,0.0,队列反证：肥胖富集,北美 FC=4.94,qps_gras_lower_barrier,yes,A_clinical_evidence
+Bifidobacterium_animalis,Bifidobacterium,0.749,1.0,0.5,1.0,1.0,0.6,0.0,队列支持：瘦人富集,西欧 FC=0.62,qps_gras_lower_barrier,yes,A_clinical_evidence
+Bifidobacterium_longum,Bifidobacterium,0.749,1.0,0.5,1.0,1.0,0.6,0.0,队列支持：瘦人富集,西欧 FC=0.65,qps_gras_lower_barrier,yes,A_clinical_evidence
+Bifidobacterium_catenulatum,Bifidobacterium,0.6515,1.0,0.5,1.0,0.35,0.6,0.0,队列支持：瘦人富集,中东 FC=0.48,qps_gras_lower_barrier,screening_only,B_protective_screening
+Bifidobacterium_adolescentis,Bifidobacterium,0.6515,1.0,0.5,1.0,0.35,0.6,0.0,队列反证：肥胖富集,北美 FC=5.65,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Bifidobacterium_bifidum,Bifidobacterium,0.6515,1.0,0.5,1.0,0.35,0.6,0.0,队列反证：肥胖富集,北美 FC=7.39,qps_gras_lower_barrier,screening_only,B_protective_screening
+Bifidobacterium_pseudocatenulatum,Bifidobacterium,0.6515,1.0,0.5,1.0,0.35,0.6,0.0,队列反证：肥胖富集,北美 FC=3.15,qps_gras_lower_barrier,screening_only,B_protective_screening
+Bifidobacterium_dentium,Bifidobacterium,0.6515,1.0,0.5,1.0,0.35,0.6,0.0,队列受检但不显著,,qps_gras_lower_barrier,screening_only,B_protective_screening
+Lactococcus_lactis,Lactococcus,0.6385,1.0,0.5,1.0,0.35,0.85,0.4,队列受检但不显著,,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Pediococcus_acidilactici,Pediococcus,0.5635,1.0,0.0,1.0,0.35,0.85,0.4,队列无数据（不可得）,,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Pediococcus_pentosaceus,Pediococcus,0.5635,1.0,0.0,1.0,0.35,0.85,0.4,队列无数据（不可得）,,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Bacillus_coagulans,Bacillus,0.4125,0.0,0.0,1.0,0.35,1.0,0.0,队列无数据（不可得）,,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Bacillus_subtilis,Bacillus,0.4125,0.0,0.0,1.0,0.35,1.0,0.0,队列无数据（不可得）,,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Saccharomyces_boulardii,Saccharomyces,0.4055,0.0,0.0,1.0,0.35,0.95,0.0,队列无数据（不可得）,,qps_gras_lower_barrier,screening_only,B_food_grade_screening
+Streptococcus_salivarius,Streptococcus,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,requires_strain_level_safety_review,screening_only,C_pathogen_genus_review
+Streptococcus_parasanguinis,Streptococcus,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,requires_strain_level_safety_review,screening_only,C_pathogen_genus_review
+Streptococcus_australis,Streptococcus,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,requires_strain_level_safety_review,screening_only,C_pathogen_genus_review
+Streptococcus_vestibularis,Streptococcus,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列反证：肥胖富集,西欧 FC=1.35,requires_strain_level_safety_review,screening_only,C_pathogen_genus_review
+Streptococcus_gordonii,Streptococcus,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,requires_strain_level_safety_review,screening_only,C_pathogen_genus_review
+Streptococcus_thermophilus,Streptococcus,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,requires_strain_level_safety_review,screening_only,C_pathogen_genus_review
+Streptococcus_mitis,Streptococcus,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,requires_strain_level_safety_review,screening_only,C_pathogen_genus_review
+Streptococcus_oralis,Streptococcus,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,requires_strain_level_safety_review,screening_only,C_pathogen_genus_review
+Streptococcus_anginosus_group,Streptococcus,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,requires_strain_level_safety_review,screening_only,C_pathogen_genus_review
+Streptococcus_sanguinis,Streptococcus,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,requires_strain_level_safety_review,screening_only,C_pathogen_genus_review
+Streptococcus_sp_A12,Streptococcus,0.3125,1.0,0.0,0.25,0.35,0.75,1.0,队列受检但不显著,,requires_strain_level_safety_review,screening_only,C_pathogen_genus_review

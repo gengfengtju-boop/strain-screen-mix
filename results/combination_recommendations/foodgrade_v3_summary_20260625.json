@@ -1,0 +1,36 @@
+{
+  "method": "v3 food-grade: strain properties only; cohort evidence reported as a flag, not scored",
+  "weights": {
+    "cross_feeding": 0.22,
+    "bile_acid": 0.15,
+    "safety": 0.22,
+    "clinical": 0.15,
+    "industrial": 0.14
+  },
+  "penalty": {
+    "obesity_signature": 0.12
+  },
+  "n_food_grade": 38,
+  "buildable_pool": 23,
+  "excluded": 15,
+  "n_combinations": 10879,
+  "top1": {
+    "rank": 1,
+    "members": "Lacticaseibacillus_paracasei; Lactiplantibacillus_plantarum",
+    "n_strains": 2,
+    "mean_v3": 0.866,
+    "has_strong_bsh": true,
+    "has_strong_crossfeeder": true,
+    "n_genera": 2,
+    "clinical_members": 2,
+    "cohort_supported_members": 0,
+    "composite_v3": 0.9035
+  },
+  "cohort_flag_counts": {
+    "队列无数据（不可得）": 15,
+    "队列受检但不显著": 15,
+    "队列反证：肥胖富集": 5,
+    "队列支持：瘦人富集": 3
+  },
+  "limitation": "cross-feeding and industrial axes are mechanistic/engineering priors, not validated against fat-loss outcomes here"
+}
