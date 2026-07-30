@@ -15,7 +15,7 @@
 14,4,Bifidobacterium_animalis,动物双歧杆菌,0.749,1.0,0.5,1.0,1.0,0.6,0.0,队列支持：瘦人富集,西欧 FC=0.62,首选：性质优 + 临床先例 + 队列支持,Bifidobacterium,A_clinical_evidence
 15,4,Bifidobacterium_longum,长双歧杆菌,0.749,1.0,0.5,1.0,1.0,0.6,0.0,队列支持：瘦人富集,西欧 FC=0.65,首选：性质优 + 临床先例 + 队列支持,Bifidobacterium,A_clinical_evidence
 16,4,Bifidobacterium_breve,短双歧杆菌,0.749,1.0,0.5,1.0,1.0,0.6,0.0,队列反证：肥胖富集,北美 FC=4.94,慎用：队列反证，需人群验证后再定位,Bifidobacterium,A_clinical_evidence
-17,5,Bifidobacterium_catenulatum,链状双歧杆菌,0.6515,1.0,0.5,1.0,0.35,0.6,0.0,队列支持：瘦人富集,中东 FC=0.48,低优先：关键性质缺失,Bifidobacterium,B_protective_screening
+17,5,Bifidobacterium_catenulatum,链状双歧杆菌,0.6515,1.0,0.5,1.0,0.35,0.6,0.0,队列支持：瘦人富集,中东 FC=0.48,值得关注：队列支持强，但缺临床先例,Bifidobacterium,B_protective_screening
 18,5,Bifidobacterium_dentium,齿双歧杆菌,0.6515,1.0,0.5,1.0,0.35,0.6,0.0,队列受检但不显著,,低优先：关键性质缺失,Bifidobacterium,B_protective_screening
 19,5,Bifidobacterium_adolescentis,青春双歧杆菌,0.6515,1.0,0.5,1.0,0.35,0.6,0.0,队列反证：肥胖富集,北美 FC=5.65,慎用：队列反证，需人群验证后再定位,Bifidobacterium,B_food_grade_screening
 20,5,Bifidobacterium_bifidum,两歧双歧杆菌,0.6515,1.0,0.5,1.0,0.35,0.6,0.0,队列反证：肥胖富集,北美 FC=7.39,慎用：队列反证，需人群验证后再定位,Bifidobacterium,B_protective_screening

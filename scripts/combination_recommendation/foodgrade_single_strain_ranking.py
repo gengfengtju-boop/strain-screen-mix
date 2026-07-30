@@ -57,6 +57,8 @@ def recommend(r):
         return "慎用：队列反证，需人群验证后再定位"
     if r.cohort_flag == "队列支持：瘦人富集" and r.clinical >= 1.0:
         return "首选：性质优 + 临床先例 + 队列支持"
+    if r.cohort_flag == "队列支持：瘦人富集":
+        return "值得关注：队列支持强，但缺临床先例"
     if r.clinical >= 1.0:
         return "推荐：性质优 + 临床先例（缺队列证据）"
     if r.v3_score >= 0.70:

@@ -43,10 +43,11 @@
   "recommendation_counts": {
     "备选：性质优，但仅筛选级证据": 11,
     "不推荐：需菌株级安全审查（病原属）": 11,
-    "低优先：关键性质缺失": 8,
+    "低优先：关键性质缺失": 7,
     "慎用：队列反证，需人群验证后再定位": 4,
     "推荐：性质优 + 临床先例（缺队列证据）": 2,
-    "首选：性质优 + 临床先例 + 队列支持": 2
+    "首选：性质优 + 临床先例 + 队列支持": 2,
+    "值得关注：队列支持强，但缺临床先例": 1
   },
   "limitation": "genus-level annotation creates large ties; strain-level genomes and in vitro phenotypes are required for a true per-strain ranking"
 }
