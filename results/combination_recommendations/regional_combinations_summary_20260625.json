@@ -1,0 +1,63 @@
+{
+  "weights": {
+    "diversity": 0.3,
+    "effect": 0.24,
+    "complementarity": 0.16,
+    "propionate": 0.12,
+    "quality": 0.1,
+    "genus_diversity": 0.08
+  },
+  "penalties": {
+    "spore_former": 0.05,
+    "oral_origin": 0.1
+  },
+  "note": "per-region pool, effect and diversity association; shared guild/culturability annotation",
+  "regions": [
+    {
+      "region": "西欧",
+      "pool_size": 20,
+      "universal_in_pool": 9,
+      "n_combinations": 20196,
+      "top_members": [
+        "Barnesiella_intestinihominis",
+        "Odoribacter_splanchnicus",
+        "Alistipes_putredinis"
+      ],
+      "top_composite": 0.7556,
+      "top_axes": "propionate+mucin",
+      "top_universal_members": 0,
+      "top_n_strains": 3
+    },
+    {
+      "region": "北美",
+      "pool_size": 14,
+      "universal_in_pool": 2,
+      "n_combinations": 1614,
+      "top_members": [
+        "Bacteroides_nordii",
+        "Coprococcus_eutactus",
+        "Eubacterium_siraeum"
+      ],
+      "top_composite": 0.7596,
+      "top_axes": "propionate+butyrate+mucin",
+      "top_universal_members": 1,
+      "top_n_strains": 3
+    },
+    {
+      "region": "中东",
+      "pool_size": 15,
+      "universal_in_pool": 8,
+      "n_combinations": 4447,
+      "top_members": [
+        "Bacteroides_intestinalis",
+        "Ruthenibacterium_lactatiformans",
+        "Akkermansia_muciniphila"
+      ],
+      "top_composite": 0.8189,
+      "top_axes": "propionate+butyrate+mucin",
+      "top_universal_members": 2,
+      "top_n_strains": 3
+    }
+  ],
+  "shared_top_members": []
+}
